@@ -1,0 +1,112 @@
+
+// Item properties
+#define IronDura 45
+#define SteelDura 35
+#define SilverDura 25
+#define SlimDura 30
+#define KillerDura 20
+#define ReaverDura 15
+#define EffectiveDura 15
+#define ThrowingDura 25
+#define Throwing2Dura 20
+#define Throwing3Dura 15
+
+#define IronCost 4
+#define SteelCost 6
+#define SilverCost 16
+#define SlimCost 8
+#define KillerCost 10
+#define ReaverCost 10
+#define EffectiveCost 20
+#define ThrowingCost 6
+#define Throwing2Cost 16
+#define Throwing3Cost 24
+
+#define ETomeDura 45
+#define DTomeDura 35
+#define CTomeDura 30
+#define BTomeDura 25
+
+#define ETomeCost 4
+#define DTomeCost 6
+#define CTomeCost 10
+#define BTomeCost 16
+
+// Items
+#define RegalLance 0x78 // Regenlief
+
+
+
+// Characters
+#define Edgar 0x1
+#define Jenna 0x2
+#define Duncan 0x3
+#define Kurt 0x4
+#define Matthias 0x5
+#define Stella 0x6
+#define Nico 0x7
+#define Lisa 0x8
+#define Jane 0x9
+#define Ethan 0xa
+#define Beatrice 0xb
+#define Daniel 0xc
+#define Isabelle 0xd
+#define Sasha 0xe
+#define Richard 0xf
+#define Cameron 0x10
+
+#define Violet 0x11
+#define Rowan 0x12
+#define Celia 0x13
+#define Justin 0x14
+#define Ted 0x15
+
+#define Quentin 0x16
+#define Thomas 0x17
+#define Lucy 0x18
+
+#define Rose 0x19
+#define Clint 0x1a
+
+#define Victoria 0x1b
+#define Marie 0x1c
+#define Evelyn 0x1d
+#define Donovan 0x1e
+#define Trent 0x1f
+
+// Mugs
+#define EdgarMug 0x2
+#define JennaMug 0x3
+#define DuncanMug 0x4
+#define KurtMug 0x5
+#define MatthiasMug 0x6
+#define StellaMug 0x7
+#define NicoMug 0x8
+#define LisaMug 0x9
+#define JaneMug 0xa
+#define EthanMug 0xb
+#define BeatriceMug 0xc
+#define DanielMug 0xd
+#define IsabelleMug 0xe
+#define SashaMug 0xf
+#define RichardMug 0x10
+#define CameronMug 0x11
+
+#define VioletMug 0x12
+#define RowanMug 0x13
+#define CeliaMug 0x14
+#define JustinMug 0x15
+#define TedMug 0x16
+
+#define QuentinMug 0x17
+#define ThomasMug 0x18
+#define LucyMug 0x19
+
+#define RoseMug 0x1a
+#define ClintMug 0x1b
+
+#define VictoriaMug 0x1c
+#define MarieMug 0x1d
+#define EvelynMug 0x1e
+#define DonovanMug 0x1f
+#define TrentMug 0x20

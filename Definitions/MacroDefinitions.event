@@ -1,0 +1,46 @@
+
+// EA macros
+
+//#define EnemyReinforcements(unitPtr) "ENUT Fixed_Growths_ID; SMOV 0x2 (unitPtr|0x8000000); CALL $9EE274; EVBIT_T 0x7; ENDA; ENUF Fixed_Growths_ID"
+#define EnemyReinforcements(unitPtr) "ENUT Fixed_Growths_ID; SMOV 0x2 (unitPtr|0x8000000); CALL $9EE274; EVBIT_T 0x7; ENUF Fixed_Growths_ID; ENDA"
+#define EnemyReinforcementsNoEnda(unitPtr) "ENUT Fixed_Growths_ID; SMOV 0x2 (unitPtr|0x8000000); CALL $9EE274; EVBIT_T 0x7; ENUF Fixed_Growths_ID"
+#define LoadEnemies(unitPtr) "ENUT Fixed_Growths_ID; LOAD1 0x1 unitPtr; ENUF Fixed_Growths_ID; ENUN"
+
+#define Kill(unitid) "SET_SOMETHING unitid;DISA_IF unitid"
+
+// Sme
+#define SetUnitStatus(unitID,statusOffset,statusValue) "SVAL 2 statusValue; SHORT $0D40; BYTE unitID statusOffset; POIN Set_Status_Hack|1"
+#define SetUnitStatus(x,y,statusOffset,statusValue) "SVAL 2 statusValue; SHORT $0D40; BYTE x y statusOffset; POIN Set_Status_Hack|1"
+
+#define SetAllUnitStatus(unitID,statusOffset,statusValue) "SVAL 1 unitID; SVAL 2 0; SVAL 3 0; SVAL 4 0xFF; SVAL 0xA statusOffset; SVAL 0xB statusValue; ASMC Set_All_Status_Hack|1"
+#define SetAllUnitStatus2(unitID,statusOffset,statusValue) "BYTE $40 $05 $01 $00 ; SHORT unitID; BYTE $00 $00 $40 $05 $02 $00 $00 $00 $00 $00 $40 $05 $03 $00 $00 $00 $00 $00 $40 $05 $04 $00 $FF $00 $00 $00 $40 $05 $0A $00; SHORT statusOffset; BYTE $00 $00 $40 $05 $0B $00; WORD statusValue; BYTE $40 $0D $00 $00; POIN Set_All_Status_Hack|1"
+
+// Pik?
+#define SilentGiveItem(unitid, itemid) "SVAL 0x1 unitid; BYTE 0x41 0x0D 0x0 itemid; POIN SilentGiveItemASMC|1"
+#define SilentGiveItem1(itemid) "BYTE 0x41 0x0D 0x0 itemid; POIN SilentGiveItemASMC|1"
+#define SilentGiveItemUnit(unitid, itemid) "BYTE 0x40 0x0D unitid itemid; POIN SilentGiveItemASMC|1"
+
+#define Coords(xcoord,ycoord) "(ycoord<<16)|xcoord"
+#define SilentGiveItemCoords(xcoord,ycoord,itemid) "SVAL 0xB Coords(xcoord,ycoord); BYTE 0x4B 0x0D 0x0 itemid; POIN SilentGiveItemASMC|1"
+#define SilentGiveItemConvoy(itemid) "BYTE 0x42 0x0D 0x00 itemid; POIN SilentGiveItemASMC|1"
+
+// Snek's quotes macros
+// https://github.com/Snakey11/Legends-of-Avenir/blob/master/CSV/EA%20Files/Death%20Quote%20Table.event
+// https://github.com/Snakey11/Legends-of-Avenir/blob/e3992be25fdf97d0c1d9af4552b77a671097bf93/Definitions.event
+
+#define DeathQuote(Character,Chapter,EventID,TextID) "SHORT Character; BYTE 0xFF Chapter; SHORT EventID TextID 0 0"
+#define DeathQuote(Character,Chapter,EventID,TextID,Pointer) "SHORT Character; BYTE 0xFF Chapter; SHORT EventID TextID ; POIN Pointer"
+
+#define DeathQuote(Character,TextID) "SHORT Character; BYTE 0xFF 0xFF; SHORT 0x0 TextID 0 0"
+#define DeathQuote2(Character,TextID) "SHORT Character; BYTE 0xFF 0xFF; SHORT 0x65 TextID 0 0"
+#define DeathQuoteBoss(Character,TextID) "SHORT Character; BYTE 0xFF 0xFF; SHORT 0x2 TextID 0 0"
+#define DeathQuoteBoss2(Character,TextID) "SHORT Character; BYTE 0xFF 0xFF; SHORT 0x0 TextID 0 0"
+
+#define SpecifiedBattleConvo(Character1,Character2,Chapter,EventID,TextID) "SHORT Character1 Character2 Chapter EventID TextID 0x0 0x0 0x0; SHORT Character2 Character1 Chapter EventID TextID 0x0 0x0 0x0"
+#define UnspecifiedBattleConvo(Character,Chapter,EventID,TextID) "SHORT Character 0x0 Chapter EventID TextID 0x0 0x0 0x0; SHORT 0x0 Character Chapter EventID TextID 0x0 0x0 0x0"
+
+#define BossQuote(Character,TextID) "SHORT Character 0x0 0xff 0x1 TextID 0x0 0x0 0x0; SHORT 0x0 Character 0xff 0x1 TextID 0x0 0x0 0x0"
+//#define BossQuote2(Character,TextID) "SHORT Character 0x0 0xff 0x1 TextID 0x0 0x0 0x0; SHORT 0x0 Character 0xff 0x2 TextID 0x0 0x0 0x0"
+#define BossQuote2(Character,TextID) "SHORT Character 0x0 0xff 0x1 TextID 0x0 0x0 0x0; SHORT 0x0 Character 0xff 0x5 TextID 0x0 0x0 0x0"
+
+#define AttackingBrigandAI [AttackInRange,BrigandMove,NoRecovery,DefaultAI4]

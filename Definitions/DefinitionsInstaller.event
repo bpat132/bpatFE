@@ -1,0 +1,7 @@
+#include DebugDefinitions.event
+#include MacroDefinitions.event
+#include TableEntryDefinitions.event
+
+//misc stuff
+#define USE_STRMAG_SPLIT
+

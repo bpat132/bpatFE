@@ -1,0 +1,183 @@
+# 0x910 EdgarName
+Edgar[X]
+## EdgarDesc
+The prince of the kingdom of[NL]
+Melerra. Resolute and just.[X]
+
+## JennaName
+Jenna[X]
+## JennaDesc
+A young archer from Melerra.[NL]
+Easygoing, but confident.[X]
+
+## DuncanName
+Duncan[X]
+## DuncanDesc
+A former Melerran soldier.[NL]
+Reserved, but fearsome in battle[X]
+
+## KurtName
+Kurt[X]
+## KurtDesc
+A young Melerran swordfighter[NL]
+seeking to prove himself.[X]
+
+## MatthiasName
+Matthias[X]
+## MatthiasDesc
+A courageous soldier from Galt.[NL]
+Guided by his principles.[X]
+
+## StellaName
+Stella[X]
+## StellaDesc
+A novice Melerran mage with a[NL]
+bad attitude but good heart.[X]
+
+## NicoName
+Nico[X]
+## NicoDesc
+A former thief looking to redeem[NL]
+himself. Steadfast and loyal.[X]
+
+## LisaName
+Lisa[X]
+## LisaDesc
+A young priestess from Melerra.[NL]
+Protective and kind.[X]
+
+## JaneName
+Jane[X]
+## JaneDesc
+A noble lady driven to prove[NL]
+herself as a knight.[X]
+
+## EthanName
+Ethan[X]
+## EthanDesc
+A mercenary from Galt with a.[NL]
+grudge against his homeland.[X]
+
+## BeatriceName
+Beatrice[X]
+## BeatriceDesc
+A down to earth mercenary.[NL]
+Friendly rivals with Daniel.[X]
+
+## DanielName
+Daniel[X]
+## DanielDesc
+An idealistic Melerran knight.[NL]
+Friendly rivals with Beatrice.[X]
+
+## IsabelleName
+Isabelle[X]
+## IsabelleDesc
+An amiable young mercenary.[NL]
+from Kemaroa.[X]
+
+## SashaName
+Sasha[X]
+## SashaDesc
+A grim sellsword wandering the land.[NL]
+Cares more for fighting than gold[X]
+
+## RichardName
+Richard[X]
+## RichardDesc
+A mercenary commander. Respected for[NL]
+his compassion and skill alike.[X]
+
+## CameronName
+Cameron[X]
+## CameronDesc
+A Melerran archer working.[NL]
+as a mercenary. Cautious.[X]
+
+## VioletName
+Violet[X]
+## VioletDesc
+A young Melerran pegasus knight.[NL]
+Eager to prove herself.[X]
+
+## RowanName
+Rowan[X]
+## RowanDesc
+A disciplined Kemaroan swordsman.[NL]
+Seeks to perfect his skills.[X]
+
+## CeliaName
+Celia[X]
+## CeliaDesc
+The princess of Kemaroa.[NL]
+Stubborn, but genuine.[X]
+
+## JustinName
+Justin[X]
+## JustinDesc
+A zealous travelling priest.[NL]
+Unyielding in his convictions.[X]
+
+## TedName
+Ted[X]
+## TedDesc
+A former soldier turned to piracy.[NL]
+Kinder than he lets on.[X]
+
+## QuentinName
+Quentin[X]
+## QuentinDesc
+A mage from Sresa interested in both[NL]
+study and application of magic.[X]
+
+## ThomasName
+Thomas[X]
+## ThomasDesc
+A scholar from Sresa with an[NL]
+interest in ancient history.[X]
+
+## LucyName
+Lucy[X]
+## LucyDesc
+A young woman who steals both to[NL]
+get by and for the thrill of it.[X]
+
+## RoseName
+Rose[X]
+## RoseDesc
+Rose placeholder description.[X]
+
+## ClintName
+Clint[X]
+## ClintDesc
+Clint placeholder description.[X]
+
+## VictoriaName
+Victoria[X]
+## VictoriaDesc
+Victoria placeholder description.[X]
+
+## MarieName
+Marie[X]
+## MarieDesc
+Marie placeholder description.[X]
+
+## EvelynName
+Evelyn[X]
+## EvelynDesc
+Evelyn placeholder description.[X]
+
+## DonovanName
+Donovan[X]
+## DonovanDesc
+Donovan placeholder description.[X]
+
+## TrentName
+Trent[X]
+## TrentDesc
+Trent placeholder description.[X]
+
+
+
+
+

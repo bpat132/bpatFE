@@ -1,0 +1,26 @@
+// found in devvy's filebuild
+// most item icons done by lisandra brave, flame sword from lord glenn
+// stone sword, argilabrys, frost blade, stinger, lunar axe, tempered ring, daybreaker, muramasa, and mystic lance from beansy
+//gale bow by zarg
+// slim bow is by zaneeeeeeee avernathy
+// devil dagger from archer?
+#define ItemIconSlot(slot,path) "ORG 0x5926F4+(0x80*slot); #incext Png2Dmp path"
+/*
+ALIGN 4
+ItemIconSheet:
+#incbin "LongBoiIconSheet.dmp"
+
+PUSH
+ORG $36B4
+POIN ItemIconSheet
+ORG $3788
+POIN ItemIconSheet
+POP
+*/
+
+//#include "ExternalIconSheets/ExternalSheetInstaller.event"
+
+PUSH
+ItemIconSlot(0x0,"png/SwiftSword_Beansy.png")
+POP
+

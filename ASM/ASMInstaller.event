@@ -1,0 +1,289 @@
+
+//Skip very begining world map
+PUSH
+ORG $A39768
+EVBIT_MODIFY 0x1
+SKIPWN
+ENDA
+POP
+
+// My hit/avo stuff
+PUSH
+ORG $2ABB8
+jumpToHack(HitRateLabel)
+ORG $2ABE8
+jumpToHack(AvoidLabel)
+POP
+
+ALIGN 4
+HitRateLabel:
+#incbin "HitAvo/hitratehack.dmp"
+
+ALIGN 4
+AvoidLabel:
+#incbin "HitAvo/avoidhack.dmp"
+
+// Staff hitrate
+// 0x2ccdc is formula location
+PUSH
+ORG 0x2CD30
+//BYTE 0x3034 // 0x34 is 52
+BYTE 0x307f // 0x7f is 127
+POP
+
+// Huichelaar minimug palette fix
+#include "MinimugPaletteFix/MinimugPalette.event"
+
+
+// Gamma weight calc
+//Moving the weight calc to MSG; makes this save raw AS.
+
+PUSH
+ORG $2AB78
+SHORT $2016 $5620 $1C21 $315E $8008
+B($2ABA4)
+SHORT $46C0
+POP
+PROTECT $2AB78 $2AB88
+
+
+
+// Forced deployment
+/*
+PUSH
+ORG 0x8483C
+POIN ForceDeployList
+POP
+
+#define ForceDeployEntry(unit,chapterID) "SHORT unit; BYTE 0xFF chapterID"
+#define EndForceDeploy "SHORT 0xFFFF 0x00"
+
+ForceDeployList:
+ForceDeployEntry(Edgar,0xFF)
+ForceDeployEntry(Celia,0xFF)
+ForceDeployEntry(Ethan,0x2)
+ForceDeployEntry(Quentin,0x5)
+ForceDeployEntry(Thomas,0x5)
+ForceDeployEntry(Rose,0x6)
+EndForceDeploy
+*/
+
+// 7743 ASMC2 start button fix
+PUSH
+ORG 0xDB26
+BYTE 0x00 0x00
+POP
+
+// 7743 patches
+ALIGN 4
+Set_Status_Hack:
+#incbin "BuilderPatches/set_status_param.dmp"
+
+ALIGN 4
+Set_All_Status_Hack:
+#incbin "BuilderPatches/set_status_param_all.dmp"
+
+ALIGN 4
+SilentGiveItemASMC:
+#incbin "BuilderPatches/SilentGiveItem.dmp"
+
+
+// Phantom Sentine group AI hack
+#include "GroupAI/GroupAI.event"
+
+// Stan's difficulty selection disabler
+{
+
+PUSH; ORG 0xA20164
+    POIN (prFixedDifficulty+1)
+POP
+
+ALIGN 4
+prFixedDifficulty:
+    SHORT (0x2200 | 2) // Difficulty: 0 for easy, 1 for normal, 2 for hard
+    SHORT 0x2300
+    SHORT 0x212A
+    SHORT 0x5442
+    SHORT 0x213D
+    SHORT 0x5443
+    SHORT 0x4770
+    ALIGN 4
+}
+
+// hypergammaspaces's AI lag fix
+#include "AILagFIx/FillAIDangerMap.event"
+
+// Snek Ex.Map fix
+PUSH
+ORG $96B1C
+SHORT 0xE00A // Eliminate "Tower" in prep screens
+ORG $96B3A
+SHORT 0xE003 // Eliminate "Ruins" in prep screens
+ORG $96B4C
+SHORT 0xE003 // Eliminate "Ex.map" in prep screens
+POP
+
+// Rogue AI change to Thief_F (Pikmin1211)
+PUSH
+ORG 0x40C6A 
+BYTE 0x54
+POP
+
+// 5x restrictions (leonarth)
+PUSH; ORG $31650; SHORT 0x46C0; POP
+
+// 5x money (circles, self randomizing rom)
+PUSH; ORG $24df2; SHORT 0; POP //fix 5x money
+
+
+// Sme's status weapons (only using duration change here)
+/*
+To install, just #include StatusWeapons.event and add Proc_StatusWeapons to the proc skills loop.
+To make a weapon a status weapon, just give it weapon effect 0xD and put the ID of the status you wish to inflict at item data +0x22
+(the second unused byte at the end of each table entry, the same one used by Item Effect Revamp). Statuses applied during battles are hardcoded to always last 5 turns;
+if you want to change this amount, the byte at 0x178EA is the duration shifted 4 bits left (the default value is 0x50 which equates to 5 turns, 0x30 would equate to 3 turns, etc).
+*/
+// Seems to be 0x20 not 0x22
+//#include "StatusWeapons/StatusWeapons.event"
+//#define STATUS_WEAPONS
+PUSH
+ORG 0x178EA
+BYTE 0x10
+POP
+
+// Sme item specific WTA
+// TODO: re add
+//#include "ItemSpecificWTA/ItemSpecificWTA.event"
+
+//Sets Vulnerary HP Recovery to 15hp. (LegendOfLoog)
+PUSH
+ORG 0x2FEC6
+BYTE 0x0F
+POP
+
+
+// Prep screen shop (copied from runa)
+
+PUSH
+  ORG 0x99E64
+    POIN PrepScreenShop
+POP
+
+ALIGN 4
+PrepScreenShop:
+//SHLI IronSword SteelSword IronBlade SteelBlade FireSword IronLance SteelLance Javelin IronAxe SteelAxe HandAxe IronBow SteelBow Fire Thunder Flux EvilEye Heal
+SHLI IronSword SteelSword IronBlade SteelBlade LightBrand IronLance SteelLance Javelin IronAxe SteelAxe HandAxe IronBow SteelBow Fire Thunder Flux EvilEye Heal
+ALIGN 4
+
+//Fix MNC2 Freezing glitch (breaks skirmishes!)
+// Kirb, probably?
+PUSH
+ORG $BD070
+SHORT $E0B8
+ORG $897B2
+SHORT $0 $0
+ORG $897C4
+SHORT $200E $5620
+POP
+
+// Zane's MMB
+// TODO: why is this busted?
+#include "MMB/Installers/MMBInstallerBpat.event"
+
+// My prep screen price fix (help from colorz's code)
+PUSH
+ORG 0xB523C
+SHORT 0x00 0x00
+POP
+
+// Teq
+PUSH
+#include "WalkingSoundsFix/FE8-Walking Sounds EA.txt"
+POP
+
+// Teq's CHAI fix
+//#include "Misc/FE8-New_CHAI_EA.event"
+
+// 2WB portrait height fix
+PUSH
+#include "PortraitHeightFix/Portrait Shift Table (Download this one).txt"
+POP
+
+// Thracia trade
+PUSH
+  ORG $22F50
+  BYTE 0xC0 0x46
+POP
+
+// Pik send items to convoy upon death
+#include "SendItems/Installer.event"
+// Pik status screen
+// TODO: figure out what this is
+PUSH
+ORG 0xA03368
+#incbin "../Graphics/Statscreen/statscreen_image.dmp"
+ORG 0xA05F10
+#incbin "../Graphics/Statscreen/statscreen_tsa.dmp"
+ORG 0xA06460
+#incbin "../Graphics/Statscreen/statscreen_palette.dmp"
+ORG 0x88590
+BYTE 0 0 0 0
+POP
+
+
+// Teq heal display
+		#ifndef FreeSpace
+			#define FreeSpace 0xB2B200
+			ORG FreeSpace
+		#endif
+		#define Arrow_Text_ID 0x8EA //currently just a hyphen; make a text id with '->' and put it here (DON'T CHANGE THE VANILLA ONE)
+		
+		#include "Extensions/Hack Installation.txt"
+		
+		PUSH
+		
+		ORG $24670
+		jumpToHack(FE8_Show_Heal_Amount)
+		
+		POP
+		
+		ALIGN 4
+		FE8_Show_Heal_Amount:
+		#incbin "Misc/FE8-Show Heal Amount.dmp"
+		WORD Arrow_Text_ID
+
+
+// Target allies or enemies (IER thing? TODO: figure this out. 90% sure this is berserk routine)
+PUSH
+ORG 0x261B2
+SHORT 0x0
+POP
+
+// Freeze text pointer
+// Changes text ptr from 0x55A -> 0x55B, don't remember why this matters?
+/*
+PUSH
+ORG 0x88A78
+WORD 0x08088AEC
+POP
+*/
+
+// CHAX
+
+// Freeze, no AS / def / res changes for petrify
+
+PUSH
+ORG $2adcc
+ALIGN 4
+WORD $46C04778 $E59FC000 $E12FFF1C
+POIN ComputeBattleUnitSpecialWeaponStats
+POP
+ALIGN 4
+PUSH
+ORG CURRENTOFFSET+$1;ComputeBattleUnitSpecialWeaponStats:
+POP
+WORD $B5700003 $4334A $4B1E8818 $F000000D $2803F83B $2313D110 $330156EB $D100105B $223301 $8013325A $2300002A $8013325C $32660022 $80938013 $39B6CE3 $2BD503 $335C2200 $2B801A $3330220F $4013781B $D1022B09 $18622164 $228011 $3230210F $400A7812 $D1022A09 $325B3564 $22FD802A $42133B0B $2364D102 $80233464 $BC01BC70 $46C04700 $8017725 $46C04718
+//WORD $B5700003 $4334A $4B238818 $F000000D $2803F845 $2313D110 $330156EB $D100105B $223301 $8013325A $2300002A $8013325C $32660022 $80938013 $39B6CE3 $2BD503 $335C2200 $2B801A $3330220F $4013781B $D1022B09 $18622164 $228011 $3230210F $400A7812 $D1022A09 $325B3564 $22FD802A $42133B0B $23D10C $33643A99 $22801A $8813325A $80133B0A $8823345E $8023331E $BC01BC70 $46C04700 $8017725 $46C04718
+
+
+
