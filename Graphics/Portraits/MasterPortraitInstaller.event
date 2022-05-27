@@ -66,3 +66,59 @@ LisaMugData: // LL
 #incbin "Dmp/Lisa_minimug.dmp"
 setMugEntry(LisaMug, LisaMugData, 3, 6, 3, 4)
 
+ALIGN 16
+SashaMugData: // Me, body from CapibaraInSpace
+#incbin "Dmp/Sasha_mug.dmp"
+#incbin "Dmp/Sasha_frames.dmp"
+#incbin "Dmp/Sasha_palette.dmp"
+#incbin "Dmp/Sasha_minimug.dmp"
+setMugEntry(SashaMug, SashaMugData, 3, 5, 3, 3)
+
+ALIGN 16
+Ch1BossMugData: // LL
+#incbin "Dmp/Ch1Boss_mug.dmp"
+#incbin "Dmp/Ch1Boss_frames.dmp"
+#incbin "Dmp/Ch1Boss_palette.dmp"
+#incbin "Dmp/Ch1Boss_minimug.dmp"
+setMugEntry(Ch1BossMug, Ch1BossMugData, 3, 5, 3, 3)
+
+ALIGN 16
+Ch2BossMugData: // LL
+#incbin "Dmp/Ch2Boss_mug.dmp"
+#incbin "Dmp/Ch2Boss_frames.dmp"
+#incbin "Dmp/Ch2Boss_palette.dmp"
+#incbin "Dmp/Ch2Boss_minimug.dmp"
+setMugEntry(Ch2BossMug, Ch2BossMugData, 3, 5, 3, 3)
+
+ALIGN 16
+Ch3BossMugData: // LL
+#incbin "Dmp/Ch3Boss_mug.dmp"
+#incbin "Dmp/Ch3Boss_frames.dmp"
+#incbin "Dmp/Ch3Boss_palette.dmp"
+#incbin "Dmp/Ch3Boss_minimug.dmp"
+setMugEntry(Ch1BossMug, Ch1BossMugData, 3, 5, 3, 3)
+
+ALIGN 16
+Ch4BossMugData: // LL
+#incbin "Dmp/Ch4Boss_mug.dmp"
+#incbin "Dmp/Ch4Boss_frames.dmp"
+#incbin "Dmp/Ch4Boss_palette.dmp"
+#incbin "Dmp/Ch4Boss_minimug.dmp"
+setMugEntry(Ch4BossMug, Ch4BossMugData, 3, 5, 3, 3)
+
+ALIGN 16
+Ch5BossMugData: // LL
+#incbin "Dmp/Ch5Boss_mug.dmp"
+#incbin "Dmp/Ch5Boss_frames.dmp"
+#incbin "Dmp/Ch5Boss_palette.dmp"
+#incbin "Dmp/Ch5Boss_minimug.dmp"
+setMugEntry(Ch5BossMug, Ch5BossMugData, 3, 5, 3, 3)
+
+ALIGN 16
+Ch6BossMugData: // LL
+#incbin "Dmp/Ch6Boss_mug.dmp"
+#incbin "Dmp/Ch6Boss_frames.dmp"
+#incbin "Dmp/Ch6Boss_palette.dmp"
+#incbin "Dmp/Ch6Boss_minimug.dmp"
+setMugEntry(Ch6BossMug, Ch6BossMugData, 3, 5, 3, 3)
+

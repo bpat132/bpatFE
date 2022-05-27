@@ -31,6 +31,14 @@ ORG 0x2CD30
 BYTE 0x307f // 0x7f is 127
 POP
 
+// GetBlueUnitCountASM (sme)
+#include "Misc/GetBlueUnitCountASMC.lyn.event"
+
+
+
+// Fixed autolevels (stan)
+#include "FixedAutolevels/FixedAutolevels.event"
+
 // Huichelaar minimug palette fix
 #include "MinimugPaletteFix/MinimugPalette.event"
 
@@ -153,7 +161,7 @@ POP
 
 // Sme item specific WTA
 // TODO: re add
-//#include "ItemSpecificWTA/ItemSpecificWTA.event"
+#include "ItemSpecificWTA/ItemSpecificWTA.event"
 
 //Sets Vulnerary HP Recovery to 15hp. (LegendOfLoog)
 PUSH

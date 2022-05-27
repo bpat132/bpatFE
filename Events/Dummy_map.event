@@ -59,7 +59,7 @@ END_MAIN
 
 Units1:
 UNIT Edgar EphraimLord 0x1 Level(1,Ally,False) [0,0] 0x0 0x0 0x0 0x1 [IronLance,RegalLance] NoAI
-UNIT Lisa Cleric 0x1 Level(1,Ally,False) [1,0] 0x0 0x0 0x0 0x1 [Heal] NoAI
+//UNIT Lisa Cleric 0x1 Level(1,Ally,False) [1,0] 0x0 0x0 0x0 0x1 [Heal] NoAI
 UNIT
 
 EnemyUnits:

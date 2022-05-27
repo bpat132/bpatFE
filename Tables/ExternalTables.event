@@ -53,3 +53,6 @@ defWeaponDebuffs(4,0,4,0,4,4,0) //0x5: Pebble debuff.
 
 	BYTE 0x0	//end of list
 #endif
+
+// Repointed tables
+#include "RepointedTables.event"

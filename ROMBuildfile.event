@@ -30,11 +30,14 @@
     #include "Maps/TilesetInstaller.event"
 
     //Events
-    #include "Events/Dummy_map.event"
+    #include "Events/ChapterInstaller.event"
     #include "Events/WorldMapEvents.event"
 
     //Maps
     #include "Maps/MasterMapInstaller.event"
+    
+    //Auto Newline - Zeta
+    #include "Text/AutoNewline/Installer.event"
     
     MESSAGE Used free space ends at currentOffset
 #else

@@ -1,0 +1,181 @@
+
+## TEXT_Ch1_Start_Edgar
+[ConversationText]
+[FarLeft][LoadJenna][Left][LoadEdgar][Right][LoadKurt][FarRight][LoadDuncan]
+[Left]
+Damn, this place is already packed with soldiers.
+[FarLeft]
+Guess we've really made a name for ourselves. I hear there's a 5000 gold bounty on each of us! Though I feel I'm worth at least 10,000...
+[Right]
+You'd think with these numbers they'd have no trouble handling some bandits. Why do we have to do their job for them?
+[FarRight]
+Rumor has it that the soldiers turn a blind eye in exchange for a cut of the profits. We'll find out how true that is soon enough.
+[Left]
+It doesn't matter now, anyone who preys on the people of Melerra is our enemy. We'll drive off the bandits, then take out their commanding officer and escape before they can rally more soldiers.
+[X]
+
+## TEXT_Ch1_Start_Matthias
+[ConversationText]
+[MidLeft][LoadRedSoldier][MidRight][LoadMatthias]
+[MidRight]
+What's going on here? These thugs aren't exactly being subtle, but we're still under orders not to engage. Isn't it our responsibility to keep the people safe?
+[MidLeft]
+You ask too many questions, soldier. Don't let the captain hear your whining. Who cares about some bandits when we've got rebels to deal with. Have you seen the bounty on them? Capture one and we'll be rich!
+[MidLeft]
+[ClearFace]
+[MidRight]
+Rebels too... Something's not right here. Still, I can't disobey orders if I want to keep my head.
+[X]
+
+## TEXT_Ch1_Edgar_Matthias_Talk
+[ConversationText]
+[MidLeft][LoadEdgar][MidRight][LoadMatthias]
+[MidRight]
+You're the leader here, right? Tell me, why do you risk your life like this? Surely you can't hope to topple the empire's dominion.
+[MidLeft]
+I'll do whatever I can, no matter the odds. The people here are suffering at the hands of both the bandits and you soldiers! Can't you see how much harm you've caused?
+[MidRight]
+As I feared, I've been fighting for the wrong side. I joined the army to protect the people, but what we're doing is unforgivable. You've helped me make up my mind; I'll join your cause.
+[MidLeft]
+I can't deny we're lacking in numbers, so we could certainly use your help. Now, let's finish this battle!
+[X]
+
+
+## TEXT_Ch1_Stella_Event1
+[ConversationText]
+[MidLeft][LoadStella]
+Nothing good today either... Haven't been able to find anything better than a thunder tome in years.
+[FarRight][LoadRedSoldier]
+[FarRight]
+Halt! A gang of rebels is causing trouble in this district, stay indoors until we've cleared them out.
+[MidLeft]
+Right, I'll be on my way then.
+[FarRight]
+Wait, is that a magic tome you're holding? Civilians are forbidden from carrying weapons; I'm afraid I'll have to confiscate them.
+[MidLeft]
+[MoveFarLeft]
+[FarLeft]
+Not a chance! One step closer and I'll blow you to pieces!
+[FarRight][MoveRight]
+I'm not afraid of you, just hand over your tomes and no one has to get hurt.
+[Right][MoveLeft]
+[X]
+
+## TEXT_Ch1_Stella_Battle
+[MidLeft][LoadStella]
+Don't say I didn't warn you![A]
+[X]
+
+## TEXT_Ch1_Stella_Event2
+[ConversationText]
+[MidLeft][LoadStella]
+[FarFarRight]
+That girl's with the rebels, capture her!
+[MidLeft]
+Damn, so much for keeping a low profile. Rebels, huh... Maybe I'll join up with them now that we've got a common enemy.
+[X]
+
+## TEXT_Ch1_Edgar_Stella_Talk
+[ConversationText]
+[MidLeft][LoadEdgar][MidRight][LoadStella]
+[MidRight]
+Hey, you! Are you the leader of this group? I wanna join you.
+[MidLeft]
+Huh? Who are-
+[MidRight]
+You're fighting these bastards, right? I'll help you take them down. I'm not much of a fighter but I'm real good with magic.
+[MidRight][ClearFace]
+[MidLeft]
+What a strange woman... But I'll gladly take any help we can get.
+[X]
+
+## TEXT_Ch1_Sasha_Event
+[ConversationText]
+[MidLeft][LoadSasha]
+[MidLeft][CloseEyes]
+[MidLeft]
+...
+[Right][LoadCh1Boss]
+[Right]
+What're you standing around for? You gonna fight or is that sword just for show?
+[MidLeft][OpenEyes]
+[MidLeft]
+This is a waste of time. I'm leaving.
+[Right]
+What?! We paid top coin for your blade. You can't desert in the middle of battle!
+[MidLeft]
+Can't I? Do you really think someone like you could stop me?
+[Right][MoveFarRight]
+[FarRight]
+Go... but I'll spread word of this betrayal. No one will hire a mercenary who abandons her duty.
+[FarRight][MoveFarFarRight]
+[MidLeft]
+What a fool... He hasn't realized this'll be his last battle. I'll have to keep an eye out for that rebel group; they're weak, but they've got potential.
+[X]
+
+## TEXT_Ch1_Village_Thunder
+[ConversationText]
+[MidLeft][LoadFace][0x5A][0x01][MidRight][LoadFace][CurrentPortrait]
+[MidLeft]
+Bandits are attacking? Oh no... I'm worried about my niece, she hasn't come back from the market yet. If you see her, please give her this thunder tome so she can defend herself.
+[X]
+
+## TEXT_Ch1_Village_Thunder_Stella
+[ConversationText]
+[MidLeft][LoadFace][0x5A][0x01][MidRight][LoadFace][CurrentPortrait]
+[MidLeft]
+Stella? What's got you so worked up?
+[MidRight]
+I got myself caught up in something, but don't worry, I'll take care of it. Just stopping by to pick up my thunder tome and warn you to stay indoors, there's a hell of a fight going on outside.
+[MidLeft]
+A fight?! What have you gotten yourself into?
+[MidRight]
+Don't worry about it, uncle. I'll be fine.
+[MidLeft]
+But... Alright, I know better than to try to talk you out of this. Just please, come back safe.
+[MidRight]
+I will, I promise.
+[X]
+
+## TEXT_Ch1_Village_SteelBlade
+[ConversationText]
+[MidLeft][LoadFace][0x5C][0x01][MidRight][LoadFace][CurrentPortrait]
+[MidLeft]
+You're fighting Galt's soldiers? Can't say I'm a fan of them myself. Take this steel blade, maybe it'll help you beat 'em.
+I gotta warn you, it takes a skilled swordsman to land a hit with this weapon, but it packs a hell of a punch!
+[X]
+
+## TEXT_Ch1_End
+[ConversationText]
+[FarLeft][LoadLisa][Left][LoadEdgar][Right][LoadMatthias][FarRight][LoadStella]
+[FarLeft]
+Welcome back! Oh, looks like there's some new faces here.
+[Left]
+Hi Lisa. These two are... Actually, I never caught your names.
+[Right]
+Matthias. I was a soldier of Galt until today, but I can no longer abide by the army's cruelty.
+[FarRight]
+And I'm Stella. You're fighting Galt's soldiers, so it looks like we've got a common enemy.
+[FarLeft]
+It's a pleasure to meet you two. I'm Lisa, I run this temple that they've made into a hideout.
+[Left]
+And I'm Edgar, I'm the leader of our resistance force. Matthias and Stella really helped us out in our last battle.
+[Right][ClearFace][FarRight][ClearFace]
+[Left][ClearFace][MidRight][LoadEdgar]
+[FarLeft][MoveMidLeft]
+[MidLeft]
+Two new friends and you're still scratched up this bad? Please, be more careful. Even I can't heal a fatal wound.
+[MidRight]
+Thanks for healing us up, Lisa. I don't know what we'd do without you.
+[MidLeft]
+If you really want to thank me, stop being so reckless! I really worry about you guys. So does Nico, though he'd never admit it.
+[MidRight]
+Is Nico back yet? I hope his mission went smoother than ours.
+[MidLeft]
+He came back about an hour ago, asked me to give you these.
+[MidRight]
+Impressive as always, I'll have to thank him later.
+[MidLeft][ClearFace]
+[MidRight]
+New allies, new weapons... Perhaps it's finally time.
+[X]

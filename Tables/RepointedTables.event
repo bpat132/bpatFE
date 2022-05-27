@@ -1,0 +1,21 @@
+
+ALIGN 4
+NewIconTable:
+FILL 0x80 * 256
+
+PUSH
+ORG $36B4
+POIN NewIconTable
+ORG $3788
+POIN NewIconTable
+
+ORG NewIconTable
+#incbin "IconTable.dmp"
+POP
+
+PROTECT $36B4
+PROTECT $3788
+
+MESSAGE icon table ptr is NewIconTable
+
+#define IconTable NewIconTable

@@ -33,7 +33,11 @@
 #define BTomeCost 16
 
 // Items
-#define RegalLance 0x78 // Regenlief
+#define SwiftSword SlimSword
+#define Bolganone Elfire
+#define Thoron Bolting
+#define RegalLance Reginleif
+#define FireSword 0xbd
 
 
 
@@ -74,6 +78,8 @@
 #define Donovan 0x1e
 #define Trent 0x1f
 
+#define Ch1Boss 0x46
+
 // Mugs
 #define EdgarMug 0x2
 #define JennaMug 0x3
@@ -110,3 +116,10 @@
 #define EvelynMug 0x1e
 #define DonovanMug 0x1f
 #define TrentMug 0x20
+
+#define Ch1BossMug 0x31
+#define Ch2BossMug 0x32
+#define Ch3BossMug 0x33
+#define Ch4BossMug 0x34
+#define Ch5BossMug 0x35
+#define Ch6BossMug 0x36

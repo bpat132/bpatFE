@@ -1,0 +1,113 @@
+
+////////////////////////////////////////////////////
+//                                                //
+// Disassembled with Nintenlord's Event Assembler //
+// Version: 11.0.0.0                              //
+// Game: FE8                                      //
+// File: FE8_clean.gba                            //
+// Offset: $9EC66C                                //
+//                                                //
+////////////////////////////////////////////////////
+
+EventPointerTable(0x7, PointerList)
+
+setText(0x160, NewChName)
+
+ALIGN 4
+NewChName:
+String("Dummy Chapter")
+BYTE 0
+
+ALIGN 4
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN $0 $0 $0
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Seize(0,0)
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+Units1:
+UNIT Edgar  0x1 0x1 Level(1,Ally,0)   [0,10] 0x0 0x0 0x1 EdgarReda [IronLance,RegalLance,0x6C] NoAI
+UNIT Jenna  Archer_F 0x1 Level(1,Ally,0)   [0,10] 0x0 0x0 0x0 0x0 [IronBow,0x6C] NoAI
+UNIT Duncan  Fighter 0x1 Level(1,Ally,0)   [0,9] 0x0 0x0 0x1 DuncanReda [IronAxe,0x6C] NoAI
+UNIT Kurt  Mercenary 0x1 Level(1,Ally,0)   [0,11] 0x0 0x0 0x1 KurtReda [IronSword,0x6C] NoAI
+UNIT
+EdgarReda:
+REDA [2,10] 0x0 0x1 0x00 0x0
+DuncanReda:
+REDA [1,9] 0x0 0x1 0x00 0x0
+KurtReda:
+REDA [2,11] 0x0 0x1 0x00 0x0
+StellaReda:
+REDA [1,6] 0x0 0x1 0x00 0x0
+
+EnemyUnits:
+// Unique
+UNIT Ch1Boss Knight 0x40 Level(4,Enemy,0)     [18,2] 0x0 0x0 0x0 0x0 [SteelAxe,HandAxe,IronSword,SteelSword] NeverMoveAI
+UNIT Matthias Soldier 0x40 Level(2,Enemy,0)     [7,7] 0x0 0x0 0x0 0x0 [IronLance,0x6C,0x0] NeverMoveAI
+UNIT Sasha Myrmidon_F 0x40 Level(5,Enemy,0)     [17,2] 0x0 0x0 0x0 0x0 [SlimSword,SteelBlade,FireSword,0x6C] DoNothing
+UNIT
+
+Traps1:
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+BeginningScene:
+ENUT 0x129 // AllUnitsMustEscapeFlag
+MUSC 37
+CAM1 [0,11]
+LOAD1 0x1 EnemyUnits
+ENUN
+FADU 16
+LOAD1 0x0 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
+/*
+Text(TEXT_Ch1_Start_Edgar)
+FlashCursor(Matthias,0x20)
+Text(TEXT_Ch1_Start_Matthias)
+*/
+ENUN
+NoFade
+ENDA
+
+EndingScene:
+ASMC 0x85C71 0x381F5 0x37CF9 //show records screen
+STAL 120
+EVBIT_F 0x2
+MNTS 0x1 //return to title screen
+NoFade
+ENDA

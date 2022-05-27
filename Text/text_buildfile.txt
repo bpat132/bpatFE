@@ -121,3 +121,4 @@ a skill when used.[X]
 #include "unitinfo_text.txt"
 
 #include "NonChapterText/CharNamesDescs.txt"
+#include "ChapterText/ChapterTextInstaller.txt"

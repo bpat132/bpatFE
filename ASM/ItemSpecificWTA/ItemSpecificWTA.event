@@ -23,8 +23,8 @@ BYTE Fire LightBrand 15 1
 BYTE Thunder LightBrand 15 1
 BYTE Bolganone LightBrand 15 1
 BYTE Bolting LightBrand 15 1
-BYTE WindTome LightBrand 15 1
-BYTE StellaTome LightBrand 15 1
+//BYTE WindTome LightBrand 15 1
+//BYTE StellaTome LightBrand 15 1
 
 BYTE FireSword LightBrand 15 1
 BYTE WindSword LightBrand 15 1
