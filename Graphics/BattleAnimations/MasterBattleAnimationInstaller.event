@@ -1,0 +1,61 @@
+#ifndef ClassAnimTable
+  #define ClassAnimTable (0xc00008-0x20)
+#endif
+
+#define AnimTableEntry(index) "ORG ClassAnimTable + (index * 0x20)"
+
+#define SwordAnim(Animation) "BYTE Swords 0x01 ; SHORT Animation"
+#define SpearAnim(Animation) "BYTE Lances 0x01 ; SHORT Animation"
+#define AxeAnim(Animation) "BYTE Axes 0x01 ; SHORT Animation"
+#define HandAxeAnim(Animation) "BYTE HandAxe 0x00 ; SHORT Animation ; BYTE Tomahawk 0x00 ; SHORT Animation"
+#define BowAnim(Animation) "BYTE Bows 0x01 ; SHORT Animation"
+#define StaffAnim(Animation) "BYTE Staves 0x01 ; SHORT Animation"
+#define AnimaAnim(Animation) "BYTE Anima 0x01 ; SHORT Animation"
+#define LightAnim(Animation) "BYTE Light 0x01 ; SHORT Animation"
+#define DarkAnim(Animation) "BYTE Dark 0x01 ; SHORT Animation"
+#define UnarmedAnim(Animation) "BYTE Disarmed 0x01 ; SHORT Animation"
+#define SpecialAnim(Animation,Weapon) "BYTE Weapon 0x00 ; SHORT Animation"
+
+// Credit: Nuramon
+#include "Animations/lord_lance.event"
+#include "Animations/lord_unarmed.event"
+
+// Credit: Alusq
+#include "Animations/soldier_lance Installer.event"
+#include "Animations/soldier_unarmed Installer.event"
+
+// Credit: Yangfly Master
+#include "Animations/cleric_staff Installer.event"
+#include "Animations/cleric_unarmed Installer.event"
+
+// Credit: Eldritch Abomination
+#include "Animations/thief_f_sword Installer.event"
+#include "Animations/thief_f_unarmed Installer.event"
+
+ThiefFAnim:
+SwordAnim(0xA2)
+UnarmedAnim(0xA4)
+WORD 0x0 // Seperator
+
+// Credit: TBA, Orihara_Saki
+#include "Animations/knight_axe Installer.event"
+#include "Animations/knight_handaxe Installer.event"
+
+ArmorKnightAnim:
+AxeAnim(0xB3)
+HandAxeAnim(0xB4)
+UnarmedAnim(0x41)
+WORD 0x0 // Seperator
+
+// Credit: Mikey Seregon, Alfred Kamon
+#include "Animations/wr_axe.event"
+#include "Animations/wr_handaxe.event"
+#include "Animations/wr_unarmed.event"
+
+WyvernRiderAnim:
+
+AxeAnim(0xAE)
+HandAxeAnim(0xAF)
+UnarmedAnim(0x59)
+WORD 0x0 // Seperator
+

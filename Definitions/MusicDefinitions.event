@@ -1,4 +1,14 @@
-#define FFMQ_Battle1 0x9
-#define MadouMonogatari123_I_TRY_OUT 0x13
-#define EtrianOdyssey3_FirstCampaign 0x19
-#define KitN_MelliaSortie 0x1a
+#define FE11_preps 0x36 // replacing preps music
+#define EtrianOdyssey3_FirstCampaign 0x19 // replacing player phase battle music
+#define KitN_MelliaSortie 0x1a // replacing enemy phase battle music
+
+#define FFMQ_Battle1 0x26D // ch1-X player phase map music
+#define MadouMonogatari123_I_TRY_OUT 0x26E // ch1-X enemy phase map music
+
+#define KitN_SortieFormation 0x26F // event music: tense
+#define BoF2_StrongerMonsters 0x270 // event music: upbeat
+#define DW3_Oppression 0x271 // event music: bad guys
+#define EO3_ThoseWhoSlayAndFall 0x272 // event music: recruitment
+#define NierA_DCDA 0x273 // ch1-X boss music
+
+

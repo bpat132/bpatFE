@@ -1,0 +1,255 @@
+#ifndef ClassAnimTable
+  #ifdef _FE8_
+    #define ClassAnimTable (0xc00008-0x20)
+  #endif
+  #ifdef _FE7_
+    #define ClassAnimTable (0xe00008-0x20)
+  #endif
+#endif
+
+#define AnimTableEntry(index) "ORG ClassAnimTable + (index * 0x20)"
+
+//////////////Installed animations go here:
+
+#define SwordAnim(Animation) "BYTE Swords 0x01 ; SHORT Animation"
+#define SpearAnim(Animation) "BYTE Lances 0x01 ; SHORT Animation"
+#define AxeAnim(Animation) "BYTE Axes 0x01 ; SHORT Animation"
+#define HandAxeAnim(Animation) "BYTE HandAxe 0x00 ; SHORT Animation ; BYTE Tomahawk 0x00 ; SHORT Animation"
+#define BowAnim(Animation) "BYTE Bows 0x01 ; SHORT Animation"
+#define StaffAnim(Animation) "BYTE Staves 0x01 ; SHORT Animation"
+#define AnimaAnim(Animation) "BYTE Anima 0x01 ; SHORT Animation"
+#define LightAnim(Animation) "BYTE Light 0x01 ; SHORT Animation"
+#define DarkAnim(Animation) "BYTE Dark 0x01 ; SHORT Animation"
+#define UnarmedAnim(Animation) "BYTE Disarmed 0x01 ; SHORT Animation"
+#define SpecialAnim(Animation,Weapon) "BYTE Weapon 0x00 ; SHORT Animation"
+
+
+
+  //#include "my animation Installer.event"
+//#include "armorknight_axe Installer.event"
+//#include "armorknight_handaxe Installer.event"
+
+// Credit: Nuramon
+#include "lord_lance.event"
+#include "lord_unarmed.event"
+/*
+LordAnim:
+LanceAnim(0xB6)
+WORD 0x0
+*/
+
+
+
+
+// Credit: Alusq
+#include "soldier_lance Installer.event"
+#include "soldier_unarmed Installer.event"
+
+// Credit: Yangfly Master
+#include "cleric_staff Installer.event"
+#include "cleric_unarmed Installer.event"
+
+// Credit: Glenwing, MK404
+/*
+#include "fighter_axe Installer.event"
+#include "fighter_handaxe Installer.event"
+#include "fighter_unarmed Installer.event"
+*/
+
+//////////
+
+// Credit: Eldritch Abomination
+#include "thief_f_sword Installer.event"
+#include "thief_f_unarmed Installer.event"
+
+ThiefFAnim:
+SwordAnim(0xA2)
+UnarmedAnim(0xA4)
+WORD 0x0 // Seperator
+
+// Credit: Nuramon,MarioKirby,Wan
+#include "pirate_f_axe Installer.event"
+#include "pirate_f_handaxe Installer.event"
+#include "pirate_f_unarmed Installer.event"
+
+PirateFAnim:
+AxeAnim(0xB6)
+HandAxeAnim(0xB7)
+UnarmedAnim(0xB9)
+WORD 0x0 // Seperator
+
+
+//////////
+
+
+// Credit: TBA, Orihara_Saki
+#include "knight_axe Installer.event"
+#include "knight_handaxe Installer.event"
+
+ArmorKnightAnim:
+AxeAnim(0xB3)
+HandAxeAnim(0xB4)
+UnarmedAnim(0x41)
+WORD 0x0 // Seperator
+
+
+/*
+*/
+/*
+// These actually are wyvern knight....
+// Credit: Feaw, St jack, Itranc
+#include "wyvern_rider_axe Installer.event"
+#include "wyvern_rider_handaxe Installer.event"
+#include "wyvern_rider_unarmed Installer.event"
+*/
+// Correct wyvern rider anims
+// Credit: Mikey Seregon, Alfred Kamon
+#include "wr_axe.event"
+#include "wr_handaxe.event"
+#include "wr_unarmed.event"
+
+WyvernRiderAnim:
+
+AxeAnim(0xAE)
+HandAxeAnim(0xAF)
+UnarmedAnim(0x59)
+WORD 0x0 // Seperator
+
+/*
+*/
+
+
+//#define StandingMapSprite(aId, width, height, gfxPointer) "PUSH; ORG 0x8AF880 + (aId * 8); SHORT height width; POIN gfxPointer; POP"
+//#define MovingMapSprite(aId, apPointer, gfxPointer) "PUSH; ORG 0x9A2E00 + ((aId - 1) * 8); POIN gfxPointer apPointer; POP"
+
+#define Large 0x02 // Use for 32x32 frames
+#define Medium 0x01 // Use for 32x16 frames
+#define Small 0x00 // Use for 16x16 frames
+
+/*
+KnightSt:
+#incext Png2Dmp "knight_st.png" --lz77
+
+KnightMv:
+#incext Png2Dmp "knight_mv.png" --lz77
+*/
+
+//#define StandingMapSprite(aId, width, height, gfxPointer) "PUSH; ORG 0x8AF880 + (aId * 8); SHORT height width; POIN gfxPointer; POP"
+//#define MovingMapSprite(aId, apPointer, gfxPointer) "PUSH; ORG 0x9A2E00 + ((aId - 1) * 8); POIN gfxPointer apPointer; POP"
+//#define StandingMapSprite(aId, size, gfxPointer) "PUSH; ORG StandingMapSpriteTable + (aId * 8); SHORT 0 size; POIN gfxPointer; POP"
+//#define MovingMapSprite(aId, apPointer, gfxPointer) "PUSH; ORG MovingMapSpriteTable + ((aId - 1) * 8); POIN gfxPointer apPointer; POP"
+#define StandingMapSprite(aId, size, gfxPointer) "PUSH; ORG 0x8AF880 + (aId * 8); SHORT 0 size; POIN gfxPointer; POP"
+#define MovingMapSprite(aId, apPointer, gfxPointer) "PUSH; ORG 0x9A2E00 + ((aId - 1) * 8); POIN gfxPointer apPointer; POP"
+
+#define MapSprite16x16 0
+#define MapSprite16x32 1
+#define MapSprite32x32 2
+
+StandingMapSprite(0x45, 0, ThiefFSt)
+MovingMapSprite(Bonewalker, 0x81F1080, ThiefFMv)
+
+// Credit: StreetHero
+StandingMapSprite(0x43, 0, PirateFSt)
+MovingMapSprite(Revenant, 0x81EFE70, PirateFMv)
+
+StandingMapSprite(6, 1, KnightSt)
+MovingMapSprite(Knight, 0x1C7E74, KnightMv)
+MovingMapSprite(Knight_F, 0x1C7E74, KnightMv)
+
+StandingMapSprite(0x19, 1, WyvernSt)
+MovingMapSprite(WyvernRider, 0x81D403C, WyvernMv)
+
+ALIGN 4
+ThiefFSt:
+#incext Png2Dmp "thief_f_st.png" --lz77
+ALIGN 4
+ThiefFMv:
+#incext Png2Dmp "thief_f_mv.png" --lz77
+
+ALIGN 4
+PirateFSt:
+#incext Png2Dmp "pirate_f_st.png" --lz77
+ALIGN 4
+PirateFMv:
+#incext Png2Dmp "pirate_f_mv.png" --lz77
+
+ALIGN 4
+KnightSt:
+#incext Png2Dmp "knight_st.png" --lz77
+ALIGN 4
+KnightMv:
+#incext Png2Dmp "knight_mv_fixed.png" --lz77
+
+ALIGN 4
+WyvernSt:
+#incext Png2Dmp "wyvern_st_fixed.png" --lz77
+ALIGN 4
+WyvernMv:
+#incext Png2Dmp "wyvern_mv_fixed.png" --lz77
+
+
+
+
+/*
+ALIGN 4
+LanceCavStandingMapSprite:
+#incext Png2Dmp "CavLance.png" --lz77
+
+ALIGN 4
+LanceCavMovingMapSprite:
+#incext Png2Dmp "CavLanceAnim.png" --lz77
+*/
+
+
+/*
+
+TestAnim:
+LanceAnim(0x35)
+UnarmedAnim(0x36)
+WORD 0x0 // Seperator
+
+
+
+
+//0x88aefd8
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

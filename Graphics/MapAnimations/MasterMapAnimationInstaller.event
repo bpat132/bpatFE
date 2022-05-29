@@ -1,0 +1,41 @@
+
+#define StandingMapSprite(aId, size, gfxPointer) "PUSH; ORG 0x8AF880 + (aId * 8); SHORT 0 size; POIN gfxPointer; POP"
+#define MovingMapSprite(aId, apPointer, gfxPointer) "PUSH; ORG 0x9A2E00 + ((aId - 1) * 8); POIN gfxPointer apPointer; POP"
+
+#define MapSprite16x16 0
+#define MapSprite16x32 1
+#define MapSprite32x32 2
+
+StandingMapSprite(0x45, 0, ThiefFSt)
+MovingMapSprite(Bonewalker, 0x81F1080, ThiefFMv)
+
+StandingMapSprite(6, 1, KnightSt)
+MovingMapSprite(Knight, 0x1C7E74, KnightMv)
+MovingMapSprite(Knight_F, 0x1C7E74, KnightMv)
+
+StandingMapSprite(0x19, 1, WyvernSt)
+MovingMapSprite(WyvernRider, 0x81D403C, WyvernMv)
+
+// FE6
+ALIGN 4
+ThiefFSt:
+#incext Png2Dmp "Animations/thief_f_st.png" --lz77
+ALIGN 4
+ThiefFMv:
+#incext Png2Dmp "Animations/thief_f_mv.png" --lz77
+
+// Agro
+ALIGN 4
+KnightSt:
+#incext Png2Dmp "Animations/knight_st.png" --lz77
+ALIGN 4
+KnightMv:
+#incext Png2Dmp "Animations/knight_mv.png" --lz77
+
+// flasuban
+ALIGN 4
+WyvernSt:
+#incext Png2Dmp "Animations/wyvern_st.png" --lz77
+ALIGN 4
+WyvernMv:
+#incext Png2Dmp "Animations/wyvern_mv.png" --lz77

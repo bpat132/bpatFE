@@ -18,3 +18,5 @@ PROTECT $36B4
 PROTECT $3788
 
 #define IconTable NewIconTable
+
+#include "EA/BossMusicTable.event"

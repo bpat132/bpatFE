@@ -9,11 +9,32 @@ voicegroup000:
 #define MapMusicGroup 1
 #define SFXGroup 6
 
+#include "MusicEvents/FE11_preps_epicer.event"
+SongTable(FE11_preps,song34,MapMusicGroup)
+
 #include "MusicEvents/FFMQ_Battle1_RW.event"
 SongTable(FFMQ_Battle1,song19,MapMusicGroup)
+
 #include "MusicEvents/MadouMonogatari123_I-TRY-OUT_Sme.event"
 SongTable(MadouMonogatari123_I_TRY_OUT,EnemyPhase,MapMusicGroup)
+
 #include "MusicEvents/EtrianOdyssey3_FirstCampaign_Thegis.event"
 SongTable(EtrianOdyssey3_FirstCampaign,song5D,BattleMusicGroup)
+
 #include "MusicEvents/KitN_MelliaSortie_SaXor.event"
 SongTable(KitN_MelliaSortie,L_Mellia_Sortie,BattleMusicGroup)
+
+#include "MusicEvents/KitN_SortieFormation_SaXor.event"
+SongTable(KitN_SortieFormation,L_Sortie_Formation,BattleMusicGroup)
+
+#include "MusicEvents/BoF2_StrongerMonsters_SaXor.event"
+SongTable(BoF2_StrongerMonsters,L_StrongerMonsters,BattleMusicGroup)
+
+#include "MusicEvents/DW3_Oppression_Pandan.event"
+SongTable(DW3_Oppression,song0153,BattleMusicGroup)
+
+#include "MusicEvents/EO3_ThoseWhoSlayAndFall_Psyche.event"
+SongTable(EO3_ThoseWhoSlayAndFall,song02,BattleMusicGroup)
+
+#include "MusicEvents/NierA_DCDA_Mycahel.event"
+SongTable(NierA_DCDA,song01E9,BattleMusicGroup)

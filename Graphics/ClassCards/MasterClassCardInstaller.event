@@ -1,0 +1,14 @@
+
+#define ClassCard NextLocation
+#define setCardEntry(cardEntry,cardLocation,cardPaletteLocation) "PUSH; ORG PortraitTable+cardEntry*0x1C; POIN 0 0 cardPaletteLocation 0 cardLocation; POP"
+
+KnightPortrait:
+#incext Png2Dmp "Cards/axe_knight_epicer2.png" --lz77
+KnightPortraitPalette:
+#incext Png2Dmp "Cards/axe_knight_epicer2.png" --palette-only
+
+#define KnightCard 0x76
+
+setCardEntry(KnightCard,KnightPortrait,KnightPortraitPalette)
+
+

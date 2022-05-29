@@ -81,6 +81,10 @@ UNIT Matthias Soldier 0x40 Level(2,Enemy,0)     [7,7] 0x0 0x0 0x0 0x0 [IronLance
 UNIT Sasha Myrmidon_F 0x40 Level(5,Enemy,0)     [17,2] 0x0 0x0 0x0 0x0 [SlimSword,SteelBlade,FireSword,Vuln] DoNothing
 
 // Generics
+UNIT 0x80 Knight 0x40 Level(1,Enemy,1)     [12,3] DropItem 0x0 0x0 0x0 [HandAxe] NeverMoveAI
+UNIT 0x80 Knight 0x40 Level(1,Enemy,1)     [4,10] 0x0 0x0 0x0 0x0 [IronAxe] NeverMoveAI
+UNIT 0x80 Knight 0x40 Level(1,Enemy,1)     [5,10] 0x0 0x0 0x0 0x0 [HandAxe] NeverMoveAI
+
 //UNIT 0x82 Brigand 0x40 Level(1,Enemy,1)     [5,10] 0x0 0x0 0x0 0x0 [HandAxe] AttackingBrigandAI
 UNIT 0x82 Brigand 0x40 Level(1,Enemy,1)     [5,10] 0x0 0x0 0x0 0x0 [IronAxe] AttackingBrigandAI
 UNIT
@@ -95,17 +99,17 @@ ALIGN 4
 
 BeginningScene:
 ENUT 0x129 // AllUnitsMustEscapeFlag
-MUSC 37
+MUSC BoF2_StrongerMonsters
 CAM1 [0,11]
 LOAD1 0x1 EnemyUnits
 ENUN
 FADU 16
 LOAD1 0x0 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
-/*
+
 Text(TEXT_Ch1_Start_Edgar)
 FlashCursor(Matthias,0x20)
 Text(TEXT_Ch1_Start_Matthias)
-*/
+
 ENUN
 NoFade
 ENDA
