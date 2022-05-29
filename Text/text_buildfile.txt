@@ -120,5 +120,7 @@ a skill when used.[X]
 
 #include "unitinfo_text.txt"
 
+#include "NonChapterText/MiscText.txt"
 #include "NonChapterText/CharNamesDescs.txt"
+#include "NonChapterText/ItemNamesDescs.txt"
 #include "ChapterText/ChapterTextInstaller.txt"

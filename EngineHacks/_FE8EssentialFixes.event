@@ -40,7 +40,11 @@ SHORT $7891 $78D2 $0608
 
 //Set Default Options
   ORG $30d8a  //animations type 2
+  #ifndef _ANIMS_OFF_
   SHORT $3306
+  #else
+  SHORT $3302 // animations off
+  #endif
   ORG $30da6  //Game/text speed Fast, Autocursor off
   SHORT $22d0
   

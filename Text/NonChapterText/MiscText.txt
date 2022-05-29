@@ -1,0 +1,33 @@
+
+# 0x030D
+Mounted knights with swift movement.[NL]
+Equip: Lances.[X]
+
+# 0x030F
+Heavily armored knights with poor[.][NL]
+movement. Equip: Axes.[X]
+
+# 0x031A
+High-flying knights vulnerable only to[NL]
+bows and magic. Equip: Axes.[X]
+
+# 0x0339
+Disciplined soldiers with[.][NL]
+great resilience.[.][X]
+
+
+# 0x0518
+Frozen[X]
+
+# 0x0557
+Craaack! Can't act or avoid[.][NL]
+attacks and speed is reduced to[NL]
+zero, but receive 10 less damage.[X]
+
+# 0x0552
+Normal.[.][NL]
+Feeling healthy.[X]
+
+# 0x055B
+Brrr... Frozen in place! Can't[NL]
+move or avoid attacks.[X]

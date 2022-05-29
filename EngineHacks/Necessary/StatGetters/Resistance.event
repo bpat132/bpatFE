@@ -5,6 +5,7 @@
 
 pResistanceModifiers: // Resistance
 	POIN prAddUnitResistance prHalveIfCapturing prDebuffRes prAddEquipResistance prItemPassiveResistance prRallyRes prAddPureWaterBarrierMod prLifeAndDeathMinus prSkillFury prFortressResistanceRes prDefiantRes prPushRes
+	POIN prPetrifyRes
 	#ifdef DEBUFFS_MIN_ZERO
 	POIN prMinZero
 	#endif
@@ -32,6 +33,10 @@ _testSkill(HeroesLifeAndDeathID,0,5)
 
 prFortressResistanceRes:
 	_testSkill(FortressResistanceID,5,0)
+
+prPetrifyRes:
+	rIfUnitHasStatus(PetrifyStatusID)
+		rAddConst(10)
 
 prItemPassiveResistance:
 #ifndef DONT_STACK_BOOSTS

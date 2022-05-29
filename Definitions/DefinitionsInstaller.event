@@ -1,7 +1,9 @@
 #include DebugDefinitions.event
 #include MacroDefinitions.event
 #include TableEntryDefinitions.event
+#include MusicDefinitions.event
 
-//misc stuff
+// enabling engine hacks
 #define USE_STRMAG_SPLIT
+#define STATUS_WEAPONS
 

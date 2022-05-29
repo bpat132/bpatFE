@@ -15,7 +15,7 @@ setText(0x160, NewChName)
 
 ALIGN 4
 NewChName:
-String("Dummy Chapter")
+String("Ch1: Urban Skirmish")
 BYTE 0
 
 ALIGN 4
@@ -58,10 +58,12 @@ Tutorial:
 END_MAIN
 
 Units1:
-UNIT Edgar  0x1 0x1 Level(1,Ally,0)   [0,10] 0x0 0x0 0x1 EdgarReda [IronLance,RegalLance,0x6C] NoAI
-UNIT Jenna  Archer_F 0x1 Level(1,Ally,0)   [0,10] 0x0 0x0 0x0 0x0 [IronBow,0x6C] NoAI
-UNIT Duncan  Fighter 0x1 Level(1,Ally,0)   [0,9] 0x0 0x0 0x1 DuncanReda [IronAxe,0x6C] NoAI
-UNIT Kurt  Mercenary 0x1 Level(1,Ally,0)   [0,11] 0x0 0x0 0x1 KurtReda [IronSword,0x6C] NoAI
+UNIT Edgar  0x1 0x1 Level(1,Ally,0)   [0,10] 0x0 0x0 0x1 EdgarReda [IronLance,RegalLance,Vuln] NoAI
+UNIT Jenna  Archer_F 0x1 Level(1,Ally,0)   [0,10] 0x0 0x0 0x0 0x0 [IronBow,FrostBow,Vuln] NoAI
+UNIT Duncan  Fighter 0x1 Level(1,Ally,0)   [0,9] 0x0 0x0 0x1 DuncanReda [IronAxe,Vuln] NoAI
+UNIT Kurt  Mercenary 0x1 Level(1,Ally,0)   [0,11] 0x0 0x0 0x1 KurtReda [IronSword,FireSword,LightBrand,Vuln] NoAI
+
+UNIT Lisa  Cleric 0x1 Level(3,Ally,0)   [3,10] 0x0 0x0 0x0 0x0 [FreezeStaff,PetrifyStaff] NoAI
 UNIT
 EdgarReda:
 REDA [2,10] 0x0 0x1 0x00 0x0
@@ -74,9 +76,13 @@ REDA [1,6] 0x0 0x1 0x00 0x0
 
 EnemyUnits:
 // Unique
-UNIT Ch1Boss Knight 0x40 Level(4,Enemy,0)     [18,2] 0x0 0x0 0x0 0x0 [SteelAxe,HandAxe,IronSword,SteelSword] NeverMoveAI
-UNIT Matthias Soldier 0x40 Level(2,Enemy,0)     [7,7] 0x0 0x0 0x0 0x0 [IronLance,0x6C,0x0] NeverMoveAI
-UNIT Sasha Myrmidon_F 0x40 Level(5,Enemy,0)     [17,2] 0x0 0x0 0x0 0x0 [SlimSword,SteelBlade,FireSword,0x6C] DoNothing
+UNIT Ch1Boss Knight 0x40 Level(4,Enemy,0)     [18,2] 0x0 0x0 0x0 0x0 [SteelAxe,HandAxe] NeverMoveAI
+UNIT Matthias Soldier 0x40 Level(2,Enemy,0)     [7,7] 0x0 0x0 0x0 0x0 [IronLance,Vuln] NeverMoveAI
+UNIT Sasha Myrmidon_F 0x40 Level(5,Enemy,0)     [17,2] 0x0 0x0 0x0 0x0 [SlimSword,SteelBlade,FireSword,Vuln] DoNothing
+
+// Generics
+//UNIT 0x82 Brigand 0x40 Level(1,Enemy,1)     [5,10] 0x0 0x0 0x0 0x0 [HandAxe] AttackingBrigandAI
+UNIT 0x82 Brigand 0x40 Level(1,Enemy,1)     [5,10] 0x0 0x0 0x0 0x0 [IronAxe] AttackingBrigandAI
 UNIT
 
 Traps1:

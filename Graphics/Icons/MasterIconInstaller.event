@@ -10,6 +10,10 @@
 //#include "ExternalIconSheets/ExternalSheetInstaller.event"
 
 PUSH
-ItemIconSlot(0x1,"png/SwiftSword_Beansy.png") // replacing slim sword
-ItemIconSlot(0xde,"png/FireSword_Lis.png") // Lisandra Brave
+ItemIconSlot(0x1,"png/SwiftSword_Beansy.png") // slim sword
+//ItemIconSlot(0xd1,"png/FireSword.png") // rotten claw
+ItemIconSlot(0xd1,"png/FireSword_LisandraBrave.png") // rotten claw
+ItemIconSlot(0xd2,"png/FrostBow_Beansy.png") // fetid claw
+ItemIconSlot(0x51,"png/FreezeStaff_LisandraBrave.png") // berserk
+ItemIconSlot(0xde,"png/PetrifyStaff_Beansy.png")
 POP

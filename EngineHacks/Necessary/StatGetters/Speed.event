@@ -6,6 +6,7 @@
 pSpeedModifiers: // Speed
 	POIN prAddUnitSpeed prHalveIfRescuing prHalveIfCapturing prDebuffSpd prAddEquipSpeed prItemPassiveSpeed prRallySpd prLifeAndDeathBonus prSkillFury prResolve prDefiantSpd prPushSpd
 	POIN prSubtractWeaponWeight
+	POIN prPetrifySpd
 	#ifdef DEBUFFS_MIN_ZERO
 	POIN prMinZero
 	#endif
@@ -34,6 +35,10 @@ prItemPassiveSpeed:
 #else // DONT_STACK_BOOSTS
 	rPassiveStatBoostsNonStacking(STAT_SPEED)
 #endif // DONT_STACK_BOOSTS
+
+prPetrifySpd:
+	rIfUnitHasStatus(PetrifyStatusID)
+		rConstant(0)
 
 
 #endif // MODULAR_GETTER_SPEED_EVENT

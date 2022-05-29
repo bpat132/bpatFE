@@ -5,6 +5,7 @@
 ALIGN 4
 pConModifiers: // Consitition
 	POIN prAddUnitBaseCon prAddUnitConBonus prItemPassiveCon (prGetItemConBonus-1)
+	POIN prPetrifyCon
 	#ifdef DEBUFFS_MIN_ZERO
 	POIN prMinZero
 	#endif
@@ -23,6 +24,10 @@ _prAddCharConBonus: // byte 0x13 in ROM char data is personal consition bonus
 
 prAddUnitConBonus:
 	rAdd(rSByteAt(UNIT_CON_BONUS))
+
+prPetrifyCon:
+	rIfUnitHasStatus(PetrifyStatusID)
+		rConstant(25)
 
 #include "_asm/GetItemConBonus.lyn.event" 
 

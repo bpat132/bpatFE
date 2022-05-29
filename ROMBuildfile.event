@@ -14,6 +14,10 @@
     //CSV tables
     #include "Tables/TableInstaller.event"
     MESSAGE Used table space ends at currentOffset
+    
+    //Music
+    #include "Music/Music Installer.event"
+    MESSAGE Music data ends at CURRENTOFFSET
 
     //Engine Hacks
     #include "EngineHacks/_MasterHackInstaller.event"

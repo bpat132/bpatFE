@@ -1,0 +1,37 @@
+
+## SwiftSwordName
+Swift Sword[X]
+## SlimWeaponDesc
+Follow-ups occur before counter.[X]
+
+## FireSwordName
+Fire Sword[X]
+## FireSwordDesc
+Empowered by fire magic.[X]
+
+## FrostBowName
+Frost Bow[X]
+## FrostBowDesc
+Magic, freezes if player phase.[X]
+
+## FreezeStaffName
+Freeze[X]
+## FreezeStaffDesc
+Prevents an enemy from moving[NL]
+or dodging for one turn.[X]
+## FreezeStaffDesc2
+Prevents an enemy from[NL]
+moving or dodging for[NL]
+one turn.[X]
+
+## PetrifyStaffName
+Petrify[X]
+## PetrifyStaffDesc
+Petrifies any unit for one turn,[NL]
+immobilizing but boosting defense.[X]
+## PetrifyStaffDesc2
+Petrifies a unit for[NL]
+one turn, immobilizing[NL]
+but boosting defense.[X]
+
+

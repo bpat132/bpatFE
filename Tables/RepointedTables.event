@@ -1,3 +1,4 @@
+// Icon table
 
 ALIGN 4
 NewIconTable:
@@ -15,7 +16,5 @@ POP
 
 PROTECT $36B4
 PROTECT $3788
-
-MESSAGE icon table ptr is NewIconTable
 
 #define IconTable NewIconTable

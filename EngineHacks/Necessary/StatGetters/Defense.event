@@ -5,6 +5,7 @@
 
 pDefenseModifiers: // Defense
 	POIN prAddUnitDefense prHalveIfCapturing prDebuffDef prAddEquipDefense prItemPassiveDefense prRallyDef prLifeAndDeathMinus VigorDanceCheck prSkillFury prFortressDefenseDef prDefiantDef prPushDef
+	POIN prPetrifyDef
 	#ifdef DEBUFFS_MIN_ZERO
 	POIN prMinZero
 	#endif
@@ -26,6 +27,10 @@ prRallyDef:
 	
 prFortressDefenseDef:
 	_testSkill(FortressDefenseID,5,0)
+
+prPetrifyDef:
+	rIfUnitHasStatus(PetrifyStatusID)
+		rAddConst(10)
 
 prItemPassiveDefense:
 #ifndef DONT_STACK_BOOSTS

@@ -33,13 +33,15 @@
 #define BTomeCost 16
 
 // Items
+#define Vuln 0x6c
 #define SwiftSword SlimSword
 #define Bolganone Elfire
 #define Thoron Bolting
 #define RegalLance Reginleif
-#define FireSword 0xbd
-
-
+#define FreezeStaff Berserk
+#define FireSword RottenClaw
+#define FrostBow FetidClaw
+#define PetrifyStaff 0xbe
 
 // Characters
 #define Edgar 0x1
@@ -123,3 +125,6 @@
 #define Ch4BossMug 0x34
 #define Ch5BossMug 0x35
 #define Ch6BossMug 0x36
+
+// Other
+#define FreezeStatusID 0x9

@@ -23,6 +23,13 @@ ALIGN 4
 AvoidLabel:
 #incbin "HitAvo/avoidhack.dmp"
 
+// Staff experience
+PUSH
+ORG $2C66A
+BL(0x175DC) //gets item might
+SHORT 0x1C02 0xE002 //mov r2,r0; b 2C678
+POP
+
 // Staff hitrate
 // 0x2ccdc is formula location
 PUSH
@@ -152,8 +159,8 @@ To make a weapon a status weapon, just give it weapon effect 0xD and put the ID 
 if you want to change this amount, the byte at 0x178EA is the duration shifted 4 bits left (the default value is 0x50 which equates to 5 turns, 0x30 would equate to 3 turns, etc).
 */
 // Seems to be 0x20 not 0x22
-//#include "StatusWeapons/StatusWeapons.event"
-//#define STATUS_WEAPONS
+
+// Change duration to 1
 PUSH
 ORG 0x178EA
 BYTE 0x10
@@ -269,12 +276,12 @@ POP
 
 // Freeze text pointer
 // Changes text ptr from 0x55A -> 0x55B, don't remember why this matters?
-/*
+
 PUSH
 ORG 0x88A78
 WORD 0x08088AEC
 POP
-*/
+
 
 // CHAX
 
