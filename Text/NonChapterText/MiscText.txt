@@ -1,3 +1,31 @@
+## EscapeObjectiveName
+Escape[X]
+
+## EscapeObjectiveDesc
+Escape with[N]
+all units[X]
+
+## SeizeName
+Seize[X]
+
+## SeizeThroneObjectiveDesc
+Seize the throne[X]
+
+## SeizeGateObjectiveDesc
+Seize the throne[X]
+
+## DefeatBossName
+Defeat boss[X]
+
+## DefeatBossObjectiveDesc
+Defeat the boss[X]
+
+## RoutName
+Rout[X]
+
+## RoutObjectiveDesc
+Defeat all enemies[X]
+
 
 # 0x030D
 Mounted knights with swift movement.[NL]

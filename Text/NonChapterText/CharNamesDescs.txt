@@ -80,7 +80,7 @@ from Kemaroa.[X]
 Sasha[X]
 ## SashaDesc
 A grim sellsword wandering the land.[NL]
-Cares more for fighting than gold[X]
+Cares more for fighting than gold.[X]
 
 ## RichardName
 Richard[X]

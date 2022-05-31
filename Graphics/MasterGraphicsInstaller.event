@@ -3,3 +3,5 @@
 #include "ClassCards/MasterClassCardInstaller.event"
 #include "BattleAnimations/MasterBattleAnimationInstaller.event"
 #include "MapAnimations/MasterMapAnimationInstaller.event"
+#include "TitleScreen/MasterTitleScreenInstaller.event"
+#include "Palettes/Palette Setup.event" // Teraspark pal2ea

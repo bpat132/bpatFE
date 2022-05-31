@@ -10,5 +10,6 @@
 #define DW3_Oppression 0x271 // event music: bad guys
 #define EO3_ThoseWhoSlayAndFall 0x272 // event music: recruitment
 #define NierA_DCDA 0x273 // ch1-X boss music
+#define ToS_LastBattleDecision 0x274 // event music: victory
 
 

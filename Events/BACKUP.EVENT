@@ -1,0 +1,227 @@
+
+////////////////////////////////////////////////////
+//                                                //
+// Disassembled with Nintenlord's Event Assembler //
+// Version: 11.0.0.0                              //
+// Game: FE8                                      //
+// File: FE8_clean.gba                            //
+// Offset: $9EC66C                                //
+//                                                //
+////////////////////////////////////////////////////
+
+EventPointerTable(0x7, PointerList)
+
+setText(0x160, NewChName)
+
+ALIGN 4
+NewChName:
+String("Ch1: Urban Skirmish")
+BYTE 0
+
+ALIGN 4
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN $0 $0 $0
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+/*
+#ifdef _NORMAL_MODE_
+TURN 0x0 BrigandReinforcements [6,0] 0x0
+TURN 0x0 BrigandReinforcements2 [9,0] 0x0
+#else
+TURN 0x0 BrigandReinforcements [5,0] 0x0
+TURN 0x0 BrigandReinforcements2 [8,0] 0x0
+#endif
+
+TURN 0x0 EnemyReinforcements [4,0] 0x0
+TURN 0x0 EnemyReinforcements2 [5,0] 0x0
+
+TURN 0x0 EvilReinforcements [10,0] 0x0
+TURN 0x0 EvilReinforcements [11,0] 0x0
+TURN 0x0 EvilReinforcements [12,0] 0x0
+*/
+
+TURN 0x0 StellaEvent [3,0] 0x0
+TURN 0x0 SashaEvent [4,0] 0x0
+END_MAIN
+
+/*
+EnemyReinforcements:
+EnemyReinforcements(EnemyReinforcementUnits)
+
+EnemyReinforcements2:
+EnemyReinforcements(EnemyReinforcementUnits2)
+
+BrigandReinforcements:
+EnemyReinforcements(BrigandReinforcementUnits)
+
+BrigandReinforcements2:
+EnemyReinforcements(BrigandReinforcementUnits2)
+*/
+
+EvilReinforcements:
+EnemyReinforcements(EvilReinforcementUnits)
+
+StellaEvent:
+CAM1 [0,0]
+ReinforcementEventNoENDA(StellaReinforcementUnits)
+Text(TEXT_Ch1_Stella_Event1)
+MOVE 15 0x84 [1,5]
+// Scripted battle
+StartBattle
+MissedAttack(1,0)
+CriticalHit(0,25)
+EndAttack
+ENUN
+
+ENUT 0x84
+FIG1 Stella 0x84 Fire
+SET_ACTIVE 0
+CLEAN
+Kill(0x84)
+
+CLEAN
+ENUF 0x84
+Text(TEXT_Ch1_Stella_Event2)
+ENDA
+
+
+SashaEvent:
+MUSC DW3_Oppression
+FlashCursor(Sasha,0x20)
+CAM1 [18,0]
+Text(TEXT_Ch1_Sasha_Event)
+MOVE 0 Sasha [15,0]
+ENUN
+DISA Sasha
+NoFade
+ENDA
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+//Seize(0,0)
+//Escape(18,2)
+
+//Escape(2,10)
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+StellaReinforcementUnits:
+UNIT Stella Mage_F 0x1 Level(1,Ally,0)   [0,6] 0b 0x0 0x1 StellaReda [Fire,Vuln,0x0] [0x0,0x0,0x0,0x0]
+UNIT
+
+Units1:
+UNIT Edgar  0x1 0x1 Level(1,Ally,0)   [0,10] 0x0 0x0 0x1 EdgarReda [IronLance,RegalLance,Vuln] NoAI
+UNIT Jenna  Archer_F 0x1 Level(1,Ally,0)   [0,10] 0x0 0x0 0x0 0x0 [IronBow,FrostBow,Vuln] NoAI
+UNIT Duncan  Fighter 0x1 Level(1,Ally,0)   [0,9] 0x0 0x0 0x1 DuncanReda [IronAxe,Vuln] NoAI
+UNIT Kurt  Mercenary 0x1 Level(1,Ally,0)   [0,11] 0x0 0x0 0x1 KurtReda [IronSword,FireSword,LightBrand,Vuln] NoAI
+UNIT
+EdgarReda:
+REDA [2,10] 0x0 0x1 0x00 0x0
+DuncanReda:
+REDA [1,9] 0x0 0x1 0x00 0x0
+KurtReda:
+REDA [2,11] 0x0 0x1 0x00 0x0
+StellaReda:
+REDA [1,6] 0x0 0x1 0x00 0x0
+
+EnemyUnits:
+// Unique
+UNIT Ch1Boss Knight 0x40 Level(4,Enemy,0)     [18,2] 0x0 0x0 0x0 0x0 [SteelAxe,HandAxe] NeverMoveAI
+UNIT Matthias Soldier 0x40 Level(2,Enemy,0)     [7,7] 0x0 0x0 0x0 0x0 [IronLance,Vuln] NeverMoveAI
+UNIT Sasha Myrmidon_F 0x40 Level(5,Enemy,0)     [17,2] 0x0 0x0 0x0 0x0 [SlimSword,SteelBlade,FireSword,Vuln] DoNothing
+
+UNIT 0x84 Soldier 0x40 Level(1,Enemy,1)     [1,2] 0x0 0x0 0x0 0x0 [IronLance] DoNothing // Cutscene enemy
+
+// Generics
+UNIT 0x80 Knight 0x40 Level(1,Enemy,1)     [12,3] DropItem 0x0 0x0 0x0 [HandAxe] NeverMoveAI
+
+//UNIT 0x82 Brigand 0x40 Level(1,Enemy,1)     [5,10] 0x0 0x0 0x0 0x0 [HandAxe] AttackingBrigandAI
+//UNIT 0x82 Brigand 0x40 Level(1,Enemy,1)     [5,10] 0x0 0x0 0x0 0x0 [IronAxe] AttackingBrigandAI
+UNIT
+
+/*
+EnemyReinforcementUnits:
+UNIT 0x80 Mercenary 0x40 Level(1,Enemy,1)     [9,0] 0x0 0x0 0x0 0x0 [IronSword] PWHAI
+UNIT 0x80 Mage_F 0x40 Level(1,Enemy,1)     [11,0] 0x0 0x0 0x0 0x0 [Fire] PWHAI
+UNIT
+
+EnemyReinforcementUnits2:
+UNIT 0x80 Archer 0x40 Level(1,Enemy,1)     [2,12] 0x0 0x0 0x0 0x0 [IronBow] PWHAI
+UNIT 0x80 Myrmidon_F 0x40 Level(1,Enemy,1)     [3,12] 0x0 0x0 0x0 0x0 [IronSword] PWHAI
+UNIT
+*/
+
+Traps1:
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+BeginningScene:
+ENUT 0x129 // AllUnitsMustEscapeFlag
+MUSC BoF2_StrongerMonsters
+CAM1 [0,11]
+LOAD1 0x1 EnemyUnits
+ENUN
+FADU 16
+LOAD1 0x0 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
+
+Text(TEXT_Ch1_Start_Edgar)
+FlashCursor(Matthias,0x20)
+Text(TEXT_Ch1_Start_Matthias)
+
+ENUN
+NoFade
+ENDA
+
+EndingScene:
+MUSC 50
+//SetBackground(0x0)
+SetBackground(0x2d)
+Text(TEXT_Ch1_End)
+//Text(PlaceholderText)
+GiveItem(SteelLance,Edgar)
+GiveItem(SteelBow,Jenna)
+GiveItem(SteelAxe,Duncan)
+GiveItem(SteelSword,Kurt)
+
+MNC2 0x1
+
+ENDA
+/*
+EndingScene:
+ASMC 0x85C71 0x381F5 0x37CF9 //show records screen
+STAL 120
+EVBIT_F 0x2
+MNTS 0x1 //return to title screen
+NoFade
+ENDA
+*/

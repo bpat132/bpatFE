@@ -25,16 +25,19 @@ SongTable(EtrianOdyssey3_FirstCampaign,song5D,BattleMusicGroup)
 SongTable(KitN_MelliaSortie,L_Mellia_Sortie,BattleMusicGroup)
 
 #include "MusicEvents/KitN_SortieFormation_SaXor.event"
-SongTable(KitN_SortieFormation,L_Sortie_Formation,BattleMusicGroup)
+SongTable(KitN_SortieFormation,L_Sortie_Formation,MapMusicGroup)
 
 #include "MusicEvents/BoF2_StrongerMonsters_SaXor.event"
-SongTable(BoF2_StrongerMonsters,L_StrongerMonsters,BattleMusicGroup)
+SongTable(BoF2_StrongerMonsters,L_StrongerMonsters,MapMusicGroup)
 
 #include "MusicEvents/DW3_Oppression_Pandan.event"
-SongTable(DW3_Oppression,song0153,BattleMusicGroup)
+SongTable(DW3_Oppression,song0153,MapMusicGroup)
 
 #include "MusicEvents/EO3_ThoseWhoSlayAndFall_Psyche.event"
-SongTable(EO3_ThoseWhoSlayAndFall,song02,BattleMusicGroup)
+SongTable(EO3_ThoseWhoSlayAndFall,song02,MapMusicGroup)
 
 #include "MusicEvents/NierA_DCDA_Mycahel.event"
-SongTable(NierA_DCDA,song01E9,BattleMusicGroup)
+SongTable(NierA_DCDA,song01E9,MapMusicGroup)
+
+#include "MusicEvents/ToS_LastBattleDecision_Chair.event"
+SongTable(ToS_LastBattleDecision,songLastBattleDecision,MapMusicGroup)

@@ -1,4 +1,9 @@
 
+## RegalLanceName
+Regal Lance[X]
+## RegalLanceDesc
+Prevents enemy counterattacks.[X]
+
 ## SwiftSwordName
 Swift Sword[X]
 ## SlimWeaponDesc
