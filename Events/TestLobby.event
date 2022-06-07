@@ -1,0 +1,101 @@
+
+////////////////////////////////////////////////////
+//                                                //
+// Disassembled with Nintenlord's Event Assembler //
+// Version: 11.0.0.0                              //
+// Game: FE8                                      //
+// File: FE8_clean.gba                            //
+// Offset: $9EC66C                                //
+//                                                //
+////////////////////////////////////////////////////
+
+EventPointerTable(0x7, PointerList)
+
+setText(0x160, NewChName)
+
+ALIGN 4
+NewChName:
+String("Testing Lobby")
+BYTE 0
+
+ALIGN 4
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN $0 $0 $0
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Seize(0,0)
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+Units1:
+UNIT Edgar EphraimLord 0x1 Level(1,Ally,False) [0,0] 0x0 0x0 0x0 0x1 [IronLance,RegalLance] NoAI
+UNIT
+
+EnemyUnits:
+UNIT 0x80 Fighter 0x40 Level(1,Enemy,1)     [14,9] 0x0 0x0 0x0 0x0 [SteelAxe] NeverMoveAI
+UNIT
+
+UnitsCh2:
+UNIT Edgar EphraimLord 0x1 Level(11,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronLance,RegalLance,Javelin,Vuln] NoAI
+UNIT Jenna Archer_F 0x1 Level(11,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronBow,SteelBow,Vuln] NoAI
+UNIT Duncan Fighter 0x1 Level(2,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronAxe,SteelAxe,HandAxe,Vuln] NoAI
+UNIT Kurt Mercenary 0x1 Level(2,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronSword,SteelSword,SteelBlade,Vuln] NoAI
+UNIT Matthias Soldier 0x1 Level(3,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronLance,SteelLance,Vuln] NoAI
+UNIT Stella Mage_F 0x1 Level(2,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [Fire,Thunder,Vuln] NoAI
+UNIT
+
+Traps1:
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+BeginningScene:
+ENUT 0x1 //no more boss quotes
+ENUT 0x2 //no more death quotes
+#ifdef _TEST_CH2_
+LoadPlayerUnitsTest(UnitsCh2)
+MNC2 Chapter2
+#endif
+ENDA
+//GotoPrepScreen
+
+EndingScene:
+ASMC 0x85C71 0x381F5 0x37CF9 //show records screen
+STAL 120
+EVBIT_F 0x2
+MNTS 0x1 //return to title screen
+NoFade
+ENDA

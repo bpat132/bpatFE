@@ -291,7 +291,8 @@ ORG SkillIcon(ExpertiseID)
 #incbin "SkillIcons/Expertise.dmp"
 
 ORG SkillIcon(CelerityID)
-#incbin "SkillIcons/Celerity.dmp"
+//#incbin "SkillIcons/Celerity.dmp"
+#incbin "SkillIcons/SealSpd.dmp"
 
 ORG SkillIcon(FieryBloodID)
 #incbin "SkillIcons/FieryBlood.dmp"

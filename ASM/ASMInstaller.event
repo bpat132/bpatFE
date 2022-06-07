@@ -44,7 +44,7 @@ POP
 
 
 // Fixed autolevels (stan)
-#include "FixedAutolevels/FixedAutolevels.event"
+//#include "FixedAutolevels/FixedAutolevels.event"
 
 // Huichelaar minimug palette fix
 #include "MinimugPaletteFix/MinimugPalette.event"
@@ -301,4 +301,6 @@ WORD $B5700003 $4334A $4B1E8818 $F000000D $2803F83B $2313D110 $330156EB $D100105
 //WORD $B5700003 $4334A $4B238818 $F000000D $2803F845 $2313D110 $330156EB $D100105B $223301 $8013325A $2300002A $8013325C $32660022 $80938013 $39B6CE3 $2BD503 $335C2200 $2B801A $3330220F $4013781B $D1022B09 $18622164 $228011 $3230210F $400A7812 $D1022A09 $325B3564 $22FD802A $42133B0B $23D10C $33643A99 $22801A $8813325A $80133B0A $8823345E $8023331E $BC01BC70 $46C04700 $8017725 $46C04718
 
 
-
+// Referencing Contro's menu work
+//#include "ChapterMenu/ChapterMenu.event"
+//#include "FE8_ChapterJump/ChapterJump.event"

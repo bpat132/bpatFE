@@ -21,9 +21,10 @@ mov		r14,r1
 cmp		r0,#0x0
 beq		NormalGrowths
 
+NormalGrowths:
 @Fixed growths mode
 mov		r0,#0x0
-add		r4,#0x50
+add		r4,#50
 FixedLoop:
 cmp		r4,#100
 blt		GoBack
@@ -31,7 +32,7 @@ sub		r4,#100
 add		r0,#1
 b		FixedLoop
 
-NormalGrowths:
+@NormalGrowths:
 ldr		r0,Generate_RN
 mov		r14,r0
 mov		r0,r4

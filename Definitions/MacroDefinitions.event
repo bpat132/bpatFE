@@ -1,16 +1,16 @@
 
 // EA macros
 
-//#define EnemyReinforcements(unitPtr) "ENUT Fixed_Growths_ID; SMOV 0x2 (unitPtr|0x8000000); CALL $9EE274; EVBIT_T 0x7; ENDA; ENUF Fixed_Growths_ID"
-/*
-#define EnemyReinforcements(unitPtr) "ENUT Fixed_Growths_ID; SMOV 0x2 (unitPtr|0x8000000); CALL $9EE274; EVBIT_T 0x7; ENUF Fixed_Growths_ID; ENDA"
-#define EnemyReinforcementsNoEnda(unitPtr) "ENUT Fixed_Growths_ID; SMOV 0x2 (unitPtr|0x8000000); CALL $9EE274; EVBIT_T 0x7; ENUF Fixed_Growths_ID"
-#define LoadEnemies(unitPtr) "ENUT Fixed_Growths_ID; LOAD1 0x1 unitPtr; ENUF Fixed_Growths_ID; ENUN"
-*/
 #define EnemyReinforcements(unitPtr) "SMOV 0x2 (unitPtr|0x8000000); CALL $9EE274; EVBIT_T 0x7; ENDA"
-#define EnemyReinforcementsNoEnda(unitPtr) "SMOV 0x2 (unitPtr|0x8000000); CALL $9EE274; EVBIT_T 0x7"
+#define EnemyReinforcementsNoENDA(unitPtr) "SMOV 0x2 (unitPtr|0x8000000); CALL $9EE274; EVBIT_T 0x7"
+//#define ReinforcementEventNoENDA(unitPtr) "SMOV 0x2 (unitPtr|0x8000000); CALL $9EE274; EVBIT_T 0x7"
 #define LoadEnemies(unitPtr) "LOAD1 0x1 unitPtr; ENUN"
+// Shouldn't need to set fixed growth flag for enemies due to ASM change to make fixed growths always apply
+//#define LoadEnemies(unitPtr) "ENUT FIXED_GROWTHS_FLAG_ID; LOAD1 0x1 unitPtr; ENUN; ENUF FIXED_GROWTHS_FLAG_ID"
 #define LoadPlayerUnits(unitPtr) "LOAD1 0x0 unitPtr; ENUN"
+#define LoadPlayerUnitsTest(unitPtr) "ENUT FIXED_GROWTHS_FLAG_ID; LOAD1 0x0 unitPtr; ENUN; ENUF FIXED_GROWTHS_FLAG_ID"
+
+#define LoadUnit(x,y) "UNIT 0x2 0x11 0x1 Level(1,Ally,1) [x,y] 0x00 0x00 0x00 0x00 [0x00] NoAI" //for units in player placement with prep menu
 
 #define Kill(unitid) "SET_SOMETHING unitid;DISA_IF unitid"
 
@@ -55,5 +55,3 @@
 #define AIRAI AttackInRangeAI
 #define PWHAI PursueWithoutHeedAI
 #define COAAI ChaseOnceApproachedAI
-
-#define ReinforcementEventNoENDA(unitPtr) "SMOV 0x2 (unitPtr|0x8000000); CALL $9EE274; EVBIT_T 0x7"

@@ -177,7 +177,84 @@ Trent[X]
 ## TrentDesc
 Trent placeholder description.[X]
 
+## Ch1BossName
+Casey[X]
+## Ch1BossDesc
+A commander in Galt's army.[X]
 
+## Ch2BossName
+Osborne[X]
+## Ch2BossDesc
+A commander in Galt's army.[X]
 
+## Ch3BossName
+Harris[X]
+## Ch3BossDesc
+A commander in Galt's army.[X]
 
+## Ch4BossName
+Lowe[X]
+## Ch4BossDesc
+A commander in Galt's army.[X]
 
+## CraigName
+Craig[X]
+## CraigDesc
+A traitorous Melerran[NL]
+knight now serving Galt.[X]
+
+## Ch5BossName
+Carter[X]
+## Ch5BossDesc
+A feared pirate captain[N]
+known for his brutality.[X]
+
+## Ch6BossName
+Morton[X]
+## Ch6BossDesc
+Leader of a gang of bandits.[X]
+
+## JefferyName
+Jeffery[X]
+## JefferyDesc
+Jeffery placeholder description.[X]
+
+## GordonName
+Gordon[X]
+## GordonDesc
+Gordon placeholder description.[X]
+
+## LouisName
+Louis[X]
+## LouisDesc
+Louis placeholder description.[X]
+
+## GaltSoldierName
+Soldier[X]
+## GaltSoldierDesc
+The army of Galt, the strongest[NL]
+army on the continent.[X]
+
+## EliteName
+Soldier[X]
+## EliteDesc
+Elite warriors who are much more[NL]
+powerful than the average soldier.[X]
+
+## RuffianName
+Ruffian[X]
+## RuffianDesc
+Vicious thugs who[NL]
+plunder all they can.[X]
+
+## SellswordName
+Sellsword[X]
+## SellswordDesc
+Mercenaries who serve[NL]
+the highest bidder.[X]
+
+## GenericThiefName
+Thief[X]
+## GenericThiefDesc
+Thieves who will attempt[NL]
+to flee with thier loot.[.][X]

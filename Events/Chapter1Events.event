@@ -68,7 +68,7 @@ EnemyReinforcements(EvilReinforcementUnits)
 
 StellaEvent:
 CAM1 [0,0]
-ReinforcementEventNoENDA(StellaReinforcementUnits)
+EnemyReinforcementsNoENDA(StellaReinforcementUnits)
 Text(TEXT_Ch1_Stella_Event1)
 MOVE 15 0x84 [1,5]
 // Scripted battle
@@ -187,13 +187,9 @@ UNIT Sasha Myrmidon_F 0x40 Level(5,Enemy,0)     [17,2] 0x0 0x0 0x0 0x0 [SlimSwor
 UNIT 0x84 Soldier 0x40 Level(1,Enemy,1)     [1,2] 0x0 0x0 0x0 0x0 [IronLance] DoNothing // Cutscene enemy
 
 // Generics
-
-
 UNIT 0x80 Knight 0x40 Level(1,Enemy,1)     [12,3] DropItem 0x0 0x0 0x0 [HandAxe] NeverMoveAI
-
 UNIT 0x80 Mage 0x40 Level(1,Enemy,1)     [14,1] 0x0 0x0 0x0 0x0 [Fire] AIRAI
-
-UNIT 0x80 Myrmidon 0x40 Level(1,Enemy,1)     [14,7] 0x0 0x0 0x0 0x0 [IronSword] AIRAI // NEW
+UNIT 0x80 Myrmidon 0x40 Level(1,Enemy,1)     [14,7] 0x0 0x0 0x0 0x0 [IronSword] AIRAI
 
 UNIT 0x80 Soldier 0x40 Level(1,Enemy,1)     [8,4] DropItem 0x0 0x0 0x0 [SteelLance] AIRAI
 #ifndef _NORMAL_MODE_
@@ -261,14 +257,6 @@ BeginningScene:
 ENUT 0x129 // AllUnitsMustEscapeFlag
 MUSC BoF2_StrongerMonsters
 CAM1 [0,11]
-/*
-LOAD1 0x1 EnemyUnits1
-ENUN
-LOAD1 0x1 EnemyUnits2
-ENUN
-FADU 16
-LOAD1 0x0 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
-*/
 LoadEnemies(EnemyUnits1)
 LoadEnemies(EnemyUnits2)
 FADU 16
@@ -278,7 +266,6 @@ ENUN
 Text(TEXT_Ch1_Start_Edgar)
 FlashCursor(Matthias,0x20)
 Text(TEXT_Ch1_Start_Matthias)
-//ENUN
 NoFade
 ENDA
 
@@ -290,17 +277,5 @@ GiveItem(SteelLance,Edgar)
 GiveItem(SteelBow,Jenna)
 GiveItem(SteelAxe,Duncan)
 GiveItem(SteelSword,Kurt)
-
-MNC2 0x1
+MNC2 Chapter2
 ENDA
-
-
-/*
-EndingScene:
-ASMC 0x85C71 0x381F5 0x37CF9 //show records screen
-STAL 120
-EVBIT_F 0x2
-MNTS 0x1 //return to title screen
-NoFade
-ENDA
-*/

@@ -396,7 +396,8 @@ Expertise: Reduce bonus damage[N]
 from critical hits by 50%.[X]
 
 ## SD_Celerity
-Celerity: Movement +2.[X]
+Encumbered: Heavy loot is slowing[N]
+this unit's escape! Movement -2.[X]
 
 ## SD_FieryBlood
 Fiery Blood: +4 damage[N]
@@ -550,9 +551,8 @@ Slow Burn: +1 Hit and Avoid for[N]
 each passing turn, up to 15.[X]
 
 ## SD_Despoil
-Despoil: Obtain a Red Gem after[N]
-attacking and defeating an enemy.[N]
-(Luck % activation)[X]
+Pillage: This unit will[N]
+destroy villages.[X]
 
 ## SD_Pivot
 Pivot: Allows unit to move to the[N]

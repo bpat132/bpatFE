@@ -91,3 +91,8 @@
 [LoadRedSoldier] = [LoadFace][0x6b][0x1]
 
 [LoadCh1Boss] = [LoadFace][0x31][0x1]
+[LoadCh2Boss] = [LoadFace][0x32][0x1]
+[LoadCh3Boss] = [LoadFace][0x33][0x1]
+[LoadCh4Boss] = [LoadFace][0x34][0x1]
+[LoadCh5Boss] = [LoadFace][0x35][0x1]
+[LoadCh6Boss] = [LoadFace][0x36][0x1]

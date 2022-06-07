@@ -81,6 +81,8 @@
 #define Trent 0x1f
 
 #define Ch1Boss 0x46
+#define Ch2Boss 0x47
+#define Ch3Boss 0x48
 
 // Mugs
 #define EdgarMug 0x2

@@ -11,7 +11,7 @@ EdgarMugData: // LL
 setMugEntry(EdgarMug, EdgarMugData, 3, 4, 3, 2)
 
 ALIGN 16
-JennaMugData: // LL
+JennaMugData: // LaurentLacroix
 #incbin "Dmp/Jenna_mug.dmp"
 #incbin "Dmp/Jenna_frames.dmp"
 #incbin "Dmp/Jenna_palette.dmp"
@@ -65,6 +65,46 @@ LisaMugData: // LL
 #incbin "Dmp/Lisa_palette.dmp"
 #incbin "Dmp/Lisa_minimug.dmp"
 setMugEntry(LisaMug, LisaMugData, 3, 6, 3, 4)
+
+ALIGN 16
+JaneMugData: // CapibaraInSpace
+#incbin "Dmp/Jane_mug.dmp"
+#incbin "Dmp/Jane_frames.dmp"
+#incbin "Dmp/Jane_palette.dmp"
+#incbin "Dmp/Jane_minimug.dmp"
+setMugEntry(JaneMug, JaneMugData, 3, 5, 3, 3)
+
+ALIGN 16
+EthanMugData: // Nickt
+#incbin "Dmp/Ethan_mug.dmp"
+#incbin "Dmp/Ethan_frames.dmp"
+#incbin "Dmp/Ethan_palette.dmp"
+#incbin "Dmp/Ethan_minimug.dmp"
+setMugEntry(EthanMug, EthanMugData, 3, 5, 3, 3)
+
+ALIGN 16
+BeatriceMugData: // LL
+#incbin "Dmp/Beatrice_mug.dmp"
+#incbin "Dmp/Beatrice_frames.dmp"
+#incbin "Dmp/Beatrice_palette.dmp"
+#incbin "Dmp/Beatrice_minimug.dmp"
+setMugEntry(BeatriceMug, BeatriceMugData, 3, 6, 3, 4)
+
+ALIGN 16
+DanielMugData: // LL
+#incbin "Dmp/Daniel_mug.dmp"
+#incbin "Dmp/Daniel_frames.dmp"
+#incbin "Dmp/Daniel_palette.dmp"
+#incbin "Dmp/Daniel_minimug.dmp"
+setMugEntry(DanielMug, DanielMugData, 3, 5, 3, 3)
+
+ALIGN 16
+IsabelleMugData: // LL
+#incbin "Dmp/Isabelle_mug.dmp"
+#incbin "Dmp/Isabelle_frames.dmp"
+#incbin "Dmp/Isabelle_palette.dmp"
+#incbin "Dmp/Isabelle_minimug.dmp"
+setMugEntry(IsabelleMug, IsabelleMugData, 3, 5, 3, 3)
 
 ALIGN 16
 SashaMugData: // Me, body from CapibaraInSpace

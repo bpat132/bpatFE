@@ -3,6 +3,7 @@
     #include "CustomDefinitions.event"
     #include "Definitions/DefinitionsInstaller.event"
 //PROTECT $25224
+    //PROTECT $02B9C4
     ORG FreeSpace
 
     #include "repointedTextTable.event"

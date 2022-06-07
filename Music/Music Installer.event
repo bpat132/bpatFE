@@ -9,6 +9,8 @@ voicegroup000:
 #define MapMusicGroup 1
 #define SFXGroup 6
 
+#define MusicVoices voicegroup000 // Prevent issue with wall of defense song
+
 #include "MusicEvents/FE11_preps_epicer.event"
 SongTable(FE11_preps,song34,MapMusicGroup)
 
@@ -41,3 +43,6 @@ SongTable(NierA_DCDA,song01E9,MapMusicGroup)
 
 #include "MusicEvents/ToS_LastBattleDecision_Chair.event"
 SongTable(ToS_LastBattleDecision,songLastBattleDecision,MapMusicGroup)
+
+#include "MusicEvents/OgreBattle_WallOfDefense_Sme.event"
+SongTable(OgreBattle_WallOfDefense,obwalls,MapMusicGroup)

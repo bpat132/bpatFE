@@ -2,6 +2,7 @@
 #include MacroDefinitions.event
 #include TableEntryDefinitions.event
 #include MusicDefinitions.event
+#include ChapterDefinitions.event
 
 // enabling engine hacks
 #define USE_STRMAG_SPLIT

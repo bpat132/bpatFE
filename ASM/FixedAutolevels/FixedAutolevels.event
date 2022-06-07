@@ -8,7 +8,7 @@ PUSH
 
 	// replace GetAutoleveledStatIncrease with asm below
 	ORG $02B9C4
-		WORD $30324348 $4B012164 $46C04718 $80D167D
+	//	WORD $30324348 $4B012164 $46C04718 $80D167D
 
 POP
 

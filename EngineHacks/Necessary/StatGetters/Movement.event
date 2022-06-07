@@ -22,7 +22,7 @@ prAddUnitMovBonus:
 
 prSkillCelerity:
 	rIfUnitHasSkill(CelerityID)
-		rAddConst(2)
+		rSubConst(2)
 		
 prSkillPoise:
 	rIfUnitHasSkill(PoiseID)

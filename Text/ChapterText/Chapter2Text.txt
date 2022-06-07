@@ -1,0 +1,171 @@
+
+## TEXT_Ch2_Start_Edgar
+[ConversationText]
+[FarLeft][LoadMatthias][Left][LoadEdgar][Right][LoadDuncan][FarRight][LoadKurt]
+[Right]
+You can't be serious! Assaulting the fort head on would be beyond reckless!
+[Left]
+I'm dead serious. They'll never suspect we'd be brazen enough to storm in with our numbers. If we can take it, we should be able to drive Galt's forces from the area. With most of Galt's army occupied with the war with Kemaroa, they won't be able to spare the troops to retake it.
+[FarRight]
+They won't expect it because it's insane! I hate to shy away from a challenge, but there's no way this will work with our numbers.
+[FarLeft]
+Actually, we may have a chance. Every hotshot commander wants to be the one to claim your bounties, so troops are spread all over the nearby towns hoping to capture you. We'll still have to face Captain Osborne and his men inside, but frankly they're no stronger or better equipped than the soldiers you've fought before.
+[FarRight]
+Well, if you think we've got a shot, count me in!
+[FarLeft][ClearFace]
+[FarLeft][LoadNico]
+[FarLeft]
+Still, with just seven of us we'll be severely outnumbered.
+[Right][ClearFace][FarRight][ClearFace]
+[MidRight][LoadLisa]
+[MidRight]
+Eight of us. I'm coming with you.
+[FarLeft][ClearFace]
+[Left]
+What?! It's far too dangerous for you. I appreciate all you've done for us but I can't let you take this risk.
+[Right]I'm not asking your permission. You'll all get yourselves killed without me around to heal you!
+[Left]
+It doesn't sound like I can change your mind then... Alright, you can come along, but please stay behind us where we can keep you safe.
+[MidRight]
+Of course. I'll make sure we all make it out alive.
+[MidRight][MoveRight]
+[FarRight][LoadJenna]
+[FarRight]
+I'm excited you're coming along, Lisa! I could teach you how to shoot a bow!
+[Right]
+Uh, I appreciate the offer, but I'd prefer to stick to my healing staves.
+[Left]
+It's settled then. Everyone, make sure you're ready for our most important fight yet!
+[X]
+
+## TEXT_Ch2_Start_Jane
+[ConversationText]
+[MidLeft][LoadJane][MidRight][LoadCh2Boss]
+[MidLeft]
+Sir, we're under attack! Shall I join the vangaurd?
+[MidRight]
+No, I need you back here. Defend the throne room at all costs!
+[MidLeft]
+Yes sir![ClearFace]
+[MidRight]
+Damn, why'd I have to get stuck with this stupid noble?
+She wants me to treat her like an ordinary grunt, but her brother will have my head if I let her die on my watch!
+I need to keep her in the back where she can't get herself killed.
+[X]
+
+## TEXT_Ch2_Jane_Talk
+[ConversationText]
+[MidRight][LoadJane]
+[MidRight]
+Alright Jane, you can do this. It'll be just like training.
+[MidLeft][LoadEdgar]
+[MidRight]
+Bring it on!
+[MidRight]
+[MoveLeft]
+[MidLeft]
+[MoveFarLeft]
+[Left][MoveMidRight]
+[MidRight]
+[MoveMidRight]
+Whoa!
+[MoveMidRight]
+[FarLeft][MoveMidLeft]
+[MidLeft]
+Nice try!
+[MidRight]
+Don't look down on me! I was just warming up!
+[MidLeft]
+How about you give up and go home? You don't need to throw away your life here.
+[MidRight]
+Shut up! Take this!
+[MidRight]
+[MoveLeft]
+[MidLeft]
+[MoveFarLeft]
+[Left][MoveMidRight]
+[MidRight]
+[MoveMidRight]
+Dammit!
+[FarLeft][MoveMidLeft]
+[MidLeft]
+I'm in a bit of a hurry, so could you do us both a favor and surrender?
+[MidRight]
+Ugh... What kind of knight loses her first battle? Wait, I recognize you! You're Prince Edgar!
+[MidLeft]
+Do I know you? Ah, you look familiar. You're Jane, right? Lord Jeffery's sister. I never expected to see you on a battlefield.
+[MidRight]
+That's right! Alright, I'll surrender, on the condition that you let me join your group.
+[MidLeft]
+What?!
+[MidRight]
+I want to become a great knight, even stronger than Jeffery. If I stick with you, I'm sure I'll improve twice as fast as I did in this army.
+[MidLeft]
+Alright, but you're on my side now, so you better keep yourself alive.
+[MidRight]
+Got it. Now that I'm warmed up, let's finish off these soldiers!
+[X]
+
+## TEXT_Ch2_End_Edgar
+[ConversationText]
+[MidLeft][LoadEdgar][Right][LoadKurt][FarRight][LoadLisa]
+[Right]
+Looks like that's the last of them!
+[FarRight]
+I'll make sure everyone's alright.
+[FarRight]
+[ClearFace]
+[Right]
+[ClearFace]
+[MidLeft]
+We really did it. It hardly feels real...
+[MidLeft][MoveMidLeft]
+[MidLeft]
+Who's there? Show yourself.
+[Right][LoadEthan]
+[Right]
+Wait, I'm unarmed. Are you the commander of this group?
+[MidLeft]
+I am. By the look of your armor, you're not one of Galt's soldiers.
+[Right]
+Correct. My name is Ethan, I'm a mercenary employed by Lord Howard. I've been hired to investigate some rumors regarding your little army.
+[MidLeft]
+Rumors? Lord Howard? Now I'm curious. What kind of rumors have you heard about us, and why is Lord Howard interested?
+[Right]
+One year ago, when Galt joined forces with the treasonous Lords Louis and Jeffery and overthrew the King, all but one of the royal family perished, but Prince Edgar was never found.
+Lord Howard believes that you are the missing prince.
+[MidLeft]
+[MoveMidLeft]
+[MidLeft]
+!!
+[Right]
+Judging by your expression, it seems Lord Howard is correct. He'd like to offer his support. Come to his castle and he'll provide you with mercenaries and funds.
+[MidLeft]
+How can I trust you? Lord Howard sold us out to Galt, and he still outwardly supports their rule.
+[FarRight][LoadJane]
+[FarRight]
+I believe this man is telling the truth. Jeffery always suspected Lord Howard of opposing Galt behind the scenes.
+[Right]
+It's as you say. As proof, take this gift of 3,000 gold. Your weapons look rather worn so I suggest spending it to restock.
+[MidLeft]
+Thank you. I'll trust you for now. I imagine if you meant to betray us, you wouldn't go about it this way. We'll set out tomorrow and see what Lord Howard has to say.
+[X]
+
+## TEXT_Ch2_End_MS
+[ConversationText]
+[MidLeft][LoadMatthias][MidRight][LoadStella]
+[MidRight]
+What the hell? Edgar's a *prince*?! Did you know about this?
+[MidLeft]
+I'm as surprised as you. It's hard to believe, though it certainly explains some things. It's no wonder he's so determined, and his allies are so loyal.
+[MidRight]
+What a mess we've gotten caught up in. I thought this would be our last battle, but it looks like we're just getting started.
+[MidLeft]
+You're sticking around? I didn't think you were particular invested in the cause.
+[MidRight]
+I'm not, but it can't hurt to have a prince's favor. Plus, the prince and his friends are alright. What about you? Must be hard fighting against your countrymen.
+[MidLeft]
+It is... But we're making a difference, helping people. Feels like I'm finally fighting for something that matters.
+[MidRight]
+Heh, I didn't take you for much of an idealist. Though I gotta admit, I'm dying to see how this'll play out. Can we really take on the empire? Guess we'll find out soon enough...
+[X]
