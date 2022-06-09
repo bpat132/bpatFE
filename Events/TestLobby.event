@@ -66,8 +66,8 @@ UNIT 0x80 Fighter 0x40 Level(1,Enemy,1)     [14,9] 0x0 0x0 0x0 0x0 [SteelAxe] Ne
 UNIT
 
 UnitsCh2:
-UNIT Edgar EphraimLord 0x1 Level(11,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronLance,RegalLance,Javelin,Vuln] NoAI
-UNIT Jenna Archer_F 0x1 Level(11,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronBow,SteelBow,Vuln] NoAI
+UNIT Edgar EphraimLord 0x1 Level(2,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronLance,RegalLance,Javelin,Vuln] NoAI
+UNIT Jenna Archer_F 0x1 Level(2,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronBow,SteelBow,Vuln] NoAI
 UNIT Duncan Fighter 0x1 Level(2,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronAxe,SteelAxe,HandAxe,Vuln] NoAI
 UNIT Kurt Mercenary 0x1 Level(2,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronSword,SteelSword,SteelBlade,Vuln] NoAI
 UNIT Matthias Soldier 0x1 Level(3,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronLance,SteelLance,Vuln] NoAI

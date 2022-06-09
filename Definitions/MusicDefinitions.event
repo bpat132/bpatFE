@@ -12,5 +12,6 @@
 #define NierA_DCDA 0x273 // ch1-X boss music
 #define ToS_LastBattleDecision 0x274 // event music: victory
 #define OgreBattle_WallOfDefense 0x275 // event music: preparing for battle
+#define GS_BabiLighthouse 0x276 // event music: planned for ch6 (currently unused)
 
 

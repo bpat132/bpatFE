@@ -14,6 +14,8 @@
 
 #define Kill(unitid) "SET_SOMETHING unitid;DISA_IF unitid"
 
+#define GetUnitInDeploySlot(deploySlot) "SVAL 1 deploySlot; ASMC GetUnitInDeploySlotHack|1"
+
 // Sme
 #define SetUnitStatus(unitID,statusOffset,statusValue) "SVAL 2 statusValue; SHORT $0D40; BYTE unitID statusOffset; POIN Set_Status_Hack|1"
 #define SetUnitStatus(x,y,statusOffset,statusValue) "SVAL 2 statusValue; SHORT $0D40; BYTE x y statusOffset; POIN Set_Status_Hack|1"

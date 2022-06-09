@@ -33,11 +33,11 @@ POIN BeginningScene EndingScene
 
 TurnBasedEvents:
 #ifdef _NORMAL_MODE_
-TURN 0x0 NorthThiefReinforcementEvent [8,0] 0x0
-TURN 0x0 SouthThiefReinforcementEvent [9,0] 0x0
+TurnEventPlayer(0,NorthThiefReinforcementEvent,8)
+TurnEventPlayer(0,SouthThiefReinforcementEvent,9)
 #else
-TURN 0x0 NorthThiefReinforcementEvent [7,0] 0x0
-TURN 0x0 SouthThiefReinforcementEvent [8,0] 0x0
+TurnEventPlayer(0,NorthThiefReinforcementEvent,7)
+TurnEventPlayer(0,SouthThiefReinforcementEvent,8)
 #endif
 END_MAIN
 
@@ -144,7 +144,7 @@ UNIT 0x80 Mercenary 0x40 Level(2,Enemy,1)     [19,8] 0x0 0x0 0x0 0x0 [IronSword]
 UNIT 0x80 Soldier 0x40 Level(2,Enemy,1)     [21,8] 0x0 0x0 0x0 0x0 [Javelin] AIRAI
 UNIT 0x80 Mage 0x40 Level(2,Enemy,1)     [20,10] 0x0 0x0 0x0 0x0 [Fire] AIRAI
 
-#ifdef _NORMAL_MODE_
+#ifndef _NORMAL_MODE_
 UNIT 0x80 Archer 0x40 Level(2,Enemy,1)     [15,1] 0x0 0x0 0x0 0x0 [SteelBow] AIRAI
 #endif
 UNIT 0x80 Mage 0x40 Level(2,Enemy,1)     [15,3] 0x0 0x0 0x0 0x0 [Fire] AIRAI
@@ -186,6 +186,7 @@ FlashCursor(Jane,0x20)
 Text(TEXT_Ch2_Start_Jane)
 MOVE 7 Jane [20,6]
 ENUN
+GiveItemWithDurability(SkillScroll,SwordfaireID,Edgar)
 GotoPrepScreen
 
 EndingScene:

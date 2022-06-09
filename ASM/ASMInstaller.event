@@ -23,6 +23,9 @@ ALIGN 4
 AvoidLabel:
 #incbin "HitAvo/avoidhack.dmp"
 
+// Pik 1RN (modified)
+#include "1RNUnder50/Installer.event"
+
 // Staff experience
 PUSH
 ORG $2C66A
@@ -88,6 +91,23 @@ PUSH
 ORG 0xDB26
 BYTE 0x00 0x00
 POP
+
+// https://github.com/FireEmblemUniverse/SkillSystem_FE8/blob/master/EngineHacks/Necessary/ModularStatScreen/asm/Write_Growths_To_Battle_Struct.asm
+// line 59 Check_Event_ID
+/*
+83DA8: (Check_Event_ID) (FE7: 798F8)
+Params: r0=event id to check
+Returns: True if event id is set
+*/
+
+// Circles, edited by Vesly and Pawkkie
+// Inventory full doesn't seem to work, making a workaround
+//#include "PreventTrade/Installer.event"
+
+// Snek get unit by deploy slot
+ALIGN 4
+GetUnitInDeploySlotHack:
+#incbin "GetUnitByDeployOrder.dmp"
 
 // 7743 patches
 ALIGN 4
@@ -233,7 +253,6 @@ POP
 // Pik send items to convoy upon death
 #include "SendItems/Installer.event"
 // Pik status screen
-// TODO: figure out what this is
 PUSH
 ORG 0xA03368
 #incbin "../Graphics/Statscreen/statscreen_image.dmp"
@@ -299,7 +318,6 @@ ORG CURRENTOFFSET+$1;ComputeBattleUnitSpecialWeaponStats:
 POP
 WORD $B5700003 $4334A $4B1E8818 $F000000D $2803F83B $2313D110 $330156EB $D100105B $223301 $8013325A $2300002A $8013325C $32660022 $80938013 $39B6CE3 $2BD503 $335C2200 $2B801A $3330220F $4013781B $D1022B09 $18622164 $228011 $3230210F $400A7812 $D1022A09 $325B3564 $22FD802A $42133B0B $2364D102 $80233464 $BC01BC70 $46C04700 $8017725 $46C04718
 //WORD $B5700003 $4334A $4B238818 $F000000D $2803F845 $2313D110 $330156EB $D100105B $223301 $8013325A $2300002A $8013325C $32660022 $80938013 $39B6CE3 $2BD503 $335C2200 $2B801A $3330220F $4013781B $D1022B09 $18622164 $228011 $3230210F $400A7812 $D1022A09 $325B3564 $22FD802A $42133B0B $23D10C $33643A99 $22801A $8813325A $80133B0A $8823345E $8023331E $BC01BC70 $46C04700 $8017725 $46C04718
-
 
 // Referencing Contro's menu work
 //#include "ChapterMenu/ChapterMenu.event"

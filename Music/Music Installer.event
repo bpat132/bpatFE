@@ -46,3 +46,6 @@ SongTable(ToS_LastBattleDecision,songLastBattleDecision,MapMusicGroup)
 
 #include "MusicEvents/OgreBattle_WallOfDefense_Sme.event"
 SongTable(OgreBattle_WallOfDefense,obwalls,MapMusicGroup)
+
+#include "MusicEvents/GS_BabiLighthouse_Pandan.event"
+SongTable(GS_BabiLighthouse,BabiLighthouse,MapMusicGroup)

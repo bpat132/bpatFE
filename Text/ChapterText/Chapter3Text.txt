@@ -1,0 +1,101 @@
+
+## TEXT_Ch3_Start_Edgar
+[ConversationText]
+[MidLeft][LoadEdgar][Right][LoadNico]
+[Right]
+We're getting close. I expect we'll arrive at Lord Howard's castle by sundown.
+[MidLeft]
+Lord Howard... It's been years since I've last seen him. I hope he's as trustworthy as Ethan claims.
+[Right]
+He's our best hope for retaking our country. I don't know what kind of man he is but we have little to lose by trusting he'll help us.
+[MidLeft]
+You're right. If he was planning on turning us over to Galt we wouldn't have even made it out of the city.
+[LoadOverworldFaces]
+[FarFarRight][LoadEthan]
+[FarFarRight]
+[MoveFarRight]
+[FarRight]
+Prince Edgar, soldiers are approaching us from all sides! They've got us surrounded!
+[Right]
+What? How could they possibly ambush us here? They must have somehow known we were coming!
+[FarRight]
+Only a handful of people knew of this mission. If one of them has betrayed us...
+[MidLeft]
+Never mind that for now! Ethan, does it look like we can slip past them and make a break for the castle?
+[FarRight]
+I doubt it. They've completely cut off our path. We could try retreating the way we came, but that's risky as well.
+[MidLeft]
+We don't have anywhere to go if we turn back now. If they pursue us we'll be finished! We have no choice but to make our stand right here!
+[X]
+
+
+## TEXT_Ch3_Start_Boss
+[ConversationText]
+[Left][LoadCh4Boss][Right][LoadRedSoldier]
+[Right]
+Sir Harris, we've been spotted! What are your orders?
+[Left]
+The rest of our forces are nearly in position. Keep them busy for now, then[ToggleRed]in five minutes we'll hit them with everything we've got![ToggleRed]
+[X]
+
+
+## TEXT_Ch3_Start_Boss_v2
+[ConversationText]
+[ML][LoadCh4Boss][MR][LoadRedSoldier]
+[MR]
+Sir Harris, we've been spotted! What are your orders?
+[ML]
+The rest of our forces are nearly in position. Keep them busy for now, then[ToggleRed]in five minutes we'll hit them with everything we've got![ToggleRed]
+[MR][MoveRight]
+[FFR][LoadRedSoldier]
+[FFR][MoveFarRight]
+[FR]Sir, we've sighted[ToggleRed]three cavaliers[ToggleRed][ToggleRed]approaching from the south.[ToggleRed]
+They're about[ToggleRed]one minute away.[ToggleRed]
+We can't tell their affiliation but they appear to be armed.
+[ML]They're not our primary target, but if they engage, wipe them out.
+[X]
+
+## TEXT_Ch3_Sasha_Event
+[ConversationText]
+[Right][LoadSasha]
+[Right]
+Resorting to sneak attacks, even with overwhelming numbers. What a disappointment...
+[X]
+
+## TEXT_Ch3_Sasha_Talk
+[ConversationText]
+[MidLeft][LoadEdgar][MidRight][LoadSasha]
+[MidRight]
+You again...
+[MidLeft]
+Have we met? You don't look like one of Galt's soldiers.
+[MidRight]
+I'm just someone who's been hired to kill you, twice now. Your little posse's quite popular, you know.
+[MidLeft]
+Any chance I could convince you to withdraw? If you have no allegiance to Galt, I've no reason to fight you.
+[MidRight]
+Hmm... You've got many battles ahead of you, do you not?
+[MidLeft]
+I... I haven't thought that far ahead, but until Melerra is free once more I'll never stop fighting.
+[MidRight]
+Then hire me. I've been dying for a taste of real battle, and it seems my best bet is to tag along with you.
+I have no loyalty to Galt anyway, so I don't mind turning on them here.
+[MidLeft]
+Hire you? Sure, can't hurt to have you on our side. Better than having to fight you.
+[MidRight]
+Great. We can discuss payment once we're done killing my former employers.
+[X]
+
+## TEXT_Ch3_Village_Hammer
+[ConversationText]
+[MidLeft][LoadFace][0x58][0x01][MidRight][LoadFace][CurrentPortrait]
+[MidLeft]
+You're here to protect us? Perhaps you'll find this hammer useful. Rumor has it hammers can crush heavy armor with ease, though I've only used it on nails myself.
+[X]
+
+## TEXT_Ch3_Village_KillerLance
+[ConversationText]
+[MidLeft][LoadFace][0x61][0x01][MidRight][LoadFace][CurrentPortrait]
+[MidLeft]
+Galt's soldiers think they can do whatever they please... It's sickening! Take this killer lance, and kill as many of them as you can!
+[X]

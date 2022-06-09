@@ -32,23 +32,23 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
-TURN 0x0 EnemyReinforcements1 [4,0] 0x0
-TURN 0x0 EnemyReinforcements2 [5,0] 0x0
+TurnEventPlayer(0,EnemyReinforcements1,4)
+TurnEventPlayer(0,EnemyReinforcements2,5)
 
 #ifdef _NORMAL_MODE_
-TURN 0x0 BrigandReinforcements1 [6,0] 0x0
-TURN 0x0 BrigandReinforcements2 [9,0] 0x0
+TurnEventPlayer(0,BrigandReinforcements1,6)
+TurnEventPlayer(0,BrigandReinforcements2,9)
 #else
-TURN 0x0 BrigandReinforcements1 [5,0] 0x0
-TURN 0x0 BrigandReinforcements2 [8,0] 0x0
+TurnEventPlayer(0,BrigandReinforcements1,5)
+TurnEventPlayer(0,BrigandReinforcements2,8)
 #endif
 
-TURN 0x0 EvilReinforcements [10,0] 0x0
-TURN 0x0 EvilReinforcements [11,0] 0x0
-TURN 0x0 EvilReinforcements [12,0] 0x0
+TurnEventPlayer(0,EvilReinforcements,10)
+TurnEventPlayer(0,EvilReinforcements,11)
+TurnEventPlayer(0,EvilReinforcements,12)
 
-TURN 0x0 StellaEvent [3,0] 0x0
-TURN 0x0 SashaEvent [4,0] 0x0
+TurnEventPlayer(0,StellaEvent,3)
+TurnEventPlayer(0,SashaEvent,4)
 END_MAIN
 
 EnemyReinforcements1:
