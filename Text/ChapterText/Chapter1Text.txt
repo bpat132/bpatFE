@@ -11,35 +11,35 @@ You'd think with these numbers they'd have no trouble handling some bandits. Why
 [FarRight]
 Rumor has it that the soldiers turn a blind eye in exchange for a cut of the profits. We'll find out how true that is soon enough.
 [Left]
-It doesn't matter now, anyone who preys on the people of Melerra is our enemy. We'll drive off the bandits, then take out their commanding officer and escape before they can rally more soldiers.
+It doesn't matter now, anyone who preys on the people of Melerra is our enemy. We'll drive off the bandits, then take out the troops' leader and escape before they can rally more soldiers.
 [X]
 
 ## TEXT_Ch1_Start_Matthias
 [ConversationText]
-[MidLeft][LoadRedSoldier][MidRight][LoadMatthias]
+[MidRight][LoadCh1Boss]
+Troops, today we bring down the vigilantes plaguing this city! Dead or alive, it doesn't matter to me.
+Get the job done and I'll see to it you're rewarded.
+[MidLeft][LoadMatthias]
+Sir, what of the bandits?
 [MidRight]
-What's going on here? These thugs aren't exactly being subtle, but we're still under orders not to engage. Isn't it our responsibility to keep the people safe?
+Don't let them distract you. Drop your focus and the rebels will stick a knife in your back.
+[MidRight][ClearFace]
 [MidLeft]
-You ask too many questions, soldier. Don't let the captain hear your whining. Who cares about some bandits when we've got rebels to deal with. Have you seen the bounty on them? Capture one and we'll be rich!
-[MidLeft]
-[ClearFace]
-[MidRight]
-Rebels too... Something's not right here. Still, I can't disobey orders if I want to keep my head.
+How callous... What happened to our principles? I'd never have enlisted if I knew it'd turn out like this.
 [X]
 
 ## TEXT_Ch1_Edgar_Matthias_Talk
 [ConversationText]
 [MidLeft][LoadEdgar][MidRight][LoadMatthias]
 [MidRight]
-You're the leader here, right? Tell me, why do you risk your life like this? Surely you can't hope to topple the empire's dominion.
+You're the vigilantes' leader, right?
 [MidLeft]
-I'll do whatever I can, no matter the odds. The people here are suffering at the hands of both the bandits and you soldiers! Can't you see how much harm you've caused?
+That I am. What's it to you?
 [MidRight]
-As I feared, I've been fighting for the wrong side. I joined the army to protect the people, but what we're doing is unforgivable. You've helped me make up my mind; I'll join your cause.
+I'd like to help you out, at least for now. You're the only ones protecting the people in this city, and I'd sooner forsake the empire than my morals.
 [MidLeft]
 I can't deny we're lacking in numbers, so we could certainly use your help. Now, let's finish this battle!
 [X]
-
 
 ## TEXT_Ch1_Stella_Event1
 [ConversationText]

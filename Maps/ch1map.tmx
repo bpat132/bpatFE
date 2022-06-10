@@ -48,7 +48,7 @@
    <property name="MapChangesID" value="0x6"/>
    <property name="MapID" value="0x4"/>
    <property name="ObjectType1" value="0xE"/>
-   <property name="PaletteID" value="0xF"/>
+   <property name="PaletteID" value="0xEA"/>
    <property name="TileConfig" value="0x10"/>
   </properties>
   <data>

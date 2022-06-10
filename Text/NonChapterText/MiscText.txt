@@ -28,12 +28,12 @@ Defeat all enemies[X]
 
 
 # 0x030D
-Mounted knights with swift movement.[NL]
-Equip: Lances.[X]
+Well-rounded mounted knights[NL]
+with swift movement. Equip: Lances.[X]
 
 # 0x030F
-Heavily armored knights with poor[NL]
-speed. Equip: Axes.[X]
+Heavily armored knights with[NL]
+poor speed. Equip: Axes.[X]
 
 # 0x031A
 High-flying knights vulnerable only to[NL]

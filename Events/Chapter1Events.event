@@ -180,7 +180,8 @@ REDA [1,6] 0x0 0x1 0x00 0x0
 
 EnemyUnits1:
 // Unique
-UNIT Ch1Boss Knight 0x40 Level(4,Enemy,0)     [18,2] 0x0 0x0 0x0 0x0 [SteelAxe,HandAxe] NeverMoveAI
+//UNIT Ch1Boss Knight 0x40 Level(4,Enemy,0)     [18,2] 0x0 0x0 0x0 0x0 [SteelAxe,HandAxe] NeverMoveAI
+UNIT Ch1Boss Knight 0x40 Level(4,Enemy,0)     [8,7] 0x0 0x0 0x0 0x0 [SteelAxe,HandAxe] NeverMoveAI
 UNIT Matthias Soldier 0x40 Level(2,Enemy,0)     [7,7] 0x0 0x0 0x0 0x0 [IronLance,Vuln] NeverMoveAI
 UNIT Sasha Myrmidon_F 0x40 Level(5,Enemy,0)     [17,2] 0x0 0x0 0x0 0x0 [SlimSword,SteelBlade,FireSword,Vuln] DoNothing
 
@@ -266,6 +267,7 @@ ENUN
 Text(TEXT_Ch1_Start_Edgar)
 FlashCursor(Matthias,0x20)
 Text(TEXT_Ch1_Start_Matthias)
+MOVE 15 Ch1Boss [18,2]
 NoFade
 ENDA
 

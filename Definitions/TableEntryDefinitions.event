@@ -15,8 +15,10 @@
 #define SteelCost 6
 #define SilverCost 16
 #define SlimCost 8
-#define KillerCost 10
-#define ReaverCost 10
+//#define KillerCost 10
+#define KillerCost 14
+//#define ReaverCost 10
+#define ReaverCost 18
 #define EffectiveCost 20
 #define ThrowingCost 6
 #define Throwing2Cost 16

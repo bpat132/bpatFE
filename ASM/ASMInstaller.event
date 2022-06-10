@@ -23,8 +23,11 @@ ALIGN 4
 AvoidLabel:
 #incbin "HitAvo/avoidhack.dmp"
 
-// Pik 1RN (modified)
-#include "1RNUnder50/Installer.event"
+// Pik 1RN (modified to only apply <= 50% hit)
+//#include "1RNUnder50/Installer.event"
+
+// Teq set/unset condition
+#include "SetCondition/FE8-Set Condition.txt"
 
 // Staff experience
 PUSH
@@ -206,8 +209,7 @@ POP
 
 ALIGN 4
 PrepScreenShop:
-//SHLI IronSword SteelSword IronBlade SteelBlade FireSword IronLance SteelLance Javelin IronAxe SteelAxe HandAxe IronBow SteelBow Fire Thunder Flux EvilEye Heal
-SHLI IronSword SteelSword IronBlade SteelBlade LightBrand IronLance SteelLance Javelin IronAxe SteelAxe HandAxe IronBow SteelBow Fire Thunder Flux EvilEye Heal
+SHLI IronSword SteelSword IronBlade SteelBlade FireSword IronLance SteelLance Javelin IronAxe SteelAxe HandAxe IronBow SteelBow Fire Thunder Flux EvilEye Heal
 ALIGN 4
 
 //Fix MNC2 Freezing glitch (breaks skirmishes!)

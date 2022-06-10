@@ -335,8 +335,8 @@ Life and Death: +10 to[N]
 damage dealt and taken.[X]
 
 ## SD_LockTouch
-Locktouch: Can open locks[N]
-without keys or picks.[X]
+Cunning: Unit can pick[N]
+locks and steal items.[X]
 
 ## SD_Lunge
 Lunge: Swap places with the[N]

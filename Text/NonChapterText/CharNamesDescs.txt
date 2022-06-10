@@ -193,7 +193,7 @@ Harris[X]
 A commander in Galt's army.[X]
 
 ## Ch4BossName
-Lowe[X]
+Sheldon[X]
 ## Ch4BossDesc
 A commander in Galt's army.[X]
 

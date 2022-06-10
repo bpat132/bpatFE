@@ -51,6 +51,13 @@
 [ConversationText] = [0x90]
 [BattleText] = [0x91]
 
+[ML] = [MidLeft]
+[L] = [Left]
+[R] = [Right]
+[MR] = [MidRight]
+[FR] = [FarRight]
+[FFR] = [FarFarRight]
+
 [LoadEdgar] = [LoadFace][0x2][0x1]
 [LoadJenna] = [LoadFace][0x3][0x1]
 [LoadDuncan] = [LoadFace][0x4][0x1]
