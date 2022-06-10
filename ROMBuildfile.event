@@ -3,8 +3,8 @@
     #include "CustomDefinitions.event"
     #include "Definitions/DefinitionsInstaller.event"
 //PROTECT $25224
-    //PROTECT $02B9C4
     ORG FreeSpace
+    MESSAGE Free space starting at currentOffset
 
     #include "repointedTextTable.event"
 
@@ -30,6 +30,7 @@
 
     //Graphics
     #include "Graphics/MasterGraphicsInstaller.event"
+    MESSAGE Graphics data ends at CURRENTOFFSET
 
     // Tilesets
     #include "Maps/TilesetInstaller.event"
