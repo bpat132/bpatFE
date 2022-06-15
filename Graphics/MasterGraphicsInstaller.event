@@ -6,3 +6,4 @@
 #include "TitleScreen/MasterTitleScreenInstaller.event"
 #include "Palettes/Palette Setup.event" // Teraspark pal2ea
 #include "Tilesets/MasterTilesetInstaller.event"
+#include "Statscreen/StatscreenInstaller.event"

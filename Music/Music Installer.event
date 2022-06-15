@@ -1,4 +1,5 @@
 #define SongTableOffset  0x224470
+#include "MPlayDef.event"
 #include "drumfix_fe8.event"
 ALIGN 4
 voicegroup000:
@@ -11,8 +12,8 @@ voicegroup000:
 
 #define MusicVoices voicegroup000 // Prevent issue with wall of defense song
 
-#include "MusicEvents/FE11_preps_epicer.event"
-SongTable(FE11_preps,song34,MapMusicGroup)
+//#include "MusicEvents/FE11_preps_epicer.event" // Broken?
+//SongTable(FE11_preps,song34,MapMusicGroup)
 
 #include "MusicEvents/FFMQ_Battle1_RW.event"
 SongTable(FFMQ_Battle1,song19,MapMusicGroup)
@@ -49,3 +50,21 @@ SongTable(OgreBattle_WallOfDefense,obwalls,MapMusicGroup)
 
 #include "MusicEvents/GS_BabiLighthouse_Pandan.event"
 SongTable(GS_BabiLighthouse,BabiLighthouse,MapMusicGroup)
+
+#include "MusicEvents/HeroesOfMana_WhyAreWeWithoutHope_Devvy.event"
+SongTable(HeroesOfMana_WhyAreWeWithoutHope,song012D,MapMusicGroup)
+
+#include "MusicEvents/Castlevania2_BloodyTears_Chair.event"
+SongTable(Castlevania2_BloodyTears,song17,MapMusicGroup)
+
+#include "MusicEvents/AA3_VictorKudo_bpat.event"
+SongTable(AA3_VictorKudo,AA3_VictorKudo_bpat,MapMusicGroup)
+
+//#include "MusicEvents/Ever17_Karma_bpat.event"
+//SongTable(Ever17_Karma,Ever17_Karma_bpat,MapMusicGroup)
+
+#include "MusicEvents/YuNo_BurialChamber_bpat.event"
+SongTable(YuNo_BurialChamber,YuNo_BurialChamber_bpat,MapMusicGroup)
+
+#include "MusicEvents/YuNo_FrustrationB_bpat.event"
+SongTable(YuNo_Frustration,YuNo_FrustrationB_bpat,MapMusicGroup)

@@ -1,0 +1,2135 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	YuNo_BurialChamber_bpat_grp  voicegroup000
+	#define	YuNo_BurialChamber_bpat_pri  0
+	#define	YuNo_BurialChamber_bpat_rev  0
+	#define	YuNo_BurialChamber_bpat_mvl  127
+	#define	YuNo_BurialChamber_bpat_key  0
+	#define	YuNo_BurialChamber_bpat_tbs  1
+	#define	YuNo_BurialChamber_bpat_exg  0
+	#define	YuNo_BurialChamber_bpat_cmp  1
+
+	// .rodata
+	//	YuNo_BurialChamber_bpat
+	ALIGN 4
+
+//**************** Track 1 (Midi-Chn.1) ****************//
+
+YuNo_BurialChamber_bpat_1:
+	BYTE	KEYSH   YuNo_BurialChamber_bpat_key+0
+// 000   ----------------------------------------
+	BYTE	TEMPO   82*YuNo_BurialChamber_bpat_tbs/2
+	BYTE		VOICE   24
+	BYTE		VOL     60*YuNo_BurialChamber_bpat_mvl/mxv
+	BYTE		N10     As3   v100
+	BYTE	W01
+	BYTE	W03
+	BYTE	W05
+	BYTE	W03
+	BYTE		N05     Fn4 
+	BYTE	W01
+	BYTE	W05
+	BYTE		        As3   v092
+	BYTE	W01
+	BYTE	W03
+	BYTE	W02
+	BYTE		        En4   v100
+	BYTE	W04
+	BYTE	W02
+	BYTE		        Fn4   v092
+	BYTE	W04
+	BYTE	W02
+	BYTE		        As3   v100
+	BYTE	W01
+	BYTE	W05
+	BYTE		        En4   v092
+	BYTE	W01
+	BYTE	W05
+	BYTE		        Gs4   v100
+	BYTE	W01
+	BYTE	W03
+	BYTE	W02
+	BYTE		        As3   v092
+	BYTE	W04
+	BYTE	W02
+	BYTE		        Gn4   v100
+	BYTE	W04
+	BYTE	W02
+	BYTE		        Gs4   v092
+	BYTE	W01
+	BYTE	W05
+	BYTE		        Fn4   v100
+	BYTE	W01
+	BYTE	W05
+	BYTE		        Gn4   v092
+	BYTE	W01
+	BYTE	W03
+	BYTE	W02
+	BYTE		        En4   v100
+	BYTE	W04
+	BYTE	W02
+	BYTE		        Fn4   v092
+	BYTE	W04
+	BYTE	W02
+// 001   ----------------------------------------
+	BYTE		        As3   v100
+	BYTE	W01
+	BYTE	W05
+	BYTE		        En4   v092
+	BYTE	W01
+	BYTE	W05
+	BYTE		        Fn4   v100
+	BYTE	W01
+	BYTE	W03
+	BYTE	W02
+	BYTE		        As3   v092
+	BYTE	W04
+	BYTE	W02
+	BYTE		        En4   v100
+	BYTE	W04
+	BYTE	W02
+	BYTE		        Fn4   v092
+	BYTE	W01
+	BYTE	W05
+	BYTE		        As3   v100
+	BYTE	W01
+	BYTE	W05
+	BYTE		        En4   v092
+	BYTE	W01
+	BYTE	W03
+	BYTE	W02
+	BYTE		        Gs4   v100
+	BYTE	W04
+	BYTE	W02
+	BYTE		        As3   v092
+	BYTE	W04
+	BYTE	W02
+	BYTE		        Gn4   v100
+	BYTE	W04
+	BYTE	W02
+	BYTE		        Gs4   v092
+	BYTE	W01
+	BYTE	W05
+	BYTE		        As3   v100
+	BYTE	W01
+	BYTE	W05
+	BYTE		        Gn4   v092
+	BYTE	W01
+	BYTE	W03
+	BYTE	W02
+	BYTE		        Cs4   v100
+	BYTE	W04
+	BYTE	W02
+	BYTE		        As3   v092
+	BYTE	W04
+	BYTE	W02
+// 002   ----------------------------------------
+	BYTE		        As3   v100
+	BYTE	W01
+	BYTE	W03
+	BYTE	W02
+	BYTE		        Cs4   v092
+	BYTE	W04
+	BYTE	W02
+	BYTE		        Fn4   v100
+	BYTE	W04
+	BYTE	W02
+	BYTE		        As3   v092
+	BYTE	W01
+	BYTE	W05
+	BYTE		        En4   v100
+	BYTE	W01
+	BYTE	W05
+	BYTE		        Fn4   v092
+	BYTE	W01
+	BYTE	W03
+	BYTE	W02
+	BYTE		        As3   v100
+	BYTE	W04
+	BYTE	W02
+	BYTE		        En4   v092
+	BYTE	W04
+	BYTE	W02
+	BYTE		        Gs4   v100
+	BYTE	W04
+	BYTE	W02
+	BYTE		        As3   v092
+	BYTE	W01
+	BYTE	W05
+	BYTE		        Gn4   v100
+	BYTE	W01
+	BYTE	W05
+	BYTE		        Gs4   v092
+	BYTE	W01
+	BYTE	W03
+	BYTE	W02
+	BYTE		        Fn4   v100
+	BYTE	W04
+	BYTE	W02
+	BYTE		        Gn4   v092
+	BYTE	W04
+	BYTE	W02
+	BYTE		        En4   v100
+	BYTE	W01
+	BYTE	W05
+	BYTE		        Fn4   v092
+	BYTE	W01
+	BYTE	W05
+// 003   ----------------------------------------
+	BYTE		        As3   v100
+	BYTE	W01
+	BYTE	W03
+	BYTE	W02
+	BYTE		        En4   v092
+	BYTE	W04
+	BYTE	W02
+	BYTE		        Fn4   v100
+	BYTE	W04
+	BYTE	W02
+	BYTE		        As3   v092
+	BYTE	W01
+	BYTE	W05
+	BYTE		        En4   v100
+	BYTE	W01
+	BYTE	W05
+	BYTE		        Fn4   v092
+	BYTE	W01
+	BYTE	W03
+	BYTE	W02
+	BYTE		        As3   v100
+	BYTE	W04
+	BYTE	W02
+	BYTE		        En4   v092
+	BYTE	W04
+	BYTE	W02
+	BYTE		        Gs4   v100
+	BYTE	W01
+	BYTE	W05
+	BYTE		        As3   v092
+	BYTE	W01
+	BYTE	W05
+	BYTE		        Gn4   v100
+	BYTE	W01
+	BYTE	W03
+	BYTE	W02
+	BYTE		        Gs4   v092
+	BYTE	W04
+	BYTE	W02
+	BYTE		        As3   v100
+	BYTE	W04
+	BYTE	W02
+	BYTE		        Gn4   v092
+	BYTE	W01
+	BYTE	W05
+	BYTE		        Bn3   v100
+	BYTE	W01
+	BYTE	W05
+	BYTE		        As3   v092
+	BYTE	W01
+	BYTE	W03
+	BYTE	W02
+YuNo_BurialChamber_bpat_1_B1:
+// 004   ----------------------------------------
+YuNo_BurialChamber_bpat_1_004:
+	BYTE		N05     As3   v100
+	BYTE	W06
+	BYTE		        Bn3   v092
+	BYTE	W06
+	BYTE		        Fn4   v100
+	BYTE	W06
+	BYTE		        As3   v092
+	BYTE	W06
+	BYTE		        En4   v100
+	BYTE	W06
+	BYTE		        Fn4   v092
+	BYTE	W06
+	BYTE		        As3   v100
+	BYTE	W06
+	BYTE		        En4   v092
+	BYTE	W06
+	BYTE		        Gs4   v100
+	BYTE	W06
+	BYTE		        As3   v092
+	BYTE	W06
+	BYTE		        Gn4   v100
+	BYTE	W06
+	BYTE		        Gs4   v092
+	BYTE	W06
+	BYTE		        Fn4   v100
+	BYTE	W06
+	BYTE		        Gn4   v092
+	BYTE	W06
+	BYTE		        En4   v100
+	BYTE	W06
+	BYTE		        Fn4   v092
+	BYTE	W06
+	BYTE	PEND
+// 005   ----------------------------------------
+YuNo_BurialChamber_bpat_1_005:
+	BYTE		N05     As3   v100
+	BYTE	W06
+	BYTE		        En4   v092
+	BYTE	W06
+	BYTE		        Fn4   v100
+	BYTE	W06
+	BYTE		        As3   v092
+	BYTE	W06
+	BYTE		        En4   v100
+	BYTE	W06
+	BYTE		        Fn4   v092
+	BYTE	W06
+	BYTE		        As3   v100
+	BYTE	W06
+	BYTE		        En4   v092
+	BYTE	W06
+	BYTE		        Gs4   v100
+	BYTE	W06
+	BYTE		        As3   v092
+	BYTE	W06
+	BYTE		        Gn4   v100
+	BYTE	W06
+	BYTE		        Gs4   v092
+	BYTE	W06
+	BYTE		        As3   v100
+	BYTE	W06
+	BYTE		        Gn4   v092
+	BYTE	W06
+	BYTE		        Cs4   v100
+	BYTE	W06
+	BYTE		        As3   v092
+	BYTE	W06
+	BYTE	PEND
+// 006   ----------------------------------------
+YuNo_BurialChamber_bpat_1_006:
+	BYTE		N05     As3   v100
+	BYTE	W06
+	BYTE		        Cs4   v092
+	BYTE	W06
+	BYTE		        Fn4   v100
+	BYTE	W06
+	BYTE		        As3   v092
+	BYTE	W06
+	BYTE		        En4   v100
+	BYTE	W06
+	BYTE		        Fn4   v092
+	BYTE	W06
+	BYTE		        As3   v100
+	BYTE	W06
+	BYTE		        En4   v092
+	BYTE	W06
+	BYTE		        Gs4   v100
+	BYTE	W06
+	BYTE		        As3   v092
+	BYTE	W06
+	BYTE		        Gn4   v100
+	BYTE	W06
+	BYTE		        Gs4   v092
+	BYTE	W06
+	BYTE		        Fn4   v100
+	BYTE	W06
+	BYTE		        Gn4   v092
+	BYTE	W06
+	BYTE		        En4   v100
+	BYTE	W06
+	BYTE		        Fn4   v092
+	BYTE	W06
+	BYTE	PEND
+// 007   ----------------------------------------
+YuNo_BurialChamber_bpat_1_007:
+	BYTE		N05     As3   v100
+	BYTE	W06
+	BYTE		        En4   v092
+	BYTE	W06
+	BYTE		        Fn4   v100
+	BYTE	W06
+	BYTE		        As3   v092
+	BYTE	W06
+	BYTE		        En4   v100
+	BYTE	W06
+	BYTE		        Fn4   v092
+	BYTE	W06
+	BYTE		        As3   v100
+	BYTE	W06
+	BYTE		        En4   v092
+	BYTE	W06
+	BYTE		        Gs4   v100
+	BYTE	W06
+	BYTE		        As3   v092
+	BYTE	W06
+	BYTE		        Gn4   v100
+	BYTE	W06
+	BYTE		        Gs4   v092
+	BYTE	W06
+	BYTE		        As3   v100
+	BYTE	W06
+	BYTE		        Gn4   v092
+	BYTE	W06
+	BYTE		        Bn3   v100
+	BYTE	W06
+	BYTE		        As3   v092
+	BYTE	W06
+	BYTE	PEND
+// 008   ----------------------------------------
+YuNo_BurialChamber_bpat_1_008:
+	BYTE		N05     Cs4   v100
+	BYTE	W06
+	BYTE		        Bn3   v092
+	BYTE	W06
+	BYTE		        Gs4   v100
+	BYTE	W06
+	BYTE		        Cs4   v092
+	BYTE	W06
+	BYTE		        Gn4   v100
+	BYTE	W06
+	BYTE		        Gs4   v092
+	BYTE	W06
+	BYTE		        Cs4   v100
+	BYTE	W06
+	BYTE		        Gn4   v092
+	BYTE	W06
+	BYTE		        Bn4   v100
+	BYTE	W06
+	BYTE		        Cs4   v092
+	BYTE	W06
+	BYTE		        As4   v100
+	BYTE	W06
+	BYTE		        Bn4   v092
+	BYTE	W06
+	BYTE		        Gs4   v100
+	BYTE	W06
+	BYTE		        As4   v092
+	BYTE	W06
+	BYTE		        Gn4   v100
+	BYTE	W06
+	BYTE		        Gs4   v092
+	BYTE	W06
+	BYTE	PEND
+// 009   ----------------------------------------
+YuNo_BurialChamber_bpat_1_009:
+	BYTE		N05     Cs4   v100
+	BYTE	W06
+	BYTE		        Gn4   v092
+	BYTE	W06
+	BYTE		        Gs4   v100
+	BYTE	W06
+	BYTE		        Cs4   v092
+	BYTE	W06
+	BYTE		        Gn4   v100
+	BYTE	W06
+	BYTE		        Gs4   v092
+	BYTE	W06
+	BYTE		        Cs4   v100
+	BYTE	W06
+	BYTE		        Gn4   v092
+	BYTE	W06
+	BYTE		        Bn4   v100
+	BYTE	W06
+	BYTE		        Cs4   v092
+	BYTE	W06
+	BYTE		        As4   v100
+	BYTE	W06
+	BYTE		        Bn4   v092
+	BYTE	W06
+	BYTE		        Cs4   v100
+	BYTE	W06
+	BYTE		        As4   v092
+	BYTE	W06
+	BYTE		        En4   v100
+	BYTE	W06
+	BYTE		        Cs4   v092
+	BYTE	W06
+	BYTE	PEND
+// 010   ----------------------------------------
+YuNo_BurialChamber_bpat_1_010:
+	BYTE		N05     Cs4   v100
+	BYTE	W06
+	BYTE		        En4   v092
+	BYTE	W06
+	BYTE		        Gs4   v100
+	BYTE	W06
+	BYTE		        Cs4   v092
+	BYTE	W06
+	BYTE		        Gn4   v100
+	BYTE	W06
+	BYTE		        Gs4   v092
+	BYTE	W06
+	BYTE		        Cs4   v100
+	BYTE	W06
+	BYTE		        Gn4   v092
+	BYTE	W06
+	BYTE		        Bn4   v100
+	BYTE	W06
+	BYTE		        Cs4   v092
+	BYTE	W06
+	BYTE		        As4   v100
+	BYTE	W06
+	BYTE		        Bn4   v092
+	BYTE	W06
+	BYTE		        Gs4   v100
+	BYTE	W06
+	BYTE		        As4   v092
+	BYTE	W06
+	BYTE		        Gn4   v100
+	BYTE	W06
+	BYTE		        Gs4   v092
+	BYTE	W06
+	BYTE	PEND
+// 011   ----------------------------------------
+YuNo_BurialChamber_bpat_1_011:
+	BYTE		N05     Cs4   v100
+	BYTE	W06
+	BYTE		        Gn4   v092
+	BYTE	W06
+	BYTE		        Gs4   v100
+	BYTE	W06
+	BYTE		        Cs4   v092
+	BYTE	W06
+	BYTE		        Gn4   v100
+	BYTE	W06
+	BYTE		        Gs4   v092
+	BYTE	W06
+	BYTE		        Cs4   v100
+	BYTE	W06
+	BYTE		        Gn4   v092
+	BYTE	W06
+	BYTE		        Bn4   v100
+	BYTE	W06
+	BYTE		        Cs4   v092
+	BYTE	W06
+	BYTE		        As4   v100
+	BYTE	W06
+	BYTE		        Bn4   v092
+	BYTE	W06
+	BYTE		        Cs4   v100
+	BYTE	W06
+	BYTE		        As4   v092
+	BYTE	W06
+	BYTE		        Bn3   v100
+	BYTE	W06
+	BYTE		        Cs4   v092
+	BYTE	W06
+	BYTE	PEND
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_1_004
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_1_005
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_1_006
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_1_007
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_1_008
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_1_009
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_1_010
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_1_011
+	BYTE	GoTo
+	 POIN2	YuNo_BurialChamber_bpat_1_B1
+YuNo_BurialChamber_bpat_1_B2:
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_1_004
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_1_005
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_1_006
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_1_007
+// 024   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_1_008
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_1_009
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_1_010
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_1_011
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_1_004
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_1_005
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_1_006
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_1_007
+// 032   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_1_008
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_1_009
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_1_010
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_1_011
+// 036   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 2 (Midi-Chn.2) ****************//
+
+YuNo_BurialChamber_bpat_2:
+	BYTE	KEYSH   YuNo_BurialChamber_bpat_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   95
+	BYTE		VOL     73*YuNo_BurialChamber_bpat_mvl/mxv
+	BYTE		TIE     As0   v120
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W84
+	BYTE	W02
+	BYTE		EOT   
+	BYTE	W10
+YuNo_BurialChamber_bpat_2_B1:
+// 004   ----------------------------------------
+	BYTE		TIE     As0   v120
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W84
+	BYTE	W02
+	BYTE		EOT   
+	BYTE	W10
+// 008   ----------------------------------------
+	BYTE		TIE     Cs1 
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W84
+	BYTE	W02
+	BYTE		EOT   
+	BYTE	W10
+// 012   ----------------------------------------
+	BYTE		TIE     As0 
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W84
+	BYTE	W02
+	BYTE		EOT   
+	BYTE	W10
+// 016   ----------------------------------------
+	BYTE		TIE     Cs1 
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W84
+	BYTE	W02
+	BYTE		EOT   
+	BYTE	W10
+	BYTE	GoTo
+	 POIN2	YuNo_BurialChamber_bpat_2_B1
+YuNo_BurialChamber_bpat_2_B2:
+// 020   ----------------------------------------
+	BYTE		TIE     As0   v120
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE	W96
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE	W84
+	BYTE	W02
+	BYTE		EOT   
+	BYTE	W10
+// 024   ----------------------------------------
+	BYTE		TIE     Cs1 
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE	W96
+// 026   ----------------------------------------
+	BYTE	W96
+// 027   ----------------------------------------
+	BYTE	W84
+	BYTE	W02
+	BYTE		EOT   
+	BYTE	W10
+// 028   ----------------------------------------
+	BYTE		TIE     As0 
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE	W96
+// 030   ----------------------------------------
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE	W84
+	BYTE	W02
+	BYTE		EOT   
+	BYTE	W10
+// 032   ----------------------------------------
+	BYTE		TIE     Cs1 
+	BYTE	W96
+// 033   ----------------------------------------
+	BYTE	W96
+// 034   ----------------------------------------
+	BYTE	W96
+// 035   ----------------------------------------
+	BYTE	W84
+	BYTE	W02
+	BYTE		EOT   
+	BYTE	W10
+// 036   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 3 (Midi-Chn.3) ****************//
+
+YuNo_BurialChamber_bpat_3:
+	BYTE	KEYSH   YuNo_BurialChamber_bpat_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   89
+	BYTE		VOL     38*YuNo_BurialChamber_bpat_mvl/mxv
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W44
+	BYTE	W01
+	BYTE	W15
+	BYTE	W04
+	BYTE	W03
+	BYTE	W05
+	BYTE	W01
+	BYTE	W03
+	BYTE	W03
+	BYTE	W02
+	BYTE	W01
+	BYTE	W03
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W03
+YuNo_BurialChamber_bpat_3_B1:
+// 004   ----------------------------------------
+YuNo_BurialChamber_bpat_3_004:
+	BYTE		TIE     Fn2   v100
+	BYTE		TIE     Gs2 
+	BYTE		TIE     Cn3 
+	BYTE		TIE     Fn3 
+	BYTE	W01
+	BYTE	W02
+	BYTE	W03
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W03
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W03
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W03
+	BYTE	W02
+	BYTE	W03
+	BYTE	PEND
+// 005   ----------------------------------------
+YuNo_BurialChamber_bpat_3_005:
+	BYTE	W03
+	BYTE	W03
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W03
+	BYTE	W02
+	BYTE	W01
+	BYTE	W05
+	BYTE	W01
+	BYTE	W03
+	BYTE	W05
+	BYTE	W03
+	BYTE	W04
+	BYTE	W09
+	BYTE	W44
+	BYTE	W03
+	BYTE	PEND
+// 006   ----------------------------------------
+YuNo_BurialChamber_bpat_3_006:
+	BYTE	W44
+	BYTE	W01
+	BYTE	W04
+	BYTE	W06
+	BYTE	W03
+	BYTE	W05
+	BYTE	W01
+	BYTE	W05
+	BYTE	W03
+	BYTE	W01
+	BYTE	W03
+	BYTE	W03
+	BYTE	W03
+	BYTE	W02
+	BYTE	W03
+	BYTE	W03
+	BYTE	W01
+	BYTE	W02
+	BYTE	W03
+	BYTE	PEND
+// 007   ----------------------------------------
+YuNo_BurialChamber_bpat_3_007:
+	BYTE	W01
+	BYTE	W03
+	BYTE	W02
+	BYTE	W03
+	BYTE	W01
+	BYTE	W03
+	BYTE	W03
+	BYTE	W03
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W03
+	BYTE	W03
+	BYTE	W01
+	BYTE	W02
+	BYTE	W03
+	BYTE	W03
+	BYTE	W01
+	BYTE	W03
+	BYTE	W02
+	BYTE	W03
+	BYTE	W03
+	BYTE	W03
+	BYTE	W03
+	BYTE	W03
+	BYTE	W03
+	BYTE	W04
+	BYTE	W03
+	BYTE	W06
+	BYTE	W06
+	BYTE	W12
+	BYTE	W02
+	BYTE	PEND
+	BYTE		EOT     Fn2 
+	BYTE		        Gs2 
+	BYTE		        Cn3 
+	BYTE		        Fn3 
+// 008   ----------------------------------------
+YuNo_BurialChamber_bpat_3_008:
+	BYTE		TIE     Ds2   v100
+	BYTE		TIE     Gs2 
+	BYTE		TIE     Bn2 
+	BYTE		TIE     Ds3 
+	BYTE	W10
+	BYTE	W06
+	BYTE	W05
+	BYTE	W01
+	BYTE	W03
+	BYTE	W03
+	BYTE	W03
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W03
+	BYTE	W01
+	BYTE	W03
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W03
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	PEND
+// 009   ----------------------------------------
+YuNo_BurialChamber_bpat_3_009:
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W03
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W03
+	BYTE	W01
+	BYTE	W03
+	BYTE	W03
+	BYTE	W02
+	BYTE	W03
+	BYTE	W03
+	BYTE	W01
+	BYTE	W05
+	BYTE	W04
+	BYTE	W05
+	BYTE	W07
+	BYTE	W24
+	BYTE	W02
+	BYTE	PEND
+// 010   ----------------------------------------
+YuNo_BurialChamber_bpat_3_010:
+	BYTE	W44
+	BYTE	W01
+	BYTE	W04
+	BYTE	W06
+	BYTE	W03
+	BYTE	W05
+	BYTE	W03
+	BYTE	W03
+	BYTE	W03
+	BYTE	W03
+	BYTE	W03
+	BYTE	W03
+	BYTE	W01
+	BYTE	W03
+	BYTE	W02
+	BYTE	W03
+	BYTE	W01
+	BYTE	W03
+	BYTE	W02
+	BYTE	PEND
+// 011   ----------------------------------------
+YuNo_BurialChamber_bpat_3_011:
+	BYTE	W03
+	BYTE	W01
+	BYTE	W03
+	BYTE	W02
+	BYTE	W03
+	BYTE	W01
+	BYTE	W02
+	BYTE	W03
+	BYTE	W03
+	BYTE	W01
+	BYTE	W02
+	BYTE	W03
+	BYTE	W01
+	BYTE	W03
+	BYTE	W02
+	BYTE	W01
+	BYTE	W05
+	BYTE	W01
+	BYTE	W02
+	BYTE	W03
+	BYTE	W03
+	BYTE	W01
+	BYTE	W05
+	BYTE	W03
+	BYTE	W01
+	BYTE	W05
+	BYTE	W04
+	BYTE	W03
+	BYTE	W06
+	BYTE	W06
+	BYTE	W12
+	BYTE	W02
+	BYTE	PEND
+	BYTE		EOT     Ds2 
+	BYTE		        Gs2 
+	BYTE		        Bn2 
+	BYTE		        Ds3 
+// 012   ----------------------------------------
+YuNo_BurialChamber_bpat_3_012:
+	BYTE		TIE     Fn2   v100
+	BYTE		TIE     Gs2 
+	BYTE		TIE     Cn3 
+	BYTE		TIE     Fn3 
+	BYTE	W10
+	BYTE	W06
+	BYTE	W03
+	BYTE	W02
+	BYTE	W03
+	BYTE	W01
+	BYTE	W03
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W03
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	PEND
+// 013   ----------------------------------------
+YuNo_BurialChamber_bpat_3_013:
+	BYTE	W01
+	BYTE	W02
+	BYTE	W03
+	BYTE	W03
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W03
+	BYTE	W01
+	BYTE	W03
+	BYTE	W02
+	BYTE	W01
+	BYTE	W03
+	BYTE	W02
+	BYTE	W03
+	BYTE	W04
+	BYTE	W05
+	BYTE	W06
+	BYTE	W44
+	BYTE	W01
+	BYTE	PEND
+// 014   ----------------------------------------
+YuNo_BurialChamber_bpat_3_014:
+	BYTE	W80
+	BYTE	W02
+	BYTE	W03
+	BYTE	W03
+	BYTE	W03
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	PEND
+// 015   ----------------------------------------
+YuNo_BurialChamber_bpat_3_015:
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W03
+	BYTE	W01
+	BYTE	W03
+	BYTE	W02
+	BYTE	W03
+	BYTE	W03
+	BYTE	W01
+	BYTE	W05
+	BYTE	W06
+	BYTE	PEND
+	BYTE		EOT     Fn2 
+	BYTE		        Gs2 
+	BYTE		        Cn3 
+	BYTE		        Fn3 
+// 016   ----------------------------------------
+YuNo_BurialChamber_bpat_3_016:
+	BYTE		TIE     Ds2   v100
+	BYTE		TIE     Gs2 
+	BYTE		TIE     Bn2 
+	BYTE		TIE     Ds3 
+	BYTE	W10
+	BYTE	W06
+	BYTE	W05
+	BYTE	W01
+	BYTE	W03
+	BYTE	W03
+	BYTE	W03
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W03
+	BYTE	W01
+	BYTE	W03
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W03
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	PEND
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_3_009
+// 018   ----------------------------------------
+YuNo_BurialChamber_bpat_3_018:
+	BYTE	W72
+	BYTE	W01
+	BYTE	W05
+	BYTE	W03
+	BYTE	W01
+	BYTE	W03
+	BYTE	W02
+	BYTE	W01
+	BYTE	W03
+	BYTE	W03
+	BYTE	W02
+	BYTE	PEND
+// 019   ----------------------------------------
+YuNo_BurialChamber_bpat_3_019:
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W03
+	BYTE	W03
+	BYTE	W03
+	BYTE	W03
+	BYTE	W01
+	BYTE	W02
+	BYTE	W03
+	BYTE	W03
+	BYTE	W03
+	BYTE	W07
+	BYTE	W02
+	BYTE	PEND
+	BYTE		EOT     Ds2 
+	BYTE		        Gs2 
+	BYTE		        Bn2 
+	BYTE		        Ds3 
+	BYTE	GoTo
+	 POIN2	YuNo_BurialChamber_bpat_3_B1
+YuNo_BurialChamber_bpat_3_B2:
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_3_004
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_3_005
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_3_006
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_3_007
+	BYTE		EOT     Fn2 
+	BYTE		        Gs2 
+	BYTE		        Cn3 
+	BYTE		        Fn3 
+// 024   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_3_008
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_3_009
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_3_010
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_3_011
+	BYTE		EOT     Ds2 
+	BYTE		        Gs2 
+	BYTE		        Bn2 
+	BYTE		        Ds3 
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_3_012
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_3_013
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_3_014
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_3_015
+	BYTE		EOT     Fn2 
+	BYTE		        Gs2 
+	BYTE		        Cn3 
+	BYTE		        Fn3 
+// 032   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_3_016
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_3_009
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_3_018
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_3_019
+	BYTE		EOT     Ds2 
+	BYTE		        Gs2 
+	BYTE		        Bn2 
+	BYTE		        Ds3 
+// 036   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 4 (Midi-Chn.4) ****************//
+
+YuNo_BurialChamber_bpat_4:
+	BYTE	KEYSH   YuNo_BurialChamber_bpat_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   10
+	BYTE		VOL     80*YuNo_BurialChamber_bpat_mvl/mxv
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+YuNo_BurialChamber_bpat_4_B1:
+// 004   ----------------------------------------
+YuNo_BurialChamber_bpat_4_004:
+	BYTE		N12     As3   v080
+	BYTE	W12
+	BYTE		N06     Ds3 
+	BYTE	W06
+	BYTE		N18     Fn3 
+	BYTE	W18
+	BYTE		        As3 
+	BYTE	W18
+	BYTE		N06     Ds3 
+	BYTE	W06
+	BYTE		N12     Fn3 
+	BYTE	W12
+	BYTE		N06     Gs3 
+	BYTE	W06
+	BYTE		        As3 
+	BYTE	W06
+	BYTE		        Ds3 
+	BYTE	W06
+	BYTE		        Fn3 
+	BYTE	W06
+	BYTE	PEND
+// 005   ----------------------------------------
+YuNo_BurialChamber_bpat_4_005:
+	BYTE		N12     As3   v080
+	BYTE	W12
+	BYTE		N06     Ds3 
+	BYTE	W06
+	BYTE		N18     Fn3 
+	BYTE	W18
+	BYTE		        As3 
+	BYTE	W18
+	BYTE		N06     Ds3 
+	BYTE	W06
+	BYTE		N12     Fn3 
+	BYTE	W12
+	BYTE		N06     Gs3 
+	BYTE	W06
+	BYTE		        As3 
+	BYTE	W06
+	BYTE		        Ds3 
+	BYTE	W06
+	BYTE		        Cs3 
+	BYTE	W06
+	BYTE	PEND
+// 006   ----------------------------------------
+YuNo_BurialChamber_bpat_4_006:
+	BYTE		N12     As3   v080
+	BYTE	W12
+	BYTE		N06     Ds3 
+	BYTE	W06
+	BYTE		N18     Fn3 
+	BYTE	W18
+	BYTE		        As3 
+	BYTE	W18
+	BYTE		N06     Ds3 
+	BYTE	W06
+	BYTE		N12     Fn3 
+	BYTE	W12
+	BYTE		N06     Gs3 
+	BYTE	W06
+	BYTE		        As3 
+	BYTE	W06
+	BYTE		        Ds3 
+	BYTE	W06
+	BYTE		        Fn3 
+	BYTE	W06
+	BYTE	PEND
+// 007   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_4_005
+// 008   ----------------------------------------
+YuNo_BurialChamber_bpat_4_008:
+	BYTE		N12     Bn3   v080
+	BYTE	W12
+	BYTE		N06     Ds3 
+	BYTE	W06
+	BYTE		N18     Fn3 
+	BYTE	W18
+	BYTE		        Bn3 
+	BYTE	W18
+	BYTE		N06     Ds3 
+	BYTE	W06
+	BYTE		N12     Fn3 
+	BYTE	W12
+	BYTE		N06     As3 
+	BYTE	W06
+	BYTE		        Bn3 
+	BYTE	W06
+	BYTE		        Ds3 
+	BYTE	W06
+	BYTE		        Fn3 
+	BYTE	W06
+	BYTE	PEND
+// 009   ----------------------------------------
+YuNo_BurialChamber_bpat_4_009:
+	BYTE		N12     Bn3   v080
+	BYTE	W12
+	BYTE		N06     Ds3 
+	BYTE	W06
+	BYTE		N18     Fn3 
+	BYTE	W18
+	BYTE		        Bn3 
+	BYTE	W18
+	BYTE		N06     Ds3 
+	BYTE	W06
+	BYTE		N12     Fn3 
+	BYTE	W12
+	BYTE		N06     As3 
+	BYTE	W06
+	BYTE		        Bn3 
+	BYTE	W06
+	BYTE		        Ds3 
+	BYTE	W06
+	BYTE		        Cs3 
+	BYTE	W06
+	BYTE	PEND
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_4_008
+// 011   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_4_009
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_4_006
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_4_005
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_4_006
+// 015   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_4_005
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_4_008
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_4_009
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_4_008
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_4_009
+	BYTE	GoTo
+	 POIN2	YuNo_BurialChamber_bpat_4_B1
+YuNo_BurialChamber_bpat_4_B2:
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_4_004
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_4_005
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_4_006
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_4_005
+// 024   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_4_008
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_4_009
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_4_008
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_4_009
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_4_006
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_4_005
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_4_006
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_4_005
+// 032   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_4_008
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_4_009
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_4_008
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_4_009
+// 036   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 5 (Midi-Chn.5) ****************//
+
+YuNo_BurialChamber_bpat_5:
+	BYTE	KEYSH   YuNo_BurialChamber_bpat_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   39
+	BYTE		VOL     63*YuNo_BurialChamber_bpat_mvl/mxv
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+YuNo_BurialChamber_bpat_5_B1:
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+YuNo_BurialChamber_bpat_5_012:
+	BYTE		N12     As0   v112
+	BYTE	W84
+	BYTE		N12   
+	BYTE	W12
+	BYTE	PEND
+// 013   ----------------------------------------
+	BYTE	W72
+	BYTE		N24     Fn1 
+	BYTE	W24
+// 014   ----------------------------------------
+YuNo_BurialChamber_bpat_5_014:
+	BYTE		N03     As0   v112
+	BYTE	W06
+	BYTE		N03   
+	BYTE	W78
+	BYTE		N12   
+	BYTE	W12
+	BYTE	PEND
+// 015   ----------------------------------------
+	BYTE	W72
+	BYTE		N24     Cn1 
+	BYTE	W24
+// 016   ----------------------------------------
+YuNo_BurialChamber_bpat_5_016:
+	BYTE		N12     Cs1   v112
+	BYTE	W84
+	BYTE		N12   
+	BYTE	W12
+	BYTE	PEND
+// 017   ----------------------------------------
+	BYTE	W72
+	BYTE		N24     Gs1 
+	BYTE	W24
+// 018   ----------------------------------------
+YuNo_BurialChamber_bpat_5_018:
+	BYTE		N03     Cs1   v112
+	BYTE	W06
+	BYTE		N03   
+	BYTE	W78
+	BYTE		N12   
+	BYTE	W12
+	BYTE	PEND
+// 019   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	YuNo_BurialChamber_bpat_5_B1
+YuNo_BurialChamber_bpat_5_B2:
+// 020   ----------------------------------------
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE	W96
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE	W96
+// 026   ----------------------------------------
+	BYTE	W96
+// 027   ----------------------------------------
+	BYTE	W96
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_5_012
+// 029   ----------------------------------------
+	BYTE	W72
+	BYTE		N24     Fn1   v112
+	BYTE	W24
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_5_014
+// 031   ----------------------------------------
+	BYTE	W72
+	BYTE		N24     Cn1   v112
+	BYTE	W24
+// 032   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_5_016
+// 033   ----------------------------------------
+	BYTE	W72
+	BYTE		N24     Gs1   v112
+	BYTE	W24
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_5_018
+// 035   ----------------------------------------
+	BYTE	W96
+// 036   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 6 (Midi-Chn.11) ****************//
+
+YuNo_BurialChamber_bpat_6:
+	BYTE	KEYSH   YuNo_BurialChamber_bpat_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   49
+	BYTE		VOL     50*YuNo_BurialChamber_bpat_mvl/mxv
+	BYTE		BEND    c_v-30
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+YuNo_BurialChamber_bpat_6_B1:
+// 004   ----------------------------------------
+YuNo_BurialChamber_bpat_6_004:
+	BYTE		TIE     An1   v124
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W01
+	BYTE	W02
+	BYTE	W78
+	BYTE	PEND
+// 005   ----------------------------------------
+	BYTE	W84
+	BYTE	W02
+	BYTE		EOT   
+	BYTE	W10
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_6_004
+// 013   ----------------------------------------
+	BYTE	W84
+	BYTE	W02
+	BYTE		EOT     An1 
+	BYTE	W10
+// 014   ----------------------------------------
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W96
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_6_004
+// 017   ----------------------------------------
+	BYTE	W84
+	BYTE	W02
+	BYTE		EOT     An1 
+	BYTE	W10
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	YuNo_BurialChamber_bpat_6_B1
+YuNo_BurialChamber_bpat_6_B2:
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_6_004
+// 021   ----------------------------------------
+	BYTE	W84
+	BYTE	W02
+	BYTE		EOT     An1 
+	BYTE	W10
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE	W96
+// 026   ----------------------------------------
+	BYTE	W96
+// 027   ----------------------------------------
+	BYTE	W96
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_6_004
+// 029   ----------------------------------------
+	BYTE	W84
+	BYTE	W02
+	BYTE		EOT     An1 
+	BYTE	W10
+// 030   ----------------------------------------
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE	W96
+// 032   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_6_004
+// 033   ----------------------------------------
+	BYTE	W84
+	BYTE	W02
+	BYTE		EOT     An1 
+	BYTE	W10
+// 034   ----------------------------------------
+	BYTE	W96
+// 035   ----------------------------------------
+	BYTE	W96
+// 036   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 7 (Midi-Chn.16) ****************//
+
+YuNo_BurialChamber_bpat_7:
+	BYTE	KEYSH   YuNo_BurialChamber_bpat_key+0
+// 000   ----------------------------------------
+	BYTE		VOICE   121
+	BYTE		VOL     57*YuNo_BurialChamber_bpat_mvl/mxv
+	BYTE		        80*YuNo_BurialChamber_bpat_mvl/mxv
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+YuNo_BurialChamber_bpat_7_B1:
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+YuNo_BurialChamber_bpat_7_012:
+	BYTE		N01     Bn0   v112
+	BYTE		N01     As4   v096
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        As4   v080
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        As4   v064
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        As4   v048
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        As4   v032
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        As4   v016
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        Bn0   v112
+	BYTE		N01     As3   v096
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE	PEND
+// 013   ----------------------------------------
+YuNo_BurialChamber_bpat_7_013:
+	BYTE		N01     As3   v080
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        As3   v064
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        As3   v048
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        As3   v032
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        As3   v016
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        Dn1   v096
+	BYTE		N01     Fs2   v080
+	BYTE	W24
+	BYTE	PEND
+// 014   ----------------------------------------
+YuNo_BurialChamber_bpat_7_014:
+	BYTE		N01     Bn0   v112
+	BYTE		N01     As4   v096
+	BYTE	W06
+	BYTE		        Bn0   v112
+	BYTE		N01     As4   v096
+	BYTE	W06
+	BYTE		        As4   v080
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        As4   v064
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        As4   v048
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        As4   v032
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        As4   v016
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        Bn0   v112
+	BYTE		N01     As3   v096
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE	PEND
+// 015   ----------------------------------------
+YuNo_BurialChamber_bpat_7_015:
+	BYTE		N01     As3   v080
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        As3   v064
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        As3   v048
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        As3   v032
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        As3   v016
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        En2   v112
+	BYTE	W24
+	BYTE	PEND
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_7_012
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_7_013
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_7_014
+// 019   ----------------------------------------
+YuNo_BurialChamber_bpat_7_019:
+	BYTE		N01     As3   v080
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        As3   v064
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        As3   v048
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        As3   v032
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		        As3   v016
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W06
+	BYTE		N01   
+	BYTE	W30
+	BYTE	PEND
+	BYTE	GoTo
+	 POIN2	YuNo_BurialChamber_bpat_7_B1
+YuNo_BurialChamber_bpat_7_B2:
+// 020   ----------------------------------------
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE	W96
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE	W96
+// 026   ----------------------------------------
+	BYTE	W96
+// 027   ----------------------------------------
+	BYTE	W96
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_7_012
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_7_013
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_7_014
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_7_015
+// 032   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_7_012
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_7_013
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_7_014
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	YuNo_BurialChamber_bpat_7_019
+// 036   ----------------------------------------
+	BYTE	FINE
+
+//******************************************************//
+	ALIGN 4
+
+YuNo_BurialChamber_bpat:
+	BYTE	7	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	YuNo_BurialChamber_bpat_pri	// Priority
+	BYTE	YuNo_BurialChamber_bpat_rev	// Reverb.
+
+	POIN2	YuNo_BurialChamber_bpat_grp
+
+	POIN2	YuNo_BurialChamber_bpat_1
+	POIN2	YuNo_BurialChamber_bpat_2
+	POIN2	YuNo_BurialChamber_bpat_3
+	POIN2	YuNo_BurialChamber_bpat_4
+	POIN2	YuNo_BurialChamber_bpat_5
+	POIN2	YuNo_BurialChamber_bpat_6
+	POIN2	YuNo_BurialChamber_bpat_7
+
+	

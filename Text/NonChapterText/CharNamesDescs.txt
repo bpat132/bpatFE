@@ -236,7 +236,7 @@ The army of Galt, the strongest[NL]
 army on the continent.[X]
 
 ## EliteName
-Soldier[X]
+Elite[X]
 ## EliteDesc
 Elite warriors who are much more[NL]
 powerful than the average soldier.[X]

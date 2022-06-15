@@ -1,0 +1,983 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	Ever17_Karma_bpat_grp  voicegroup000
+	#define	Ever17_Karma_bpat_pri  0
+	#define	Ever17_Karma_bpat_rev  0
+	#define	Ever17_Karma_bpat_mvl  127
+	#define	Ever17_Karma_bpat_key  0
+	#define	Ever17_Karma_bpat_tbs  1
+	#define	Ever17_Karma_bpat_exg  0
+	#define	Ever17_Karma_bpat_cmp  1
+
+	// .rodata
+	//	Ever17_Karma_bpat
+	ALIGN 4
+
+//**************** Track 1 (Midi-Chn.2) ****************//
+
+Ever17_Karma_bpat_1:
+	BYTE	KEYSH   Ever17_Karma_bpat_key+0
+Ever17_Karma_bpat_1_B1:
+// 000   ----------------------------------------
+	BYTE	TEMPO   70*Ever17_Karma_bpat_tbs/2
+	BYTE		VOICE   0
+	BYTE		PAN     c_v-2
+	BYTE		VOL     124*Ever17_Karma_bpat_mvl/mxv
+	BYTE		PAN     c_v-2
+	BYTE		BEND    c_v+0
+	BYTE		N24     Cn5   v040
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        En5 
+	BYTE	W12
+	BYTE		N24     Bn4 
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        En5 
+	BYTE	W12
+// 001   ----------------------------------------
+	BYTE		N24     An4 
+	BYTE	W24
+	BYTE		        Cn5 
+	BYTE	W24
+	BYTE		        Gn4 
+	BYTE	W24
+	BYTE		        En4 
+	BYTE	W24
+// 002   ----------------------------------------
+	BYTE		        Fn4 
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Cn5 
+	BYTE	W12
+	BYTE		N24     En4 
+	BYTE	W24
+	BYTE		N12     Gn4 
+	BYTE	W12
+	BYTE		        Cn5 
+	BYTE	W12
+// 003   ----------------------------------------
+	BYTE		N24     Dn5 
+	BYTE	W24
+	BYTE		        An4 
+	BYTE	W24
+	BYTE		N48     En4 
+	BYTE		N48     Gs4 
+	BYTE		N48     Bn4 
+	BYTE	W48
+// 004   ----------------------------------------
+Ever17_Karma_bpat_1_004:
+	BYTE		N24     Cn5   v040
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        En5 
+	BYTE	W12
+	BYTE		N24     Bn4 
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        En5 
+	BYTE	W12
+	BYTE	PEND
+// 005   ----------------------------------------
+Ever17_Karma_bpat_1_005:
+	BYTE		N24     An4   v040
+	BYTE	W24
+	BYTE		        Cn5 
+	BYTE	W24
+	BYTE		N36     En5 
+	BYTE	W36
+	BYTE		N12   
+	BYTE	W12
+	BYTE	PEND
+// 006   ----------------------------------------
+	BYTE		N24     Fn5 
+	BYTE	W24
+	BYTE		        Cn5 
+	BYTE	W24
+	BYTE		        En4 
+	BYTE		N24     Gs4 
+	BYTE		N24     Bn4 
+	BYTE	W24
+	BYTE		N24   
+	BYTE		N24     En5 
+	BYTE	W24
+// 007   ----------------------------------------
+	BYTE		N48     An4 
+	BYTE	W60
+	BYTE		N12     Bn3 
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE	W12
+	BYTE		        Dn4 
+	BYTE	W12
+// 008   ----------------------------------------
+Ever17_Karma_bpat_1_008:
+	BYTE		N24     Cn4   v040
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		N24     Bn3 
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE	PEND
+// 009   ----------------------------------------
+	BYTE		N24     An3 
+	BYTE	W24
+	BYTE		        Cn4 
+	BYTE	W24
+	BYTE		        Gn3 
+	BYTE	W24
+	BYTE		N12     En3 
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+// 010   ----------------------------------------
+Ever17_Karma_bpat_1_010:
+	BYTE		N24     Fn3   v040
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE	W12
+	BYTE		N24     En3 
+	BYTE	W24
+	BYTE		N12     Gn3 
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE	W12
+	BYTE	PEND
+// 011   ----------------------------------------
+Ever17_Karma_bpat_1_011:
+	BYTE		N24     Dn4   v040
+	BYTE	W24
+	BYTE		        An3 
+	BYTE	W24
+	BYTE		N48     Bn3 
+	BYTE	W48
+	BYTE	PEND
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Ever17_Karma_bpat_1_008
+// 013   ----------------------------------------
+Ever17_Karma_bpat_1_013:
+	BYTE		N24     An3   v040
+	BYTE	W24
+	BYTE		        Cn4 
+	BYTE	W24
+	BYTE		N18     En4 
+	BYTE	W18
+	BYTE		N06     Fn4 
+	BYTE	W06
+	BYTE		N12     En4 
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE	PEND
+// 014   ----------------------------------------
+Ever17_Karma_bpat_1_014:
+	BYTE		N24     An3   v040
+	BYTE		N24     Dn4 
+	BYTE	W24
+	BYTE		N12     Cn4 
+	BYTE	W12
+	BYTE		        Dn4 
+	BYTE	W12
+	BYTE		N24     En3 
+	BYTE		N24     Gs3 
+	BYTE		N24     Bn3 
+	BYTE	W24
+	BYTE		        Gs3 
+	BYTE		N24     Bn3 
+	BYTE		N24     En4 
+	BYTE	W24
+	BYTE	PEND
+// 015   ----------------------------------------
+	BYTE		N72     An3 
+	BYTE	W84
+	BYTE		N12     En4 
+	BYTE	W12
+// 016   ----------------------------------------
+	BYTE		N36     An4 
+	BYTE	W36
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N06     Gn4 
+	BYTE	W06
+	BYTE		N06   
+	BYTE	W06
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N06     Fn4 
+	BYTE	W06
+	BYTE		        Gn4 
+	BYTE	W06
+// 017   ----------------------------------------
+	BYTE		N72   
+	BYTE	W84
+	BYTE		N12     En4 
+	BYTE	W12
+// 018   ----------------------------------------
+	BYTE		N36     Fn4 
+	BYTE	W36
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N06     Gn4 
+	BYTE	W06
+	BYTE		        En4 
+	BYTE	W06
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N06     Dn4 
+	BYTE	W06
+	BYTE		        En4 
+	BYTE	W06
+// 019   ----------------------------------------
+	BYTE		N72   
+	BYTE	W84
+	BYTE		N12     Cn4 
+	BYTE	W12
+// 020   ----------------------------------------
+	BYTE		N36     Dn4 
+	BYTE	W36
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N06     En4 
+	BYTE	W06
+	BYTE		        Fn4 
+	BYTE	W06
+	BYTE		N12   
+	BYTE	W12
+	BYTE		N06     Gn4 
+	BYTE	W06
+	BYTE		        En4 
+	BYTE	W06
+// 021   ----------------------------------------
+	BYTE		N24   
+	BYTE	W24
+	BYTE		N08     Dn4 
+	BYTE	W08
+	BYTE		        En4 
+	BYTE	W08
+	BYTE		N07     Dn4 
+	BYTE	W08
+	BYTE		N36     Cn4 
+	BYTE	W36
+	BYTE		N12   
+	BYTE	W12
+// 022   ----------------------------------------
+	BYTE		N24     Dn4 
+	BYTE	W24
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N08   
+	BYTE	W08
+	BYTE		N07     En4 
+	BYTE	W08
+	BYTE		N24     Fs4 
+	BYTE	W24
+	BYTE		        An4 
+	BYTE	W24
+// 023   ----------------------------------------
+	BYTE		N36   
+	BYTE	W36
+	BYTE		N12   
+	BYTE		N12     Bn4 
+	BYTE	W12
+	BYTE		N48     Bn3 
+	BYTE		N48     Dn4 
+	BYTE		N48     En4 
+	BYTE		N48     Gs4 
+	BYTE	W48
+// 024   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Ever17_Karma_bpat_1_008
+// 025   ----------------------------------------
+	BYTE		N24     An3   v040
+	BYTE	W24
+	BYTE		        Cn4 
+	BYTE	W24
+	BYTE		N36     Gn3 
+	BYTE	W36
+	BYTE		N12     En3 
+	BYTE	W12
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Ever17_Karma_bpat_1_010
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Ever17_Karma_bpat_1_011
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Ever17_Karma_bpat_1_008
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Ever17_Karma_bpat_1_013
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Ever17_Karma_bpat_1_014
+// 031   ----------------------------------------
+	BYTE		N96     An3   v040
+	BYTE	W96
+// 032   ----------------------------------------
+	BYTE		N01     An4 
+	BYTE	W01
+	BYTE		N22     Cn5 
+	BYTE	W23
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        En5 
+	BYTE	W12
+	BYTE		N01     Gn4 
+	BYTE	W01
+	BYTE		N22     Bn4 
+	BYTE	W23
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        En5 
+	BYTE	W12
+// 033   ----------------------------------------
+	BYTE		N01     Fn4 
+	BYTE	W01
+	BYTE		N22     An4 
+	BYTE	W23
+	BYTE		N24     Cn5 
+	BYTE	W24
+	BYTE		N18     Gn3 
+	BYTE		N18     Cn4 
+	BYTE		N18     Gn4 
+	BYTE	W18
+	BYTE		N06     Bn3 
+	BYTE		N06     Dn4 
+	BYTE	W06
+	BYTE		N12     Bn3 
+	BYTE		N12     Dn4 
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE		N12     En4 
+	BYTE	W12
+// 034   ----------------------------------------
+	BYTE		N24     Fn4 
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        Cn5 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		        Dn4 
+	BYTE	W12
+	BYTE		        Gn4 
+	BYTE	W12
+	BYTE		        Cn5 
+	BYTE	W12
+// 035   ----------------------------------------
+	BYTE		N24     Dn5 
+	BYTE	W24
+	BYTE		        Fs4 
+	BYTE		N24     An4 
+	BYTE	W24
+	BYTE		N48     En4 
+	BYTE		N48     Gs4 
+	BYTE		N48     Bn4 
+	BYTE	W48
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Ever17_Karma_bpat_1_004
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Ever17_Karma_bpat_1_005
+// 038   ----------------------------------------
+	BYTE		N24     Fn5   v040
+	BYTE	W24
+	BYTE		        Cn5 
+	BYTE	W24
+	BYTE		        En4 
+	BYTE		N24     Bn4 
+	BYTE	W24
+	BYTE		        En5 
+	BYTE	W24
+// 039   ----------------------------------------
+	BYTE		N96     An4 
+	BYTE	W48
+	BYTE	TEMPO   35*Ever17_Karma_bpat_tbs/2
+	BYTE	W48
+	BYTE	GoTo
+	 POIN2	Ever17_Karma_bpat_1_B1
+Ever17_Karma_bpat_1_B2:
+// 040   ----------------------------------------
+	BYTE	FINE
+
+//**************** Track 2 (Midi-Chn.3) ****************//
+
+Ever17_Karma_bpat_2:
+	BYTE	KEYSH   Ever17_Karma_bpat_key+0
+Ever17_Karma_bpat_2_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   0
+	BYTE		PAN     c_v-2
+	BYTE		VOL     124*Ever17_Karma_bpat_mvl/mxv
+	BYTE		PAN     c_v-2
+	BYTE		BEND    c_v+0
+	BYTE		N12     An3   v064
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W36
+	BYTE		        Gn3 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W36
+// 001   ----------------------------------------
+	BYTE		        Fn3 
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE	W24
+	BYTE		        Dn4 
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE	W12
+	BYTE		        Gn3 
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W12
+// 002   ----------------------------------------
+	BYTE		        Dn3 
+	BYTE	W12
+	BYTE		        An3 
+	BYTE	W12
+	BYTE		        Dn4 
+	BYTE	W12
+	BYTE		        An3 
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE	W12
+	BYTE		        An3 
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE	W12
+	BYTE		        An3 
+	BYTE	W12
+// 003   ----------------------------------------
+	BYTE		        Bn2 
+	BYTE	W12
+	BYTE		        Fs3 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE	W12
+	BYTE		        Fs3 
+	BYTE	W12
+	BYTE		N24     En3 
+	BYTE	W24
+	BYTE		        Gs3 
+	BYTE	W24
+// 004   ----------------------------------------
+	BYTE		N12     An3 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W36
+	BYTE		        Gn3 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W36
+// 005   ----------------------------------------
+	BYTE		        Fn3 
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE	W24
+	BYTE		        Dn4 
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE	W12
+	BYTE		        Gn3 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE	W12
+// 006   ----------------------------------------
+Ever17_Karma_bpat_2_006:
+	BYTE		N12     Dn3   v064
+	BYTE	W12
+	BYTE		        An3 
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE	W12
+	BYTE		        Fn4 
+	BYTE	W12
+	BYTE		N24     Gs3 
+	BYTE	W24
+	BYTE		        En3 
+	BYTE	W24
+	BYTE	PEND
+// 007   ----------------------------------------
+	BYTE		N12     An1 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        Bn2 
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE	W12
+	BYTE		N48     Gn3 
+	BYTE	W48
+// 008   ----------------------------------------
+Ever17_Karma_bpat_2_008:
+	BYTE		N12     An1   v052
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        Gn1 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        Bn2 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE	PEND
+// 009   ----------------------------------------
+	BYTE		        Fn1 
+	BYTE	W12
+	BYTE		        Cn2 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE	W12
+	BYTE		        Bn1 
+	BYTE	W12
+	BYTE		        Cn2 
+	BYTE	W12
+	BYTE		        Gn2 
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE	W12
+	BYTE		        Gn2 
+	BYTE	W12
+// 010   ----------------------------------------
+	BYTE		        Dn2 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE	W12
+	BYTE		        Cn2 
+	BYTE	W12
+	BYTE		        Gn2 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE	W12
+	BYTE		        Cn2 
+	BYTE	W12
+// 011   ----------------------------------------
+	BYTE		        Bn1 
+	BYTE	W12
+	BYTE		        Fs2 
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE	W12
+	BYTE		        Fs2 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        Bn2 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE	W12
+	BYTE		        Gs3 
+	BYTE	W12
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Ever17_Karma_bpat_2_008
+// 013   ----------------------------------------
+	BYTE		N12     Fn1   v052
+	BYTE	W12
+	BYTE		        Cn2 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE	W12
+	BYTE		        Bn1 
+	BYTE	W12
+	BYTE		        Cn2 
+	BYTE	W12
+	BYTE		        Gn2 
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE	W12
+// 014   ----------------------------------------
+	BYTE		        Dn2 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE	W12
+	BYTE		N24     Cn3 
+	BYTE	W24
+	BYTE		N48     Bn2 
+	BYTE	W48
+// 015   ----------------------------------------
+	BYTE		N12     An1 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        Bn2 
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE	W12
+	BYTE		        Cs3 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE	W12
+// 016   ----------------------------------------
+Ever17_Karma_bpat_2_016:
+	BYTE		N12     Dn2   v052
+	BYTE	W12
+	BYTE		        An2 
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE	W12
+	BYTE		        Fn3 
+	BYTE	W12
+	BYTE		        Dn2 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE	W12
+	BYTE		        Gn3 
+	BYTE	W12
+	BYTE	PEND
+// 017   ----------------------------------------
+	BYTE		        Cn2 
+	BYTE	W12
+	BYTE		        Gn2 
+	BYTE	W12
+	BYTE		        Bn2 
+	BYTE	W12
+	BYTE		N06     En3 
+	BYTE	W06
+	BYTE		        Dn3 
+	BYTE	W06
+	BYTE		N12     Cn2 
+	BYTE	W12
+	BYTE		        Gn2 
+	BYTE	W12
+	BYTE		        Bn2 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE	W12
+// 018   ----------------------------------------
+	BYTE		        Gn1 
+	BYTE	W12
+	BYTE		        Dn2 
+	BYTE	W12
+	BYTE		        Bn2 
+	BYTE	W12
+	BYTE		        Dn2 
+	BYTE	W12
+	BYTE		        Gn1 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE	W12
+	BYTE		        Bn2 
+	BYTE	W12
+// 019   ----------------------------------------
+	BYTE		        An1 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Ever17_Karma_bpat_2_016
+// 021   ----------------------------------------
+	BYTE		N24     En2   v052
+	BYTE		N24     Gn2 
+	BYTE		N24     En3 
+	BYTE	W24
+	BYTE		        Dn2 
+	BYTE		N24     Fs2 
+	BYTE		N24     Dn3 
+	BYTE	W24
+	BYTE		N36     Cn2 
+	BYTE		N36     En2 
+	BYTE		N36     An2 
+	BYTE		N36     Cn3 
+	BYTE	W36
+	BYTE		N12     En2 
+	BYTE		N12     An2 
+	BYTE		N12     Cn3 
+	BYTE	W12
+// 022   ----------------------------------------
+	BYTE		        Bn1 
+	BYTE	W12
+	BYTE		        Fs2 
+	BYTE	W12
+	BYTE		        Bn2 
+	BYTE	W12
+	BYTE		        Fs2 
+	BYTE	W12
+	BYTE		        Bn2 
+	BYTE		N12     Dn3 
+	BYTE	W12
+	BYTE		        Fs2 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE		N12     Dn3 
+	BYTE	W12
+	BYTE		        Fs2 
+	BYTE	W12
+// 023   ----------------------------------------
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        Bn2 
+	BYTE	W12
+	BYTE		        Fs3 
+	BYTE	W12
+	BYTE		        Bn2 
+	BYTE	W12
+	BYTE		N48     En2 
+	BYTE	W48
+// 024   ----------------------------------------
+Ever17_Karma_bpat_2_024:
+	BYTE		N12     An1   v064
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE		N12     En3 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        Gn1 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        Bn2 
+	BYTE		N12     En3 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE	PEND
+// 025   ----------------------------------------
+Ever17_Karma_bpat_2_025:
+	BYTE		N12     Fn1   v064
+	BYTE	W12
+	BYTE		        Cn2 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE		N12     Cn3 
+	BYTE	W12
+	BYTE		        Bn1 
+	BYTE	W12
+	BYTE		        Cn2 
+	BYTE	W12
+	BYTE		        Gn2 
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE		N12     En3 
+	BYTE	W12
+	BYTE		        Gn2 
+	BYTE	W12
+	BYTE	PEND
+// 026   ----------------------------------------
+	BYTE		        Dn2 
+	BYTE	W12
+	BYTE		        An2 
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE	W12
+	BYTE		        Cn2 
+	BYTE	W12
+	BYTE		        Gn2 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE	W12
+	BYTE		        Cn2 
+	BYTE	W12
+// 027   ----------------------------------------
+	BYTE		        Bn1 
+	BYTE	W12
+	BYTE		        Fs2 
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE		N12     Fs3 
+	BYTE	W12
+	BYTE		        Fs2 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        Bn2 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE	W12
+	BYTE		        Gs3 
+	BYTE	W12
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Ever17_Karma_bpat_2_024
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Ever17_Karma_bpat_2_025
+// 030   ----------------------------------------
+	BYTE		N12     Dn2   v064
+	BYTE	W12
+	BYTE		        An2 
+	BYTE	W12
+	BYTE		N24     Cn3 
+	BYTE	W24
+	BYTE		N48     Bn2 
+	BYTE	W48
+// 031   ----------------------------------------
+	BYTE		N12     An1 
+	BYTE	W12
+	BYTE		        En2 
+	BYTE	W12
+	BYTE		        Bn2 
+	BYTE	W12
+	BYTE		        Dn3 
+	BYTE	W12
+	BYTE		N48     Cs3 
+	BYTE	W48
+// 032   ----------------------------------------
+	BYTE		        An3 
+	BYTE	W48
+	BYTE		        Gn3 
+	BYTE	W48
+// 033   ----------------------------------------
+	BYTE		        Fn3 
+	BYTE	W48
+	BYTE		        En3 
+	BYTE	W48
+// 034   ----------------------------------------
+	BYTE		N12     Dn3 
+	BYTE	W12
+	BYTE		        En3 
+	BYTE	W12
+	BYTE		N24     Fn3 
+	BYTE	W24
+	BYTE		        Cn3 
+	BYTE	W24
+	BYTE		        En3 
+	BYTE	W24
+// 035   ----------------------------------------
+	BYTE		N12     Bn2 
+	BYTE	W12
+	BYTE		        Fs3 
+	BYTE	W12
+	BYTE		N12   
+	BYTE	W12
+	BYTE		        An3 
+	BYTE	W12
+	BYTE		N24     En3 
+	BYTE	W24
+	BYTE		        Fn4 
+	BYTE	W24
+// 036   ----------------------------------------
+	BYTE		N12     An3 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		        Gn3 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+// 037   ----------------------------------------
+	BYTE		        Fn3 
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE	W12
+	BYTE		        An3 
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE	W12
+	BYTE		        Cn3 
+	BYTE	W12
+	BYTE		        Gn3 
+	BYTE	W12
+	BYTE		        En4 
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE	W12
+// 038   ----------------------------------------
+	BYTE	PATT
+	 POIN2	Ever17_Karma_bpat_2_006
+// 039   ----------------------------------------
+	BYTE		N12     An2   v064
+	BYTE	W12
+	BYTE		        En3 
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE	W12
+	BYTE		        Cn4 
+	BYTE	W12
+	BYTE		N44     Gn4 
+	BYTE	W48
+	BYTE	GoTo
+	 POIN2	Ever17_Karma_bpat_2_B1
+Ever17_Karma_bpat_2_B2:
+// 040   ----------------------------------------
+	BYTE	FINE
+
+//******************************************************//
+	ALIGN 4
+
+Ever17_Karma_bpat:
+	BYTE	2	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	Ever17_Karma_bpat_pri	// Priority
+	BYTE	Ever17_Karma_bpat_rev	// Reverb.
+
+	POIN2	Ever17_Karma_bpat_grp
+
+	POIN2	Ever17_Karma_bpat_1
+	POIN2	Ever17_Karma_bpat_2
+
+	

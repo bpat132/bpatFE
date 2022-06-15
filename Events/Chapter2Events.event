@@ -89,7 +89,7 @@ LoadUnit(0,1)
 LoadUnit(4,1)
 LoadUnit(1,2)
 UNIT Nico  Thief 0x1 Level(2,Ally,0)   [2,2] 0x0 0x0 0x0 0x0 [IronSword,FireSword,Vuln] NoAI
-UNIT Lisa  Cleric 0x1 Level(3,Ally,0)   [3,2] 0x0 0x0 0x0 0x0 [PetrifyStaff,Heal,Berserk,Vuln] NoAI
+UNIT Lisa  Cleric 0x1 Level(3,Ally,0)   [3,2] 0x0 0x0 0x0 0x0 [Heal,FreezeStaff,Vuln] NoAI
 UNIT
 
 EnemyUnits1:

@@ -1,0 +1,1629 @@
+//Event file generated from Sappy .s format.
+	#include "MPlayDef.event"
+
+	#define	AA3_VictorKudo_bpat_grp  voicegroup000
+	#define	AA3_VictorKudo_bpat_pri  0
+	#define	AA3_VictorKudo_bpat_rev  0
+	#define	AA3_VictorKudo_bpat_mvl  127
+	#define	AA3_VictorKudo_bpat_key  0
+	#define	AA3_VictorKudo_bpat_tbs  1
+	#define	AA3_VictorKudo_bpat_exg  0
+	#define	AA3_VictorKudo_bpat_cmp  1
+
+	// .rodata
+	//	AA3_VictorKudo_bpat
+	ALIGN 4
+
+//**************** Track 1 (Midi-Chn.1) ****************//
+
+AA3_VictorKudo_bpat_1:
+	BYTE	KEYSH   AA3_VictorKudo_bpat_key+0
+AA3_VictorKudo_bpat_1_B1:
+// 000   ----------------------------------------
+	BYTE	TEMPO   94*AA3_VictorKudo_bpat_tbs/2
+	BYTE		VOICE   104
+	BYTE		VOL     127*AA3_VictorKudo_bpat_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		N06     Gs3   v060
+	BYTE	W24
+	BYTE		        Fs3 
+	BYTE	W24
+	BYTE		        En3 
+	BYTE	W24
+	BYTE		        Ds3 
+	BYTE	W24
+// 001   ----------------------------------------
+AA3_VictorKudo_bpat_1_001:
+	BYTE		N06     Gs3   v060
+	BYTE	W24
+	BYTE		        Fs3 
+	BYTE	W24
+	BYTE		        En3 
+	BYTE	W24
+	BYTE		        Ds3 
+	BYTE	W24
+	BYTE	PEND
+// 002   ----------------------------------------
+AA3_VictorKudo_bpat_1_002:
+	BYTE		N04     Ds3   v060
+	BYTE	W06
+	BYTE		N17   
+	BYTE	W18
+	BYTE		        En3 
+	BYTE	W18
+	BYTE		N05     Ds3 
+	BYTE	W06
+	BYTE		N04     Gs3 
+	BYTE	W06
+	BYTE		N17   
+	BYTE	W18
+	BYTE		        As3 
+	BYTE	W18
+	BYTE		N05     Gs3 
+	BYTE	W06
+	BYTE	PEND
+// 003   ----------------------------------------
+AA3_VictorKudo_bpat_1_003:
+	BYTE		N04     Bn3   v060
+	BYTE	W06
+	BYTE		N17   
+	BYTE	W18
+	BYTE		        As3 
+	BYTE	W18
+	BYTE		N05     Gs3 
+	BYTE	W06
+	BYTE		N17     As3 
+	BYTE	W18
+	BYTE		N05     Bn3 
+	BYTE	W06
+	BYTE		N20     As3 
+	BYTE	W24
+	BYTE	PEND
+// 004   ----------------------------------------
+AA3_VictorKudo_bpat_1_004:
+	BYTE	W18
+	BYTE		N05     Bn3   v060
+	BYTE	W06
+	BYTE		N17     Ds4 
+	BYTE	W18
+	BYTE		N04     Bn3 
+	BYTE	W06
+	BYTE		N24   
+	BYTE	W24
+	BYTE		N17     As3 
+	BYTE	W18
+	BYTE		N05     Bn3 
+	BYTE	W06
+	BYTE	PEND
+// 005   ----------------------------------------
+AA3_VictorKudo_bpat_1_005:
+	BYTE		N05     As3   v060
+	BYTE	W06
+	BYTE		N17     Gs3 
+	BYTE	W18
+	BYTE		        Bn3 
+	BYTE	W18
+	BYTE		N04     Gs3 
+	BYTE	W06
+	BYTE		N05     As3 
+	BYTE	W06
+	BYTE		N17     Gs3 
+	BYTE	W18
+	BYTE		        En3 
+	BYTE	W18
+	BYTE		N05     Ds3 
+	BYTE	W06
+	BYTE	PEND
+// 006   ----------------------------------------
+AA3_VictorKudo_bpat_1_006:
+	BYTE	W18
+	BYTE		N04     Ds3   v060
+	BYTE	W06
+	BYTE		N20   
+	BYTE	W24
+	BYTE		        Ds4 
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W18
+	BYTE		N05   
+	BYTE	W06
+	BYTE	PEND
+// 007   ----------------------------------------
+AA3_VictorKudo_bpat_1_007:
+	BYTE		N05     En4   v060
+	BYTE	W06
+	BYTE		N12     Ds4 
+	BYTE	W18
+	BYTE		N17   
+	BYTE	W18
+	BYTE		N05     En4 
+	BYTE	W06
+	BYTE		N20     Ds4 
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W18
+	BYTE		N05   
+	BYTE	W06
+	BYTE	PEND
+// 008   ----------------------------------------
+AA3_VictorKudo_bpat_1_008:
+	BYTE		N40     Bn3   v060
+	BYTE	W42
+	BYTE		N05     Ds4 
+	BYTE	W06
+	BYTE		        Bn3 
+	BYTE	W06
+	BYTE		N17     As3 
+	BYTE	W18
+	BYTE		N20     Gs3 
+	BYTE	W24
+	BYTE	PEND
+// 009   ----------------------------------------
+AA3_VictorKudo_bpat_1_009:
+	BYTE		N05     As3   v060
+	BYTE	W06
+	BYTE		N17     Gs3 
+	BYTE	W18
+	BYTE		        Bn3 
+	BYTE	W18
+	BYTE		N05     As3 
+	BYTE	W06
+	BYTE		N06     Gs3 
+	BYTE	W24
+	BYTE		N24     En4 
+	BYTE	W24
+	BYTE	PEND
+// 010   ----------------------------------------
+AA3_VictorKudo_bpat_1_010:
+	BYTE		N40     Ds4   v060
+	BYTE	W42
+	BYTE		N05     En4 
+	BYTE	W06
+	BYTE		N04     Bn3 
+	BYTE	W06
+	BYTE		N17     As3 
+	BYTE	W18
+	BYTE		N20     Gs3 
+	BYTE	W24
+	BYTE	PEND
+// 011   ----------------------------------------
+AA3_VictorKudo_bpat_1_011:
+	BYTE		N04     Ds3   v060
+	BYTE	W06
+	BYTE		N17   
+	BYTE	W18
+	BYTE		        Bn3 
+	BYTE	W18
+	BYTE		N05     As3 
+	BYTE	W06
+	BYTE		N11     Gs3 
+	BYTE	W12
+	BYTE		N05     As3 
+	BYTE	W06
+	BYTE		        Bn3 
+	BYTE	W06
+	BYTE		        Cs4 
+	BYTE	W06
+	BYTE		        Ds4 
+	BYTE	W06
+	BYTE		        Fn4 
+	BYTE	W06
+	BYTE		        Gn4 
+	BYTE	W06
+	BYTE	PEND
+// 012   ----------------------------------------
+AA3_VictorKudo_bpat_1_012:
+	BYTE		N06     Gs4   v060
+	BYTE	W24
+	BYTE		        Ds3 
+	BYTE	W18
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N11     Gs3 
+	BYTE	W12
+	BYTE		N04     Bn2 
+	BYTE	W12
+	BYTE		        Ds3 
+	BYTE	W12
+	BYTE		        Gs3 
+	BYTE	W12
+	BYTE	PEND
+// 013   ----------------------------------------
+AA3_VictorKudo_bpat_1_013:
+	BYTE		N06     Bn3   v060
+	BYTE	W24
+	BYTE		N17   
+	BYTE	W18
+	BYTE		N05     Cs4 
+	BYTE	W06
+	BYTE		N06     As3 
+	BYTE	W24
+	BYTE		N05   
+	BYTE	W06
+	BYTE		        Bn3 
+	BYTE	W06
+	BYTE		N11     As3 
+	BYTE	W12
+	BYTE	PEND
+// 014   ----------------------------------------
+AA3_VictorKudo_bpat_1_014:
+	BYTE		N06     Gs3   v060
+	BYTE	W24
+	BYTE		        Ds4 
+	BYTE	W18
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N11     Gs3 
+	BYTE	W12
+	BYTE		N04     Ds3 
+	BYTE	W12
+	BYTE		        Gs3 
+	BYTE	W12
+	BYTE		        Bn3 
+	BYTE	W12
+	BYTE	PEND
+// 015   ----------------------------------------
+AA3_VictorKudo_bpat_1_015:
+	BYTE		N06     Ds4   v060
+	BYTE	W24
+	BYTE		N17   
+	BYTE	W18
+	BYTE		N05     En4 
+	BYTE	W06
+	BYTE		N06     Cs4 
+	BYTE	W24
+	BYTE		        Ds4 
+	BYTE	W24
+	BYTE	PEND
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_1_001
+// 017   ----------------------------------------
+AA3_VictorKudo_bpat_1_017:
+	BYTE		N06     Gs3   v060
+	BYTE	W24
+	BYTE		        Fs3 
+	BYTE	W24
+	BYTE		        En3 
+	BYTE	W24
+	BYTE		        Ds4 
+	BYTE	W24
+	BYTE	PEND
+	BYTE	GoTo
+	 POIN2	AA3_VictorKudo_bpat_1_B1
+AA3_VictorKudo_bpat_1_B2:
+// 018   ----------------------------------------
+AA3_VictorKudo_bpat_1_018:
+	BYTE	TEMPO   94*AA3_VictorKudo_bpat_tbs/2
+	BYTE		N06     Gs3   v060
+	BYTE	W24
+	BYTE		        Fs3 
+	BYTE	W24
+	BYTE		        En3 
+	BYTE	W24
+	BYTE		        Ds3 
+	BYTE	W24
+	BYTE	PEND
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_1_001
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_1_002
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_1_003
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_1_004
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_1_005
+// 024   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_1_006
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_1_007
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_1_008
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_1_009
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_1_010
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_1_011
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_1_012
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_1_013
+// 032   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_1_014
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_1_015
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_1_001
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_1_017
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_1_018
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_1_001
+// 038   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_1_002
+// 039   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_1_003
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_1_004
+// 041   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_1_005
+// 042   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_1_006
+// 043   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_1_007
+// 044   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_1_008
+// 045   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_1_009
+// 046   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_1_010
+// 047   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_1_011
+// 048   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_1_012
+// 049   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_1_013
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_1_014
+// 051   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_1_015
+// 052   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_1_001
+// 053   ----------------------------------------
+	BYTE		N06     Gs3   v060
+	BYTE	W24
+	BYTE		        Fs3 
+	BYTE	W24
+	BYTE		        En3 
+	BYTE	W24
+	BYTE		        Ds4 
+	BYTE	W23
+	BYTE	FINE
+
+//**************** Track 2 (Midi-Chn.2) ****************//
+
+AA3_VictorKudo_bpat_2:
+	BYTE	KEYSH   AA3_VictorKudo_bpat_key+0
+AA3_VictorKudo_bpat_2_B1:
+// 000   ----------------------------------------
+	BYTE		VOL     127*AA3_VictorKudo_bpat_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+AA3_VictorKudo_bpat_2_002:
+	BYTE		VOICE   61
+	BYTE		N04     Ds2   v076
+	BYTE	W06
+	BYTE		N17   
+	BYTE	W18
+	BYTE		        En2 
+	BYTE	W18
+	BYTE		N05     Ds2 
+	BYTE	W06
+	BYTE		N04     Gs2 
+	BYTE	W06
+	BYTE		N17   
+	BYTE	W18
+	BYTE		        As2 
+	BYTE	W18
+	BYTE		N05     Gs2 
+	BYTE	W06
+	BYTE	PEND
+// 003   ----------------------------------------
+AA3_VictorKudo_bpat_2_003:
+	BYTE		N04     Bn2   v076
+	BYTE	W06
+	BYTE		N17   
+	BYTE	W18
+	BYTE		        As2 
+	BYTE	W18
+	BYTE		N05     Gs2 
+	BYTE	W06
+	BYTE		N17     As2 
+	BYTE	W18
+	BYTE		N05     Bn2 
+	BYTE	W06
+	BYTE		N20     As2 
+	BYTE	W24
+	BYTE	PEND
+// 004   ----------------------------------------
+AA3_VictorKudo_bpat_2_004:
+	BYTE	W18
+	BYTE		N05     Bn2   v076
+	BYTE	W06
+	BYTE		N17     Ds3 
+	BYTE	W18
+	BYTE		N04     Bn2 
+	BYTE	W06
+	BYTE		N24   
+	BYTE	W24
+	BYTE		N17     As2 
+	BYTE	W18
+	BYTE		N05     Bn2 
+	BYTE	W06
+	BYTE	PEND
+// 005   ----------------------------------------
+AA3_VictorKudo_bpat_2_005:
+	BYTE		N05     As2   v076
+	BYTE	W06
+	BYTE		N17     Gs2 
+	BYTE	W18
+	BYTE		        Bn2 
+	BYTE	W18
+	BYTE		N04     Gs2 
+	BYTE	W06
+	BYTE		N05     As2 
+	BYTE	W06
+	BYTE		N17     Gs2 
+	BYTE	W18
+	BYTE		        En2 
+	BYTE	W18
+	BYTE		N05     Ds2 
+	BYTE	W06
+	BYTE	PEND
+// 006   ----------------------------------------
+AA3_VictorKudo_bpat_2_006:
+	BYTE	W18
+	BYTE		N04     Ds2   v076
+	BYTE	W06
+	BYTE		N20   
+	BYTE	W24
+	BYTE		        Ds3 
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W18
+	BYTE		N05   
+	BYTE	W06
+	BYTE	PEND
+// 007   ----------------------------------------
+AA3_VictorKudo_bpat_2_007:
+	BYTE		N05     En3   v076
+	BYTE	W06
+	BYTE		N12     Ds3 
+	BYTE	W18
+	BYTE		N17   
+	BYTE	W18
+	BYTE		N05     En3 
+	BYTE	W06
+	BYTE		N20     Ds3 
+	BYTE	W24
+	BYTE		N12   
+	BYTE	W18
+	BYTE		N05   
+	BYTE	W06
+	BYTE	PEND
+// 008   ----------------------------------------
+AA3_VictorKudo_bpat_2_008:
+	BYTE		N40     Bn2   v076
+	BYTE	W42
+	BYTE		N05     Ds3 
+	BYTE	W06
+	BYTE		        Bn2 
+	BYTE	W06
+	BYTE		N17     As2 
+	BYTE	W18
+	BYTE		N20     Gs2 
+	BYTE	W24
+	BYTE	PEND
+// 009   ----------------------------------------
+AA3_VictorKudo_bpat_2_009:
+	BYTE		N05     As2   v076
+	BYTE	W06
+	BYTE		N17     Gs2 
+	BYTE	W18
+	BYTE		        Bn2 
+	BYTE	W18
+	BYTE		N05     As2 
+	BYTE	W06
+	BYTE		N06     Gs2 
+	BYTE	W24
+	BYTE		N24     En3 
+	BYTE	W24
+	BYTE	PEND
+// 010   ----------------------------------------
+AA3_VictorKudo_bpat_2_010:
+	BYTE		N40     Ds3   v076
+	BYTE	W42
+	BYTE		N05     En3 
+	BYTE	W06
+	BYTE		N04     Bn2 
+	BYTE	W06
+	BYTE		N17     As2 
+	BYTE	W18
+	BYTE		N20     Gs2 
+	BYTE	W24
+	BYTE	PEND
+// 011   ----------------------------------------
+AA3_VictorKudo_bpat_2_011:
+	BYTE		N04     Ds2   v076
+	BYTE	W06
+	BYTE		N17   
+	BYTE	W18
+	BYTE		        Bn2 
+	BYTE	W18
+	BYTE		N05     As2 
+	BYTE	W06
+	BYTE		N20     Gs2 
+	BYTE	W48
+	BYTE	PEND
+// 012   ----------------------------------------
+AA3_VictorKudo_bpat_2_012:
+	BYTE	W24
+	BYTE		N06     Ds2   v076
+	BYTE	W18
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N20     Gs2 
+	BYTE	W48
+	BYTE	PEND
+// 013   ----------------------------------------
+	BYTE	W96
+// 014   ----------------------------------------
+AA3_VictorKudo_bpat_2_014:
+	BYTE	W24
+	BYTE		N06     Ds3   v076
+	BYTE	W18
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N20     Gs2 
+	BYTE	W48
+	BYTE	PEND
+// 015   ----------------------------------------
+	BYTE	W96
+// 016   ----------------------------------------
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	AA3_VictorKudo_bpat_2_B1
+AA3_VictorKudo_bpat_2_B2:
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W96
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_2_002
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_2_003
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_2_004
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_2_005
+// 024   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_2_006
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_2_007
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_2_008
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_2_009
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_2_010
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_2_011
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_2_012
+// 031   ----------------------------------------
+	BYTE	W96
+// 032   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_2_014
+// 033   ----------------------------------------
+	BYTE	W96
+// 034   ----------------------------------------
+	BYTE	W96
+// 035   ----------------------------------------
+	BYTE	W96
+// 036   ----------------------------------------
+	BYTE	W96
+// 037   ----------------------------------------
+	BYTE	W96
+// 038   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_2_002
+// 039   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_2_003
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_2_004
+// 041   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_2_005
+// 042   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_2_006
+// 043   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_2_007
+// 044   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_2_008
+// 045   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_2_009
+// 046   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_2_010
+// 047   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_2_011
+// 048   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_2_012
+// 049   ----------------------------------------
+	BYTE	W96
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_2_014
+// 051   ----------------------------------------
+	BYTE	W96
+// 052   ----------------------------------------
+	BYTE	W96
+// 053   ----------------------------------------
+	BYTE	W92
+	BYTE	W03
+	BYTE	FINE
+
+//**************** Track 3 (Midi-Chn.3) ****************//
+
+AA3_VictorKudo_bpat_3:
+	BYTE	KEYSH   AA3_VictorKudo_bpat_key+0
+AA3_VictorKudo_bpat_3_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   58
+	BYTE		VOL     127*AA3_VictorKudo_bpat_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		N06     Gs0   v060
+	BYTE	W24
+	BYTE		        Fs0 
+	BYTE	W24
+	BYTE		        En0 
+	BYTE	W24
+	BYTE		        Ds0 
+	BYTE	W24
+// 001   ----------------------------------------
+AA3_VictorKudo_bpat_3_001:
+	BYTE		N06     Gs0   v060
+	BYTE	W24
+	BYTE		        Fs0 
+	BYTE	W24
+	BYTE		        En0 
+	BYTE	W24
+	BYTE		        Ds0 
+	BYTE	W24
+	BYTE	PEND
+// 002   ----------------------------------------
+AA3_VictorKudo_bpat_3_002:
+	BYTE		N06     Gs0   v060
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W24
+	BYTE	PEND
+// 003   ----------------------------------------
+AA3_VictorKudo_bpat_3_003:
+	BYTE		N06     Gs0   v060
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W24
+	BYTE		        Cs0 
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W24
+	BYTE	PEND
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_002
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_003
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_002
+// 007   ----------------------------------------
+AA3_VictorKudo_bpat_3_007:
+	BYTE		N06     Cs0   v060
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W24
+	BYTE		        Ds0 
+	BYTE	W24
+	BYTE		N20   
+	BYTE	W24
+	BYTE	PEND
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_002
+// 009   ----------------------------------------
+AA3_VictorKudo_bpat_3_009:
+	BYTE		N06     Ds0   v060
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W24
+	BYTE		        Gs0 
+	BYTE	W24
+	BYTE		N20     Cs0 
+	BYTE	W24
+	BYTE	PEND
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_002
+// 011   ----------------------------------------
+AA3_VictorKudo_bpat_3_011:
+	BYTE		N06     Ds0   v060
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W24
+	BYTE		        Gs0 
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W24
+	BYTE	PEND
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_002
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_007
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_002
+// 015   ----------------------------------------
+AA3_VictorKudo_bpat_3_015:
+	BYTE		N06     Cs0   v060
+	BYTE	W24
+	BYTE		N06   
+	BYTE	W24
+	BYTE		        Ds0 
+	BYTE	W48
+	BYTE	PEND
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_001
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_001
+	BYTE	GoTo
+	 POIN2	AA3_VictorKudo_bpat_3_B1
+AA3_VictorKudo_bpat_3_B2:
+// 018   ----------------------------------------
+AA3_VictorKudo_bpat_3_018:
+	BYTE		VOICE   58
+	BYTE		N06     Gs0   v060
+	BYTE	W24
+	BYTE		        Fs0 
+	BYTE	W24
+	BYTE		        En0 
+	BYTE	W24
+	BYTE		        Ds0 
+	BYTE	W24
+	BYTE	PEND
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_001
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_002
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_003
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_002
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_003
+// 024   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_002
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_007
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_002
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_009
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_002
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_011
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_002
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_007
+// 032   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_002
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_015
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_001
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_001
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_018
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_001
+// 038   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_002
+// 039   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_003
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_002
+// 041   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_003
+// 042   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_002
+// 043   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_007
+// 044   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_002
+// 045   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_009
+// 046   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_002
+// 047   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_011
+// 048   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_002
+// 049   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_007
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_002
+// 051   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_015
+// 052   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_3_001
+// 053   ----------------------------------------
+	BYTE		N06     Gs0   v060
+	BYTE	W24
+	BYTE		        Fs0 
+	BYTE	W24
+	BYTE		        En0 
+	BYTE	W24
+	BYTE		        Ds0 
+	BYTE	W23
+	BYTE	FINE
+
+//**************** Track 4 (Midi-Chn.4) ****************//
+
+AA3_VictorKudo_bpat_4:
+	BYTE	KEYSH   AA3_VictorKudo_bpat_key+0
+AA3_VictorKudo_bpat_4_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   81
+	BYTE		VOL     127*AA3_VictorKudo_bpat_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE	W96
+// 001   ----------------------------------------
+	BYTE	W96
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+AA3_VictorKudo_bpat_4_011:
+	BYTE	W48
+	BYTE		N11     Gs2   v048
+	BYTE	W12
+	BYTE		N05     As2 
+	BYTE	W06
+	BYTE		        Bn2 
+	BYTE	W06
+	BYTE		        Cs3 
+	BYTE	W06
+	BYTE		        Ds3 
+	BYTE	W06
+	BYTE		        Fn3 
+	BYTE	W06
+	BYTE		        Gn3 
+	BYTE	W06
+	BYTE	PEND
+// 012   ----------------------------------------
+AA3_VictorKudo_bpat_4_012:
+	BYTE		N06     Gs3   v048
+	BYTE	W60
+	BYTE		N04     Bn3 
+	BYTE	W12
+	BYTE		        Ds4 
+	BYTE	W12
+	BYTE		        Gs4 
+	BYTE	W12
+	BYTE	PEND
+// 013   ----------------------------------------
+AA3_VictorKudo_bpat_4_013:
+	BYTE		N06     Bn4   v048
+	BYTE	W24
+	BYTE		N17   
+	BYTE	W18
+	BYTE		N05     Cs5 
+	BYTE	W06
+	BYTE		N06     As4 
+	BYTE	W48
+	BYTE	PEND
+// 014   ----------------------------------------
+AA3_VictorKudo_bpat_4_014:
+	BYTE	W60
+	BYTE		N04     Ds4   v048
+	BYTE	W12
+	BYTE		        Gs4 
+	BYTE	W12
+	BYTE		        Bn4 
+	BYTE	W12
+	BYTE	PEND
+// 015   ----------------------------------------
+AA3_VictorKudo_bpat_4_015:
+	BYTE		N06     Ds5   v048
+	BYTE	W24
+	BYTE		N17   
+	BYTE	W18
+	BYTE		N05     En5 
+	BYTE	W06
+	BYTE		N06     Cs5 
+	BYTE	W24
+	BYTE		        Ds5 
+	BYTE	W24
+	BYTE	PEND
+// 016   ----------------------------------------
+	BYTE		        Gs4 
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W96
+	BYTE	GoTo
+	 POIN2	AA3_VictorKudo_bpat_4_B1
+AA3_VictorKudo_bpat_4_B2:
+// 018   ----------------------------------------
+	BYTE	W96
+// 019   ----------------------------------------
+	BYTE	W96
+// 020   ----------------------------------------
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE	W96
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE	W96
+// 026   ----------------------------------------
+	BYTE	W96
+// 027   ----------------------------------------
+	BYTE	W96
+// 028   ----------------------------------------
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_4_011
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_4_012
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_4_013
+// 032   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_4_014
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_4_015
+// 034   ----------------------------------------
+	BYTE		N06     Gs4   v048
+	BYTE	W96
+// 035   ----------------------------------------
+	BYTE	W96
+// 036   ----------------------------------------
+	BYTE	W96
+// 037   ----------------------------------------
+	BYTE	W96
+// 038   ----------------------------------------
+	BYTE	W96
+// 039   ----------------------------------------
+	BYTE	W96
+// 040   ----------------------------------------
+	BYTE	W96
+// 041   ----------------------------------------
+	BYTE	W96
+// 042   ----------------------------------------
+	BYTE	W96
+// 043   ----------------------------------------
+	BYTE	W96
+// 044   ----------------------------------------
+	BYTE	W96
+// 045   ----------------------------------------
+	BYTE	W96
+// 046   ----------------------------------------
+	BYTE	W96
+// 047   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_4_011
+// 048   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_4_012
+// 049   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_4_013
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_4_014
+// 051   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_4_015
+// 052   ----------------------------------------
+	BYTE		N06     Gs4   v048
+	BYTE	W96
+// 053   ----------------------------------------
+	BYTE	W92
+	BYTE	W03
+	BYTE	FINE
+
+//**************** Track 5 (Midi-Chn.5) ****************//
+
+AA3_VictorKudo_bpat_5:
+	BYTE	KEYSH   AA3_VictorKudo_bpat_key+0
+AA3_VictorKudo_bpat_5_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   124
+	BYTE		VOL     127*AA3_VictorKudo_bpat_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		N20     En1   v048
+	BYTE	W24
+	BYTE		N20   
+	BYTE	W24
+	BYTE		N20   
+	BYTE	W24
+	BYTE		N17   
+	BYTE	W18
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+// 001   ----------------------------------------
+AA3_VictorKudo_bpat_5_001:
+	BYTE		N20     En1   v048
+	BYTE	W24
+	BYTE		N20   
+	BYTE	W24
+	BYTE		N20   
+	BYTE	W24
+	BYTE		N17   
+	BYTE	W18
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE	PEND
+// 002   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_001
+// 003   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_001
+// 004   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_001
+// 005   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_001
+// 006   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_001
+// 007   ----------------------------------------
+AA3_VictorKudo_bpat_5_007:
+	BYTE		N20     En1   v048
+	BYTE	W24
+	BYTE		N20   
+	BYTE	W24
+	BYTE		N20   
+	BYTE	W24
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE	PEND
+// 008   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_001
+// 009   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_007
+// 010   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_001
+// 011   ----------------------------------------
+AA3_VictorKudo_bpat_5_011:
+	BYTE		N20     En1   v048
+	BYTE	W24
+	BYTE		N20   
+	BYTE	W24
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE	PEND
+// 012   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_001
+// 013   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_007
+// 014   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_001
+// 015   ----------------------------------------
+AA3_VictorKudo_bpat_5_015:
+	BYTE		N11     En1   v048
+	BYTE	W12
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N05   
+	BYTE	W06
+	BYTE		N20   
+	BYTE	W24
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W03
+	BYTE	PEND
+// 016   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_001
+// 017   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_001
+	BYTE	GoTo
+	 POIN2	AA3_VictorKudo_bpat_5_B1
+AA3_VictorKudo_bpat_5_B2:
+// 018   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_001
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_001
+// 020   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_001
+// 021   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_001
+// 022   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_001
+// 023   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_001
+// 024   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_001
+// 025   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_007
+// 026   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_001
+// 027   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_007
+// 028   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_001
+// 029   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_011
+// 030   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_001
+// 031   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_007
+// 032   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_001
+// 033   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_015
+// 034   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_001
+// 035   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_001
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_001
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_001
+// 038   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_001
+// 039   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_001
+// 040   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_001
+// 041   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_001
+// 042   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_001
+// 043   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_007
+// 044   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_001
+// 045   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_007
+// 046   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_001
+// 047   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_011
+// 048   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_001
+// 049   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_007
+// 050   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_001
+// 051   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_015
+// 052   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_5_001
+// 053   ----------------------------------------
+	BYTE		N20     En1   v048
+	BYTE	W24
+	BYTE		N20   
+	BYTE	W24
+	BYTE		N20   
+	BYTE	W24
+	BYTE		N17   
+	BYTE	W18
+	BYTE		N02   
+	BYTE	W03
+	BYTE		N02   
+	BYTE	W02
+	BYTE	FINE
+
+//**************** Track 6 (Midi-Chn.11) ****************//
+
+AA3_VictorKudo_bpat_6:
+	BYTE	KEYSH   AA3_VictorKudo_bpat_key+0
+AA3_VictorKudo_bpat_6_B1:
+// 000   ----------------------------------------
+	BYTE		VOICE   47
+	BYTE		VOL     127*AA3_VictorKudo_bpat_mvl/mxv
+	BYTE		PAN     c_v+0
+	BYTE		N20     Gs1   v060
+	BYTE	W66
+	BYTE		N05     Ds1 
+	BYTE	W06
+	BYTE		N20   
+	BYTE	W24
+// 001   ----------------------------------------
+AA3_VictorKudo_bpat_6_001:
+	BYTE		N20     Gs1   v060
+	BYTE	W66
+	BYTE		N05     Ds1 
+	BYTE	W06
+	BYTE		N20   
+	BYTE	W24
+	BYTE	PEND
+// 002   ----------------------------------------
+	BYTE	W96
+// 003   ----------------------------------------
+	BYTE	W96
+// 004   ----------------------------------------
+	BYTE	W96
+// 005   ----------------------------------------
+	BYTE	W96
+// 006   ----------------------------------------
+	BYTE		        Gs1 
+	BYTE	W96
+// 007   ----------------------------------------
+	BYTE	W96
+// 008   ----------------------------------------
+	BYTE	W96
+// 009   ----------------------------------------
+	BYTE	W96
+// 010   ----------------------------------------
+	BYTE	W96
+// 011   ----------------------------------------
+	BYTE	W96
+// 012   ----------------------------------------
+	BYTE		N20   
+	BYTE	W96
+// 013   ----------------------------------------
+	BYTE	W72
+	BYTE		        Ds1 
+	BYTE	W24
+// 014   ----------------------------------------
+	BYTE		        Gs1 
+	BYTE	W96
+// 015   ----------------------------------------
+	BYTE	W72
+	BYTE		        Ds1 
+	BYTE	W24
+// 016   ----------------------------------------
+	BYTE		        Gs1 
+	BYTE	W96
+// 017   ----------------------------------------
+	BYTE	W72
+	BYTE		        Ds1 
+	BYTE	W24
+	BYTE	GoTo
+	 POIN2	AA3_VictorKudo_bpat_6_B1
+AA3_VictorKudo_bpat_6_B2:
+// 018   ----------------------------------------
+AA3_VictorKudo_bpat_6_018:
+	BYTE		VOICE   47
+	BYTE		N20     Gs1   v060
+	BYTE	W66
+	BYTE		N05     Ds1 
+	BYTE	W06
+	BYTE		N20   
+	BYTE	W24
+	BYTE	PEND
+// 019   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_6_001
+// 020   ----------------------------------------
+	BYTE	W96
+// 021   ----------------------------------------
+	BYTE	W96
+// 022   ----------------------------------------
+	BYTE	W96
+// 023   ----------------------------------------
+	BYTE	W96
+// 024   ----------------------------------------
+	BYTE		N20     Gs1   v060
+	BYTE	W96
+// 025   ----------------------------------------
+	BYTE	W96
+// 026   ----------------------------------------
+	BYTE	W96
+// 027   ----------------------------------------
+	BYTE	W96
+// 028   ----------------------------------------
+	BYTE	W96
+// 029   ----------------------------------------
+	BYTE	W96
+// 030   ----------------------------------------
+	BYTE		N20   
+	BYTE	W96
+// 031   ----------------------------------------
+	BYTE	W72
+	BYTE		        Ds1 
+	BYTE	W24
+// 032   ----------------------------------------
+	BYTE		        Gs1 
+	BYTE	W96
+// 033   ----------------------------------------
+	BYTE	W72
+	BYTE		        Ds1 
+	BYTE	W24
+// 034   ----------------------------------------
+	BYTE		        Gs1 
+	BYTE	W96
+// 035   ----------------------------------------
+	BYTE	W72
+	BYTE		        Ds1 
+	BYTE	W24
+// 036   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_6_018
+// 037   ----------------------------------------
+	BYTE	PATT
+	 POIN2	AA3_VictorKudo_bpat_6_001
+// 038   ----------------------------------------
+	BYTE	W96
+// 039   ----------------------------------------
+	BYTE	W96
+// 040   ----------------------------------------
+	BYTE	W96
+// 041   ----------------------------------------
+	BYTE	W96
+// 042   ----------------------------------------
+	BYTE		N20     Gs1   v060
+	BYTE	W96
+// 043   ----------------------------------------
+	BYTE	W96
+// 044   ----------------------------------------
+	BYTE	W96
+// 045   ----------------------------------------
+	BYTE	W96
+// 046   ----------------------------------------
+	BYTE	W96
+// 047   ----------------------------------------
+	BYTE	W96
+// 048   ----------------------------------------
+	BYTE		N20   
+	BYTE	W96
+// 049   ----------------------------------------
+	BYTE	W72
+	BYTE		        Ds1 
+	BYTE	W24
+// 050   ----------------------------------------
+	BYTE		        Gs1 
+	BYTE	W96
+// 051   ----------------------------------------
+	BYTE	W72
+	BYTE		        Ds1 
+	BYTE	W24
+// 052   ----------------------------------------
+	BYTE		        Gs1 
+	BYTE	W96
+// 053   ----------------------------------------
+	BYTE	W72
+	BYTE		        Ds1 
+	BYTE	W23
+	BYTE	FINE
+
+//******************************************************//
+	ALIGN 4
+
+AA3_VictorKudo_bpat:
+	BYTE	6	// NumTrks
+	BYTE	0	// NumBlks
+	BYTE	AA3_VictorKudo_bpat_pri	// Priority
+	BYTE	AA3_VictorKudo_bpat_rev	// Reverb.
+
+	POIN2	AA3_VictorKudo_bpat_grp
+
+	POIN2	AA3_VictorKudo_bpat_1
+	POIN2	AA3_VictorKudo_bpat_2
+	POIN2	AA3_VictorKudo_bpat_3
+	POIN2	AA3_VictorKudo_bpat_4
+	POIN2	AA3_VictorKudo_bpat_5
+	POIN2	AA3_VictorKudo_bpat_6
+
+	
