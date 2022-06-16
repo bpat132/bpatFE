@@ -3,14 +3,15 @@
 
 #define EnemyReinforcements(unitPtr) "SMOV 0x2 (unitPtr|0x8000000); CALL $9EE274; EVBIT_T 0x7; ENDA"
 #define EnemyReinforcementsNoENDA(unitPtr) "SMOV 0x2 (unitPtr|0x8000000); CALL $9EE274; EVBIT_T 0x7"
-//#define ReinforcementEventNoENDA(unitPtr) "SMOV 0x2 (unitPtr|0x8000000); CALL $9EE274; EVBIT_T 0x7"
+#define ReinforcementEventNoENDA(unitPtr) "SMOV 0x2 (unitPtr|0x8000000); CALL $9EE274; EVBIT_T 0x7"
 #define LoadEnemies(unitPtr) "LOAD1 0x1 unitPtr; ENUN"
 // Shouldn't need to set fixed growth flag for enemies due to ASM change to make fixed growths always apply
 //#define LoadEnemies(unitPtr) "ENUT FIXED_GROWTHS_FLAG_ID; LOAD1 0x1 unitPtr; ENUN; ENUF FIXED_GROWTHS_FLAG_ID"
 #define LoadPlayerUnits(unitPtr) "LOAD1 0x0 unitPtr; ENUN"
-#define LoadPlayerUnitsTest(unitPtr) "ENUT FIXED_GROWTHS_FLAG_ID; LOAD1 0x0 unitPtr; ENUN; ENUF FIXED_GROWTHS_FLAG_ID"
+#define LoadPlayerUnitsTest(unitPtr) "ENUT FIXED_GROWTHS_FLAG_ID; LOAD1 0x0 unitPtr; ENUN; ENUF FIXED_GROWTHS_FLAG_ID" // only player units need the flag for fixed growths
 
-#define LoadUnit(x,y) "UNIT 0x2 0x11 0x1 Level(1,Ally,1) [x,y] 0x00 0x00 0x00 0x00 [0x00] NoAI" //for units in player placement with prep menu
+#define LoadUnit(x,y) "UNIT 0x2 0x11 0x1 Level(1,Ally,1) [x,y] 0x00 0x00 0x00 0x00 [0x00] NoAI" // for units in player placement with prep menu
+#define LoadUnit(x,y,unitID) "UNIT unitID 0x11 0x1 Level(1,Ally,1) [x,y] 0x00 0x00 0x00 0x00 [0x00] NoAI" // for units in player placement with prep menu
 
 #define Kill(unitid) "SET_SOMETHING unitid;DISA_IF unitid"
 
@@ -43,18 +44,25 @@
 #define DeathQuote(Character,Chapter,EventID,TextID,Pointer) "SHORT Character; BYTE 0xFF Chapter; SHORT EventID TextID ; POIN Pointer"
 
 #define DeathQuote(Character,TextID) "SHORT Character; BYTE 0xFF 0xFF; SHORT 0x0 TextID 0 0"
-#define DeathQuote2(Character,TextID) "SHORT Character; BYTE 0xFF 0xFF; SHORT 0x65 TextID 0 0"
+#define DeathQuoteGameOver(Character,TextID) "SHORT Character; BYTE 0xFF 0xFF; SHORT 0x65 TextID 0 0"
 #define DeathQuoteBoss(Character,TextID) "SHORT Character; BYTE 0xFF 0xFF; SHORT 0x2 TextID 0 0"
-#define DeathQuoteBoss2(Character,TextID) "SHORT Character; BYTE 0xFF 0xFF; SHORT 0x0 TextID 0 0"
+#define DeathQuoteBossNoFlag(Character,TextID) "SHORT Character; BYTE 0xFF 0xFF; SHORT 0x0 TextID 0 0"
 
 #define SpecifiedBattleConvo(Character1,Character2,Chapter,EventID,TextID) "SHORT Character1 Character2 Chapter EventID TextID 0x0 0x0 0x0; SHORT Character2 Character1 Chapter EventID TextID 0x0 0x0 0x0"
 #define UnspecifiedBattleConvo(Character,Chapter,EventID,TextID) "SHORT Character 0x0 Chapter EventID TextID 0x0 0x0 0x0; SHORT 0x0 Character Chapter EventID TextID 0x0 0x0 0x0"
 
 #define BossQuote(Character,TextID) "SHORT Character 0x0 0xff 0x1 TextID 0x0 0x0 0x0; SHORT 0x0 Character 0xff 0x1 TextID 0x0 0x0 0x0"
-//#define BossQuote2(Character,TextID) "SHORT Character 0x0 0xff 0x1 TextID 0x0 0x0 0x0; SHORT 0x0 Character 0xff 0x2 TextID 0x0 0x0 0x0"
-#define BossQuote2(Character,TextID) "SHORT Character 0x0 0xff 0x1 TextID 0x0 0x0 0x0; SHORT 0x0 Character 0xff 0x5 TextID 0x0 0x0 0x0"
+#define BossQuote(Character,TextID,EventID) "SHORT Character 0x0 0xff 0x1 TextID 0x0 0x0 0x0; SHORT 0x0 Character 0xff EventID TextID 0x0 0x0 0x0"
 
+#define SetAI(unitid,ai1,ai2,ai3,ai4) "SVAL 0x1 ai1|(ai2<<8)|(ai3<<16)|(ai4<<24); CHAI unitid"
+#define SetAI(x,y,ai1,ai2,ai3,ai4) "SVAL 0x1 ai1|(ai2<<8)|(ai3<<16)|(ai4<<24); CHAI [x,y]"
+#define SetAI(unitid,ai1,ai2)"SVAL 0x1 ai1|(ai2<<8); CHAI unitid"
+#define SetAI(x,y,ai1,ai2) "SVAL 0x1 ai1|(ai2<<8); CHAI [x,y]"
+
+// AI macros (getting rid of heal AI)
 #define AttackingBrigandAI [AttackInRange,BrigandMove,NoRecovery,DefaultAI4]
-#define AIRAI AttackInRangeAI
-#define PWHAI PursueWithoutHeedAI
-#define COAAI ChaseOnceApproachedAI
+#define NonAttackingBrigandAI [NoAI1,BrigandMove,NoRecovery,DefaultAI4]
+#define AIRAI [AttackInRange,NoAI2,NoRecovery,DefaultAI4]
+#define PWHAI [AttackInRange,Pursue,NoRecovery,DefaultAI4]
+//#define COAAI [AttackInRange,PursueOnceApproached,NoRecovery,DefaultAI4]
+#define AttackWallsAI "[0x0,0xE,0xC,0x0]"

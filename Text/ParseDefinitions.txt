@@ -103,3 +103,4 @@
 [LoadCh4Boss] = [LoadFace][0x34][0x1]
 [LoadCh5Boss] = [LoadFace][0x35][0x1]
 [LoadCh6Boss] = [LoadFace][0x36][0x1]
+[LoadCraig] = [LoadFace][0x30][0x1]

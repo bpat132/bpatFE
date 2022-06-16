@@ -70,7 +70,7 @@ PROTECT $2AB78 $2AB88
 
 
 // Forced deployment
-/*
+
 PUSH
 ORG 0x8483C
 POIN ForceDeployList
@@ -87,7 +87,7 @@ ForceDeployEntry(Quentin,0x5)
 ForceDeployEntry(Thomas,0x5)
 ForceDeployEntry(Rose,0x6)
 EndForceDeploy
-*/
+
 
 // 7743 ASMC2 start button fix
 PUSH
@@ -240,6 +240,15 @@ POP
 
 // Teq's CHAI fix
 //#include "Misc/FE8-New_CHAI_EA.event"
+
+// Gamma CHAI fix fix
+ALIGN 4
+New_CHAI:
+#incbin "CHAIFix/New_CHAI.dmp"
+PUSH
+ORG $10644
+replaceWithHack(New_CHAI)
+POP
 
 // 2WB portrait height fix
 PUSH

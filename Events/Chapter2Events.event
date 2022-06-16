@@ -11,6 +11,13 @@
 
 EventPointerTable(0xA, PointerList)
 
+EscapePointPointerTable(1, Ch2EscapePoints)
+Ch2EscapePoints:
+EscapePoint(23, 3, MoveRight)
+EscapePoint(23, 6, MoveRight)
+EscapePoint(23, 7, MoveRight)
+EscapePointEnd
+
 setText(0x161, NewChName)
 
 ALIGN 4
@@ -32,7 +39,7 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
-#ifdef _NORMAL_MODE_
+#ifdef _EASY_MODE_
 TurnEventPlayer(0,NorthThiefReinforcementEvent,8)
 TurnEventPlayer(0,SouthThiefReinforcementEvent,9)
 #else
@@ -96,13 +103,12 @@ EnemyUnits1:
 // Unique
 UNIT Ch2Boss Fighter 0x40 Level(7,Enemy,0)     [20,1] DropItem 0x0 0x0 0x0 [SteelAxe,HandAxe,HoplonShield] NeverMoveAI
 UNIT Jane Knight_F 0x40 Level(5,Enemy,0)     [20,2] 0x0 0x0 0x0 0x0 [IronAxe,SteelAxe,Vuln] NeverMoveAI
-
 // Generics
 UNIT 0x80 Fighter 0x40 Level(2,Enemy,1)     [1,5] 0x0 0x0 0x0 0x0 [IronAxe] PWHAI
 UNIT 0x80 Mercenary 0x40 Level(2,Enemy,1)     [2,7] 0x0 0x0 0x0 0x0 [IronSword] PWHAI
 UNIT 0x80 Myrmidon 0x40 Level(2,Enemy,1)     [3,6] 0x0 0x0 0x0 0x0 [SteelSword] PWHAI
 UNIT 0x80 Mage 0x40 Level(2,Enemy,1)     [0,11] 0x0 0x0 0x0 0x0 [Fire] AIRAI
-#ifndef _NORMAL_MODE_
+#ifndef _EASY_MODE_
 UNIT 0x80 Archer 0x40 Level(2,Enemy,1)     [2,10] 0x0 0x0 0x0 0x0 [IronBow] PWHAI
 #endif
 UNIT 0x80 PegasusKnight 0x40 Level(2,Enemy,1)     [3,11] 0x0 0x0 0x0 0x0 [SlimLance] PWHAI
@@ -110,7 +116,7 @@ UNIT 0x80 PegasusKnight 0x40 Level(2,Enemy,1)     [0,9] 0x0 0x0 0x0 0x0 [Javelin
 
 UNIT 0x80 Mercenary 0x40 Level(2,Enemy,1)     [6,7] 0x0 0x0 0x0 0x0 [IronSword] PWHAI
 UNIT 0x80 Myrmidon 0x40 Level(2,Enemy,1)     [7,8] DropItem 0x0 0x0 0x0 [IronBlade] AIRAI
-#ifndef _NORMAL_MODE_
+#ifndef _EASY_MODE_
 UNIT 0x80 Cavalier 0x40 Level(2,Enemy,1)     [6,11] 0x0 0x0 0x0 0x0 [IronLance] AIRAI
 #endif
 UNIT 0x80 Cavalier 0x40 Level(2,Enemy,1)     [8,10] 0x0 0x0 0x0 0x0 [Javelin] AIRAI
@@ -123,11 +129,11 @@ UNIT 0x80 Mercenary 0x40 Level(2,Enemy,1)     [15,10] 0x0 0x0 0x0 0x0 [SteelSwor
 UNIT 0x80 Fighter 0x40 Level(2,Enemy,1)     [14,6] 0x0 0x0 0x0 0x0 [IronAxe] AIRAI
 
 UNIT 0x80 Archer 0x40 Level(2,Enemy,1)     [11,1] 0x0 0x0 0x0 0x0 [IronBow] AIRAI
-UNIT 0x80 Mercenary 0x40 Level(2,Enemy,1)     [8,1] 0x0 0x0 0x0 0x0 [IronSword,SecretBook] AIRAI
+UNIT 0x80 Mercenary 0x40 Level(2,Enemy,1)     [8,1] 0x0 0x0 0x0 0x0 [IronSword,PureWater] AIRAI
 UNIT 0x80 Mage 0x40 Level(2,Enemy,1)     [9,2] 0x0 0x0 0x0 0x0 [Fire] AIRAI
 UNIT 0x80 Soldier 0x40 Level(2,Enemy,1)     [12,4] 0x0 0x0 0x0 0x0 [Javelin] AIRAI
 
-#ifndef _NORMAL_MODE_
+#ifndef _EASY_MODE_
 UNIT 0x80 Mercenary 0x40 Level(2,Enemy,1)     [16,7] 0x0 0x0 0x0 0x0 [IronSword] AIRAI
 #endif
 UNIT 0x80 Fighter 0x40 Level(2,Enemy,1)     [18,6] 0x0 0x0 0x0 0x0 [HandAxe] AIRAI
@@ -144,7 +150,7 @@ UNIT 0x80 Mercenary 0x40 Level(2,Enemy,1)     [19,8] 0x0 0x0 0x0 0x0 [IronSword]
 UNIT 0x80 Soldier 0x40 Level(2,Enemy,1)     [21,8] 0x0 0x0 0x0 0x0 [Javelin] AIRAI
 UNIT 0x80 Mage 0x40 Level(2,Enemy,1)     [20,10] 0x0 0x0 0x0 0x0 [Fire] AIRAI
 
-#ifndef _NORMAL_MODE_
+#ifndef _EASY_MODE_
 UNIT 0x80 Archer 0x40 Level(2,Enemy,1)     [15,1] 0x0 0x0 0x0 0x0 [SteelBow] AIRAI
 #endif
 UNIT 0x80 Mage 0x40 Level(2,Enemy,1)     [15,3] 0x0 0x0 0x0 0x0 [Fire] AIRAI
@@ -171,11 +177,11 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
+MUSC OgreBattle_WallOfDefense
 LoadEnemies(EnemyUnits1)
 LoadEnemies(EnemyUnits2)
 LoadEnemies(EnemyUnits3)
 LoadPlayerUnits(Units1) //0x0 instead of 0x1 seems to be for allies on maps with prep screens
-MUSC OgreBattle_WallOfDefense
 SetBackground(0x24)
 CAM1 [23,0]
 Text(TEXT_Ch2_Start_Edgar)

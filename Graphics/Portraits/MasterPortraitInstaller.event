@@ -131,12 +131,12 @@ Ch2BossMugData: // LL
 setMugEntry(Ch2BossMug, Ch2BossMugData, 3, 5, 3, 3)
 
 ALIGN 16
-Ch3BossMugData: // LL
-#incbin "Dmp/Ch3Boss_mug.dmp"
-#incbin "Dmp/Ch3Boss_frames.dmp"
-#incbin "Dmp/Ch3Boss_palette.dmp"
-#incbin "Dmp/Ch3Boss_minimug.dmp"
-setMugEntry(Ch1BossMug, Ch1BossMugData, 3, 5, 3, 3)
+Ch3BossMugData: // LL (fixed frames)
+#incbin "Dmp/Ch3Boss_v2_mug.dmp"
+#incbin "Dmp/Ch3Boss_v2_frames.dmp"
+#incbin "Dmp/Ch3Boss_v2_palette.dmp"
+#incbin "Dmp/Ch3Boss_v2_minimug.dmp"
+setMugEntry(Ch3BossMug, Ch3BossMugData, 3, 5, 3, 3)
 
 ALIGN 16
 Ch4BossMugData: // LL

@@ -1,0 +1,72 @@
+
+## EdgarDeathQuote
+[OpenMidRight][LoadEdgar][OpenMidRight]I'm sorry[.][ToggleMouthMove]... [ToggleMouthMove]Everyone...[A][OpenMidRight][CloseEyes][X]
+
+## JennaDeathQuote
+[OpenMidRight][LoadJenna][OpenMidRight]This is nothing![NL][.][ToggleMouthMove]I can still[ToggleMouthMove]...[A][OpenMidRight][CloseEyes][X]
+
+## DuncanDeathQuote
+[OpenMidRight][LoadDuncan][OpenMidRight]I thought I would be prepared[.][ToggleMouthMove]...[NL][ToggleMouthMove]And yet...[A][OpenMidRight][CloseEyes][X]
+
+## KurtDeathQuote
+[OpenMidRight][LoadKurt][OpenMidRight]Is this[.][ToggleMouthMove]... [ToggleMouthMove]the best I could do..?[A][OpenMidRight][CloseEyes][X]
+
+## MatthiasDeathQuote
+[OpenMidRight][LoadMatthias][OpenMidRight]I've fought with honor[.][ToggleMouthMove]...[NL][ToggleMouthMove]I have no regrets...[A][OpenMidRight][CloseEyes][X]
+
+## NicoDeathQuote
+[ToggleSmile][OpenMidRight][LoadNico][OpenMidRight]Heh[.][ToggleMouthMove]...[NL][ToggleMouthMove]Thought I dodged that one...[A][OpenMidRight][CloseEyes][X]
+
+## LisaDeathQuote
+[OpenMidRight][LoadLisa][OpenMidRight]Don't cry for me[.][ToggleMouthMove]...[NL][A][ToggleMouthMove]Please...[A][OpenMidRight][CloseEyes][X]
+
+## StellaDeathQuote
+[OpenMidRight][LoadStella][OpenMidRight]I can't die here! I[.][ToggleMouthMove]... [ToggleMouthMove]can't...[A][OpenMidRight][CloseEyes][X]
+
+## JaneDeathQuote
+[OpenMidRight][LoadJane][OpenMidRight]No[.][ToggleMouthMove]... [ToggleMouthMove]Not yet...[A][OpenMidRight][CloseEyes][X]
+
+## EthanDeathQuote
+[OpenMidRight][LoadEthan][OpenMidRight]To think I'd lose like this[.][ToggleMouthMove]...[A][OpenMidRight][CloseEyes][X]
+
+## BeatriceDeathQuote
+[OpenMidRight][LoadBeatrice][OpenMidRight]I knew this day would come[.][ToggleMouthMove]...[NL][ToggleMouthMove]But still...[A][OpenMidRight][CloseEyes][X]
+
+## DanielDeathQuote
+[OpenMidRight][LoadDaniel][OpenMidRight]I can't give up now[.][ToggleMouthMove]...[NL][ToggleMouthMove]Not yet...[A][OpenMidRight][CloseEyes][X]
+
+## IsabelleDeathQuote
+[OpenMidRight][LoadIsabelle][OpenMidRight]Defeated like this[.][ToggleMouthMove]...[NL][ToggleMouthMove]How disgraceful...[A][OpenMidRight][CloseEyes][X]
+
+## SashaDeathQuote
+[OpenMidRight][LoadSasha][OpenMidRight]So this[.][ToggleMouthMove]...[NL][ToggleMouthMove]is what dying feels like...[A][OpenMidRight][CloseEyes][X]
+
+## RichardDeathQuote
+[OpenMidRight][LoadRichard][OpenMidRight]My time[.][ToggleMouthMove]...[ToggleMouthMove]has come at last...[A][OpenMidRight][CloseEyes][X]
+
+## CameronDeathQuote
+[OpenMidRight][LoadCameron][OpenMidRight]I always knew it'd end like this[.][ToggleMouthMove]...[A][OpenMidRight][CloseEyes][X]
+
+## VioletDeathQuote
+[OpenMidRight][LoadViolet][OpenMidRight]Sister[.][ToggleMouthMove]...[NL][ToggleMouthMove]I wasn't strong enough...[A][OpenMidRight][CloseEyes][X]
+
+## RowanDeathQuote
+[OpenMidRight][LoadRowan][OpenMidRight]I've no one to blame but myself[ToggleMouthMove]...[.][ToggleMouthMove][A][OpenMidRight][CloseEyes][X]
+
+## CeliaDeathQuote
+[OpenMidRight][LoadCelia][OpenMidRight]This blood... My blood[ToggleMouthMove]..?[NL][ToggleMouthMove]I can't feel my[.][ToggleMouthMove]...[ToggleMouthMove][A][OpenMidRight][CloseEyes][X]
+
+## JustinDeathQuote
+[OpenMidRight][LoadJustin][OpenMidRight]This light[.][ToggleMouthMove]...[NL][ToggleMouthMove]The heavens are calling me...[A][OpenMidRight][CloseEyes][X]
+
+## TedDeathQuote
+[OpenMidRight][LoadTed][OpenMidRight]This must be the price of my sins[.][ToggleMouthMove]...[ToggleMouthMove][A][OpenMidRight][CloseEyes][X]
+
+## QuentinDeathQuote
+[OpenMidRight][LoadQuentin][OpenMidRight]No[.][ToggleMouthMove]...[NL][ToggleMouthMove]I've so much left to do...[A][OpenMidRight][CloseEyes][X]
+
+## ThomasDeathQuote
+[OpenMidRight][LoadThomas][OpenMidRight]So dark[.][ToggleMouthMove]...[NL][ToggleMouthMove]Is this as far as I go..?[A][OpenMidRight][CloseEyes][X]
+
+## LucyDeathQuote
+[OpenMidRight][LoadLucy][OpenMidRight]It hurts[.][ToggleMouthMove]...[NL][ToggleMouthMove]Am I... dying?[A][OpenMidRight][CloseEyes][X]

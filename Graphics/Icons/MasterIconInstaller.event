@@ -16,4 +16,8 @@ ItemIconSlot(0xd1,"png/FireSword_LisandraBrave.png") // rotten claw
 ItemIconSlot(0xd2,"png/FrostBow_Beansy.png") // fetid claw
 ItemIconSlot(0x51,"png/FreezeStaff_LisandraBrave.png") // berserk
 ItemIconSlot(0xde,"png/PetrifyStaff_Beansy.png")
+ItemIconSlot(0x7,"png/RubySword_Beansy.png") // poison sword
+ItemIconSlot(0x17,"png/SapphireLance_Beansy.png") // toxin lance
+ItemIconSlot(0x21,"png/EmeraldAxe_Beansy.png") // poison axe
+ItemIconSlot(0xd3,"png/Labrys_Ereshkigal.png") // poison claw
 POP

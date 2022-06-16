@@ -1,4 +1,4 @@
-//#define _NORMAL_MODE_
+//#define _EASY_MODE_
 #define _ANIMS_OFF_
 
 //#define _TEST_CH2_
@@ -35,7 +35,7 @@
 #define _SKIP_CH1_
 #endif
 
-#ifdef _NORMAL_MODE_
+#ifdef _EASY_MODE_
 #define MODULAR_EXP
 #define StaffExp 16
 #else
