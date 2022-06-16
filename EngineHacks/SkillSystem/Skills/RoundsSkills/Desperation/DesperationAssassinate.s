@@ -13,18 +13,20 @@
 
 @check range
 ldr r0,=#0x203A4D4 @battle stats
-ldrb r0,[r0,#2] @range
-cmp r0,#1
-bne CheckDesperation
+@ldrb r0,[r0,#2] @range
+@cmp r0,#1
+@bne CheckDesperation
 
 @now check if attacker has assassinate
 ldr r0, SkillTester
 mov lr, r0
 mov r0, r5 @defender data
-ldr r1, AssassinateID
+@ldr r1, AssassinateID
+ldr r1, DesperationID
 .short 0xf800
 cmp r0, #0
-beq CheckDesperation
+@beq CheckDesperation
+beq NoSkill
 b HasSkill
 
 CheckDesperation:

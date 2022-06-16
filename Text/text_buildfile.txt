@@ -123,4 +123,6 @@ a skill when used.[X]
 #include "NonChapterText/MiscText.txt"
 #include "NonChapterText/CharNamesDescs.txt"
 #include "NonChapterText/ItemNamesDescs.txt"
+#include "NonChapterText/PlayerDeathQuotes.txt"
+#include "NonChapterText/BossQuotes.txt"
 #include "ChapterText/ChapterTextInstaller.txt"

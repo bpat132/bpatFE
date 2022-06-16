@@ -5,6 +5,7 @@
 
 pLuckModifiers: // Luck
 	POIN prAddUnitLuck prHalveIfCapturing prDebuffLck prAddEquipLuck prItemPassiveLuck prRallyLck prDefiantLck
+	POIN prAddPureWaterBarrierLck
 	#ifdef DEBUFFS_MIN_ZERO
 	POIN prMinZero
 	#endif
@@ -12,6 +13,9 @@ WORD 0
 
 prAddUnitLuck:
 	rAdd(rSByteAt(UNIT_LUCK))
+
+prAddPureWaterBarrierLck: // Upper part of byte 0x31 in unit struct is current pure water/barrier bonus duration
+	rAdd(rUpperHalfByteOf(rUByteAt(0x31)))
 
 prAddEquipLuck:
 	rAdd(rForUnitEquipped(rCallExternal(prGetItemLckBonus)))

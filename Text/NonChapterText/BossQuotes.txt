@@ -1,0 +1,40 @@
+
+## Ch1BossBattleQuote
+[OpenMidLeft][LoadCh1Boss][OpenMidLeft]You'll regret crossing me.[NL]Prepare to die![.][A][X]
+
+## Ch1BossDeathQuote
+[OpenMidLeft][LoadCh1Boss][OpenMidLeft]Argh... You'll pay for this...[.][A][X]
+
+## Ch2BossBattleQuote
+[OpenMidLeft][LoadCh2Boss][OpenMidLeft]
+How'd they break through so fast?[NL]
+Someone, call for reinforcements![.][A][X]
+
+## Ch2BossDeathQuote
+[OpenMidLeft][LoadCh2Boss][OpenMidLeft]Just my luck...[.][A][X]
+
+## Ch3BossBattleQuote
+[BattleText]
+[OpenMidLeft][LoadCh3Boss][OpenMidLeft]
+You can't run from me. Prepare to meet your doom![.][A][X]
+
+## Ch3BossDeathQuote
+[OpenMidLeft][LoadCh3Boss]Impossible...[.][A][X]
+
+## Ch4BossBattleQuote
+[BattleText]
+[OpenMidLeft][LoadCh4Boss][OpenMidLeft]
+I should have known Sir Craig would fail. No matter, you stand no chance against my magic![A][X]
+
+## Ch4BossDeathQuote
+[BattleText]
+[OpenMidLeft][LoadCh4Boss][OpenMidLeft]But my plan...[N]Was flawless...[.][A][X]
+
+## Ch4CraigBattleQuote
+[BattleText]
+[OpenMidLeft][LoadCraig][OpenMidLeft]
+You lot stand no chance against me. This is as far as you go![A][X]
+
+## Ch4CraigDeathQuote
+[BattleText]
+[OpenMidLeft][LoadCraig][OpenMidLeft]No... My big promotion...[.][A][X]

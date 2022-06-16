@@ -12,6 +12,9 @@
 {
 	#include "Chapter2Events.event"
 }
+{
+	#include "Chapter3Events.event"
+}
 
 /*
 255

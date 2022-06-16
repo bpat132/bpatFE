@@ -6,8 +6,19 @@ Prevents enemy counterattacks.[X]
 
 ## SwiftSwordName
 Swift Sword[X]
+## LabrysName
+Labrys[X]
 ## SlimWeaponDesc
 Follow-ups occur before counter.[X]
+
+## RubySwordName
+Ruby Sword[X]
+## SapphireLanceName
+Sapphire Lnc[X]
+## EmeraldAxeName
+Emerald Axe[X]
+## GemWeaponDesc
+Doubles weapon triangle.[X]
 
 ## FireSwordName
 Fire Sword[X]

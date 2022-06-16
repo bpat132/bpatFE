@@ -19,4 +19,22 @@ PROTECT $3788
 
 #define IconTable NewIconTable
 
+ALIGN 4
 #include "EA/BossMusicTable.event"
+ALIGN 4
+
+BattleQuoteTable:
+#include "EA/BattleQuoteTable.event"
+ALIGN 4
+DeathQuoteTable:
+#include "EA/DeathQuoteTable.event"
+
+PUSH
+
+ORG $846AC
+//POIN BattleQuoteTable
+
+ORG $8472C
+POIN DeathQuoteTable
+
+POP

@@ -7,7 +7,7 @@
 #define FFMQ_Battle1 0x26D // ch1-X player phase map music
 #define MadouMonogatari123_I_TRY_OUT 0x26E // ch1-X enemy phase map music
 
-#define KitN_SortieFormation 0x26F // event music: tense
+#define KitN_SortieFormation 0x26F // event music: tense (good guys)
 #define BoF2_StrongerMonsters 0x270 // event music: upbeat
 #define DW3_Oppression 0x271 // event music: bad guys
 #define EO3_ThoseWhoSlayAndFall 0x272 // event music: recruitment
@@ -15,6 +15,8 @@
 #define ToS_LastBattleDecision 0x274 // event music: victory
 #define OgreBattle_WallOfDefense 0x275 // event music: preparing for battle
 #define GS_BabiLighthouse 0x276 // event music: planned for ch6 (currently unused)
-#define AA3_VictorKudo 0x277 // event music: planned for bad guys (currently unused)
-#define YuNo_Frustration 0x278 // currently unused
+#define AA3_VictorKudo 0x277 // event music: bad guys
+#define YuNo_Frustration 0x278 // event music: upbeat / tense (currently unused)
+#define AA_Gumshoe 0x279 // event music: chill
 
+#define TestSong 0x2 // for testing music

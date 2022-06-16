@@ -35,7 +35,7 @@ TurnBasedEvents:
 TurnEventPlayer(0,EnemyReinforcements1,4)
 TurnEventPlayer(0,EnemyReinforcements2,5)
 
-#ifdef _NORMAL_MODE_
+#ifdef _EASY_MODE_
 TurnEventPlayer(0,BrigandReinforcements1,6)
 TurnEventPlayer(0,BrigandReinforcements2,9)
 #else
@@ -91,7 +91,8 @@ ENDA
 
 
 SashaEvent:
-MUSC DW3_Oppression
+//MUSC DW3_Oppression
+MUSC AA3_VictorKudo
 FlashCursor(Sasha,0x20)
 CAM1 [18,0]
 Text(TEXT_Ch1_Sasha_Event)
@@ -193,7 +194,7 @@ UNIT 0x80 Mage 0x40 Level(1,Enemy,1)     [14,1] 0x0 0x0 0x0 0x0 [Fire] AIRAI
 UNIT 0x80 Myrmidon 0x40 Level(1,Enemy,1)     [14,7] 0x0 0x0 0x0 0x0 [IronSword] AIRAI
 
 UNIT 0x80 Soldier 0x40 Level(1,Enemy,1)     [8,4] DropItem 0x0 0x0 0x0 [SteelLance] AIRAI
-#ifndef _NORMAL_MODE_
+#ifndef _EASY_MODE_
 UNIT 0x80 Mage 0x40 Level(1,Enemy,1)     [11,8] 0x0 0x0 0x0 0x0 [Fire] PWHAI
 #endif
 UNIT
@@ -205,9 +206,11 @@ UNIT 0x80 Mercenary 0x40 Level(1,Enemy,1)     [6,6] 0x0 0x0 0x0 0x0 [IronSword] 
 UNIT 0x80 Mercenary 0x40 Level(1,Enemy,1)     [5,2] DropItem 0x0 0x0 0x0 [IronBlade] AIRAI
 UNIT 0x80 Cavalier 0x40 Level(1,Enemy,1)     [8,1] 0x0 0x0 0x0 0x0 [IronLance] AIRAI
 
-UNIT 0x80 Myrmidon 0x40 Level(1,Enemy,1)     [15,3] 0x0 0x0 0x0 0x0 [IronSword] PWHAI
-#ifndef _NORMAL_MODE_
-UNIT 0x80 Fighter 0x40 Level(1,Enemy,1)     [16,2] 0x0 0x0 0x0 0x0 [IronAxe] PWHAI
+//UNIT 0x80 Myrmidon 0x40 Level(1,Enemy,1)     [15,3] 0x0 0x0 0x0 0x0 [IronSword] PWHAI
+UNIT 0x80 Myrmidon 0x40 Level(1,Enemy,1)     [15,2] 0x0 0x0 0x0 0x0 [IronSword] PWHAI
+#ifndef _EASY_MODE_
+//UNIT 0x80 Fighter 0x40 Level(1,Enemy,1)     [16,2] 0x0 0x0 0x0 0x0 [IronAxe] PWHAI
+UNIT 0x80 Fighter 0x40 Level(1,Enemy,1)     [16,1] 0x0 0x0 0x0 0x0 [IronAxe] PWHAI
 #endif
 
 UNIT 0x80 Knight 0x40 Level(1,Enemy,1)     [14,10] 0x0 0x0 0x0 0x0 [IronAxe] AIRAI
@@ -262,9 +265,10 @@ LoadEnemies(EnemyUnits1)
 LoadEnemies(EnemyUnits2)
 FADU 16
 LoadPlayerUnits(Units1)
-ENUN
 
 Text(TEXT_Ch1_Start_Edgar)
+MUSC DW3_Oppression
+//MUSC AA3_VictorKudo
 FlashCursor(Matthias,0x20)
 Text(TEXT_Ch1_Start_Matthias)
 MOVE 15 Ch1Boss [18,2]

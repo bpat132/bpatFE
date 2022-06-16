@@ -6,6 +6,7 @@
 #define SlimDura 30
 #define KillerDura 20
 #define ReaverDura 15
+#define GemDura 20
 #define EffectiveDura 15
 #define ThrowingDura 25
 #define Throwing2Dura 20
@@ -19,6 +20,7 @@
 #define KillerCost 14
 //#define ReaverCost 10
 #define ReaverCost 18
+#define GemCost 12
 #define EffectiveCost 20
 #define ThrowingCost 6
 #define Throwing2Cost 16
@@ -36,6 +38,9 @@
 
 // Items
 #define Vuln 0x6c
+#define RubySword PoisonSword
+#define SapphireLance ToxinLance
+#define EmeraldAxe PoisonAxe
 #define SwiftSword SlimSword
 #define Bolganone Elfire
 #define Thoron Bolting
@@ -43,6 +48,7 @@
 #define FreezeStaff Berserk
 #define FireSword RottenClaw
 #define FrostBow FetidClaw
+#define Labrys PoisonClaw
 #define PetrifyStaff 0xbe
 
 // Characters
@@ -85,6 +91,8 @@
 #define Ch1Boss 0x46
 #define Ch2Boss 0x47
 #define Ch3Boss 0x48
+#define Ch4Boss 0x4A
+#define Craig 0x68
 
 // Mugs
 #define EdgarMug 0x2
@@ -129,6 +137,9 @@
 #define Ch4BossMug 0x34
 #define Ch5BossMug 0x35
 #define Ch6BossMug 0x36
+
+#define CraigMug 0x30
+#define HowardMug 0x4e
 
 // Other
 #define FreezeStatusID 0x9

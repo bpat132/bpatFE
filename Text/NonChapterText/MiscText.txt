@@ -1,3 +1,8 @@
+## PlaceholderText
+[ConversationText]
+[Left][LoadEdgar]
+This is placeholder text.[A][X]
+
 ## EscapeObjectiveName
 Escape[X]
 
@@ -26,6 +31,45 @@ Rout[X]
 ## RoutObjectiveDesc
 Defeat all enemies[X]
 
+# 0x0546
+Physical strength. Each point[NL]
+increases physical damage by one.[X]
+
+# 0x0547
+Magical power. Each point[NL]
+increases magical damage by one.[X]
+
+# 0x0548
+Fighting skill. Each point grants[NL]
+2.5% hit and 0.5% critical chance.[X]
+
+# 0x0549
+Speed. Each point grants 1% avoid.[NL]
+Having at least 4 speed over your[NL]
+opponent allows you to attack twice.[X]
+
+# 0x054A
+Luck. Each point grants 0.5% hit,[NL]
+2% avoid, and 1% critical avoid.[X]
+
+# 0x054B
+Defensive skill. Each point reduces[NL]
+incoming physical damage by one.[X]
+
+# 0x054C
+Magical resistance. Each point reduces[NL]
+incoming magical damage by one.[X]
+
+# 0x3E7
+Clarity Tonic[X]
+
+# 0x496
+Boosts skill and luck by 7.[NL]
+Grows weaker each turn.[X]
+
+# 0x04D4
+Temporarily boosts[NL]
+skill and luck.[X]
 
 # 0x030D
 Well-rounded mounted knights[NL]

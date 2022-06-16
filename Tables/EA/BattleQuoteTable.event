@@ -1,0 +1,13 @@
+/*
+#define SpecifiedBattleConvo(Character1,Character2,Chapter,EventID,TextID) "SHORT Character1 Character2 Chapter EventID TextID 0x0 0x0 0x0; SHORT Character2 Character1 Chapter EventID TextID 0x0 0x0 0x0"
+#define UnspecifiedBattleConvo(Character,Chapter,EventID,TextID) "SHORT Character 0x0 Chapter EventID TextID 0x0 0x0 0x0; SHORT 0x0 Character Chapter EventID TextID 0x0 0x0 0x0"
+*/
+
+UnspecifiedBattleConvo(Ch1Boss,Chapter1,0x1,Ch1BossBattleQuote)
+UnspecifiedBattleConvo(Ch2Boss,Chapter2,0x1,Ch2BossBattleQuote)
+UnspecifiedBattleConvo(Ch3Boss,Chapter3,0x1,Ch3BossBattleQuote)
+UnspecifiedBattleConvo(Ch4Boss,Chapter4,0x1,Ch4BossBattleQuote)
+UnspecifiedBattleConvo(Craig,Chapter4,0x28,Ch4CraigBattleQuote)
+
+// Terminator
+BYTE 0xFF 0xFF 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0

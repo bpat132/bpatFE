@@ -1,0 +1,293 @@
+
+////////////////////////////////////////////////////
+//                                                //
+// Disassembled with Nintenlord's Event Assembler //
+// Version: 11.0.0.0                              //
+// Game: FE8                                      //
+// File: FE8_clean.gba                            //
+// Offset: $9EC66C                                //
+//                                                //
+////////////////////////////////////////////////////
+
+EventPointerTable(0xD, PointerList)
+
+setText(0x162, NewChName)
+
+ALIGN 4
+NewChName:
+String("Ch3: Looming Threat")
+BYTE 0
+
+ALIGN 4
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN $0 $0 $0
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+TurnEventPlayer(0,Turn1Event,1)
+TurnEventPlayer(0,EnemyReinforcements1,2)
+TurnEventPlayer(0,AllyReinforcements,2)
+TurnEventPlayer(0,EnemyReinforcements2,3)
+TurnEventPlayer(0,EnemyReinforcements3,4)
+TurnEventPlayer(0,EnemyReinforcements4,5)
+TurnEventPlayer(0,AIChangeToAggressive,5)
+END_MAIN
+
+Turn1Event:
+CAM1 [17,7]
+//MUSC AA3_VictorKudo
+MUSC DW3_Oppression
+FlashCursor(Sasha,0x20)
+Text(TEXT_Ch3_Sasha_Event)
+NoFade
+ENDA
+
+AllyReinforcements:
+//SetAI(0x84, 0x00,0x00,0x04,0x00) // snag attackes (will this even matter?)
+ReinforcementEventNoENDA(AllyReinforcementUnits)
+MUSC KitN_SortieFormation
+Text(TEXT_Ch3_BDI_Event)
+ENDA
+
+EnemyReinforcements1:
+EnemyReinforcements(EnemyReinforcementUnits1)
+
+EnemyReinforcements2:
+EnemyReinforcements(EnemyReinforcementUnits2)
+
+EnemyReinforcements3:
+EnemyReinforcements(EnemyReinforcementUnits3)
+
+EnemyReinforcements4:
+EnemyReinforcements(EnemyReinforcementUnits4)
+
+AIChangeToAggressive:
+CAM1 [0,0]
+FlashCursor(Ch3Boss,0x20)
+MUSC AA3_VictorKudo
+//MUSC DW3_Oppression
+Text(TEXT_Ch3_Boss_Event) // pan to boss
+
+SetAI(Ch3Boss, 0x00,0x00,0x04,0x00)
+SetUnitStatus(Bazba, 0x40, 0x04)
+SetAI(0x84, 0x00,0x00,0x04,0x00)
+SetAI(0x80, 0x00,0x00,0x04,0x00)
+
+NoFade
+ENDA
+
+CharacterBasedEvents:
+CharacterEventBothWays(0x10,TalkEventSasha, Edgar, Sasha)
+END_MAIN
+
+TalkEventSasha:
+MUSC EO3_ThoseWhoSlayAndFall
+Text(TEXT_Ch3_Sasha_Talk)
+NoFade
+CUSA Sasha
+ENDA
+
+LocationBasedEvents:
+Village(0x8,VillageEvent1,16,3)
+Village(0x9,VillageEvent2,1,18)
+END_MAIN
+
+VillageEvent1:
+	VillageEventItem(TEXT_Ch3_Village_Hammer, Village, Hammer)
+
+VillageEvent2:
+	VillageEventItem(TEXT_Ch3_Village_KillerLance, Village, KillerLance)
+
+MiscBasedEvents:
+DefeatBoss(EndingScene)
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+Units1:
+//LoadUnit(7,11,Edgar)
+LoadUnit(7,11)
+UNIT Ethan  WyvernRider 0x1 Level(4,Ally,0)   [8,10] 0x0 0x0 0x0 0x0 [IronAxe,SteelAxe,HandAxe,Vuln] NoAI
+LoadUnit(6,9)
+LoadUnit(7,9)
+LoadUnit(9,9)
+LoadUnit(6,10)
+LoadUnit(5,11)
+LoadUnit(7,12)
+LoadUnit(8,12)
+LoadUnit(9,13)
+UNIT
+
+AllyReinforcementUnits:
+UNIT Beatrice  Cavalier_F 0x1 Level(5,Ally,0)   [8,20] 0b 0x0 0x1 BeatriceReda [SlimLance,SteelLance,Javelin,0x6C] [0x0,0x0,0x0,0x0]
+UNIT Daniel  Cavalier 0x1 Level(5,Ally,0)   [9,20] 0b 0x0 0x1 DanielReda [IronLance,SteelLance,Javelin,0x6C] [0x0,0x0,0x0,0x0]
+UNIT Isabelle  Troubadour 0x1 Level(2,Ally,0)   [10,20] 0x0 0x0 0x0 0x0 [Heal,0x6C,0x0] [0x0,0x0,0x0,0x0]
+UNIT
+
+BeatriceReda:
+REDA [8,19] 0x0 0x1 0x00 0x8
+DanielReda:
+REDA [9,19] 0x0 0x1 0x00 0x8
+
+EnemyUnits1:
+// Unique
+#ifndef _EASY_MODE_
+UNIT Ch3Boss Myrmidon 0x40 Level(10,Enemy,0)     [0,0] 0x0 0x0 0x0 0x0 [SteelBlade] NeverMoveAI
+#else
+#endif
+UNIT Ch3Boss Myrmidon 0x40 Level(10,Enemy,0)     [0,0] 0x0 0x0 0x0 0x0 [SteelSword] NeverMoveAI
+
+UNIT Sasha Myrmidon_F 0x40 Level(5,Enemy,0)     [16,7] 0x0 0x0 0x0 0x0 [SlimSword,SteelBlade,FireSword,0x6C] PWHAI
+
+//UNIT 0x80 Druid 0x40 Level(20,Enemy,1)     [7,10] 0x0 0x0 0x0 0x0 [Naglfar] AIRAI
+
+// Snag attackers
+UNIT 0x84 Fighter 0x40 Level(4,Enemy,1)     [1,9] 0x0 0x0 0x0 0x0 [IronAxe] AttackWallsAI
+UNIT 0x84 Myrmidon 0x40 Level(4,Enemy,1)     [0,11] 0x0 0x0 0x0 0x0 [IronSword] AttackWallsAI
+UNIT 0x84 Soldier 0x40 Level(4,Enemy,1)     [8,16] DropItem 0x0 0x0 0x0 [Axereaver] AttackWallsAI
+UNIT 0x84 Myrmidon 0x40 Level(4,Enemy,1)     [6,17] 0x0 0x0 0x0 0x0 [SteelSword] AttackWallsAI
+
+// Top left
+UNIT 0x80 Knight 0x40 Level(4,Enemy,1)     [3,2] 0x0 0x0 0x0 0x0 [HandAxe] NeverMoveAI
+UNIT 0x80 Knight 0x40 Level(4,Enemy,1)     [4,2] 0x0 0x0 0x0 0x0 [HandAxe] NeverMoveAI
+#ifndef _EASY_MODE_
+UNIT 0x80 Archer 0x40 Level(4,Enemy,1)     [0,2] 0x0 0x0 0x0 0x0 [SteelBow] AIRAI
+#else
+UNIT 0x80 Archer 0x40 Level(4,Enemy,1)     [0,2] 0x0 0x0 0x0 0x0 [IronBow] AIRAI
+#endif
+UNIT 0x80 Archer 0x40 Level(4,Enemy,1)     [2,4] DropItem 0x0 0x0 0x0 [ShortBow] PWHAI
+UNIT
+
+EnemyUnits2:
+// Top middle
+UNIT 0x80 Shaman 0x40 Level(4,Enemy,1)     [8,5] 0x0 0x0 0x0 0x0 [Flux] PWHAI
+UNIT 0x80 Soldier 0x40 Level(4,Enemy,1)     [9,6] 0x0 0x0 0x0 0x0 [IronLance] PWHAI
+UNIT 0x80 Soldier 0x40 Level(4,Enemy,1)     [11,2] 0x0 0x0 0x0 0x0 [IronLance] PWHAI
+UNIT 0x80 PegasusKnight 0x40 Level(4,Enemy,1)     [6,0] 0x0 0x0 0x0 0x0 [SlimLance] PWHAI
+#ifndef _EASY_MODE_
+UNIT 0x82 Brigand 0x40 Level(4,Enemy,1)     [10,0] DropItem 0x0 0x0 0x0 [Labrys] AttackingBrigandAI
+#endif
+
+// Top right
+UNIT 0x80 Mage 0x40 Level(4,Enemy,1)     [16,4] 0x0 0x0 0x0 0x0 [Fire] AIRAI
+UNIT 0x80 Knight 0x40 Level(4,Enemy,1)     [15,6] 0x0 0x0 0x0 0x0 [IronAxe] AIRAI
+#ifndef _EASY_MODE_
+UNIT 0x80 PegasusKnight 0x40 Level(4,Enemy,1)     [14,2] 0x0 0x0 0x0 0x0 [IronLance] PWHAI
+#endif
+
+// Middle right
+UNIT 0x80 Mercenary 0x40 Level(4,Enemy,1)     [13,11] 0x0 0x0 0x0 0x0 [IronBlade] PWHAI
+UNIT 0x80 Mage 0x40 Level(4,Enemy,1)     [15,18] 0x0 0x0 0x0 0x0 [Fire] PWHAI
+#ifndef _EASY_MODE_
+UNIT 0x82 Brigand 0x40 Level(4,Enemy,1)     [16,16] 0x0 0x0 0x0 0x0 [HandAxe] AttackingBrigandAI
+#else
+UNIT 0x82 Brigand 0x40 Level(4,Enemy,1)     [17,20] 0x0 0x0 0x0 0x0 [HandAxe] AttackingBrigandAI
+#endif
+UNIT
+
+EnemyUnits3:
+// Bottom right
+#ifndef _EASY_MODE_
+UNIT 0x80 Cavalier 0x40 Level(4,Enemy,1)     [16,20] 0x0 0x0 0x0 0x0 [IronLance] PWHAI
+UNIT 0x80 PegasusKnight 0x40 Level(4,Enemy,1)     [13,19] 0x0 0x0 0x0 0x0 [SlimLance] PWHAI
+UNIT 0x80 Mercenary 0x40 Level(4,Enemy,1)     [1,19] 0x0 0x0 0x0 0x0 [SteelSword] AIRAI
+UNIT 0x80 WyvernRider 0x40 Level(4,Enemy,1)     [3,14] 0x0 0x0 0x0 0x0 [IronAxe] PWHAI
+#endif
+UNIT
+
+EnemyReinforcementUnits1:
+UNIT 0x80 Cavalier 0x40 Level(4,Enemy,1)     [2,0] 0x0 0x0 0x0 0x0 [IronLance] PWHAI
+#ifdef _EASY_MODE_ // on normal, this brigand appears earlier
+UNIT 0x82 Brigand 0x40 Level(4,Enemy,1)     [10,0] DropItem 0x0 0x0 0x0 [Labrys] AttackingBrigandAI
+#endif
+UNIT 0x80 Mercenary 0x40 Level(4,Enemy,1)     [3,20] 0x0 0x0 0x0 0x0 [IronSword] PWHAI
+UNIT 0x80 Mercenary 0x40 Level(4,Enemy,1)     [15,20] 0x0 0x0 0x0 0x0 [IronSword] PWHAI
+UNIT
+
+EnemyReinforcementUnits2:
+UNIT 0x82 Brigand 0x40 Level(4,Enemy,1)     [0,15] 0x0 0x0 0x0 0x0 [HandAxe] AttackingBrigandAI
+UNIT 0x80 Myrmidon 0x40 Level(4,Enemy,1)     [0,11] 0x0 0x0 0x0 0x0 [IronSword] PWHAI
+UNIT 0x80 Soldier 0x40 Level(4,Enemy,1)     [11,15] 0x0 0x0 0x0 0x0 [IronLance] PWHAI
+UNIT 0x80 PegasusKnight 0x40 Level(4,Enemy,1)     [4,0] 0x0 0x0 0x0 0x0 [IronLance] PWHAI
+UNIT
+
+EnemyReinforcementUnits3:
+UNIT 0x80 Cavalier 0x40 Level(4,Enemy,1)     [2,0] 0x0 0x0 0x0 0x0 [IronLance] PWHAI
+UNIT 0x80 Pirate 0x40 Level(4,Enemy,1)     [6,0] 0x0 0x0 0x0 0x0 [IronAxe] PWHAI
+UNIT 0x80 Mage 0x40 Level(4,Enemy,1)     [13,0] 0x0 0x0 0x0 0x0 [Fire] PWHAI
+#ifndef _EASY_MODE_
+UNIT 0x80 Mercenary 0x40 Level(4,Enemy,1)     [3,20] 0x0 0x0 0x0 0x0 [IronSword] PWHAI
+#endif
+UNIT 0x80 Mercenary 0x40 Level(4,Enemy,1)     [15,20] 0x0 0x0 0x0 0x0 [IronSword] PWHAI
+//UNIT 0x80 Fighter 0x40 Level(4,Enemy,1)     [17,20] 0x0 0x0 0x0 0x0 [HandAxe] PWHAI
+UNIT 0x80 Fighter 0x40 Level(4,Enemy,1)     [17,20] 0x0 0x0 0x0 0x0 [IronAxe] PWHAI // testing removing some 1-2 physical from enemies
+UNIT
+
+EnemyReinforcementUnits4:
+UNIT 0x80 PegasusKnight 0x40 Level(4,Enemy,1)     [4,0] 0x0 0x0 0x0 0x0 [IronLance] PWHAI
+UNIT 0x80 Pirate 0x40 Level(4,Enemy,1)     [0,10] 0x0 0x0 0x0 0x0 [IronAxe] PWHAI
+UNIT 0x80 Pirate 0x40 Level(4,Enemy,1)     [11,15] 0x0 0x0 0x0 0x0 [IronAxe] PWHAI
+//UNIT 0x80 WyvernRider 0x40 Level(4,Enemy,1)     [17,20] 0x0 0x0 0x0 0x0 [HandAxe] PWHAI // nerfed by giving handaxe
+UNIT 0x80 WyvernRider 0x40 Level(4,Enemy,1)     [17,20] 0x0 0x0 0x0 0x0 [Labrys] PWHAI
+UNIT
+
+Traps1:
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+BeginningScene:
+//SVAL 1 LocktouchID
+//SVAL 2 Nico
+//ASMC (ASMC_ForgetSkill|1)
+
+MUSC AA_Gumshoe
+LoadEnemies(EnemyUnits1)
+LoadEnemies(EnemyUnits2)
+LoadEnemies(EnemyUnits3)
+CAM1 [7,11]
+LoadPlayerUnits(Units1)
+SetBackground(0x21)
+TEXTSTART
+TEXTSHOW TEXT_Ch3_Start_Edgar
+TEXTEND
+MUSC YuNo_Frustration
+TEXTCONT
+TEXTEND
+REMA
+ClearBackground
+//MUSC AA3_VictorKudo
+//MUSC DW3_Oppression
+CAM1 [0,0]
+FlashCursor(Ch3Boss,0x20)
+Text(TEXT_Ch3_Start_Boss)
+NoFade
+GotoPrepScreen
+
+EndingScene:
+MUSC ToS_LastBattleDecision
+Text(0x21,TEXT_Ch3_End)
+MNC2 Chapter4
+ENDA

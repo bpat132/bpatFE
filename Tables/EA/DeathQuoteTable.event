@@ -1,0 +1,37 @@
+/*
+#define DeathQuote(Character,Chapter,EventID,TextID) "SHORT Character; BYTE 0xFF Chapter; SHORT EventID TextID 0 0"
+#define DeathQuote(Character,Chapter,EventID,TextID,Pointer) "SHORT Character; BYTE 0xFF Chapter; SHORT EventID TextID ; POIN Pointer"
+
+#define DeathQuote(Character,TextID) "SHORT Character; BYTE 0xFF 0xFF; SHORT 0x0 TextID 0 0"
+#define DeathQuoteGameOver(Character,TextID) "SHORT Character; BYTE 0xFF 0xFF; SHORT 0x65 TextID 0 0"
+#define DeathQuoteBoss(Character,TextID) "SHORT Character; BYTE 0xFF 0xFF; SHORT 0x2 TextID 0 0"
+#define DeathQuoteBossNoFlag(Character,TextID) "SHORT Character; BYTE 0xFF 0xFF; SHORT 0x0 TextID 0 0"
+*/
+
+// Player characters
+DeathQuoteGameOver(Edgar,EdgarDeathQuote)
+DeathQuote(Jenna,JennaDeathQuote)
+DeathQuote(Duncan,DuncanDeathQuote)
+DeathQuote(Kurt,KurtDeathQuote)
+DeathQuote(Matthias,MatthiasDeathQuote)
+DeathQuote(Stella,StellaDeathQuote)
+DeathQuote(Nico,NicoDeathQuote)
+DeathQuote(Lisa,LisaDeathQuote)
+DeathQuote(Jane,JaneDeathQuote)
+DeathQuote(Ethan,EthanDeathQuote)
+DeathQuote(Beatrice,BeatriceDeathQuote)
+DeathQuote(Daniel,DanielDeathQuote)
+DeathQuote(Isabelle,IsabelleDeathQuote)
+DeathQuote(Sasha,SashaDeathQuote)
+DeathQuote(Richard,RichardDeathQuote)
+DeathQuote(Cameron,CameronDeathQuote)
+
+// Bosses
+DeathQuoteBoss(Ch1Boss,Ch1BossDeathQuote)
+DeathQuoteBoss(Ch2Boss,Ch2BossDeathQuote)
+DeathQuoteBoss(Ch3Boss,Ch3BossDeathQuote)
+DeathQuoteBoss(Ch4Boss,Ch4BossDeathQuote)
+DeathQuoteBossNoFlag(Craig,Ch4CraigDeathQuote)
+
+// Terminator
+DeathQuote(0xFFFF,0,0,0)
