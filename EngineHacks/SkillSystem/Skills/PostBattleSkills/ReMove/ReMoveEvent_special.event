@@ -1,5 +1,12 @@
-ReMoveEvent:
-ENUF 0x71
-ENUF 0x93
+//ReMoveEvent:
+UnitAttackedEvent:
+ENUF 0x71 // Hawkeye flag
+ENUF 0x93 // Celerity active flag
+NoFade
+ENDA
+
+UnitOtherActionEvent:
+//ENUF 0x71 // Hawkeye flag
+ENUF 0x93 // Celerity active flag
 NoFade
 ENDA

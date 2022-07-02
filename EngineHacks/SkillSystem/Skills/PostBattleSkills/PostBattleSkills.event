@@ -93,7 +93,9 @@ ReMove:
 #incbin "ReMove/remove_special.dmp"
 POIN SkillTester
 WORD ReMoveID
-POIN ReMoveEvent
+//POIN ReMoveEvent
+POIN UnitAttackedEvent
+POIN UnitOtherActionEvent
 //#include "ReMove/ReMoveEvent.event"
 #include "ReMove/ReMoveEvent_special.event"
 
