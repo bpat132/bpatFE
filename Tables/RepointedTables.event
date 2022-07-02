@@ -32,7 +32,7 @@ DeathQuoteTable:
 PUSH
 
 ORG $846AC
-//POIN BattleQuoteTable
+POIN BattleQuoteTable
 
 ORG $8472C
 POIN DeathQuoteTable

@@ -348,8 +348,8 @@ Intimidate: -10 Avoid to[N]
 all enemies within 2 tiles.[X]
 
 ## SD_Opportunist
-Opportunist: +4 damage[N]
-if the foe cannot counter.[X]
+Opportunist: Always hit if[N]
+the foe cannot counter.[X]
 
 ## SD_Trample
 Trample: +5 damage to[N]

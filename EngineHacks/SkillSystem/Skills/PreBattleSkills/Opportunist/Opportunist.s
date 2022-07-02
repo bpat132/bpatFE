@@ -21,9 +21,11 @@ ldr		r1, OpportunistID
 cmp		r0,#0x0
 beq		GoBack
 
-add		r4,#0x5A
+@add		r4,#0x5A
+add		r4,#0x60
 ldrh	r0,[r4]
-add		r0,#4
+@add		r0,#4
+add		r0,#100
 strh	r0,[r4]
 
 GoBack:

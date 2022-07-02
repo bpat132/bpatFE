@@ -81,7 +81,8 @@ POIN SkillTester
 WORD CounterMagicID
 
 Proc_Miracle:
-#incbin "Miracle/proc_miracle.dmp"
+//#incbin "Miracle/proc_miracle.dmp"
+#incbin "Miracle/proc_miracle_special.dmp"
 POIN SkillTester
 WORD MiracleID
 

@@ -1,0 +1,157 @@
+
+## TEXT_Ch4_Start1
+[ConversationText]
+[FarLeft][LoadEthan][Left][LoadEdgar][Right][LoadDaniel]
+[FarLeft]
+We're finally here. Lord Howard's castle
+[Left]
+Looks like someone's riding out to greet us.
+[Right]
+That must be Sir Craig, commander of the knights at this castle.
+[FarRight][LoadCraig]
+[FarLeft]
+Sir Craig, I've returned with Prince Edgar. I trust everything's been alright during my absence?
+[FarRight]
+Of course! We have been eagerly awaiting your return.
+It is an honor to meet you, Prince Edgar. I am Craig, a knight in service to Lord Howard.
+[Left]
+Likewise, Sir Craig.
+[FarRight]
+It looks like you've had a long journey. I'll have the cooks prepare you and your companions a delicious meal.
+Lord Howard is occupied at the moment, but he'll be able to meet with you later tonight.
+[Left]
+Thank you, Sir Craig. We're all rather tired so we appreciate your hospitality.
+[MidRight]
+It's no trouble. I'll lead you to the dining hall.
+[X]
+
+
+## TEXT_Ch4_Start2
+[ConversationText]
+[FarLeft][LoadEthan][Left][LoadEdgar][Right][LoadDaniel][FarRight][LoadCraig]
+[Left]
+This castle is much quieter than I expected. Are the other knights away?
+[Right]
+There's only a handful of us knights, much of the castle's defenses is handled by Richard's mercenaries.
+[FarLeft]
+Speaking of which, where are Richard and Cameron? I expected them to join us by now.
+[FarRight]
+Bandits have been causing trouble in the nearby villages again, they're out handling them. I expect they'll be back shortly.
+[FarLeft][ClearFace][FarLeft][LoadIsabelle]
+[FarLeft]
+That's odd, they were still here when we left. Why would Lord Howard send them away when anticipating Prince Edgar's imminent arrival?
+[FarRight]
+I'm afraid I'm not privy to Lord Howard's motivations.
+[FarLeft][ClearFace][FarLeft][LoadBeatrice]
+Isabelle is right, something feels off. Aside from you, I haven't seen a single familiar face since our return.
+[FarRight]
+What exactly are you implying? Do you question Lord Howard's judgment?!
+[Right]
+Sir Craig, surely there's an explanation for this. I don't mean to doubt your words, but it's awfully strange bandits struck just as Prince Edgar was ambushed by empire troops.
+And Lord Howard is too busy to meet with the prince?
+[Left]
+I'm sorry, Sir Craig, but I must insist we see Lord Howard immediately. I'm sure he would forgive us for interrupting his meeting.
+[FarRight]
+Damn, looks like we'll have to do this the hard way. Come on out everyone!
+[X]
+
+
+## TEXT_Ch4_Start3
+[ConversationText]
+[FarLeft][LoadCraig][Right][LoadDaniel][FarRight][LoadEdgar]
+[FarLeft]
+We've got you surrounded. Surrender and we may spare your life.
+[Right]
+Sir Craig, how could you betray us?!
+[FarLeft]
+It's not personal, Daniel. I've wasted fifteen years as a mere knight. It's time for me to move up in the world!
+[FarLeft][ClearFace]
+[FarRight]
+Ambushed twice in one day... But once more, we've got no choice but to fight. I'm sorry, everyone, but we've got one last battle to fight tonight!
+[MidLeft][LoadNico]
+[MidLeft]
+What's the plan? We may be able to make a break for the exit before they rally the rest of their men.
+[FarRight]
+Sir Craig's still in our way, there's no way we can all make it out alive. We've got better odds if we stay and fight.
+And after coming all this way, we can't afford to turn back now. Our objective is the throne!
+[X]
+
+## TEXT_Ch4_Start4
+[ConversationText]
+[MidLeft][LoadCraig][MidRight][LoadCh4Boss]
+[MidRight]
+Excellent work, Sir Craig. I'll see to it that you are rewarded for your loyalty once we've dealt with these upstarts. Capture the prince, kill the rest.
+[MidLeft]
+Understood, sir! I won't let them escape!
+[X]
+
+## TEXT_Ch4_RC_Event
+[ConversationText]
+[MidLeft][LoadCameron][MidRight][LoadRichard]
+[MidLeft]
+We're too late, the castle's swarming with imperial soldiers!
+[MidRight]
+Stay calm, it sounds like there's still some fighting going on. If Beatrice and the others made it back, we ought to regroup with them as soon as we can.
+[MidLeft]
+We'd better hurry,[ToggleRed]I see more soldiers approaching from the northern corridor.[ToggleRed]I'm not sure how much longer we can hold out alone.
+[X]
+
+## TEXT_Ch4_End
+[ConversationText]
+[FL][LoadHoward][L][LoadRichard][R][LoadEdgar][FR][LoadDaniel]
+[L]Lord Howard! Are you alright?
+[FL]Yes, thanks to you. I still can't believe Sir Craig turned on us. I've known him for decades and never questioned his loyalty.
+[FR]Neither can I... He mentored me, made me the knight I am today. I always aspired to be just like him, but now...
+[L]To think Sir Craig could be swayed to join the enemy... The empire's reach extends farther than I'd thought.
+[FL]Prince Edgar, you have my deepest thanks. If not for you, I fear we'd have met our end here today.
+[R]It was the least we could do after your offer to aid us. What is it you summoned me to discuss?
+[L][ClearFace][FR][ClearFace]
+[LoadOverworldFaces]
+[FL][MoveMidLeft]
+[ML]Let me get straight to the point. The kingdom is in disarray. Lord Louis lets the empire bleed us dry while he lines his pockets.
+Lord Jeffery maintains order around the capital with the help of Generals Clint and Gordon, but the outer regions are at the mercy of imperial troops and bandits alike.
+Lord Louis's rule must end, and the empire must be expelled from Melerra's borders. To that end, I'd like to help you retake the throne and restore peace and order to the kingdom.
+[R]You... You're serious? Some of what happened two years ago is still unclear to me, but I recall you sided with Lords Louis and Jeffery with the empire to oust my father.
+And now you want me on the throne? It's clear we now have a common enemy in the empire, but I can't trust you until I know your true intentions.
+[ML]I was afraid it would come to this, but you deserve to know the truth. The previous king, your father, had a difficult reign.
+He devoted so much of the kingdom's resources to repelling the empire that our citizens were neglected.
+Bandits ravaged the border villages and pirates crippled sea trade. Farmers were conscripted into the army, leaving us unable to feed the people.
+So Lords Louis, Jeffery, and I struck a deal with the empire. We'd depose your father and cede the kingdom to the empire as a vassal state with the three of us managing Melerra's internal affairs.
+[R]...
+[ML]We dismissed the conscripts, letting return to their lives. Rallied what was left of our army to deal with the bandits. Things were finally looking up.
+[R]... What changed?
+[ML] Lord Louis began to increase taxes, and worked with empire soldiers to collect them. He imprisons dissenters, hoards riches in the castle.
+[R]And you didn't stop him? You stood by and let this happen?!
+[ML]By the time I realized, it was too late. I tried to convince Lord Jeffery, but he wouldn't budge.
+[FR][LoadJane]
+[FR]How like him. He's not the type to waver in times like these.
+[ML]Ah, you must be Jane, Lord Jeffery's sister. Seeing you here is quite the pleasant surprise.
+[R]Say I agree, what's your plan? General Gordon taught me to wield a lance, and even now I can't hope to rival his strength, and by all accounts, General Clint is just as skilled.
+Not to mention Lord Jeffery is known as one of the strongest knights on the continent. I'd love nothing more than to reclaim the throne, I'm not going to lead my friends to their deaths.
+[ML]I've prepared a ship to take you all the way to Port Trosson, and you'll have Richard's band of mercenaries to fight at your side. They're the best money can buy.
+I'll assign Sir Daniel to join you as well. After Sir Craig, he's my finest knight.
+The empire's already suspicious of me, thus time is of the essence. This is the only chance we've got.
+[R]I... I need to think about this. I'm sorry. I'll have an answer tomorrow.
+[ML]Very well, get some rest. You must be exhausted after all this.
+[R][ClearFace][FR][ClearFace]
+[ML]I should have handled that better. Poor kid's got the whole kingdom on his shoulders. And it's my fault he's in this mess to begin with...
+[X]
+
+## TEXT_Ch4_End_Jane
+[ConversationText]
+[ML][LoadJane][MR][LoadEdgar]
+[ML]Uh... do you want to talk about it? I'm not great with heavy stuff but I'm here if you need me. You must have a lot on your mind.
+[MR]I don't know what to do! Just thinking about those bastards that've ruined this kingdom gets me so angry! We've gotten so far, but this time, I don't know if we can win.
+The generals, Lord Jeffery... there's no way I can defeat them. And working with Lord Howard, after he betrayed my father... I don't know if I can stomach it.
+But if my father really was a bad king, how could I be certain I'd be any better? And even if we succeed, we'll still have to deal with the empire afterwards!
+[ML]That's some heavy stuff alright... The generals are good men, we may be able to sway them to our side. After all, you've already picked up all kinds of unlikely allies.
+As for my brother, he'll never defect. He's just as strong as the rumors say, but that won't stop me from trying to best him.
+[MR]...
+[ML]And if you're worried about whether or not you'll be a good ruler, I think you'll do alright.
+I can't say I cared much for your cause when I invited myself into your little army, but everyone's resolve must have won me over.
+Everyone's fighting for a better future, and you're the one who brought them all together. Surely that counts for something, right?
+[MR]I...
+[ML]I'll let you sleep on it. It's something only you can decide after all.
+[ML][ClearFace]
+[MR]Jane... Thank you.
+[X]

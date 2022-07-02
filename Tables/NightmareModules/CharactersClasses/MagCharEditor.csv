@@ -69,11 +69,11 @@ Orson (Ch 5x),3,10
 Valter (Ch 15),2,5
 Selena (Ch 10B +ACY- 13B),10,40
 Valter (Prologue),2,5
-Breguet (Ch 1),0,5
-Bone (Ch 2),0,5
-Bazba (Ch 3),1,10
+Ch1Boss,0,5
+Ch2Boss,0,5
+Ch3Boss,1,10
 Entombed (Ch 4),1,5
-Saar (Ch 5),1,5
+Ch4Boss,6,5
 Novala (Ch 6),8,50
 Murray (Ch 7),2,5
 Tirado (Ch 8),3,15
@@ -103,7 +103,7 @@ Hunter (Ch 16),3,10
 +AC0-0,0,0
 Brigand,0,0
 0,0,0
-O'Neill (Prologue),0,5
+Craig,0,5
 Glen (Cutscene),0,0
 Zonta (Ch 5x),1,5
 Vigarde (Ch 14B),5,15

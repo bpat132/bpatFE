@@ -39,6 +39,7 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+TurnEventPlayer(0,RuneTutorialEvent,1)
 #ifdef _EASY_MODE_
 TurnEventPlayer(0,NorthThiefReinforcementEvent,8)
 TurnEventPlayer(0,SouthThiefReinforcementEvent,9)
@@ -47,6 +48,24 @@ TurnEventPlayer(0,NorthThiefReinforcementEvent,7)
 TurnEventPlayer(0,SouthThiefReinforcementEvent,8)
 #endif
 END_MAIN
+
+RuneTutorialEvent:
+Text(TEXT_Ch2_Runes)
+
+TUTORIALTEXTBOXSTART
+CenterTutorialTextBox
+TEXTSHOW TEXT_RuneTutorial
+TEXTEND
+TUTORIALTEXTBOXSTART
+CenterTutorialTextBox
+TEXTSHOW TEXT_Rune0Info
+TEXTEND
+TUTORIALTEXTBOXSTART
+CenterTutorialTextBox
+TEXTSHOW TEXT_Rune1Info
+TEXTEND
+NoFade
+ENDA
 
 NorthThiefReinforcementEvent:
 EnemyReinforcements(NorthThiefReinforcementUnits)
@@ -177,11 +196,18 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
+// Two rune uses for this
+COUNTER_SET 0 2
+// Disable locked runes
+ENUT 0x73
+// Enable runes usage
+ENUF 0x83
+
 MUSC OgreBattle_WallOfDefense
 LoadEnemies(EnemyUnits1)
 LoadEnemies(EnemyUnits2)
 LoadEnemies(EnemyUnits3)
-LoadPlayerUnits(Units1) //0x0 instead of 0x1 seems to be for allies on maps with prep screens
+LoadPlayerUnits(Units1)
 SetBackground(0x24)
 CAM1 [23,0]
 Text(TEXT_Ch2_Start_Edgar)

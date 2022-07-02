@@ -89,11 +89,13 @@ WORD CantoPlusID
 
 ALIGN 4
 ReMove:
-#incbin "ReMove/remove.dmp"
+//#incbin "ReMove/remove.dmp"
+#incbin "ReMove/remove_special.dmp"
 POIN SkillTester
 WORD ReMoveID
 POIN ReMoveEvent
-#include "ReMove/ReMoveEvent.event"
+//#include "ReMove/ReMoveEvent.event"
+#include "ReMove/ReMoveEvent_special.event"
 
 ALIGN 4
 Powerstaff:

@@ -49,6 +49,8 @@
 #define FireSword RottenClaw
 #define FrostBow FetidClaw
 #define Labrys PoisonClaw
+#define Rend EvilEye
+#define Ruin CrimsonEye
 #define PetrifyStaff 0xbe
 
 // Characters

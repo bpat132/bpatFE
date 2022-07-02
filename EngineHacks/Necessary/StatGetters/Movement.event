@@ -5,6 +5,7 @@
 ALIGN 4
 pMovModifiers: // Movement
 	POIN prAddUnitBaseMov prAddUnitMovBonus (prGetItemMovBonus-1) prItemPassiveMov prRallyMov prSkillCelerity prSkillPoise prArmorMarchCheck
+	POIN prAdd3IfFlag
 	#ifdef STAIRS_ASM
 	POIN StairsMoveDebuff-1
 	#endif
@@ -15,15 +16,25 @@ pMovModifiers: // Movement
 WORD 0
 
 prAddUnitBaseMov: // byte 0x12 in ROM class data is base class movement
-	rAdd(rForWordAt(UNIT_ROMCLASS, rSByteAt(0x12))) 
+	rAdd(rForWordAt(UNIT_ROMCLASS, rSByteAt(0x12)))
 
 prAddUnitMovBonus:
 	rAdd(rSByteAt(UNIT_MOV_BONUS))
 
-prSkillCelerity:
+prSkillCelerity: // Celerity replaced with Encumbered
 	rIfUnitHasSkill(CelerityID)
-		rSubConst(2)
-		
+		rSubConst(3)
+
+prAdd3IfFlag:
+  rIfUnitHasAllegience(UA_BLUE)
+  rIf(CheckMyFlag)
+    rAddConst(2)
+CheckMyFlag:
+  //rForConstant(0x83)
+  rForConstant(0x93)
+    //rCallExternal(CheckEventId)
+    rCallExternal(0x8083da8)
+
 prSkillPoise:
 	rIfUnitHasSkill(PoiseID)
 		rAddConst(1)

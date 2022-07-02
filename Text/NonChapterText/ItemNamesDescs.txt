@@ -1,4 +1,7 @@
 
+## NoDesc
+ [.][X]
+
 ## RegalLanceName
 Regal Lance[X]
 ## RegalLanceDesc
@@ -19,6 +22,20 @@ Sapphire Lnc[X]
 Emerald Axe[X]
 ## GemWeaponDesc
 Doubles weapon triangle.[X]
+
+## BolganoneName
+Bolganone[X]
+
+## ThoronName
+Thoron[X]
+## ThoronDesc
+Extended attack range.[X]
+
+## RendName
+Rend[X]
+
+## RuinName
+Ruin[X]
 
 ## FireSwordName
 Fire Sword[X]
