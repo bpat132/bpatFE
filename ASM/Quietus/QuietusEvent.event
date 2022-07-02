@@ -1,0 +1,63 @@
+
+/*
+ALIGN 4
+gRAMChapterJumpEvent:
+WORD 0x202B670
+
+//DO NOT TOUCH
+//This is the base event that will get copied to RAM then modified
+ALIGN 4
+gChapterJumpEvent:
+    FADI 60
+    CALL EmptyEvent //Gets modified after memcpy
+    SVAL 2 0x0 //Gets modified after memcpy
+    MNC2 0xFFFD
+    NoFade
+    ENDA
+
+
+//Default event if there's no extra event for a chapter
+ALIGN 4
+EmptyEvent:
+    NoFade
+    ENDA
+
+ALIGN 4
+gRAMDummyEvent:
+WORD 0x202B670
+
+ALIGN 4
+gDummyEvent:
+    GiveMoney(100)
+    NoFade
+    ENDA
+*/
+ALIGN 4
+gRAMChapterJumpEvent:
+WORD 0x202B670
+
+//DO NOT TOUCH
+//This is the base event that will get copied to RAM then modified
+ALIGN 4
+gChapterJumpEvent:
+    
+    SVAL 3 0x1 // modified by memcpy
+    //GIVEMONEY 0x1
+    NOP
+    //SOUN 0xAA
+    
+    COUNTER_DEC 0
+    COUNTER_CHECK 0
+    BNE 1 s0 sC
+    ENUT 0x83
+    LABEL 1
+    SOUN 0xAA
+    STAL 0x16
+    NoFade
+    ENDA
+
+//Default event if there's no extra event for a chapter
+ALIGN 4
+EmptyEvent:
+    NoFade
+    ENDA

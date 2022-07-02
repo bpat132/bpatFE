@@ -1,0 +1,51 @@
+//Generated with Skill Animation Creator.
+
+#incbin skillanimtemplate.dmp
+POIN Frames
+POIN TSAList
+POIN GraphicsList
+POIN PalettesList
+WORD 0x3d1 //sound id
+
+Frames:    //SHORT image duration
+SHORT 0 10
+SHORT 1 15
+//SHORT 2 15
+SHORT 0xFFFF
+ALIGN 4
+
+TSAList:
+POIN TSA_Default001
+POIN TSA_Default002
+POIN TSA_Default003
+
+GraphicsList:
+POIN Graphics_Default001
+POIN Graphics_Default002
+POIN Graphics_Default003
+
+PalettesList:
+POIN Pal_Default001
+POIN Pal_Default002
+POIN Pal_Default003
+
+TSA_Default001:
+#incbin "Default001.map.bin"
+TSA_Default002:
+#incbin "Default002.map.bin"
+TSA_Default003:
+#incbin "Default003.map.bin"
+
+Graphics_Default001:
+#incbin "Default001.img.bin"
+Graphics_Default002:
+#incbin "Default002.img.bin"
+Graphics_Default003:
+#incbin "Default003.img.bin"
+
+Pal_Default001:
+#incbin "Default001.pal.bin"
+Pal_Default002:
+#incbin "Default002.pal.bin"
+Pal_Default003:
+#incbin "Default003.pal.bin"

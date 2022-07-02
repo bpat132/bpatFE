@@ -43,9 +43,11 @@ TurnEventPlayer(0,BrigandReinforcements1,5)
 TurnEventPlayer(0,BrigandReinforcements2,8)
 #endif
 
-TurnEventPlayer(0,EvilReinforcements,10)
+// Turn 10 may be too tight for ch1
+//TurnEventPlayer(0,EvilReinforcements,10)
 TurnEventPlayer(0,EvilReinforcements,11)
 TurnEventPlayer(0,EvilReinforcements,12)
+TurnEventPlayer(0,EvilReinforcements,13)
 
 TurnEventPlayer(0,StellaEvent,3)
 TurnEventPlayer(0,SashaEvent,4)
@@ -222,7 +224,8 @@ UNIT 0x80 Mercenary 0x40 Level(1,Enemy,1)     [15,4] 0x0 0x0 0x0 0x0 [IronSword]
 UNIT 0x80 Mage_F 0x40 Level(1,Enemy,1)     [18,1] 0x0 0x0 0x0 0x0 [Fire] NeverMoveAI
 UNIT 0x80 Soldier 0x40 Level(1,Enemy,1)     [18,3] 0x0 0x0 0x0 0x0 [Javelin] NeverMoveAI
 
-UNIT 0x82 Brigand 0x40 Level(1,Enemy,1)     [5,10] 0x0 0x0 0x0 0x0 [IronAxe] AttackingBrigandAI
+//UNIT 0x82 Brigand 0x40 Level(1,Enemy,1)     [5,10] 0x0 0x0 0x0 0x0 [IronAxe] AttackingBrigandAI
+UNIT 0x82 Brigand 0x40 Level(1,Enemy,1)     [5,10] 0x0 0x0 0x0 0x0 [SteelAxe] AttackingBrigandAI
 UNIT
 
 EnemyReinforcementUnits1:
@@ -258,6 +261,13 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
+COUNTER_SET 0 3 // QP count
+// Disable locked quietus
+ENUT 0x72
+ENUT 0x73
+// Disable quietus entirely
+ENUT 0x83
+
 ENUT 0x129 // AllUnitsMustEscapeFlag
 MUSC BoF2_StrongerMonsters
 CAM1 [0,11]
@@ -272,6 +282,7 @@ MUSC DW3_Oppression
 FlashCursor(Matthias,0x20)
 Text(TEXT_Ch1_Start_Matthias)
 MOVE 15 Ch1Boss [18,2]
+
 NoFade
 ENDA
 

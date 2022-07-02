@@ -96,7 +96,8 @@ Gamble:
 
 ALIGN 4
 Hawkeye:
-#incbin "Hawkeye/Hawkeye.dmp"
+//#incbin "Hawkeye/Hawkeye.dmp"
+#incbin "Hawkeye/Hawkeye_special.dmp"
 POIN SkillTester
 WORD HawkeyeID
 

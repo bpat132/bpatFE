@@ -16,6 +16,11 @@
 	#include "Chapter3Events.event"
 }
 
+{
+	#include "Chapter4Events.event"
+}
+
+
 /*
 255
 0x07 Prologue events

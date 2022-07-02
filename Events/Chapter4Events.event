@@ -1,0 +1,240 @@
+
+////////////////////////////////////////////////////
+//                                                //
+// Disassembled with Nintenlord's Event Assembler //
+// Version: 11.0.0.0                              //
+// Game: FE8                                      //
+// File: FE8_clean.gba                            //
+// Offset: $9EC66C                                //
+//                                                //
+////////////////////////////////////////////////////
+
+EventPointerTable(0x14, PointerList)
+
+EscapePointPointerTable(3, Ch4EscapePoints)
+Ch4EscapePoints:
+EscapePoint(16, 0, MoveUp)
+EscapePoint(17, 0, MoveUp)
+EscapePoint(18, 0, MoveUp)
+EscapePointEnd
+
+setText(0x163, NewChName)
+
+ALIGN 4
+NewChName:
+String("Ch4: Ambition")
+BYTE 0
+
+ALIGN 4
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN $0 $0 $0
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+TurnEventPlayer(0,AllyReinforcements,1)
+TurnEventPlayer(0,EnemyReinforcements1,3)
+TurnEventPlayer(0,EnemyReinforcements2,4)
+TurnEventPlayer(0,EnemyReinforcements3,5)
+END_MAIN
+
+AllyReinforcements:
+EnemyReinforcements(AllyReinforcementUnits)
+
+EnemyReinforcements1:
+EnemyReinforcements(EnemyReinforcementUnits1)
+
+EnemyReinforcements2:
+EnemyReinforcements(EnemyReinforcementUnits2)
+
+EnemyReinforcements3:
+EnemyReinforcements(EnemyReinforcementUnits3)
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Seize(8,4)
+Chest(SapphireLance,17,3)
+Chest(KillerBow,17,1)
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+Units1:
+LoadUnit(13,15,Edgar)
+LoadUnit(12,14,Jenna)
+LoadUnit(12,16,Duncan)
+LoadUnit(15,16,Kurt)
+LoadUnit(11,15,Matthias)
+LoadUnit(15,15,Stella)
+LoadUnit(14,14,Nico)
+LoadUnit(17,15,Jane)
+LoadUnit(11,16,Ethan)
+LoadUnit(14,16,Beatrice)
+LoadUnit(16,16,Daniel)
+LoadUnit(16,15,Isabelle)
+UNIT
+
+AllyReinforcementUnits:
+UNIT Richard Mercenary 0x0 Level(7,Ally,0)     [0,9] 0b 0x0 0x1 RichardReda [IronSword,SteelSword,FireSword,0x6C] NoAI
+UNIT Cameron Archer 0x0 Level(6,Ally,0)     [0,10] 0b 0x0 0x1 CameronReda [IronBow,SteelBow,0x6C] NoAI
+UNIT
+
+RichardReda:
+REDA [2,9] 0x0 0x1 0x00 0x00
+CameronReda:
+REDA [1,10] 0x0 0x1 0x00 0x08
+
+EnemyUnits1:
+// Unique
+UNIT Ch4Boss Mage 0x40 Level(12,Enemy,0)     [4,15] 0x0 0x0 0x0 0x0 [Bolganone,Thoron] NeverMoveAI
+#ifndef _EASY_MODE_
+//UNIT Craig Cavalier 0x40 Level(12,Enemy,0)     [20,2] 0x0 0x0 0x0 0x0 [ShortSpear] PWHAI
+UNIT Craig Cavalier 0x40 Level(12,Enemy,0)     [5,16] 0x0 0x0 0x0 0x0 [ShortSpear] PWHAI
+#else
+UNIT Craig Cavalier 0x40 Level(12,Enemy,0)     [5,16] 0x0 0x0 0x0 0x0 [Javelin] PWHAI
+#endif
+UNIT 0x80 Thief 0x40 Level(6,Enemy,1)     [8,5] 0b 0x0 0x0 0x0 [FireSword,ChestKey,ChestKey] LootingThiefAI
+
+// Outside
+//UNIT 0x80 Cavalier_F 0x40 Level(6,Enemy,1)     [0,16] 0b 0x0 0x0 0x0 [Javelin] PWHAI
+UNIT 0x80 Cavalier_F 0x40 Level(6,Enemy,1)     [0,16] 0b 0x0 0x0 0x0 [IronLance] PWHAI
+UNIT 0x80 Fighter 0x40 Level(6,Enemy,1)     [3,17] 0b 0x0 0x0 0x0 [IronAxe] PWHAI
+#ifndef _EASY_MODE_
+UNIT 0x80 Myrmidon 0x40 Level(6,Enemy,1)     [2,15] 0b 0x0 0x0 0x0 [IronBlade] PWHAI
+#endif
+
+// Throne room
+//UNIT 0x80 Mage 0x40 Level(6,Enemy,1)     [7,4] 0b 0x0 0x0 0x0 [Mjolnir] NeverMoveAI
+UNIT 0x80 Mage 0x40 Level(6,Enemy,1)     [7,4] 0b 0x0 0x0 0x0 [Thunder] NeverMoveAI
+UNIT 0x80 Mage 0x40 Level(6,Enemy,1)     [9,4] DropItem 0x0 0x0 0x0 [Bolganone] NeverMoveAI
+UNIT 0x80 Knight 0x40 Level(6,Enemy,1)     [5,4] 0b 0x0 0x0 0x0 [HandAxe] NeverMoveAI
+UNIT 0x80 Knight 0x40 Level(6,Enemy,1)     [5,5] 0b 0x0 0x0 0x0 [HandAxe] NeverMoveAI
+UNIT 0x80 Knight 0x40 Level(6,Enemy,1)     [11,4] 0b 0x0 0x0 0x0 [HandAxe] NeverMoveAI
+UNIT 0x80 Knight 0x40 Level(6,Enemy,1)     [11,5] 0b 0x0 0x0 0x0 [HandAxe] NeverMoveAI
+#ifndef _EASY_MODE_
+UNIT 0x80 Archer_F 0x40 Level(6,Enemy,1)     [8,6] 0b 0x0 0x0 0x0 [SteelBow,PureWater] AIRAI
+#else
+UNIT 0x80 Archer_F 0x40 Level(6,Enemy,1)     [8,6] 0b 0x0 0x0 0x0 [IronBow,PureWater] AIRAI
+#endif
+#ifndef _EASY_MODE_
+UNIT 0x80 Myrmidon 0x40 Level(6,Enemy,1)     [7,6] 0b 0x0 0x0 0x0 [SteelBlade] AIRAI
+#endif
+UNIT 0x80 Myrmidon 0x40 Level(6,Enemy,1)     [7,6] 0b 0x0 0x0 0x0 [SteelSword] AIRAI
+UNIT 0x80 Soldier 0x40 Level(6,Enemy,1)     [9,6] 0b 0x0 0x0 0x0 [SteelLance] AIRAI
+UNIT
+
+EnemyUnits2:
+// Top left
+UNIT 0x80 Archer 0x40 Level(6,Enemy,1)     [3,1] 0b 0x0 0x0 0x0 [IronBow] PWHAI
+
+// Middle
+UNIT 0x80 Mercenary 0x40 Level(6,Enemy,1)     [3,11] 0b 0x0 0x0 0x0 [IronSword] AIRAI
+UNIT 0x80 Fighter 0x40 Level(6,Enemy,1)     [5,13] 0b 0x0 0x0 0x0 [IronAxe] AIRAI
+#ifndef _EASY_MODE_
+UNIT 0x80 Archer 0x40 Level(6,Enemy,1)     [8,9] 0x0 0x0 0x0 0x0 [IronBow] AIRAI
+#endif
+UNIT 0x80 Mercenary 0x40 Level(6,Enemy,1)     [10,10] 0b 0x0 0x0 0x0 [IronSword] AIRAI
+UNIT 0x80 Fighter 0x40 Level(6,Enemy,1)     [16,11] 0b 0x0 0x0 0x0 [IronAxe] AIRAI
+UNIT 0x80 Mercenary 0x40 Level(6,Enemy,1)     [18,10] 0b 0x0 0x0 0x0 [SteelSword] AIRAI
+UNIT 0x80 Mage_F 0x40 Level(6,Enemy,1)     [13,9] 0b 0x0 0x0 0x0 [Fire] AIRAI
+UNIT 0x80 Mercenary 0x40 Level(6,Enemy,1)     [7,15] 0b 0x0 0x0 0x0 [IronSword] AIRAI
+UNIT 0x80 Soldier 0x40 Level(6,Enemy,1)     [8,16] 0b 0x0 0x0 0x0 [Javelin] AIRAI
+
+// Chest room
+UNIT 0x80 Soldier 0x40 Level(6,Enemy,1)     [16,7] 0b 0x0 0x0 0x0 [Javelin] NeverMoveAI
+UNIT 0x80 Knight 0x40 Level(6,Enemy,1)     [17,7] 0b 0x0 0x0 0x0 [HandAxe] NeverMoveAI
+UNIT 0x80 Myrmidon_F 0x40 Level(6,Enemy,1)     [18,7] 0b 0x0 0x0 0x0 [FireSword] NeverMoveAI
+UNIT 0x80 Archer 0x40 Level(6,Enemy,1)     [18,2] 0b 0x0 0x0 0x0 [IronBow] AIRAI
+#ifndef _EASY_MODE_
+UNIT 0x80 Fighter 0x40 Level(6,Enemy,1)     [17,5] 0b 0x0 0x0 0x0 [IronAxe] AIRAI
+#endif
+UNIT
+
+EnemyReinforcementUnits1:
+UNIT 0x80 Fighter 0x40 Level(6,Enemy,1)     [2,0] 0b 0x0 0x0 0x0 [IronAxe] PWHAI
+UNIT 0x80 Myrmidon 0x40 Level(6,Enemy,1)     [3,0] 0b 0x0 0x0 0x0 [IronSword] PWHAI
+UNIT
+
+EnemyReinforcementUnits2:
+UNIT 0x80 Myrmidon 0x40 Level(6,Enemy,1)     [19,15] 0b 0x0 0x0 0x0 [IronBlade] PWHAI
+UNIT 0x80 Mage 0x40 Level(6,Enemy,1)     [19,16] 0b 0x0 0x0 0x0 [Fire] PWHAI
+UNIT
+
+EnemyReinforcementUnits3:
+UNIT 0x80 Mercenary 0x40 Level(6,Enemy,1)     [2,0] 0b 0x0 0x0 0x0 [IronSword] PWHAI
+UNIT 0x80 Soldier 0x40 Level(6,Enemy,1)     [3,0] 0b 0x0 0x0 0x0 [SteelLance] PWHAI
+UNIT
+
+Traps1:
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+BeginningScene:
+MUSC OgreBattle_WallOfDefense
+LoadEnemies(EnemyUnits1)
+LoadEnemies(EnemyUnits2)
+LoadPlayerUnits(Units1) //0x0 instead of 0x1 seems to be for allies on maps with prep screens
+MUSC AA_Gumshoe
+SetBackground(0x15)
+Text(TEXT_Ch4_Start1)
+SetBackground(0x10)
+Text(TEXT_Ch4_Start2)
+CAM1 [5,15]
+ClearBackground
+MUSC YuNo_Frustration
+Text(TEXT_Ch4_Start3)
+Text(TEXT_Ch4_Start4)
+MOVE 15 Ch4Boss [8, 4]
+MOVE 15 Craig [0, 18]
+CAM1 [13,15]
+/*
+// Might get rid of this
+TUTORIALTEXTBOXSTART
+CenterTutorialTextBox
+TEXTSHOW TEXT_Ch4_AntiturtleInfo
+TEXTEND
+*/
+//NoFade
+GotoPrepScreen
+
+EndingScene:
+MUSC ToS_LastBattleDecision
+SetBackground(0xE)
+TEXTSTART
+//TEXTSHOW TEXT_Ch4_End_Antiturtle
+TEXTSHOW TEXT_Ch4_End
+TEXTEND
+//mid-text events go here
+MUSC GS_BabiLighthouse
+TEXTCONT
+TEXTEND
+REMA
+MNC2 Chapter5
+ENDA

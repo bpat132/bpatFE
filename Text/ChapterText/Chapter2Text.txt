@@ -53,6 +53,24 @@ She wants me to treat her like an ordinary grunt, but her brother will have my h
 I need to keep her in the back where she can't get herself killed.
 [X]
 
+## TEXT_Ch2_Runes
+[ConversationText]
+[MidLeft][LoadEdgar][MidRight][LoadLisa]
+[MidRight]
+One last thing, I brought a couple [ToggleRed]runes[ToggleRed] from the temple. You know how to [ToggleRed]invoke[ToggleRed] them, right?
+[MidLeft]
+I know the theory, but I have little experience with them.
+[MidRight]
+I'd like you to hold onto them. As our leader and tactician, only you can determine how best to utilize them.
+[MidLeft]
+I appreciate your confidence in me, but wouldn't you be better able to use them than I? Unlike you, I have no talent for magic.
+[MidRight]
+The energy used to invoke runes is separate from one's magical ability.
+I believe you'll manage better than the rest of us.
+[MidLeft]
+Alright, I'll trust your judgment on this. Thanks, Lisa.
+[X]
+
 ## TEXT_Ch2_Jane_Talk
 [ConversationText]
 [MidRight][LoadJane]

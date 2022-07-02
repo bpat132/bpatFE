@@ -1,5 +1,17 @@
 
-//Skip very begining world map
+// Quietus menu (based off Contro's ChapterJump hack, with help from Contro and Vesly)
+#include "Quietus/ChapterMenu.event"
+
+#include "Quietus/QuietusEvent.event"
+
+#include "Quietus/QuietusMenu.lyn.event"
+
+// Menu option only usable when EID 0x83 is set
+ALIGN 4
+MyUsabilityRoutine:
+#incbin "Quietus/UsabilityRoutine.dmp"
+
+// Skip very begining world map
 PUSH
 ORG $A39768
 EVBIT_MODIFY 0x1
@@ -107,10 +119,10 @@ Returns: True if event id is set
 // Inventory full doesn't seem to work, making a workaround
 //#include "PreventTrade/Installer.event"
 
-// Snek get unit by deploy slot
+// Snek get unit by deploy slot (currently unused)
 ALIGN 4
 GetUnitInDeploySlotHack:
-#incbin "GetUnitByDeployOrder.dmp"
+#incbin "Misc/GetUnitByDeployOrder.dmp"
 
 // 7743 patches
 ALIGN 4

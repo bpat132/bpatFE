@@ -64,3 +64,9 @@ SureShotAnim:
 {
   #include "SureShot/SureShotAnim.event"
 }
+
+ALIGN 4
+DefaultAnim:
+{
+  #include "Default/DefaultAnim.event"
+}

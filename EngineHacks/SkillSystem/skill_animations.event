@@ -20,7 +20,7 @@ WORD 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 WORD 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 WORD 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 
-SkillAnimation(SureShotID,SureShotAnim)
+SkillAnimation(SureShotID,DefaultAnim)
 SkillAnimation(AdeptID,AdeptAnim)
 SkillAnimation(LunaID,LunaAnim)
 SkillAnimation(SolID,SolAnim)

@@ -1,3 +1,4 @@
 #include "Chapter1Text.txt"
 #include "Chapter2Text.txt"
 #include "Chapter3Text.txt"
+#include "Chapter4Text.txt"

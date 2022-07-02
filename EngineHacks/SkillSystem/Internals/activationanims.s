@@ -18,6 +18,7 @@ ldr   r3, =GetBattleAnimRoundTypeFlags
 bl    GOTO_R3
 ldr   r1, =0x800
 tst   r0, r1
+@b     NoAnim
 bne   OffensiveSkill
   ldr   r1, =0x400
   tst   r0, r1
