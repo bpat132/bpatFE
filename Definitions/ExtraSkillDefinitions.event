@@ -1,2 +1,3 @@
+// More intuitive defines for skill IDs
 #define SlimID DesperationID
 #define GemID TriangleAdeptPlusID

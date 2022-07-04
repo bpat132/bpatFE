@@ -273,9 +273,12 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
-//SVAL 1 LocktouchID
-//SVAL 2 Nico
-//ASMC (ASMC_ForgetSkill|1)
+// Two rune uses for this chapter
+COUNTER_SET 0 2
+// Disable locked runes
+ENUT CelerityRuneDisabledFlag
+// Enable runes usage
+ENUF RuneMenuDisableFlag
 
 MUSC AA_Gumshoe
 LoadEnemies(EnemyUnits1)
@@ -287,7 +290,8 @@ SetBackground(0x21)
 TEXTSTART
 TEXTSHOW TEXT_Ch3_Start_Edgar
 TEXTEND
-MUSC YuNo_Frustration
+//MUSC YuNo_Frustration
+MUSC FE11_Trouble
 TEXTCONT
 TEXTEND
 REMA
@@ -301,6 +305,14 @@ NoFade
 GotoPrepScreen
 
 EndingScene:
+// Reset rune menu and uses
+ENUF RuneMenuDisableFlag
+COUNTER_SET 0 2
+// Disable active runes
+ENUF HawkeyeRuneFlag
+ENUF MiracleRuneDisabledFlag
+ENUF MiracleActiveFlag
+
 MUSC ToS_LastBattleDecision
 Text(0x21,TEXT_Ch3_End)
 MNC2 Chapter4

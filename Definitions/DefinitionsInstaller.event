@@ -4,6 +4,7 @@
 #include MusicDefinitions.event
 #include ChapterDefinitions.event
 #include ExtraSkillDefinitions.event
+#include FlagDefinitions.event
 
 // enabling engine hacks
 #define USE_STRMAG_SPLIT

@@ -1,0 +1,12 @@
+
+// Runes
+#define RuneMenuDisableFlag 0x83
+
+// 1 -> available
+#define HawkeyeRuneFlag 0x71
+#define MiracleRuneDisabledFlag 0x72
+#define CelerityRuneDisabledFlag 0x73
+
+// 1 -> active
+#define MiracleActiveFlag 0x92
+#define CelerityActiveFlag 0x93

@@ -30,9 +30,8 @@ prAdd3IfFlag:
   rIf(CheckMyFlag)
     rAddConst(2)
 CheckMyFlag:
-  //rForConstant(0x83)
-  rForConstant(0x93)
-    //rCallExternal(CheckEventId)
+  rForConstant(CelerityActiveFlag)
+    // CheckEventId
     rCallExternal(0x8083da8)
 
 prSkillPoise:

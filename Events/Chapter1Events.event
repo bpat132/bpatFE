@@ -95,8 +95,9 @@ ENDA
 SashaEvent:
 //MUSC DW3_Oppression
 MUSC AA3_VictorKudo
-FlashCursor(Sasha,0x20)
 CAM1 [18,0]
+FlashCursor(Sasha,0x20)
+FlashCursor(Ch1Boss,0x20)
 Text(TEXT_Ch1_Sasha_Event)
 MOVE 0 Sasha [15,0]
 ENUN
@@ -261,12 +262,8 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
-COUNTER_SET 0 3 // QP count
-// Disable locked quietus
-ENUT 0x72
-ENUT 0x73
-// Disable quietus entirely
-ENUT 0x83
+// Disable runes entirely for this chapter
+ENUT RuneMenuDisableFlag
 
 ENUT 0x129 // AllUnitsMustEscapeFlag
 MUSC BoF2_StrongerMonsters
@@ -280,6 +277,7 @@ Text(TEXT_Ch1_Start_Edgar)
 MUSC DW3_Oppression
 //MUSC AA3_VictorKudo
 FlashCursor(Matthias,0x20)
+FlashCursor(Ch1Boss,0x20)
 Text(TEXT_Ch1_Start_Matthias)
 MOVE 15 Ch1Boss [18,2]
 

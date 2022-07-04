@@ -197,11 +197,19 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
+// Two rune uses for this chapter
+COUNTER_SET 0 2
+// Disable locked runes
+ENUT CelerityRuneDisabledFlag
+// Enable runes usage
+ENUF RuneMenuDisableFlag
+
 MUSC OgreBattle_WallOfDefense
 LoadEnemies(EnemyUnits1)
 LoadEnemies(EnemyUnits2)
 LoadPlayerUnits(Units1) //0x0 instead of 0x1 seems to be for allies on maps with prep screens
-MUSC AA_Gumshoe
+//MUSC AA_Gumshoe
+MUSC Langrisser_Story
 SetBackground(0x15)
 Text(TEXT_Ch4_Start1)
 SetBackground(0x10)
@@ -210,6 +218,8 @@ CAM1 [5,15]
 ClearBackground
 MUSC YuNo_Frustration
 Text(TEXT_Ch4_Start3)
+FlashCursor(Craig,0x20)
+FlashCursor(Ch4Boss,0x20)
 Text(TEXT_Ch4_Start4)
 MOVE 15 Ch4Boss [8, 4]
 MOVE 15 Craig [0, 18]
@@ -225,6 +235,14 @@ TEXTEND
 GotoPrepScreen
 
 EndingScene:
+// Reset rune menu and uses
+ENUF RuneMenuDisableFlag
+COUNTER_SET 0 2
+// Disable active runes
+ENUF HawkeyeRuneFlag
+ENUF MiracleRuneDisabledFlag
+ENUF MiracleActiveFlag
+
 MUSC ToS_LastBattleDecision
 SetBackground(0xE)
 TEXTSTART

@@ -74,11 +74,11 @@ Ch2Boss,0,5
 Ch3Boss,1,10
 Entombed (Ch 4),1,5
 Ch4Boss,6,5
-Novala (Ch 6),8,50
-Murray (Ch 7),2,5
-Tirado (Ch 8),3,15
-Binks (Ch 9A),2,10
-Pablo (Ch 10A),8,50
+Ch5Boss,0,50
+Ch6Boss,4,5
+Jeffery,5,15
+Gordon,2,10
+Louis,8,50
 Maelduin (Ch 12A),2,10
 Aias (Ch 13A),2,5
 Carlyle (Ch 14A),5,30

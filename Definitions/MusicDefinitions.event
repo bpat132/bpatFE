@@ -14,9 +14,12 @@
 #define NierA_DCDA 0x273 // ch1-X boss music
 #define ToS_LastBattleDecision 0x274 // event music: victory
 #define OgreBattle_WallOfDefense 0x275 // event music: preparing for battle
-#define GS_BabiLighthouse 0x276 // event music: planned for ch6 (currently unused)
+#define GS_BabiLighthouse 0x276 // event music: chill (mysterious)
 #define AA3_VictorKudo 0x277 // event music: bad guys
-#define YuNo_Frustration 0x278 // event music: upbeat / tense (currently unused)
+#define YuNo_Frustration 0x278 // event music: upbeat / tense
 #define AA_Gumshoe 0x279 // event music: chill
+#define Langrisser_Story 0x280 // event music: chill
+#define FE11_Trouble 0x281 // event music: tense
+#define ToS_Sheena 0x282 // event music: chill (unused)
 
 #define TestSong 0x2 // for testing music

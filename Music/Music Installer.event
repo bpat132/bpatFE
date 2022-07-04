@@ -71,3 +71,12 @@ SongTable(YuNo_Frustration,YuNo_FrustrationB_bpat,MapMusicGroup)
 
 #include "MusicEvents/AA_Gumshoe_bpat.event"
 SongTable(AA_Gumshoe,AA_Gumshoe_bpat,MapMusicGroup)
+
+#include "MusicEvents/Langrisser_Story_Pik.event"
+SongTable(Langrisser_Story,StoryLangrisser,MapMusicGroup)
+
+#include "MusicEvents/ToS_Sheena_Chair.event"
+SongTable(ToS_Sheena,songShihna,MapMusicGroup)
+
+#include "MusicEvents/FE11_Trouble_Sme.event"
+SongTable(FE11_Trouble,CombatMission,MapMusicGroup)

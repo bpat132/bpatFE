@@ -115,6 +115,142 @@ SashaMugData: // Me, body from CapibaraInSpace
 setMugEntry(SashaMug, SashaMugData, 3, 5, 3, 3)
 
 ALIGN 16
+RichardMugData: // LL
+#incbin "Dmp/Richard_mug.dmp"
+#incbin "Dmp/Richard_frames.dmp"
+#incbin "Dmp/Richard_palette.dmp"
+#incbin "Dmp/Richard_minimug.dmp"
+setMugEntry(RichardMug, RichardMugData, 3, 5, 3, 3)
+
+ALIGN 16
+CameronMugData: // Nickt
+#incbin "Dmp/Cameron_mug.dmp"
+#incbin "Dmp/Cameron_frames.dmp"
+#incbin "Dmp/Cameron_palette.dmp"
+#incbin "Dmp/Cameron_minimug.dmp"
+setMugEntry(CameronMug, CameronMugData, 4, 5, 4, 3)
+
+ALIGN 16
+VioletMugData: // LL
+#incbin "Dmp/Violet_mug.dmp"
+#incbin "Dmp/Violet_frames.dmp"
+#incbin "Dmp/Violet_palette.dmp"
+#incbin "Dmp/Violet_minimug.dmp"
+setMugEntry(VioletMug, VioletMugData, 3, 6, 3, 4)
+
+ALIGN 16
+RowanMugData: // LL
+#incbin "Dmp/Rowan_mug.dmp"
+#incbin "Dmp/Rowan_frames.dmp"
+#incbin "Dmp/Rowan_palette.dmp"
+#incbin "Dmp/Rowan_minimug.dmp"
+setMugEntry(RowanMug, RowanMugData, 3, 5, 3, 3)
+
+ALIGN 16
+CeliaMugData: // Me
+#incbin "Dmp/Celia_mug.dmp"
+#incbin "Dmp/Celia_frames.dmp"
+#incbin "Dmp/Celia_palette.dmp"
+#incbin "Dmp/Celia_minimug.dmp"
+setMugEntry(CeliaMug, CeliaMugData, 3, 6, 3, 4)
+
+ALIGN 16
+JustinMugData: // LL
+#incbin "Dmp/Justin_mug.dmp"
+#incbin "Dmp/Justin_frames.dmp"
+#incbin "Dmp/Justin_palette.dmp"
+#incbin "Dmp/Justin_minimug.dmp"
+setMugEntry(JustinMug, JustinMugData, 3, 5, 3, 3)
+
+ALIGN 16
+TedMugData: // XVI
+#incbin "Dmp/Ted_mug.dmp"
+#incbin "Dmp/Ted_frames.dmp"
+#incbin "Dmp/Ted_palette.dmp"
+#incbin "Dmp/Ted_minimug.dmp"
+setMugEntry(TedMug, TedMugData, 3, 5, 3, 3)
+
+ALIGN 16
+QuentinMugData: // Roze
+#incbin "Dmp/Quentin_mug.dmp"
+#incbin "Dmp/Quentin_frames.dmp"
+#incbin "Dmp/Quentin_palette.dmp"
+#incbin "Dmp/Quentin_minimug.dmp"
+setMugEntry(QuentinMug, QuentinMugData, 3, 5, 3, 3)
+
+ALIGN 16
+ThomasMugData: // Relic
+#incbin "Dmp/Thomas_mug.dmp"
+#incbin "Dmp/Thomas_frames.dmp"
+#incbin "Dmp/Thomas_palette.dmp"
+#incbin "Dmp/Thomas_minimug.dmp"
+setMugEntry(ThomasMug, ThomasMugData, 3, 5, 3, 3)
+
+ALIGN 16
+RoseMugData: // Relic
+#incbin "Dmp/Rose_mug.dmp"
+#incbin "Dmp/Rose_frames.dmp"
+#incbin "Dmp/Rose_palette.dmp"
+#incbin "Dmp/Rose_minimug.dmp"
+setMugEntry(RoseMug, RoseMugData, 3, 5, 3, 3)
+
+ALIGN 16
+LucyMugData: // Cravat
+#incbin "Dmp/Lucy_mug.dmp"
+#incbin "Dmp/Lucy_frames.dmp"
+#incbin "Dmp/Lucy_palette.dmp"
+#incbin "Dmp/Lucy_minimug.dmp"
+setMugEntry(LucyMug, LucyMugData, 3, 6, 3, 4)
+
+ALIGN 16
+ClintMugData: // Relic
+#incbin "Dmp/Clint_mug.dmp"
+#incbin "Dmp/Clint_frames.dmp"
+#incbin "Dmp/Clint_palette.dmp"
+#incbin "Dmp/Clint_minimug.dmp"
+setMugEntry(ClintMug, ClintMugData, 2, 5, 2, 2)
+
+ALIGN 16
+VictoriaMugData: // Me
+#incbin "Dmp/Victoria_mug.dmp"
+#incbin "Dmp/Victoria_frames.dmp"
+#incbin "Dmp/Victoria_palette.dmp"
+#incbin "Dmp/Victoria_minimug.dmp"
+setMugEntry(VictoriaMug, VictoriaMugData, 3, 6, 3, 4)
+
+ALIGN 16
+MarieMugData: // XVI
+#incbin "Dmp/Marie_mug.dmp"
+#incbin "Dmp/Marie_frames.dmp"
+#incbin "Dmp/Marie_palette.dmp"
+#incbin "Dmp/Marie_minimug.dmp"
+setMugEntry(MarieMug, MarieMugData, 4, 6, 3, 4)
+
+ALIGN 16
+EvelynMugData: // Me, edits from Roze
+#incbin "Dmp/Evelyn_mug.dmp"
+#incbin "Dmp/Evelyn_frames.dmp"
+#incbin "Dmp/Evelyn_palette.dmp"
+#incbin "Dmp/Evelyn_minimug.dmp"
+setMugEntry(EvelynMug, EvelynMugData, 3, 5, 3, 3)
+
+ALIGN 16
+DonovanMugData: // Me
+#incbin "Dmp/Donovan_mug.dmp"
+#incbin "Dmp/Donovan_frames.dmp"
+#incbin "Dmp/Donovan_palette.dmp"
+#incbin "Dmp/Donovan_minimug.dmp"
+setMugEntry(DonovanMug, DonovanMugData, 2, 5, 2, 3)
+
+ALIGN 16
+TrentMugData: // XVI
+#incbin "Dmp/Trent_mug.dmp"
+#incbin "Dmp/Trent_frames.dmp"
+#incbin "Dmp/Trent_palette.dmp"
+#incbin "Dmp/Trent_minimug.dmp"
+setMugEntry(TrentMug, TrentMugData, 3, 5, 3, 3)
+
+ALIGN 16
 Ch1BossMugData: // LL
 #incbin "Dmp/Ch1Boss_mug.dmp"
 #incbin "Dmp/Ch1Boss_frames.dmp"
@@ -169,4 +305,36 @@ Ch6BossMugData: // LL
 #incbin "Dmp/Ch6Boss_palette.dmp"
 #incbin "Dmp/Ch6Boss_minimug.dmp"
 setMugEntry(Ch6BossMug, Ch6BossMugData, 3, 5, 3, 3)
+
+ALIGN 16
+JefferyMugData: // LL
+#incbin "Dmp/Jeffery_mug.dmp"
+#incbin "Dmp/Jeffery_frames.dmp"
+#incbin "Dmp/Jeffery_palette.dmp"
+#incbin "Dmp/Jeffery_minimug.dmp"
+setMugEntry(JefferyMug, JefferyMugData, 3, 5, 3, 3)
+
+ALIGN 16
+GordonMugData: // LL
+#incbin "Dmp/Gordon_mug.dmp"
+#incbin "Dmp/Gordon_frames.dmp"
+#incbin "Dmp/Gordon_palette.dmp"
+#incbin "Dmp/Gordon_minimug.dmp"
+setMugEntry(GordonMug, GordonMugData, 3, 5, 3, 3)
+
+ALIGN 16
+LouisMugData: // RW
+#incbin "Dmp/Louis_mug.dmp"
+#incbin "Dmp/Louis_frames.dmp"
+#incbin "Dmp/Louis_palette.dmp"
+#incbin "Dmp/Louis_minimug.dmp"
+setMugEntry(LouisMug, LouisMugData, 3, 5, 3, 3)
+
+ALIGN 16
+HowardMugData: // RW
+#incbin "Dmp/Howard_mug.dmp"
+#incbin "Dmp/Howard_frames.dmp"
+#incbin "Dmp/Howard_palette.dmp"
+#incbin "Dmp/Howard_minimug.dmp"
+setMugEntry(HowardMug, HowardMugData, 2, 5, 3, 3)
 

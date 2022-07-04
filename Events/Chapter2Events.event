@@ -50,6 +50,7 @@ TurnEventPlayer(0,SouthThiefReinforcementEvent,8)
 END_MAIN
 
 RuneTutorialEvent:
+MUSC GS_BabiLighthouse
 Text(TEXT_Ch2_Runes)
 
 TUTORIALTEXTBOXSTART
@@ -196,12 +197,12 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
-// Two rune uses for this
+// Two rune uses for this chapter
 COUNTER_SET 0 2
 // Disable locked runes
-ENUT 0x73
+ENUT CelerityRuneDisabledFlag
 // Enable runes usage
-ENUF 0x83
+ENUF RuneMenuDisableFlag
 
 MUSC OgreBattle_WallOfDefense
 LoadEnemies(EnemyUnits1)
@@ -215,12 +216,21 @@ ClearBackground
 NoFade
 MUSC DW3_Oppression
 FlashCursor(Jane,0x20)
+FlashCursor(Ch2Boss,0x20)
 Text(TEXT_Ch2_Start_Jane)
 MOVE 7 Jane [20,6]
 ENUN
 GotoPrepScreen
 
 EndingScene:
+// Reset rune menu and uses
+ENUF RuneMenuDisableFlag
+COUNTER_SET 0 2
+// Disable active runes
+ENUF HawkeyeRuneFlag
+ENUF MiracleRuneDisabledFlag
+ENUF MiracleActiveFlag
+
 MUSC ToS_LastBattleDecision
 SetBackground(0x0c)
 Text(TEXT_Ch2_End_Edgar)
