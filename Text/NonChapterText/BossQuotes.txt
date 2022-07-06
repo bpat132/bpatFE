@@ -38,3 +38,12 @@ You lot stand no chance against me. This is as far as you go![A][X]
 ## Ch4CraigDeathQuote
 [BattleText]
 [OpenMidLeft][LoadCraig][OpenMidLeft]No... My big promotion...[.][A][X]
+
+## Ch5BossBattleQuote
+[BattleText]
+[OpenMidLeft][LoadCh5Boss][OpenMidLeft]
+Ye dare challenge me? No one stands in the way of my plundering![A][X]
+
+## Ch5BossDeathQuote
+[BattleText]
+[OpenMidLeft][LoadCh5Boss][OpenMidLeft]Ye got the devil's luck...[.][A][X]

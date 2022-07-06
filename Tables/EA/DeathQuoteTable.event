@@ -32,6 +32,7 @@ DeathQuoteBoss(Ch2Boss,Ch2BossDeathQuote)
 DeathQuoteBoss(Ch3Boss,Ch3BossDeathQuote)
 DeathQuoteBoss(Ch4Boss,Ch4BossDeathQuote)
 DeathQuoteBossNoFlag(Craig,Ch4CraigDeathQuote)
+DeathQuoteBoss(Ch5Boss,Ch5BossDeathQuote)
 
 // Terminator
 DeathQuote(0xFFFF,0,0,0)

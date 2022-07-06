@@ -104,7 +104,8 @@ VillageEvent1:
 	VillageEventItem(TEXT_Ch3_Village_Hammer, Village, Hammer)
 
 VillageEvent2:
-	VillageEventItem(TEXT_Ch3_Village_KillerLance, Village, KillerLance)
+	//VillageEventItem(TEXT_Ch3_Village_KillerLance, Village, KillerLance)
+	VillageEventItem(TEXT_Ch3_Village_KillingEdge, Village, KillingEdge)
 
 MiscBasedEvents:
 DefeatBoss(EndingScene)
@@ -148,9 +149,9 @@ LoadUnit(9,13)
 UNIT
 
 AllyReinforcementUnits:
-UNIT Beatrice  Cavalier_F 0x1 Level(5,Ally,0)   [8,20] 0b 0x0 0x1 BeatriceReda [SlimLance,SteelLance,Javelin,0x6C] NoAI
-UNIT Daniel  Cavalier 0x1 Level(5,Ally,0)   [9,20] 0b 0x0 0x1 DanielReda [IronLance,SteelLance,Javelin,0x6C] NoAI
-UNIT Isabelle  Troubadour 0x1 Level(2,Ally,0)   [10,20] 0x0 0x0 0x0 0x0 [Heal,0x6C,0x0] NoAI
+UNIT Beatrice  Cavalier_F 0x1 Level(5,Ally,0)   [8,20] 0b 0x0 0x1 BeatriceReda [SlimLance,SteelLance,Javelin,Vuln] NoAI
+UNIT Daniel  Cavalier 0x1 Level(5,Ally,0)   [9,20] 0b 0x0 0x1 DanielReda [IronLance,SteelLance,Javelin,Vuln] NoAI
+UNIT Isabelle  Troubadour 0x1 Level(2,Ally,0)   [10,20] 0x0 0x0 0x0 0x0 [Heal,Vuln] NoAI
 UNIT
 
 BeatriceReda:
@@ -166,7 +167,7 @@ UNIT Ch3Boss Myrmidon 0x40 Level(10,Enemy,0)     [0,0] 0x0 0x0 0x0 0x0 [SteelBla
 #endif
 UNIT Ch3Boss Myrmidon 0x40 Level(10,Enemy,0)     [0,0] 0x0 0x0 0x0 0x0 [SteelSword] NeverMoveAI
 
-UNIT Sasha Myrmidon_F 0x40 Level(5,Enemy,0)     [16,7] 0x0 0x0 0x0 0x0 [SlimSword,SteelBlade,FireSword,0x6C] PWHAI
+UNIT Sasha Myrmidon_F 0x40 Level(5,Enemy,0)     [16,7] 0x0 0x0 0x0 0x0 [SlimSword,SteelBlade,FireSword,Vuln] PWHAI
 
 //UNIT 0x80 Druid 0x40 Level(20,Enemy,1)     [7,10] 0x0 0x0 0x0 0x0 [Naglfar] AIRAI
 

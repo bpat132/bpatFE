@@ -5,6 +5,9 @@ ALIGN 4
 BossBGMTable:
 BossBGMEntry(Ch1Boss, NierA_DCDA)
 BossBGMEntry(Ch2Boss, NierA_DCDA)
+BossBGMEntry(Ch3Boss, NierA_DCDA)
+BossBGMEntry(Ch4Boss, NierA_DCDA)
+BossBGMEntry(Craig, NierA_DCDA)
 BossBGMTerminator
 
 PUSH

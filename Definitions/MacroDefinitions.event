@@ -2,6 +2,7 @@
 // EA macros
 
 #define EnemyReinforcements(unitPtr) "SMOV 0x2 (unitPtr|0x8000000); CALL $9EE274; EVBIT_T 0x7; ENDA"
+#define ReinforcementEventENDA(unitPtr) "SMOV 0x2 (unitPtr|0x8000000); CALL $9EE274; EVBIT_T 0x7; ENDA"
 #define EnemyReinforcementsNoENDA(unitPtr) "SMOV 0x2 (unitPtr|0x8000000); CALL $9EE274; EVBIT_T 0x7"
 #define ReinforcementEventNoENDA(unitPtr) "SMOV 0x2 (unitPtr|0x8000000); CALL $9EE274; EVBIT_T 0x7"
 #define LoadEnemies(unitPtr) "LOAD1 0x1 unitPtr; ENUN"
@@ -24,6 +25,15 @@
 
 #define SetAllUnitStatus(unitID,statusOffset,statusValue) "SVAL 1 unitID; SVAL 2 0; SVAL 3 0; SVAL 4 0xFF; SVAL 0xA statusOffset; SVAL 0xB statusValue; ASMC Set_All_Status_Hack|1"
 #define SetAllUnitStatus2(unitID,statusOffset,statusValue) "BYTE $40 $05 $01 $00 ; SHORT unitID; BYTE $00 $00 $40 $05 $02 $00 $00 $00 $00 $00 $40 $05 $03 $00 $00 $00 $00 $00 $40 $05 $04 $00 $FF $00 $00 $00 $40 $05 $0A $00; SHORT statusOffset; BYTE $00 $00 $40 $05 $0B $00; WORD statusValue; BYTE $40 $0D $00 $00; POIN Set_All_Status_Hack|1"
+
+#define SwordWexp 0x28
+#define LanceWexp 0x29
+#define AxeWexp 0x2a
+#define BowWexp 0x2b
+#define StaffWexp 0x2c
+#define AnimaWexp 0x2d
+#define LightWexp 0x2e
+#define DarkWexp 0x2f
 
 #define GiveItem(Item,Character) "CALL $591F40; SVAL 0x3 Item ; GIVEITEMTO Character"
 

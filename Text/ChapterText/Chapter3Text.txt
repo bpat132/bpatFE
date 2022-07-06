@@ -82,11 +82,11 @@ Great. We can discuss payment once we're done killing my former employers.
 You're here to protect us? Perhaps you'll find this hammer useful. Rumor has it hammers can crush heavy armor with ease, though I've only used it on nails myself.
 [X]
 
-## TEXT_Ch3_Village_KillerLance
+## TEXT_Ch3_Village_KillingEdge
 [ConversationText]
 [MidLeft][LoadFace][0x61][0x01][MidRight][LoadFace][CurrentPortrait]
 [MidLeft]
-Galt's soldiers think they can do whatever they please... It's sickening! Take this killer lance, and kill as many of them as you can!
+Galt's soldiers think they can do whatever they please... It's sickening! Take this killing edge, and kill as many of them as you can!
 [X]
 
 

@@ -74,6 +74,57 @@ UNIT Matthias Soldier 0x1 Level(3,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronLance,Steel
 UNIT Stella Mage_F 0x1 Level(2,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [Fire,Thunder,Vuln] NoAI
 UNIT
 
+#define Ch3Level 4
+UnitsCh3:
+UNIT Edgar EphraimLord 0x1 Level(Ch3Level,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronLance,RegalLance,SteelLance,Javelin] NoAI
+UNIT Jenna Archer_F 0x1 Level(Ch3Level,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronBow,SteelBow,Longbow,Vuln] NoAI
+UNIT Duncan Fighter 0x1 Level(Ch3Level,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronAxe,SteelAxe,HandAxe,Swordreaver] NoAI
+UNIT Kurt Mercenary 0x1 Level(Ch3Level,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronSword,SteelSword,SteelBlade,LightBrand] NoAI
+UNIT Matthias Soldier 0x1 Level(Ch3Level,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronLance,SteelLance,Javelin,Vuln] NoAI
+UNIT Stella Mage_F 0x1 Level(Ch3Level,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [Fire,Thunder,Vuln] NoAI
+UNIT Nico Thief 0x1 Level(3,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronSword,FireSword,IronBlade,SteelSword] NoAI
+UNIT Lisa Cleric 0x1 Level(Ch3Level,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [Heal,FreezeStaff,Vuln] NoAI
+UNIT Jane Knight_F 0x1 Level(5,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronAxe,SteelAxe,HandAxe,Vuln] NoAI
+UNIT
+
+#define Ch4Level 5
+UnitsCh4:
+UNIT Edgar EphraimLord 0x1 Level(Ch4Level,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronLance,RegalLance,SteelLance,Javelin] NoAI
+UNIT Jenna Archer_F 0x1 Level(Ch4Level,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronBow,SteelBow,Longbow,ShortBow] NoAI
+UNIT Duncan Fighter 0x1 Level(Ch4Level,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronAxe,SteelAxe,HandAxe,Swordreaver] NoAI
+UNIT Kurt Mercenary 0x1 Level(Ch4Level,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronSword,SteelSword,SteelBlade,LightBrand] NoAI
+UNIT Matthias Soldier 0x1 Level(Ch4Level,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronLance,SteelLance,Javelin,Vuln] NoAI
+UNIT Stella Mage_F 0x1 Level(Ch4Level,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [Fire,Thunder,Vuln] NoAI
+UNIT Nico Thief 0x1 Level(4,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronSword,FireSword,IronBlade,SteelSword] NoAI
+UNIT Lisa Cleric 0x1 Level(Ch4Level,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [Heal,FreezeStaff,Vuln] NoAI
+UNIT Jane Knight_F 0x1 Level(6,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronAxe,SteelAxe,HandAxe,Hammer] NoAI
+UNIT Ethan WyvernRider 0x1 Level(Ch4Level,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronAxe,SteelAxe,HandAxe,Labrys] NoAI
+UNIT Sasha Myrmidon_F 0x1 Level(6,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [SlimSword,KillingEdge,SteelBlade,FireSword] NoAI
+UNIT Beatrice Cavalier_F 0x1 Level(Ch4Level,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [SlimLance,IronLance,SteelLance,Javelin] NoAI
+UNIT Daniel Cavalier 0x1 Level(Ch4Level,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronLance,SteelLance,Javelin,Vuln] NoAI
+UNIT Isabelle Troubadour 0x1 Level(2,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [Heal,Vuln,Vuln,Vuln] NoAI
+UNIT
+
+#define Ch5Level 7
+UnitsCh5:
+UNIT Edgar EphraimLord 0x1 Level(Ch5Level,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronLance,RegalLance,SteelLance,Javelin] NoAI
+UNIT Jenna Archer_F 0x1 Level(Ch5Level,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronBow,SteelBow,ShortBow,Vuln] NoAI
+UNIT Duncan Fighter 0x1 Level(Ch5Level,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronAxe,SteelAxe,HandAxe,Swordreaver] NoAI
+UNIT Kurt Mercenary 0x1 Level(Ch5Level,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronSword,SteelSword,SteelBlade,LightBrand] NoAI
+UNIT Matthias Soldier 0x1 Level(Ch5Level,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronLance,SteelLance,Javelin,SapphireLance] NoAI
+UNIT Stella Mage_F 0x1 Level(Ch5Level,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [Fire,Thunder,Vuln] NoAI
+UNIT Nico Thief 0x1 Level(5,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronSword,FireSword,IronBlade,SteelSword] NoAI
+UNIT Lisa Cleric 0x1 Level(Ch5Level,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [Heal,Vuln,Vuln,Vuln] NoAI
+UNIT Jane Knight_F 0x1 Level(Ch5Level,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronAxe,SteelAxe,HandAxe,Hammer] NoAI
+UNIT Ethan WyvernRider 0x1 Level(Ch5Level,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronAxe,SteelAxe,HandAxe,Labrys] NoAI
+UNIT Sasha Myrmidon_F 0x1 Level(Ch5Level,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [SlimSword,KillingEdge,SteelBlade,FireSword] NoAI
+UNIT Beatrice Cavalier_F 0x1 Level(Ch5Level,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [SlimLance,IronLance,SteelLance,Javelin] NoAI
+UNIT Daniel Cavalier 0x1 Level(Ch5Level,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronLance,SteelLance,Javelin,Vuln] NoAI
+UNIT Isabelle Troubadour 0x1 Level(4,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [Heal,FreezeStaff,Vuln] NoAI
+UNIT Richard Mercenary 0x1 Level(9,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronSword,SteelSword,FireSword,SteelBlade] NoAI
+UNIT Cameron Archer 0x1 Level(7,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronBow,SteelBow,Longbow,Vuln] NoAI
+UNIT
+
 Traps1:
 ENDTRAP
 ALIGN 4
@@ -88,6 +139,23 @@ ENUT 0x2 //no more death quotes
 #ifdef _TEST_CH2_
 LoadPlayerUnitsTest(UnitsCh2)
 MNC2 Chapter2
+#endif
+#ifdef _TEST_CH3_
+LoadPlayerUnitsTest(UnitsCh3)
+GiveMoney(3000)
+MNC2 Chapter3
+#endif
+#ifdef _TEST_CH4_
+LoadPlayerUnitsTest(UnitsCh4)
+GiveMoney(3000)
+MNC2 Chapter4
+#endif
+#ifdef _TEST_CH5_
+LoadPlayerUnitsTest(UnitsCh5)
+SetUnitStatus(Edgar, LanceWexp, CRank)
+SetUnitStatus(Lisa, StaffWexp, CRank)
+GiveMoney(3000)
+MNC2 Chapter5
 #endif
 ENDA
 //GotoPrepScreen

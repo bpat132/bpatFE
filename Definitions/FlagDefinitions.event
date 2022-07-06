@@ -10,3 +10,7 @@
 // 1 -> active
 #define MiracleActiveFlag 0x92
 #define CelerityActiveFlag 0x93
+
+// Testing
+#define SwarpRuneDisabledFlag 0x74
+#define SwarpActiveFlag 0x94

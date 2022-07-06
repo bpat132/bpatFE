@@ -1,0 +1,361 @@
+
+////////////////////////////////////////////////////
+//                                                //
+// Disassembled with Nintenlord's Event Assembler //
+// Version: 11.0.0.0                              //
+// Game: FE8                                      //
+// File: FE8_clean.gba                            //
+// Offset: $9EC66C                                //
+//                                                //
+////////////////////////////////////////////////////
+
+EventPointerTable(0x17, PointerList)
+
+setText(0x164, NewChName)
+
+ALIGN 4
+NewChName:
+String("Ch5: Unexpected Reunion")
+BYTE 0
+
+ALIGN 4
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN $0 $0 $0
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+TurnEventPlayer(0,Turn1Event,1)
+TurnEventPlayer(0,CeliaReinforcements,3)
+TurnEventPlayer(0,TedReinforcements,3)
+
+TurnEventPlayer(0,EnemyReinforcements1,3)
+TurnEventPlayer(0,EnemyReinforcements2,4)
+TurnEventPlayer(0,EnemyReinforcements3,5)
+END_MAIN
+
+Turn1Event:
+CAM1 [19,0]
+CUSA Rowan
+CUSA Violet
+MOVE 15 Violet [12,1]
+ENUN
+MUSC EO3_ThoseWhoSlayAndFall
+Text(TEXT_Ch5_Violet_Event)
+NoFade
+CUSA Violet
+ENDA
+
+CeliaReinforcements:
+MUSC EO3_ThoseWhoSlayAndFall
+ReinforcementEventNoENDA(CeliaReinforcementUnits)
+FlashCursor(Celia,0x20)
+Text(TEXT_Ch5_Celia_Event)
+ENDA
+
+TedReinforcements:
+EnemyReinforcementsNoENDA(TedReinforcementUnits)
+//SilentGiveItemUnit(Ted,Vuln)
+FlashCursor(Ted,0x20)
+MUSC AA3_VictorKudo
+Text(TEXT_Ch5_Ted_Event)
+ENDA
+
+EnemyReinforcements1:
+EnemyReinforcementsNoENDA(EnemyReinforcementUnits1)
+TUTORIALTEXTBOXSTART
+CenterTutorialTextBox
+TEXTSHOW TEXT_Ch5_ThiefInfo
+TEXTEND
+ENDA
+
+EnemyReinforcements2:
+EnemyReinforcementsNoENDA(EnemyReinforcementUnits2)
+CAM1 [9,27]
+FlashCursor(Ch5Boss,0x20)
+Text(TEXT_Ch5_Boss_Event)
+SetAI(Ch5Boss, 0x00,0x00,0x04,0x00)
+ENDA
+
+EnemyReinforcements3:
+EnemyReinforcements(EnemyReinforcementUnits3)
+
+CharacterBasedEvents:
+CharacterEventBothWays(0x10,TalkEventTed, Celia, Ted)
+END_MAIN
+
+TalkEventTed:
+MUSC EO3_ThoseWhoSlayAndFall
+Text(TEXT_Ch5_Celia_Ted_Talk)
+NoFade
+CUSA Ted
+ENDA
+
+LocationBasedEvents:
+Seize(12,2)
+Armory(ArmoryItems,6,1)
+
+Village(0x8,VillageEvent1,18,3)
+Village(0x9,VillageEvent2,12,6)
+Village(0xc,VillageEvent3,4,10)
+Village(0xd,VillageEvent4,15,10)
+Village(0xe,VillageEvent5,10,13)
+END_MAIN
+
+VillageEvent1:
+MUSC EO3_ThoseWhoSlayAndFall
+Text(0x2,TEXT_Ch5_Village_Justin)
+ReinforcementEventENDA(JustinReinforcementUnits)
+
+VillageEvent2:
+	VillageEventItem(TEXT_Ch5_Village_Longbow, Village, Longbow)
+VillageEvent3:
+	VillageEventItem(TEXT_Ch5_Village_RubySword, Village, RubySword)
+VillageEvent4:
+	VillageEventItem(TEXT_Ch5_Village_KillerLance, Village, KillerLance)
+VillageEvent5:
+	VillageEventItem(TEXT_Ch5_Village_KillerAxe, Village, KillerAxe)
+
+MiscBasedEvents:
+DefeatBoss(EndingScene)
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+Units1:
+LoadUnit(12,2)
+LoadUnit(3,2)
+LoadUnit(4,3)
+LoadUnit(5,2)
+
+LoadUnit(8,2)
+LoadUnit(9,1)
+LoadUnit(9,3)
+LoadUnit(10,2)
+
+LoadUnit(14,2)
+LoadUnit(15,3)
+LoadUnit(16,2)
+UNIT
+
+CeliaReinforcementUnits:
+UNIT Celia  Dancer 0x1 Level(1,Ally,0)   [1,6] 0x0 0x0 0x1 CeliaReda [Vuln] [0x0,0x0,0x0,0x0]
+UNIT
+CeliaReda:
+REDA [1,6] 0x0 0x1 0x00 0x0
+
+JustinReinforcementUnits:
+UNIT Justin  Priest 0x1 Level(7,Ally,0)   [18,3] 0x0 0x0 0x1 JustinReda [Heal,FreezeStaff,Physic,Vuln] [0x0,0x0,0x0,0x0]
+UNIT
+JustinReda:
+REDA [18,4] 0x0 0x1 0x00 0x0
+
+EnemyUnits1:
+// Unique
+UNIT Rowan  Myrmidon 0x1 Level(10,NPC,0)   [1,6] 0x0 0x0 0x0 0x0 [SteelBlade,SlimSword,Lancereaver,LightBrand] NoAI
+UNIT Violet  PegasusKnight 0x1 Level(8,NPC,0)   [19,0] 0x0 0x0 0x0 0x0 [SlimLance,IronLance,SteelLance,Javelin] NoAI
+
+UNIT Ch5Boss Pirate 0x40 Level(15,Enemy,0)     [9,21] 0x0 0x0 0x0 0x0 [Labrys,HandAxe] AIRAI
+
+// Left
+UNIT 0x86 Fighter 0x40 Level(7,Enemy,1)     [2,11] 0x0 0x0 0x0 0x0 [IronAxe] PWHAI
+UNIT 0x86 Fighter 0x40 Level(7,Enemy,1)     [3,8] 0x0 0x0 0x0 0x0 [IronAxe] PWHAI
+UNIT 0x86 Fighter 0x40 Level(7,Enemy,1)     [1,16] 0x0 0x0 0x0 0x0 [IronAxe] PWHAI
+UNIT 0x86 Mage_F 0x40 Level(7,Enemy,1)     [4,6] 0x0 0x0 0x0 0x0 [Fire] PWHAI
+
+// Middle
+UNIT 0x86 Mercenary 0x40 Level(7,Enemy,1)     [8,5] 0x0 0x0 0x0 0x0 [SteelSword] PWHAI
+UNIT 0x86 Myrmidon_F 0x40 Level(7,Enemy,1)     [10,6] 0x0 0x0 0x0 0x0 [IronBlade] PWHAI
+UNIT 0x86 Soldier 0x40 Level(7,Enemy,1)     [7,14] 0x0 0x0 0x0 0x0 [Javelin] AIRAI
+UNIT 0x86 Soldier 0x40 Level(7,Enemy,1)     [15,14] 0x0 0x0 0x0 0x0 [Javelin] AIRAI
+#ifndef _EASY_MODE_
+UNIT 0x86 Mage 0x40 Level(7,Enemy,1)     [8,12] 0x0 0x0 0x0 0x0 [Fire] PWHAI
+#endif
+UNIT 0x86 Mercenary 0x40 Level(7,Enemy,1)     [10,10] 0x0 0x0 0x0 0x0 [IronSword] PWHAI
+#ifndef _EASY_MODE_
+UNIT 0x86 Mercenary 0x40 Level(7,Enemy,1)     [12,11] 0x0 0x0 0x0 0x0 [IronSword] PWHAI
+#endif
+UNIT 0x86 Myrmidon_F 0x40 Level(7,Enemy,1)     [13,15] 0x0 0x0 0x0 0x0 [IronBlade] PWHAI
+UNIT
+
+EnemyUnits2:
+// Right
+UNIT 0x86 Fighter 0x40 Level(7,Enemy,1)     [7,9] 0x0 0x0 0x0 0x0 [IronAxe] PWHAI
+UNIT 0x86 Mercenary 0x40 Level(7,Enemy,1)     [19,10] 0x0 0x0 0x0 0x0 [IronSword] PWHAI
+UNIT 0x86 Mage_F 0x40 Level(7,Enemy,1)     [16,5] 0x0 0x0 0x0 0x0 [Thunder] PWHAI
+UNIT 0x86 Soldier 0x40 Level(7,Enemy,1)     [18,6] 0x0 0x0 0x0 0x0 [Javelin] AIRAI
+#ifndef _EASY_MODE_
+UNIT 0x86 Fighter 0x40 Level(7,Enemy,1)     [17,13] 0x0 0x0 0x0 0x0 [IronAxe] PWHAI
+#endif
+UNIT 0x86 Mage 0x40 Level(7,Enemy,1)     [18,15] 0x0 0x0 0x0 0x0 [Fire] PWHAI
+
+// Left entry
+UNIT 0x82 Pirate 0x40 Level(7,Enemy,1)     [6,24] 0x0 0x0 0x0 0x0 [Labrys] AttackingBrigandAI
+UNIT 0x86 Myrmidon 0x40 Level(7,Enemy,1)     [2,20] 0x0 0x0 0x0 0x0 [IronBlade] PWHAI
+#ifndef _EASY_MODE_
+UNIT 0x86 Archer 0x40 Level(7,Enemy,1)     [4,23] 0x0 0x0 0x0 0x0 [SteelBow] PWHAI
+#endif
+UNIT 0x86 Archer_F 0x40 Level(7,Enemy,1)     [2,26] 0x0 0x0 0x0 0x0 [SteelBow] PWHAI
+
+// Right entry
+#ifndef _EASY_MODE_
+UNIT 0x86 Mage 0x40 Level(7,Enemy,1)     [16,18] 0x0 0x0 0x0 0x0 [Fire] PWHAI
+#endif
+UNIT 0x82 Pirate 0x40 Level(7,Enemy,1)     [16,25] 0x0 0x0 0x0 0x0 [HandAxe] AttackingBrigandAI
+UNIT 0x86 Mage 0x40 Level(7,Enemy,1)     [15,23] 0x0 0x0 0x0 0x0 [Fire] PWHAI
+UNIT
+
+EnemyUnits3:
+// Boat
+UNIT 0x82 Pirate 0x40 Level(7,Enemy,1)     [10,26] 0x0 0x0 0x0 0x0 [HandAxe] AttackingBrigandAI
+
+#ifndef _EASY_MODE_
+UNIT 0x86 Myrmidon 0x40 Level(7,Enemy,1)     [8,22] 0x0 0x0 0x0 0x0 [SteelBlade] PWHAI
+#else
+UNIT 0x86 Myrmidon 0x40 Level(7,Enemy,1)     [8,22] 0x0 0x0 0x0 0x0 [SteelSword] PWHAI
+#endif
+UNIT 0x86 Myrmidon 0x40 Level(7,Enemy,1)     [10,23] 0x0 0x0 0x0 0x0 [IronBlade] PWHAI
+//UNIT 0x86 Mage 0x40 Level(7,Enemy,1)     [7,26] DropItem 0x0 0x0 0x0 [WindTome] PWHAI
+UNIT 0x86 Mage 0x40 Level(7,Enemy,1)     [7,26] 0x0 0x0 0x0 0x0 [Fire] PWHAI
+
+// Water
+UNIT 0x86 PegasusKnight 0x40 Level(7,Enemy,1)     [5,19] 0x0 0x0 0x0 0x0 [SteelLance] PWHAI
+UNIT 0x86 PegasusKnight 0x40 Level(7,Enemy,1)     [7,18] 0x0 0x0 0x0 0x0 [SlimLance] PWHAI
+UNIT 0x86 PegasusKnight 0x40 Level(7,Enemy,1)     [10,18] 0x0 0x0 0x0 0x0 [SlimLance] PWHAI
+UNIT 0x86 PegasusKnight 0x40 Level(7,Enemy,1)     [12,19] 0x0 0x0 0x0 0x0 [IronLance] PWHAI
+UNIT
+
+TedReinforcementUnits:
+UNIT Ted  Pirate 0x1 Level(9,Enemy,0)   [2,27] 0x0 0x0 0x0 0x0 [Labrys,SteelAxe,HandAxe,Vuln] [0x06,0x00,0x04,0x00]
+UNIT
+
+EnemyReinforcementUnits1:
+UNIT 0x82 Thief 0x40 Level(7,Enemy,1)     [7,27] 0x0 0x0 0x0 0x0 [FireSword] BrigandAI
+UNIT 0x82 Thief 0x40 Level(7,Enemy,1)     [9,27] 0x0 0x0 0x0 0x0 [FireSword] BrigandAI
+
+UNIT 0x86 Mage 0x40 Level(7,Enemy,1)     [14,27] 0x0 0x0 0x0 0x0 [Fire] PWHAI
+UNIT 0x86 Mage 0x40 Level(7,Enemy,1)     [16,27] 0x0 0x0 0x0 0x0 [Fire] PWHAI
+UNIT
+
+EnemyReinforcementUnits2:
+UNIT 0x86 Archer 0x40 Level(7,Enemy,1)     [7,27] 0x0 0x0 0x0 0x0 [IronBow] PWHAI
+UNIT 0x86 Archer 0x40 Level(7,Enemy,1)     [9,27] 0x0 0x0 0x0 0x0 [ShortBow] PWHAI
+UNIT
+
+EnemyReinforcementUnits3:
+UNIT 0x86 PegasusKnight 0x40 Level(7,Enemy,1)     [4,27] 0x0 0x0 0x0 0x0 [SteelLance] PWHAI
+UNIT 0x86 PegasusKnight 0x40 Level(7,Enemy,1)     [5,27] 0x0 0x0 0x0 0x0 [SlimLance] PWHAI
+UNIT 0x86 PegasusKnight 0x40 Level(7,Enemy,1)     [12,27] 0x0 0x0 0x0 0x0 [SlimLance] PWHAI
+UNIT 0x86 PegasusKnight 0x40 Level(7,Enemy,1)     [13,27] 0x0 0x0 0x0 0x0 [SteelLance] PWHAI
+UNIT 0x86 PegasusKnight 0x40 Level(7,Enemy,1)     [18,27] 0x0 0x0 0x0 0x0 [Javelin] PWHAI
+#ifndef _EASY_MODE_
+UNIT 0x86 PegasusKnight 0x40 Level(7,Enemy,1)     [19,26] 0x0 0x0 0x0 0x0 [Javelin] PWHAI
+#endif
+UNIT
+
+Traps1:
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+BeginningScene:
+// Two rune uses for this chapter
+COUNTER_SET 0 2
+// Disable locked runes
+ENUT CelerityRuneDisabledFlag
+// Testing time!
+ENUF SwarpRuneDisabledFlag
+// Enable runes usage
+ENUF RuneMenuDisableFlag
+
+LoadEnemies(EnemyUnits1)
+LoadEnemies(EnemyUnits2)
+LoadEnemies(EnemyUnits3)
+SilentGiveItemUnit(Violet,Vuln)
+SilentGiveItemUnit(Rowan,Vuln)
+
+MUSC AA_Gumshoe
+SetBackground(0x9)
+Text(TEXT_Ch5_Start_Celia)
+ClearBackground
+MUSC FE11_Trouble
+CAM1 [9,27]
+FlashCursor(Ch5Boss,0x20)
+Text(TEXT_Ch5_Start_Boss)
+
+CAM1 [1,0]
+SetBackground(0x9)
+Text(TEXT_Ch5_Start_Celia2)
+ClearBackground
+FlashCursor(1,6,0x20)
+Text(TEXT_Ch5_Start_Rowan)
+
+CAM1 [12,0]
+FlashCursor(12,1,0x20)
+SetBackground(0x9)
+Text(TEXT_Ch5_Start_Edgar)
+ClearBackground
+
+FlashCursor(18,3,0x20)
+SetBackground(Village)
+Text(TEXT_Ch5_Start_Justin)
+
+ClearBackground
+FlashCursor(Violet,0x20)
+TUTORIALTEXTBOXSTART
+CenterTutorialTextBox
+TEXTSHOW TEXT_Ch5_GreenInfo
+TEXTEND
+REMA
+
+FADI 16 // Is this needed?
+
+LoadPlayerUnits(Units1)
+GotoPrepScreen
+ClearBackground
+ENDA
+
+
+EndingScene:
+// Reset rune menu and uses
+ENUF RuneMenuDisableFlag
+COUNTER_SET 0 2
+// Disable active runes
+ENUF HawkeyeRuneFlag
+ENUF MiracleRuneDisabledFlag
+ENUF MiracleActiveFlag
+
+MUSC ToS_LastBattleDecision
+SetBackground(0x05)
+Text(TEXT_Ch5_End)
+SetBackground(0x01)
+Text(TEXT_Ch5_End2)
+SetBackground(0x05)
+Text(TEXT_Ch5_End_Violet)
+MNC2 Chapter6
+ENDA
+
+ArmoryItems:
+SHLI IronSword SteelSword IronBlade SteelBlade FireSword SwiftSword IronLance SteelLance Javelin SlimLance IronBow SteelBow ShortBow IronAxe SteelAxe HandAxe Labrys
+ALIGN 4

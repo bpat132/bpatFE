@@ -1,0 +1,254 @@
+
+## TEXT_Ch5_Start_Celia
+[ConversationText]
+[MidLeft][LoadCelia][MidRight][LoadRowan]
+[MidLeft]
+Morning, Rowan.
+[MidRight]
+Morning? It's afternoon already. How can you possibly sleep so much?
+[MidLeft]
+But it's so boring! There's nothing for me to do! I thought this trip would be fun, but you just play with your swords all day.
+[MidRight]
+It's not playing, it's training! How am I supposed to keep you safe if I slack on training?
+[MidLeft]
+This wouldn't be a problem if you'd teach me to fight. I'm an adult, I should be able to protect myself.
+[MidRight]
+Like I said last the last time, no way. You'll only end up hurting yourself unless you build some muscle.
+[MidLeft]
+Isn't being fast and flexible enough? It works for you.
+[MidRight]
+It's true that my style of swordfightning emphasizes speed over power, but I doubt you're even strong enough to swing a sword.
+[MidLeft]
+Fine, I'll just have to get stronger then! Wait, it sounds like there's some sort of commotion going on outside.
+[MidRight]
+Stay here, I'll check it out.
+[X]
+
+## TEXT_Ch5_Start_Boss
+[ConversationText]
+[Left][LoadCh5Boss]
+[Left]
+Listen up boys, there's not a soldier in sight, so this port's ours for the taking! This'll be our greatest haul yet!
+[X]
+
+## TEXT_Ch5_Start_Celia2
+[ConversationText]
+[MidLeft][LoadCelia][FarFarRight][LoadRowan]
+[FarFarRight][MoveMidRight]
+[MidRight]
+Pirates are attacking! I'll protect you, so stay inside!
+[MidLeft]
+But-
+[MidRight]
+Don't even think about leaving until I come back. It's for your own good.
+[MidRight][ClearFace]
+[MidLeft]
+What a jerk...[ToggleRed]I'll just sneak out in three minutes or so and prove that I can help![ToggleRed]
+[X]
+
+## TEXT_Ch5_Start_Rowan
+[ConversationText]
+[Right][LoadRowan]
+[Right]
+There's so many of them... No matter, I've been training for this for years. I'll prove just how far I've come!
+[X]
+
+
+## TEXT_Ch5_Start_Edgar
+[ConversationText]
+[MidLeft][LoadEdgar][FarFarRight][LoadNico]
+[FarFarRight][MoveMidRight]
+[MidRight]
+Bad news, pirates are storming the town!
+[MidLeft]
+How's the situation look?
+[MidRight]
+Not good, we're badly outnumbered and I didn't see any guards around. Don't think we can expect much help.
+[MidLeft]
+Damn... Even so, fleeing isn't an option. If we can't take on a handful of pirates, how could we hope to face Galt's army?
+Get everyone ready for battle, we'll protect this town with all our might!
+[MidRight][ClearFace]
+[MidRight][LoadJane]
+[MidRight]
+Looks like you're back on your feet.
+[MidLeft]
+Can't say I don't have my doubts, but I've made my choice, and I intend to see it through. Everyone's counting on me, I can't let my worries hurt morale.
+[MidRight]
+Good, keep it up and we may actually have a chance. We could use a victory here, and I could use the practice.
+[X]
+
+## TEXT_Ch5_Start_Justin
+[ConversationText]
+[R][LoadJustin]
+[R]Pirates again? If only I could fight them myself... Alas, all I can do is pray for help to arrive.
+[X]
+
+## TEXT_Ch5_GreenInfo
+Green units will automatically[NL]
+join at the start of the[NL]
+chapter. Some, such as this[NL]
+pegasus knight, will move[NL]
+prior to joining.[A][X]
+
+## TEXT_Ch5_Violet_Event
+[ConversationText]
+[MidLeft][LoadEdgar][FarFarRight][LoadViolet]
+[FarFarRight][MoveMidRight]
+[MidRight]
+How interesting... You really intend to fight these pirates?
+[MidLeft]
+Of course. They may outnumber us, but every one of my companions is worth at least ten of them!
+[MidRight]
+I should warn you, they look to be lead by Carter the Cruel. Even the army fears him and his crew. I suggest fleeing while you can.
+[MidLeft]
+It doesn't matter, I have no intention of losing here.
+[MidRight]
+Hahaha, I like your confidence! Well then, I suppose I'll help you out for now. If by some miracle we manage to win, I'll land a promotion for sure!
+[MidRight][ClearFace]
+[MidLeft]
+She's clearly a soldier... I don't know if I can trust her, but for now I'll take all the help I can get.
+[X]
+
+## TEXT_Ch5_Celia_Event
+[ConversationText]
+[Left][LoadCelia]
+I can't hide inside while Rowan's fighting by himself. I may not be able to swing a sword, but I can still help with my dance!
+[X]
+
+## TEXT_Ch5_Ted_Event
+[ConversationText]
+[Right][LoadTed]
+[Right]
+The port's already a bloodbath... What a fool I was, thinking I could be a pirate. For now I'll pretend to join in,[ToggleRed]but I don't plan on hurting anyone.[ToggleRed]
+[X]
+
+## TEXT_Ch5_Boss_Event
+[ConversationText]
+[Left][LoadCh6Boss]
+[Left]
+They're fighting back?! They've got some guts challenging my crew! Time for me to get a piece of the action!
+[X]
+
+## TEXT_Ch5_Celia_Ted_Talk
+[ConversationText]
+[MidLeft][LoadCelia][MidRight][LoadTed]
+[MidRight]
+What's an unarmed woman doing out here? It's too dangerous, get back inside before you get hurt!
+[MidLeft]
+I'm not going anywhere! What gives a ruffian like you the right to boss me around? You and your band of thieves are the ones who need to leave!
+[MidRight]
+I don't want to hurt you, but I can't say the same about the rest of us. You're lucky you ran into me first.
+[MidLeft]
+Even without a weapon I can help keep this port safe from fiends like you. Trying to ease your guilt like this is simply pathetic! You think yourself any better than the rest of your crew? Don't make me laugh.
+[MidRight]
+You've got me there. Guess I've been a bit of a hypocrite, huh. Alright then, looks like I'll have to protect you myself.
+[MidLeft]
+Huh? Are you still confused?
+[MidRight]
+I didn't want to admit it, but I made a grave mistake joining this crew. You've convinced me to do what's right, no matter how difficult. From now on, I'll fight for justice! I'll help you protect this port and drive off my old crew!
+[MidRight][ClearFace]
+[MidLeft]
+That was weird. Oh well, one less pirate to worry about.
+[X]
+
+## TEXT_Ch5_Village_Justin
+[ConversationText]
+[MidLeft][LoadJustin][MidRight][LoadFace][CurrentPortrait]
+[MidLeft]You're here to protect the townspeople? Then you'll have my aid. I cannot wield a weapon, but I can keep you safe with my staves.
+[X]
+
+## TEXT_Ch5_Village_Longbow
+[ConversationText]
+[MidLeft][LoadFace][0x5A][0x01][MidRight][LoadFace][CurrentPortrait]
+[MidLeft]
+I tried using this bow against the pirates, but my aim just isn't good enough. I'll bet one of you folk can handle it better than me.
+[X]
+
+## TEXT_Ch5_Village_RubySword
+[ConversationText]
+[MidLeft][LoadFace][0x5B][0x01][MidRight][LoadFace][CurrentPortrait]
+[MidLeft]
+My fighting days are behind me, I can't even swing this sword without my back aching anymore. Take it, and put it to good use.
+[X]
+
+## TEXT_Ch5_Village_KillerLance
+[ConversationText]
+[MidLeft][LoadFace][0x58][0x01][MidRight][LoadFace][CurrentPortrait]
+[MidLeft]
+In my youth, I killed countless evildoers with this lance. Now, I pass my legacy onto you! Take it, and slay these pirates!
+[X]
+
+## TEXT_Ch5_Village_KillerAxe
+[ConversationText]
+[MidLeft][LoadFace][0x5C][0x01][MidRight][LoadFace][CurrentPortrait]
+[MidLeft]
+You'll keep us safe? Please take this axe as a token of my appreciation. You look good at killing, so I bet this killer axe will be the perfect weapon for you!
+[X]
+
+## TEXT_Ch5_ThiefInfo
+Thieves in this chapter[NL]
+will ignore your units[NL]
+and go straight for[NL]
+the villages![A][X]
+
+## TEXT_Ch5_End0
+[ConversationText]
+[ML][LoadCelia][MR][LoadRowan]
+[MR]Princess, what are you doing out here? You could have gotten yourself killed!
+[ML]Never mind that, I... I need to check something. Sorry, I'll explain later.
+[ML][MoveFarFarRight]
+[X]
+
+## TEXT_Ch5_End
+[ConversationText]
+[ML][LoadCelia][MR][LoadEdgar]
+[ML]Edgar? Is that really you?
+[MR]Celia... It's been a while. What are you doing here?
+[ML]What am *I* doing here? I'm not the one who's supposed to be dead! I can't believe it... It's like I'm looking at a ghost.
+[MR]I'm not that easy to kill... Is what I'd like to say. Truthfully, I'm lucky to be alive.
+But Celia, I never imagined I'd see you on a battlefield. I know how much you abhor violence. Are you trying to get yourself killed?
+[ML]You're right, I do hate it, but I couldn't leave the poor townspeople at the mercy of these pirates. You understand, right? You're the same, playing vigilante like this.
+[MR]Vigilante? No, I was just in the right place at the right time. Still, why are you here at all, so far from Kemaroa? Melerra is a dangerous place these days.
+[ML]A friend of mine is on a journey of self-improvement, some sort of rite of passage for Kemaroan swordsmen. I've been dying for a chance to get away from the palace, so I tagged along.
+[MR]Is everything alright up there? I admit I know little of how the war with Galt is going.
+[ML]That's not the reason, I just couldn't bear to stay there any longer. It's... suffocating. But enough about me, seriously, what are you doing here? I can't imagine you fight pirates for fun.
+[MR]It's a very long story, I'll fill you in back at the inn.
+[X]
+
+## TEXT_Ch5_End2
+[ConversationText]
+[ML][LoadCelia][MR][LoadEdgar]
+[ML]That's quite a lot to take in. You really mean to seize the capital with your numbers?
+I know little of warfare, but armies are usually much bigger than this.
+[MR]I know it won't be easy, but I believe we can do it. Failure isn't an option, so we'll make it happen no matter the odds.
+[ML]If you're that confident... Alright, then. Rowan!
+[ML][MoveLeft]
+[FL][LoadRowan]
+[FL]Yes, princess?
+[L]We're going to help Edgar retake the throne of Melerra.
+[FL]What?!
+[MR]What?!
+[FL]Princess, must I remind you that you can hardly lift a weapon? The battlefield is no place for you.
+[MR]Sorry, Celia, I have to agree. I couldn't bear it if you were hurt under my watch.
+[L]Even if I can't swing a sword, I can still help in battle. Surely you've realized my dances are not just for show.
+[FL]I've been meaning to ask about that, as much as I hate to admit it, they have an uncanny ability to make me feel rejuvenated.
+[L]That's right! Few dancers can do this, but I weave a little magic into mine.
+[FL]I'd rather keep you out of harm's way, but I know better than to talk you out of something you've set your mind to.
+[MR]Alright, you can come with us, but if you're ever in danger, please prioritize your safety.
+[L]Don't worry, I don't plan on dying so soon.
+[X]
+
+## TEXT_Ch5_End_Violet
+[ConversationText]
+[ML][LoadViolet][MR][LoadNico]
+[ML]I hear you're headed to the capital. Mind if I tag along?
+[MR]I'm afraid you've got the wrong man, I'm not in charge here.
+[ML]Ah right, I you're the other blue-haired fellow. Still, you look like a pretty important guy. I should have realized from the start, but it figures the only people who'd stand up to pirates would be plotting against our government.
+[MR]Doesn't this make us enemies?
+[ML]I guess, but I don't really wanna fight you guys.
+[MR]You mean you plan to defect?
+[ML]I'm no fan of Lord Louis, but there are people I care about stationed in the capital. So long as I don't have to fight them, I can help you out. Either way, if word gets out that I helped you guys I'll be thrown in prison for sure.
+[MR]We'll be happy to have you along then.
+[ML][ClearFace]
+[MR]This should be fine, right? She seems earnest enough. I hope I made the right call.
+[X]

@@ -237,7 +237,9 @@ POP
 
 // Zane's MMB
 // TODO: why is this busted?
-#include "MMB/Installers/MMBInstallerBpat.event"
+//#include "MMB/Installers/MMBInstallerBpat.event"
+#include "MMB/Installers/MMBInstallerBpat2.event"
+//#include "MMB/Installers/MMBInstallerBpat3.event" // Version with skills
 
 // My prep screen price fix (help from colorz's code)
 PUSH
@@ -272,6 +274,17 @@ PUSH
   ORG $22F50
   BYTE 0xC0 0x46
 POP
+
+// Pik mag/3 range modified to fixed range
+PUSH
+ORG $18A1C
+jumpToHack(GetUnitFixedRange)
+POP
+
+ALIGN 4
+GetUnitFixedRange:
+#incbin "Misc/ReplaceMag2Range.dmp"
+
 
 // Pik send items to convoy upon death
 #include "SendItems/Installer.event"

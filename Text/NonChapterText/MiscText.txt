@@ -138,3 +138,6 @@ Miracle[X]
 
 # 0x0D02
 Celerity[X]
+
+# 0x0D03
+Transpose[X]

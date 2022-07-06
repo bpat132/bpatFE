@@ -44,6 +44,24 @@
     
     //Auto Newline - Zeta
     #include "Text/AutoNewline/Installer.event"
+
+    ALIGN 4 // Fix issue with crash from patching UPS by adding padding
+    WORD 0 0 0 0 0 0 0 0
+    WORD 0 0 0 0 0 0 0 0
+    WORD 0 0 0 0 0 0 0 0
+    WORD 0 0 0 0 0 0 0 0
+    WORD 0 0 0 0 0 0 0 0
+    WORD 0 0 0 0 0 0 0 0
+    WORD 0 0 0 0 0 0 0 0
+    WORD 0 0 0 0 0 0 0 0
+    WORD 0 0 0 0 0 0 0 0
+    WORD 0 0 0 0 0 0 0 0
+    WORD 0 0 0 0 0 0 0 0
+    WORD 0 0 0 0 0 0 0 0
+    WORD 0 0 0 0 0 0 0 0
+    WORD 0 0 0 0 0 0 0 0
+    WORD 0 0 0 0 0 0 0 0
+    WORD 0 0 0 0 0 0 0 0
     
     MESSAGE Used free space ends at currentOffset
 #else

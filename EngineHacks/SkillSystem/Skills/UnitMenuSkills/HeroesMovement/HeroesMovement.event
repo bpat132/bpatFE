@@ -41,6 +41,7 @@ prSwapCommand_Availability:
 			rWithConstant(SwapID)
 				rCallExternal(SkillTester)
 
+
 prShoveCommand_Availability:
 	rGetWrapper
 		rIfUnitHasNotState(US_CANTOING)
@@ -54,10 +55,14 @@ prSmiteCommand_Availability:
 				rCallExternal(SkillTester)
 
 prSwarpCommand_Availability:
+  rForConstant(SwarpActiveFlag)
+    rCallExternal(0x8083da8)
+/*
 	rGetWrapper
 		rIfUnitHasNotState(US_CANTOING)
 			rWithConstant(SwarpID)
 				rCallExternal(SkillTester)
+*/
 				
 #else // HEROES_MOVEMENT_SKILL_REQUIRED
 ALIGN 4
@@ -102,6 +107,7 @@ prReposition_TargetLegality:
 prSwap_TargetLegality:
 prSwarp_TargetLegality:
 	rGetWrapper // value defaults to 0 (False)
+        rIfUnitHasNotGuardAI
 		rWithSubject
 			rForActiveUnit
 				rIfUnitsAreAllied

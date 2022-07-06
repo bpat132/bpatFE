@@ -1,12 +1,17 @@
 //ReMoveEvent:
 UnitAttackedEvent:
-ENUF 0x71 // Hawkeye flag
-ENUF 0x93 // Celerity active flag
+ENUF HawkeyeRuneFlag
+ENUF CelerityActiveFlag
+NoFade
+ENDA
+
+UnitSwarpEvent:
+ENUF CelerityActiveFlag
+ENUF SwarpActiveFlag
 NoFade
 ENDA
 
 UnitOtherActionEvent:
-//ENUF 0x71 // Hawkeye flag
-ENUF 0x93 // Celerity active flag
+ENUF CelerityActiveFlag
 NoFade
 ENDA

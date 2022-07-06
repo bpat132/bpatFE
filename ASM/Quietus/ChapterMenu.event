@@ -4,8 +4,8 @@ POIN ChapterMenu
 
 POP 
 
-#define NewMenuItemTextID 0x0060
-#define NewMenuItemDescID 0x0061
+#define NewMenuItemTextID 0x0D20
+#define NewMenuItemDescID 0x0D21
 
 setText(NewMenuItemTextID, NewMenuItemText) // These are from the tutorial, I think?
 setText(NewMenuItemDescID, NewMenuItemDesc)

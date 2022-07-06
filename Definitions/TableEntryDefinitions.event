@@ -38,6 +38,7 @@
 
 // Items
 #define Vuln 0x6c
+#define Shortbow ShortBow
 #define RubySword PoisonSword
 #define SapphireLance ToxinLance
 #define EmeraldAxe PoisonAxe
