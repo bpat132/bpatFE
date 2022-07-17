@@ -112,7 +112,7 @@ UNIT Jenna Archer_F 0x1 Level(Ch5Level,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronBow,St
 UNIT Duncan Fighter 0x1 Level(Ch5Level,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronAxe,SteelAxe,HandAxe,Swordreaver] NoAI
 UNIT Kurt Mercenary 0x1 Level(Ch5Level,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronSword,SteelSword,SteelBlade,LightBrand] NoAI
 UNIT Matthias Soldier 0x1 Level(Ch5Level,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronLance,SteelLance,Javelin,SapphireLance] NoAI
-UNIT Stella Mage_F 0x1 Level(Ch5Level,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [Fire,Thunder,Vuln] NoAI
+UNIT Stella Mage_F 0x1 Level(Ch5Level,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [Fire,Thunder,Bolganone,Vuln] NoAI
 UNIT Nico Thief 0x1 Level(5,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronSword,FireSword,IronBlade,SteelSword] NoAI
 UNIT Lisa Cleric 0x1 Level(Ch5Level,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [Heal,Vuln,Vuln,Vuln] NoAI
 UNIT Jane Knight_F 0x1 Level(Ch5Level,Ally,1) [0,0] 0x0 0x0 0x0 0x1 [IronAxe,SteelAxe,HandAxe,Hammer] NoAI

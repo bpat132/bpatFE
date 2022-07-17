@@ -199,8 +199,10 @@ ALIGN 4
 BeginningScene:
 // Two rune uses for this chapter
 COUNTER_SET 0 2
+COUNTER_SET 1 2
 // Disable locked runes
 ENUT CelerityRuneDisabledFlag
+ENUT SwarpRuneDisabledFlag
 // Enable runes usage
 ENUF RuneMenuDisableFlag
 

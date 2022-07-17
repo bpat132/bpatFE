@@ -543,6 +543,7 @@
 
 		#ifdef MMBHP
 			#include "Modules/MMBDrawHP.lyn.event"
+			//#include "Modules/MMBDrawHP_shifted.lyn.event"
 			WORD MMBHPX
 			WORD MMBHPY
 			WORD MMBHeight
@@ -813,7 +814,8 @@
 		#ifdef MMBDEFLabel
 			ALIGN 4
 			MMBDEFLabelGraphic:
-			#incbin "Modules/DEFLabel.4bpp"
+			//#incbin "Modules/DEFLabel.4bpp"
+			#incbin "Modules/DEFLabel_small.dmp"
 			#ifndef MMBLabelDrawing
 				#define MMBLabelDrawing
 			#endif // MMBLabelDrawing
@@ -858,7 +860,8 @@
 		#ifdef MMBRESLabel
 			ALIGN 4
 			MMBRESLabelGraphic:
-			#incbin "Modules/RESLabel.4bpp"
+			//#incbin "Modules/RESLabel.4bpp"
+			#incbin "Modules/RESLabel_small.dmp"
 			#ifndef MMBLabelDrawing
 				#define MMBLabelDrawing
 			#endif // MMBLabelDrawing

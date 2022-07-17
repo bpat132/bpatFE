@@ -100,7 +100,7 @@
 [LoadDonovan] = [LoadFace][0x1f][0x1]
 [LoadTrent] = [LoadFace][0x20][0x1]
 
-[LoadHoward] = [LoadFace][0x99][0x1]
+[LoadHoward] = [LoadFace][0x43][0x1]
 
 [LoadBandit] = [LoadFace][0x4c][0x1]
 [LoadRedSoldier] = [LoadFace][0x6b][0x1]
@@ -111,4 +111,8 @@
 [LoadCh4Boss] = [LoadFace][0x34][0x1]
 [LoadCh5Boss] = [LoadFace][0x35][0x1]
 [LoadCh6Boss] = [LoadFace][0x36][0x1]
+
 [LoadCraig] = [LoadFace][0x30][0x1]
+[LoadJeffery] = [LoadFace][0x37][0x1]
+[LoadGordon] = [LoadFace][0x38][0x1]
+[LoadLouis] = [LoadFace][0x39][0x1]

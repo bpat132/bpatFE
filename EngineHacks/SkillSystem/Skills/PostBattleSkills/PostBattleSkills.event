@@ -96,6 +96,7 @@ WORD ReMoveID
 //POIN ReMoveEvent
 POIN UnitAttackedEvent
 POIN UnitOtherActionEvent
+POIN UnitSwarpEvent
 //#include "ReMove/ReMoveEvent.event"
 #include "ReMove/ReMoveEvent_special.event"
 

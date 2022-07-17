@@ -55,6 +55,13 @@ to suffer a fatal blow[N]
 during the chapter to[N]
 survive at 1HP.[A][X]
 
+## TEXT_Rune3Info
+The [ToggleRed]Transpose Rune[ToggleRed][N]
+allows an ally to switch[N]
+places with another ally[N]
+within 5 spaces. Consumes[N]
+the user's action.[A][X]
+
 # 0x0546
 Physical strength. Each point[NL]
 increases physical damage by one.[X]
@@ -129,6 +136,9 @@ move or avoid attacks.[X]
 
 # 0x08EA
 ->[X]
+
+# 0x0D22
+/[X]
 
 # 0x0D00
 Hawkeye[X]

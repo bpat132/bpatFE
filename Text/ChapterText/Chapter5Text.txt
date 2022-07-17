@@ -157,6 +157,13 @@ That was weird. Oh well, one less pirate to worry about.
 [MidLeft]You're here to protect the townspeople? Then you'll have my aid. I cannot wield a weapon, but I can keep you safe with my staves.
 [X]
 
+## TEXT_Ch5_Village_Rune
+[ConversationText]
+[MidLeft][LoadFace][0x5A][0x01][MidRight][LoadFace][CurrentPortrait]
+[MidLeft]
+Do you know how runes work? Well I don't! I got this ages ago and it's sitting here collecting dust. You can keep it if you want, I've no use for it.
+[X]
+
 ## TEXT_Ch5_Village_Longbow
 [ConversationText]
 [MidLeft][LoadFace][0x5A][0x01][MidRight][LoadFace][CurrentPortrait]
@@ -168,7 +175,7 @@ I tried using this bow against the pirates, but my aim just isn't good enough. I
 [ConversationText]
 [MidLeft][LoadFace][0x5B][0x01][MidRight][LoadFace][CurrentPortrait]
 [MidLeft]
-My fighting days are behind me, I can't even swing this sword without my back aching anymore. Take it, and put it to good use.
+My fighting days are behind me, I can't even swing this sword without my back aching anymore. You can have it, so long as you put it to good use.
 [X]
 
 ## TEXT_Ch5_Village_KillerLance

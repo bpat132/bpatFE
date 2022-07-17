@@ -8,6 +8,7 @@
 .equ ReMoveID, SkillTester+4
 .equ UnitAttackedEvent, ReMoveID+4
 .equ UnitOtherActionEvent, UnitAttackedEvent+4
+.equ UnitSwarpEvent, UnitOtherActionEvent+4
 .thumb
 
 push	{r14}
@@ -26,6 +27,10 @@ mov r0, #0x93 @ celerity flag
 blh CheckFlag
 cmp r0, #0
 bne CheckIfAttacked @ flag is set
+mov r0, #0x94 @ swarp flag
+blh CheckFlag
+cmp r0, #0
+bne CheckIfSwarped @ flag is set
 b End
 
 CheckIfAttacked:
@@ -33,6 +38,12 @@ CheckIfAttacked:
 ldrb  r0, [r6,#0x11]  @action taken this turn
 cmp r0, #0x2 @attack
 beq AttackedEvent
+
+CheckIfSwarped:
+@check if attacked this turn
+ldrb  r0, [r6,#0x11]  @action taken this turn
+cmp r0, #0x27 @swarp
+beq SwarpedEvent
 
 Event:
 ldr	r0,=#0x800D07C		@event engine thingy
@@ -46,6 +57,14 @@ AttackedEvent:
 ldr r0,=#0x800D07C    @event engine thingy
 mov lr, r0
 ldr r0, UnitAttackedEvent   @this event is just "play some sound effects"
+mov r1, #0x01     @0x01 = wait for events
+.short  0xF800
+
+b End
+SwarpedEvent:
+ldr r0,=#0x800D07C    @event engine thingy
+mov lr, r0
+ldr r0, UnitSwarpEvent   @this event is just "play some sound effects"
 mov r1, #0x01     @0x01 = wait for events
 .short  0xF800
 

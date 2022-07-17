@@ -99,7 +99,6 @@ CUSA Ted
 ENDA
 
 LocationBasedEvents:
-Seize(12,2)
 Armory(ArmoryItems,6,1)
 
 Village(0x8,VillageEvent1,18,3)
@@ -114,6 +113,25 @@ MUSC EO3_ThoseWhoSlayAndFall
 Text(0x2,TEXT_Ch5_Village_Justin)
 ReinforcementEventENDA(JustinReinforcementUnits)
 
+VillageEvent5:  // Swapping these village locations
+	MUSI; SMOV 0x2 Village; SMOV 0x3 TEXT_Ch5_Village_Rune; CALL $9EE310; MUNO; CALL $591F40; EVBIT_T 0x7
+
+	TUTORIALTEXTBOXSTART
+	CenterTutorialTextBox
+	TEXTSHOW TEXT_Rune3Info
+	TEXTEND
+	REMA
+	ENUF SwarpRuneDisabledFlag
+
+	ENDA
+
+VillageEvent2:
+	VillageEventItem(TEXT_Ch5_Village_RubySword, Village, RubySword)
+VillageEvent3:
+	VillageEventItem(TEXT_Ch5_Village_KillerAxe, Village, KillerAxe)
+VillageEvent4:
+	VillageEventItem(TEXT_Ch5_Village_KillerLance, Village, KillerLance)
+/*
 VillageEvent2:
 	VillageEventItem(TEXT_Ch5_Village_Longbow, Village, Longbow)
 VillageEvent3:
@@ -122,6 +140,7 @@ VillageEvent4:
 	VillageEventItem(TEXT_Ch5_Village_KillerLance, Village, KillerLance)
 VillageEvent5:
 	VillageEventItem(TEXT_Ch5_Village_KillerAxe, Village, KillerAxe)
+*/
 
 MiscBasedEvents:
 DefeatBoss(EndingScene)
@@ -282,10 +301,10 @@ ALIGN 4
 BeginningScene:
 // Two rune uses for this chapter
 COUNTER_SET 0 2
+COUNTER_SET 1 2
 // Disable locked runes
 ENUT CelerityRuneDisabledFlag
-// Testing time!
-ENUF SwarpRuneDisabledFlag
+ENUT SwarpRuneDisabledFlag
 // Enable runes usage
 ENUF RuneMenuDisableFlag
 
