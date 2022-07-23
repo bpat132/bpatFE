@@ -22,4 +22,5 @@ ItemIconSlot(0x21,"png/EmeraldAxe_Beansy.png") // poison axe
 ItemIconSlot(0xd3,"png/Labrys_Ereshkigal.png") // poison claw
 ItemIconSlot(0xbe,"png/Fenrir_Beansy.png") // evil eye
 ItemIconSlot(0xbf,"png/Ruin_Snek.png") // crimson eye
+ItemIconSlot(0xe0,"png/Darksword.png")
 POP

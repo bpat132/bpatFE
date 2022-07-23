@@ -542,8 +542,8 @@
 		#endif // MMBHPStatus
 
 		#ifdef MMBHP
-			#include "Modules/MMBDrawHP.lyn.event"
-			//#include "Modules/MMBDrawHP_shifted.lyn.event"
+			//#include "Modules/MMBDrawHP.lyn.event"
+			#include "Modules/MMBDrawHP_shifted.lyn.event"
 			WORD MMBHPX
 			WORD MMBHPY
 			WORD MMBHeight

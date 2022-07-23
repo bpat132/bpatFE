@@ -240,7 +240,8 @@ POP
 //#include "MMB/Installers/MMBInstallerBpat.event"
 //#include "MMB/Installers/MMBInstallerBpat2.event"
 //#include "MMB/Installers/MMBInstallerBpat3.event" // Version with skills
-#include "MMB/Installers/MMBInstallerBpatContro.event"
+//#include "MMB/Installers/MMBInstallerBpatContro.event"
+#include "MMB/Installers/MMBInstallerBpatContro2.event"
 
 // My prep screen price fix (help from colorz's code)
 PUSH

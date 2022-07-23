@@ -175,6 +175,7 @@ POP
   #include "ExternalHacks/StatusWeapons/StatusWeapons.event"
   
   //Narrow Fonts by Scraiza
+  #define NARROW_FONT
   ALIGN 4
   #include "ExternalHacks/NarrowFont/NarrowFontInstaller.event"
   

@@ -12,7 +12,10 @@ Swift Sword[X]
 ## LabrysName
 Labrys[X]
 ## SlimWeaponDesc
-Follow-ups occur before counter.[X]
+Follow-up attacks occur before counter.[X]
+
+## RapierDesc ^
+Follow-ups occur before counter; eff. vs [ArmorIcon]/[HorseIcon].[X]
 
 ## RubySwordName
 Ruby Sword[X]
@@ -41,6 +44,11 @@ Ruin[X]
 Fire Sword[X]
 ## FireSwordDesc
 Empowered by fire magic.[X]
+
+## DarkswordName
+Darksword[X]
+## DarkswordDesc
+Drains 10 HP from its wielder per hit.[X]
 
 ## FrostBowName
 Frost Bow[X]

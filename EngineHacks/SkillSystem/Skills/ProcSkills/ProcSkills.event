@@ -70,7 +70,8 @@ WORD AetherID
 
 Proc_Counter:
 // #incbin "proc_closecounter.dmp"
-#incbin "Counter/proc_counter.dmp"
+//#incbin "Counter/proc_counter.dmp"
+#incbin "Counter/proc_counter2.dmp"
 POIN SkillTester
 WORD CounterID
 

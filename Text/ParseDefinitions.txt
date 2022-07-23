@@ -66,6 +66,20 @@
 [FR] = [FarRight]
 [FFR] = [FarFarRight]
 
+[HorseIcon] = [0x7B]
+[ArmorIcon] = [0x7C]
+[PegasusIcon] [0x7D]
+[FlierIcon] = [PegasusIcon]
+[DragonIcon] = [0x7F]
+[SwordIcon] = [0xB3]
+[LanceIcon] = [0xB4]
+[AxeIcon] = [0xB5]
+[BowIcon] = [0xB6]
+[LightIcon] = [0xB7]
+[AnimaIcon] = [0xB8]
+[DarkIcon] = [0xB9]
+[StaffIcon] = [0xBA]
+
 [LoadEdgar] = [LoadFace][0x2][0x1]
 [LoadJenna] = [LoadFace][0x3][0x1]
 [LoadDuncan] = [LoadFace][0x4][0x1]
@@ -82,7 +96,6 @@
 [LoadSasha] = [LoadFace][0xf][0x1]
 [LoadRichard] = [LoadFace][0x10][0x1]
 [LoadCameron] = [LoadFace][0x11][0x1]
-
 
 [LoadViolet] = [LoadFace][0x12][0x1]
 [LoadRowan] = [LoadFace][0x13][0x1]

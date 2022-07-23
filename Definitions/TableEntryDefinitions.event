@@ -15,7 +15,7 @@
 #define IronCost 4
 #define SteelCost 6
 #define SilverCost 16
-#define SlimCost 8
+#define SlimCost 6
 //#define KillerCost 10
 #define KillerCost 14
 //#define ReaverCost 10
@@ -53,6 +53,7 @@
 #define Rend EvilEye
 #define Ruin CrimsonEye
 #define PetrifyStaff 0xbe
+#define Darksword 0xbf
 
 // Characters
 #define Edgar 0x1
