@@ -163,6 +163,9 @@ prFixedDifficulty:
 // hypergammaspaces's AI lag fix
 #include "AILagFIx/FillAIDangerMap.event"
 
+// Vesly AI speed improvement
+#include "DecideOnDangerMap/DecideOnDangerMap.event"
+
 // Snek Ex.Map fix
 PUSH
 ORG $96B1C
