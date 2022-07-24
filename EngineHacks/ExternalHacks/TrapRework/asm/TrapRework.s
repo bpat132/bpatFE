@@ -10,6 +10,12 @@
 .global RemoveTrapAtCoordsASMC
 .type RemoveTrapAtCoordsASMC, %function
 
+.global AddLightRuneASMC
+.type AddLightRuneASMC, %function
+
+.global RemoveLightRuneAtCoordsASMC
+.type RemoveLightRuneAtCoordsASMC, %function
+
 .global GetTrapIDAtASMC
 .type GetTrapIDAtASMC, %function
 
@@ -36,6 +42,8 @@
 .equ gTrapArray,0x203a614 	@location of traps in memory
 .equ GetTrapAt,0x802e1f0 	@r0 = x coord, r1 = y coord
 .equ AddTrap,0x802e2b8 		@r0 = x coord, r1 = y coord, r2 = trap ID
+.equ AddLightRune,0x0802ea58                    @r0 = x coord, r1 = y coord, r2 = trap ID
+.equ RemoveLightRune,0x0802ea90                 @r0 = pointer to trap data
 .equ RemoveTrap,0x802e2fc 	@r0 = pointer to trap data
 .equ MemorySlot1,0x30004BC	@contains trap ID paramters
 .equ MemorySlotB,0x30004E4	@contains coordinate parameters, formatted 0xYYYYXXXX
@@ -166,6 +174,45 @@ lsr r0,r0,#16 @r0 = x coord
 lsr r1,r1,#16 @r1 = y coord
 blh GetTrapAt @r0 = pointer to trap data
 blh RemoveTrap
+pop {r0}
+bx r0
+
+.ltorg
+.align
+
+
+
+
+
+AddLightRuneASMC: @memory slot 1 = trap ID, memory slot B = coords
+push {r14}
+ldr r0,=MemorySlot1
+ldr r2,[r0] @r2 = trap ID
+ldr r1,=MemorySlotB
+ldr r0,[r1]
+ldr r1,[r1]
+lsr r1,r1,#16 @r1 = y coord
+lsl r0,r0,#16
+lsr r0,r0,#16 @r0 = x coord
+blh AddLightRune
+pop {r0}
+bx r0
+
+.ltorg
+.align
+
+
+
+RemoveLightRuneAtCoordsASMC: @memory slot B = coords
+push {r14}
+ldr r0,=MemorySlotB
+ldr r1,[r0]
+ldr r0,[r0]
+lsl r0,r0,#16
+lsr r0,r0,#16 @r0 = x coord
+lsr r1,r1,#16 @r1 = y coord
+blh GetTrapAt @r0 = pointer to trap data
+blh RemoveLightRune
 pop {r0}
 bx r0
 

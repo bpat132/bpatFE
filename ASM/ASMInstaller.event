@@ -329,6 +329,7 @@ POP
 
 // Freeze text pointer
 // Changes text ptr from 0x55A -> 0x55B, don't remember why this matters?
+// 0x88A2C has function
 
 PUSH
 ORG 0x88A78

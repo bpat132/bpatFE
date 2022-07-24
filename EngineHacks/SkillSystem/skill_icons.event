@@ -6,7 +6,8 @@ SkillIcons:
 #define SkillIcon(skillID) "128*skillID+SkillIcons"
 
 ORG SkillIcon(AcrobatID)
-#incbin "SkillIcons/Acrobat.dmp"
+//#incbin "SkillIcons/Acrobat.dmp"
+#incbin "SkillIcons/LightWeight.dmp"
 
 ORG SkillIcon(PassID)
 #incbin "SkillIcons/Pass.dmp"
