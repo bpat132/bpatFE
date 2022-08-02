@@ -8,8 +8,8 @@ Adept: Gain a consecutive attack.[N]
 (Speed % activation)[X]
 
 ## SD_Acrobat
-Unimpeded: Can move through[N]
-light rune barriers.[X]
+Unimpeded: Can move[N]
+through light barriers.[X]
 
 ## SD_Pass
 Pass: Can move through[N]

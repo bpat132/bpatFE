@@ -2,15 +2,16 @@
 // Runes
 #define RuneMenuDisableFlag 0x83
 
-// 1 -> available
+// 0 -> available
 #define HawkeyeRuneFlag 0x71
 #define MiracleRuneDisabledFlag 0x72
 #define CelerityRuneDisabledFlag 0x73
+#define SwarpRuneDisabledFlag 0x74
 
 // 1 -> active
 #define MiracleActiveFlag 0x92
 #define CelerityActiveFlag 0x93
-
-// Testing
-#define SwarpRuneDisabledFlag 0x74
 #define SwarpActiveFlag 0x94
+
+// 1 -> unlocked
+#define SwarpRuneUnlockedFlag 0xA4

@@ -79,7 +79,8 @@ Great. We can discuss payment once we're done killing my former employers.
 [ConversationText]
 [MidLeft][LoadFace][0x58][0x01][MidRight][LoadFace][CurrentPortrait]
 [MidLeft]
-You're here to protect us? Perhaps you'll find this hammer useful. Rumor has it hammers can crush heavy armor with ease, though I've only used it on nails myself.
+There was nothing my grandfather hated more than heavy armor. He crushed countless armored knights with his prized hammer.
+I'm no good at fighting, but you look capable. Take this hammer, and carry on my grandfather's legacy!
 [X]
 
 ## TEXT_Ch3_Village_KillingEdge

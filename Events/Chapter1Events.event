@@ -264,6 +264,20 @@ ALIGN 4
 BeginningScene:
 // Disable runes entirely for this chapter
 ENUT RuneMenuDisableFlag
+// Preemptively disable all runes
+ENUT MiracleRuneDisabledFlag
+ENUT CelerityRuneDisabledFlag
+ENUT SwarpRuneDisabledFlag
+ENUT 0x75
+ENUT 0x76
+ENUT 0x77
+ENUT 0x78
+ENUT 0x7A
+ENUT 0x7B
+ENUT 0x7C
+ENUT 0x7D
+ENUT 0x7E
+ENUT 0x7F
 
 ENUT 0x129 // AllUnitsMustEscapeFlag
 MUSC BoF2_StrongerMonsters

@@ -1,0 +1,290 @@
+
+////////////////////////////////////////////////////
+//                                                //
+// Disassembled with Nintenlord's Event Assembler //
+// Version: 11.0.0.0                              //
+// Game: FE8                                      //
+// File: FE8_clean.gba                            //
+// Offset: $9EC66C                                //
+//                                                //
+////////////////////////////////////////////////////
+
+EventPointerTable(0x21, PointerList)
+
+setText(0x166, NewChName)
+
+ALIGN 4
+NewChName:
+String("Chapter 7")
+BYTE 0
+
+ALIGN 4
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN $0 $0 $0
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+
+CharacterBasedEvents:
+END_MAIN
+
+LocationBasedEvents:
+Seize(0,0)
+END_MAIN
+
+MiscBasedEvents:
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+Units1:
+LoadUnit(15,21,Edgar)
+LoadUnit(18,22,Celia)
+UNIT Rose  PegasusKnight 0x1 Level(10,Ally,0)   [15,20] 0x0 0x0 0x0 0x0 [SilverLance,SlimLance,Horseslayer,Javelin] NoAI
+LoadUnit(16,19)
+LoadUnit(17,19)
+LoadUnit(16,20)
+LoadUnit(18,20)
+LoadUnit(16,21)
+LoadUnit(17,21)
+LoadUnit(15,22)
+LoadUnit(16,22)
+LoadUnit(16,23)
+LoadUnit(17,23)
+UNIT
+
+#define Ch7EnemyLvl 10
+
+EnemyUnits1:
+UNIT Jeffery Hero 0x40 Level(3,Enemy,0)     [8,3] 0x0 0x0 0x0 0x0 [WindSword,SilverSword,SilverAxe] NeverMoveAI
+
+UNIT Clint GreatKnight 0x40 Level(1,Enemy,0)     [7,11] 0x0 0x0 0x0 0x0 [SilverSword,SteelLance,SteelAxe,HandAxe] NeverMoveAI
+
+UNIT Gordon Paladin 0x40 Level(1,Enemy,0)     [1,1] 0x0 0x0 0x0 0x0 [SilverSword,ShortSpear] DoNothing
+UNIT 0x84 Cavalier 0x40 Level(Ch7EnemyLvl,Enemy,1)     [2,0] 0x0 0x0 0x0 0x0 [Javelin] DoNothing
+//UNIT 0x84 Cavalier 0x40 Level(Ch7EnemyLvl,Enemy,1)     [0,2] DropItem 0x0 0x0 0x0 [Axereaver] DoNothing
+UNIT 0x84 Cavalier 0x40 Level(Ch7EnemyLvl,Enemy,1)     [0,2] 0x0 0x0 0x0 0x0 [SteelLance] DoNothing
+UNIT 0x84 Cavalier 0x40 Level(Ch7EnemyLvl,Enemy,1)     [2,2] 0x0 0x0 0x0 0x0 [SteelLance] DoNothing
+UNIT
+
+EnemyUnits2:
+UNIT 0x80 Mage 0x40 Level(Ch7EnemyLvl,Enemy,1)     [13,19] 0x0 0x0 0x0 0x0 [Thunder] PWHAI
+UNIT 0x80 Knight 0x40 Level(Ch7EnemyLvl,Enemy,1)     [12,20] 0x0 0x0 0x0 0x0 [HandAxe] PWHAI
+
+UNIT 0x80 Mercenary 0x40 Level(Ch7EnemyLvl,Enemy,1)     [10,18] 0x0 0x0 0x0 0x0 [SteelSword] PWHAI
+UNIT 0x80 Myrmidon 0x40 Level(Ch7EnemyLvl,Enemy,1)     [9,21] 0x0 0x0 0x0 0x0 [IronBlade] PWHAI
+UNIT 0x80 Soldier 0x40 Level(Ch7EnemyLvl,Enemy,1)     [11,22] 0x0 0x0 0x0 0x0 [Javelin] PWHAI
+UNIT 0x80 Shaman 0x40 Level(Ch7EnemyLvl,Enemy,1)     [10,23] 0x0 0x0 0x0 0x0 [Ruin] PWHAI
+UNIT 0x80 Fighter 0x40 Level(Ch7EnemyLvl,Enemy,1)     [7,19] 0x0 0x0 0x0 0x0 [IronAxe] PWHAI
+
+UNIT 0x80 Cavalier 0x40 Level(Ch7EnemyLvl,Enemy,1)     [2,19] 0x0 0x0 0x0 0x0 [Javelin] PWHAI
+UNIT 0x80 Cavalier 0x40 Level(Ch7EnemyLvl,Enemy,1)     [1,21] 0x0 0x0 0x0 0x0 [SteelLance] PWHAI
+UNIT 0x80 Archer 0x40 Level(Ch7EnemyLvl,Enemy,1)     [5,20] 0x0 0x0 0x0 0x0 [SteelBow] PWHAI
+UNIT 0x80 Mage 0x40 Level(Ch7EnemyLvl,Enemy,1)     [0,18] 0x0 0x0 0x0 0x0 [Fire] PWHAI
+UNIT
+
+EnemyUnits3:
+UNIT 0x80 Myrmidon 0x40 Level(Ch7EnemyLvl,Enemy,1)     [2,22] 0x0 0x0 0x0 0x0 [SteelSword] AIRAI
+UNIT 0x80 Mercenary 0x40 Level(Ch7EnemyLvl,Enemy,1)     [4,17] 0x0 0x0 0x0 0x0 [IronSword] AIRAI
+UNIT 0x80 Soldier 0x40 Level(Ch7EnemyLvl,Enemy,1)     [2,15] 0x0 0x0 0x0 0x0 [IronLance] AIRAI
+//UNIT 0x80 Knight 0x40 Level(Ch7EnemyLvl,Enemy,1)     [1,12] 0x0 0x0 0x0 0x0 [HandAxe] AIRAI
+UNIT 0x80 Shaman 0x40 Level(Ch7EnemyLvl,Enemy,1)     [1,12] 0x0 0x0 0x0 0x0 [Flux] AIRAI
+UNIT 0x80 Archer 0x40 Level(Ch7EnemyLvl,Enemy,1)     [8,15] 0x0 0x0 0x0 0x0 [IronBow] AIRAI
+
+
+UNIT 0x80 Mercenary 0x40 Level(Ch7EnemyLvl,Enemy,1)     [15,12] 0x0 0x0 0x0 0x0 [SteelSword] AIRAI
+UNIT 0x80 Archer 0x40 Level(Ch7EnemyLvl,Enemy,1)     [13,13] 0x0 0x0 0x0 0x0 [IronBow] AIRAI
+UNIT 0x80 Myrmidon 0x40 Level(Ch7EnemyLvl,Enemy,1)     [8,13] 0x0 0x0 0x0 0x0 [IronBlade] AIRAI
+UNIT 0x80 Shaman 0x40 Level(Ch7EnemyLvl,Enemy,1)     [11,15] 0x0 0x0 0x0 0x0 [Flux] PWHAI //AIRAI
+UNIT 0x80 Mage 0x40 Level(Ch7EnemyLvl,Enemy,1)     [5,12] 0x0 0x0 0x0 0x0 [Fire] AIRAI
+UNIT
+
+EnemyUnits4:
+UNIT 0x80 Archer 0x40 Level(Ch7EnemyLvl,Enemy,1)     [4,4] 0x0 0x0 0x0 0x0 [SteelBow] AIRAIg1
+
+//UNIT 0x80 Mage 0x40 Level(Ch7EnemyLvl,Enemy,1)     [10,9] DropItem 0x0 0x0 0x0 [Bolganone] AIRAI
+UNIT 0x80 Mage 0x40 Level(Ch7EnemyLvl,Enemy,1)     [10,9] 0x0 0x0 0x0 0x0 [Bolganone] AIRAI
+UNIT 0x80 Myrmidon 0x40 Level(Ch7EnemyLvl,Enemy,1)     [8,9] 0x0 0x0 0x0 0x0 [SteelBlade] AIRAI
+
+
+UNIT 0x80 Shaman 0x40 Level(Ch7EnemyLvl,Enemy,1)     [13,8] 0x0 0x0 0x0 0x0 [Flux] AIRAI
+UNIT 0x80 Shaman 0x40 Level(Ch7EnemyLvl,Enemy,1)     [17,10] 0x0 0x0 0x0 0x0 [Flux] AIRAI
+//UNIT 0x80 Fighter 0x40 Level(Ch7EnemyLvl,Enemy,1)     [11,6] DropItem 0x0 0x0 0x0 [SilverAxe] COAAI // Removed because this guy is overkill
+UNIT 0x80 Soldier 0x40 Level(Ch7EnemyLvl,Enemy,1)     [14,6] 0x0 0x0 0x0 0x0 [SteelLance] AIRAIg2
+
+UNIT 0x80 Shaman 0x40 Level(Ch7EnemyLvl,Enemy,1)     [7,5] 0x0 0x0 0x0 0x0 [Rend] AIRAI
+UNIT 0x80 Shaman 0x40 Level(Ch7EnemyLvl,Enemy,1)     [9,5] 0x0 0x0 0x0 0x0 [Rend] AIRAI
+
+
+//UNIT 0x80 Knight 0x40 Level(Ch7EnemyLvl,Enemy,1)     [9,17] 0x0 0x0 0x0 0x0 [HandAxe,SteelAxe] NeverMoveAI
+UNIT 0x80 Knight 0x40 Level(Ch7EnemyLvl,Enemy,1)     [9,17] 0x0 0x0 0x0 0x0 [Chakram] NeverMoveAI
+UNIT 0x80 Mage 0x40 Level(Ch7EnemyLvl,Enemy,1)     [14,10] 0x0 0x0 0x0 0x0 [Bolganone,Thoron] NMAIg2
+//UNIT 0x80 Soldier 0x40 Level(Ch7EnemyLvl,Enemy,1)     [11,12] DropItem 0x0 0x0 0x0 [ShortSpear] NeverMoveAI
+UNIT 0x80 Soldier 0x40 Level(Ch7EnemyLvl,Enemy,1)     [11,12] 0x0 0x0 0x0 0x0 [ShortSpear] NeverMoveAI
+//UNIT 0x80 Knight 0x40 Level(Ch7EnemyLvl,Enemy,1)     [8,7] 0x0 0x0 0x0 0x0 [HandAxe,SteelAxe] NMAIg1
+UNIT 0x80 Mercenary 0x40 Level(Ch7EnemyLvl,Enemy,1)     [8,7] 0x0 0x0 0x0 0x0 [LightBrand] NMAIg1
+UNIT
+
+EnemyUnits5:
+UNIT 0x80 Fleet 0x40 Level(Ch7EnemyLvl,Enemy,1)     [10,7] 0x0 0x0 0x0 0x0 [Ballista] NeverMoveAI
+UNIT 0x80 Fleet 0x40 Level(Ch7EnemyLvl,Enemy,1)     [7,14] 0x0 0x0 0x0 0x0 [Ballista] NeverMoveAI
+
+UNIT 0x82 Brigand 0x40 Level(Ch7EnemyLvl,Enemy,1)     [0,7] 0x0 0x0 0x0 0x0 [SteelAxe] AttackingBrigandAI
+UNIT
+
+CutsceneUnits:
+UNIT Edgar 0x1 0x1 Level(1,Ally,0)   [15,21] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT Celia Dancer 0x1 Level(1,Ally,0)   [18,22] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+
+LoadUnit(16,19,Duncan)
+LoadUnit(17,19,Richard)
+LoadUnit(16,20,Violet)
+LoadUnit(18,20,Cameron)
+LoadUnit(16,21,Jane)
+LoadUnit(17,21,Nico)
+LoadUnit(15,22,Kurt)
+LoadUnit(16,22,Rowan)
+LoadUnit(16,23,Jenna)
+LoadUnit(17,23,Lisa)
+
+UNIT
+
+CutsceneUnits2:
+UNIT Rose PegasusKnight 0x1 Level(8,Enemy,0)   [8,11] 0x0 0x0 0x0 0x0 [IronLance] [0x0,0x0,0x0,0x0]
+
+UNIT Gordon Paladin 0x40 Level(1,Enemy,1)     [7,4] 0x0 0x0 0x0 0x0 [SilverSword,ShortSpear] DoNothing
+UNIT Jeffery Hero 0x40 Level(1,Enemy,1)     [8,3] 0x0 0x0 0x0 0x0 [WindSword,SilverSword,SilverAxe] NeverMoveAI
+UNIT Clint GreatKnight 0x40 Level(1,Enemy,0)     [9,4] 0x0 0x0 0x0 0x0 [SilverSword,SteelLance,SteelAxe,HandAxe] NeverMoveAI
+
+UNIT 0x84 Cavalier 0x40 Level(Ch7EnemyLvl,Enemy,1)     [2,0] 0x0 0x0 0x0 0x0 [Javelin] DoNothing
+UNIT 0x84 Cavalier 0x40 Level(Ch7EnemyLvl,Enemy,1)     [0,2] 0x0 0x0 0x0 0x0 [Axereaver] DoNothing
+UNIT 0x84 Cavalier 0x40 Level(Ch7EnemyLvl,Enemy,1)     [2,2] 0x0 0x0 0x0 0x0 [SteelLance] DoNothing
+UNIT
+
+Traps1:
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+BeginningSceneDUMMY:
+// Two rune uses for this chapter
+COUNTER_SET 0 2
+COUNTER_SET 1 2
+LoadEnemies(EnemyUnits1)
+LoadEnemies(EnemyUnits2)
+LoadEnemies(EnemyUnits3)
+LoadEnemies(EnemyUnits4)
+LoadEnemies(EnemyUnits5)
+
+LoadPlayerUnits(Units1)
+
+SilentGiveItemUnit(Clint,0x6C)
+SilentGiveItemUnit(Rose,0x6C)
+
+GotoPrepScreen
+
+BeginningScene:
+// Two rune uses for this chapter
+COUNTER_SET 0 2
+COUNTER_SET 1 2
+
+//LoadEnemies(EnemyUnits1)
+LoadEnemies(EnemyUnits2)
+LoadEnemies(EnemyUnits3)
+LoadEnemies(EnemyUnits4)
+LoadEnemies(EnemyUnits5)
+MUSC AA3_VictorKudo
+LOAD1 0x2 CutsceneUnits
+ENUN
+LOAD1 0x2 CutsceneUnits2
+ENUN
+
+SetBackground(0x15)
+CAM1 [8,3]
+//Text(TEXT_Ch7_Start_Castle)
+Text(PlaceholderText)
+ClearBackground
+
+MOVE 15 Clint [7,11]
+STAL 31
+CAM1 [7,11]
+FlashCursor(7,11,0x20)
+FlashCursor(8,11,0x20)
+//Text(TEXT_Ch7_Start_Clint)
+Text(PlaceholderText)
+
+MOVE 15 Rose [15,20]
+STAL 31
+CAM1 [15,21]
+MUSC EO3_ThoseWhoSlayAndFall
+//Text(TEXT_Ch7_Start_Violet)
+Text(PlaceholderText)
+
+MOVE 15 Gordon [1,1]
+STAL 31
+CAM1 [1,1]
+MUSC OgreBattle_WallOfDefense
+FlashCursor(1,1,0x20)
+//Text(TEXT_Ch7_Start_Gordon)
+Text(PlaceholderText)
+
+FADI 16
+CLEA 0x0
+CLEE 0x0
+CLEN 0x0
+
+LoadEnemies(EnemyUnits1)
+LoadEnemies(EnemyUnits2)
+LoadEnemies(EnemyUnits3)
+LoadEnemies(EnemyUnits4)
+LoadEnemies(EnemyUnits5)
+
+LoadPlayerUnits(Units1)
+
+SilentGiveItemUnit(Clint,0x6C)
+SilentGiveItemUnit(Rose,0x6C)
+
+GotoPrepScreen
+
+EndingScene:
+// Reset rune menu and uses
+ENUF RuneMenuDisableFlag
+// Deactivate all runes
+ENUF HawkeyeRuneFlag
+ENUF MiracleRuneDisabledFlag
+ENUF MiracleActiveFlag
+// Enable unlocked runes
+CHECK_EVENTID SwarpRuneUnlockedFlag
+BEQ 1 0 0xC // If flag is not set, skip
+ENUF SwarpRuneDisabledFlag
+ENUF SwarpActiveFlag
+LABEL 1
+
+MUSC ToS_LastBattleDecision
+SetBackground(0x15)
+Text(PlaceholderText)
+MNC2 Chapter8
+ENDA

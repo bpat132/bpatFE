@@ -123,7 +123,7 @@ EnemyUnits1:
 // Unique
 //UNIT Ch2Boss Fighter 0x40 Level(7,Enemy,0)     [20,1] DropItem 0x0 0x0 0x0 [SteelAxe,HandAxe,HoplonShield] NeverMoveAI
 // Removing Hoplon Guard for now since enemies don't have crit yet
-UNIT Ch2Boss Fighter 0x40 Level(7,Enemy,0)     [20,1] DropItem 0x0 0x0 0x0 [SteelAxe,HandAxe] NeverMoveAI
+UNIT Ch2Boss Fighter 0x40 Level(7,Enemy,0)     [20,1] 0x0 0x0 0x0 0x0 [SteelAxe,HandAxe] NeverMoveAI
 UNIT Jane Knight_F 0x40 Level(5,Enemy,0)     [20,2] 0x0 0x0 0x0 0x0 [IronAxe,SteelAxe,Vuln] NeverMoveAI
 // Generics
 UNIT 0x80 Fighter 0x40 Level(2,Enemy,1)     [1,5] 0x0 0x0 0x0 0x0 [IronAxe] PWHAI
@@ -203,8 +203,12 @@ BeginningScene:
 COUNTER_SET 0 2
 COUNTER_SET 1 2
 // Disable locked runes
+/*
 ENUT CelerityRuneDisabledFlag
 ENUT SwarpRuneDisabledFlag
+*/
+// Enable unlocked runes
+ENUF MiracleRuneDisabledFlag
 // Enable runes usage
 ENUF RuneMenuDisableFlag
 
@@ -227,10 +231,12 @@ ENUN
 GotoPrepScreen
 
 EndingScene:
+// Rune convention: reset everything except uses at chapter end, reset uses at chapter start
+
 // Reset rune menu and uses
 ENUF RuneMenuDisableFlag
-COUNTER_SET 0 2
-// Disable active runes
+//COUNTER_SET 0 2
+// Deactivate and enable runes
 ENUF HawkeyeRuneFlag
 ENUF MiracleRuneDisabledFlag
 ENUF MiracleActiveFlag

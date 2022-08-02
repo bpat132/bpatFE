@@ -102,6 +102,7 @@ END_MAIN
 
 VillageEvent1:
 	VillageEventItem(TEXT_Ch3_Village_Hammer, Village, Hammer)
+	//VillageEventItem(TEXT_Ch3_Village_EmeraldAxe, Village, EmeraldAxe)
 
 VillageEvent2:
 	//VillageEventItem(TEXT_Ch3_Village_KillerLance, Village, KillerLance)
@@ -277,11 +278,13 @@ BeginningScene:
 // Two rune uses for this chapter
 COUNTER_SET 0 2
 COUNTER_SET 1 2
+/*
 // Disable locked runes
 ENUT CelerityRuneDisabledFlag
 ENUT SwarpRuneDisabledFlag
 // Enable runes usage
 ENUF RuneMenuDisableFlag
+*/
 
 MUSC AA_Gumshoe
 LoadEnemies(EnemyUnits1)
@@ -310,8 +313,8 @@ GotoPrepScreen
 EndingScene:
 // Reset rune menu and uses
 ENUF RuneMenuDisableFlag
-COUNTER_SET 0 2
-// Disable active runes
+//COUNTER_SET 0 2
+// Deactivate and enable runes
 ENUF HawkeyeRuneFlag
 ENUF MiracleRuneDisabledFlag
 ENUF MiracleActiveFlag

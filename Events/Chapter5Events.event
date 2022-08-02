@@ -122,6 +122,7 @@ VillageEvent5:  // Swapping these village locations
 	TEXTEND
 	REMA
 	ENUF SwarpRuneDisabledFlag
+	ENUT SwarpRuneUnlockedFlag
 
 	ENDA
 
@@ -176,21 +177,21 @@ LoadUnit(16,2)
 UNIT
 
 CeliaReinforcementUnits:
-UNIT Celia  Dancer 0x1 Level(1,Ally,0)   [1,6] 0x0 0x0 0x1 CeliaReda [Vuln] [0x0,0x0,0x0,0x0]
+UNIT Celia  Dancer 0x1 Level(1,Ally,0)   [1,6] 0x0 0x0 0x1 CeliaReda [Vuln] NoAI
 UNIT
 CeliaReda:
 REDA [1,6] 0x0 0x1 0x00 0x0
 
 JustinReinforcementUnits:
-UNIT Justin  Priest 0x1 Level(7,Ally,0)   [18,3] 0x0 0x0 0x1 JustinReda [Heal,FreezeStaff,Physic,Vuln] [0x0,0x0,0x0,0x0]
+UNIT Justin Priest 0x1 Level(7,Ally,0)   [18,3] 0x0 0x0 0x1 JustinReda [Heal,FreezeStaff,Physic,Vuln] NoAI
 UNIT
 JustinReda:
 REDA [18,4] 0x0 0x1 0x00 0x0
 
 EnemyUnits1:
 // Unique
-UNIT Rowan  Myrmidon 0x1 Level(10,NPC,0)   [1,6] 0x0 0x0 0x0 0x0 [SteelBlade,SlimSword,Lancereaver,LightBrand] NoAI
-UNIT Violet  PegasusKnight 0x1 Level(8,NPC,0)   [19,0] 0x0 0x0 0x0 0x0 [SlimLance,IronLance,SteelLance,Javelin] NoAI
+UNIT Rowan Myrmidon 0x1 Level(10,NPC,0)   [1,6] 0x0 0x0 0x0 0x0 [SteelBlade,SlimSword,Lancereaver,LightBrand] NoAI
+UNIT Violet PegasusKnight 0x1 Level(8,NPC,0)   [19,0] 0x0 0x0 0x0 0x0 [SlimLance,IronLance,SteelLance,Javelin] NoAI
 
 UNIT Ch5Boss Pirate 0x40 Level(15,Enemy,0)     [9,21] 0x0 0x0 0x0 0x0 [Labrys,HandAxe] AIRAI
 
@@ -302,11 +303,13 @@ BeginningScene:
 // Two rune uses for this chapter
 COUNTER_SET 0 2
 COUNTER_SET 1 2
+/*
 // Disable locked runes
 ENUT CelerityRuneDisabledFlag
 ENUT SwarpRuneDisabledFlag
 // Enable runes usage
 ENUF RuneMenuDisableFlag
+*/
 
 LoadEnemies(EnemyUnits1)
 LoadEnemies(EnemyUnits2)
@@ -359,11 +362,19 @@ ENDA
 EndingScene:
 // Reset rune menu and uses
 ENUF RuneMenuDisableFlag
-COUNTER_SET 0 2
-// Disable active runes
+//COUNTER_SET 0 2
+// Deactivate all runes
 ENUF HawkeyeRuneFlag
 ENUF MiracleRuneDisabledFlag
 ENUF MiracleActiveFlag
+//ENUF SwarpActiveFlag
+// Enable unlocked runes
+CHECK_EVENTID SwarpRuneUnlockedFlag
+BEQ 1 0 0xC // If flag is not set, skip
+ENUF SwarpRuneDisabledFlag
+ENUF SwarpActiveFlag
+LABEL 1
+
 
 MUSC ToS_LastBattleDecision
 SetBackground(0x05)

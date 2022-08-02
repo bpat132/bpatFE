@@ -56,11 +56,11 @@ during the chapter to[N]
 survive at 1HP.[A][X]
 
 ## TEXT_Rune3Info
-The [ToggleRed]Transpose Rune[ToggleRed][N]
-allows an ally to switch[N]
-places with another ally[N]
-within 5 spaces. Consumes[N]
-the user's action.[A][X]
+The [ToggleRed]Netherswap Rune[ToggleRed][N]
+allows an ally to use their
+action to switch places[N]
+with another ally within[N]
+5 spaces of the user.[A][X]
 
 # 0x0546
 Physical strength. Each point[NL]
@@ -150,4 +150,4 @@ Miracle[X]
 Celerity[X]
 
 # 0x0D03
-Transpose[X]
+Netherswap[X]

@@ -1,0 +1,300 @@
+
+////////////////////////////////////////////////////
+//                                                //
+// Disassembled with Nintenlord's Event Assembler //
+// Version: 11.0.0.0                              //
+// Game: FE8                                      //
+// File: FE8_clean.gba                            //
+// Offset: $9EC66C                                //
+//                                                //
+////////////////////////////////////////////////////
+
+EventPointerTable(0x1E, PointerList)
+
+EscapePointPointerTable(Chapter6, Ch6EscapePoints)
+Ch6EscapePoints:
+EscapePoint(9, 0, MoveUp)
+EscapePoint(10, 0, MoveUp)
+EscapePoint(11, 0, MoveUp)
+EscapePointEnd
+
+setText(0x165, NewChName)
+
+ALIGN 4
+NewChName:
+String("Ch6: Ravages of Time")
+BYTE 0
+
+ALIGN 4
+PointerList:
+POIN TurnBasedEvents
+POIN CharacterBasedEvents
+POIN LocationBasedEvents
+POIN MiscBasedEvents
+POIN Dunno1 Dunno2 Dunno3 Tutorial
+POIN Traps1 Traps2
+POIN Units1 Units1  //This unit group determines the number and position of deployment slots when there is a prep screen
+POIN $0 $0 $0
+POIN $0 $0 $0
+POIN BeginningScene EndingScene
+
+TurnBasedEvents:
+END_MAIN
+
+CharacterBasedEvents:
+CharacterEventBothWays(0x14,TalkEventLucy, Celia, Lucy)
+END_MAIN
+
+TalkEventLucy:
+//Text(TEXT_Ch6_Celia_Lucy_Talk)
+Text(PlaceholderText)
+NoFade
+CUSA Lucy
+ENDA
+
+LocationBasedEvents:
+Chest(Longbow,6,11)
+Chest(EmeraldAxe,16,5)
+//Chest(Rapier,7,5)
+Chest(Physic,7,5)
+END_MAIN
+
+MiscBasedEvents:
+DefeatAll(EndingScene)
+CauseGameOverIfLordDies
+END_MAIN
+
+Dunno1:
+END_MAIN
+
+Dunno2:
+END_MAIN
+
+Dunno3:
+END_MAIN
+
+Tutorial:
+END_MAIN
+
+Units1:
+LoadUnit(12,21,Edgar)
+LoadUnit(13,21,Celia)
+UNIT Quentin Mage 0x1 Level(9,Ally,0)   [12,20] 0x0 0x0 0x0 0x0 [Fire,Thunder,Bolganone,Vuln] NoAI
+UNIT Thomas Shaman 0x1 Level(9,Ally,0)   [13,20] 0x0 0x0 0x0 0x0 [Flux,Rend,Ruin,Vuln] NoAI
+
+LoadUnit(11,22)
+LoadUnit(14,22)
+LoadUnit(12,23)
+LoadUnit(13,23)
+
+LoadUnit(1,21)
+LoadUnit(2,21)
+LoadUnit(0,22)
+LoadUnit(3,22)
+LoadUnit(1,23)
+LoadUnit(2,23)
+UNIT
+
+#define Ch6EnemyLvl 9
+
+EnemyUnits1:
+//UNIT Ch6Boss Mercenary 0x40 Level(12,Enemy,0)     [10,0] 0x0 0x0 0x0 0x0 [LightBrand,Darksword] NeverMoveAI
+UNIT Ch6Boss Mercenary 0x40 Level(12,Enemy,0)     [10,0] 0x0 0x0 0x0 0x0 [LightBrand,Darksword] AttackInRangeAI
+UNIT Lucy Thief_F 0x1 Level(6,Enemy,0)     [6,10] 0x0 0x0 0x0 0x0 [SwiftSword,Vuln] LootingThiefAI
+
+// Right 
+
+#ifndef _EASY_MODE_
+UNIT 0x86 Fighter 0x40 Level(Ch6EnemyLvl,Enemy,1)     [12,13] 0x0 0x0 0x0 0x0 [SteelAxe] AIRAI
+#else
+UNIT 0x86 Fighter 0x40 Level(Ch6EnemyLvl,Enemy,1)     [12,13] 0x0 0x0 0x0 0x0 [IronAxe] AIRAI
+#endif
+UNIT 0x86 Archer_F 0x40 Level(Ch6EnemyLvl,Enemy,1)     [10,14] 0x0 0x0 0x0 0x0 [IronBow] AIRAI
+UNIT 0x86 Mercenary 0x40 Level(Ch6EnemyLvl,Enemy,1)     [15,17] 0x0 0x0 0x0 0x0 [IronBlade] AIRAI
+UNIT 0x86 Soldier 0x40 Level(Ch6EnemyLvl,Enemy,1)     [18,16] 0x0 0x0 0x0 0x0 [IronLance] AIRAI
+
+
+UNIT 0x86 Myrmidon 0x40 Level(Ch6EnemyLvl,Enemy,1)     [11,18] 0x0 0x0 0x0 0x0 [SteelBlade] AIRAI
+UNIT 0x86 Mage_F 0x40 Level(Ch6EnemyLvl,Enemy,1)     [16,12] 0x0 0x0 0x0 0x0 [Fire] AIRAI
+UNIT 0x86 Mage 0x40 Level(Ch6EnemyLvl,Enemy,1)     [13,11] 0x0 0x0 0x0 0x0 [Fire] AIRAI
+
+#ifndef _EASY_MODE_
+UNIT 0x86 Pirate 0x40 Level(Ch6EnemyLvl,Enemy,1)     [19,13] 0x0 0x0 0x0 0x0 [IronAxe] AIRAI
+#endif
+
+//UNIT 0x86 Soldier 0x40 Level(Ch6EnemyLvl,Enemy,1)     [9,11] 0x0 0x0 0x0 0x0 [Javelin] AIRAI
+UNIT 0x86 Shaman 0x40 Level(Ch6EnemyLvl,Enemy,1)     [9,11] 0x0 0x0 0x0 0x0 [Flux] AIRAI
+
+UNIT 0x86 PegasusKnight 0x40 Level(Ch6EnemyLvl,Enemy,1)     [20,9] 0x0 0x0 0x0 0x0 [SteelLance] AIRAI
+UNIT 0x86 Mercenary 0x40 Level(Ch6EnemyLvl,Enemy,1)     [15,8] 0x0 0x0 0x0 0x0 [IronSword] AIRAI
+#ifndef _EASY_MODE_
+// Make this iron bow on both modes maybe?
+UNIT 0x86 Archer 0x40 Level(Ch6EnemyLvl,Enemy,1)     [2,4] 0x0 0x0 0x0 0x0 [SteelBow] AIRAI
+#else
+UNIT 0x86 Archer 0x40 Level(Ch6EnemyLvl,Enemy,1)     [2,4] 0x0 0x0 0x0 0x0 [IronBow] AIRAI
+#endif
+UNIT
+
+EnemyUnits2:
+UNIT 0x86 PegasusKnight 0x40 Level(Ch6EnemyLvl,Enemy,1)     [16,2] 0x0 0x0 0x0 0x0 [SlimLance] AIRAI
+#ifndef _EASY_MODE_
+UNIT 0x86 Fighter 0x40 Level(Ch6EnemyLvl,Enemy,1)     [14,4] 0x0 0x0 0x0 0x0 [SteelAxe] AIRAI
+#else
+UNIT 0x86 Fighter 0x40 Level(Ch6EnemyLvl,Enemy,1)     [14,4] 0x0 0x0 0x0 0x0 [IronAxe] AIRAI
+#endif
+UNIT 0x86 Pirate 0x40 Level(Ch6EnemyLvl,Enemy,1)     [13,7] 0x0 0x0 0x0 0x0 [IronAxe] AIRAI
+UNIT 0x86 Myrmidon_F 0x40 Level(Ch6EnemyLvl,Enemy,1)     [17,6] 0x0 0x0 0x0 0x0 [IronBlade] AIRAI
+
+UNIT 0x86 Archer 0x40 Level(Ch6EnemyLvl,Enemy,1)     [17,4] 0x0 0x0 0x0 0x0 [IronBow] AIRAI
+
+// Left
+UNIT 0x86 Mage 0x40 Level(Ch6EnemyLvl,Enemy,1)     [2,16] 0x0 0x0 0x0 0x0 [Fire] AIRAI
+UNIT 0x86 Mercenary 0x40 Level(Ch6EnemyLvl,Enemy,1)     [3,18] 0x0 0x0 0x0 0x0 [IronBlade] AIRAI
+//UNIT 0x86 Soldier 0x40 Level(Ch6EnemyLvl,Enemy,1)     [5,16] 0x0 0x0 0x0 0x0 [Javelin] AIRAI
+UNIT 0x86 Soldier 0x40 Level(Ch6EnemyLvl,Enemy,1)     [5,16] 0x0 0x0 0x0 0x0 [IronLance] AIRAI
+
+/*
+UNIT 0x86 Pirate 0x40 Level(Ch6EnemyLvl,Enemy,1)     [0,13] 0x0 0x0 0x0 0x0 [IronAxe] AIRAI
+#ifndef _EASY_MODE_
+UNIT 0x86 Fighter 0x40 Level(Ch6EnemyLvl,Enemy,1)     [3,12] 0x0 0x0 0x0 0x0 [SteelAxe] AIRAI
+#else
+UNIT 0x86 Fighter 0x40 Level(Ch6EnemyLvl,Enemy,1)     [3,12] 0x0 0x0 0x0 0x0 [IronAxe] AIRAI
+#endif
+*/
+UNIT 0x86 Fighter 0x40 Level(Ch6EnemyLvl,Enemy,1)     [3,12] 0x0 0x0 0x0 0x0 [IronAxe] AIRAI
+#ifndef _EASY_MODE_
+UNIT 0x86 Pirate 0x40 Level(Ch6EnemyLvl,Enemy,1)     [0,13] 0x0 0x0 0x0 0x0 [SteelAxe] AIRAI
+#else
+UNIT 0x86 Pirate 0x40 Level(Ch6EnemyLvl,Enemy,1)     [0,13] 0x0 0x0 0x0 0x0 [IronAxe] AIRAI
+#endif
+
+UNIT 0x86 PegasusKnight 0x40 Level(Ch6EnemyLvl,Enemy,1)     [5,8] 0x0 0x0 0x0 0x0 [SteelLance] AIRAI
+UNIT 0x86 Myrmidon 0x40 Level(Ch6EnemyLvl,Enemy,1)     [0,11] 0x0 0x0 0x0 0x0 [SteelSword] AIRAI
+UNIT 0x86 Archer 0x40 Level(Ch6EnemyLvl,Enemy,1)     [3,10] 0x0 0x0 0x0 0x0 [IronBow] AIRAI
+UNIT
+
+EnemyUnits3:
+
+#ifndef _NORMAL_MODE_
+UNIT 0x86 Shaman 0x40 Level(Ch6EnemyLvl,Enemy,1)     [0,6] 0x0 0x0 0x0 0x0 [Flux] AIRAI
+#endif
+UNIT 0x86 Soldier 0x40 Level(Ch6EnemyLvl,Enemy,1)     [1,7] 0x0 0x0 0x0 0x0 [IronLance] AIRAI
+UNIT 0x86 Archer 0x40 Level(Ch6EnemyLvl,Enemy,1)     [2,4] 0x0 0x0 0x0 0x0 [IronBow] AIRAI
+
+UNIT 0x86 Pirate 0x40 Level(Ch6EnemyLvl,Enemy,1)     [4,6] 0x0 0x0 0x0 0x0 [IronAxe] AIRAI
+UNIT 0x86 Shaman 0x40 Level(Ch6EnemyLvl,Enemy,1)     [5,4] 0x0 0x0 0x0 0x0 [Flux] AIRAI
+//UNIT 0x86 Myrmidon 0x40 Level(Ch6EnemyLvl,Enemy,1)     [6,5] 0x0 0x0 0x0 0x0 [IronSword] AIRAI
+UNIT 0x86 Myrmidon 0x40 Level(Ch6EnemyLvl,Enemy,1)     [6,5] DropItem 0x0 0x0 0x0 [SteelSword,ChestKey] AIRAI
+
+UNIT 0x86 PegasusKnight 0x40 Level(Ch6EnemyLvl,Enemy,1)     [20,9] 0x0 0x0 0x0 0x0 [SteelLance] AIRAI
+//UNIT 0x86 Mercenary 0x40 Level(Ch6EnemyLvl,Enemy,1)     [9,5] DropItem 0x0 0x0 0x0 [IronSword, ChestKey] AIRAI
+UNIT 0x86 Soldier 0x40 Level(Ch6EnemyLvl,Enemy,1)     [9,5] 0x0 0x0 0x0 0x0 [IronLance] AIRAI
+UNIT 0x86 Archer_F 0x40 Level(Ch6EnemyLvl,Enemy,1)     [2,4] 0x0 0x0 0x0 0x0 [SteelBow] AIRAI
+
+UNIT 0x86 Mercenary 0x40 Level(Ch6EnemyLvl,Enemy,1)     [9,5] 0x0 0x0 0x0 0x0 [SteelSword] AIRAI
+UNIT 0x86 PegasusKnight 0x40 Level(Ch6EnemyLvl,Enemy,1)     [8,2] 0x0 0x0 0x0 0x0 [SlimLance] AIRAI
+
+//UNIT 0x86 Mage 0x40 Level(Ch6EnemyLvl,Enemy,1)     [10,3] 0x0 0x0 0x0 0x0 [Thoron] AIRAI
+UNIT 0x86 Mage 0x40 Level(Ch6EnemyLvl,Enemy,1)     [10,4] 0x0 0x0 0x0 0x0 [Thunder] AIRAI
+
+#ifndef _NORMAL_MODE_
+//UNIT 0x86 PegasusKnight 0x40 Level(Ch6EnemyLvl,Enemy,1)     [10,8] 0x0 0x0 0x0 0x0 [Javelin] AIRAI
+UNIT 0x86 PegasusKnight 0x40 Level(Ch6EnemyLvl,Enemy,1)     [11,8] 0x0 0x0 0x0 0x0 [SlimLance] AIRAI
+#endif
+
+// Thieves
+UNIT 0x85 Thief 0x40 Level(Ch6EnemyLvl,Enemy,1)     [1,10] DropItem 0x0 0x0 0x0 [LightBrand,PetrifyStaff] LootingThiefAI
+//UNIT 0x85 Thief 0x40 Level(Ch6EnemyLvl,Enemy,1)     [1,10] DropItem 0x0 0x0 0x0 [LightBrand,Thoron] LootingThiefAI
+//UNIT 0x85 Thief 0x40 Level(Ch6EnemyLvl,Enemy,1)     [1,10] DropItem 0x0 0x0 0x0 [LightBrand,Rapier] LootingThiefAI
+
+//UNIT 0x85 Thief 0x40 Level(Ch6EnemyLvl,Enemy,1)     [2,12] DropItem 0x0 0x0 0x0 [LightBrand,FrostBow] LootingThiefAI
+UNIT 0x85 Thief 0x40 Level(Ch6EnemyLvl,Enemy,1)     [2,12] DropItem 0x0 0x0 0x0 [LightBrand,Thoron] LootingThiefAI
+UNIT
+
+Traps1:
+ENDTRAP
+ALIGN 4
+
+Traps2:
+ENDTRAP
+ALIGN 4
+
+CutsceneUnits:
+UNIT Edgar 0x1 0x1 Level(1,Ally,0)   [12,23] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT Celia Dancer 0x1 Level(1,Ally,0)   [13,23] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT Quentin Mage 0x1 Level(8,Ally,0)   [12,20] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT Thomas Shaman 0x1 Level(8,Ally,0)   [13,20] 0x0 0x0 0x0 0x0 [IronLance] NoAI
+UNIT
+
+BeginningScene:
+// Two rune uses for this chapter
+COUNTER_SET 0 2
+COUNTER_SET 1 2
+/*
+// Enable unlocked runes
+CHECK_EVENTID SwarpRuneUnlockedFlag
+BEQ 1 0 0xC // If flag is not set, skip
+ENUF SwarpRuneDisabledFlag
+LABEL 1
+// Enable runes usage
+ENUF RuneMenuDisableFlag
+*/
+
+LoadEnemies(EnemyUnits1)
+LoadEnemies(EnemyUnits2)
+LoadEnemies(EnemyUnits3)
+MUSC GS_BabiLighthouse
+LOAD1 0x2 CutsceneUnits
+ENUN
+
+SetBackground(0x34)
+CAM1 [13,23]
+//Text(TEXT_Ch6_Start)
+Text(PlaceholderText)
+ClearBackground
+MUSC KitN_SortieFormation
+
+MOVE 15 Edgar [12,21]
+ENUN
+MOVE 15 Celia [13,21]
+ENUN
+
+//Text(TEXT_Ch6_Start2)
+Text(PlaceholderText)
+CAM1 [6,10]
+FlashCursor(6,10,0x20)
+//Text(TEXT_Ch6_Start_Lucy)
+Text(PlaceholderText)
+CLEA 0x0
+LoadPlayerUnits(Units1)
+
+/*
+TUTORIALTEXTBOXSTART
+CenterTutorialTextBox
+TEXTSHOW TEXT_Ch6_AntiturtleInfo
+TEXTEND
+*/
+
+GotoPrepScreen
+
+EndingScene:
+// Reset rune menu and uses
+ENUF RuneMenuDisableFlag
+//COUNTER_SET 0 2
+// Deactivate all runes
+ENUF HawkeyeRuneFlag
+ENUF MiracleRuneDisabledFlag
+ENUF MiracleActiveFlag
+//ENUF SwarpActiveFlag
+// Enable unlocked runes
+CHECK_EVENTID SwarpRuneUnlockedFlag
+BEQ 1 0 0xC // If flag is not set, skip
+ENUF SwarpRuneDisabledFlag
+ENUF SwarpActiveFlag
+LABEL 1
+
+MUSC ToS_LastBattleDecision
+SetBackground(0x34)
+Text(PlaceholderText)
+MNC2 Chapter7
+ENDA

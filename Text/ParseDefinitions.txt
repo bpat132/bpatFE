@@ -66,6 +66,8 @@
 [FR] = [FarRight]
 [FFR] = [FarFarRight]
 
+[OpenQuote] = [0x93]
+
 [HorseIcon] = [0x7B]
 [ArmorIcon] = [0x7C]
 [PegasusIcon] [0x7D]

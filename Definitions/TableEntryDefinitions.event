@@ -15,7 +15,7 @@
 #define IronCost 4
 #define SteelCost 6
 #define SilverCost 16
-#define SlimCost 6
+#define SlimCost 8
 //#define KillerCost 10
 #define KillerCost 14
 //#define ReaverCost 10
@@ -43,6 +43,7 @@
 #define SapphireLance ToxinLance
 #define EmeraldAxe PoisonAxe
 #define SwiftSword SlimSword
+#define Chakram Hatchet
 #define Bolganone Elfire
 #define Thoron Bolting
 #define RegalLance Reginleif
@@ -54,6 +55,9 @@
 #define Ruin CrimsonEye
 #define PetrifyStaff 0xbe
 #define Darksword 0xbf
+
+// Classes
+#define Thief_F 0x54
 
 // Characters
 #define Edgar 0x1
@@ -149,9 +153,9 @@
 #define Ch5BossMug 0x35
 #define Ch6BossMug 0x36
 
-#define JefferyMug 0x37
-#define GordonMug 0x38
-#define LouisMug 0x39
+#define JefferyMug 0x38
+#define GordonMug 0x39
+#define LouisMug 0x3a
 
 #define CraigMug 0x30
 #define HowardMug 0x4e

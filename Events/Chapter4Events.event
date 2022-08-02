@@ -11,7 +11,7 @@
 
 EventPointerTable(0x14, PointerList)
 
-EscapePointPointerTable(3, Ch4EscapePoints)
+EscapePointPointerTable(Chapter4, Ch4EscapePoints)
 Ch4EscapePoints:
 EscapePoint(16, 0, MoveUp)
 EscapePoint(17, 0, MoveUp)
@@ -201,11 +201,13 @@ BeginningScene:
 // Two rune uses for this chapter
 COUNTER_SET 0 2
 COUNTER_SET 1 2
+/*
 // Disable locked runes
 ENUT CelerityRuneDisabledFlag
 ENUT SwarpRuneDisabledFlag
 // Enable runes usage
 ENUF RuneMenuDisableFlag
+*/
 
 MUSC OgreBattle_WallOfDefense
 LoadEnemies(EnemyUnits1)
@@ -240,8 +242,8 @@ GotoPrepScreen
 EndingScene:
 // Reset rune menu and uses
 ENUF RuneMenuDisableFlag
-COUNTER_SET 0 2
-// Disable active runes
+//COUNTER_SET 0 2
+// Deactivate and enable runes
 ENUF HawkeyeRuneFlag
 ENUF MiracleRuneDisabledFlag
 ENUF MiracleActiveFlag
