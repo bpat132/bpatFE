@@ -24,12 +24,17 @@ Follow-ups occur before counter; eff. vs [ArmorIcon]/[HorseIcon].[X]
 
 ## RubySwordName
 Ruby Sword[X]
-## SapphireLanceName
-Sapphire Lnc[X]
+## SapphireLanceName ^
+Sapphire Lance[X]
 ## EmeraldAxeName
 Emerald Axe[X]
 ## GemWeaponDesc
 Doubles weapon triangle.[X]
+
+## BlessedLanceName ^
+Blessed Lance[X]
+## BlessedWeaponDesc
+Wielder heals 5 HP upon dealing damage.[X]
 
 ## BolganoneName
 Bolganone[X]
@@ -52,6 +57,12 @@ Empowered by fire magic.[X]
 
 ## WindSwordDesc
 Magic, effective against fliers.[X]
+
+## BattleAxeDesc
+A powerful but heavy axe.[X]
+
+## DevilAxeDesc
++30 hit/crit when HP is 25% or less.[X]
 
 ## DarkswordName
 Darksword[X]

@@ -21,34 +21,33 @@ tst r0, r1
 bne End
 @ @if another skill already activated, don't do anything
 
-@if damage is 0, do nothing
-ldrh r2, [r7, #4] @final damage
-mov r0, #0
-cmp r0, r2
-beq End
+@only when attacker initiates
+ldr r0, =0x203a4ec
+cmp r4, r0
+@bne End
 
-@check for weapons
+@make sure attacker has magic weapon
+mov r0, r4
+mov r1, #0x4c    @Move to the attacker's weapon ability
+ldr r1, [r0,r1]
+mov r2, #0x42
+tst r1, r2
+@bne     End @do nothing if magic bit set
+
 mov r1, #0x48
 ldrb r0, [r4, r1] @weapon ID
 mov r1, #0xbf @ Darksword
 cmp r0, r1
-@bne End
-beq Lose10HP
-mov r1, #0x82 @ Blessed Lance
-cmp r0, r1
-beq Gain5HP
-b End
+bne End
 
-Lose10HP:
-mov r3, #10 @ take 10 damage when attacking
-neg r3, r3 @r2 contains the damage from counter.
-b DoHPChange
 
-Gain5HP:
-mov r3, #5
-@b DoHPChange
+@check if defender will die
+ldrh r2, [r7, #4] @final damage
+mov r0, #0x13
+ldrb r0, [r5, r0] @remaining hp
+cmp r2, r0
+@bge End @gonna kill, so don't activate
 
-DoHPChange:
 @if we proc, set the hp update flag
 ldr     r2,[r6]    
 lsl     r1,r2,#0xD                @ 0802B42C 0351     
@@ -72,11 +71,12 @@ str     r0,[r6]                @ 0802B43A 6018
 @grab damage dealt
 @ldrh r2, [r7, #4] @final damage
 @ lsr r2, #1 @optionally halve
-@mov r2, #10 @ take 10 damage when attacking
+mov r2, #10 @ take 10 damage when attacking
+neg r2, r2 @r2 contains the damage from counter.
 mov r0, #5
 ldsb r0, [r6, r0] @current hp change
-add r3, r0
-strb r3, [r6, #5] @set damage
+add r2, r0
+strb r2, [r6, #5] @set damage
 
 
 End:

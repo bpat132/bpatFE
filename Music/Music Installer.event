@@ -75,8 +75,14 @@ SongTable(AA_Gumshoe,AA_Gumshoe_bpat,MapMusicGroup)
 #include "MusicEvents/Langrisser_Story_Pik.event"
 SongTable(Langrisser_Story,StoryLangrisser,MapMusicGroup)
 
-#include "MusicEvents/ToS_Sheena_Chair.event"
-SongTable(ToS_Sheena,songShihna,MapMusicGroup)
-
 #include "MusicEvents/FE11_Trouble_Sme.event"
 SongTable(FE11_Trouble,CombatMission,MapMusicGroup)
+
+//#include "MusicEvents/ToS_Sheena_Chair.event"
+//SongTable(ToS_Sheena,songShihna,MapMusicGroup)
+
+#include "MusicEvents/FFT_Trisection_Alusq.event"
+SongTable(FFT_Trisection,trisectiontest,MapMusicGroup)
+
+#include "MusicEvents/Suikoden_ArmyAdvance_Pandan.event"
+SongTable(Suikoden_ArmyAdvance,songB2,MapMusicGroup)

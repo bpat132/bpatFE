@@ -10,6 +10,8 @@ BossBGMEntry(Ch4Boss, NierA_DCDA)
 BossBGMEntry(Craig, NierA_DCDA)
 BossBGMEntry(Ch5Boss, NierA_DCDA)
 BossBGMEntry(Ch6Boss, NierA_DCDA)
+BossBGMEntry(Gordon, NierA_DCDA)
+BossBGMEntry(Jeffery, NierA_DCDA)
 BossBGMTerminator
 
 PUSH

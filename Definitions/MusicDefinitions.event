@@ -4,14 +4,13 @@
 #define Castlevania2_BloodyTears 0x10 // replacing near victory music
 #define YuNo_BurialChamber 0x43 // replacing title music
 
-#define FFMQ_Battle1 0x26D // ch1-X player phase map music
-#define MadouMonogatari123_I_TRY_OUT 0x26E // ch1-X enemy phase map music
-
+#define FFMQ_Battle1 0x26D // ch1-6 player phase map music
+#define MadouMonogatari123_I_TRY_OUT 0x26E // ch1-6 enemy phase map music
 #define KitN_SortieFormation 0x26F // event music: tense (good guys)
 #define BoF2_StrongerMonsters 0x270 // event music: upbeat
 #define DW3_Oppression 0x271 // event music: bad guys
 #define EO3_ThoseWhoSlayAndFall 0x272 // event music: recruitment
-#define NierA_DCDA 0x273 // ch1-X boss music
+#define NierA_DCDA 0x273 // ch1-6 boss music
 #define ToS_LastBattleDecision 0x274 // event music: victory
 #define OgreBattle_WallOfDefense 0x275 // event music: preparing for battle
 #define GS_BabiLighthouse 0x276 // event music: chill (mysterious)
@@ -20,6 +19,8 @@
 #define AA_Gumshoe 0x279 // event music: chill
 #define Langrisser_Story 0x280 // event music: chill
 #define FE11_Trouble 0x281 // event music: tense
-#define ToS_Sheena 0x282 // event music: chill (unused)
+//#define ToS_Sheena 0x282 // event music: chill (unused)
+#define FFT_Trisection 0x283 // ch7 player phase map music
+#define Suikoden_ArmyAdvance 0x284 // ch7 enemy phase map music
 
 #define TestSong 0x2 // for testing music

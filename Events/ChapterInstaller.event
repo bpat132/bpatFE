@@ -1,4 +1,5 @@
 //#include "Dummy_map.event"
+#include "REDAs.event"
 #ifdef _SKIP_CH1_
 {
 	ALIGN 4

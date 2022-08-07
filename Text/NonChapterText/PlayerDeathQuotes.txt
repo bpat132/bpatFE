@@ -70,3 +70,24 @@
 
 ## LucyDeathQuote
 [OpenMidRight][LoadLucy][OpenMidRight]It hurts[.][ToggleMouthMove]...[NL][ToggleMouthMove]Am I... dying?[A][OpenMidRight][CloseEyes][X]
+
+## RoseDeathQuote
+[OpenMidRight][LoadRose][OpenMidRight]Placeholder death quote...[A][OpenMidRight][CloseEyes][X]
+
+## ClintDeathQuote
+[OpenMidRight][LoadClint][OpenMidRight]Gah...[.][ToggleMouthMove]Seems I'm showing my age...[NL][ToggleMouthMove]Regrettably, I must withdraw...[A][X]
+
+## VictoriaDeathQuote
+[OpenMidRight][LoadVictoria][OpenMidRight]Placeholder death quote...[A][OpenMidRight][CloseEyes][X]
+
+## MarieDeathQuote
+[OpenMidRight][LoadMarie][OpenMidRight]Placeholder death quote...[A][OpenMidRight][CloseEyes][X]
+
+## EvelynDeathQuote
+[OpenMidRight][LoadEvelyn][OpenMidRight]Placeholder death quote...[A][OpenMidRight][CloseEyes][X]
+
+## DonovanDeathQuote
+[OpenMidRight][LoadDonovan][OpenMidRight]Placeholder death quote...[A][OpenMidRight][CloseEyes][X]
+
+## TrentDeathQuote
+[OpenMidRight][LoadTrent][OpenMidRight]Placeholder death quote...[A][OpenMidRight][CloseEyes][X]

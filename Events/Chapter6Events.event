@@ -39,15 +39,20 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+TurnEventPlayer(0xA,TurnCountEvent,10)
 END_MAIN
+
+TurnCountEvent:
+NoFade
+ENDA
 
 CharacterBasedEvents:
 CharacterEventBothWays(0x14,TalkEventLucy, Celia, Lucy)
 END_MAIN
 
 TalkEventLucy:
-//Text(TEXT_Ch6_Celia_Lucy_Talk)
-Text(PlaceholderText)
+Text(TEXT_Ch6_Celia_Lucy_Talk)
+//Text(PlaceholderText)
 NoFade
 CUSA Lucy
 ENDA
@@ -98,8 +103,8 @@ UNIT
 #define Ch6EnemyLvl 9
 
 EnemyUnits1:
-//UNIT Ch6Boss Mercenary 0x40 Level(12,Enemy,0)     [10,0] 0x0 0x0 0x0 0x0 [LightBrand,Darksword] NeverMoveAI
-UNIT Ch6Boss Mercenary 0x40 Level(12,Enemy,0)     [10,0] 0x0 0x0 0x0 0x0 [LightBrand,Darksword] AttackInRangeAI
+UNIT Ch6Boss Mercenary 0x40 Level(12,Enemy,0)     [10,0] 0x0 0x0 0x0 0x0 [LightBrand,Darksword] NeverMoveAI
+//UNIT Ch6Boss Mercenary 0x40 Level(12,Enemy,0)     [10,0] 0x0 0x0 0x0 0x0 [LightBrand,Darksword] AttackInRangeAI
 UNIT Lucy Thief_F 0x1 Level(6,Enemy,0)     [6,10] 0x0 0x0 0x0 0x0 [SwiftSword,Vuln] LootingThiefAI
 
 // Right 
@@ -208,7 +213,8 @@ UNIT 0x85 Thief 0x40 Level(Ch6EnemyLvl,Enemy,1)     [1,10] DropItem 0x0 0x0 0x0 
 //UNIT 0x85 Thief 0x40 Level(Ch6EnemyLvl,Enemy,1)     [1,10] DropItem 0x0 0x0 0x0 [LightBrand,Rapier] LootingThiefAI
 
 //UNIT 0x85 Thief 0x40 Level(Ch6EnemyLvl,Enemy,1)     [2,12] DropItem 0x0 0x0 0x0 [LightBrand,FrostBow] LootingThiefAI
-UNIT 0x85 Thief 0x40 Level(Ch6EnemyLvl,Enemy,1)     [2,12] DropItem 0x0 0x0 0x0 [LightBrand,Thoron] LootingThiefAI
+//UNIT 0x85 Thief 0x40 Level(Ch6EnemyLvl,Enemy,1)     [2,12] DropItem 0x0 0x0 0x0 [LightBrand,Thoron] LootingThiefAI
+UNIT 0x85 Thief 0x40 Level(Ch6EnemyLvl,Enemy,1)     [2,12] DropItem 0x0 0x0 0x0 [LightBrand,Rapier] LootingThiefAI
 UNIT
 
 Traps1:
@@ -249,8 +255,8 @@ ENUN
 
 SetBackground(0x34)
 CAM1 [13,23]
-//Text(TEXT_Ch6_Start)
-Text(PlaceholderText)
+Text(TEXT_Ch6_Start)
+//Text(PlaceholderText)
 ClearBackground
 MUSC KitN_SortieFormation
 
@@ -259,21 +265,21 @@ ENUN
 MOVE 15 Celia [13,21]
 ENUN
 
-//Text(TEXT_Ch6_Start2)
-Text(PlaceholderText)
+Text(TEXT_Ch6_Start2)
+//Text(PlaceholderText)
 CAM1 [6,10]
 FlashCursor(6,10,0x20)
-//Text(TEXT_Ch6_Start_Lucy)
-Text(PlaceholderText)
+Text(TEXT_Ch6_Start_Lucy)
+//Text(PlaceholderText)
 CLEA 0x0
 LoadPlayerUnits(Units1)
 
-/*
+
 TUTORIALTEXTBOXSTART
 CenterTutorialTextBox
 TEXTSHOW TEXT_Ch6_AntiturtleInfo
 TEXTEND
-*/
+
 
 GotoPrepScreen
 
@@ -296,5 +302,13 @@ LABEL 1
 MUSC ToS_LastBattleDecision
 SetBackground(0x34)
 Text(PlaceholderText)
+
+CHECK_EVENTID 0xA
+BNE 2 0 0xC
+Text(PlaceholderText)
+SVAL 0x3 DevilAxe
+GIVEITEMTO Edgar
+LABEL 2
+
 MNC2 Chapter7
 ENDA

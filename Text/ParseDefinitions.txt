@@ -128,6 +128,6 @@
 [LoadCh6Boss] = [LoadFace][0x36][0x1]
 
 [LoadCraig] = [LoadFace][0x30][0x1]
-[LoadJeffery] = [LoadFace][0x37][0x1]
-[LoadGordon] = [LoadFace][0x38][0x1]
-[LoadLouis] = [LoadFace][0x39][0x1]
+[LoadJeffery] = [LoadFace][0x38][0x1]
+[LoadGordon] = [LoadFace][0x39][0x1]
+[LoadLouis] = [LoadFace][0x3a][0x1]

@@ -5,7 +5,7 @@
 //#define _TEST_CH3_
 //#define _TEST_CH4_
 //#define _TEST_CH5_
-//#define _TEST_CH6_
+#define _TEST_CH6_
 //#define _TEST_CH7_
 //#define _TEST_CH8_
 //#define _TEST_CH9_

@@ -28,7 +28,13 @@ beq GoBack
 
 mov r0, r4
 
-@avoid
+@hit
+add r0,#0x64
+ldrh r3,[r0]
+add r3,#30
+strh r3,[r0]
+
+@crit
 add r0,#0x66
 ldrh r3,[r0]
 add r3,#30

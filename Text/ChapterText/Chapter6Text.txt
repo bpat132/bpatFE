@@ -1,0 +1,56 @@
+
+## TEXT_Ch6_Start
+[ConversationText]
+[ML][LoadCelia][MR][LoadEdgar]
+[ML]Ugh, this place is disgusting! Out of all the routes to the capital, why must we travel this way?
+[MR]With our numbers, it's important we remain unnoticed as long as possible. The army doesn't patrol these parts, so we're unlikely to encounter anyone but bandits and treasure hunters.
+[ML]I suppose it's better to run into bandits than the army. Still, these ruins creep me out, I can't believe this used to be a city. Feels like we might accidentally unleash an ancient evil.
+[MR]You read too many stories.[.4]
+Watch your step!
+[ML][MoveMidLeft]
+[ML]Ah! This is terrible... Wait, Edgar, look over there. Hopefully those men are treasure hunters rather than bandits.
+[MR]They don't look armed, let's go and see. There's only two of them.
+[X]
+
+## TEXT_Ch6_Start2
+[ConversationText]
+[FL][LoadCelia][L][LoadEdgar][R][LoadQuentin][FR][LoadThomas]
+[FR]Damn, how many of these goons are there? Looks like we'll have to fight our way out after all.
+[R]Not a step closer! Back off or I'll blast you to pieces!
+[FL]Wait, wait! We're not looking to fight you, we're just passing through.
+[L]Are you two in some kind of trouble?
+[R]We were trying to salvage artifacts and tomes from these ruins. Turns out some bandits made these ruins their camp, and took offense to our intrusion.
+[FR]They must have had the same idea as us. No doubt the treasure here is valuable, but it'd be a shame for it to all be looted and sold off.
+[R]We can worry about that later, Thomas. They're not gonna let us through without a fight.
+[L]Is there no way around them?
+[FR]Afraid not, the other passages we found are completely submerged.
+[L]We've got little choice but to fight our way through then. You'll help too, right?
+[R]Of course. The two of us have studied magic for years. I assure you, we can hold our own in battle.
+[X]
+
+## TEXT_Ch6_Start_Lucy
+[ConversationText]
+[L][LoadLucy]
+I ought to thank them for leading me to all this treasure.
+Should be easy to slip away with the loot while everyone's busy killing each other, then all I'll have to do is find somewhere to pawn it off.
+[X]
+
+## TEXT_Ch6_AntiturtleInfo
+Rout in 9 turns to[NL]
+receive a [ToggleRed]Devil Axe[ToggleRed]![A][X]
+
+## TEXT_Ch6_Celia_Lucy_Talk
+[ConversationText]
+[ML][LoadCelia][FFR][LoadLucy]
+[FFR][MoveLeft]
+[L][MoveMidRight]
+[ML]Ah, wait!
+[MR]Shouldn't show off jewelry you aren't willing to part with around here. Consider this a learning experience.
+[ML]No, that's not it. I- I want to hire you!
+[MR]Huh?
+[ML]You don't look like such a bad person; you're not trying to kill us like the rest of your friends. And we could use someone with your unique skills.
+[MR]Right... And why should I trust you? Most people don't offer jobs to someone who just robbed them.
+[ML]I'm not like most people. Anyway, I'm sure you'll be better off with us than hanging around bandits. And you can keep that bracelet, think of it as part of your fee.
+[MR]Hahaha, you know what? Sure, I'll do it. You're the weirdest rich lady I've ever met, but I can't help but trust you when you say all that with a straight face.
+Can't say I'm the greatest fighter around, but if you need something stolen or a lock picked then I'm your girl.
+[X]

@@ -32,18 +32,99 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+TurnEventPlayer(0,Turn1Event,1)
+TurnEventPlayer(0,EnemyReinforcements1,2) // SW brigand
+TurnEventPlayer(0,EnemyReinforcements2,5) // cavs
+TurnEventPlayer(0,EnemyReinforcements3,6) // NE brigand + wyverns
+TurnEventPlayer(0,EnemyReinforcements4,8) // pegs
 END_MAIN
+
+Turn1Event:
+ENUT 0x7
+ENDA
+
+EnemyReinforcements1:
+EnemyReinforcements(EnemyReinforcementUnits1)
+
+EnemyReinforcements2:
+EnemyReinforcements(EnemyReinforcementUnits2)
+
+EnemyReinforcements3:
+EnemyReinforcements(EnemyReinforcementUnits3)
+
+EnemyReinforcements4:
+EnemyReinforcements(EnemyReinforcementUnits4)
 
 CharacterBasedEvents:
+CharacterEventBothWays(0x15,TalkEventClint, Rose, Clint)
 END_MAIN
 
+TalkEventClint:
+//Text(TEXT_Ch7_Rose_Clint_Talk)
+Text(PlaceholderText)
+CUSA Clint
+NoFade
+ENDA
+
 LocationBasedEvents:
-Seize(0,0)
+Seize(0x7,SeizeEvent,8,3) // Can only seize if flag 0x7 is unset
+//Seize(0x7,SeizeEvent,15,21) // Can only seize if flag 0x7 is unset
+Village(0x8,VillageEvent1,1,10)
+Village(0x9,VillageEvent2,17,8)
 END_MAIN
+
+SeizeEvent:
+ENUT 0x3
+CALL EndingScene
+ENDA
+
+VillageEvent1:
+	VillageEventItem(PlaceholderText, Village, Thoron)
+	
+VillageEvent2:
+	VillageEventItem(PlaceholderText, Village, BlessedLance)
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
+
+AREA 0xA AIChangeToAggressiveArea [0,0] [5,7]
+AREA 0xA AIChangeToAggressiveArea [0,0] [18,6]
+
+AFEV 0x0 CheckMinibossDead 0x0
 END_MAIN
+
+AIChangeToAggressiveArea:
+
+CHECK_ALLEGIANCE 0xFFFF
+BNE 1 0 0xC // Clear flag 0xA if not player unit
+
+CAM1 [0,0]
+FlashCursor(1,1,0x40)
+MUSC OgreBattle_WallOfDefense
+Text(PlaceholderText)
+
+SetAI(Gordon, 0x00,0x00,0x04,0x00)
+SetUnitStatus(Gordon, 0x40, 0x04)
+SetAI(0x84, 0x00,0x00,0x04,0x00)
+SetAllUnitStatus(0x84, 0x40, 0x04)
+ENUT 0xB
+GOTO 2
+LABEL 1
+ENUF 0xA
+
+LABEL 2
+
+NoFade
+ENDA
+
+CheckMinibossDead:
+//CHECK_EVENTID 0x2
+CHECK_EVENTID 0xD
+BEQ 1 0 0xC
+ENUF 0x7
+LABEL 1
+NoFade
+ENDA
 
 Dunno1:
 END_MAIN
@@ -150,6 +231,32 @@ UNIT 0x80 Fleet 0x40 Level(Ch7EnemyLvl,Enemy,1)     [10,7] 0x0 0x0 0x0 0x0 [Ball
 UNIT 0x80 Fleet 0x40 Level(Ch7EnemyLvl,Enemy,1)     [7,14] 0x0 0x0 0x0 0x0 [Ballista] NeverMoveAI
 
 UNIT 0x82 Brigand 0x40 Level(Ch7EnemyLvl,Enemy,1)     [0,7] 0x0 0x0 0x0 0x0 [SteelAxe] AttackingBrigandAI
+UNIT
+
+EnemyReinforcementUnits1:
+UNIT 0x82 Brigand 0x40 Level(10,Enemy,1)     [0,21] 0x0 0x0 0x0 0x0 [HandAxe] AttackingBrigandAI
+UNIT
+
+EnemyReinforcementUnits2:
+//UNIT 0x82 Brigand 0x40 Level(10,Enemy,1)     [0,17] 0x0 0x0 0x0 0x0 [IronAxe] AttackingBrigandAI // pointless?
+UNIT 0x80 Cavalier 0x40 Level(10,Enemy,1)     [18,9] 0x0 0x0 0x0 0x0 [IronLance] PWHAI
+UNIT 0x80 Cavalier 0x40 Level(10,Enemy,1)     [18,10] 0x0 0x0 0x0 0x0 [Javelin] PWHAI
+UNIT
+
+EnemyReinforcementUnits3:
+UNIT 0x82 Brigand 0x40 Level(10,Enemy,1)     [18,4] 0x0 0x0 0x0 0x0 [Labrys] AttackingBrigandAI
+UNIT 0x80 WyvernRider 0x40 Level(10,Enemy,1)     [13,0] 0x0 0x0 0x0 0x0 [IronAxe] PWHAI
+//UNIT 0x80 WyvernRider 0x40 Level(10,Enemy,1)     [15,0] 0x0 0x0 0x0 0x0 [HandAxe] PWHAI
+UNIT 0x80 WyvernRider 0x40 Level(10,Enemy,1)     [15,0] 0x0 0x0 0x0 0x0 [IronAxe] PWHAI
+UNIT 0x80 WyvernRider 0x40 Level(10,Enemy,1)     [17,0] 0x0 0x0 0x0 0x0 [SteelAxe] PWHAI
+UNIT
+
+EnemyReinforcementUnits4:
+//UNIT 0x80 PegasusKnight 0x40 Level(10,Enemy,1)     [0,4] 0x0 0x0 0x0 0x0 [Javelin] PWHAI
+UNIT 0x80 PegasusKnight 0x40 Level(10,Enemy,1)     [0,4] 0x0 0x0 0x0 0x0 [SteelLance] PWHAI
+//UNIT 0x80 PegasusKnight 0x40 Level(10,Enemy,1)     [1,5] 0x0 0x0 0x0 0x0 [IronLance] PWHAI
+UNIT 0x80 PegasusKnight 0x40 Level(10,Enemy,1)     [0,5] 0x0 0x0 0x1 REDA1R5 [IronLance] PWHAI
+UNIT 0x80 PegasusKnight 0x40 Level(10,Enemy,1)     [0,6] 0x0 0x0 0x0 0x0 [SlimLance] PWHAI
 UNIT
 
 CutsceneUnits:

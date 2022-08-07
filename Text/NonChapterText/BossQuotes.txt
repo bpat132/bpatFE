@@ -47,3 +47,32 @@ Ye dare challenge me? No one stands in the way of my plundering![A][X]
 ## Ch5BossDeathQuote
 [BattleText]
 [OpenMidLeft][LoadCh5Boss][OpenMidLeft]Ye got the devil's luck...[.][A][X]
+
+## Ch6BossBattleQuote
+[BattleText]
+[OpenMidLeft][LoadCh6Boss][OpenMidLeft]
+Sorry pal, but your luck's run out. Tremble before my blade![A][X]
+
+## Ch6BossDeathQuote
+[BattleText]
+[OpenMidLeft][LoadCh6Boss][OpenMidLeft]How..?[.][A][X]
+
+## Ch7JefferyBattleQuote
+[BattleText]
+[OpenMidLeft][LoadJeffery][OpenMidLeft]
+You think yourselves heroes? You're mere idealists with your heads in the clouds. I'll send you crashing down to the earth![A][X]
+
+## Ch7JefferyDeathQuote
+[BattleText]
+[OpenMidLeft][LoadJeffery][OpenMidLeft]
+Well fought... Melerra's future lies in your hands now...[CloseEyes][A][X]
+
+## Ch7GordonBattleQuote
+[BattleText]
+[OpenMidLeft][LoadGordon][OpenMidLeft]
+It's not too late to surrender. Too much Melerran blood has been spilled today. But should you persist, I'll show you no mercy![A][X]
+
+## Ch7GordonDeathQuote
+[BattleText]
+[OpenMidLeft][LoadGordon][OpenMidLeft]
+Marie... Forgive your fool of a father...[CloseEyes][A][X]

@@ -8,7 +8,8 @@
 #define ReaverDura 15
 #define GemDura 20
 #define EffectiveDura 15
-#define ThrowingDura 25
+//#define ThrowingDura 25
+#define ThrowingDura 20
 #define Throwing2Dura 20
 #define Throwing3Dura 15
 
@@ -26,10 +27,16 @@
 #define Throwing2Cost 16
 #define Throwing3Cost 24
 
+/*
 #define ETomeDura 45
 #define DTomeDura 35
 #define CTomeDura 30
 #define BTomeDura 25
+*/
+#define ETomeDura 40
+#define DTomeDura 30
+#define CTomeDura 25
+#define BTomeDura 20
 
 #define ETomeCost 4
 #define DTomeCost 6
@@ -55,6 +62,7 @@
 #define Ruin CrimsonEye
 #define PetrifyStaff 0xbe
 #define Darksword 0xbf
+#define BlessedLance BrightLance
 
 // Classes
 #define Thief_F 0x54
