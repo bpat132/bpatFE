@@ -161,14 +161,14 @@ UNIT Kurt Mercenary 0x1 Level(Ch7Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronSword,
 UNIT Matthias Soldier 0x1 Level(Ch7Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronLance,SteelLance,Javelin,SapphireLance] NoAI
 UNIT Stella Mage_F 0x1 Level(Ch7Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Fire,Thunder,Bolganone,Vuln] NoAI
 UNIT Nico Thief 0x1 Level(6,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [RubySword,FireSword,IronBlade,SteelSword] NoAI
-UNIT Lisa Cleric 0x1 Level(Ch7Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Heal,Vuln,Vuln,Vuln] NoAI
+UNIT Lisa Cleric 0x1 Level(Ch7Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Heal,PetrifyStaff,Vuln,Vuln] NoAI
 UNIT Jane Knight_F 0x1 Level(Ch7Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [EmeraldAxe,SteelAxe,HandAxe,Hammer] NoAI
-UNIT Ethan WyvernRider 0x1 Level(Ch7Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronAxe,SteelAxe,HandAxe,Labrys] NoAI
+UNIT Ethan WyvernRider 0x1 Level(Ch7Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [SteelAxe,HandAxe,Labrys,DevilAxe] NoAI
 UNIT Sasha Myrmidon_F 0x1 Level(Ch7Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [SlimSword,KillingEdge,SteelBlade,FireSword] NoAI
 UNIT Beatrice Cavalier_F 0x1 Level(Ch7Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [SlimLance,IronLance,SteelLance,Javelin] NoAI
 UNIT Daniel Cavalier 0x1 Level(Ch7Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronLance,SteelLance,Javelin,Axereaver] NoAI
 UNIT Isabelle Troubadour 0x1 Level(7,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Heal,FreezeStaff,Physic,Vuln] NoAI
-UNIT Richard Mercenary 0x1 Level(11,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronSword,SteelSword,FireSword,SteelBlade] NoAI
+UNIT Richard Mercenary 0x1 Level(11,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Rapier,SteelSword,FireSword,SteelBlade] NoAI
 UNIT Cameron Archer 0x1 Level(Ch7Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronBow,SteelBow,Longbow,KillerBow] NoAI
 UNIT Rowan Myrmidon 0x1 Level(12,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [SteelBlade,SlimSword,Lancereaver,LightBrand] NoAI
 UNIT Violet PegasusKnight 0x1 Level(Ch7Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [SlimLance,SteelLance,Javelin,KillerLance] NoAI
@@ -177,6 +177,37 @@ UNIT Ted Pirate 0x1 Level(Ch7Level,Ally,0) [0,0] 0x0 0x0 0x0 0x0 [Labrys,SteelAx
 UNIT Quentin Mage 0x1 Level(Ch7Level,Ally,0) [0,0] 0x0 0x0 0x0 0x0 [Fire,Thunder,Bolganone,Vuln] NoAI
 UNIT Thomas Shaman 0x1 Level(Ch7Level,Ally,0) [0,0] 0x0 0x0 0x0 0x0 [Flux,Rend,Ruin,Vuln] NoAI
 UNIT Lucy Thief 0x1 Level(6,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [FireSword,SwiftSword,SteelBlade,Vuln] NoAI
+UNIT
+
+
+#define Ch8Level 11
+UnitsCh8:
+UNIT Edgar EphraimLord 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronLance,RegalLance,SteelLance,Javelin] NoAI
+UNIT Celia Dancer 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Vuln,Vuln,Vuln,Vuln] NoAI
+UNIT Jenna Archer_F 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronBow,SteelBow,ShortBow,Longbow] NoAI
+UNIT Duncan Fighter 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronAxe,SteelAxe,HandAxe,Swordreaver] NoAI
+UNIT Kurt Mercenary 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronSword,SteelSword,SteelBlade,LightBrand] NoAI
+UNIT Matthias Soldier 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronLance,SteelLance,Javelin,SapphireLance] NoAI
+UNIT Stella Mage_F 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Fire,Thunder,Bolganone,Vuln] NoAI
+UNIT Nico Thief 0x1 Level(7,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [RubySword,FireSword,IronBlade,SteelSword] NoAI
+UNIT Lisa Cleric 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Heal,PetrifyStaff,Vuln,Vuln] NoAI
+UNIT Jane Knight_F 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [EmeraldAxe,SteelAxe,HandAxe,Hammer] NoAI
+UNIT Ethan WyvernRider 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [SteelAxe,HandAxe,Labrys,DevilAxe] NoAI
+UNIT Sasha Myrmidon_F 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [SlimSword,KillingEdge,SteelBlade,FireSword] NoAI
+UNIT Beatrice Cavalier_F 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [SlimLance,IronLance,SteelLance,Javelin] NoAI
+UNIT Daniel Cavalier 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronLance,SteelLance,Javelin,Axereaver] NoAI
+UNIT Isabelle Troubadour 0x1 Level(8,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Heal,FreezeStaff,Physic,Vuln] NoAI
+UNIT Richard Mercenary 0x1 Level(12,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Rapier,SteelSword,FireSword,SteelBlade] NoAI
+UNIT Cameron Archer 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronBow,SteelBow,Longbow,KillerBow] NoAI
+UNIT Rowan Myrmidon 0x1 Level(13,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [SteelBlade,SlimSword,Lancereaver,LightBrand] NoAI
+UNIT Violet PegasusKnight 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [SlimLance,SteelLance,Javelin,KillerLance] NoAI
+UNIT Justin Priest 0x1 Level(Ch8Level,Ally,0) [0,0] 0x0 0x0 0x0 0x0 [Heal,FreezeStaff,Physic,Vuln] NoAI
+UNIT Ted Pirate 0x1 Level(Ch8Level,Ally,0) [0,0] 0x0 0x0 0x0 0x0 [Labrys,SteelAxe,HandAxe,KillerAxe] NoAI
+UNIT Quentin Mage 0x1 Level(Ch8Level,Ally,0) [0,0] 0x0 0x0 0x0 0x0 [Fire,Thunder,Bolganone,Vuln] NoAI
+UNIT Thomas Shaman 0x1 Level(Ch8Level,Ally,0) [0,0] 0x0 0x0 0x0 0x0 [Flux,Rend,Ruin,Vuln] NoAI
+UNIT Lucy Thief 0x1 Level(7,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [FireSword,SwiftSword,SteelBlade,Vuln] NoAI
+UNIT Rose PegasusKnight 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [SilverLance,SlimLance,Horseslayer,Javelin] NoAI
+UNIT Clint GreatKnight 0x1 Level(1,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [SilverSword,SteelLance,SteelAxe,HandAxe] NoAI
 UNIT
 
 Traps1:
@@ -251,6 +282,46 @@ SetUnitStatus(Cameron, BowWexp, BRank)
 GiveMoney(3000)
 ENUT SwarpRuneUnlockedFlag
 ENUF SwarpRuneDisabledFlag
+MNC2 Chapter7
+#endif
+#ifdef _TEST_CH8_
+LoadPlayerUnitsTest(UnitsCh8)
+SetUnitStatus(Edgar, LanceWexp, BRank)
+SetUnitStatus(Jenna, BowWexp, BRank)
+SetUnitStatus(Duncan, AxeWexp, BRank)
+SetUnitStatus(Kurt, SwordWexp, BRank)
+SetUnitStatus(Matthias, LanceWexp, BRank)
+SetUnitStatus(Stella, AnimaWexp, BRank)
+SetUnitStatus(Lisa, StaffWexp, BRank)
+SetUnitStatus(Ethan, AxeWexp, BRank)
+SetUnitStatus(Beatrice, LanceWexp, BRank)
+SetUnitStatus(Daniel, LanceWexp, BRank)
+SetUnitStatus(Sasha, SwordWexp, BRank)
+SetUnitStatus(Cameron, BowWexp, BRank)
+GiveMoney(3000)
+ENUT SwarpRuneUnlockedFlag
+ENUF SwarpRuneDisabledFlag
+MNC2 Chapter8
+#endif
+#ifdef _FEE3_2022_
+LoadPlayerUnitsTest(UnitsCh7)
+SetUnitStatus(Edgar, LanceWexp, BRank)
+SetUnitStatus(Jenna, BowWexp, BRank)
+SetUnitStatus(Duncan, AxeWexp, BRank)
+SetUnitStatus(Kurt, SwordWexp, BRank)
+SetUnitStatus(Matthias, LanceWexp, BRank)
+SetUnitStatus(Stella, AnimaWexp, BRank)
+SetUnitStatus(Lisa, StaffWexp, BRank)
+SetUnitStatus(Ethan, AxeWexp, BRank)
+SetUnitStatus(Beatrice, LanceWexp, BRank)
+SetUnitStatus(Daniel, LanceWexp, BRank)
+SetUnitStatus(Sasha, SwordWexp, BRank)
+SetUnitStatus(Cameron, BowWexp, BRank)
+GiveMoney(3000)
+ENUT SwarpRuneUnlockedFlag
+ENUF SwarpRuneDisabledFlag
+//ENUT CelerityRuneUnlockedFlag
+ENUF CelerityRuneDisabledFlag
 MNC2 Chapter7
 #endif
 ENDA

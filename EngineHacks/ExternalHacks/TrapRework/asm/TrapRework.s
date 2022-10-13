@@ -322,7 +322,9 @@ cmp r0,#0
 beq LightRunes_GoBack
 
 ldr r4,=gMapTerrain
-mov r3,#0
+@mov r3,#0
+@ light rune terrain ID
+mov r3,#0x2e
 
 LightRunes_LoopStart:
 ldrb r0,[r2,#2]

@@ -8,7 +8,7 @@ Adept: Gain a consecutive attack.[N]
 (Speed % activation)[X]
 
 ## SD_Acrobat
-Unimpeded: Can move[N]
+Runewalker: Can move[N]
 through light barriers.[X]
 
 ## SD_Pass

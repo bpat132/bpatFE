@@ -1,0 +1,17 @@
+
+## TEXT_Ch8_Start_Victoria
+[ConversationText]
+[L][LoadVictoria]
+[L]This is bad... If they beat Lord Jeffery, that means I'm next! No sense fighting for the losing side, right?
+If I'm gonna die, it sure ain't gonna be protecting the likes of Lord Louis. I just gotta find the right moment to defect.
+[X]
+
+## TEXT_Ch8_Victoria_Talk
+[ConversationText]
+[ML][LoadVictoria][MR][LoadFace][CurrentPortrait]
+[ML]Today's your lucky day. I'm Victoria, former soldier, current mercenary, and I'm giving you opportunity the to hire me!
+We can talk payment later, after you've seen my lancework in action.
+[X]
+
+
+

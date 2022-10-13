@@ -209,12 +209,13 @@ ENUT SwarpRuneDisabledFlag
 ENUF RuneMenuDisableFlag
 */
 
-MUSC OgreBattle_WallOfDefense
+//MUSC OgreBattle_WallOfDefense
+MUSC Langrisser_Story
 LoadEnemies(EnemyUnits1)
 LoadEnemies(EnemyUnits2)
 LoadPlayerUnits(Units1) //0x0 instead of 0x1 seems to be for allies on maps with prep screens
 //MUSC AA_Gumshoe
-MUSC Langrisser_Story
+//MUSC Langrisser_Story
 SetBackground(0x15)
 Text(TEXT_Ch4_Start1)
 SetBackground(0x10)

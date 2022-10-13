@@ -51,6 +51,7 @@ CharacterEventBothWays(0x14,TalkEventLucy, Celia, Lucy)
 END_MAIN
 
 TalkEventLucy:
+MUSC EO3_ThoseWhoSlayAndFall
 Text(TEXT_Ch6_Celia_Lucy_Talk)
 //Text(PlaceholderText)
 NoFade

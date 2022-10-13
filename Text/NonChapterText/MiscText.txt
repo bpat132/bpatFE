@@ -102,6 +102,13 @@ Grows weaker each turn.[X]
 Temporarily boosts[NL]
 skill and luck.[X]
 
+# 0x02f0
+Ballistician[X]
+
+# 0x033C
+Ballisticians with incredible range[NL]
+but no means of counterattacking.[X]
+
 # 0x030D
 Well-rounded mounted knights[NL]
 with swift movement. Equip: Lances.[X]

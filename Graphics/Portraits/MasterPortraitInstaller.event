@@ -242,6 +242,7 @@ DonovanMugData: // Me
 #incbin "Dmp/Donovan_minimug.dmp"
 setMugEntry(DonovanMug, DonovanMugData, 2, 5, 2, 3)
 
+/*
 ALIGN 16
 TrentMugData: // XVI
 #incbin "Dmp/Trent_mug.dmp"
@@ -249,6 +250,14 @@ TrentMugData: // XVI
 #incbin "Dmp/Trent_palette.dmp"
 #incbin "Dmp/Trent_minimug.dmp"
 setMugEntry(TrentMug, TrentMugData, 3, 5, 3, 3)
+*/
+ALIGN 16
+TrentMugData: // Jiro
+#incbin "Dmp/Trent2_mug.dmp"
+#incbin "Dmp/Trent2_frames.dmp"
+#incbin "Dmp/Trent2_palette.dmp"
+#incbin "Dmp/Trent2_minimug.dmp"
+setMugEntry(TrentMug, TrentMugData, 5, 5, 5, 3)
 
 ALIGN 16
 Ch1BossMugData: // LL

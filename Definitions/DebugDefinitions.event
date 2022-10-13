@@ -5,9 +5,9 @@
 //#define _TEST_CH3_
 //#define _TEST_CH4_
 //#define _TEST_CH5_
-#define _TEST_CH6_
+//#define _TEST_CH6_
 //#define _TEST_CH7_
-//#define _TEST_CH8_
+#define _TEST_CH8_
 //#define _TEST_CH9_
 
 #ifdef _TEST_CH2_
@@ -40,4 +40,11 @@
 #define StaffExp 16
 #else
 #define StaffExp 17
+#endif
+
+
+//#define _FEE3_2022_
+
+#ifdef _FEE3_2022_
+#define _SKIP_CH1_
 #endif

@@ -9,12 +9,15 @@
 StandingMapSprite(0x45, 0, ThiefFSt)
 MovingMapSprite(Bonewalker, 0x81F1080, ThiefFMv)
 
-StandingMapSprite(6, 1, KnightSt)
+StandingMapSprite(0x6, 1, KnightSt)
 MovingMapSprite(Knight, 0x1C7E74, KnightMv)
 MovingMapSprite(Knight_F, 0x1C7E74, KnightMv)
 
 StandingMapSprite(0x19, 1, WyvernSt)
 MovingMapSprite(WyvernRider, 0x81D403C, WyvernMv)
+
+StandingMapSprite(0x41, 1, BallistaSt)
+MovingMapSprite(Fleet, 0x81EEC84, BallistaMv)
 
 // FE6
 ALIGN 4
@@ -39,3 +42,11 @@ WyvernSt:
 ALIGN 4
 WyvernMv:
 #incext Png2Dmp "Animations/wyvern_mv.png" --lz77
+
+// IS
+ALIGN 4
+BallistaSt:
+#incext Png2Dmp "Animations/ballista_st.png" --lz77
+ALIGN 4
+BallistaMv:
+#incext Png2Dmp "Animations/ballista_mv.png" --lz77

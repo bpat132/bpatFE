@@ -15,7 +15,7 @@ POP
 ALIGN 4
 AcrobatCheck:
 //#incbin "Acrobat/Acrobat.dmp"
-#incbin "Acrobat/Acrobat2.dmp"
+#incbin "Acrobat/Acrobat4.dmp"
 POIN SkillTester
 WORD AcrobatID
 

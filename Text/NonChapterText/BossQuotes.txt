@@ -7,8 +7,10 @@
 
 ## Ch2BossBattleQuote
 [OpenMidLeft][LoadCh2Boss][OpenMidLeft]
-How'd they break through so fast?[NL]
-Someone, call for reinforcements![.][A][X]
+How'd they break through[N]
+so fast?[A][N]
+Someone, call for[N]
+reinforcements![.][A][X]
 
 ## Ch2BossDeathQuote
 [OpenMidLeft][LoadCh2Boss][OpenMidLeft]Just my luck...[.][A][X]

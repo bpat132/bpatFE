@@ -52,5 +52,9 @@ DeathQuoteBoss(Ch6Boss,Ch6BossDeathQuote)
 DeathQuote(Gordon,Chapter7,0xD,Ch7GordonDeathQuote)
 DeathQuoteBoss(Jeffery,Ch7JefferyDeathQuote)
 
+// Generics
+DeathQuote(0x80,Chapter8,0xA,0x0)
+DeathQuote(0x84,Chapter8,0xB,0x0)
+
 // Terminator
 DeathQuote(0xFFFF,0,0,0)

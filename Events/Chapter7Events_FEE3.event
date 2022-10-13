@@ -15,7 +15,7 @@ setText(0x166, NewChName)
 
 ALIGN 4
 NewChName:
-String("Ch7: Unyielding Conviction")
+String("Chapter 7")
 BYTE 0
 
 ALIGN 4
@@ -33,10 +33,12 @@ POIN BeginningScene EndingScene
 
 TurnBasedEvents:
 TurnEventPlayer(0,Turn1Event,1)
+
 TurnEventPlayer(0,EnemyReinforcements1,2) // SW brigand
 TurnEventPlayer(0,EnemyReinforcements2,5) // cavs
 TurnEventPlayer(0,EnemyReinforcements3,6) // NE brigand + wyverns
 TurnEventPlayer(0,EnemyReinforcements4,8) // pegs
+
 END_MAIN
 
 Turn1Event:
@@ -60,9 +62,8 @@ CharacterEventBothWays(0x15,TalkEventClint, Rose, Clint)
 END_MAIN
 
 TalkEventClint:
-MUSC EO3_ThoseWhoSlayAndFall
 //Text(TEXT_Ch7_Rose_Clint_Talk)
-Text(PlaceholderText)
+//Text(PlaceholderText)
 CUSA Clint
 NoFade
 ENDA
@@ -80,10 +81,12 @@ CALL EndingScene
 ENDA
 
 VillageEvent1:
-	VillageEventItem(PlaceholderText, Village, Thoron)
+	//VillageEventItem(PlaceholderText, Village, Thoron)
+	SMOV 0x3 Thoron; GIVEITEMTO 0xFFFF; EVBIT_T 0x7; ENDA
 	
 VillageEvent2:
-	VillageEventItem(PlaceholderText, Village, BlessedLance)
+	//VillageEventItem(PlaceholderText, Village, BlessedLance)
+	SMOV 0x3 BlessedLance; GIVEITEMTO 0xFFFF; EVBIT_T 0x7; ENDA
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
@@ -101,8 +104,8 @@ BNE 1 0 0xC // Clear flag 0xA if not player unit
 
 CAM1 [0,0]
 FlashCursor(1,1,0x40)
-MUSC OgreBattle_WallOfDefense
-Text(PlaceholderText)
+//MUSC OgreBattle_WallOfDefense
+//Text(PlaceholderText)
 
 SetAI(Gordon, 0x00,0x00,0x04,0x00)
 SetUnitStatus(Gordon, 0x40, 0x04)
@@ -158,11 +161,13 @@ UNIT
 #define Ch7EnemyLvl 10
 
 EnemyUnits1:
-UNIT Jeffery Hero 0x40 Level(3,Enemy,0)     [8,3] 0x0 0x0 0x0 0x0 [WindSword,SilverSword,SilverAxe] NeverMoveAI
+//UNIT Jeffery Hero 0x40 Level(3,Enemy,0)     [8,3] 0x0 0x0 0x0 0x0 [WindSword,SilverSword,SilverAxe] NeverMoveAI
+UNIT Jeffery Hero 0x40 Level(3,Enemy,0)     [8,3] 0x0 0x0 0x0 0x0 [WindSword,SilverSword] NeverMoveAI
 
 UNIT Clint GreatKnight 0x40 Level(1,Enemy,0)     [7,11] 0x0 0x0 0x0 0x0 [SilverSword,SteelLance,SteelAxe,HandAxe] NeverMoveAI
 
-UNIT Gordon Paladin 0x40 Level(1,Enemy,0)     [1,1] 0x0 0x0 0x0 0x0 [SilverSword,ShortSpear] DoNothing
+//UNIT Gordon Paladin 0x40 Level(1,Enemy,0)     [1,1] 0x0 0x0 0x0 0x0 [SilverSword,ShortSpear] DoNothing
+UNIT Gordon Paladin 0x40 Level(1,Enemy,0)     [1,1] 0x0 0x0 0x0 0x0 [SilverLance,ShortSpear] DoNothing
 UNIT 0x84 Cavalier 0x40 Level(Ch7EnemyLvl,Enemy,1)     [2,0] 0x0 0x0 0x0 0x0 [Javelin] DoNothing
 //UNIT 0x84 Cavalier 0x40 Level(Ch7EnemyLvl,Enemy,1)     [0,2] DropItem 0x0 0x0 0x0 [Axereaver] DoNothing
 UNIT 0x84 Cavalier 0x40 Level(Ch7EnemyLvl,Enemy,1)     [0,2] 0x0 0x0 0x0 0x0 [SteelLance] DoNothing
@@ -219,7 +224,7 @@ UNIT 0x80 Shaman 0x40 Level(Ch7EnemyLvl,Enemy,1)     [9,5] 0x0 0x0 0x0 0x0 [Rend
 
 
 //UNIT 0x80 Knight 0x40 Level(Ch7EnemyLvl,Enemy,1)     [9,17] 0x0 0x0 0x0 0x0 [HandAxe,SteelAxe] NeverMoveAI
-UNIT 0x80 Knight 0x40 Level(Ch7EnemyLvl,Enemy,1)     [9,17] 0x0 0x0 0x0 0x0 [Chakram] NeverMoveAI
+UNIT 0x80 Knight 0x40 Level(Ch7EnemyLvl,Enemy,1)     [9,17] 0x0 0x0 0x0 0x0 [ShortAxe] NeverMoveAI
 UNIT 0x80 Mage 0x40 Level(Ch7EnemyLvl,Enemy,1)     [14,10] 0x0 0x0 0x0 0x0 [Bolganone,Thoron] NMAIg2
 //UNIT 0x80 Soldier 0x40 Level(Ch7EnemyLvl,Enemy,1)     [11,12] DropItem 0x0 0x0 0x0 [ShortSpear] NeverMoveAI
 UNIT 0x80 Soldier 0x40 Level(Ch7EnemyLvl,Enemy,1)     [11,12] 0x0 0x0 0x0 0x0 [ShortSpear] NeverMoveAI
@@ -297,28 +302,12 @@ Traps2:
 ENDTRAP
 ALIGN 4
 
-BeginningSceneDUMMY:
-// Three rune uses for this chapter
-COUNTER_SET 0 3
-COUNTER_SET 1 3
-LoadEnemies(EnemyUnits1)
-LoadEnemies(EnemyUnits2)
-LoadEnemies(EnemyUnits3)
-LoadEnemies(EnemyUnits4)
-LoadEnemies(EnemyUnits5)
-
-LoadPlayerUnits(Units1)
-
-SilentGiveItemUnit(Clint,0x6C)
-SilentGiveItemUnit(Rose,0x6C) // Keeps giving vulns if you save after preps, need to fix with conditional
-
-GotoPrepScreen
-
 BeginningScene:
 // Two rune uses for this chapter
-COUNTER_SET 0 2
-COUNTER_SET 1 2
+COUNTER_SET 0 5
+COUNTER_SET 1 5
 
+/*
 //LoadEnemies(EnemyUnits1)
 LoadEnemies(EnemyUnits2)
 LoadEnemies(EnemyUnits3)
@@ -363,21 +352,37 @@ FADI 16
 CLEA 0x0
 CLEE 0x0
 CLEN 0x0
+*/
 
 LoadEnemies(EnemyUnits1)
+
 LoadEnemies(EnemyUnits2)
 LoadEnemies(EnemyUnits3)
 LoadEnemies(EnemyUnits4)
 LoadEnemies(EnemyUnits5)
 
+
 LoadPlayerUnits(Units1)
+FADU 16
 
 SilentGiveItemUnit(Clint,0x6C)
 SilentGiveItemUnit(Rose,0x6C)
 
+TUTORIALTEXTBOXSTART
+CenterTutorialTextBox
+TEXTSHOW TEXT_FEE3_Intro
+TEXTEND
+
 GotoPrepScreen
 
 EndingScene:
+TUTORIALTEXTBOXSTART
+CenterTutorialTextBox
+TEXTSHOW TEXT_FEE3_Outro
+TEXTEND
+
+MNTS 0x1 //return to title screen
+/*
 // Reset rune menu and uses
 ENUF RuneMenuDisableFlag
 // Deactivate all runes
@@ -395,4 +400,5 @@ MUSC ToS_LastBattleDecision
 SetBackground(0x15)
 Text(PlaceholderText)
 MNC2 Chapter8
+*/
 ENDA

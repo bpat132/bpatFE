@@ -2,6 +2,6 @@
 
 PUSH
 ORG $AACEDC
-#incext Png2Dmp "Subtitle.png" --lz77
+#incext Png2Dmp "Subtitle2.png" --lz77
 POP
 

@@ -190,7 +190,7 @@ REDA [18,4] 0x0 0x1 0x00 0x0
 
 EnemyUnits1:
 // Unique
-UNIT Rowan Myrmidon 0x1 Level(10,NPC,0)   [1,6] 0x0 0x0 0x0 0x0 [SteelBlade,SlimSword,Lancereaver,LightBrand] NoAI
+UNIT Rowan Myrmidon 0x1 Level(10,NPC,0)   [1,6] 0x0 0x0 0x0 0x0 [SteelBlade,SwiftSword,Lancereaver,LightBrand] NoAI
 //UNIT Violet PegasusKnight 0x1 Level(8,NPC,0)   [19,0] 0x0 0x0 0x0 0x0 [SlimLance,IronLance,SteelLance,Javelin] NoAI
 UNIT Violet PegasusKnight 0x1 Level(8,NPC,0)   [19,0] 0x0 0x0 0x0 0x0 [SlimLance,SteelLance,Javelin] NoAI // Probably shouldn't give so many free items
 

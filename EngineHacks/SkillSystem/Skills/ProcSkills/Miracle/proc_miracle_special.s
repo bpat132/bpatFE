@@ -53,6 +53,12 @@ lsr r0, #6
 cmp r0, #0
 bne End
 
+@check if defender is not a wall or snag...
+ldr r0,[r5,#0x0]
+ldrb r0,[r0,#0x4]
+cmp r0,#0xFE
+bge End
+
 @check for miracle flag
 @mov r0, #0x72 @ miracle flag
 mov r0, #0x92 @ miracle flag

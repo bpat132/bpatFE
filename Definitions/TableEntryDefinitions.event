@@ -51,6 +51,7 @@
 #define EmeraldAxe PoisonAxe
 #define SwiftSword SlimSword
 #define Chakram Hatchet
+#define ShortAxe Hatchet
 #define Bolganone Elfire
 #define Thoron Bolting
 #define RegalLance Reginleif

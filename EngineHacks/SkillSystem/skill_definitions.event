@@ -441,11 +441,13 @@
 
 //Holy Aura: Gain +1 damage, +5% hit, +5% avoid, +5% crit when using light.
 //By Datagne
-#define HolyAuraID 171
+//#define HolyAuraID 171
+#define HolyAuraID 255
 
 //Insight: Hit +20.
 //By Sme
-#define InsightID 255
+//#define InsightID 255
+#define InsightID 171
 
 //Knight Aspirant: When above 75% health, +2 damage, +15% avoid.
 //By Datagne

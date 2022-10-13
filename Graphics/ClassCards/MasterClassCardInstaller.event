@@ -8,7 +8,14 @@ KnightPortraitPalette:
 #incext Png2Dmp "Cards/axe_knight_epicer2.png" --palette-only
 
 #define KnightCard 0x76
-
 setCardEntry(KnightCard,KnightPortrait,KnightPortraitPalette)
+
+BallistaPortrait:
+#incext Png2Dmp "Cards/ballistician_arch.png" --lz77
+BallistaPortraitPalette:
+#incext Png2Dmp "Cards/ballistician_arch.png" --palette-only
+
+#define BallistaCard 0x92
+setCardEntry(BallistaCard,BallistaPortrait,BallistaPortraitPalette)
 
 

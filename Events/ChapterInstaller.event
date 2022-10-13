@@ -29,8 +29,18 @@
 	#include "Chapter6Events.event"
 }
 
+#ifdef _FEE3_2022_
+{
+	#include "Chapter7Events_FEE3.event"
+}
+#else
 {
 	#include "Chapter7Events.event"
+}
+#endif
+
+{
+	#include "Chapter8Events.event"
 }
 
 

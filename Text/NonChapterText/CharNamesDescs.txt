@@ -91,7 +91,7 @@ his compassion and skill alike.[X]
 ## CameronName
 Cameron[X]
 ## CameronDesc
-A Melerran archer working.[NL]
+A Melerran archer working[NL]
 as a mercenary. Cautious.[X]
 
 ## VioletName

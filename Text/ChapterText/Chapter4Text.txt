@@ -3,7 +3,7 @@
 [ConversationText]
 [FarLeft][LoadEthan][Left][LoadEdgar][Right][LoadDaniel]
 [FarLeft]
-We're finally here. Lord Howard's castle
+We're finally here. Lord Howard's castle.
 [Left]
 Looks like someone's riding out to greet us.
 [Right]

@@ -155,11 +155,11 @@ hits and does 1.5x damage.[N]
 (4 Durability Per Hit)[X]
 
 ## UM_Swarp
- Transpose[X]
+ Netherswap[X]
 
 ## UM_SwarpDesc
-Swap positions with a distant[N]
-ally.[X]
+Swap positions with an[N]
+ally up to 5 tiles away.[X]
 
 ## UM_AoEName
  AoE[X]

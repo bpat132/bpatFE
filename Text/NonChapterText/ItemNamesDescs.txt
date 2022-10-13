@@ -2,6 +2,10 @@
 ## NoDesc
  [.][X]
 
+## VulnDesc
+A medicinal solution[N]
+that restores 15 HP[X]
+
 ## RegalLanceName
 Regal Lance[X]
 ## RegalLanceDesc
@@ -80,9 +84,9 @@ Freeze[X]
 Prevents an enemy from moving[NL]
 or dodging for one turn.[X]
 ## FreezeStaffDesc2
-Prevents an enemy from[NL]
-moving or dodging for[NL]
-one turn.[X]
+Prevents an enemy[NL]
+from moving or[NL]
+dodging for one turn.[X]
 
 ## PetrifyStaffName
 Petrify[X]

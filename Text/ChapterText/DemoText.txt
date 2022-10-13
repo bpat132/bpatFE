@@ -1,0 +1,10 @@
+
+## TEXT_FEE3_Intro
+Hi, welcome to the FEE3 presentation[N]
+of Legacy of Sorrow, a FE8 romhack[N]
+by bpat. I hope you enjoy watching :)[A][X]
+
+## TEXT_FEE3_Outro
+Thanks for watching![N]
+You can check out this hack[N]
+on the FEUniverse forums.[A][X]

@@ -25,7 +25,7 @@ Watch your step!
 [L]Is there no way around them?
 [FR]Afraid not, the other passages we found are completely submerged.
 [L]We've got little choice but to fight our way through then. You'll help too, right?
-[R]Of course. The two of us have studied magic for years. I assure you, we can hold our own in battle.
+[R]Of course, the two of us have studied magic for years. I assure you, we can hold our own in battle.
 [X]
 
 ## TEXT_Ch6_Start_Lucy
@@ -54,3 +54,29 @@ receive a [ToggleRed]Devil Axe[ToggleRed]![A][X]
 [MR]Hahaha, you know what? Sure, I'll do it. You're the weirdest rich lady I've ever met, but I can't help but trust you when you say all that with a straight face.
 Can't say I'm the greatest fighter around, but if you need something stolen or a lock picked then I'm your girl.
 [X]
+
+## TEXT_Ch6_End
+[ConversationText]
+[FL][LoadCelia][L][LoadEdgar][R][LoadQuentin][FR][LoadThomas]
+[FL]Whew, I think that's the last of them.
+[FR]Thanks for the help back there, you really saved us.
+[L]If anything, you helped us. Those thugs weren't going to let us through without a fight.
+[R]I don't mean to sound ungreatful, but Who are you anyway? It's hard to believe the army would deploy troops here of all places.
+[L]Well..
+[FL]Edgar here's the lost prince of Melerra. We're going to retake this country from Galt's clutches.
+[R]You're serious? Then what are you doing all the way out here?
+[L]We're hoping to avoid the army until we near the capital. Like you said, there won't be any soldiers here.
+[FR]I don't know much about military matters but aren't armies usually much larger than this? With a force of this size, a surprise attack indeed be your best bet.
+[L]Yes, we're a bit outnumbered, but we'll manage all the same.
+[R]Hey, I have an idea. Thomas and I will help you out, and in exchange, grant us access to the castle's archives.
+[FR]I don't appreciate being volunteered, but this would be an agreeable arrangement.
+I hear it even rivals Sresa's grand library.
+[L]Sure, we could certainly use your help. Should we prove victorious, you can browse the archives to your hearts' content.
+[X]
+
+
+
+
+
+
+

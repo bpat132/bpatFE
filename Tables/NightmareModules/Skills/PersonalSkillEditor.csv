@@ -76,9 +76,9 @@ Entombed (Ch 4),0x0
 Ch4Boss,CertainBlowID
 Ch5Boss,IntimidateID
 Ch6Boss,WardingBlowID
-Tirado (Ch 8),0x0
-Binks (Ch 9A),0x0
-Pablo (Ch 10A),0x0
+Jeffery,InsightID
+Gordon,NullifyID
+Louis,0x0
 Maelduin (Ch 12A),0x0
 Aias (Ch 13A),0x0
 Carlyle (Ch 14A),0x0
