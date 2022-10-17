@@ -2,29 +2,33 @@
 
 #include "ItemSpecificWTA.lyn.event"
 
+ALIGN 4
 ItemSpecificWTAList: //Attacker weapon, Defender weapon, Hit change, Damage change
-//BYTE SteelAxe IronSword 50 5
+BYTE SteelAxe IronSword 50 5
 BYTE Flux FireSword 15 1
-BYTE EvilEye FireSword 15 1
-BYTE CrimsonEye FireSword 15 1
-BYTE DemonSurge FireSword 15 1
+BYTE Rend FireSword 15 1
+BYTE Ruin FireSword 15 1
+BYTE Nosferatu FireSword 15 1
+
+BYTE FireSword Lightning 15 1
+BYTE FireSword Shine 15 1
+BYTE FireSword Divine 15 1
+BYTE FireSword Aura 15 1
 
 BYTE Flux WindSword 15 1
-BYTE EvilEye WindSword 15 1
-BYTE CrimsonEye WindSword 15 1
-BYTE DemonSurge WindSword 15 1
+BYTE Rend WindSword 15 1
+BYTE Ruin WindSword 15 1
+BYTE Nosferatu WindSword 15 1
 
 BYTE LightBrand Flux 15 1
-BYTE LightBrand EvilEye 15 1
-BYTE LightBrand CrimsonEye 15 1
-BYTE LightBrand DemonSurge 15 1
+BYTE LightBrand Rend 15 1
+BYTE LightBrand Ruin 15 1
+BYTE LightBrand Nosferatu 15 1
 
 BYTE Fire LightBrand 15 1
 BYTE Thunder LightBrand 15 1
 BYTE Bolganone LightBrand 15 1
-BYTE Bolting LightBrand 15 1
-//BYTE WindTome LightBrand 15 1
-//BYTE StellaTome LightBrand 15 1
+BYTE Thoron LightBrand 15 1
 
 BYTE FireSword LightBrand 15 1
 BYTE WindSword LightBrand 15 1

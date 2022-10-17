@@ -40,6 +40,14 @@ Blessed Lance[X]
 ## BlessedWeaponDesc
 Wielder heals 5 HP upon dealing damage.[X]
 
+## GreatlanceName
+Greatlance[X]
+
+## NaginataName
+Naginata[X]
+## NaginataDesc
+Reduces melee damage taken by 2.[X]
+
 ## BolganoneName
 Bolganone[X]
 
@@ -53,6 +61,11 @@ Rend[X]
 
 ## RuinName
 Ruin[X]
+
+## ChaosStormName
+Chaos Storm[X]
+## ChaosStormDesc
+Greatly improves critical rate.[X]
 
 ## FireSwordName
 Fire Sword[X]

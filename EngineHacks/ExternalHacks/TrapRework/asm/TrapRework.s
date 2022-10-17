@@ -325,6 +325,7 @@ ldr r4,=gMapTerrain
 @mov r3,#0
 @ light rune terrain ID
 mov r3,#0x2e
+@mov r3,#0x11
 
 LightRunes_LoopStart:
 ldrb r0,[r2,#2]

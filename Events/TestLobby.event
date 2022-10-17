@@ -187,7 +187,7 @@ UNIT Celia Dancer 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Vuln,Vuln,Vu
 UNIT Jenna Archer_F 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronBow,SteelBow,ShortBow,Longbow] NoAI
 UNIT Duncan Fighter 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronAxe,SteelAxe,HandAxe,Swordreaver] NoAI
 UNIT Kurt Mercenary 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronSword,SteelSword,SteelBlade,LightBrand] NoAI
-UNIT Matthias Soldier 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronLance,SteelLance,Javelin,SapphireLance] NoAI
+UNIT Matthias Soldier 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [BlessedLance,SteelLance,Javelin,SapphireLance] NoAI
 UNIT Stella Mage_F 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Fire,Thunder,Bolganone,Vuln] NoAI
 UNIT Nico Thief 0x1 Level(7,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [RubySword,FireSword,IronBlade,SteelSword] NoAI
 UNIT Lisa Cleric 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Heal,PetrifyStaff,Vuln,Vuln] NoAI
@@ -203,7 +203,7 @@ UNIT Rowan Myrmidon 0x1 Level(13,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [SteelBlade,SlimS
 UNIT Violet PegasusKnight 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [SlimLance,SteelLance,Javelin,KillerLance] NoAI
 UNIT Justin Priest 0x1 Level(Ch8Level,Ally,0) [0,0] 0x0 0x0 0x0 0x0 [Heal,FreezeStaff,Physic,Vuln] NoAI
 UNIT Ted Pirate 0x1 Level(Ch8Level,Ally,0) [0,0] 0x0 0x0 0x0 0x0 [Labrys,SteelAxe,HandAxe,KillerAxe] NoAI
-UNIT Quentin Mage 0x1 Level(Ch8Level,Ally,0) [0,0] 0x0 0x0 0x0 0x0 [Fire,Thunder,Bolganone,Vuln] NoAI
+UNIT Quentin Mage 0x1 Level(Ch8Level,Ally,0) [0,0] 0x0 0x0 0x0 0x0 [Fire,Thunder,Bolganone,Thoron] NoAI
 UNIT Thomas Shaman 0x1 Level(Ch8Level,Ally,0) [0,0] 0x0 0x0 0x0 0x0 [Flux,Rend,Ruin,Vuln] NoAI
 UNIT Lucy Thief 0x1 Level(7,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [FireSword,SwiftSword,SteelBlade,Vuln] NoAI
 UNIT Rose PegasusKnight 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [SilverLance,SlimLance,Horseslayer,Javelin] NoAI

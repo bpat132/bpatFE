@@ -219,7 +219,7 @@ WORD QuickBurnID
 
 ALIGN 4
 ShortShield:
-#incbin "ShortShield/ShortShield.dmp"
+#incbin "ShortShield/ShortShield2.dmp"
 POIN SkillTester
 WORD ShortShieldID
 

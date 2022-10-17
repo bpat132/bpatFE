@@ -61,9 +61,12 @@
 #define Labrys PoisonClaw
 #define Rend EvilEye
 #define Ruin CrimsonEye
+#define ChaosStorm DemonSurge
+#define BlessedLance BrightLance
 #define PetrifyStaff 0xbe
 #define Darksword 0xbf
-#define BlessedLance BrightLance
+#define Greatlance 0xc0
+#define Naginata 0xc1
 
 // Classes
 #define Thief_F 0x54
