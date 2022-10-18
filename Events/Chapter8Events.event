@@ -11,6 +11,14 @@
 
 EventPointerTable(0x24, PointerList)
 
+EscapePointPointerTable(Chapter8, Ch8EscapePoints)
+Ch8EscapePoints:
+EscapePoint(0, 5, MoveLeft)
+EscapePoint(0, 6, MoveLeft)
+EscapePoint(7, 3, NoMove)
+EscapePoint(5, 11, NoMove)
+EscapePointEnd
+
 setText(0x167, NewChName)
 
 ALIGN 4
@@ -32,7 +40,109 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+TurnEventPlayer(0,Turn2Reinforcements,2)
+TurnEventPlayer(0,Turn3Reinforcements,3)
+TurnEventPlayer(0,Turn4Reinforcements,4)
+TurnEventPlayer(0,Turn6Reinforcements,6)
+TurnEventPlayer(0,Turn7Reinforcements,7)
+//TurnEventPlayer(0,Turn8Reinforcements,8)
+
+//TurnEventPlayer(0,AddLightRunes,2,31)
+//TurnEventEnemy(0,RemoveLightRunes,1,31)
+//TurnEventPlayer(0,AddLightRunes,2,31)
+//TurnEventEnemy(0,RemoveLightRunes,1,31)
+
+TurnEventPlayer(0xD,AreaReinforcementsLeft,1,31)
+TurnEventPlayer(0xE,AreaReinforcementsRight,1,31)
 END_MAIN
+
+Turn2Reinforcements:
+EnemyReinforcements(Turn2ReinforcementUnits)
+
+Turn3Reinforcements:
+EnemyReinforcements(Turn3ReinforcementUnits)
+
+Turn4Reinforcements:
+EnemyReinforcements(Turn4ReinforcementUnits)
+
+Turn6Reinforcements:
+EnemyReinforcements(Turn6ReinforcementUnits)
+
+Turn7Reinforcements:
+EnemyReinforcements(Turn7ReinforcementUnits)
+
+Turn8Reinforcements:
+EnemyReinforcements(Turn8ReinforcementUnits)
+
+AreaReinforcementsLeft:
+EnemyReinforcements(LeftAreaReinforcementUnits)
+
+AreaReinforcementsRight:
+EnemyReinforcements(RightAreaReinforcementUnits)
+
+AddLightRunes:
+// Right
+AddLightRune(12,18)
+AddLightRune(16,19)
+AddLightRune(19,20)
+AddLightRune(20,19)
+AddLightRune(21,18)
+AddLightRune(20,14)
+AddLightRune(21,14)
+
+AddLightRune(16,13)
+AddLightRune(17,13)
+
+AddLightRune(18,8)
+AddLightRune(21,8)
+
+// Left
+AddLightRune(3,14)
+AddLightRune(1,12)
+AddLightRune(2,9)
+AddLightRune(1,6)
+AddLightRune(2,5)
+AddLightRune(5,7)
+AddLightRune(7,9)
+
+// Middle
+AddLightRune(10,10)
+AddLightRune(12,11)
+AddLightRune(14,10)
+NoFade
+ENDA
+
+RemoveLightRunes:
+// Right
+RemoveLightRune(12,18)
+RemoveLightRune(16,19)
+RemoveLightRune(19,20)
+RemoveLightRune(20,19)
+RemoveLightRune(21,18)
+RemoveLightRune(20,14)
+RemoveLightRune(21,14)
+
+RemoveLightRune(16,13)
+RemoveLightRune(17,13)
+
+RemoveLightRune(18,8)
+RemoveLightRune(21,8)
+
+// Left
+RemoveLightRune(3,14)
+RemoveLightRune(1,12)
+RemoveLightRune(2,9)
+RemoveLightRune(1,6)
+RemoveLightRune(2,5)
+RemoveLightRune(5,7)
+RemoveLightRune(7,9)
+
+// Middle
+RemoveLightRune(10,10)
+RemoveLightRune(12,11)
+RemoveLightRune(14,10)
+NoFade
+ENDA
 
 CharacterBasedEvents:
 CharacterEventBothWays(0x15, VictoriaTalkEvent, 0x0, Victoria)
@@ -46,7 +156,10 @@ NoFade
 ENDA
 
 LocationBasedEvents:
-Seize(8,4)
+Seize(12,4)
+Chest(Darksword,2,2)
+Chest(ChaosStorm,4,2)
+Chest(Axereaver,6,2)
 END_MAIN
 
 SeizeEvent:
@@ -58,26 +171,55 @@ MiscBasedEvents:
 CauseGameOverIfLordDies
 AFEV 0x0 CheckLeftGuardDead 0xA
 AFEV 0x0 CheckRightGuardDead 0xB
+
+AREA 0xC EnteredChestArea [0,0] [7,4]
 END_MAIN
 
+EnteredChestArea:
+CHECK_ALLEGIANCE 0xFFFF
+BNE 2 0 0xC // Clear flag 0xC if not player unit
+ENUF 0xD
+GOTO 3
+LABEL 2
+ENUF 0xC
+LABEL 3
+NoFade
+ENDA
+
 CheckLeftGuardDead:
-TILECHANGE 0x1
 CUSA Marie
 CUSA Evelyn
+TILECHANGE 0x1
+CAM1 [22,2]
 Text(PlaceholderText)
 GiveItem(Heal,Marie)
 GiveItem(Flux,Evelyn)
+
+CHECK_EVENTID 0xF
+BEQ 4 0 0xC
+ENUF 0xE
+LABEL 4
+ENUT 0xF
+
 ENUF 0xA
 NoFade
 ENDA
 
 CheckRightGuardDead:
-TILECHANGE 0x0
 CUSA Donovan
 CUSA Trent
+TILECHANGE 0x0
+CAM1 [22,2]
 Text(PlaceholderText)
 GiveItem(IronAxe,Donovan)
 GiveItem(IronAxe,Trent)
+
+CHECK_EVENTID 0xF
+BEQ 5 0 0xC
+ENUF 0xE
+LABEL 5
+ENUT 0xF
+
 ENUF 0xB
 NoFade
 ENDA
@@ -95,6 +237,8 @@ Tutorial:
 END_MAIN
 
 Units1:
+//LoadUnit(2,17,Edgar)
+
 LoadUnit(7,17,Edgar)
 LoadUnit(7,21,Celia)
 LoadUnit(6,16)
@@ -108,6 +252,7 @@ LoadUnit(7,19)
 LoadUnit(8,19)
 LoadUnit(6,20)
 LoadUnit(8,20)
+
 UNIT
 
 #define Ch8EnemyLvl 11
@@ -115,12 +260,16 @@ UNIT
 EnemyUnits1:
 UNIT Louis Bishop 0x40 Level(1,Enemy,0)     [12,4] 0x0 0x0 0x0 0x0 [Divine] NeverMoveAI
 
-UNIT Victoria Soldier 0x40 Level(12,Enemy,0)     [2,12] 0x0 0x0 0x0 0x0 [SilverLance,KillerLance,ShortSpear,0x6c] NeverMoveAI
+//UNIT Victoria Soldier 0x40 Level(12,Enemy,0)     [2,12] 0x0 0x0 0x0 0x0 [SilverLance,KillerLance,ShortSpear,0x6c] NeverMoveAI
+UNIT Victoria Soldier 0x40 Level(12,Enemy,0)     [2,12] 0x0 0x0 0x0 0x0 [ShortSpear,Greatlance,Naginata,0x6c] NeverMoveAI
 
 UNIT Marie Troubadour 0x40 Level(9,NPC,0)     [17,3] 0x0 0x0 0x0 0x0 [0x0] NeverMoveAI
 UNIT Evelyn Shaman_F 0x40 Level(11,NPC,0)     [18,3] 0x0 0x0 0x0 0x0 [0x0] NeverMoveAI
 UNIT Donovan Knight 0x40 Level(13,NPC,0)     [20,3] 0x0 0x0 0x0 0x0 [0x0] NeverMoveAI
 UNIT Trent Fighter 0x40 Level(12,NPC,0)     [21,3] 0x0 0x0 0x0 0x0 [0x0] NeverMoveAI
+
+UNIT 0x80 Soldier 0x40 Level(Ch8EnemyLvl,Enemy,1)     [18,6] 0x0 0x0 0x0 0x0 [ShortSpear] NeverMoveAI
+UNIT 0x84 Soldier 0x40 Level(Ch8EnemyLvl,Enemy,1)     [21,6] 0x0 0x0 0x0 0x0 [ShortSpear] NeverMoveAI
 UNIT
 
 EnemyUnits2:
@@ -131,32 +280,38 @@ UNIT 0x87 Mercenary 0x40 Level(Ch8EnemyLvl,Enemy,1)     [13,19] 0x0 0x0 0x0 0x0 
 UNIT 0x87 Knight 0x40 Level(Ch8EnemyLvl,Enemy,1)     [14,17] 0x0 0x0 0x0 0x0 [IronAxe] PWHAI
 UNIT 0x87 Mage 0x40 Level(Ch8EnemyLvl,Enemy,1)     [17,20] 0x0 0x0 0x0 0x0 [Thunder] PWHAI
 
-UNIT 0x87 Archer 0x40 Level(Ch8EnemyLvl,Enemy,1)     [22,18] 0x0 0x0 0x0 0x0 [ShortBow] AIRAI
+//UNIT 0x87 Archer 0x40 Level(Ch8EnemyLvl,Enemy,1)     [22,18] 0x0 0x0 0x0 0x0 [ShortBow] AIRAI
+UNIT 0x87 Archer 0x40 Level(Ch8EnemyLvl,Enemy,1)     [22,18] 0x0 0x0 0x0 0x0 [SteelBow] AIRAI
 
 // Middle Right
 UNIT 0x87 Mercenary 0x40 Level(Ch8EnemyLvl,Enemy,1)     [19,17] 0x0 0x0 0x0 0x0 [LightBrand] NeverMoveAI
 UNIT 0x87 Soldier 0x40 Level(Ch8EnemyLvl,Enemy,1)     [20,17] 0x0 0x0 0x0 0x0 [Javelin] NeverMoveAI
 
 UNIT 0x87 Soldier 0x40 Level(Ch8EnemyLvl,Enemy,1)     [19,15] 0x0 0x0 0x0 0x0 [IronLance] PWHAI
+// Moved to turn 3 reinforcement?
 UNIT 0x87 Shaman 0x40 Level(Ch8EnemyLvl,Enemy,1)     [22,14] 0x0 0x0 0x0 0x0 [Flux] AIRAI
 
 UNIT 0x87 Knight 0x40 Level(Ch8EnemyLvl,Enemy,1)     [20,12] 0x0 0x0 0x0 0x0 [HandAxe] NeverMoveAI
-UNIT 0x87 Soldier 0x40 Level(Ch8EnemyLvl,Enemy,1)     [21,12] 0x0 0x0 0x0 0x0 [Javelin] NeverMoveAI
+//UNIT 0x87 Soldier 0x40 Level(Ch8EnemyLvl,Enemy,1)     [21,12] 0x0 0x0 0x0 0x0 [Javelin] NeverMoveAI
+UNIT 0x87 Soldier 0x40 Level(Ch8EnemyLvl,Enemy,1)     [21,12] 0x0 0x0 0x0 0x0 [ShortSpear] NeverMoveAI
 
-UNIT 0x87 Mage 0x40 Level(Ch8EnemyLvl,Enemy,1)     [17,14] 0x0 0x0 0x0 0x0 [Fire] AIRAI
+// Moved to turn 3 reinforcement
+//UNIT 0x87 Mage 0x40 Level(Ch8EnemyLvl,Enemy,1)     [17,14] 0x0 0x0 0x0 0x0 [Fire] AIRAI
+UNIT
+
+EnemyUnits3:
 
 // Top Right
 UNIT 0x87 Myrmidon 0x40 Level(Ch8EnemyLvl,Enemy,1)     [20,10] 0x0 0x0 0x0 0x0 [IronBlade] PWHAI
+// Moved to turn 2 reinforcement?
 UNIT 0x87 Fighter 0x40 Level(Ch8EnemyLvl,Enemy,1)     [16,11] 0x0 0x0 0x0 0x0 [IronAxe] PWHAI
 UNIT 0x87 Fighter 0x40 Level(Ch8EnemyLvl,Enemy,1)     [21,9] 0x0 0x0 0x0 0x0 [SteelAxe] AIRAI
 UNIT 0x87 Mage 0x40 Level(Ch8EnemyLvl,Enemy,1)     [19,8] 0x0 0x0 0x0 0x0 [Thunder] AIRAI
 UNIT 0x87 Mercenary 0x40 Level(Ch8EnemyLvl,Enemy,1)     [17,7] 0x0 0x0 0x0 0x0 [SteelSword] AIRAI
 
-UNIT 0x80 Soldier 0x40 Level(Ch8EnemyLvl,Enemy,1)     [18,6] 0x0 0x0 0x0 0x0 [ShortSpear] NeverMoveAI
-UNIT 0x84 Soldier 0x40 Level(Ch8EnemyLvl,Enemy,1)     [21,6] 0x0 0x0 0x0 0x0 [ShortSpear] NeverMoveAI
-UNIT
+//UNIT 0x80 Soldier 0x40 Level(Ch8EnemyLvl,Enemy,1)     [18,6] 0x0 0x0 0x0 0x0 [ShortSpear] NeverMoveAI
+//UNIT 0x84 Soldier 0x40 Level(Ch8EnemyLvl,Enemy,1)     [21,6] 0x0 0x0 0x0 0x0 [ShortSpear] NeverMoveAI
 
-EnemyUnits3:
 // Bottom Left
 UNIT 0x87 Shaman 0x40 Level(Ch8EnemyLvl,Enemy,1)     [3,16] 0x0 0x0 0x0 0x0 [Flux] PWHAI
 UNIT 0x87 Mage 0x40 Level(Ch8EnemyLvl,Enemy,1)     [0,17] 0x0 0x0 0x0 0x0 [Fire] PWHAI
@@ -165,10 +320,8 @@ UNIT 0x87 Myrmidon 0x40 Level(Ch8EnemyLvl,Enemy,1)     [4,14] 0x0 0x0 0x0 0x0 [I
 UNIT 0x87 Mage 0x40 Level(Ch8EnemyLvl,Enemy,1)     [3,11] 0x0 0x0 0x0 0x0 [Fire] PWHAI
 UNIT 0x87 Soldier 0x40 Level(Ch8EnemyLvl,Enemy,1)     [1,10] 0x0 0x0 0x0 0x0 [SteelLance] PWHAI
 
-UNIT 0x87 Fighter 0x40 Level(Ch8EnemyLvl,Enemy,1)     [1,8] 0x0 0x0 0x0 0x0 [Hatchet] NeverMoveAI
-//UNIT 0x87 Archer 0x40 Level(Ch8EnemyLvl,Enemy,1)     [2,8] 0x0 0x0 0x0 0x0 [Longbow,PureWater] NeverMoveAI
-UNIT 0x87 Mercenary 0x40 Level(Ch8EnemyLvl,Enemy,1)     [2,8] 0x0 0x0 0x0 0x0 [LightBrand] NeverMoveAI
-UNIT 0x87 Archer 0x40 Level(Ch8EnemyLvl,Enemy,1)     [2,7] 0x0 0x0 0x0 0x0 [Longbow,PureWater] NeverMoveAI
+UNIT 0x87 Fighter 0x40 Level(Ch8EnemyLvl,Enemy,1)     [1,8] 0x0 0x0 0x0 0x0 [ShortAxe] NeverMoveAI
+UNIT 0x87 Archer 0x40 Level(Ch8EnemyLvl,Enemy,1)     [2,8] 0x0 0x0 0x0 0x0 [Longbow,PureWater] NeverMoveAI
 UNIT 0x87 Soldier 0x40 Level(Ch8EnemyLvl,Enemy,1)     [3,8] 0x0 0x0 0x0 0x0 [ShortSpear] NeverMoveAI
 UNIT
 
@@ -180,17 +333,24 @@ UNIT 0x87 Fighter 0x40 Level(Ch8EnemyLvl,Enemy,1)     [5,10] 0x0 0x0 0x0 0x0 [St
 UNIT 0x87 Mage 0x40 Level(Ch8EnemyLvl,Enemy,1)     [0,6] 0x0 0x0 0x0 0x0 [Fire] PWHAI
 UNIT 0x87 Myrmidon 0x40 Level(Ch8EnemyLvl,Enemy,1)     [1,5] 0x0 0x0 0x0 0x0 [SwiftSword] AIRAI
 
-UNIT 0x87 Fighter 0x40 Level(Ch8EnemyLvl,Enemy,1)     [7,6] 0x0 0x0 0x0 0x0 [IronAxe] AIRAI
-UNIT 0x87 Shaman 0x40 Level(Ch8EnemyLvl,Enemy,1)     [6,9] 0x0 0x0 0x0 0x0 [Rend] AIRAI
-UNIT 0x87 Myrmidon 0x40 Level(Ch8EnemyLvl,Enemy,1)     [7,11] 0x0 0x0 0x0 0x0 [SlimSword] AIRAI
+//UNIT 0x87 Fighter 0x40 Level(Ch8EnemyLvl,Enemy,1)     [7,6] 0x0 0x0 0x0 0x0 [IronAxe] AIRAI
+//UNIT 0x87 Fighter 0x40 Level(Ch8EnemyLvl,Enemy,1)     [6,7] 0x0 0x0 0x0 0x0 [IronAxe] AIRAI
+UNIT 0x87 Fighter 0x40 Level(Ch8EnemyLvl,Enemy,1)     [6,7] 0x0 0x0 0x0 0x0 [IronAxe] AIRAIg1//AIRAI
+// Moved to turn 3 reinforcement
+//UNIT 0x87 Shaman 0x40 Level(Ch8EnemyLvl,Enemy,1)     [6,9] 0x0 0x0 0x0 0x0 [Rend] AIRAI
+// Moved to turn 3 reinforcement
+//UNIT 0x87 Myrmidon 0x40 Level(Ch8EnemyLvl,Enemy,1)     [7,11] 0x0 0x0 0x0 0x0 [SwiftSword] AIRAI
+
+// New
+UNIT 0x87 Mercenary 0x40 Level(Ch8EnemyLvl,Enemy,1)     [8,9] 0x0 0x0 0x0 0x0 [SteelSword] AIRAIg1
 UNIT
 
 EnemyUnits5:
 // Chest room
-UNIT 0x87 Mercenary 0x40 Level(Ch8EnemyLvl,Enemy,1)     [4,4] 0x0 0x0 0x0 0x0 [LightBrand] NeverMoveAI
-
 UNIT 0x87 Archer 0x40 Level(Ch8EnemyLvl,Enemy,1)     [1,1] 0x0 0x0 0x0 0x0 [SteelBow] AIRAI
 UNIT 0x87 Soldier 0x40 Level(Ch8EnemyLvl,Enemy,1)     [5,2] 0x0 0x0 0x0 0x0 [IronLance] AIRAI
+
+UNIT 0x87 Mercenary 0x40 Level(Ch8EnemyLvl,Enemy,1)     [4,4] 0x0 0x0 0x0 0x0 [LightBrand] NeverMoveAI
 
 // Middle
 UNIT 0x87 Soldier 0x40 Level(Ch8EnemyLvl,Enemy,1)     [11,12] 0x0 0x0 0x0 0x0 [SteelLance] AIRAI
@@ -203,10 +363,23 @@ UNIT 0x87 Myrmidon 0x40 Level(Ch8EnemyLvl,Enemy,1)     [12,9] 0x0 0x0 0x0 0x0 [S
 UNIT 0x87 Mercenary 0x40 Level(Ch8EnemyLvl,Enemy,1)     [12,6] 0x0 0x0 0x0 0x0 [SilverSword] AIRAI
 UNIT 0x87 Shaman 0x40 Level(Ch8EnemyLvl,Enemy,1)     [10,5] 0x0 0x0 0x0 0x0 [CrimsonEye] AIRAI
 UNIT 0x87 Mage 0x40 Level(Ch8EnemyLvl,Enemy,1)     [14,5] 0x0 0x0 0x0 0x0 [Bolganone] AIRAI
+
+UNIT 0x87 Knight 0x40 Level(Ch8EnemyLvl,Enemy,1)     [11,10] 0x0 0x0 0x0 0x0 [ShortAxe] NeverMoveAI
+//UNIT 0x87 Soldier 0x40 Level(Ch8EnemyLvl,Enemy,1)     [13,10] 0x0 0x0 0x0 0x0 [ShortSpear] NeverMoveAI
+UNIT 0x87 Shaman 0x40 Level(Ch8EnemyLvl,Enemy,1)     [13,10] 0x0 0x0 0x0 0x0 [Anguish] NeverMoveAI
 UNIT
 
 Turn2ReinforcementUnits:
 UNIT 0x87 Myrmidon 0x40 Level(Ch8EnemyLvl,Enemy,1)     [5,11] 0x0 0x0 0x0 0x0 [SteelSword] PWHAI
+// Moved from initial spawn
+//UNIT 0x87 Fighter 0x40 Level(Ch8EnemyLvl,Enemy,1)     [22,14] 0x0 0x0 0x0 0x0 [IronAxe] PWHAI
+UNIT
+
+Turn3ReinforcementUnits:
+UNIT 0x87 Shaman 0x40 Level(Ch8EnemyLvl,Enemy,1)     [5,11] 0x0 0x0 0x1 REDA6R9 [Rend] AIRAI
+UNIT 0x87 Myrmidon 0x40 Level(Ch8EnemyLvl,Enemy,1)     [5,11] 0x0 0x0 0x1 REDA7R11 [SwiftSword] AIRAI
+UNIT 0x87 Mage 0x40 Level(Ch8EnemyLvl,Enemy,1)     [17,15] 0x0 0x0 0x1 REDA17R14 [Fire] AIRAI
+//UNIT 0x87 Shaman 0x40 Level(Ch8EnemyLvl,Enemy,1)     [22,14] 0x0 0x0 0x0 0x0 [Flux] AIRAI
 UNIT
 
 Turn4ReinforcementUnits:
@@ -216,7 +389,7 @@ UNIT 0x87 Soldier 0x40 Level(Ch8EnemyLvl,Enemy,1)     [22,7] 0x0 0x0 0x0 0x0 [Ir
 UNIT 0x87 Myrmidon 0x40 Level(Ch8EnemyLvl,Enemy,1)     [22,21] 0x0 0x0 0x0 0x0 [SwiftSword] PWHAI
 
 // Left
-UNIT 0x87 Fighter 0x40 Level(Ch8EnemyLvl,Enemy,1)     [5,11] 0x0 0x0 0x0 0x0 [IronAxe] PWHAI
+UNIT 0x87 Fighter 0x40 Level(Ch8EnemyLvl,Enemy,1)     [5,11] 0x0 0x0 0x1 REDA5R11 [IronAxe] PWHAI
 UNIT
 
 Turn6ReinforcementUnits:
@@ -224,20 +397,57 @@ UNIT 0x87 Soldier 0x40 Level(Ch8EnemyLvl,Enemy,1)     [16,15] 0x0 0x0 0x0 0x0 [S
 UNIT
 
 Turn7ReinforcementUnits:
-UNIT 0x87 Myrmidon 0x40 Level(Ch8EnemyLvl,Enemy,1)     [0,5] 0x0 0x0 0x0 0x0 [SwiftSword] PWHAI
-UNIT 0x87 Thief 0x40 Level(Ch8EnemyLvl,Enemy,1)     [7,3] 0x0 0x0 0x0 0x0 [LightBrand,ChestKey,ChestKey] LootingThiefAI
-UNIT
-
-Turn8ReinforcementUnits:
+// Moved to area reinforcement
+//UNIT 0x87 Myrmidon 0x40 Level(Ch8EnemyLvl,Enemy,1)     [0,5] 0x0 0x0 0x0 0x0 [SwiftSword] PWHAI
 UNIT 0x87 Thief 0x40 Level(Ch8EnemyLvl,Enemy,1)     [7,3] 0x0 0x0 0x0 0x0 [LightBrand,ChestKey,ChestKey,ChestKey] LootingThiefAI
 UNIT
 
-DummyUnits1:
-UNIT 0x87 Myrmidon 0x40 Level(Ch8EnemyLvl,Enemy,1)     [2,9] 0x0 0x0 0x0 0x0 [IronSword] PWHAI
+// Removed because redundant
+Turn8ReinforcementUnits:
+UNIT 0x87 Thief 0x40 Level(Ch8EnemyLvl,Enemy,1)     [7,3] 0x0 0x0 0x0 0x0 [LightBrand,ChestKey] LootingThiefAI
 UNIT
 
+LeftAreaReinforcementUnits:
+UNIT 0x87 Archer 0x40 Level(Ch8EnemyLvl,Enemy,1)     [0,17] 0x0 0x0 0x0 0x0 [SteelBow] PWHAI
+UNIT 0x87 Fighter 0x40 Level(Ch8EnemyLvl,Enemy,1)     [0,17] 0x0 0x0 0x1 REDA2R17 [IronAxe] PWHAI
+UNIT 0x87 Mercenary 0x40 Level(Ch8EnemyLvl,Enemy,1)     [0,16] 0x0 0x0 0x1 REDA1R16 [SteelSword] PWHAI
+UNIT 0x87 Soldier 0x40 Level(Ch8EnemyLvl,Enemy,1)     [0,15] 0x0 0x0 0x0 0x0 [SteelLance] PWHAI
 
+// New
+UNIT 0x87 Myrmidon 0x40 Level(Ch8EnemyLvl,Enemy,1)     [5,11] 0x0 0x0 0x0 0x0 [SwiftSword] PWHAI
+UNIT 0x87 Myrmidon 0x40 Level(Ch8EnemyLvl,Enemy,1)     [5,11] 0x0 0x0 0x1 REDA6R11 [SteelSword] PWHAI
+
+UNIT 0x87 Mage 0x40 Level(Ch8EnemyLvl,Enemy,1)     [0,5] 0x0 0x0 0x0 0x0 [Fire] PWHAI
+UNIT
+
+RightAreaReinforcementUnits:
+UNIT 0x87 Shaman 0x40 Level(Ch8EnemyLvl,Enemy,1)     [17,15] 0x0 0x0 0x0 0x0 [Flux] PWHAI
+UNIT 0x87 Archer 0x40 Level(Ch8EnemyLvl,Enemy,1)     [16,15] 0x0 0x0 0x0 0x0 [IronBow] PWHAI
+
+UNIT 0x87 Knight 0x40 Level(Ch8EnemyLvl,Enemy,1)     [20,21] 0x0 0x0 0x1 REDA20R20 [SteelAxe] PWHAI
+UNIT 0x87 Soldier 0x40 Level(Ch8EnemyLvl,Enemy,1)     [21,21] 0x0 0x0 0x1 REDA21R20 [IronLance] PWHAI
+UNIT 0x87 Mage 0x40 Level(Ch8EnemyLvl,Enemy,1)     [19,21] 0x0 0x0 0x0 0x0 [Thunder] PWHAI
+UNIT 0x87 Mage 0x40 Level(Ch8EnemyLvl,Enemy,1)     [22,21] 0x0 0x0 0x0 0x0 [Fire] PWHAI
+/*
+UNIT 0x87 Soldier 0x40 Level(Ch8EnemyLvl,Enemy,1)     [20,21] 0x0 0x0 0x0 0x0 [SteelLance] PWHAI
+UNIT 0x87 Archer 0x40 Level(Ch8EnemyLvl,Enemy,1)     [22,15] 0x0 0x0 0x0 0x0 [IronBow] PWHAI
+UNIT 0x87 Knight 0x40 Level(Ch8EnemyLvl,Enemy,1)     [22,14] 0x0 0x0 0x0 0x0 [SteelAxe] PWHAI
+UNIT 0x87 Mage 0x40 Level(Ch8EnemyLvl,Enemy,1)     [19,21] 0x0 0x0 0x0 0x0 [Thunder] PWHAI
+UNIT 0x87 Shaman 0x40 Level(Ch8EnemyLvl,Enemy,1)     [21,21] 0x0 0x0 0x0 0x0 [Flux] PWHAI
+*/
+UNIT
+
+#define Ch8FireTrapStartTurn 7
 Traps1:
+FireTrap(17,3,Ch8FireTrapStartTurn,1)
+FireTrap(18,3,Ch8FireTrapStartTurn,1)
+FireTrap(20,3,Ch8FireTrapStartTurn,1)
+FireTrap(21,3,Ch8FireTrapStartTurn,1)
+
+FireTrap(17,4,Ch8FireTrapStartTurn,1)
+FireTrap(18,4,Ch8FireTrapStartTurn,1)
+FireTrap(20,4,Ch8FireTrapStartTurn,1)
+FireTrap(21,4,Ch8FireTrapStartTurn,1)
 ENDTRAP
 ALIGN 4
 
@@ -245,16 +455,38 @@ Traps2:
 ENDTRAP
 ALIGN 4
 
-DummyUnits3:
-// Bottom Left
+
+DummyUnits1:
+UNIT 0x87 Mage 0x40 Level(1,Enemy,1)     [12,4] 0x0 0x0 0x0 0x0 [IronSword] NeverMoveAI
+UNIT 0x87 Myrmidon 0x40 Level(1,Enemy,1)     [2,10] 0x0 0x0 0x0 0x0 [IronSword] PWHAI
+UNIT 0x87 Myrmidon 0x40 Level(1,Enemy,1)     [5,10] 0x0 0x0 0x0 0x0 [IronSword] PWHAI
 UNIT
 
+AddLightRunes_test:
+AddLightRune(1,12)
+AddLightRune(4,14)
+NoFade
+ENDA
+
+RemoveLightRunes_test:
+RemoveLightRune(1,12)
+RemoveLightRune(4,14)
+NoFade
+ENDA
+
 BeginningScene:
+//AddLightRune(1,12)
+//AddLightRune(4,14)
 // Three rune uses for this chapter
 COUNTER_SET 0 3
 COUNTER_SET 1 3
 
+// Set reinforcement flags
+ENUT 0xD
+ENUT 0xE
+
 //LoadEnemies(DummyUnits1)
+
 
 LoadEnemies(EnemyUnits1)
 LoadEnemies(EnemyUnits2)
@@ -262,8 +494,49 @@ LoadEnemies(EnemyUnits3)
 LoadEnemies(EnemyUnits4)
 LoadEnemies(EnemyUnits5)
 
-
 LoadPlayerUnits(Units1)
+
+// New
+AddLightRune(18,11)
+
+// Right
+AddLightRune(12,18)
+AddLightRune(16,19)
+AddLightRune(19,20)
+AddLightRune(20,19)
+AddLightRune(21,18)
+AddLightRune(20,14)
+AddLightRune(21,14)
+
+AddLightRune(16,13)
+AddLightRune(17,13)
+
+AddLightRune(18,8)
+AddLightRune(21,8)
+
+// Left
+AddLightRune(3,14)
+AddLightRune(1,12)
+AddLightRune(2,9)
+AddLightRune(1,6)
+AddLightRune(2,5)
+AddLightRune(5,7)
+AddLightRune(7,9)
+
+AddLightRune(7,5)
+AddLightRune(7,6)
+AddLightRune(17,6)
+
+// Middle
+AddLightRune(10,10)
+AddLightRune(12,11)
+AddLightRune(14,10)
+
+// Top
+AddLightRune(10,4)
+AddLightRune(12,5)
+AddLightRune(14,4)
+
 
 GotoPrepScreen
 

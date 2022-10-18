@@ -246,7 +246,7 @@ WORD ThunderstormID
 
 ALIGN 4
 TowerShield:
-#incbin "TowerShield/TowerShield.dmp"
+#incbin "TowerShield/TowerShield2.dmp"
 POIN SkillTester
 WORD TowerShieldID
 

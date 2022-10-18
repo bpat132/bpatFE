@@ -40,7 +40,7 @@
 #endif
 
 {
-	#include "Chapter8Events_test.event"
+	#include "Chapter8Events.event"
 }
 
 

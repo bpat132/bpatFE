@@ -67,6 +67,11 @@ Chaos Storm[X]
 ## ChaosStormDesc
 Greatly improves critical rate.[X]
 
+## AnguishName
+Anguish[X]
+## AnguishDesc ^
+Reduces damage taken at 1-2 range by 3.[X]
+
 ## FireSwordName
 Fire Sword[X]
 ## FireSwordDesc

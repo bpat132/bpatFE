@@ -63,6 +63,7 @@
 #define Ruin CrimsonEye
 #define ChaosStorm DemonSurge
 #define BlessedLance BrightLance
+#define Anguish Eclipse
 #define PetrifyStaff 0xbe
 #define Darksword 0xbf
 #define Greatlance 0xc0

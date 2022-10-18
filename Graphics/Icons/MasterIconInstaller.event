@@ -25,6 +25,7 @@ ItemIconSlot(0xb9,"png/ShortAxe_Beansy.png") // hatchet
 ItemIconSlot(0xbe,"png/Fenrir_Beansy.png") // evil eye
 ItemIconSlot(0xbf,"png/Ruin_Snek.png") // crimson eye
 ItemIconSlot(0xc1,"png/ChaosStorm_Cardcafe.png") // demon surge
+ItemIconSlot(0x46,"png/Anguish_Beansy.png") // eclipse
 ItemIconSlot(0xe0,"png/Darksword.png")
 ItemIconSlot(0xe1,"png/Greatlance_Beansy.png")
 ItemIconSlot(0xe2,"png/Naginata_Zelix.png")
