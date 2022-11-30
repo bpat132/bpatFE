@@ -84,7 +84,7 @@ Good, keep it up and we may actually have a chance. We could use a victory here,
 [X]
 
 ## TEXT_Ch5_GreenInfo
-Green units will automatically[NL]
+Most green units will automatically[NL]
 join at the start of the[NL]
 chapter. Some, such as this[NL]
 pegasus knight, will move[NL]

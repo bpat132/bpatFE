@@ -50,7 +50,7 @@ ENUN
 MUSC EO3_ThoseWhoSlayAndFall
 Text(TEXT_Ch5_Violet_Event)
 NoFade
-CUSA Violet
+//CUSA Violet
 ENDA
 
 CeliaReinforcements:

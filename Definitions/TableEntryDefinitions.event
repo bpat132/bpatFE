@@ -173,5 +173,7 @@
 #define CraigMug 0x30
 #define HowardMug 0x4e
 
+#define MysteryMug 0x55
+
 // Other
 #define FreezeStatusID 0x9

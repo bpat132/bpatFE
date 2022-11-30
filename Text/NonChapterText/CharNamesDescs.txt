@@ -116,7 +116,7 @@ Stubborn, but genuine.[X]
 Justin[X]
 ## JustinDesc
 A zealous travelling priest.[NL]
-Unyielding in his convictions.[X]
+Firm in his convictions.[X]
 
 ## TedName
 Ted[X]
@@ -145,37 +145,44 @@ get by and for the thrill of it.[X]
 ## RoseName
 Rose[X]
 ## RoseDesc
-Rose placeholder description.[X]
+A veteran pegasus knight of[N]
+Melerra. Violet's older sister.[X]
 
 ## ClintName
 Clint[X]
 ## ClintDesc
-Clint placeholder description.[X]
+A hardened general of Melerra[N]
+Still a bit idealistic at heart.[X]
 
 ## VictoriaName
 Victoria[X]
 ## VictoriaDesc
-Victoria placeholder description.[X]
+A soldier with loose loyalties[NL]
+but undeniable skill.[X]
 
 ## MarieName
 Marie[X]
 ## MarieDesc
-Marie placeholder description.[X]
+Daughter of General Gordon known[N]
+for her strong will.[X]
 
 ## EvelynName
 Evelyn[X]
 ## EvelynDesc
-Evelyn placeholder description.[X]
+A self-taught mage with a[N]
+talent for hexes.[X]
 
 ## DonovanName
 Donovan[X]
 ## DonovanDesc
-Donovan placeholder description.[X]
+A veteran knight loyal to General[N]
+Gordon. Known for his bravery.[X]
 
 ## TrentName
 Trent[X]
 ## TrentDesc
-Trent placeholder description.[X]
+A pragmatic Melerran soldier with[N]
+a knack for self-preservation.[X]
 
 ## Ch1BossName
 Casey[X]
@@ -217,17 +224,20 @@ Leader of a gang of bandits.[X]
 ## JefferyName
 Jeffery[X]
 ## JefferyDesc
-Jeffery placeholder description.[X]
+A noble knight reknowned as the[N]
+strongest warrior in Melerra.[X]
 
 ## GordonName
 Gordon[X]
 ## GordonDesc
-Gordon placeholder description.[X]
+A virtuous general of Melerra.[N]
+Respected by his subordinates.[X]
 
 ## LouisName
 Louis[X]
 ## LouisDesc
-Louis placeholder description.[X]
+A cunning lord overseeing Melerra.[N]
+Morality is of little concern to him.[X]
 
 ## GaltSoldierName
 Soldier[X]

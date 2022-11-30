@@ -3,7 +3,8 @@
 [ConversationText]
 [L][LoadVictoria]
 [L]This is bad... If they beat Lord Jeffery, that means I'm next! No sense fighting for the losing side, right?
-If I'm gonna die, it sure ain't gonna be protecting the likes of Lord Louis. I just gotta find the right moment to defect.
+If I'm gonna die, it sure ain't gonna be protecting the likes of Lord Louis, especially when the stupid talisman they gave me doesn't even work.
+I just gotta find the right moment to defect.
 [X]
 
 ## TEXT_Ch8_Victoria_Talk
@@ -11,6 +12,172 @@ If I'm gonna die, it sure ain't gonna be protecting the likes of Lord Louis. I j
 [ML][LoadVictoria][MR][LoadFace][CurrentPortrait]
 [ML]Today's your lucky day. I'm Victoria, former soldier, current mercenary, and I'm giving you opportunity the to hire me!
 We can talk payment later, after you've seen my lancework in action.
+[X]
+
+## TEXT_Ch8_Start_Louis
+[ConversationText]
+[ML][LoadLouis][MR][LoadRedSoldier]
+[ML]So Lord Jeffery has fallen, and General Clint has betrayed us...
+[MR]I'm afraid so, milord. I could hardly believe it myself.
+[ML]As much as this pains me to say, what's done is done. We are Melerra's last line of defense, and we will not yield to these interlopers.
+I've prepared a contingency: light barriers to impede the enemy.
+Distribute these talismans to the rest of the castle guard, they will allow you to [ToggleRed]pass through the barriers unhindered.[ToggleRed]
+[MR]Thank you, milord. We will protect the castle with our lives!
+[ML]One more thing,[ToggleRed] eliminate the prisoners.[ToggleRed] They wouldn't hesitate to join the enemy's ranks. We mustn't give them the opportunity.
+[MR]...[N]Understood, milord.
+[ClearFace]
+[ML]To think I'd make such a grave miscalculation... I never expected they'd be able to sway Clint, and even then, to best Jeffery?
+I'm not used to having my back against the wall... I'll have to think of an exit strategy if the situation continues to deteriorate.
+[MR][LoadMystery]
+[MR]You aren't thinking of running away, are you? I hope you haven't forgotten our arrangement.
+[ML]Gah! I'll never get used to your habit of sneaking up on me.
+[MR]With luck, you'll be free of me after today. This is a great opportunity for us to ascertain whether Prince Edgar possesses the *****.
+[ML]If he does, then this battle's as good as lost. Could that be how he defeated Lord Jeffery?
+[MR]Not a chance. There are fewer than a dozen mages who could manage such a feat, and none are currently in this country. Aside from me, of course.
+[ML]Then this is our chance. With your help, we can easily rout the prince's forces and interrogate him.
+[MR]My help? You misunderstand. I'm not here to assist you, I'm here to remind you of your obligations.
+[ML]This is absurd! You said it yourself, if we capture the prince, we may learn the whereabouts of the *****.
+I hate to admit it, but the odds aren't looking good for me right now. Are you going to risk letting this chance slip away when with your help, we're certain to win?
+[MR]Don't presume to know my goals. Should you fail, I'll have plenty more opportunities. Prince Edgar's victory may even prove advantageous for me.
+So long you don't do something stupid like killing him without finding out what he knows about the *****. If you do that, or try to flee, I'll kill you myself.
+[ClearFace]
+[ML]What the hell is her deal? Have I been a pawn this whole time? How ridiculous...
+Well, I may be out of options, but I won't go down without a fight. I'll make these rebels pay for their impudence!
+[X]
+
+## TEXT_Ch8_Start_Edgar
+[ConversationText]
+[ML][LoadEdgar][MR][LoadClint]
+[ML]There are more enemy soldiers inside the castle than I expected. Why weren't they deployed outside?
+[MR]Lord Louis is incredibly cautious, he must have kept them here in case we made it this far. I wouldn't be surprised if he had further contingencies prepared as well.
+[ML]Then we'll have to be ready for anything. We can't afford to lose after making it all this way.
+Finally, victory is within reach, and once we strike down Louis, Melerra will be free of Galt's oppression once more.
+[MR]Things are never that simple. Whatever happens today, it will take years for Melerra to recover.
+[ML]You're right, defeating Louis won't solve everything. Still, we'll take it one step at a time, and our next step is retaking the castle!
+[X]
+
+## TEXT_Ch8_Start_LeftCell
+[ConversationText]
+[ML][LoadMarie][MR][LoadEvelyn]
+[ML]All that noise... Are they preparing for battle?
+[MR]Sounds like it.
+[ML]Then father must be...
+[MR]...
+[ML]...[CloseEyes]
+[MR]Marie...
+[X]
+
+## TEXT_Ch8_Start_RightCell
+[ConversationText]
+[ML][LoadDonovan][MR][LoadTrent]
+[ML]Hey! What's going on out there!
+[MR]Forget it, Donovan. They're not gonna tell us a thing.
+[ML]Gah, this is the worst! A fight for the future of our country, and we're stuck in this cell.
+[MR]Maybe they'll bust us out, but until then, save your energy. Shouting isn't gonna help us.
+[ML]Yeah, you're right. What a pain...
+[X]
+
+## TEXT_Ch8_GreenInfo
+Killing the prison guards[NL]
+will unlock the cells.[NL]
+This will cause the green[NL]
+units to join your party[NL]
+and acquire basic weapons.[A][X]
+
+## TEXT_Ch8_FireTrapWarning
+[ConversationText]
+[MR][LoadEvelyn]
+[MR]Something's wrong... Why is it getting hotter?
+[X]
+
+## TEXT_Ch8_LeftCell_FireTrap
+[ConversationText]
+[ML][LoadMarie][MR][LoadEvelyn]
+[ML]Ahhhh!
+[MR]Urg...
+[ML]Louis, you bastard! You'll pay for this!
+[X]
+
+## TEXT_Ch8_RightCell_FireTrap
+[ConversationText]
+[ML][LoadDonovan][MR][LoadTrent]
+[ML]Argh, what the hell is this?!
+[MR]I knew Louis was twisted, but this is insane! What kind of lunatic thinks up something like this?
+[X]
+
+## TEXT_Ch8_LeftCell_Open
+[ConversationText]
+[ML][LoadMarie][MR][LoadEvelyn]
+[ML]Thanks for saving us. You're here to kill Louis, right? Count me in.
+[MR]Me too. I'll pay them back for all they've done to us.
+[X]
+
+## TEXT_Ch8_RightCell_Open
+[ConversationText]
+[ML][LoadDonovan][MR][LoadTrent]
+[MR]Whew, that cell way way too cramped. You're with the liberators, right? Pass me an axe, and I'll get chopping.
+[ML]Finally, it's time to deliver some justice!
+[X]
+
+## TEXT_Ch8_End1
+[ConversationText]
+[FL][LoadLouis][R][LoadEdgar]
+[R]Louis, it's time to pay for what you've done!
+[FL]Wait, wait! I surrender!
+[R]You... surrender?
+[FL]I won't apologize or make excuses. I did what I did for the sake of Melerra, but now that I've lost, I've no reason not to cooperate.
+[R]And that includes handing Melerra over to Galt?
+[FL]You're young, and idealistic. I wouldn't expect you to understand.
+[FR][LoadMarie]
+[FR]What the hell?! Don't listen to a word he says! In all my life, I've never met such a twisted fiend as Louis.
+[R]Twisted?
+[FR]You didn't know? He imprisoned me to hold me as leverage over my father, leading to his death.
+Then he tried to kill me anyway, along with all the other prisoners! By burning us alive!
+[ClearFace][LoadDonovan]
+[FR]She's right! Louis is a vile, irredeemable man.
+[ClearFace][LoadTrent]
+[FR]If you give him the slightest opportunity, he'll stab you in the back. You can't trust a word he says.
+[ClearFace][LoadEvelyn]
+[FR]If you're feeling squeamish I'd be happy to dispose of him for you. I'm itching for some payback.
+[FL]...
+[FR][ClearFace]
+[R]You won't even deny it? Then you truly are beyond salvation. Melerra has no need for the likes of you.
+[LoadOverworldFaces]
+[L][LoadCelia]
+[L]Edgar, stop! You can't do this!
+[R]Celia..?
+[L]This isn't like you! Killing someone who can't fight back... You just can't!
+[R]But think about everything he's done! Doesn't it fill you with rage? It's unforgivable!
+[L]Let him rot in the dungeon then! Isn't that good enough?
+[R]So many people have died because of him. Died so that we could finally be rid of him. And none of them deserve it as much as him...
+Fine, I accept your surrender. You can stay in that deathtrap of a prison until I figure out what to do with you. Get him out of my sight.
+[FL][ClearFace]
+[R][MoveMidRight]
+[MR]Dammit! We worked so hard for this, but it all feels so hollow now. Am I in over my head after all?
+[FL][LoadClint]
+[FL]This is but the first of many trials you'll face as king. But if you could make it this far, you'll manage this too.
+[MR]King? No, no... I'm not ready for this. How could I be?
+[L]You'll be alright. You have me, Clint, Lord Howard, and all the rest of us to support you.
+[MR]I'm just so tired... Tired of fighting, tired of making decisions... I'm sorry, I need to rest, and to process everything.
+[ClearFace]
+[L]Edgar...
+[X]
+
+## TEXT_Ch8_End2
+[ConversationText]
+[ML][LoadLouis]
+[ML]What fools, throwing me into a cell I designed myself. It's only natural for me to prepare an escape route.
+[MR][LoadMystery]
+[MR]Running away again?
+[ML]Ahh! What are you doing here? How did you even get in here?
+[MR]You really shouldn't ask such useless questions. So, does he have it?
+[ML]What?
+[MR]The *****, of course. After all, your defeat has no bearing on our arrangement.
+[ML]Hah... Hahahaha! You seriously think I have the slightest clue? Excuse me for worrying my own survival while you were off doing who knows what.
+[MR]How unexpected... I thought you'd at least try to bluff your way out of here.
+[ML]Your scorn has blinded you, I'm not that much of a fool. We both know you were never going to let me live.
+[MR]Very insightful of you. For that, I'll grant you a swift end. Farewell, Louis.
+[ML]Hah, I'll see you in hell.
 [X]
 
 

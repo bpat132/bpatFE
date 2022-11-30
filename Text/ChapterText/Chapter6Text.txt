@@ -74,6 +74,13 @@ I hear it even rivals Sresa's grand library.
 [L]Sure, we could certainly use your help. Should we prove victorious, you can browse the archives to your hearts' content.
 [X]
 
+## TEXT_Ch6_End_DevilAxe
+[ConversationText]
+[L][LoadLucy]
+Huh, what's this? Looks a little scary, but maybe someone will find it useful?
+[X]
+
+
 
 
 

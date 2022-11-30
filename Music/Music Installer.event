@@ -45,8 +45,11 @@ SongTable(NierA_DCDA,song01E9,MapMusicGroup)
 #include "MusicEvents/ToS_LastBattleDecision_Chair.event"
 SongTable(ToS_LastBattleDecision,songLastBattleDecision,MapMusicGroup)
 
-#include "MusicEvents/OgreBattle_WallOfDefense_Sme.event"
-SongTable(OgreBattle_WallOfDefense,obwalls,MapMusicGroup)
+//#include "MusicEvents/OgreBattle_WallOfDefense_Sme.event"
+//SongTable(OgreBattle_WallOfDefense,obwalls,MapMusicGroup)
+
+#include "MusicEvents/OgreBattle_ImpregnableDefense_ArcherBias.event"
+SongTable(OgreBattle_WallOfDefense,song58,MapMusicGroup)
 
 #include "MusicEvents/GS_BabiLighthouse_Pandan.event"
 SongTable(GS_BabiLighthouse,BabiLighthouse,MapMusicGroup)

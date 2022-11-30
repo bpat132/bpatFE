@@ -8,7 +8,7 @@ POP
 #define NewMenuItemDescID 0x0D21
 
 setText(NewMenuItemTextID, NewMenuItemText) // These are from the tutorial, I think?
-setText(NewMenuItemDescID, NewMenuItemDesc)
+//setText(NewMenuItemDescID, NewMenuItemDesc)
 
 NewMenuItemText:
 //String(" Special") // [0x20] would be used as a space prefix for menus, but doesn't seem to work  
@@ -16,9 +16,11 @@ NewMenuItemText:
 String(" Invoke")
 BYTE 0
 
+/*
 NewMenuItemDesc:
-String("Open special submenu.")
+String("Activate a Rune.")
 BYTE 0
+*/
 
 ALIGN 4
 ChapterMenu:

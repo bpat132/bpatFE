@@ -23,7 +23,7 @@ setText(0x167, NewChName)
 
 ALIGN 4
 NewChName:
-String("Chapter 8")
+String("Chapter 8: Justice")
 BYTE 0
 
 ALIGN 4
@@ -40,21 +40,42 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+
 TurnEventPlayer(0,Turn2Reinforcements,2)
 TurnEventPlayer(0,Turn3Reinforcements,3)
 TurnEventPlayer(0,Turn4Reinforcements,4)
 TurnEventPlayer(0,Turn6Reinforcements,6)
 TurnEventPlayer(0,Turn7Reinforcements,7)
-//TurnEventPlayer(0,Turn8Reinforcements,8)
 
-//TurnEventPlayer(0,AddLightRunes,2,31)
-//TurnEventEnemy(0,RemoveLightRunes,1,31)
-//TurnEventPlayer(0,AddLightRunes,2,31)
-//TurnEventEnemy(0,RemoveLightRunes,1,31)
+//TurnEventPlayer(0,Turn8Reinforcements,8)
 
 TurnEventPlayer(0xD,AreaReinforcementsLeft,1,31)
 TurnEventPlayer(0xE,AreaReinforcementsRight,1,31)
+
+TurnEventPlayer(0x10,LeftCellEvent1,6)
+TurnEventPlayer(0x11,LeftCellEvent2,7)
+TurnEventPlayer(0x12,RightCellEvent,7)
 END_MAIN
+
+LeftCellEvent1:
+FlashCursor(18,3,0x40)
+Text(TEXT_Ch8_FireTrapWarning)
+NoFade
+ENDA
+
+LeftCellEvent2:
+FlashCursor(17,3,0x40)
+FlashCursor(18,3,0x40)
+Text(TEXT_Ch8_LeftCell_FireTrap)
+NoFade
+ENDA
+
+RightCellEvent:
+FlashCursor(20,3,0x40)
+FlashCursor(21,3,0x40)
+Text(TEXT_Ch8_RightCell_FireTrap)
+NoFade
+ENDA
 
 Turn2Reinforcements:
 EnemyReinforcements(Turn2ReinforcementUnits)
@@ -80,70 +101,6 @@ EnemyReinforcements(LeftAreaReinforcementUnits)
 AreaReinforcementsRight:
 EnemyReinforcements(RightAreaReinforcementUnits)
 
-AddLightRunes:
-// Right
-AddLightRune(12,18)
-AddLightRune(16,19)
-AddLightRune(19,20)
-AddLightRune(20,19)
-AddLightRune(21,18)
-AddLightRune(20,14)
-AddLightRune(21,14)
-
-AddLightRune(16,13)
-AddLightRune(17,13)
-
-AddLightRune(18,8)
-AddLightRune(21,8)
-
-// Left
-AddLightRune(3,14)
-AddLightRune(1,12)
-AddLightRune(2,9)
-AddLightRune(1,6)
-AddLightRune(2,5)
-AddLightRune(5,7)
-AddLightRune(7,9)
-
-// Middle
-AddLightRune(10,10)
-AddLightRune(12,11)
-AddLightRune(14,10)
-NoFade
-ENDA
-
-RemoveLightRunes:
-// Right
-RemoveLightRune(12,18)
-RemoveLightRune(16,19)
-RemoveLightRune(19,20)
-RemoveLightRune(20,19)
-RemoveLightRune(21,18)
-RemoveLightRune(20,14)
-RemoveLightRune(21,14)
-
-RemoveLightRune(16,13)
-RemoveLightRune(17,13)
-
-RemoveLightRune(18,8)
-RemoveLightRune(21,8)
-
-// Left
-RemoveLightRune(3,14)
-RemoveLightRune(1,12)
-RemoveLightRune(2,9)
-RemoveLightRune(1,6)
-RemoveLightRune(2,5)
-RemoveLightRune(5,7)
-RemoveLightRune(7,9)
-
-// Middle
-RemoveLightRune(10,10)
-RemoveLightRune(12,11)
-RemoveLightRune(14,10)
-NoFade
-ENDA
-
 CharacterBasedEvents:
 CharacterEventBothWays(0x15, VictoriaTalkEvent, 0x0, Victoria)
 END_MAIN
@@ -157,6 +114,7 @@ ENDA
 
 LocationBasedEvents:
 Seize(12,4)
+Seize(7,17)
 Chest(Darksword,2,2)
 Chest(ChaosStorm,4,2)
 Chest(Axereaver,6,2)
@@ -187,11 +145,14 @@ NoFade
 ENDA
 
 CheckLeftGuardDead:
+MUSC EO3_ThoseWhoSlayAndFall
 CUSA Marie
 CUSA Evelyn
+ENUT 0x10
+ENUT 0x11
 TILECHANGE 0x1
 CAM1 [22,2]
-Text(PlaceholderText)
+Text(TEXT_Ch8_LeftCell_Open)
 GiveItem(Heal,Marie)
 GiveItem(Flux,Evelyn)
 
@@ -206,11 +167,13 @@ NoFade
 ENDA
 
 CheckRightGuardDead:
+MUSC EO3_ThoseWhoSlayAndFall
 CUSA Donovan
 CUSA Trent
+ENUT 0x12
 TILECHANGE 0x0
 CAM1 [22,2]
-Text(PlaceholderText)
+Text(TEXT_Ch8_RightCell_Open)
 GiveItem(IronAxe,Donovan)
 GiveItem(IronAxe,Trent)
 
@@ -437,7 +400,7 @@ UNIT 0x87 Shaman 0x40 Level(Ch8EnemyLvl,Enemy,1)     [21,21] 0x0 0x0 0x0 0x0 [Fl
 */
 UNIT
 
-#define Ch8FireTrapStartTurn 7
+#define Ch8FireTrapStartTurn 6
 Traps1:
 FireTrap(17,3,Ch8FireTrapStartTurn,1)
 FireTrap(18,3,Ch8FireTrapStartTurn,1)
@@ -455,28 +418,7 @@ Traps2:
 ENDTRAP
 ALIGN 4
 
-
-DummyUnits1:
-UNIT 0x87 Mage 0x40 Level(1,Enemy,1)     [12,4] 0x0 0x0 0x0 0x0 [IronSword] NeverMoveAI
-UNIT 0x87 Myrmidon 0x40 Level(1,Enemy,1)     [2,10] 0x0 0x0 0x0 0x0 [IronSword] PWHAI
-UNIT 0x87 Myrmidon 0x40 Level(1,Enemy,1)     [5,10] 0x0 0x0 0x0 0x0 [IronSword] PWHAI
-UNIT
-
-AddLightRunes_test:
-AddLightRune(1,12)
-AddLightRune(4,14)
-NoFade
-ENDA
-
-RemoveLightRunes_test:
-RemoveLightRune(1,12)
-RemoveLightRune(4,14)
-NoFade
-ENDA
-
 BeginningScene:
-//AddLightRune(1,12)
-//AddLightRune(4,14)
 // Three rune uses for this chapter
 COUNTER_SET 0 3
 COUNTER_SET 1 3
@@ -484,9 +426,6 @@ COUNTER_SET 1 3
 // Set reinforcement flags
 ENUT 0xD
 ENUT 0xE
-
-//LoadEnemies(DummyUnits1)
-
 
 LoadEnemies(EnemyUnits1)
 LoadEnemies(EnemyUnits2)
@@ -537,6 +476,31 @@ AddLightRune(10,4)
 AddLightRune(12,5)
 AddLightRune(14,4)
 
+SetBackground(0xE)
+CAM1 [22,0]
+MUSC DW3_Oppression
+Text(TEXT_Ch8_Start_Louis)
+SetBackground(0xA)
+MUSC KitN_SortieFormation
+Text(TEXT_Ch8_Start_Edgar)
+ClearBackground
+//SetBackground(0x17)
+FlashCursor(17,3,0x40)
+FlashCursor(18,3,0x40)
+Text(TEXT_Ch8_Start_LeftCell)
+FlashCursor(20,3,0x40)
+FlashCursor(21,3,0x40)
+Text(TEXT_Ch8_Start_RightCell)
+
+
+TUTORIALTEXTBOXSTART
+CenterTutorialTextBox
+TEXTSHOW TEXT_Ch8_GreenInfo
+TEXTEND
+FlashCursor(18,6,0x40)
+FlashCursor(21,6,0x40)
+
+
 
 GotoPrepScreen
 
@@ -554,8 +518,19 @@ ENUF SwarpRuneDisabledFlag
 ENUF SwarpActiveFlag
 LABEL 1
 
-MUSC ToS_LastBattleDecision
-SetBackground(0x15)
-Text(PlaceholderText)
+MUSC AA3_VictorKudo
+SetBackground(0xE)
+//Text(TEXT_Ch8_End1)
+TEXTSTART
+TEXTSHOW TEXT_Ch8_End1
+TEXTEND
+SOUN 0xCE
+TEXTCONT
+TEXTEND
+REMA
+SetBackground(0x17)
+MUSC YuNo_BurialChamber
+Text(TEXT_Ch8_End2)
+SOUN 0xD5
 MNC2 Chapter9
 ENDA

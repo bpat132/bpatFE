@@ -4,7 +4,6 @@
 
 ALIGN 4
 ItemSpecificWTAList: //Attacker weapon, Defender weapon, Hit change, Damage change
-BYTE SteelAxe IronSword 50 5
 BYTE Flux FireSword 15 1
 BYTE Rend FireSword 15 1
 BYTE Ruin FireSword 15 1

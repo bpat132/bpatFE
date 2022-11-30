@@ -97,7 +97,7 @@ Perhaps this makes me naive as well, but at least I'll be in good company.
 [MR]Sir?
 [ML][MoveMidLeft]
 [ML][OpenEyes]Apologies, I was lost in thought. Should the enemy near the castle, we will finish them off. Until then, we hold this position.
-[MR][ClearFace]
+[CloseSpeechSlow][MR][ClearFace]
 [ML]What a fool I've been.
 [X]
 
@@ -105,6 +105,20 @@ Perhaps this makes me naive as well, but at least I'll be in good company.
 [ConversationText]
 [L][LoadGordon]
 [L]The enemy draws near. It's time, show them the might of Melerra's finest!
+[X]
+
+## TEXT_Ch5_Village_Thoron
+[ConversationText]
+[MidLeft][LoadFace][0x5A][0x01][MidRight][LoadFace][CurrentPortrait]
+[MidLeft]
+No matter how much I study, I can't use this tome! Maybe I wasn't cut out to be a mage after all. Here, you can have it. Better to give it away than leave it on my bookshelf.
+[X]
+
+## TEXT_Ch5_Village_BlessedLance
+[ConversationText]
+[MidLeft][LoadFace][0x62][0x01][MidRight][LoadFace][CurrentPortrait]
+[MidLeft]
+A priest once gave me this lance, he said it would help keep me safe. Turns out I'm terrible at spearfighting so it's useless to me. Hopefully you can put it to better use.
 [X]
 
 ## TEXT_Ch7_End

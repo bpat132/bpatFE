@@ -78,3 +78,13 @@ It's not too late to surrender. Too much Melerran blood has been spilled today. 
 [BattleText]
 [OpenMidLeft][LoadGordon][OpenMidLeft]
 Marie... Forgive your fool of a father...[CloseEyes][A][X]
+
+## Ch8LouisBattleQuote
+[BattleText]
+[OpenMidLeft][LoadLouis][OpenMidLeft]
+You fools! Everyting I do, I do for Melerra! Not that I expect you upstarts to understand.[A][X]
+
+## Ch8LouisDeathQuote
+[BattleText]
+[OpenMidLeft][LoadLouis][OpenMidLeft]
+Enough, enough! I yield![A][X]

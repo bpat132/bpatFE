@@ -25,7 +25,7 @@ cmp   r0,#0x0
 beq   NoAcrobat
 @cmp   r2,#0xFF
 @beq   NoAcrobat
-cmp   r1,#0x2e
+cmp   r1,#0x2c
 bne   NoAcrobat
 mov   r2,#0x1
 NoAcrobat:

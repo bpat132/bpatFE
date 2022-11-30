@@ -61,8 +61,8 @@ END_MAIN
 
 TalkEventClint:
 MUSC EO3_ThoseWhoSlayAndFall
-//Text(TEXT_Ch7_Rose_Clint_Talk)
-Text(PlaceholderText)
+Text(TEXT_Ch7_Rose_Clint_Talk)
+//Text(PlaceholderText)
 CUSA Clint
 NoFade
 ENDA
@@ -80,10 +80,10 @@ CALL EndingScene
 ENDA
 
 VillageEvent1:
-	VillageEventItem(PlaceholderText, Village, Thoron)
+	VillageEventItem(TEXT_Ch5_Village_Thoron, Village, Thoron)
 	
 VillageEvent2:
-	VillageEventItem(PlaceholderText, Village, BlessedLance)
+	VillageEventItem(TEXT_Ch5_Village_BlessedLance, Village, BlessedLance)
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
@@ -102,7 +102,8 @@ BNE 1 0 0xC // Clear flag 0xA if not player unit
 CAM1 [0,0]
 FlashCursor(1,1,0x40)
 MUSC OgreBattle_WallOfDefense
-Text(PlaceholderText)
+Text(TEXT_Ch7_Gordon_Charge)
+//Text(PlaceholderText)
 
 SetAI(Gordon, 0x00,0x00,0x04,0x00)
 SetUnitStatus(Gordon, 0x40, 0x04)
@@ -331,8 +332,8 @@ ENUN
 
 SetBackground(0x15)
 CAM1 [8,3]
-//Text(TEXT_Ch7_Start_Castle)
-Text(PlaceholderText)
+Text(TEXT_Ch7_Start_Castle)
+//Text(PlaceholderText)
 ClearBackground
 
 MOVE 15 Clint [7,11]
@@ -340,23 +341,23 @@ STAL 31
 CAM1 [7,11]
 FlashCursor(7,11,0x20)
 FlashCursor(8,11,0x20)
-//Text(TEXT_Ch7_Start_Clint)
-Text(PlaceholderText)
+Text(TEXT_Ch7_Start_Clint)
+//Text(PlaceholderText)
 
 MOVE 15 Rose [15,20]
 STAL 31
 CAM1 [15,21]
 MUSC EO3_ThoseWhoSlayAndFall
-//Text(TEXT_Ch7_Start_Violet)
-Text(PlaceholderText)
+Text(TEXT_Ch7_Start_Violet)
+//Text(PlaceholderText)
 
 MOVE 15 Gordon [1,1]
 STAL 31
 CAM1 [1,1]
 MUSC OgreBattle_WallOfDefense
 FlashCursor(1,1,0x20)
-//Text(TEXT_Ch7_Start_Gordon)
-Text(PlaceholderText)
+Text(TEXT_Ch7_Start_Gordon)
+//Text(PlaceholderText)
 
 FADI 16
 CLEA 0x0
@@ -392,6 +393,7 @@ LABEL 1
 
 MUSC ToS_LastBattleDecision
 SetBackground(0x15)
-Text(PlaceholderText)
+Text(TEXT_Ch7_End)
+//Text(PlaceholderText)
 MNC2 Chapter8
 ENDA

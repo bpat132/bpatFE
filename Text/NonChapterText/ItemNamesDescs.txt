@@ -110,10 +110,10 @@ dodging for one turn.[X]
 Petrify[X]
 ## PetrifyStaffDesc
 Petrifies any unit for one turn,[NL]
-immobilizing but boosting defense.[X]
+incapacitating but boosting defense.[X]
 ## PetrifyStaffDesc2
-Petrifies a unit for[NL]
-one turn, immobilizing[NL]
+Petrifies a unit for 1[NL]
+turn, incapacitating[NL]
 but boosting defense.[X]
 
 

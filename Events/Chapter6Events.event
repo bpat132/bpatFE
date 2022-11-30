@@ -304,11 +304,12 @@ LABEL 1
 
 MUSC ToS_LastBattleDecision
 SetBackground(0x34)
-Text(PlaceholderText)
+Text(TEXT_Ch6_End)
 
 CHECK_EVENTID 0xA
 BNE 2 0 0xC
-Text(PlaceholderText)
+//Text(PlaceholderText)
+Text(TEXT_Ch6_End_DevilAxe)
 SVAL 0x3 DevilAxe
 GIVEITEMTO Edgar
 LABEL 2

@@ -57,7 +57,7 @@ survive at 1HP.[A][X]
 
 ## TEXT_Rune3Info
 The [ToggleRed]Netherswap Rune[ToggleRed][N]
-allows an ally to use their
+allows an ally to use their[N]
 action to switch places[N]
 with another ally within[N]
 5 spaces of the user.[A][X]
@@ -158,3 +158,7 @@ Celerity[X]
 
 # 0x0D03
 Netherswap[X]
+
+# 0x0D21
+Invoke a rune. Total uses[N]
+are limited per chapter.[X]

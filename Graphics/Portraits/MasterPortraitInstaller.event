@@ -347,3 +347,11 @@ HowardMugData: // RW
 #incbin "Dmp/Howard_minimug.dmp"
 setMugEntry(HowardMug, HowardMugData, 2, 5, 3, 3)
 
+ALIGN 16
+MysteryMugData: // RW
+#incbin "Dmp/Mystery_mug.dmp"
+#incbin "Dmp/Mystery_frames.dmp"
+#incbin "Dmp/Mystery_palette.dmp"
+#incbin "Dmp/Mystery_minimug.dmp"
+setMugEntry(MysteryMug, MysteryMugData, 3, 5, 3, 3)
+

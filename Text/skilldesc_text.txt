@@ -397,7 +397,7 @@ from critical hits by 50%.[X]
 
 ## SD_Celerity
 Encumbered: Heavy loot is slowing[N]
-this unit's escape! Movement -2.[X]
+this unit's escape! Movement -3.[X]
 
 ## SD_FieryBlood
 Fiery Blood: +4 damage[N]

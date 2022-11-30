@@ -1,5 +1,5 @@
 //#define _EASY_MODE_
-#define _ANIMS_OFF_
+//#define _ANIMS_OFF_
 
 //#define _TEST_CH2_
 //#define _TEST_CH3_
@@ -7,7 +7,7 @@
 //#define _TEST_CH5_
 //#define _TEST_CH6_
 //#define _TEST_CH7_
-#define _TEST_CH8_
+//#define _TEST_CH8_
 //#define _TEST_CH9_
 
 #ifdef _TEST_CH2_

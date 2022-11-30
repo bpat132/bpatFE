@@ -7,3 +7,5 @@ POIN BlowIDList
 ALIGN 4
 BlowIDList:
 BYTE DuelistsBlowID DeathBlowID DartingBlowID WardingBlowID CertainBlowID ArmoredBlowID QuickDrawID ChivalryID PragmaticID HeroesDeathBlowID
+// Temporary stopgab for dazzle bug
+//BYTE DuelistsBlowID DeathBlowID DartingBlowID WardingBlowID CertainBlowID ArmoredBlowID QuickDrawID ChivalryID PragmaticID DazzleID
