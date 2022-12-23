@@ -184,6 +184,12 @@ Trent[X]
 A pragmatic Melerran soldier with[N]
 a knack for self-preservation.[X]
 
+## PatrickName
+Patrick[X]
+## PatrickDesc
+A veteran Kemaroan commander who[N]
+has survived countless battles.[X]
+
 ## Ch1BossName
 Casey[X]
 ## Ch1BossDesc

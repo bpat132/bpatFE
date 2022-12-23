@@ -1,3 +1,5 @@
+// This only covers palettes
+
 FlasubanFieldsPalette:
 #incext Png2Dmp "Flasuban_fields/Flasuban_Peer_Fields.png" --palette-only
 EventPointerTable(0x2,FlasubanFieldsPalette)

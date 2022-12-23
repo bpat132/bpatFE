@@ -15,7 +15,7 @@ setText(0x168, NewChName)
 
 ALIGN 4
 NewChName:
-String("End of Demo")
+String("Chapter 9")
 BYTE 0
 
 ALIGN 4
@@ -58,10 +58,32 @@ Tutorial:
 END_MAIN
 
 Units1:
-UNIT Edgar EphraimLord 0x1 Level(1,Ally,False) [0,0] 0x0 0x0 0x0 0x1 [IronLance,RegalLance] NoAI
+LoadUnit(5,22,Edgar)
+LoadUnit(12,23,Celia)
+UNIT Patrick Ranger 0x1 Level(1,Ally,False) [15,22] 0x0 0x0 0x0 0x1 [SilverBow,SwiftSword] NoAI
+// Left
+//LoadUnit(5,22)
+LoadUnit(5,23)
+LoadUnit(6,22)
+LoadUnit(7,21)
+LoadUnit(7,23)
+LoadUnit(8,21)
+LoadUnit(8,22)
+// Right
+LoadUnit(12,21)
+//LoadUnit(12,23)
+LoadUnit(13,22)
+LoadUnit(14,21)
+LoadUnit(14,23)
+//LoadUnit(15,22)
+LoadUnit(15,23)
 UNIT
 
-EnemyUnits:
+EnemyUnits1:
+UNIT 0x49 General 0x40 Level(4,Enemy,1)     [1,1] 0x0 0x0 0x0 0x0 [SilverLance,Axereaver] AIRAI
+UNIT 0x50 Warrior 0x40 Level(2,Enemy,1)     [17,1] 0x0 0x0 0x0 0x0 [SilverAxe,SteelBow] AIRAI
+
+
 UNIT 0x80 Fighter 0x40 Level(1,Enemy,1)     [4,4] 0x0 0x0 0x0 0x0 [SteelAxe] NeverMoveAI
 UNIT
 
@@ -74,12 +96,13 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
-ENUT 0x1 //no more boss quotes
-ENUT 0x2 //no more death quotes
-LOAD1 0x1 EnemyUnits
-ENUN
-LOAD1 0x0 Units1 //0x0 instead of 0x1 seems to be for allies on maps with prep screens
-ENUN
+// Three rune uses for this chapter
+COUNTER_SET 0 3
+COUNTER_SET 1 3
+
+LoadEnemies(EnemyUnits1)
+LoadPlayerUnits(Units1)
+
 GotoPrepScreen
 
 EndingScene:

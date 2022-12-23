@@ -72,14 +72,14 @@ Valter (Prologue),0x0
 Ch1Boss,0x0
 Ch2Boss,0x0
 Ch3Boss,DuelistsBlowID
-Entombed (Ch 4),0x0
+Entombed (Ch 4),CertainBlowID
 Ch4Boss,CertainBlowID
 Ch5Boss,IntimidateID
 Ch6Boss,WardingBlowID
 Jeffery,InsightID
 Gordon,NullifyID
 Louis,TomeRangeUpID
-Maelduin (Ch 12A),0x0
+Maelduin (Ch 12A),BowRangeUpID
 Aias (Ch 13A),0x0
 Carlyle (Ch 14A),0x0
 Caellach (Ch 15),0x0

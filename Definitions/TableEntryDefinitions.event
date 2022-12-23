@@ -67,6 +67,7 @@
 #define PetrifyStaff 0xbe
 #define Darksword 0xbf
 #define Greatlance 0xc0
+#define GreatLance Greatlance
 #define Naginata 0xc1
 
 // Classes
@@ -108,6 +109,8 @@
 #define Evelyn 0x1d
 #define Donovan 0x1e
 #define Trent 0x1f
+
+#define Patrick 0x20
 
 #define Ch1Boss 0x46
 #define Ch2Boss 0x47
@@ -158,6 +161,8 @@
 #define EvelynMug 0x1e
 #define DonovanMug 0x1f
 #define TrentMug 0x20
+
+#define PatrickMug 0x21
 
 #define Ch1BossMug 0x31
 #define Ch2BossMug 0x32

@@ -98,6 +98,7 @@ ForceDeployEntry(Ethan,0x2)
 ForceDeployEntry(Quentin,0x5)
 ForceDeployEntry(Thomas,0x5)
 ForceDeployEntry(Rose,0x6)
+ForceDeployEntry(Patrick,Chapter9)
 EndForceDeploy
 
 

@@ -122,8 +122,8 @@ High-flying knights vulnerable only to[NL]
 bows and magic. Equip: Axes.[X]
 
 # 0x0339
-Disciplined soldiers with[.][NL]
-great resilience. Equip: Lances.[X]
+Disciplined soldiers with great[.][NL]
+resilience. Equip: Lances.[X]
 
 # 0x0518
 Frozen[X]

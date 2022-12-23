@@ -260,6 +260,14 @@ TrentMugData: // Jiro
 setMugEntry(TrentMug, TrentMugData, 5, 5, 5, 3)
 
 ALIGN 16
+PatrickMugData: // Me
+#incbin "Dmp/Patrick_mug.dmp"
+#incbin "Dmp/Patrick_frames.dmp"
+#incbin "Dmp/Patrick_palette.dmp"
+#incbin "Dmp/Patrick_minimug.dmp"
+setMugEntry(PatrickMug, PatrickMugData, 3, 5, 3, 3)
+
+ALIGN 16
 Ch1BossMugData: // LL
 #incbin "Dmp/Ch1Boss_mug.dmp"
 #incbin "Dmp/Ch1Boss_frames.dmp"
