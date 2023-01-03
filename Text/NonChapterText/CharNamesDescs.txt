@@ -227,6 +227,16 @@ Martin[X]
 ## Ch6BossDesc
 Leader of a gang of bandits.[X]
 
+## Ch9BossName
+David[X]
+## Ch9BossDesc
+A commander in Galt's army.[X]
+
+## Ch9Boss2Name
+Barnes[X]
+## Ch9Boss2Desc
+A commander in Galt's army.[X]
+
 ## JefferyName
 Jeffery[X]
 ## JefferyDesc

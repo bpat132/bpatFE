@@ -52,7 +52,8 @@ WORD CharmID
 
 ALIGN 4
 Charisma:
-#incbin "Charisma/Charisma.dmp"
+//#incbin "Charisma/Charisma.dmp"
+#incbin "Charisma/Charisma2.dmp"
 POIN NewAuraSkillCheck
 WORD CharismaID
 

@@ -16,8 +16,15 @@ MovingMapSprite(Knight_F, 0x1C7E74, KnightMv)
 StandingMapSprite(0x19, 1, WyvernSt)
 MovingMapSprite(WyvernRider, 0x81D403C, WyvernMv)
 
+/*
 StandingMapSprite(0x41, 1, BallistaSt)
 MovingMapSprite(Fleet, 0x81EEC84, BallistaMv)
+*/
+StandingMapSprite(0x46, 1, BallistaSt)
+MovingMapSprite(Ballistician, 0x81F1A54, BallistaMv)
+
+StandingMapSprite(0x2C, 0, HalbSt)
+MovingMapSprite(Halberdier, 0x81E0E40, HalbMv)
 
 // FE6
 ALIGN 4
@@ -50,3 +57,11 @@ BallistaSt:
 ALIGN 4
 BallistaMv:
 #incext Png2Dmp "Animations/ballista_mv.png" --lz77
+
+// TBA
+ALIGN 4
+HalbSt:
+#incext Png2Dmp "Animations/halb_st.png" --lz77
+ALIGN 4
+HalbMv:
+#incext Png2Dmp "Animations/halb_mv.png" --lz77

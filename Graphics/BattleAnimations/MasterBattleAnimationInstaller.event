@@ -53,9 +53,16 @@ WORD 0x0 // Seperator
 #include "Animations/wr_unarmed.event"
 
 WyvernRiderAnim:
-
 AxeAnim(0xAE)
 HandAxeAnim(0xAF)
 UnarmedAnim(0x59)
 WORD 0x0 // Seperator
 
+// Credit: TBA
+#include "Animations/halb_lance Installer.event"
+#include "Animations/halb_unarmed Installer.event"
+
+HalbAnim:
+SpearAnim(0x96)
+UnarmedAnim(0x97)
+WORD 0x0 // Seperator

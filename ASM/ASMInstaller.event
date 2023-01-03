@@ -281,13 +281,19 @@ PUSH
   BYTE 0xC0 0x46
 POP
 
-// Change thief and boss bonus exp
+// Change thief and boss bonus exp (commenting out because moving this to C)
+/*
 PUSH
   ORG $2C3EE
   BYTE 0x00
   ORG $2C3FA
   BYTE 0x14
 POP
+*/
+// Exp formula changes
+//#include "CHAX/exp_changes.lyn.event"
+//#include "CHAX/exp_promo_changes.lyn.event"
+#include "CHAX/decomp.lyn.event"
 
 // Pik mag/3 range modified to fixed range
 PUSH

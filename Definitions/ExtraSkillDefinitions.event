@@ -1,3 +1,5 @@
 // More intuitive defines for skill IDs
 #define SlimID DesperationID
 #define GemID TriangleAdeptPlusID
+#define LanceRangeUpID 159
+#define SpotterID CharismaID

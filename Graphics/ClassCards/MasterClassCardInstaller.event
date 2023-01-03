@@ -15,7 +15,17 @@ BallistaPortrait:
 BallistaPortraitPalette:
 #incext Png2Dmp "Cards/ballistician_arch.png" --palette-only
 
-#define BallistaCard 0x92
+//#define BallistaCard 0x92
+#define BallistaCard 0x9b
 setCardEntry(BallistaCard,BallistaPortrait,BallistaPortraitPalette)
+
+HalbPortrait:
+#incext Png2Dmp "Cards/halberdier_tba.png" --lz77
+HalbPortraitPalette:
+#incext Png2Dmp "Cards/halberdier_tba.png" --palette-only
+
+//#define HalbCard 0x9b
+#define HalbCard 0x9c
+setCardEntry(HalbCard,HalbPortrait,HalbPortraitPalette)
 
 

@@ -251,7 +251,7 @@
   mov     r0, #(\bar_id)     
   mov     r1, #(\bar_x-11)
   mov     r2, #(\bar_y-2)
-  blh     DrawBar, r4
+  blh     DrawStatWithBar41Max, r4
 .endm
 
 .macro draw_bar_at_with_cap_getter bar_x, bar_y, statgetter, capgetter, offset, bar_id  
@@ -270,7 +270,7 @@
   mov     r0, #(\bar_id)     
   mov     r1, #(\bar_x-11)
   mov     r2, #(\bar_y-2)
-  blh     DrawBar, r4
+  blh     DrawStatWithBar41Max, r4
 .endm
 
 .macro draw_halved_bar_at bar_x, bar_y, getter, offset, bar_id
@@ -289,7 +289,7 @@
   mov     r0, #(\bar_id)     
   mov     r1, #(\bar_x-11)
   mov     r2, #(\bar_y-2)
-  blh     DrawBar, r4
+  blh     DrawStatWithBar41Max, r4
 .endm
 
 .macro draw_str_bar_at, bar_x, bar_y
@@ -346,7 +346,7 @@
   mov     r0, #0x6   
   mov     r1, #(\bar_x-11)
   mov     r2, #(\bar_y-2)
-  blh     DrawBar, r4
+  blh     DrawStatWithBar41Max, r4
 .endm
 
 .macro draw_def_bar_at, bar_x, bar_y
@@ -407,7 +407,7 @@
   mov     r0, #0x6      @why 6?
   mov     r1, #(\bar_x-11)
   mov     r2, #(\bar_y-2)   
-  blh     DrawBar, r4
+  blh     DrawStatWithBar41Max, r4
 .endm
 
 .macro draw_move_bar_with_getter_at, bar_x, bar_y
@@ -435,7 +435,7 @@
   mov     r0, #0x8    
   mov     r1, #(\bar_x-11)
   mov     r2, #(\bar_y-2)      
-  blh     DrawBar, r4
+  blh     DrawStatWithBar41Max, r4
 .endm
 
 .macro draw_move_number_at, tile_x, tile_y
@@ -478,7 +478,7 @@
   mov     r0, #0x7      
   mov     r1, #(\bar_x-11)
   mov     r2, #(\bar_y-2)      
-  blh     DrawBar, r4
+  blh     DrawStatWithBar41Max, r4
 .endm
 
 .macro draw_rating_at, tile_x, tile_y
@@ -559,7 +559,7 @@
   mov     r0, #0x7      
   mov     r1, #(\bar_x-11)
   mov     r2, #(\bar_y-2)      
-  blh     DrawBar, r4
+  blh     DrawStatWithBar41Max, r4
 .endm
 
 .macro draw_number_at, num_x, num_y, routine=0, colour=2 @r0 is number and r1 is colour

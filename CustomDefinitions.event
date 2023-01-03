@@ -21,6 +21,10 @@
   #define ChapterDataTableEntSize 148
 #endif
 
+// NEW
+#define InternalLevelTable 0x0203FF00
+#define InternalLevelTableSize 50
+
 #define LunarBrace MoonBracelet
 #define SolarBrace SunBracelet
 

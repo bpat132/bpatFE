@@ -102,10 +102,10 @@ Grows weaker each turn.[X]
 Temporarily boosts[NL]
 skill and luck.[X]
 
-# 0x02f0
+# 0x02f4
 Ballistician[X]
 
-# 0x033C
+# 0x0340
 Ballisticians with incredible range[NL]
 but no means of counterattacking.[X]
 
@@ -124,6 +124,17 @@ bows and magic. Equip: Axes.[X]
 # 0x0339
 Disciplined soldiers with great[.][NL]
 resilience. Equip: Lances.[X]
+
+# 0x02da
+Sentinel[X]
+
+# 0x0332
+Masters of the spear reknowned[NL]
+for their valor. Equip: Lances.[X]
+
+# 0x0319
+Mounted warriors skilled at both melee[NL]
+and ranged combat. Equip: Swords, Bows.[X]
 
 # 0x0518
 Frozen[X]

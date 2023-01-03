@@ -19,7 +19,8 @@ prSubstractOne:
 prAdjustAidIfMounted:
 {
 	rIfUnitHasAttribute(CA_MOUNTEDAID)
-		rCallSequence(_prNegate _prAddBaseMountedAidBonus _prAddMoreIfNotFemale)
+		rConstant(25)
+		//rCallSequence(_prNegate _prAddBaseMountedAidBonus _prAddMoreIfNotFemale)
 
 _prNegate:
 	rMinus(rCurrent)
@@ -28,7 +29,8 @@ _prAddBaseMountedAidBonus:
 	rAddConst(19)
 
 _prAddMoreIfNotFemale: // Stupid mechanic imo, but we're going vanilla so :shrug:
-	rIfUnitHasNotAttribute(CA_FEMALE, rAddConst(5))
+	//rIfUnitHasNotAttribute(CA_FEMALE, rAddConst(5))
+	rIfUnitHasNotAttribute(CA_FEMALE, rAddConst(0))
 }
 
 #endif // MODULAR_GETTER_AID_EVENT

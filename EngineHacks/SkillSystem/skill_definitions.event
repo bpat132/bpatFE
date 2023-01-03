@@ -93,7 +93,8 @@
 
 //Spur Skills: Adjacent allies gain +4 to their respective stat.
 //Author Unknown (Initial Commit)
-#define SpurStrID 159
+//#define SpurStrID 159
+#define SpurStrID 255
 #define SpurMagID 160
 #define SpurSpdID 161
 #define SpurDefID 162

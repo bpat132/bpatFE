@@ -72,6 +72,9 @@
 
 // Classes
 #define Thief_F 0x54
+#define Halberdier 0x3a
+#define Sentinel Halberdier
+#define Ballistician 0x55
 
 // Characters
 #define Edgar 0x1
@@ -118,6 +121,9 @@
 #define Ch4Boss 0x4A
 #define Ch5Boss 0x4B
 #define Ch6Boss 0x4C
+
+#define Ch9Boss 0x49
+#define Ch9Boss2 0x50
 
 #define Jeffery 0x4D
 #define Gordon 0x4E
@@ -179,6 +185,9 @@
 #define HowardMug 0x4e
 
 #define MysteryMug 0x55
+
+#define Ch9BossMug 0x37
+#define Ch9Boss2Mug 0x3b
 
 // Other
 #define FreezeStatusID 0x9

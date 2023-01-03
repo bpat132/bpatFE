@@ -1,0 +1,124 @@
+
+// TILESETS
+
+#ifndef tilesetAnimation
+    #define tilesetAnimation(speed, size, pointer)    "BYTE speed 0; SHORT size; POIN pointer"
+#endif
+
+/*
+ALIGN 4
+N426CastleObjects:
+#incext Png2Dmp "N426_castle/Improved Castle Tileset Palette 2.png"
+*/
+
+//define ObjTypePalettePointerTable(aId, apointer) "PUSH; ORG ObjTypePalettePLIST+(0x4 * aId); POIN apointer; POP"
+
+
+// Super Fields (WAve, RW)
+ALIGN 4
+SuperFieldsObj:
+#incext Png2Dmp "WAve_RW_SuperFields/SuperFieldsImage.png" --lz77
+
+ALIGN 4
+SuperFieldsCfg:
+#incext compress "WAve_RW_SuperFields/SuperFieldsConfig.mapchip_config"
+
+ALIGN 4
+EventPointerTable(0x1, SuperFieldsObj)
+EventPointerTable(0x3, SuperFieldsCfg)
+
+// Mapchip changes
+ALIGN 4
+EventPointerTable(0x6e, MountainousConfig)
+
+// Tilesets
+ALIGN 4
+MountainousConfig:
+//#incext compress "../Maps/mountainous_mapchip.mapchip_config"
+#incext compress "Mountainous/mountainous_mapchip.mapchip_config"
+
+
+ALIGN 4
+N426CastleObjects:
+#incext Png2Dmp "N426_castle/Improved Castle Object_Palette 2.png" --lz77
+
+ALIGN 4
+N426CastlePalette:
+#incext Png2Dmp "N426_castle/Improved Castle Object_Palette 2.png" --palette-only
+
+ALIGN 4
+N426CastleTiles:
+#incext compress "N426_castle/Castle Update Config.mapchip_config"
+
+
+
+ALIGN 4
+N426CastleAnim0:
+#incext Png2Dmp "N426_castle/Map Animations/castle_anims.mapanime 1_000.png"
+ALIGN 4
+N426CastleAnim1:
+#incext Png2Dmp "N426_castle/Map Animations/castle_anims.mapanime 1_001.png"
+ALIGN 4
+N426CastleAnim2:
+#incext Png2Dmp "N426_castle/Map Animations/castle_anims.mapanime 1_002.png"
+ALIGN 4
+N426CastleAnim3:
+#incext Png2Dmp "N426_castle/Map Animations/castle_anims.mapanime 1_003.png"
+ALIGN 4
+N426CastleAnim4:
+#incext Png2Dmp "N426_castle/Map Animations/castle_anims.mapanime 1_004.png"
+ALIGN 4
+N426CastleAnim5:
+#incext Png2Dmp "N426_castle/Map Animations/castle_anims.mapanime 1_005.png"
+ALIGN 4
+N426CastleAnim6:
+#incext Png2Dmp "N426_castle/Map Animations/castle_anims.mapanime 1_006.png"
+ALIGN 4
+N426CastleAnim7:
+#incext Png2Dmp "N426_castle/Map Animations/castle_anims.mapanime 1_007.png"
+
+ALIGN 4
+N426CastleAnimation:
+tilesetAnimation(0x1C,0x1000,N426CastleAnim0)
+tilesetAnimation(0x1C,0x1000,N426CastleAnim1)
+tilesetAnimation(0x1C,0x1000,N426CastleAnim2)
+tilesetAnimation(0x1C,0x1000,N426CastleAnim3)
+tilesetAnimation(0x1C,0x1000,N426CastleAnim4)
+tilesetAnimation(0x1C,0x1000,N426CastleAnim5)
+tilesetAnimation(0x1C,0x1000,N426CastleAnim6)
+tilesetAnimation(0x1C,0x1000,N426CastleAnim7)
+WORD 0 0
+
+ALIGN 4
+EventPointerTable(0xc0, N426CastleObjects)
+EventPointerTable(0xc1, N426CastlePalette)
+EventPointerTable(0xc2, N426CastleTiles)
+EventPointerTable(0xc3, N426CastleAnimation)
+
+#define NCastleObjects 0xc0
+#define NCastlePalette 0xc1
+#define NCastleTiles 0xc2
+#define NCastleAnims 0xc3
+
+
+ALIGN 4
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

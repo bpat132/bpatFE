@@ -363,3 +363,19 @@ MysteryMugData: // RW
 #incbin "Dmp/Mystery_minimug.dmp"
 setMugEntry(MysteryMug, MysteryMugData, 3, 5, 3, 3)
 
+ALIGN 16
+Ch9BossMugData: // Jiro
+#incbin "Dmp/Ch9Boss_mug.dmp"
+#incbin "Dmp/Ch9Boss_frames.dmp"
+#incbin "Dmp/Ch9Boss_palette.dmp"
+#incbin "Dmp/Ch9Boss_minimug.dmp"
+setMugEntry(Ch9BossMug, Ch9BossMugData, 3, 5, 3, 2)
+
+ALIGN 16
+Ch9Boss2MugData: // RW
+#incbin "Dmp/Ch9Boss2_mug.dmp"
+#incbin "Dmp/Ch9Boss2_frames.dmp"
+#incbin "Dmp/Ch9Boss2_palette.dmp"
+#incbin "Dmp/Ch9Boss2_minimug.dmp"
+setMugEntry(Ch9Boss2Mug, Ch9Boss2MugData, 3, 5, 3, 3)
+
