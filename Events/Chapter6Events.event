@@ -211,13 +211,15 @@ UNIT 0x86 PegasusKnight 0x40 Level(Ch6EnemyLvl,Enemy,1)     [11,8] 0x0 0x0 0x0 0
 #endif
 
 // Thieves
-UNIT 0x85 Thief 0x40 Level(Ch6EnemyLvl,Enemy,1)     [1,10] DropItem 0x0 0x0 0x0 [LightBrand,PetrifyStaff] LootingThiefAI
+//UNIT 0x85 Thief 0x40 Level(Ch6EnemyLvl,Enemy,1)     [1,10] DropItem 0x0 0x0 0x0 [LightBrand,PetrifyStaff] LootingThiefAI
+UNIT 0x85 Thief 0x40 Level(Ch6EnemyLvl,Enemy,1)     [1,10] DropItem 0x0 0x0 0x0 [LightBrand,PetrifyStaff] ThiefAI
 //UNIT 0x85 Thief 0x40 Level(Ch6EnemyLvl,Enemy,1)     [1,10] DropItem 0x0 0x0 0x0 [LightBrand,Thoron] LootingThiefAI
 //UNIT 0x85 Thief 0x40 Level(Ch6EnemyLvl,Enemy,1)     [1,10] DropItem 0x0 0x0 0x0 [LightBrand,Rapier] LootingThiefAI
 
 //UNIT 0x85 Thief 0x40 Level(Ch6EnemyLvl,Enemy,1)     [2,12] DropItem 0x0 0x0 0x0 [LightBrand,FrostBow] LootingThiefAI
 //UNIT 0x85 Thief 0x40 Level(Ch6EnemyLvl,Enemy,1)     [2,12] DropItem 0x0 0x0 0x0 [LightBrand,Thoron] LootingThiefAI
-UNIT 0x85 Thief 0x40 Level(Ch6EnemyLvl,Enemy,1)     [2,12] DropItem 0x0 0x0 0x0 [LightBrand,Rapier] LootingThiefAI
+//UNIT 0x85 Thief 0x40 Level(Ch6EnemyLvl,Enemy,1)     [2,12] DropItem 0x0 0x0 0x0 [LightBrand,Rapier] LootingThiefAI
+UNIT 0x85 Thief 0x40 Level(Ch6EnemyLvl,Enemy,1)     [2,12] DropItem 0x0 0x0 0x0 [LightBrand,Rapier] ThiefAI
 UNIT
 
 Traps1:

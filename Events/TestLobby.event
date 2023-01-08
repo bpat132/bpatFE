@@ -146,7 +146,7 @@ UNIT Richard Mercenary 0x1 Level(Ch6Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronSwo
 UNIT Cameron Archer 0x1 Level(Ch6Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronBow,SteelBow,Longbow,Vuln] NoAI
 UNIT Rowan Myrmidon 0x1 Level(11,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [SteelBlade,SlimSword,Lancereaver,LightBrand] NoAI
 UNIT Violet PegasusKnight 0x1 Level(Ch6Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [SlimLance,SteelLance,Javelin,KillerLance] NoAI
-UNIT Justin Priest 0x1 Level(8,Ally,0) [0,0] 0x0 0x0 0x0 0x0 [Heal,FreezeStaff,Physic,Vuln] NoAI
+UNIT Justin Priest 0x1 Level(8,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Heal,FreezeStaff,Physic,Vuln] NoAI
 UNIT Ted Pirate 0x1 Level(Ch6Level,Ally,0) [0,0] 0x0 0x0 0x0 0x0 [Labrys,SteelAxe,HandAxe,KillerAxe] NoAI
 UNIT
 
@@ -172,10 +172,10 @@ UNIT Richard Mercenary 0x1 Level(Ch7Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Rapier,
 UNIT Cameron Archer 0x1 Level(Ch7Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronBow,SteelBow,Longbow,KillerBow] NoAI
 UNIT Rowan Myrmidon 0x1 Level(12,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [SteelBlade,SlimSword,Lancereaver,LightBrand] NoAI
 UNIT Violet PegasusKnight 0x1 Level(Ch7Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [SlimLance,SteelLance,Javelin,KillerLance] NoAI
-UNIT Justin Priest 0x1 Level(Ch7Level,Ally,0) [0,0] 0x0 0x0 0x0 0x0 [Heal,FreezeStaff,Physic,Vuln] NoAI
-UNIT Ted Pirate 0x1 Level(Ch7Level,Ally,0) [0,0] 0x0 0x0 0x0 0x0 [Labrys,SteelAxe,HandAxe,KillerAxe] NoAI
-UNIT Quentin Mage 0x1 Level(Ch7Level,Ally,0) [0,0] 0x0 0x0 0x0 0x0 [Fire,Thunder,Bolganone,Vuln] NoAI
-UNIT Thomas Shaman 0x1 Level(Ch7Level,Ally,0) [0,0] 0x0 0x0 0x0 0x0 [Flux,Rend,Ruin,Vuln] NoAI
+UNIT Justin Priest 0x1 Level(Ch7Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Heal,FreezeStaff,Physic,Vuln] NoAI
+UNIT Ted Pirate 0x1 Level(Ch7Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Labrys,SteelAxe,HandAxe,KillerAxe] NoAI
+UNIT Quentin Mage 0x1 Level(Ch7Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Fire,Thunder,Bolganone,Vuln] NoAI
+UNIT Thomas Shaman 0x1 Level(Ch7Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Flux,Rend,Ruin,Vuln] NoAI
 UNIT Lucy Thief_F 0x1 Level(6,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [FireSword,SwiftSword,SteelBlade,Vuln] NoAI
 UNIT
 
@@ -201,10 +201,10 @@ UNIT Richard Mercenary 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Rapier,
 UNIT Cameron Archer 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronBow,SteelBow,Longbow,KillerBow] NoAI
 UNIT Rowan Myrmidon 0x1 Level(13,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [SteelBlade,SlimSword,Lancereaver,LightBrand] NoAI
 UNIT Violet PegasusKnight 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [SlimLance,SteelLance,Javelin,KillerLance] NoAI
-UNIT Justin Priest 0x1 Level(Ch8Level,Ally,0) [0,0] 0x0 0x0 0x0 0x0 [Heal,FreezeStaff,Physic,Vuln] NoAI
-UNIT Ted Pirate 0x1 Level(Ch8Level,Ally,0) [0,0] 0x0 0x0 0x0 0x0 [Labrys,SteelAxe,HandAxe,KillerAxe] NoAI
-UNIT Quentin Mage 0x1 Level(Ch8Level,Ally,0) [0,0] 0x0 0x0 0x0 0x0 [Fire,Thunder,Bolganone,Thoron] NoAI
-UNIT Thomas Shaman 0x1 Level(Ch8Level,Ally,0) [0,0] 0x0 0x0 0x0 0x0 [Flux,Rend,Ruin,Vuln] NoAI
+UNIT Justin Priest 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Heal,FreezeStaff,Physic,Vuln] NoAI
+UNIT Ted Pirate 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Labrys,SteelAxe,HandAxe,KillerAxe] NoAI
+UNIT Quentin Mage 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Fire,Thunder,Bolganone,Thoron] NoAI
+UNIT Thomas Shaman 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Flux,Rend,Ruin,Vuln] NoAI
 UNIT Lucy Thief_F 0x1 Level(7,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [FireSword,SwiftSword,SteelBlade,Vuln] NoAI
 UNIT Rose PegasusKnight 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [SilverLance,SlimLance,Horseslayer,Javelin] NoAI
 UNIT Clint GreatKnight 0x1 Level(1,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [SilverSword,SteelLance,SteelAxe,HandAxe] NoAI
@@ -233,10 +233,10 @@ UNIT Richard Mercenary 0x1 Level(Ch9Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Rapier,
 UNIT Cameron Archer 0x1 Level(Ch9Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronBow,SteelBow,Longbow,KillerBow] NoAI
 UNIT Rowan Myrmidon 0x1 Level(13,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [SteelBlade,SlimSword,Lancereaver,LightBrand] NoAI
 UNIT Violet PegasusKnight 0x1 Level(Ch9Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [SlimLance,SteelLance,Javelin,KillerLance] NoAI
-UNIT Justin Priest 0x1 Level(Ch9Level,Ally,0) [0,0] 0x0 0x0 0x0 0x0 [Heal,FreezeStaff,Physic,Vuln] NoAI
-UNIT Ted Pirate 0x1 Level(Ch9Level,Ally,0) [0,0] 0x0 0x0 0x0 0x0 [Labrys,SteelAxe,HandAxe,KillerAxe] NoAI
-UNIT Quentin Mage 0x1 Level(Ch9Level,Ally,0) [0,0] 0x0 0x0 0x0 0x0 [Fire,Thunder,Bolganone,Thoron] NoAI
-UNIT Thomas Shaman 0x1 Level(Ch9Level,Ally,0) [0,0] 0x0 0x0 0x0 0x0 [Flux,Rend,Ruin,Vuln] NoAI
+UNIT Justin Priest 0x1 Level(Ch9Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Heal,FreezeStaff,Physic,Vuln] NoAI
+UNIT Ted Pirate 0x1 Level(Ch9Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Labrys,SteelAxe,HandAxe,KillerAxe] NoAI
+UNIT Quentin Mage 0x1 Level(Ch9Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Fire,Thunder,Bolganone,Thoron] NoAI
+UNIT Thomas Shaman 0x1 Level(Ch9Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Flux,Rend,Ruin,Vuln] NoAI
 UNIT Lucy Thief_F 0x1 Level(9,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [FireSword,SwiftSword,SteelBlade,Vuln] NoAI
 UNIT Rose PegasusKnight 0x1 Level(Ch9Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [SilverLance,SlimLance,Horseslayer,Javelin] NoAI
 UNIT Clint GreatKnight 0x1 Level(1,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [SilverSword,SteelLance,SteelAxe,HandAxe] NoAI
@@ -376,8 +376,8 @@ ENUF SwarpRuneDisabledFlag
 MNC2 Chapter8
 #endif
 #ifdef _TEST_CH9_
-//LoadPlayerUnitsTest(UnitsCh9)
-LoadPlayerUnitsTest(BaseUnits)
+LoadPlayerUnitsTest(UnitsCh9)
+//LoadPlayerUnitsTest(BaseUnits)
 SetUnitStatus(Edgar, LanceWexp, BRank)
 SetUnitStatus(Jenna, BowWexp, BRank)
 SetUnitStatus(Duncan, AxeWexp, BRank)

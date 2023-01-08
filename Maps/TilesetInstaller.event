@@ -17,7 +17,8 @@ N426CastleObjects:
 // Super Fields (WAve, RW)
 ALIGN 4
 SuperFieldsObj:
-#incext Png2Dmp "WAve_RW_SuperFields/SuperFieldsImage.png" --lz77
+//#incext Png2Dmp "WAve_RW_SuperFields/SuperFieldsImage.png" --lz77
+#incext Png2Dmp "WAve_RW_SuperFields/SuperFieldsImage_fixed.png" --lz77
 
 ALIGN 4
 SuperFieldsCfg:

@@ -140,7 +140,9 @@ SilentGiveItemASMC:
 
 
 // Phantom Sentine group AI hack
-#include "GroupAI/GroupAI.event"
+//#include "GroupAI/GroupAI.event"
+// Phantom Sentine + Vesly group AI
+#include "GroupAI/Installer.event"
 
 // Stan's difficulty selection disabler
 {

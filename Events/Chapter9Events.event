@@ -11,6 +11,15 @@
 
 EventPointerTable(0x27, PointerList)
 
+/*
+EscapePointPointerTable(Chapter9, Ch9EscapePoints)
+Ch9EscapePoints:
+EscapePoint(18, 2, MoveRight)
+EscapePoint(18, 3, MoveRight)
+EscapePoint(18, 4, MoveRight)
+EscapePointEnd
+*/
+
 setText(0x168, NewChName)
 
 ALIGN 4
@@ -32,7 +41,11 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
+TurnEventPlayer(0,EnemyReinforcements1Right,5)
 END_MAIN
+
+EnemyReinforcements1Right:
+EnemyReinforcements(ReinforcementUnits1Right)
 
 CharacterBasedEvents:
 END_MAIN
@@ -59,6 +72,24 @@ END_MAIN
 
 Units1:
 LoadUnit(5,22,Edgar)
+LoadUnit(13,23,Celia)
+UNIT Patrick Ranger 0x1 Level(1,Ally,False) [16,22] 0x0 0x0 0x0 0x1 [SilverBow,SwiftSword] NoAI
+// Left
+//LoadUnit(5,22)
+LoadUnit(5,23)
+LoadUnit(6,22)
+LoadUnit(7,21)
+LoadUnit(7,23)
+LoadUnit(8,21)
+LoadUnit(8,22)
+// Right
+LoadUnit(13,21)
+LoadUnit(14,22)
+LoadUnit(15,21)
+LoadUnit(15,23)
+LoadUnit(16,23)
+/*
+LoadUnit(5,22,Edgar)
 LoadUnit(12,23,Celia)
 UNIT Patrick Ranger 0x1 Level(1,Ally,False) [15,22] 0x0 0x0 0x0 0x1 [SilverBow,SwiftSword] NoAI
 // Left
@@ -71,20 +102,21 @@ LoadUnit(8,21)
 LoadUnit(8,22)
 // Right
 LoadUnit(12,21)
-//LoadUnit(12,23)
 LoadUnit(13,22)
 LoadUnit(14,21)
 LoadUnit(14,23)
-//LoadUnit(15,22)
 LoadUnit(15,23)
+*/
 UNIT
 
 //#define Ch9EnemyLvl 12
 #define Ch9EnemyLvl 13
 
+// TODO: figure out why enemy gem weapons don't always work
 EnemyUnits1:
 UNIT 0x49 Sentinel 0x40 Level(4,Enemy,0)     [1,1] 0x0 0x0 0x0 0x0 [SilverLance,Axereaver] AIRAI
-UNIT 0x50 Warrior 0x40 Level(2,Enemy,0)     [16,2] 0x0 0x0 0x0 0x0 [SilverAxe,Longbow] AIRAI
+//UNIT 0x50 Warrior 0x40 Level(2,Enemy,0)     [16,2] 0x0 0x0 0x0 0x0 [SilverAxe,Longbow] AIRAI
+UNIT 0x50 Warrior 0x40 Level(2,Enemy,0)     [14,2] 0x0 0x0 0x0 0x0 [SilverAxe,SteelBow] AIRAI
 
 
 UNIT 0x80 Ballistician 0x40 Level(Ch9EnemyLvl,Enemy,1)     [1,8] 0x0 0x0 0x0 0x0 [Ballista] NeverMoveAI
@@ -92,6 +124,8 @@ UNIT 0x80 Ballistician 0x40 Level(Ch9EnemyLvl,Enemy,1)     [17,4] 0x0 0x0 0x0 0x
 //UNIT 0x80 Ballistician 0x40 Level(Ch9EnemyLvl,Enemy,1)     [14,6] 0x0 0x0 0x0 0x0 [Ballista] NeverMoveAI
 UNIT 0x80 Fleet 0x40 Level(Ch9EnemyLvl,Enemy,1)     [10,10] 0x0 0x0 0x0 0x0 [Ballista] NeverMoveAI
 //UNIT 0x80 Fleet 0x40 Level(Ch9EnemyLvl,Enemy,1)     [11,15] 0x0 0x0 0x0 0x0 [Ballista] NeverMoveAI
+
+//UNIT 0x80 Revenant 0x40 Level(Ch9EnemyLvl,Enemy,0)     [1,2] 0x0 0x0 0x0 0x0 [Ballista] EscapeAI
 UNIT
 
 EnemyUnits2:
@@ -110,24 +144,51 @@ UNIT
 
 EnemyUnits3:
 // Middle right
-UNIT 0x82 Archer 0x40 Level(Ch9EnemyLvl,Enemy,1)     [17,11] 0x0 0x0 0x0 0x0 [ShortBow] AIRAIg1
-UNIT 0x82 Cavalier 0x40 Level(Ch9EnemyLvl,Enemy,1)     [17,11] 0x0 0x0 0x0 0x0 [SapphireLance] AIRAIg1
-UNIT 0x82 Mage 0x40 Level(Ch9EnemyLvl,Enemy,1)     [17,11] 0x0 0x0 0x0 0x0 [Fire] AIRAIg1
+UNIT 0x80 Archer 0x40 Level(Ch9EnemyLvl,Enemy,1)     [17,11] 0x0 0x0 0x0 0x0 [ShortBow] AIRAIg1
+UNIT 0x80 Cavalier 0x40 Level(Ch9EnemyLvl,Enemy,1)     [14,10] 0x0 0x0 0x0 0x0 [SapphireLance] AIRAIg1
+UNIT 0x80 Mage 0x40 Level(Ch9EnemyLvl,Enemy,1)     [13,12] 0x0 0x0 0x0 0x0 [Fire] AIRAIg1
+UNIT 0x80 PegasusKnight 0x40 Level(Ch9EnemyLvl,Enemy,1)     [16,5] 0x0 0x0 0x0 0x0 [SlimLance] AIRAIg1
+UNIT 0x80 PegasusKnight 0x40 Level(Ch9EnemyLvl,Enemy,1)     [18,5] 0x0 0x0 0x0 0x0 [SlimLance] AIRAIg1
+
+UNIT 0x80 Cavalier 0x40 Level(Ch9EnemyLvl,Enemy,1)     [12,5] 0x0 0x0 0x0 0x0 [SteelLance] AIRAIg2
+UNIT 0x80 Archer 0x40 Level(Ch9EnemyLvl,Enemy,1)     [13,6] 0x0 0x0 0x0 0x0 [ShortBow] AIRAIg2
+UNIT 0x80 Fighter 0x40 Level(Ch9EnemyLvl,Enemy,1)     [12,8] 0x0 0x0 0x0 0x0 [EmeraldAxe] AIRAIg2
+//UNIT 0x80 Myrmidon 0x40 Level(Ch9EnemyLvl,Enemy,1)     [18,10] 0x0 0x0 0x0 0x0 [SwiftSword] AIRAIg2
+UNIT 0x80 Myrmidon 0x40 Level(Ch9EnemyLvl,Enemy,1)     [18,10] 0x0 0x0 0x0 0x0 [LightBrand] AIRAIg2
+//UNIT 0x80 PegasusKnight 0x40 Level(Ch9EnemyLvl,Enemy,1)     [15,6] 0x0 0x0 0x0 0x0 [SteelLance] AIRAIg2
 UNIT
 
 EnemyUnits4:
 // Top right
-UNIT 0x82 Brigand 0x40 Level(Ch9EnemyLvl,Enemy,1)     [16,5] 0x0 0x0 0x0 0x0 [Labrys] AttackingBrigandAI
+UNIT 0x80 Cavalier 0x40 Level(Ch9EnemyLvl,Enemy,1)     [14,4] 0x0 0x0 0x0 0x0 [IronLance] AIRAIg3
+UNIT 0x80 Shaman 0x40 Level(Ch9EnemyLvl,Enemy,1)     [12,3] 0x0 0x0 0x0 0x0 [Flux] AIRAIg3
+UNIT 0x80 Myrmidon 0x40 Level(Ch9EnemyLvl,Enemy,1)     [11,4] 0x0 0x0 0x0 0x0 [SwiftSword] AIRAIg3
+//UNIT 0x80 WyvernRider 0x40 Level(Ch9EnemyLvl,Enemy,1)     [13,1] 0x0 0x0 0x0 0x0 [EmeraldAxe] AIRAIg3
+//UNIT 0x80 WyvernRider 0x40 Level(Ch9EnemyLvl,Enemy,1)     [15,1] 0x0 0x0 0x0 0x0 [IronAxe] AIRAIg3
+
+//UNIT 0x80 Brigand 0x40 Level(Ch9EnemyLvl,Enemy,1)     [18,1] 0x0 0x0 0x0 0x0 [Labrys] AttackingBrigandAI
+UNIT 0x80 Brigand 0x40 Level(Ch9EnemyLvl,Enemy,1)     [11,0] 0x0 0x0 0x0 0x0 [Labrys] AttackingBrigandAI
+UNIT
+
+ReinforcementUnits1Right:
+UNIT 0x80 WyvernRider 0x40 Level(Ch9EnemyLvl,Enemy,1)     [13,0] 0x0 0x0 0x0 0x0 [EmeraldAxe] PWHAI
+UNIT 0x80 WyvernRider 0x40 Level(Ch9EnemyLvl,Enemy,1)     [15,0] 0x0 0x0 0x0 0x0 [IronAxe] PWHAI
 UNIT
 
 EnemyUnitsTest:
-UNIT 0x82 Brigand 0x40 Level(10,Enemy,1)     [13,20] 0x0 0x0 0x0 0x0 [Vuln] NeverMoveAI
-UNIT 0x82 Brigand 0x40 Level(11,Enemy,1)     [14,20] 0x0 0x0 0x0 0x0 [Vuln] NeverMoveAI
-UNIT 0x82 Brigand 0x40 Level(12,Enemy,1)     [15,20] 0x0 0x0 0x0 0x0 [Vuln] NeverMoveAI
-UNIT 0x82 Brigand 0x40 Level(13,Enemy,1)     [16,20] 0x0 0x0 0x0 0x0 [Vuln] NeverMoveAI
-UNIT 0x82 Brigand 0x40 Level(14,Enemy,1)     [17,20] 0x0 0x0 0x0 0x0 [Vuln] NeverMoveAI
-UNIT 0x82 Brigand 0x40 Level(15,Enemy,1)     [18,20] 0x0 0x0 0x0 0x0 [Vuln] NeverMoveAI
-UNIT 0x82 Warrior 0x40 Level(1,Enemy,1)     [18,23] 0x0 0x0 0x0 0x0 [Vuln] NeverMoveAI
+UNIT 0x80 Brigand 0x40 Level(10,Enemy,1)     [13,20] 0x0 0x0 0x0 0x0 [Vuln] NeverMoveAI
+UNIT 0x80 Brigand 0x40 Level(11,Enemy,1)     [14,20] 0x0 0x0 0x0 0x0 [Vuln] NeverMoveAI
+UNIT 0x80 Brigand 0x40 Level(12,Enemy,1)     [15,20] 0x0 0x0 0x0 0x0 [Vuln] NeverMoveAI
+UNIT 0x80 Brigand 0x40 Level(13,Enemy,1)     [16,20] 0x0 0x0 0x0 0x0 [Vuln] NeverMoveAI
+UNIT 0x80 Brigand 0x40 Level(14,Enemy,1)     [17,20] 0x0 0x0 0x0 0x0 [Vuln] NeverMoveAI
+UNIT 0x80 Brigand 0x40 Level(15,Enemy,1)     [18,20] 0x0 0x0 0x0 0x0 [Vuln] NeverMoveAI
+UNIT 0x80 Warrior 0x40 Level(1,Enemy,1)     [18,23] 0x0 0x0 0x0 0x0 [Vuln] NeverMoveAI
+UNIT
+
+EnemyUnitsTest2:
+UNIT 0x80 Mercenary 0x40 Level(10,Enemy,1)     [16,20] 0x0 0x0 0x0 0x0 [RubySword] NeverMoveAI
+UNIT 0x80 Soldier 0x40 Level(10,Enemy,1)     [17,21] 0x0 0x0 0x0 0x0 [SapphireLance] NeverMoveAI
+UNIT 0x80 Fighter 0x40 Level(10,Enemy,1)     [18,22] 0x0 0x0 0x0 0x0 [EmeraldAxe] NeverMoveAI
 UNIT
 
 Traps1:
@@ -144,8 +205,13 @@ COUNTER_SET 0 3
 COUNTER_SET 1 3
 
 LoadEnemies(EnemyUnits1)
-//LoadEnemies(EnemyUnits2)
-LoadEnemies(EnemyUnitsTest)
+LoadEnemies(EnemyUnits2)
+LoadEnemies(EnemyUnits3)
+LoadEnemies(EnemyUnits4)
+
+//LoadEnemies(EnemyUnitsTest)
+//LoadEnemies(EnemyUnitsTest2)
+
 LoadPlayerUnits(Units1)
 SilentGiveItemUnit(Kurt,MasterSeal)
 Write_Byte(15,InternalLevelTable+Patrick)

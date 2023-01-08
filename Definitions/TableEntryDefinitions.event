@@ -114,6 +114,8 @@
 #define Trent 0x1f
 
 #define Patrick 0x20
+#define Joey 0x21
+#define Audrey 0x23
 
 #define Ch1Boss 0x46
 #define Ch2Boss 0x47
@@ -169,6 +171,8 @@
 #define TrentMug 0x20
 
 #define PatrickMug 0x21
+#define JoeyMug 0x22
+#define AudreyMug 0x24
 
 #define Ch1BossMug 0x31
 #define Ch2BossMug 0x32

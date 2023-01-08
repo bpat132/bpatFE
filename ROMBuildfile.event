@@ -3,6 +3,9 @@
     #include "CustomDefinitions.event"
     #include "Definitions/DefinitionsInstaller.event"
 //PROTECT $25224
+    PROTECT $97a5ac
+    PROTECT $59dd580
+    protect $8B3650
     ORG FreeSpace
     MESSAGE Free space starting at currentOffset
 

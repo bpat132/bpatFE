@@ -18,7 +18,7 @@
  </tileset>
  <layer id="1" name="Tile Layer 1" width="18" height="21">
   <properties>
-   <property name="Anims1" value="0x12"/>
+   <property name="Anims1" value="0x5"/>
    <property name="Anims2" value="0"/>
    <property name="ChapterID" value="2"/>
    <property name="Main" value=""/>

@@ -84,5 +84,12 @@
 #define PWHAIg2 [AttackInRange,Pursue,NoRecovery,0x02]
 #define NMAIg2 [AttackInPlace,NoAI2,NoRecovery,0x22]
 
+#define AIRAIg3 [AttackInRange,NoAI2,NoRecovery,0x03]
+#define AIRAIg4 [AttackInRange,NoAI2,NoRecovery,0x04]
+#define AIRAIg5 [AttackInRange,NoAI2,NoRecovery,0x05]
+
+#define ThiefAI [0x06,0x05,NoRecovery,DefaultAI4]
+#define EscapeAI [0x06,0x0C,NoRecovery,DefaultAI4]
+
 //#define COAAI [AttackInRange,PursueOnceApproached,NoRecovery,DefaultAI4]
 #define AttackWallsAI "[0x0,0xE,0xC,0x0]"

@@ -268,6 +268,22 @@ PatrickMugData: // Me
 setMugEntry(PatrickMug, PatrickMugData, 3, 5, 3, 3)
 
 ALIGN 16
+JoeyMugData: // Me
+#incbin "Dmp/Joey_mug.dmp"
+#incbin "Dmp/Joey_frames.dmp"
+#incbin "Dmp/Joey_palette.dmp"
+#incbin "Dmp/Joey_minimug.dmp"
+setMugEntry(JoeyMug, JoeyMugData, 3, 5, 3, 3)
+
+ALIGN 16
+AudreyMugData: // Me
+#incbin "Dmp/Audrey_mug.dmp"
+#incbin "Dmp/Audrey_frames.dmp"
+#incbin "Dmp/Audrey_palette.dmp"
+#incbin "Dmp/Audrey_minimug.dmp"
+setMugEntry(AudreyMug, AudreyMugData, 3, 6, 3, 4)
+
+ALIGN 16
 Ch1BossMugData: // LL
 #incbin "Dmp/Ch1Boss_mug.dmp"
 #incbin "Dmp/Ch1Boss_frames.dmp"

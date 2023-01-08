@@ -315,7 +315,7 @@
   mov     r0, #0x1  
   mov     r1, #(\bar_x-11)
   mov     r2, #(\bar_y-2)
-  blh     DrawBar, r4
+  blh     DrawStatWithBar41Max, r4
 .endm
 
 .macro draw_skl_bar_at, bar_x, bar_y

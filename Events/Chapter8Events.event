@@ -362,12 +362,14 @@ UNIT
 Turn7ReinforcementUnits:
 // Moved to area reinforcement
 //UNIT 0x87 Myrmidon 0x40 Level(Ch8EnemyLvl,Enemy,1)     [0,5] 0x0 0x0 0x0 0x0 [SwiftSword] PWHAI
-UNIT 0x87 Thief 0x40 Level(Ch8EnemyLvl,Enemy,1)     [7,3] 0x0 0x0 0x0 0x0 [LightBrand,ChestKey,ChestKey,ChestKey] LootingThiefAI
+//UNIT 0x87 Thief 0x40 Level(Ch8EnemyLvl,Enemy,1)     [7,3] 0x0 0x0 0x0 0x0 [LightBrand,ChestKey,ChestKey,ChestKey] LootingThiefAI
+UNIT 0x87 Thief 0x40 Level(Ch8EnemyLvl,Enemy,1)     [7,3] 0x0 0x0 0x0 0x0 [LightBrand,ChestKey,ChestKey,ChestKey] ThiefAI
 UNIT
 
 // Removed because redundant
 Turn8ReinforcementUnits:
-UNIT 0x87 Thief 0x40 Level(Ch8EnemyLvl,Enemy,1)     [7,3] 0x0 0x0 0x0 0x0 [LightBrand,ChestKey] LootingThiefAI
+//UNIT 0x87 Thief 0x40 Level(Ch8EnemyLvl,Enemy,1)     [7,3] 0x0 0x0 0x0 0x0 [LightBrand,ChestKey] LootingThiefAI
+UNIT 0x87 Thief 0x40 Level(Ch8EnemyLvl,Enemy,1)     [7,3] 0x0 0x0 0x0 0x0 [LightBrand,ChestKey] ThiefAI
 UNIT
 
 LeftAreaReinforcementUnits:
