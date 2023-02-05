@@ -6,6 +6,30 @@
 A medicinal solution[N]
 that restores 15 HP[X]
 
+## HealDesc
+Restores 10 + Magic HP[N]
+to an adjacent ally[X]
+## HealDesc2
+Restores HP equal[N]
+to 10 + Magic.[X]
+
+## MendName
+Revitalize[X]
+## MendDesc
+Restores 10 + Magic HP to[N]
+all allies within 2 spaces.[X]
+## MendDesc2
+Heals all allies[N]
+in 2 spaces for[N]
+10 + Magic.[X]
+
+## PhysicDesc
+Restores 10 + Magic HP[N]
+to a distant ally[X]
+## PhysicDesc2
+Restores HP equal[N]
+to 10 + Magic.[X]
+
 ## RegalLanceName
 Regal Lance[X]
 ## RegalLanceDesc

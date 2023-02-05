@@ -41,18 +41,28 @@ POIN $0 $0 $0
 POIN BeginningScene EndingScene
 
 TurnBasedEvents:
-TurnEventPlayer(0,EnemyReinforcements1Right,5)
+TurnEventPlayer(0,EnemyReinforcementsRight1,5)
+TurnEventPlayer(0,EnemyReinforcementsRight1,6)
 END_MAIN
 
-EnemyReinforcements1Right:
-EnemyReinforcements(ReinforcementUnits1Right)
+EnemyReinforcementsRight1:
+EnemyReinforcements(ReinforcementUnitsRight1)
+
+EnemyReinforcementsRight2:
+EnemyReinforcements(ReinforcementUnitsRight2)
 
 CharacterBasedEvents:
 END_MAIN
 
 LocationBasedEvents:
-Seize(0,0)
+Village(0x8,VillageEventWest,7,12)
+Village(0x9,VillageEventEast,17,19)
 END_MAIN
+
+VillageEventWest:
+	VillageEventItem(PlaceholderText, Village, WindSword)
+VillageEventEast:
+	VillageEventItem(PlaceholderText, Village, Naginata)
 
 MiscBasedEvents:
 CauseGameOverIfLordDies
@@ -112,12 +122,13 @@ UNIT
 //#define Ch9EnemyLvl 12
 #define Ch9EnemyLvl 13
 
-// TODO: figure out why enemy gem weapons don't always work
 EnemyUnits1:
 UNIT 0x49 Sentinel 0x40 Level(4,Enemy,0)     [1,1] 0x0 0x0 0x0 0x0 [SilverLance,Axereaver] AIRAI
 //UNIT 0x50 Warrior 0x40 Level(2,Enemy,0)     [16,2] 0x0 0x0 0x0 0x0 [SilverAxe,Longbow] AIRAI
-UNIT 0x50 Warrior 0x40 Level(2,Enemy,0)     [14,2] 0x0 0x0 0x0 0x0 [SilverAxe,SteelBow] AIRAI
+//UNIT 0x50 Warrior 0x40 Level(2,Enemy,0)     [14,2] 0x0 0x0 0x0 0x0 [SilverAxe,SteelBow] AIRAI
+UNIT 0x50 Warrior 0x40 Level(2,Enemy,0)     [17,2] 0x0 0x0 0x0 0x0 [SilverAxe,SteelBow] AIRAI
 
+//UNIT 0x80 Hero 0x40 Level(1,Enemy,1)     [0,0] 0x0 0x0 0x0 0x0 [SilverSword] NeverMoveAI
 
 UNIT 0x80 Ballistician 0x40 Level(Ch9EnemyLvl,Enemy,1)     [1,8] 0x0 0x0 0x0 0x0 [Ballista] NeverMoveAI
 UNIT 0x80 Ballistician 0x40 Level(Ch9EnemyLvl,Enemy,1)     [17,4] 0x0 0x0 0x0 0x0 [Ballista] NeverMoveAI
@@ -150,12 +161,12 @@ UNIT 0x80 Mage 0x40 Level(Ch9EnemyLvl,Enemy,1)     [13,12] 0x0 0x0 0x0 0x0 [Fire
 UNIT 0x80 PegasusKnight 0x40 Level(Ch9EnemyLvl,Enemy,1)     [16,5] 0x0 0x0 0x0 0x0 [SlimLance] AIRAIg1
 UNIT 0x80 PegasusKnight 0x40 Level(Ch9EnemyLvl,Enemy,1)     [18,5] 0x0 0x0 0x0 0x0 [SlimLance] AIRAIg1
 
-UNIT 0x80 Cavalier 0x40 Level(Ch9EnemyLvl,Enemy,1)     [12,5] 0x0 0x0 0x0 0x0 [SteelLance] AIRAIg2
+// Moving to reinforcements
+//UNIT 0x80 Cavalier 0x40 Level(Ch9EnemyLvl,Enemy,1)     [12,5] 0x0 0x0 0x0 0x0 [SteelLance] AIRAIg2
 UNIT 0x80 Archer 0x40 Level(Ch9EnemyLvl,Enemy,1)     [13,6] 0x0 0x0 0x0 0x0 [ShortBow] AIRAIg2
 UNIT 0x80 Fighter 0x40 Level(Ch9EnemyLvl,Enemy,1)     [12,8] 0x0 0x0 0x0 0x0 [EmeraldAxe] AIRAIg2
-//UNIT 0x80 Myrmidon 0x40 Level(Ch9EnemyLvl,Enemy,1)     [18,10] 0x0 0x0 0x0 0x0 [SwiftSword] AIRAIg2
-UNIT 0x80 Myrmidon 0x40 Level(Ch9EnemyLvl,Enemy,1)     [18,10] 0x0 0x0 0x0 0x0 [LightBrand] AIRAIg2
-//UNIT 0x80 PegasusKnight 0x40 Level(Ch9EnemyLvl,Enemy,1)     [15,6] 0x0 0x0 0x0 0x0 [SteelLance] AIRAIg2
+//UNIT 0x80 Myrmidon 0x40 Level(Ch9EnemyLvl,Enemy,1)     [18,10] 0x0 0x0 0x0 0x0 [LightBrand] AIRAIg2
+UNIT 0x80 Mage 0x40 Level(Ch9EnemyLvl,Enemy,1)     [18,10] 0x0 0x0 0x0 0x0 [Thunder] AIRAIg2
 UNIT
 
 EnemyUnits4:
@@ -170,9 +181,14 @@ UNIT 0x80 Myrmidon 0x40 Level(Ch9EnemyLvl,Enemy,1)     [11,4] 0x0 0x0 0x0 0x0 [S
 UNIT 0x80 Brigand 0x40 Level(Ch9EnemyLvl,Enemy,1)     [11,0] 0x0 0x0 0x0 0x0 [Labrys] AttackingBrigandAI
 UNIT
 
-ReinforcementUnits1Right:
-UNIT 0x80 WyvernRider 0x40 Level(Ch9EnemyLvl,Enemy,1)     [13,0] 0x0 0x0 0x0 0x0 [EmeraldAxe] PWHAI
+ReinforcementUnitsRight1:
+UNIT 0x80 WyvernRider 0x40 Level(Ch9EnemyLvl,Enemy,1)     [13,0] 0x0 0x0 0x0 0x0 [SteelAxe] PWHAI
 UNIT 0x80 WyvernRider 0x40 Level(Ch9EnemyLvl,Enemy,1)     [15,0] 0x0 0x0 0x0 0x0 [IronAxe] PWHAI
+UNIT
+
+ReinforcementUnitsRight2:
+UNIT 0x80 Cavalier 0x40 Level(Ch9EnemyLvl,Enemy,1)     [18,2] 0x0 0x0 0x0 0x0 [SteelLance] PWHAI
+UNIT 0x80 Myrmidon 0x40 Level(Ch9EnemyLvl,Enemy,1)     [18,3] 0x0 0x0 0x0 0x0 [SwiftSword] PWHAI
 UNIT
 
 EnemyUnitsTest:
@@ -214,7 +230,10 @@ LoadEnemies(EnemyUnits4)
 
 LoadPlayerUnits(Units1)
 SilentGiveItemUnit(Kurt,MasterSeal)
-Write_Byte(15,InternalLevelTable+Patrick)
+//Write_Byte(15,InternalLevelTable+Patrick)
+
+//GiveItem(Mend,Marie)
+//GiveItem(Wyrmslayer,Patrick)
 
 GotoPrepScreen
 

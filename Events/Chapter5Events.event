@@ -113,6 +113,8 @@ MUSC EO3_ThoseWhoSlayAndFall
 Text(0x2,TEXT_Ch5_Village_Justin)
 ReinforcementEventENDA(JustinReinforcementUnits)
 
+/*
+// Maybe change this
 VillageEvent5:  // Swapping these village locations
 	MUSI; SMOV 0x2 Village; SMOV 0x3 TEXT_Ch5_Village_Rune; CALL $9EE310; MUNO; CALL $591F40; EVBIT_T 0x7
 
@@ -125,6 +127,9 @@ VillageEvent5:  // Swapping these village locations
 	ENUT SwarpRuneUnlockedFlag
 
 	ENDA
+*/
+VillageEvent5:
+	VillageEventItem(PlaceholderText, Village, EmeraldAxe)
 
 VillageEvent2:
 	VillageEventItem(TEXT_Ch5_Village_RubySword, Village, RubySword)

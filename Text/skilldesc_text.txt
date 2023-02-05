@@ -115,7 +115,7 @@ Duelist's Blow: +30 Avo[N]
 when initiating battle.[X]
 
 ## SD_DeathBlow
-Death Blow: +20 Crit[N]
+Death Blow: +30 Crit[N]
 when initiating battle.[X]
 
 ## SD_DartingBlow

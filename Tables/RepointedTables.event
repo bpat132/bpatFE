@@ -33,6 +33,8 @@ DeathQuoteTable:
 // Not really a table but putting it here anyway
 #include "EA/MovementCostTable.event"
 
+#include "EA/PromotionTable.event"
+
 PUSH
 
 ORG $846AC

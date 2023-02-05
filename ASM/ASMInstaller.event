@@ -64,6 +64,12 @@ POP
 // Fixed autolevels (stan)
 //#include "FixedAutolevels/FixedAutolevels.event"
 
+// Promoted autolevel bonus (GetCurrentPromotedLevelBonus function at 0x8037B44)
+PUSH
+ORG 0x37B5C
+BYTE 0x2010 // 0x10 = 16
+POP
+
 // Huichelaar minimug palette fix
 #include "MinimugPaletteFix/MinimugPalette.event"
 
@@ -217,7 +223,6 @@ ORG 0x2FEC6
 BYTE 0x0F
 POP
 
-
 // Prep screen shop (copied from runa)
 
 PUSH
@@ -292,10 +297,39 @@ PUSH
   BYTE 0x14
 POP
 */
+
 // Exp formula changes
-//#include "CHAX/exp_changes.lyn.event"
-//#include "CHAX/exp_promo_changes.lyn.event"
-#include "CHAX/decomp.lyn.event"
+#include "CHAX/exp_promo_staffhealing.lyn.event"
+
+// Force staff map anim (7743)
+// Doesn't work?
+/*
+PUSH
+ORG 0x581D0
+BYTE 0x4b // Heal
+ORG 0x581D4
+//BYTE 0x59 // Barrier
+BYTE 0xbe // Petrify
+POP
+*/
+
+// Force dance map anim (7743)
+PUSH
+ORG 0x0576CA
+BYTE 0xD2 0xE2
+POP
+
+// Faster dance map anim (7743)
+PUSH
+ORG 0x9A34C8
+BYTE 0xE 0x0 0x1 0x0
+ORG 0x9A34E8
+BYTE 0xE 0x0 0x1 0x0
+ORG 0x9A34F8
+BYTE 0xE 0x0 0x1 0x0
+ORG 0x9A3568
+BYTE 0xE 0x0 0x1 0x0
+POP
 
 // Pik mag/3 range modified to fixed range
 PUSH

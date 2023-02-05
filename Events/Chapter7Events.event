@@ -144,7 +144,8 @@ Units1:
 LoadUnit(15,21,Edgar)
 LoadUnit(18,22,Celia)
 //UNIT Rose  PegasusKnight 0x1 Level(10,Ally,0)   [15,20] 0x0 0x0 0x0 0x0 [SilverLance,SlimLance,Horseslayer,Javelin] NoAI
-UNIT Rose  PegasusKnight 0x1 Level(10,Ally,0)   [15,20] 0x0 0x0 0x0 0x0 [SilverLance,SlimLance,Horseslayer,Vuln] NoAI // No more free javelin
+//UNIT Rose  PegasusKnight 0x1 Level(10,Ally,0)   [15,20] 0x0 0x0 0x0 0x0 [SilverLance,SlimLance,Horseslayer,Vuln] NoAI // No more free javelin
+UNIT Rose  PegasusKnight 0x1 Level(10,Ally,0)   [15,20] 0x0 0x0 0x0 0x0 [SilverLance,SlimLance,Vuln] NoAI // Horseslayer moved to ch6 freebie slot
 LoadUnit(16,19)
 LoadUnit(17,19)
 LoadUnit(16,20)

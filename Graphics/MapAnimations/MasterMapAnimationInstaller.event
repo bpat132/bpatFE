@@ -7,7 +7,10 @@
 #define MapSprite32x32 2
 
 StandingMapSprite(0x45, 0, ThiefFSt)
-MovingMapSprite(Bonewalker, 0x81F1080, ThiefFMv)
+MovingMapSprite(Thief_F, 0x81F1080, ThiefFMv)
+
+StandingMapSprite(0x47, 0, RogueFSt)
+MovingMapSprite(Rogue_F, 0x81F249C, RogueFMv)
 
 StandingMapSprite(0x6, 1, KnightSt)
 MovingMapSprite(Knight, 0x1C7E74, KnightMv)
@@ -33,6 +36,14 @@ ThiefFSt:
 ALIGN 4
 ThiefFMv:
 #incext Png2Dmp "Animations/thief_f_mv.png" --lz77
+
+// Unknown
+ALIGN 4
+RogueFSt:
+#incext Png2Dmp "Animations/rogue_f_st.png" --lz77
+ALIGN 4
+RogueFMv:
+#incext Png2Dmp "Animations/rogue_f_mv.png" --lz77
 
 // Agro
 ALIGN 4

@@ -72,6 +72,7 @@
 
 // Classes
 #define Thief_F 0x54
+#define Rogue_F 0x56
 #define Halberdier 0x3a
 #define Sentinel Halberdier
 #define Ballistician 0x55

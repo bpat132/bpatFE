@@ -1,0 +1,84 @@
+/*
+PUSH
+ORG $CC7D0
+//ORG $95DFA4
+POIN NewPromoBranchTable
+*/
+
+PUSH
+ORG $CC7D0
+POIN NewPromoBranchTable
+ORG $CC824
+POIN NewPromoBranchTable 
+ORG $CC860
+POIN NewPromoBranchTable 
+ORG $CC8A4
+POIN NewPromoBranchTable 
+ORG $CC8EC
+POIN NewPromoBranchTable 
+ORG $CCE8C 
+POIN NewPromoBranchTable
+ORG $CDB74
+POIN NewPromoBranchTable
+//POP
+
+POP
+NewPromoBranchTable:
+FILL (256*2)
+
+#define SetPromoBranch(baseClass,class1,class2) "PUSH; ORG (NewPromoBranchTable+(baseClass*2)); BYTE class1 class2; POP"
+#define SetPromo(baseClass,class1) "PUSH; ORG (NewPromoBranchTable+(baseClass*2)); BYTE class1 0x0; POP"
+
+SetPromo(Cavalier,Paladin)
+SetPromo(Cavalier_F,Paladin_F)
+SetPromo(Knight,General)
+SetPromo(Knight_F,General) // Get rid of Knight_F? It uses the same anims as male
+SetPromo(Mercenary,Hero)
+SetPromo(Myrmidon,Swordmaster)
+SetPromo(Myrmidon_F,Swordmaster_F)
+SetPromo(Thief,Rogue)
+SetPromo(Thief_F,Rogue_F) // TODO: Make female rogue class
+SetPromo(Archer,Sniper)
+SetPromo(Archer_F,Sniper_F)
+SetPromo(WyvernRider,WyvernLord)
+SetPromo(Fighter,Warrior)
+SetPromo(Pirate,Berserker)
+SetPromo(PegasusKnight,FalcoKnight)
+SetPromo(Soldier,Halberdier)
+SetPromo(Mage,Sage)
+SetPromo(Mage_F,Sage_F)
+SetPromo(Shaman,Druid)
+SetPromo(Shaman_F,Druid_F)
+SetPromo(Priest,Bishop)
+SetPromo(Cleric,Bishop_F)
+SetPromo(Troubadour,MageKnight_F)
+
+// Master Seal usability (orignal ptr 0x88ADF76)
+
+ALIGN 4
+CanUseMasterSealList:
+BYTE 0x88 // Header? Shouldn't need this but cavalier can't promote without
+BYTE Cavalier
+BYTE Cavalier_F
+BYTE Knight
+BYTE Knight_F
+BYTE Mercenary
+BYTE Myrmidon
+BYTE Myrmidon_F
+BYTE Thief
+BYTE Thief_F
+BYTE Archer
+BYTE Archer_F
+BYTE WyvernRider
+BYTE Fighter
+BYTE Pirate
+BYTE PegasusKnight
+BYTE Soldier
+BYTE Mage
+BYTE Mage_F
+BYTE Shaman
+BYTE Shaman_F
+BYTE Priest
+BYTE Cleric
+BYTE Troubadour
+BYTE 0x0

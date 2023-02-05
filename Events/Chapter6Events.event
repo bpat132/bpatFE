@@ -60,7 +60,8 @@ ENDA
 
 LocationBasedEvents:
 Chest(Longbow,6,11)
-Chest(EmeraldAxe,16,5)
+//Chest(EmeraldAxe,16,5) // Maybe change this
+Chest(Horseslayer,16,5)
 //Chest(Rapier,7,5)
 Chest(Physic,7,5)
 END_MAIN

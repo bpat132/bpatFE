@@ -37,6 +37,15 @@ SwordAnim(0xA2)
 UnarmedAnim(0xA4)
 WORD 0x0 // Seperator
 
+// Credit: Temp, Black Mage, Wan
+#include "Animations/rogue_f_sword Installer.event"
+#include "Animations/rogue_f_unarmed Installer.event"
+
+RogueFAnim:
+SwordAnim(0xA7)
+UnarmedAnim(0xA9)
+WORD 0x0 // Seperator
+
 // Credit: TBA, Orihara_Saki
 #include "Animations/knight_axe Installer.event"
 #include "Animations/knight_handaxe Installer.event"

@@ -87,6 +87,9 @@
 #define AIRAIg3 [AttackInRange,NoAI2,NoRecovery,0x03]
 #define AIRAIg4 [AttackInRange,NoAI2,NoRecovery,0x04]
 #define AIRAIg5 [AttackInRange,NoAI2,NoRecovery,0x05]
+#define AIRAIg6 [AttackInRange,NoAI2,NoRecovery,0x06]
+#define AIRAIg7 [AttackInRange,NoAI2,NoRecovery,0x07]
+#define AIRAIg8 [AttackInRange,NoAI2,NoRecovery,0x08]
 
 #define ThiefAI [0x06,0x05,NoRecovery,DefaultAI4]
 #define EscapeAI [0x06,0x0C,NoRecovery,DefaultAI4]

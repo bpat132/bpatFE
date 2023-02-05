@@ -61,7 +61,8 @@ DeathSkill:
 ldr     r0,=0x203A4EC       @Move attacker data into r0.
 add     r0,#0x66    @Move to the attacker's crit.
 ldrh    r3,[r0]     @Load the attacker's crit into r3.
-add     r3,#0x14    @Add 20 to the attacker's crit.
+@add     r3,#0x14    @Add 20 to the attacker's crit.
+add     r3,#0x1E    @Add 30 to the attacker's crit.
 strh    r3,[r0]     @Store attacker crit.
 b       SkillReturn
 DartingSkill:

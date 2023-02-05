@@ -128,7 +128,7 @@ UNIT
 #define Ch6Level 9
 UnitsCh6:
 UNIT Edgar EphraimLord 0x1 Level(Ch6Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronLance,RegalLance,SteelLance,Javelin] NoAI
-UNIT Celia Dancer 0x1 Level(Ch6Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Vuln,Vuln,Vuln,Vuln] NoAI
+UNIT Celia Dancer 0x1 Level(2,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Vuln,Vuln,Vuln,Vuln] NoAI
 UNIT Jenna Archer_F 0x1 Level(Ch6Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronBow,SteelBow,ShortBow,KillerBow] NoAI
 UNIT Duncan Fighter 0x1 Level(Ch6Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronAxe,SteelAxe,HandAxe,Swordreaver] NoAI
 UNIT Kurt Mercenary 0x1 Level(Ch6Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronSword,SteelSword,SteelBlade,LightBrand] NoAI
@@ -154,7 +154,7 @@ UNIT
 #define Ch7Level 10
 UnitsCh7:
 UNIT Edgar EphraimLord 0x1 Level(Ch7Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronLance,RegalLance,SteelLance,Javelin] NoAI
-UNIT Celia Dancer 0x1 Level(Ch7Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Vuln,Vuln,Vuln,Vuln] NoAI
+UNIT Celia Dancer 0x1 Level(4,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Vuln,Vuln,Vuln,Vuln] NoAI
 UNIT Jenna Archer_F 0x1 Level(Ch7Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronBow,SteelBow,ShortBow,Longbow] NoAI
 UNIT Duncan Fighter 0x1 Level(Ch7Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronAxe,SteelAxe,HandAxe,Swordreaver] NoAI
 UNIT Kurt Mercenary 0x1 Level(Ch7Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronSword,SteelSword,SteelBlade,LightBrand] NoAI
@@ -183,7 +183,7 @@ UNIT
 #define Ch8Level 11
 UnitsCh8:
 UNIT Edgar EphraimLord 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronLance,RegalLance,SteelLance,Javelin] NoAI
-UNIT Celia Dancer 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Vuln,Vuln,Vuln,Vuln] NoAI
+UNIT Celia Dancer 0x1 Level(6,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Vuln,Vuln,Vuln,Vuln] NoAI
 UNIT Jenna Archer_F 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronBow,SteelBow,ShortBow,Longbow] NoAI
 UNIT Duncan Fighter 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronAxe,SteelAxe,HandAxe,Swordreaver] NoAI
 UNIT Kurt Mercenary 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronSword,SteelSword,SteelBlade,LightBrand] NoAI
@@ -215,14 +215,15 @@ UNIT
 #define Ch9Level 13
 UnitsCh9:
 UNIT Edgar EphraimLord 0x1 Level(Ch9Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronLance,RegalLance,SteelLance,Javelin] NoAI
-UNIT Celia Dancer 0x1 Level(Ch9Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Vuln,Vuln,Vuln,Vuln] NoAI
+UNIT Celia Dancer 0x1 Level(8,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Vuln,Vuln,Vuln,Vuln] NoAI
 UNIT Jenna Archer_F 0x1 Level(Ch9Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronBow,SteelBow,ShortBow,Longbow] NoAI
 UNIT Duncan Fighter 0x1 Level(Ch9Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronAxe,SteelAxe,HandAxe,Swordreaver] NoAI
 UNIT Kurt Mercenary 0x1 Level(Ch9Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronSword,SteelSword,SteelBlade,LightBrand] NoAI
 UNIT Matthias Soldier 0x1 Level(Ch9Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [BlessedLance,SteelLance,Javelin,SapphireLance] NoAI
 UNIT Stella Mage_F 0x1 Level(Ch9Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Fire,Thunder,Bolganone,Vuln] NoAI
 UNIT Nico Thief 0x1 Level(9,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [RubySword,FireSword,IronBlade,SteelSword] NoAI
-UNIT Lisa Cleric 0x1 Level(Ch9Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Heal,PetrifyStaff,Vuln,Vuln] NoAI
+//UNIT Lisa Cleric 0x1 Level(Ch9Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Heal,PetrifyStaff,Vuln,Vuln] NoAI
+UNIT Lisa Cleric 0x1 Level(Ch9Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Heal,PetrifyStaff,Mend,Vuln] NoAI
 UNIT Jane Knight_F 0x1 Level(Ch9Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [EmeraldAxe,SteelAxe,HandAxe,Hammer] NoAI
 UNIT Ethan WyvernRider 0x1 Level(Ch9Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [SteelAxe,HandAxe,Labrys,DevilAxe] NoAI
 UNIT Sasha Myrmidon_F 0x1 Level(Ch9Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [SlimSword,KillingEdge,SteelBlade,FireSword] NoAI
