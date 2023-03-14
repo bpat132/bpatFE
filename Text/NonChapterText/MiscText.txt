@@ -25,6 +25,13 @@ Defeat boss[X]
 ## DefeatBossObjectiveDesc
 Defeat the boss[X]
 
+## DefeatBossesName
+Defeat bosses[X]
+
+## DefeatBossesObjectiveDesc
+Defeat all bosses[N]
+in 10 turns[X]
+
 ## RoutName
 Rout[X]
 

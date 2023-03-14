@@ -52,6 +52,8 @@ DeathQuoteBoss(Ch6Boss,Ch6BossDeathQuote)
 DeathQuote(Gordon,Chapter7,0xD,Ch7GordonDeathQuote)
 DeathQuoteBoss(Jeffery,Ch7JefferyDeathQuote)
 DeathQuoteBoss(Louis,Ch8LouisDeathQuote)
+DeathQuote(Ch9Boss,Chapter9,0xA,Ch1BossDeathQuote)
+DeathQuote(Ch9Boss2,Chapter9,0xB,Ch1BossDeathQuote)
 
 // Generics
 DeathQuote(0x80,Chapter8,0xA,0x0)

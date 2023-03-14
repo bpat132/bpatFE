@@ -6,5 +6,6 @@
 #include "Chapter6Text.txt"
 #include "Chapter7Text.txt"
 #include "Chapter8Text.txt"
+#include "Chapter9Text.txt"
 
 #include "DemoText.txt"

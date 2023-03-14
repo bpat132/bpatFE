@@ -13,6 +13,8 @@ BossBGMEntry(Ch6Boss, NierA_DCDA)
 BossBGMEntry(Gordon, NierA_DCDA)
 BossBGMEntry(Jeffery, NierA_DCDA)
 BossBGMEntry(Louis, NierA_DCDA)
+BossBGMEntry(Ch9Boss, NierA_DCDA)
+BossBGMEntry(Ch9Boss2, NierA_DCDA)
 BossBGMTerminator
 
 PUSH

@@ -13,6 +13,8 @@ UnspecifiedBattleConvo(Ch6Boss,Chapter6,0x1,Ch6BossBattleQuote)
 UnspecifiedBattleConvo(Gordon,Chapter7,0xC,Ch7GordonBattleQuote)
 UnspecifiedBattleConvo(Jeffery,Chapter7,0x1,Ch7JefferyBattleQuote)
 UnspecifiedBattleConvo(Louis,Chapter8,0x1,Ch8LouisBattleQuote)
+UnspecifiedBattleConvo(Ch9Boss,Chapter9,0x1,Ch1BossBattleQuote)
+UnspecifiedBattleConvo(Ch9Boss2,Chapter9,0xC,Ch1BossBattleQuote)
 
 // Terminator
 BYTE 0xFF 0xFF 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0 0x0

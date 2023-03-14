@@ -1,0 +1,12 @@
+
+## TEXT_Ch9_Boss_AI_Change
+[ConversationText]
+[L][LoadCh9Boss]
+[L]Time to change my AI to charge.
+[X]
+
+## TEXT_Ch9_Boss_AI_Change2
+[ConversationText]
+[R][LoadCh9Boss2]
+[R]Time to change my AI to charge.
+[X]

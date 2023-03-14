@@ -191,7 +191,7 @@ A veteran Kemaroan commander who[N]
 has survived countless battles.[X]
 
 ## JoeyName
-Patrick[X]
+Joey[X]
 ## JoeyDesc
 Joey placeholder descripion.[X]
 

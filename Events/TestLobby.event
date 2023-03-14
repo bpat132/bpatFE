@@ -392,8 +392,12 @@ SetUnitStatus(Daniel, LanceWexp, BRank)
 SetUnitStatus(Sasha, SwordWexp, BRank)
 SetUnitStatus(Cameron, BowWexp, BRank)
 GiveMoney(3000)
-ENUT SwarpRuneUnlockedFlag
+SilentGiveItemUnit(Edgar,MasterSeal)
+SilentGiveItemUnit(Celia,MasterSeal)
+// Get rid of missable runes
+//ENUT SwarpRuneUnlockedFlag
 ENUF SwarpRuneDisabledFlag
+ENUF CelerityRuneDisabledFlag
 MNC2 Chapter9
 #endif
 #ifdef _FEE3_2022_
@@ -405,11 +409,13 @@ SetUnitStatus(Kurt, SwordWexp, BRank)
 SetUnitStatus(Matthias, LanceWexp, BRank)
 SetUnitStatus(Stella, AnimaWexp, BRank)
 SetUnitStatus(Lisa, StaffWexp, BRank)
+SetUnitStatus(Jane, AxeWexp, BRank)
 SetUnitStatus(Ethan, AxeWexp, BRank)
 SetUnitStatus(Beatrice, LanceWexp, BRank)
 SetUnitStatus(Daniel, LanceWexp, BRank)
 SetUnitStatus(Sasha, SwordWexp, BRank)
 SetUnitStatus(Cameron, BowWexp, BRank)
+SetUnitStatus(Violet, LanceWexp, BRank)
 GiveMoney(3000)
 ENUT SwarpRuneUnlockedFlag
 ENUF SwarpRuneDisabledFlag
