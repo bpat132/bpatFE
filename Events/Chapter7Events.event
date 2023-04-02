@@ -161,7 +161,8 @@ UNIT
 #define Ch7EnemyLvl 10
 
 EnemyUnits1:
-UNIT Jeffery Hero 0x40 Level(3,Enemy,0)     [8,3] 0x0 0x0 0x0 0x0 [WindSword,SilverSword,SilverAxe] NeverMoveAI
+//UNIT Jeffery Hero 0x40 Level(3,Enemy,0)     [8,3] 0x0 0x0 0x0 0x0 [WindSword,SilverSword,SilverAxe] NeverMoveAI
+UNIT Jeffery Hero 0x40 Level(3,Enemy,0)     [8,3] DropItem 0x0 0x0 0x0 [WindSword,SilverSword,SilverAxe,MasterSeal] NeverMoveAI
 
 UNIT Clint GreatKnight 0x40 Level(1,Enemy,0)     [7,11] 0x0 0x0 0x0 0x0 [SilverSword,SteelLance,SteelAxe,HandAxe] NeverMoveAI
 
@@ -300,9 +301,9 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
-// Two rune uses for this chapter
-COUNTER_SET 0 2
-COUNTER_SET 1 2
+// Three rune uses for this chapter
+COUNTER_SET 0 3
+COUNTER_SET 1 3
 
 //LoadEnemies(EnemyUnits1)
 LoadEnemies(EnemyUnits2)
@@ -370,11 +371,17 @@ ENUF HawkeyeRuneFlag
 ENUF MiracleRuneDisabledFlag
 ENUF MiracleActiveFlag
 // Enable unlocked runes
+/*
 CHECK_EVENTID SwarpRuneUnlockedFlag
 BEQ 1 0 0xC // If flag is not set, skip
 ENUF SwarpRuneDisabledFlag
 ENUF SwarpActiveFlag
 LABEL 1
+*/
+ENUF SwarpRuneDisabledFlag
+ENUF SwarpActiveFlag
+ENUF CelerityRuneDisabledFlag
+ENUF CelerityActiveFlag
 
 MUSC ToS_LastBattleDecision
 SetBackground(0x15)

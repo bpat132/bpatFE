@@ -174,7 +174,7 @@ ENUT 0x12
 TILECHANGE 0x0
 CAM1 [22,2]
 Text(TEXT_Ch8_RightCell_Open)
-GiveItem(IronAxe,Donovan)
+GiveItem(IronBlade,Donovan)
 GiveItem(IronAxe,Trent)
 
 CHECK_EVENTID 0xF
@@ -221,7 +221,8 @@ UNIT
 #define Ch8EnemyLvl 11
 
 EnemyUnits1:
-UNIT Louis Bishop 0x40 Level(1,Enemy,0)     [12,4] 0x0 0x0 0x0 0x0 [Divine] NeverMoveAI
+//UNIT Louis Bishop 0x40 Level(1,Enemy,0)     [12,4] 0x0 0x0 0x0 0x0 [Divine] NeverMoveAI
+UNIT Louis Bishop 0x40 Level(1,Enemy,0)     [12,4] DropItem 0x0 0x0 0x0 [Divine,MasterSeal] NeverMoveAI
 
 //UNIT Victoria Soldier 0x40 Level(12,Enemy,0)     [2,12] 0x0 0x0 0x0 0x0 [SilverLance,KillerLance,ShortSpear,0x6c] NeverMoveAI
 //UNIT Victoria Soldier 0x40 Level(12,Enemy,0)     [2,12] 0x0 0x0 0x0 0x0 [ShortSpear,Greatlance,Naginata,0x6c] NeverMoveAI // Maybe get rid of naginata?
@@ -241,7 +242,8 @@ EnemyUnits2:
 UNIT 0x87 Soldier 0x40 Level(Ch8EnemyLvl,Enemy,1)     [11,18] 0x0 0x0 0x0 0x0 [IronLance] PWHAI
 UNIT 0x87 Fighter 0x40 Level(Ch8EnemyLvl,Enemy,1)     [12,16] 0x0 0x0 0x0 0x0 [IronAxe] PWHAI
 UNIT 0x87 Mercenary 0x40 Level(Ch8EnemyLvl,Enemy,1)     [13,19] 0x0 0x0 0x0 0x0 [SteelSword] PWHAI
-UNIT 0x87 Knight 0x40 Level(Ch8EnemyLvl,Enemy,1)     [14,17] 0x0 0x0 0x0 0x0 [IronAxe] PWHAI
+//UNIT 0x87 Knight 0x40 Level(Ch8EnemyLvl,Enemy,1)     [14,17] 0x0 0x0 0x0 0x0 [IronAxe] PWHAI
+UNIT 0x87 SwKnight 0x40 Level(Ch8EnemyLvl,Enemy,1)     [14,17] 0x0 0x0 0x0 0x0 [IronBlade] PWHAI
 UNIT 0x87 Mage 0x40 Level(Ch8EnemyLvl,Enemy,1)     [17,20] 0x0 0x0 0x0 0x0 [Thunder] PWHAI
 
 //UNIT 0x87 Archer 0x40 Level(Ch8EnemyLvl,Enemy,1)     [22,18] 0x0 0x0 0x0 0x0 [ShortBow] AIRAI
@@ -482,7 +484,8 @@ AddLightRune(14,4)
 SetBackground(0xE)
 CAM1 [22,0]
 MUSC DW3_Oppression
-Text(TEXT_Ch8_Start_Louis)
+//Text(TEXT_Ch8_Start_Louis)
+Text(PlaceholderText)
 SetBackground(0xA)
 MUSC KitN_SortieFormation
 Text(TEXT_Ch8_Start_Edgar)
@@ -515,11 +518,17 @@ ENUF HawkeyeRuneFlag
 ENUF MiracleRuneDisabledFlag
 ENUF MiracleActiveFlag
 // Enable unlocked runes
+/*
 CHECK_EVENTID SwarpRuneUnlockedFlag
 BEQ 1 0 0xC // If flag is not set, skip
 ENUF SwarpRuneDisabledFlag
 ENUF SwarpActiveFlag
 LABEL 1
+*/
+ENUF SwarpRuneDisabledFlag
+ENUF SwarpActiveFlag
+ENUF CelerityRuneDisabledFlag
+ENUF CelerityActiveFlag
 
 MUSC AA3_VictorKudo
 SetBackground(0xE)
@@ -533,7 +542,8 @@ TEXTEND
 REMA
 SetBackground(0x17)
 MUSC YuNo_BurialChamber
-Text(TEXT_Ch8_End2)
+//Text(TEXT_Ch8_End2)
+Text(PlaceholderText)
 SOUN 0xD5
 MNC2 Chapter9
 ENDA

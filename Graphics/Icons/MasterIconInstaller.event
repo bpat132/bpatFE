@@ -29,4 +29,5 @@ ItemIconSlot(0x46,"png/Anguish_Beansy.png") // eclipse
 ItemIconSlot(0xe0,"png/Darksword.png")
 ItemIconSlot(0xe1,"png/Greatlance_Beansy.png")
 ItemIconSlot(0xe2,"png/Naginata_Zelix.png")
+//ItemIconSlot(0x61,"png/SpiritDust.png") // body ring
 POP

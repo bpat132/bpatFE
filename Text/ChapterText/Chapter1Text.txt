@@ -20,9 +20,15 @@ It doesn't matter now, anyone who preys on the people of Melerra is our enemy. W
 Troops, today we bring down the vigilantes plaguing this city! Dead or alive, it doesn't matter to me.
 Get the job done and I'll see to it you're rewarded.
 [MidLeft][LoadMatthias]
-Sir, what of the bandits?
+Respectfully, sir, what of the bandits? I've never seen them so brazen, and the townsfolk are getting anxious.
 [MidRight]
-Don't let them distract you. Drop your focus and the rebels will stick a knife in your back.
+Hah, nothing's ever good enough for them. You'd think they'd be more appreciative when just one year ago they hailed us as saviors.
+Leave the bandits be, we'll use them to our advantage. While they distract the rebels, we'll close in on them.
+[MidLeft]
+I see, that hadn't occured to me, sir.
+[MidRight]
+Heh, that's why Captain Osborne put me in charge. Brute force ain't always enough, you have to outsmart them too.
+With bandits as bait, rebels will play right into our hands.
 [MidRight][ClearFace]
 [MidLeft]
 How callous... What happened to our principles? I'd never have enlisted if I knew it'd turn out like this.
@@ -143,7 +149,8 @@ I will, I promise.
 [ConversationText]
 [MidLeft][LoadFace][0x5C][0x01][MidRight][LoadFace][CurrentPortrait]
 [MidLeft]
-You're fighting Galt's soldiers? Can't say I'm a fan of them myself. Take this steel blade, maybe it'll help you beat 'em.
+Ya know, I used to support Galt, thinking they'd treat us better than the kingdom did. Man, do I feel silly now.
+Take this steel blade, maybe it'll help you beat 'em.
 I gotta warn you, it takes a skilled swordsman to land a hit with this weapon, but it packs a hell of a punch!
 [X]
 

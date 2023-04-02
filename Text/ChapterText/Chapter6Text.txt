@@ -39,6 +39,15 @@ Should be easy to slip away with the loot while everyone's busy killing each oth
 Rout in 9 turns to[NL]
 receive a [ToggleRed]Devil Axe[ToggleRed]![A][X]
 
+## TEXT_Ch6_Runes
+[ConversationText]
+[MidLeft][LoadEdgar][MidRight][LoadThomas]
+[MidRight]
+Hey want some more runes and one more rune use per chapter?
+[MidLeft]
+Okay thanks.
+[X]
+
 ## TEXT_Ch6_Celia_Lucy_Talk
 [ConversationText]
 [ML][LoadCelia][FFR][LoadLucy]

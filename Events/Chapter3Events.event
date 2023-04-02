@@ -128,7 +128,8 @@ END_MAIN
 Units1:
 LoadUnit(7,11,Edgar)
 //LoadUnit(7,11)
-UNIT Ethan  WyvernRider 0x1 Level(4,Ally,0)   [8,10] 0x0 0x0 0x0 0x0 [IronAxe,SteelAxe,HandAxe,Vuln] NoAI
+//UNIT Ethan  WyvernRider 0x1 Level(4,Ally,0)   [8,10] 0x0 0x0 0x0 0x0 [IronAxe,SteelAxe,HandAxe,Vuln] NoAI
+UNIT Ethan  WyvernRider 0x1 Level(4,Ally,0)   [8,10] 0x0 0x0 0x0 0x0 [SteelAxe,HandAxe,Vuln] NoAI
 LoadUnit(6,9,Jenna)
 LoadUnit(7,9,Duncan)
 LoadUnit(9,9,Kurt)
@@ -179,7 +180,8 @@ UNIT 0x84 Soldier 0x40 Level(4,Enemy,1)     [8,16] DropItem 0x0 0x0 0x0 [Axereav
 UNIT 0x84 Myrmidon 0x40 Level(4,Enemy,1)     [6,17] 0x0 0x0 0x0 0x0 [SteelSword] AttackWallsAI
 
 // Top left
-UNIT 0x80 Knight 0x40 Level(4,Enemy,1)     [3,2] 0x0 0x0 0x0 0x0 [HandAxe] NeverMoveAI
+//UNIT 0x80 Knight 0x40 Level(4,Enemy,1)     [3,2] 0x0 0x0 0x0 0x0 [HandAxe] NeverMoveAI
+UNIT 0x80 SwKnight 0x40 Level(4,Enemy,1)     [3,2] 0x0 0x0 0x0 0x0 [FireSword] NeverMoveAI
 UNIT 0x80 Knight 0x40 Level(4,Enemy,1)     [4,2] 0x0 0x0 0x0 0x0 [HandAxe] NeverMoveAI
 #ifndef _EASY_MODE_
 UNIT 0x80 Archer 0x40 Level(4,Enemy,1)     [0,2] 0x0 0x0 0x0 0x0 [SteelBow] AIRAI
@@ -285,14 +287,22 @@ ENUT SwarpRuneDisabledFlag
 // Enable runes usage
 ENUF RuneMenuDisableFlag
 */
-
-MUSC AA_Gumshoe
 LoadEnemies(EnemyUnits1)
 LoadEnemies(EnemyUnits2)
 LoadEnemies(EnemyUnits3)
-CAM1 [7,11]
 LoadPlayerUnits(Units1)
+
+MUSC Langrisser_Story
+//SetBackground(0x18)
 SetBackground(0x21)
+TUTORIALTEXTBOXSTART
+CenterTutorialTextBox
+TEXTSHOW TEXT_Ch3_Intro
+TEXTEND
+
+MUSC AA_Gumshoe
+CAM1 [7,11]
+//SetBackground(0x21)
 TEXTSTART
 TEXTSHOW TEXT_Ch3_Start_Edgar
 TEXTEND

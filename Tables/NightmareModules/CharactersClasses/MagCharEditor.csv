@@ -1,22 +1,22 @@
 "INLINE MagCharTable","Base Magic","Magic Growth"
 "None",0,0
 "Edgar",0,0
-"Jenna",1,20
+"Jenna",0,0
 "Duncan",0,0
 "Kurt",1,20
 "Matthias",0,0
 "Stella",3,65
 "Nico",1,25
 "Lisa",3,65
-"Jane",0,0
-"Ethan",0,0
-"Beatrice",0,0
-"Daniel",0,0
+"Jane",2,25
+"Ethan",1,25
+"Beatrice",2,20
+"Daniel",1,20
 "Isabelle",2,35
 "Sasha",2,20
 "Richard",2,15
-"Cameron",2,15
-"Violet",0,0
+"Cameron",0,0
+"Violet",2,20
 "Rowan",2,15
 "Celia",1,10
 "Justin",5,50
@@ -24,12 +24,12 @@
 "Quentin",5,40
 "Thomas",6,55
 "Lucy",2,25
-"Rose",0,0
-"Clint",0,0
+"Rose",3,25
+"Clint",3,15
 "Victoria",0,0
 "Marie",6,50
 "Evelyn",10,75
-"Donovan",0,0
+"Donovan",3,20
 "Trent",0,0
 "Patrick",4,20
 "Joey",0,0
@@ -69,7 +69,7 @@
 "Valter (Ch 15)",2,5
 "Selena (Ch 10B +ACY- 13B)",10,40
 "Valter (Prologue)",2,5
-"Ch1Boss",0,5
+"Ch1Boss",2,5
 "Ch2Boss",0,5
 "Ch3Boss",1,10
 "Entombed (Ch 4)",0,5

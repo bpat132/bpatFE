@@ -6,6 +6,17 @@
 A medicinal solution[N]
 that restores 15 HP[X]
 
+## SpiritDustName
+Spirit Dust[X]
+
+## SpiritDustDesc
+Increases magic by[N]
+2 points. Vanishes after use[X]
+
+## SpiritDustDesc2
+Increases magic by[N]
+2 points. Vanishes after use[X]
+
 ## HealDesc
 Restores 10 + Magic HP[N]
 to an adjacent ally[X]

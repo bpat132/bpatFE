@@ -5,7 +5,7 @@
 
 pSkillModifiers: // Skill
 	POIN prAddUnitSkill prHalveIfRescuing prHalveIfCapturing prDebuffSkl prAddEquipSkill prItemPassiveSkl prRallySkl prResolve prDefiantSkl prPushSkl
-	POIN prAddPureWaterBarrierSkl
+	//POIN prAddPureWaterBarrierSkl
 	#ifdef DEBUFFS_MIN_ZERO
 	POIN prMinZero
 	#endif
@@ -14,8 +14,8 @@ WORD 0
 prAddUnitSkill:
 	rAdd(rSByteAt(UNIT_SKILL))
 
-prAddPureWaterBarrierSkl: // Upper part of byte 0x31 in unit struct is current pure water/barrier bonus duration
-	rAdd(rUpperHalfByteOf(rUByteAt(0x31)))
+//prAddPureWaterBarrierSkl: // Upper part of byte 0x31 in unit struct is current pure water/barrier bonus duration
+//	rAdd(rUpperHalfByteOf(rUByteAt(0x31)))
 
 prAddEquipSkill:
 	rAdd(rForUnitEquipped(rCallExternal(prGetItemSklBonus)))

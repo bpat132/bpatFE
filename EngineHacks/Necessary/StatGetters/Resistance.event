@@ -7,6 +7,7 @@ pResistanceModifiers: // Resistance
 	//POIN prAddUnitResistance prHalveIfCapturing prDebuffRes prAddEquipResistance prItemPassiveResistance prRallyRes prAddPureWaterBarrierMod prLifeAndDeathMinus prSkillFury prFortressResistanceRes prDefiantRes prPushRes
 	POIN prAddUnitResistance prHalveIfCapturing prDebuffRes prAddEquipResistance prItemPassiveResistance prRallyRes prLifeAndDeathMinus prSkillFury prFortressResistanceRes prDefiantRes prPushRes
 	POIN prPetrifyRes
+	POIN prAddPureWaterBarrierMod
 	#ifdef DEBUFFS_MIN_ZERO
 	POIN prMinZero
 	#endif
@@ -18,8 +19,8 @@ prAddUnitResistance:
 prAddEquipResistance:
 	rAdd(rForUnitEquipped(rCallExternal(prGetItemResBonus)))
 
-//prAddPureWaterBarrierMod: // Upper part of byte 0x31 in unit struct is current pure water/barrier bonus duration
-//	rAdd(rUpperHalfByteOf(rUByteAt(0x31)))
+prAddPureWaterBarrierMod: // Upper part of byte 0x31 in unit struct is current pure water/barrier bonus duration
+	rAdd(rUpperHalfByteOf(rUByteAt(0x31)))
 
 prDebuffRes:
 	#include "_asm/DebuffRes.lyn.event"

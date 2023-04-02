@@ -185,7 +185,8 @@ REDA [1,6] 0x0 0x1 0x00 0x0
 EnemyUnits1:
 // Unique
 //UNIT Ch1Boss Knight 0x40 Level(4,Enemy,0)     [18,2] 0x0 0x0 0x0 0x0 [SteelAxe,HandAxe] NeverMoveAI
-UNIT Ch1Boss Knight 0x40 Level(4,Enemy,0)     [8,7] 0x0 0x0 0x0 0x0 [SteelAxe,HandAxe] NeverMoveAI
+//UNIT Ch1Boss Knight 0x40 Level(4,Enemy,0)     [8,7] 0x0 0x0 0x0 0x0 [SteelAxe,HandAxe] NeverMoveAI
+UNIT Ch1Boss SwKnight 0x40 Level(4,Enemy,0)     [8,7] 0x0 0x0 0x0 0x0 [LightBrand,SteelSword] NeverMoveAI
 UNIT Matthias Soldier 0x40 Level(2,Enemy,0)     [7,7] 0x0 0x0 0x0 0x0 [IronLance,Vuln] NeverMoveAI
 UNIT Sasha Myrmidon_F 0x40 Level(5,Enemy,0)     [17,2] 0x0 0x0 0x0 0x0 [SlimSword,SteelBlade,FireSword,Vuln] DoNothing
 
@@ -279,6 +280,34 @@ ENUT 0x7D
 ENUT 0x7E
 ENUT 0x7F
 
+/*
+ENUT 0x129 // AllUnitsMustEscapeFlag
+MUSC Langrisser_Story
+CAM1 [0,11]
+LoadEnemies(EnemyUnits1)
+LoadEnemies(EnemyUnits2)
+SetBackground(0x5)
+TUTORIALTEXTBOXSTART
+CenterTutorialTextBox
+TEXTSHOW TEXT_Ch1_Intro
+TEXTEND
+MUSC BoF2_StrongerMonsters
+ClearBackground
+//FADU 16
+LoadPlayerUnits(Units1)
+*/
+
+/*
+SetBackground(0x5)
+MUSC Langrisser_Story
+TUTORIALTEXTBOXSTART
+CenterTutorialTextBox
+TEXTSHOW TEXT_RuneTutorial
+TEXTEND
+ClearBackground
+NoFade
+*/
+
 ENUT 0x129 // AllUnitsMustEscapeFlag
 MUSC BoF2_StrongerMonsters
 CAM1 [0,11]
@@ -286,6 +315,7 @@ LoadEnemies(EnemyUnits1)
 LoadEnemies(EnemyUnits2)
 FADU 16
 LoadPlayerUnits(Units1)
+
 
 Text(TEXT_Ch1_Start_Edgar)
 MUSC DW3_Oppression

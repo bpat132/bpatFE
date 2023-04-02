@@ -57,8 +57,8 @@ SongTable(GS_BabiLighthouse,BabiLighthouse,MapMusicGroup)
 #include "MusicEvents/HeroesOfMana_WhyAreWeWithoutHope_Devvy.event"
 SongTable(HeroesOfMana_WhyAreWeWithoutHope,song012D,MapMusicGroup)
 
-#include "MusicEvents/Castlevania2_BloodyTears_Chair_louder.event"
-SongTable(Castlevania2_BloodyTears,song17,MapMusicGroup)
+//#include "MusicEvents/Castlevania2_BloodyTears_Chair_louder.event"
+//SongTable(Castlevania2_BloodyTears,song17,MapMusicGroup)
 
 #include "MusicEvents/AA3_VictorKudo_bpat.event"
 SongTable(AA3_VictorKudo,AA3_VictorKudo_bpat,MapMusicGroup)

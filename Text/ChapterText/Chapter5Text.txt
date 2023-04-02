@@ -59,14 +59,14 @@ There's so many of them... No matter, I've been training for this for years. I'l
 [MidLeft][LoadEdgar][FarFarRight][LoadNico]
 [FarFarRight][MoveMidRight]
 [MidRight]
-Bad news, pirates are storming the town!
+Bad news, pirates are storming the port! They've already docked three ships.
 [MidLeft]
 How's the situation look?
 [MidRight]
 Not good, we're badly outnumbered and I didn't see any guards around. Don't think we can expect much help.
 [MidLeft]
 Damn... Even so, fleeing isn't an option. If we can't take on a handful of pirates, how could we hope to face Galt's army?
-Get everyone ready for battle, we'll protect this town with all our might!
+Get everyone ready for battle, we'll protect Port Krast with all our might!
 [MidRight][ClearFace]
 [MidRight][LoadJane]
 [MidRight]

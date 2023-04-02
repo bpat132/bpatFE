@@ -41,9 +41,17 @@ Defeat all enemies[X]
 ## TEXT_RuneTutorial
 Runes can be invoked by[N]
 selecting the [0x93]Invoke"[N]
-menu option. Edgar can[N]
+menu option. You can[N]
 currently invoke two[N]
-runes per chapter.[A][X]
+runes per chapter.[AN]
+In the Invoke menu, you[N]
+can view your runes with[N]
+the left and right buttons,[N]
+and select one with the[N]
+A button.[AN]
+The remaining and maximum[N]
+uses are displayed in this[N]
+menu as well.[A][X]
 
 ## TEXT_Rune0Info
 The [ToggleRed]Hawkeye Rune[ToggleRed][N]
@@ -60,7 +68,16 @@ The [ToggleRed]Miracle Rune[ToggleRed][N]
 allows the next ally[N]
 to suffer a fatal blow[N]
 during the chapter to[N]
-survive at 1HP.[A][X]
+survive at 1HP.[AN]
+This will only work[N]
+once per chapter, so[N]
+be careful![A][X]
+
+## TEXT_Rune2Info
+The [ToggleRed]Celerity Rune[ToggleRed][N]
+allows an ally to move[N]
+three additional tiles[N]
+during their next action.[A][X]
 
 ## TEXT_Rune3Info
 The [ToggleRed]Netherswap Rune[ToggleRed][N]
@@ -68,6 +85,10 @@ allows an ally to use their[N]
 action to switch places[N]
 with another ally within[N]
 5 spaces of the user.[A][X]
+
+## SwordArmorDesc
+Heavily armored knights with[NL]
+poor speed. Equip: Swords.[X]
 
 # 0x0546
 Physical strength. Each point[NL]
@@ -99,15 +120,15 @@ Magical resistance. Each point reduces[NL]
 incoming magical damage by one.[X]
 
 # 0x3E7
-Clarity Tonic[X]
+Pure Water[X]
 
 # 0x496
-Boosts skill and luck by 7.[NL]
+Boosts luck and resistance by 7.[NL]
 Grows weaker each turn.[X]
 
 # 0x04D4
 Temporarily boosts[NL]
-skill and luck.[X]
+luck and resistance.[X]
 
 # 0x02f4
 Ballistician[X]

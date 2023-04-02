@@ -124,7 +124,7 @@ EnemyUnits1:
 //UNIT Ch2Boss Fighter 0x40 Level(7,Enemy,0)     [20,1] DropItem 0x0 0x0 0x0 [SteelAxe,HandAxe,HoplonShield] NeverMoveAI
 // Removing Hoplon Guard for now since enemies don't have crit yet
 UNIT Ch2Boss Fighter 0x40 Level(7,Enemy,0)     [20,1] 0x0 0x0 0x0 0x0 [SteelAxe,HandAxe] NeverMoveAI
-UNIT Jane Knight_F 0x40 Level(5,Enemy,0)     [20,2] 0x0 0x0 0x0 0x0 [IronAxe,SteelAxe,Vuln] NeverMoveAI
+UNIT Jane Knight 0x40 Level(5,Enemy,0)     [20,2] 0x0 0x0 0x0 0x0 [IronAxe,SteelAxe,Vuln] NeverMoveAI
 // Generics
 UNIT 0x80 Fighter 0x40 Level(2,Enemy,1)     [1,5] 0x0 0x0 0x0 0x0 [IronAxe] PWHAI
 UNIT 0x80 Mercenary 0x40 Level(2,Enemy,1)     [2,7] 0x0 0x0 0x0 0x0 [IronSword] PWHAI
@@ -137,7 +137,8 @@ UNIT 0x80 PegasusKnight 0x40 Level(2,Enemy,1)     [3,11] 0x0 0x0 0x0 0x0 [SlimLa
 UNIT 0x80 PegasusKnight 0x40 Level(2,Enemy,1)     [0,9] 0x0 0x0 0x0 0x0 [Javelin] PWHAI
 
 UNIT 0x80 Mercenary 0x40 Level(2,Enemy,1)     [6,7] 0x0 0x0 0x0 0x0 [IronSword] PWHAI
-UNIT 0x80 Myrmidon 0x40 Level(2,Enemy,1)     [7,8] DropItem 0x0 0x0 0x0 [IronBlade] AIRAI
+//UNIT 0x80 Myrmidon 0x40 Level(2,Enemy,1)     [7,8] DropItem 0x0 0x0 0x0 [IronBlade] AIRAI
+UNIT 0x80 Myrmidon 0x40 Level(2,Enemy,1)     [7,8] 0x0 0x0 0x0 0x0 [SteelSword] AIRAI // Tentatively removing freebie
 #ifndef _EASY_MODE_
 UNIT 0x80 Cavalier 0x40 Level(2,Enemy,1)     [6,11] 0x0 0x0 0x0 0x0 [IronLance] AIRAI
 #endif
@@ -152,6 +153,7 @@ UNIT 0x80 Fighter 0x40 Level(2,Enemy,1)     [14,6] 0x0 0x0 0x0 0x0 [IronAxe] AIR
 
 UNIT 0x80 Archer 0x40 Level(2,Enemy,1)     [11,1] 0x0 0x0 0x0 0x0 [IronBow] AIRAI
 UNIT 0x80 Mercenary 0x40 Level(2,Enemy,1)     [8,1] 0x0 0x0 0x0 0x0 [IronSword,PureWater] AIRAI
+//UNIT 0x80 Mercenary 0x40 Level(2,Enemy,1)     [8,1] 0x0 0x0 0x0 0x0 [IronSword,SecretBook] AIRAI
 UNIT 0x80 Mage 0x40 Level(2,Enemy,1)     [9,2] 0x0 0x0 0x0 0x0 [Fire] AIRAI
 UNIT 0x80 Soldier 0x40 Level(2,Enemy,1)     [12,4] 0x0 0x0 0x0 0x0 [Javelin] AIRAI
 
@@ -183,7 +185,8 @@ UNIT 0x80 Knight 0x40 Level(2,Enemy,1)     [17,2] 0x0 0x0 0x0 0x0 [HandAxe] Neve
 UNIT
 
 NorthThiefReinforcementUnits:
-UNIT 0x80 Thief 0x40 Level(2,Enemy,1)     [23,3] 0x0 0x0 0x0 0x0 [IronSword,ChestKey] LootingThiefAI
+//UNIT 0x80 Thief 0x40 Level(2,Enemy,1)     [23,3] 0x0 0x0 0x0 0x0 [IronSword,ChestKey] LootingThiefAI
+UNIT 0x80 Thief 0x40 Level(2,Enemy,1)     [23,3] DropItem 0x0 0x0 0x0 [IronSword,ChestKey] LootingThiefAI
 UNIT
 
 SouthThiefReinforcementUnits:
@@ -212,13 +215,37 @@ ENUF MiracleRuneDisabledFlag
 // Enable runes usage
 ENUF RuneMenuDisableFlag
 
-MUSC OgreBattle_WallOfDefense
 LoadEnemies(EnemyUnits1)
 LoadEnemies(EnemyUnits2)
 LoadEnemies(EnemyUnits3)
 LoadPlayerUnits(Units1)
+
+// New, need to test
+MUSC Langrisser_Story
+SetBackground(0x5)
+TUTORIALTEXTBOXSTART
+CenterTutorialTextBox
+TEXTSHOW TEXT_Ch2_Intro
+TEXTEND
+// End new
+
+MUSC OgreBattle_WallOfDefense
+/*
+LoadEnemies(EnemyUnits1)
+LoadEnemies(EnemyUnits2)
+LoadEnemies(EnemyUnits3)
+LoadPlayerUnits(Units1)
+*/
 SetBackground(0x24)
 CAM1 [23,0]
+
+/*
+LoadEnemies(EnemyUnits1)
+LoadEnemies(EnemyUnits2)
+LoadEnemies(EnemyUnits3)
+LoadPlayerUnits(Units1)
+*/
+
 Text(TEXT_Ch2_Start_Edgar)
 ClearBackground
 NoFade

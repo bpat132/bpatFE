@@ -57,6 +57,14 @@ HandAxeAnim(0xB4)
 UnarmedAnim(0x41)
 WORD 0x0 // Seperator
 
+// Credit: TBA
+#include "Animations/knight_sword Installer.event"
+
+SwordArmorKnightAnim:
+SwordAnim(0xA3)
+UnarmedAnim(0x41)
+WORD 0x0 // Seperator
+
 // Credit: Mikey Seregon, Alfred Kamon
 #include "Animations/wr_axe.event"
 #include "Animations/wr_handaxe.event"
@@ -66,6 +74,17 @@ WyvernRiderAnim:
 AxeAnim(0xAE)
 HandAxeAnim(0xAF)
 UnarmedAnim(0x59)
+WORD 0x0 // Seperator
+
+// Credit: TBA
+#include "Animations/wl_axe Installer.event"
+#include "Animations/wl_handaxe Installer.event"
+
+WyvernLordAnim:
+SpearAnim(0x60)
+AxeAnim(0xA5)
+HandAxeAnim(0xA6)
+UnarmedAnim(0x71)
 WORD 0x0 // Seperator
 
 // Credit: TBA

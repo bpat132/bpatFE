@@ -6,27 +6,31 @@
 #define MapSprite16x32 1
 #define MapSprite32x32 2
 
-StandingMapSprite(0x45, 0, ThiefFSt)
+StandingMapSprite(0x45, MapSprite16x16, ThiefFSt)
 MovingMapSprite(Thief_F, 0x81F1080, ThiefFMv)
 
-StandingMapSprite(0x47, 0, RogueFSt)
+StandingMapSprite(0x47, MapSprite16x16, RogueFSt)
 MovingMapSprite(Rogue_F, 0x81F249C, RogueFMv)
 
-StandingMapSprite(0x6, 1, KnightSt)
+StandingMapSprite(0x6, MapSprite16x32, KnightSt)
 MovingMapSprite(Knight, 0x1C7E74, KnightMv)
-MovingMapSprite(Knight_F, 0x1C7E74, KnightMv)
+//MovingMapSprite(Knight_F, 0x1C7E74, KnightMv)
 
-StandingMapSprite(0x19, 1, WyvernSt)
+//StandingMapSprite(0x48, MapSprite16x16, SwordKnightSt)
+StandingMapSprite(0x48, MapSprite16x32, SwordKnightSt)
+MovingMapSprite(Knight_F, 0x81F2EC4, SwordKnightMv)
+
+StandingMapSprite(0x19, MapSprite16x32, WyvernSt)
 MovingMapSprite(WyvernRider, 0x81D403C, WyvernMv)
 
 /*
-StandingMapSprite(0x41, 1, BallistaSt)
+StandingMapSprite(0x41, MapSprite16x32, BallistaSt)
 MovingMapSprite(Fleet, 0x81EEC84, BallistaMv)
 */
-StandingMapSprite(0x46, 1, BallistaSt)
+StandingMapSprite(0x46, MapSprite16x32, BallistaSt)
 MovingMapSprite(Ballistician, 0x81F1A54, BallistaMv)
 
-StandingMapSprite(0x2C, 0, HalbSt)
+StandingMapSprite(0x2C, MapSprite16x16, HalbSt)
 MovingMapSprite(Halberdier, 0x81E0E40, HalbMv)
 
 // FE6
@@ -52,6 +56,15 @@ KnightSt:
 ALIGN 4
 KnightMv:
 #incext Png2Dmp "Animations/knight_mv.png" --lz77
+
+// Agro
+ALIGN 4
+SwordKnightSt:
+//#incext Png2Dmp "Animations/sword_knight_st.png" --lz77
+#incext Png2Dmp "Animations/sword_knight_st_16x32.png" --lz77
+ALIGN 4
+SwordKnightMv:
+#incext Png2Dmp "Animations/sword_knight_mv.png" --lz77
 
 // flasuban
 ALIGN 4

@@ -1,7 +1,7 @@
 #define HeroesOfMana_WhyAreWeWithoutHope 0x34 // replacing preps music
 #define EtrianOdyssey3_FirstCampaign 0x19 // replacing player phase battle music
 #define KitN_MelliaSortie 0x1a // replacing enemy phase battle music
-#define Castlevania2_BloodyTears 0x10 // replacing near victory music
+//#define Castlevania2_BloodyTears 0x10 // replacing near victory music
 #define YuNo_BurialChamber 0x43 // replacing title music
 
 #define FFMQ_Battle1 0x26D // ch1-6 player phase map music

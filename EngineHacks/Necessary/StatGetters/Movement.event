@@ -28,7 +28,8 @@ prSkillCelerity: // Celerity replaced with Encumbered
 prAdd3IfFlag:
   rIfUnitHasAllegience(UA_BLUE)
   rIf(CheckMyFlag)
-    rAddConst(2)
+    //rAddConst(2)
+    rAddConst(3)
 CheckMyFlag:
   rForConstant(CelerityActiveFlag)
     // CheckEventId

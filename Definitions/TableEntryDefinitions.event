@@ -44,6 +44,7 @@
 #define BTomeCost 16
 
 // Items
+#define SpiritDust 0xc3
 #define Vuln 0x6c
 #define Shortbow ShortBow
 #define RubySword PoisonSword
@@ -71,6 +72,15 @@
 #define Naginata 0xc1
 
 // Classes
+#define AxeArmor Knight
+#define AxeKnight AxeArmor
+#define SwordArmor Knight_F
+#define SwordKnight SwordArmor
+#define SwdArmor SwordArmor
+#define SwdKnight SwordArmor
+#define SwArmor SwordArmor
+#define SwKnight SwordArmor
+
 #define Thief_F 0x54
 #define Rogue_F 0x56
 #define Halberdier 0x3a

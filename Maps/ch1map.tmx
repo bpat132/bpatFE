@@ -52,7 +52,7 @@
    <property name="TileConfig" value="0x10"/>
   </properties>
   <data>
-   <tile gid="745"/>
+   <tile gid="935"/>
    <tile gid="806"/>
    <tile gid="930"/>
    <tile gid="931"/>
@@ -71,7 +71,7 @@
    <tile gid="897"/>
    <tile gid="898"/>
    <tile gid="899"/>
-   <tile gid="777"/>
+   <tile gid="898"/>
    <tile gid="838"/>
    <tile gid="962"/>
    <tile gid="963"/>
@@ -188,8 +188,8 @@
    <tile gid="746"/>
    <tile gid="933"/>
    <tile gid="934"/>
-   <tile gid="935"/>
-   <tile gid="936"/>
+   <tile gid="747"/>
+   <tile gid="748"/>
    <tile gid="517"/>
    <tile gid="523"/>
    <tile gid="420"/>
@@ -207,8 +207,8 @@
    <tile gid="778"/>
    <tile gid="967"/>
    <tile gid="966"/>
-   <tile gid="898"/>
-   <tile gid="968"/>
+   <tile gid="779"/>
+   <tile gid="780"/>
    <tile gid="517"/>
    <tile gid="517"/>
    <tile gid="198"/>
@@ -222,7 +222,7 @@
    <tile gid="841"/>
    <tile gid="842"/>
    <tile gid="772"/>
-   <tile gid="967"/>
+   <tile gid="836"/>
    <tile gid="129"/>
    <tile gid="137"/>
    <tile gid="197"/>

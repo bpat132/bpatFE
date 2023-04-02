@@ -46,7 +46,13 @@ TurnEventPlayer(0,EnemyReinforcements3,5)
 END_MAIN
 
 AllyReinforcements:
-EnemyReinforcements(AllyReinforcementUnits)
+MUSC FE11_Trouble
+EnemyReinforcementsNoENDA(AllyReinforcementUnits)
+Text(TEXT_Ch4_RC_Event)
+CAM1 [0,0]
+FlashCursor(2,0,20)
+FlashCursor(3,0,20)
+ENDA
 
 EnemyReinforcements1:
 EnemyReinforcements(EnemyReinforcementUnits1)
@@ -62,8 +68,12 @@ END_MAIN
 
 LocationBasedEvents:
 Seize(8,4)
+/*
 Chest(SapphireLance,17,3)
 Chest(KillerBow,17,1)
+*/
+Chest(KillerBow,17,3)
+Chest(Bolganone,17,1)
 END_MAIN
 
 MiscBasedEvents:
@@ -99,7 +109,7 @@ UNIT
 
 AllyReinforcementUnits:
 UNIT Richard Mercenary 0x0 Level(7,Ally,0)     [0,9] 0x0 0x0 0x1 RichardReda [IronSword,SteelSword,FireSword,0x6C] NoAI
-UNIT Cameron Archer 0x0 Level(6,Ally,0)     [0,10] 0x0 0x0 0x1 CameronReda [IronBow,SteelBow,0x6C] NoAI
+UNIT Cameron Archer 0x0 Level(6,Ally,0)     [0,10] 0x0 0x0 0x1 CameronReda [IronBow,SteelBow,0x6C,PureWater] NoAI
 UNIT
 
 RichardReda:
@@ -112,9 +122,9 @@ EnemyUnits1:
 UNIT Ch4Boss Mage 0x40 Level(12,Enemy,0)     [4,15] 0x0 0x0 0x0 0x0 [Bolganone,Thoron] NeverMoveAI
 #ifndef _EASY_MODE_
 //UNIT Craig Cavalier 0x40 Level(12,Enemy,0)     [20,2] 0x0 0x0 0x0 0x0 [ShortSpear] PWHAI
-UNIT Craig Cavalier 0x40 Level(12,Enemy,0)     [5,16] 0x0 0x0 0x0 0x0 [ShortSpear] PWHAI
+UNIT Craig Cavalier 0x40 Level(12,Enemy,0)     [5,16] DropItem 0x0 0x0 0x0 [ShortSpear,HoplonShield] PWHAI
 #else
-UNIT Craig Cavalier 0x40 Level(12,Enemy,0)     [5,16] 0x0 0x0 0x0 0x0 [Javelin] PWHAI
+UNIT Craig Cavalier 0x40 Level(12,Enemy,0)     [5,16] DropItem 0x0 0x0 0x0 [Javelin,HoplonShield] PWHAI
 #endif
 //UNIT 0x80 Thief 0x40 Level(6,Enemy,1)     [8,5] 0x0 0x0 0x0 0x0 [FireSword,ChestKey,ChestKey] LootingThiefAI
 UNIT 0x80 Thief 0x40 Level(6,Enemy,1)     [8,5] 0x0 0x0 0x0 0x0 [FireSword,ChestKey,ChestKey] EscapeAI
@@ -130,19 +140,25 @@ UNIT 0x80 Myrmidon 0x40 Level(6,Enemy,1)     [2,15] 0x0 0x0 0x0 0x0 [IronBlade] 
 
 // Throne room
 //UNIT 0x80 Mage 0x40 Level(6,Enemy,1)     [7,4] 0x0 0x0 0x0 0x0 [Mjolnir] NeverMoveAI
-UNIT 0x80 Mage 0x40 Level(6,Enemy,1)     [7,4] 0x0 0x0 0x0 0x0 [Thunder] NeverMoveAI
-UNIT 0x80 Mage 0x40 Level(6,Enemy,1)     [9,4] DropItem 0x0 0x0 0x0 [Bolganone] NeverMoveAI
-UNIT 0x80 Knight 0x40 Level(6,Enemy,1)     [5,4] 0x0 0x0 0x0 0x0 [HandAxe] NeverMoveAI
+//UNIT 0x80 Mage 0x40 Level(6,Enemy,1)     [7,4] 0x0 0x0 0x0 0x0 [Thunder] NeverMoveAI
+//UNIT 0x80 Mage 0x40 Level(6,Enemy,1)     [9,4] DropItem 0x0 0x0 0x0 [Bolganone] NeverMoveAI
+UNIT 0x80 Monk 0x40 Level(6,Enemy,1)     [7,4] 0x0 0x0 0x0 0x0 [Shine] NeverMoveAI
+UNIT 0x80 Shaman 0x40 Level(6,Enemy,1)     [9,4] 0x0 0x0 0x0 0x0 [Flux] NeverMoveAI
+// Tentatively removing some of the throne room guards
+//UNIT 0x80 Knight 0x40 Level(6,Enemy,1)     [5,4] 0x0 0x0 0x0 0x0 [HandAxe] NeverMoveAI
 UNIT 0x80 Knight 0x40 Level(6,Enemy,1)     [5,5] 0x0 0x0 0x0 0x0 [HandAxe] NeverMoveAI
-UNIT 0x80 Knight 0x40 Level(6,Enemy,1)     [11,4] 0x0 0x0 0x0 0x0 [HandAxe] NeverMoveAI
+//UNIT 0x80 Knight 0x40 Level(6,Enemy,1)     [11,4] 0x0 0x0 0x0 0x0 [HandAxe] NeverMoveAI
 UNIT 0x80 Knight 0x40 Level(6,Enemy,1)     [11,5] 0x0 0x0 0x0 0x0 [HandAxe] NeverMoveAI
 #ifndef _EASY_MODE_
 UNIT 0x80 Archer_F 0x40 Level(6,Enemy,1)     [8,6] 0x0 0x0 0x0 0x0 [SteelBow,PureWater] AIRAI
+//UNIT 0x80 Archer_F 0x40 Level(6,Enemy,1)     [8,6] 0x0 0x0 0x0 0x0 [SteelBow,GoddessIcon] AIRAI
 #else
 UNIT 0x80 Archer_F 0x40 Level(6,Enemy,1)     [8,6] 0x0 0x0 0x0 0x0 [IronBow,PureWater] AIRAI
+//UNIT 0x80 Archer_F 0x40 Level(6,Enemy,1)     [8,6] 0x0 0x0 0x0 0x0 [IronBow,GoddessIcon] AIRAI
 #endif
 #ifndef _EASY_MODE_
-UNIT 0x80 Myrmidon 0x40 Level(6,Enemy,1)     [7,6] 0x0 0x0 0x0 0x0 [SteelBlade] AIRAI
+//UNIT 0x80 Myrmidon 0x40 Level(6,Enemy,1)     [7,6] 0x0 0x0 0x0 0x0 [SteelBlade] AIRAI
+UNIT 0x80 Myrmidon 0x40 Level(6,Enemy,1)     [7,6] 0x0 0x0 0x0 0x0 [SteelSword] AIRAI // Tentatively nerfing this guy on normal too
 #endif
 UNIT 0x80 Myrmidon 0x40 Level(6,Enemy,1)     [7,6] 0x0 0x0 0x0 0x0 [SteelSword] AIRAI
 UNIT 0x80 Soldier 0x40 Level(6,Enemy,1)     [9,6] 0x0 0x0 0x0 0x0 [SteelLance] AIRAI
@@ -162,6 +178,7 @@ UNIT 0x80 Mercenary 0x40 Level(6,Enemy,1)     [10,10] 0x0 0x0 0x0 0x0 [IronSword
 UNIT 0x80 Fighter 0x40 Level(6,Enemy,1)     [16,11] 0x0 0x0 0x0 0x0 [IronAxe] AIRAI
 UNIT 0x80 Mercenary 0x40 Level(6,Enemy,1)     [18,10] 0x0 0x0 0x0 0x0 [SteelSword] AIRAI
 UNIT 0x80 Mage_F 0x40 Level(6,Enemy,1)     [13,9] 0x0 0x0 0x0 0x0 [Fire] AIRAI
+//UNIT 0x80 Monk 0x40 Level(6,Enemy,1)     [13,9] 0x0 0x0 0x0 0x0 [Lightning] AIRAI
 UNIT 0x80 Mercenary 0x40 Level(6,Enemy,1)     [7,15] 0x0 0x0 0x0 0x0 [IronSword] AIRAI
 UNIT 0x80 Soldier 0x40 Level(6,Enemy,1)     [8,16] 0x0 0x0 0x0 0x0 [Javelin] AIRAI
 
@@ -210,14 +227,22 @@ ENUT SwarpRuneDisabledFlag
 ENUF RuneMenuDisableFlag
 */
 
-//MUSC OgreBattle_WallOfDefense
-MUSC Langrisser_Story
 LoadEnemies(EnemyUnits1)
 LoadEnemies(EnemyUnits2)
 LoadPlayerUnits(Units1) //0x0 instead of 0x1 seems to be for allies on maps with prep screens
+
+MUSC Langrisser_Story
+SetBackground(0x15)
+TUTORIALTEXTBOXSTART
+CenterTutorialTextBox
+TEXTSHOW TEXT_Ch4_Intro
+TEXTEND
+
+//MUSC OgreBattle_WallOfDefense
+//MUSC Langrisser_Story
 //MUSC AA_Gumshoe
 //MUSC Langrisser_Story
-SetBackground(0x15)
+//SetBackground(0x15)
 Text(TEXT_Ch4_Start1)
 SetBackground(0x10)
 Text(TEXT_Ch4_Start2)

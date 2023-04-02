@@ -128,6 +128,18 @@ VillageEvent5:  // Swapping these village locations
 
 	ENDA
 */
+
+VillageEvent2:
+	VillageEventItem(PlaceholderText, Village, Silence)
+VillageEvent3:
+	VillageEventItem(TEXT_Ch5_Village_KillerAxe, Village, KillerAxe)
+VillageEvent4:
+	VillageEventItem(TEXT_Ch5_Village_KillerLance, Village, KillerLance)
+VillageEvent5:
+	VillageEventItem(PlaceholderText, Village, WindSword)
+
+
+/*
 VillageEvent5:
 	VillageEventItem(PlaceholderText, Village, EmeraldAxe)
 
@@ -137,6 +149,7 @@ VillageEvent3:
 	VillageEventItem(TEXT_Ch5_Village_KillerAxe, Village, KillerAxe)
 VillageEvent4:
 	VillageEventItem(TEXT_Ch5_Village_KillerLance, Village, KillerLance)
+*/
 /*
 VillageEvent2:
 	VillageEventItem(TEXT_Ch5_Village_Longbow, Village, Longbow)
@@ -323,6 +336,13 @@ LoadEnemies(EnemyUnits3)
 SilentGiveItemUnit(Violet,Vuln)
 SilentGiveItemUnit(Rowan,Vuln)
 
+MUSC Langrisser_Story
+SetBackground(0x5)
+TUTORIALTEXTBOXSTART
+CenterTutorialTextBox
+TEXTSHOW TEXT_Ch5_Intro
+TEXTEND
+
 MUSC AA_Gumshoe
 SetBackground(0x9)
 Text(TEXT_Ch5_Start_Celia)
@@ -375,11 +395,13 @@ ENUF MiracleRuneDisabledFlag
 ENUF MiracleActiveFlag
 //ENUF SwarpActiveFlag
 // Enable unlocked runes
+/*
 CHECK_EVENTID SwarpRuneUnlockedFlag
 BEQ 1 0 0xC // If flag is not set, skip
 ENUF SwarpRuneDisabledFlag
 ENUF SwarpActiveFlag
 LABEL 1
+*/
 
 
 MUSC ToS_LastBattleDecision
@@ -393,5 +415,6 @@ MNC2 Chapter6
 ENDA
 
 ArmoryItems:
-SHLI IronSword SteelSword IronBlade SteelBlade FireSword SwiftSword IronLance SteelLance Javelin SlimLance IronBow SteelBow ShortBow IronAxe SteelAxe HandAxe Labrys
+//SHLI IronSword SteelSword IronBlade SteelBlade FireSword SwiftSword IronLance SteelLance Javelin SlimLance IronBow SteelBow ShortBow IronAxe SteelAxe HandAxe Labrys
+SHLI SwiftSword RubySword SlimLance SapphireLance Labrys EmeraldAxe ShortBow
 ALIGN 4

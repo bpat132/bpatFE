@@ -59,8 +59,6 @@ POP
 // GetBlueUnitCountASM (sme)
 #include "Misc/GetBlueUnitCountASMC.lyn.event"
 
-
-
 // Fixed autolevels (stan)
 //#include "FixedAutolevels/FixedAutolevels.event"
 
@@ -130,6 +128,20 @@ Returns: True if event id is set
 ALIGN 4
 GetUnitInDeploySlotHack:
 #incbin "Misc/GetUnitByDeployOrder.dmp"
+
+// Ranged anim table (circles)
+ALIGN 4
+#include "RangedAnimTable/Ranged Animation by Table Installer.event"
+
+// circleseverywhere Monster Weapon display fix
+PUSH
+ORG $16e20
+BYTE 0x30 0xB5 0x0B 0x28 0x04 0xD0 0x09 0x49 0x80 0x00 0x08 0x18 0x00 0x68 0x06 0xE0 0x80 0x20 0x80 0x00 0x6B 0x30 0x02 0xE0 0x80 0x00 0x68 0x44 0x00 0x68 0xF3 0xF7 0xFF 0xF9 0xC0 0x46
+ORG $892f2
+BYTE 6
+ORG $1e7fc
+BYTE 0xC
+POP
 
 // 7743 patches
 ALIGN 4

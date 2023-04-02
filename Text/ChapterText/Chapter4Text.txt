@@ -120,7 +120,7 @@ So Lords Louis, Jeffery, and I struck a deal with the empire. We'd depose your f
 [R]...
 [ML]We dismissed the conscripts, letting return to their lives. Rallied what was left of our army to deal with the bandits. Things were finally looking up.
 [R]... What changed?
-[ML] Lord Louis began to increase taxes, and worked with empire soldiers to collect them. He imprisons dissenters, hoards riches in the castle.
+[ML]Lord Louis began to increase taxes, and worked with empire soldiers to collect them. He imprisons dissenters, hoards riches in the castle.
 [R]And you didn't stop him? You stood by and let this happen?!
 [ML]By the time I realized, it was too late. I tried to convince Lord Jeffery, but he wouldn't budge.
 [FR][LoadJane]
