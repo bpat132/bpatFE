@@ -44,7 +44,7 @@
 #define BTomeCost 16
 
 // Items
-#define SpiritDust 0xc3
+//#define SpiritDust 0xc3
 #define Vuln 0x6c
 #define Shortbow ShortBow
 #define RubySword PoisonSword
