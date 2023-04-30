@@ -244,7 +244,7 @@ POP
 
 ALIGN 4
 PrepScreenShop:
-SHLI IronSword SteelSword IronBlade SteelBlade FireSword IronLance SteelLance Javelin IronAxe SteelAxe HandAxe IronBow SteelBow Fire Thunder Flux EvilEye Heal
+SHLI IronSword SteelSword IronBlade SteelBlade FireSword IronLance SteelLance Javelin IronAxe SteelAxe HandAxe IronBow SteelBow Fire Thunder Flux Rend Lightning Shine Heal
 ALIGN 4
 
 //Fix MNC2 Freezing glitch (breaks skirmishes!)

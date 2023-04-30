@@ -212,7 +212,7 @@ UNIT Rowan Myrmidon 0x1 Level(10,NPC,0)   [1,6] 0x0 0x0 0x0 0x0 [SteelBlade,Swif
 //UNIT Violet PegasusKnight 0x1 Level(8,NPC,0)   [19,0] 0x0 0x0 0x0 0x0 [SlimLance,IronLance,SteelLance,Javelin] NoAI
 UNIT Violet PegasusKnight 0x1 Level(8,NPC,0)   [19,0] 0x0 0x0 0x0 0x0 [SlimLance,SteelLance,Javelin] NoAI // Probably shouldn't give so many free items
 
-UNIT Ch5Boss Pirate 0x40 Level(15,Enemy,0)     [9,21] 0x0 0x0 0x0 0x0 [Labrys,HandAxe] AIRAI
+UNIT Ch5Boss Pirate 0x40 Level(12,Enemy,0)     [9,21] 0x0 0x0 0x0 0x0 [Labrys,HandAxe] AIRAI
 
 // Left
 UNIT 0x86 Fighter 0x40 Level(7,Enemy,1)     [2,11] 0x0 0x0 0x0 0x0 [IronAxe] PWHAI
@@ -279,7 +279,8 @@ UNIT 0x86 Mage 0x40 Level(7,Enemy,1)     [7,26] 0x0 0x0 0x0 0x0 [Fire] PWHAI
 UNIT 0x86 PegasusKnight 0x40 Level(7,Enemy,1)     [5,19] 0x0 0x0 0x0 0x0 [SteelLance] PWHAI
 UNIT 0x86 PegasusKnight 0x40 Level(7,Enemy,1)     [7,18] 0x0 0x0 0x0 0x0 [SlimLance] PWHAI
 UNIT 0x86 PegasusKnight 0x40 Level(7,Enemy,1)     [10,18] 0x0 0x0 0x0 0x0 [SlimLance] PWHAI
-UNIT 0x86 PegasusKnight 0x40 Level(7,Enemy,1)     [12,19] 0x0 0x0 0x0 0x0 [IronLance] PWHAI
+//UNIT 0x86 PegasusKnight 0x40 Level(7,Enemy,1)     [12,19] 0x0 0x0 0x0 0x0 [IronLance] PWHAI
+UNIT 0x86 PegasusKnight 0x40 Level(7,Enemy,1)     [12,19] 0x0 0x0 0x0 0x0 [SteelLance] PWHAI
 UNIT
 
 TedReinforcementUnits:
@@ -320,8 +321,15 @@ ALIGN 4
 
 BeginningScene:
 // Two rune uses for this chapter
-COUNTER_SET 0 2
-COUNTER_SET 1 2
+COUNTER_SET 0 3
+COUNTER_SET 1 3
+
+// TEMP
+ENUF CelerityRuneDisabledFlag
+ENUF CelerityActiveFlag
+ENUF SwarpRuneDisabledFlag
+ENUF SwarpActiveFlag
+
 /*
 // Disable locked runes
 ENUT CelerityRuneDisabledFlag

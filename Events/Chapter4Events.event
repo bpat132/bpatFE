@@ -119,15 +119,16 @@ REDA [1,10] 0x0 0x1 0x00 0x08
 
 EnemyUnits1:
 // Unique
-UNIT Ch4Boss Mage 0x40 Level(12,Enemy,0)     [4,15] 0x0 0x0 0x0 0x0 [Bolganone,Thoron] NeverMoveAI
+//UNIT Ch4Boss Mage 0x40 Level(12,Enemy,0)     [4,15] 0x0 0x0 0x0 0x0 [Bolganone,Thoron] NeverMoveAI
+UNIT Ch4Boss Mage 0x40 Level(10,Enemy,0)     [4,15] 0x0 0x0 0x0 0x0 [Bolganone] NeverMoveAI
 #ifndef _EASY_MODE_
 //UNIT Craig Cavalier 0x40 Level(12,Enemy,0)     [20,2] 0x0 0x0 0x0 0x0 [ShortSpear] PWHAI
-UNIT Craig Cavalier 0x40 Level(12,Enemy,0)     [5,16] DropItem 0x0 0x0 0x0 [ShortSpear,HoplonShield] PWHAI
+UNIT Craig Cavalier 0x40 Level(10,Enemy,0)     [5,16] DropItem 0x0 0x0 0x0 [ShortSpear,HoplonShield] PWHAI
 #else
-UNIT Craig Cavalier 0x40 Level(12,Enemy,0)     [5,16] DropItem 0x0 0x0 0x0 [Javelin,HoplonShield] PWHAI
+UNIT Craig Cavalier 0x40 Level(10,Enemy,0)     [5,16] DropItem 0x0 0x0 0x0 [Javelin,HoplonShield] PWHAI
 #endif
-//UNIT 0x80 Thief 0x40 Level(6,Enemy,1)     [8,5] 0x0 0x0 0x0 0x0 [FireSword,ChestKey,ChestKey] LootingThiefAI
-UNIT 0x80 Thief 0x40 Level(6,Enemy,1)     [8,5] 0x0 0x0 0x0 0x0 [FireSword,ChestKey,ChestKey] EscapeAI
+UNIT 0x80 Thief 0x40 Level(6,Enemy,1)     [8,5] 0x0 0x0 0x0 0x0 [FireSword,ChestKey,ChestKey] LootingThiefAI
+//UNIT 0x80 Thief 0x40 Level(6,Enemy,1)     [8,5] 0x0 0x0 0x0 0x0 [FireSword,ChestKey,ChestKey] EscapeAI
 
 // Outside
 //UNIT 0x80 Cavalier_F 0x40 Level(6,Enemy,1)     [0,16] 0x0 0x0 0x0 0x0 [Javelin] PWHAI

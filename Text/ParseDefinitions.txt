@@ -115,7 +115,7 @@
 [LoadDonovan] = [LoadFace][0x1f][0x1]
 [LoadTrent] = [LoadFace][0x20][0x1]
 
-[LoadHoward] = [LoadFace][0x43][0x1]
+[LoadHoward] = [LoadFace][0x4e][0x1]
 [LoadMystery] = [LoadFace][0x55][0x1]
 
 [LoadBandit] = [LoadFace][0x4c][0x1]

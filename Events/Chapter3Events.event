@@ -164,10 +164,10 @@ REDA [9,19] 0x0 0x1 0x00 0x8
 EnemyUnits1:
 // Unique
 #ifndef _EASY_MODE_
-UNIT Ch3Boss Myrmidon 0x40 Level(10,Enemy,0)     [0,0] 0x0 0x0 0x0 0x0 [SteelBlade] NeverMoveAI
+UNIT Ch3Boss Myrmidon 0x40 Level(8,Enemy,0)     [0,0] 0x0 0x0 0x0 0x0 [SteelBlade] NeverMoveAI
 #else
 #endif
-UNIT Ch3Boss Myrmidon 0x40 Level(10,Enemy,0)     [0,0] 0x0 0x0 0x0 0x0 [SteelSword] NeverMoveAI
+UNIT Ch3Boss Myrmidon 0x40 Level(8,Enemy,0)     [0,0] 0x0 0x0 0x0 0x0 [SteelSword] NeverMoveAI
 
 UNIT Sasha Myrmidon_F 0x40 Level(5,Enemy,0)     [16,7] 0x0 0x0 0x0 0x0 [SteelBlade,FireSword,SwiftSword,Vuln] PWHAI
 
