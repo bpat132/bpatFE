@@ -320,13 +320,13 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
-// Two rune uses for this chapter
+// Three rune uses for this chapter
 COUNTER_SET 0 3
 COUNTER_SET 1 3
 
 // TEMP
-ENUF CelerityRuneDisabledFlag
-ENUF CelerityActiveFlag
+//ENUF CelerityRuneDisabledFlag
+//ENUF CelerityActiveFlag
 ENUF SwarpRuneDisabledFlag
 ENUF SwarpActiveFlag
 
@@ -401,6 +401,10 @@ ENUF RuneMenuDisableFlag
 ENUF HawkeyeRuneFlag
 ENUF MiracleRuneDisabledFlag
 ENUF MiracleActiveFlag
+ENUF CelerityRuneDisabledFlag
+ENUF CelerityActiveFlag
+ENUF SwarpRuneDisabledFlag
+ENUF SwarpActiveFlag
 //ENUF SwarpActiveFlag
 // Enable unlocked runes
 /*

@@ -217,9 +217,9 @@ ENDTRAP
 ALIGN 4
 
 BeginningScene:
-// Two rune uses for this chapter
-COUNTER_SET 0 2
-COUNTER_SET 1 2
+// Three rune uses for this chapter
+COUNTER_SET 0 3
+COUNTER_SET 1 3
 /*
 // Disable locked runes
 ENUT CelerityRuneDisabledFlag
@@ -275,6 +275,8 @@ ENUF RuneMenuDisableFlag
 ENUF HawkeyeRuneFlag
 ENUF MiracleRuneDisabledFlag
 ENUF MiracleActiveFlag
+ENUF CelerityRuneDisabledFlag
+ENUF CelerityActiveFlag
 
 MUSC ToS_LastBattleDecision
 SetBackground(0xE)

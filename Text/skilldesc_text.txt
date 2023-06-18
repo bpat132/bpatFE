@@ -604,7 +604,7 @@ Identity Problems: This unit can't[N]
 decide on a name or face.[X]
 
 ## SD_Charisma
-Spotter: Grants +30 Hit to[N]
+Leadership: Grants +20 Hit to[N]
 all allies within three tiles.[X]
 
 ## SD_HeroesDeathBlow

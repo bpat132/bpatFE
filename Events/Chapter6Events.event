@@ -128,7 +128,7 @@ UNIT
 EnemyUnits1:
 UNIT Ch6Boss Mercenary 0x40 Level(12,Enemy,0)     [10,0] 0x0 0x0 0x0 0x0 [LightBrand,Darksword] NeverMoveAI
 //UNIT Ch6Boss Mercenary 0x40 Level(12,Enemy,0)     [10,0] 0x0 0x0 0x0 0x0 [LightBrand,Darksword] AttackInRangeAI
-UNIT Lucy Thief_F 0x1 Level(6,Enemy,0)     [6,10] 0x0 0x0 0x0 0x0 [SwiftSword,Vuln] LootingThiefAI
+UNIT Lucy Thief_F 0x1 Level(8,Enemy,0)     [6,10] 0x0 0x0 0x0 0x0 [SwiftSword,Vuln] LootingThiefAI
 
 // Right 
 
