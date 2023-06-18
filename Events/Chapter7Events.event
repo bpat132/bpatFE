@@ -162,11 +162,11 @@ UNIT
 
 EnemyUnits1:
 //UNIT Jeffery Hero 0x40 Level(3,Enemy,0)     [8,3] 0x0 0x0 0x0 0x0 [WindSword,SilverSword,SilverAxe] NeverMoveAI
-UNIT Jeffery Hero 0x40 Level(3,Enemy,0)     [8,3] DropItem 0x0 0x0 0x0 [WindSword,SilverSword,SilverAxe,MasterSeal] NeverMoveAI
+UNIT Jeffery Hero 0x40 Level(16,Enemy,0)     [8,3] DropItem 0x0 0x0 0x0 [WindSword,SilverSword,SilverAxe,MasterSeal] NeverMoveAI
 
-UNIT Clint GreatKnight 0x40 Level(1,Enemy,0)     [7,11] 0x0 0x0 0x0 0x0 [SilverSword,SteelLance,SteelAxe,HandAxe] NeverMoveAI
+UNIT Clint GreatKnight 0x40 Level(15,Enemy,0)     [7,11] 0x0 0x0 0x0 0x0 [SilverSword,SteelLance,SteelAxe,HandAxe] NeverMoveAI
 
-UNIT Gordon Paladin 0x40 Level(1,Enemy,0)     [1,1] 0x0 0x0 0x0 0x0 [SilverSword,ShortSpear] DoNothing
+UNIT Gordon Paladin 0x40 Level(15,Enemy,0)     [1,1] 0x0 0x0 0x0 0x0 [SilverSword,ShortSpear] DoNothing
 UNIT 0x84 Cavalier 0x40 Level(Ch7EnemyLvl,Enemy,1)     [2,0] 0x0 0x0 0x0 0x0 [Javelin] DoNothing
 //UNIT 0x84 Cavalier 0x40 Level(Ch7EnemyLvl,Enemy,1)     [0,2] DropItem 0x0 0x0 0x0 [Axereaver] DoNothing
 UNIT 0x84 Cavalier 0x40 Level(Ch7EnemyLvl,Enemy,1)     [0,2] 0x0 0x0 0x0 0x0 [SteelLance] DoNothing

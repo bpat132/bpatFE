@@ -207,7 +207,7 @@ UNIT Quentin Mage 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Fire,Thunder
 UNIT Thomas Shaman 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Flux,Rend,Ruin,Vuln] NoAI
 UNIT Lucy Thief_F 0x1 Level(9,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [FireSword,SwiftSword,SteelBlade,Vuln] NoAI
 UNIT Rose PegasusKnight 0x1 Level(Ch8Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [SilverLance,SlimLance,Horseslayer,Javelin] NoAI
-UNIT Clint GreatKnight 0x1 Level(1,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [SilverSword,SteelLance,SteelAxe,HandAxe] NoAI
+UNIT Clint GreatKnight 0x1 Level(15,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [SilverSword,SteelLance,SteelAxe,HandAxe] NoAI
 UNIT
 
 
@@ -240,12 +240,12 @@ UNIT Quentin Mage 0x1 Level(Ch9Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Fire,Thunder
 UNIT Thomas Shaman 0x1 Level(Ch9Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Flux,Rend,Ruin,Vuln] NoAI
 UNIT Lucy Thief_F 0x1 Level(11,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [FireSword,SwiftSword,SteelBlade,Vuln] NoAI
 UNIT Rose PegasusKnight 0x1 Level(Ch9Level,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [SilverLance,SlimLance,Horseslayer,Javelin] NoAI
-UNIT Clint GreatKnight 0x1 Level(1,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [SilverSword,SteelLance,SteelAxe,HandAxe] NoAI
-UNIT Victoria Soldier 0x1 Level(12,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [ShortSpear,Greatlance,Javelin,IronLance] NoAI
-UNIT Marie Troubadour 0x1 Level(9,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Heal,Vuln,Silence] NoAI
-UNIT Evelyn Shaman_F 0x1 Level(11,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Flux,Rend,Vuln] NoAI
+UNIT Clint GreatKnight 0x1 Level(15,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [SilverSword,SteelLance,SteelAxe,HandAxe] NoAI
+UNIT Victoria Soldier 0x1 Level(13,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [ShortSpear,Greatlance,Javelin,IronLance] NoAI
+UNIT Marie Troubadour 0x1 Level(10,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Heal,Vuln,Silence] NoAI
+UNIT Evelyn Shaman_F 0x1 Level(13,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [Flux,Rend,ChaosStorm,Vuln] NoAI
 UNIT Donovan SwKnight 0x1 Level(13,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronBlade,SteelBlade,Darksword,Vuln] NoAI
-UNIT Trent Fighter 0x1 Level(12,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronAxe,HandAxe,SteelAxe,Vuln] NoAI
+UNIT Trent Fighter 0x1 Level(14,Ally,1) [0,0] 0x0 0x0 0x0 0x0 [IronAxe,HandAxe,SteelAxe,Vuln] NoAI
 UNIT
 
 
@@ -275,7 +275,7 @@ UNIT Quentin Mage 0x1 Level(9,Ally,0) [0,0] 0x0 0x0 0x0 0x0 [Fire,Thunder,Bolgan
 UNIT Thomas Shaman 0x1 Level(9,Ally,0) [0,0] 0x0 0x0 0x0 0x0 [Flux,Rend,Ruin,Vuln] NoAI
 UNIT Lucy Thief_F 0x1 Level(6,Ally,0) [0,0] 0x0 0x0 0x0 0x0 [FireSword,SwiftSword,SteelBlade,Vuln] NoAI
 UNIT Rose PegasusKnight 0x1 Level(10,Ally,0) [0,0] 0x0 0x0 0x0 0x0 [SilverLance,SlimLance,Horseslayer,Javelin] NoAI
-UNIT Clint GreatKnight 0x1 Level(1,Ally,0) [0,0] 0x0 0x0 0x0 0x0 [SilverSword,SteelLance,SteelAxe,HandAxe] NoAI
+UNIT Clint GreatKnight 0x1 Level(15,Ally,0) [0,0] 0x0 0x0 0x0 0x0 [SilverSword,SteelLance,SteelAxe,HandAxe] NoAI
 UNIT Victoria Soldier 0x1 Level(12,Ally,0) [0,0] 0x0 0x0 0x0 0x0 [ShortSpear,Greatlance,Javelin,IronLance] NoAI
 UNIT Marie Troubadour 0x1 Level(9,Ally,0) [0,0] 0x0 0x0 0x0 0x0 [Heal,Vuln] NoAI
 UNIT Evelyn Shaman_F 0x1 Level(11,Ally,0) [0,0] 0x0 0x0 0x0 0x0 [Flux,Rend,Vuln] NoAI

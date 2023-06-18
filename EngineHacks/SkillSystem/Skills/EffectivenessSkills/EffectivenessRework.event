@@ -17,7 +17,8 @@ ItemEffectivenessPtr(Zanbato, HorseEffectiveness)
 ItemEffectivenessPtr(Horseslayer, HorseEffectiveness)
 ItemEffectivenessPtr(Halberd, HorseEffectiveness)
 ItemEffectivenessPtr(Hammer, ArmorEffectiveness)
-ItemEffectivenessPtr(Swordslayer, SwordEffectiveness)
+//ItemEffectivenessPtr(Swordslayer, SwordEffectiveness)
+ItemEffectivenessPtr(MageMasher, MageEffectiveness)
 ItemEffectivenessPtr(IronBow, FlierEffectiveness)
 ItemEffectivenessPtr(SteelBow, FlierEffectiveness)
 ItemEffectivenessPtr(SilverBow, FlierEffectiveness)
@@ -84,6 +85,9 @@ WORD 0
 FlierAndMonster2: //Nidhogg
 SetWeaponEffectiveness(FlierType, 6)
 SetWeaponEffectiveness(MonsterType, 4)
+WORD 0
+MageEffectiveness:
+SetWeaponEffectiveness(MageType, 6)
 WORD 0
 
 #define SetProtection(type_list) "SHORT 0 type_list"

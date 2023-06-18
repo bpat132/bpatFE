@@ -63,6 +63,7 @@
 #define Rend EvilEye
 #define Ruin CrimsonEye
 #define ChaosStorm DemonSurge
+#define MageMasher Swordslayer
 #define BlessedLance BrightLance
 #define Anguish Eclipse
 #define PetrifyStaff 0xbe

@@ -11,11 +11,17 @@ Spirit Dust[X]
 
 ## SpiritDustDesc
 Increases magic by[N]
-2 points. Vanishes after use[X]
+2 points. Vanishes after use.[X]
 
 ## SpiritDustDesc2
 Increases magic by[N]
-2 points. Vanishes after use[X]
+2 points. Vanishes after use.[X]
+
+## TalismanName
+Talisman[X]
+## TalismanDesc
+Allows the holder to pass[N]
+through light barriers.[X]
 
 ## HealDesc
 Restores 10 + Magic HP[N]
@@ -69,6 +75,11 @@ Sapphire Lance[X]
 Emerald Axe[X]
 ## GemWeaponDesc
 Doubles weapon triangle.[X]
+
+## MageMasherName ^
+Mage Masher[X]
+## MageMasherDesc
+Effective against magic users.[X]
 
 ## BlessedLanceName ^
 Blessed Lance[X]

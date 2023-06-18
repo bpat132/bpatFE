@@ -83,14 +83,15 @@ gSaveBlockTypeSizeLookup:
 
 #include "SrcModules/Debuffs.lyn.event" // Debuffs module
 
-#include "SrcModules/InternalLevel.lyn.event" // New internal level module
+//#include "SrcModules/InternalLevel.lyn.event" // New internal level module
 
 #ifdef USE_STRMAG_SPLIT
 	#ifdef STAIRS_ASM
 		MESSAGE EMS with strmag and Stair
 		#include "SrcModules/SaveUnitExpandedStrmagStairs.lyn.event" // Str/Mag and Stairs both require saving shenanigans.
 	#else
-		#include "SrcModules/SaveUnitExpandedStrmag.lyn.event" // Only Str/Mag split.
+		//#include "SrcModules/SaveUnitExpandedStrmag.lyn.event" // Only Str/Mag split.
+		#include "SrcModules/SaveUnitExpandedStrmag_lvlcap_increase.lyn.event" // Only Str/Mag split.
 	#endif // STAIRS_ASM
 #else
 	#ifdef STAIRS_ASM
@@ -104,8 +105,8 @@ DebuffTablePointer: // required for debuffs module
 	WORD DebuffTable
 
 // NEW
-InternalLevelTablePointer:
-	WORD InternalLevelTable
+//InternalLevelTablePointer:
+//	WORD InternalLevelTable
 
 // ===============
 // = SAVE CHUNKS =
@@ -150,7 +151,7 @@ gGameSaveChunks:
 	// $1128
 
 	// NEW
-	DeclSaveChunk($1128, $0032, ESU_SaveInternalLevel, ESU_LoadInternalLevel)
+	//DeclSaveChunk($1128, $0032, ESU_SaveInternalLevel, ESU_LoadInternalLevel)
 
 	// free up to $1344
 
@@ -210,7 +211,7 @@ gSuspendSaveChunks:
 	// free up to $2E78 ($B7 free bytes)
 
 	// NEW
-	DeclSaveChunk($2DC1, $0032, ESU_SaveInternalLevel, ESU_LoadInternalLevel)
+	//DeclSaveChunk($2DC1, $0032, ESU_SaveInternalLevel, ESU_LoadInternalLevel)
 
 	DeclSaveChunk(0, 0, 0, MSu_LoadClaimFlagsFromParentSave) // Load Bonus Claim flags from parent save
 

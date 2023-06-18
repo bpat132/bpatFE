@@ -123,12 +123,12 @@ RichardMugData: // LL
 setMugEntry(RichardMug, RichardMugData, 3, 5, 3, 3)
 
 ALIGN 16
-CameronMugData: // Nickt
-#incbin "Dmp/Cameron_mug.dmp"
-#incbin "Dmp/Cameron_frames.dmp"
-#incbin "Dmp/Cameron_palette.dmp"
-#incbin "Dmp/Cameron_minimug.dmp"
-setMugEntry(CameronMug, CameronMugData, 4, 5, 4, 3)
+CameronMugData: // Goldblitzx
+#incbin "Dmp/Cameron_Goldblitzx_mug.dmp"
+#incbin "Dmp/Cameron_Goldblitzx_frames.dmp"
+#incbin "Dmp/Cameron_Goldblitzx_palette.dmp"
+#incbin "Dmp/Cameron_Goldblitzx_minimug.dmp"
+setMugEntry(CameronMug, CameronMugData, 3, 5, 3, 3)
 
 ALIGN 16
 VioletMugData: // LL

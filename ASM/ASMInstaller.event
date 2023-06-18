@@ -53,7 +53,8 @@ POP
 PUSH
 ORG 0x2CD30
 //BYTE 0x3034 // 0x34 is 52
-BYTE 0x307f // 0x7f is 127
+//BYTE 0x307f // 0x7f is 127
+SHORT 0x307f // 0x7f is 127
 POP
 
 // GetBlueUnitCountASM (sme)
@@ -62,10 +63,19 @@ POP
 // Fixed autolevels (stan)
 //#include "FixedAutolevels/FixedAutolevels.event"
 
-// Promoted autolevel bonus (GetCurrentPromotedLevelBonus function at 0x8037B44)
+// 1Promoted autolevel bonus (GetCurrentPromotedLevelBonus function at 0x8037B44)
 PUSH
 ORG 0x37B5C
-BYTE 0x2010 // 0x10 = 16
+//BYTE 0x2010 // 0x10 = 16
+BYTE 0x2000 // 0x00 = 0
+POP
+
+// Don't reset level upon promotion (7743, Vesly)
+PUSH
+ORG 0x2BE70
+SHORT 0x0 0x0
+ORG 0x736C4
+SHORT 0x7A28
 POP
 
 // Huichelaar minimug palette fix
@@ -311,7 +321,7 @@ POP
 */
 
 // Exp formula changes
-#include "CHAX/exp_promo_staffhealing.lyn.event"
+#include "CHAX/exp_promo_staffhealing2.lyn.event"
 
 // Force staff map anim (7743)
 // Doesn't work?
