@@ -33,6 +33,12 @@ MovingMapSprite(Ballistician, 0x81F1A54, BallistaMv)
 StandingMapSprite(0x2C, MapSprite16x16, HalbSt)
 MovingMapSprite(Halberdier, 0x81E0E40, HalbMv)
 
+StandingMapSprite(0x2D, MapSprite16x16, ShamanFSt)
+MovingMapSprite(Shaman_F, 0x81E173C, ShamanFMv)
+
+StandingMapSprite(0x2E, MapSprite16x16, DruidFSt)
+MovingMapSprite(Druid_F, 0x81E2088, DruidFMv)
+
 // FE6
 ALIGN 4
 ThiefFSt:
@@ -89,3 +95,19 @@ HalbSt:
 ALIGN 4
 HalbMv:
 #incext Png2Dmp "Animations/halb_mv.png" --lz77
+
+// IS
+ALIGN 4
+ShamanFSt:
+#incext Png2Dmp "Animations/shaman_f_st.png" --lz77
+ALIGN 4
+ShamanFMv:
+#incext Png2Dmp "Animations/shaman_f_mv.png" --lz77
+
+// IS
+ALIGN 4
+DruidFSt:
+#incext Png2Dmp "Animations/druid_f_st.png" --lz77
+ALIGN 4
+DruidFMv:
+#incext Png2Dmp "Animations/druid_f_mv.png" --lz77
