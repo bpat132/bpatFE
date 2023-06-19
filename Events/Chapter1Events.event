@@ -188,7 +188,7 @@ EnemyUnits1:
 //UNIT Ch1Boss Knight 0x40 Level(4,Enemy,0)     [8,7] 0x0 0x0 0x0 0x0 [SteelAxe,HandAxe] NeverMoveAI
 UNIT Ch1Boss SwKnight 0x40 Level(4,Enemy,0)     [8,7] 0x0 0x0 0x0 0x0 [LightBrand,SteelSword] NeverMoveAI
 UNIT Matthias Soldier 0x40 Level(3,Enemy,0)     [7,7] 0x0 0x0 0x0 0x0 [IronLance,Vuln] NeverMoveAI
-UNIT Sasha Myrmidon_F 0x40 Level(5,Enemy,0)     [17,2] 0x0 0x0 0x0 0x0 [SlimSword,SteelBlade,FireSword,Vuln] DoNothing
+UNIT Sasha Myrmidon_F 0x40 Level(6,Enemy,0)     [17,2] 0x0 0x0 0x0 0x0 [SlimSword,SteelBlade,FireSword,Vuln] DoNothing
 
 UNIT 0x84 Soldier 0x40 Level(1,Enemy,1)     [1,2] 0x0 0x0 0x0 0x0 [IronLance] DoNothing // Cutscene enemy
 

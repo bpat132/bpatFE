@@ -42,7 +42,7 @@ Defeat all enemies[X]
 Runes can be invoked by[N]
 selecting the [0x93]Invoke"[N]
 menu option. You can[N]
-currently invoke two[N]
+currently invoke three[N]
 runes per chapter.[AN]
 In the Invoke menu, you[N]
 can view your runes with[N]
@@ -85,6 +85,11 @@ allows an ally to use their[N]
 action to switch places[N]
 with another ally within[N]
 5 spaces of the user.[A][X]
+
+## TEXT_4RuneUses
+The number of times you can[N]
+invoke a rune per chapter[N]
+has increased to [ToggleRed]four[ToggleRed].[X]
 
 ## SwordArmorDesc
 Heavily armored knights with[NL]

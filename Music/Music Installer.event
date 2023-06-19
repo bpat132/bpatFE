@@ -15,8 +15,9 @@ voicegroup000:
 //#include "MusicEvents/FE11_preps_epicer.event" // Broken?
 //SongTable(FE11_preps,song34,MapMusicGroup)
 
-#include "MusicEvents/FFMQ_Battle1_RW.event"
-SongTable(FFMQ_Battle1,song19,MapMusicGroup)
+//#include "MusicEvents/FFMQ_Battle1_RW.event"
+#include "MusicEvents/FFMQ_Battle1_RW_Leche.event"
+SongTable(FFMQ_Battle1,FF_MQ_battle1,MapMusicGroup)
 
 #include "MusicEvents/MadouMonogatari123_I-TRY-OUT_Sme.event"
 SongTable(MadouMonogatari123_I_TRY_OUT,EnemyPhase,MapMusicGroup)

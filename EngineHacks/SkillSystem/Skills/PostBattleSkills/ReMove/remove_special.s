@@ -5,8 +5,8 @@
   mov lr, \reg
   .short 0xf800
 .endm
-.equ ReMoveID, SkillTester+4
-.equ UnitAttackedEvent, ReMoveID+4
+.equ CantoID, SkillTester+4
+.equ UnitAttackedEvent, CantoID+4
 .equ UnitOtherActionEvent, UnitAttackedEvent+4
 .equ UnitSwarpEvent, UnitOtherActionEvent+4
 .thumb
@@ -26,7 +26,8 @@ bne CheckIfAttacked @ flag is set
 mov r0, #0x93 @ celerity flag
 blh CheckFlag
 cmp r0, #0
-bne CheckIfAttacked @ flag is set
+@bne CheckIfAttacked @ flag is set
+bne CantoCheck @ flag is set
 mov r0, #0x94 @ swarp flag
 blh CheckFlag
 cmp r0, #0
@@ -44,6 +45,34 @@ CheckIfSwarped:
 ldrb  r0, [r6,#0x11]  @action taken this turn
 cmp r0, #0x27 @swarp
 beq SwarpedEvent
+
+@ Special check for canto
+CantoCheck:
+ldr r0, [r4,#0x0C]  @status bitfield
+lsr r0, #1
+mov r1, #1
+and r0, r1
+cmp r0, r1
+beq Event
+b   End
+
+@@ Check canto
+@mov r0, r4
+@ldr r1, CantoID
+@ldr r3, SkillTester
+@mov lr, r3
+@.short  0xf800
+@cmp   r0,#0
+@bne   Event @ no canto -> event
+@b     AttackedEvent
+
+@@check if attacked this turn
+@ldrb  r0, [r6,#0x11]  @action taken this turn
+@cmp r0, #0x2 @attack
+@beq Event
+@cmp r0, #0x3 @attack
+@beq Event
+@b End
 
 Event:
 ldr	r0,=#0x800D07C		@event engine thingy
@@ -75,5 +104,5 @@ bx	r0
 .align
 SkillTester:
 @POIN SkillTester
-@WORD ReMoveID
+@WORD CantoID
 @#include "ReMoveEvent.event"

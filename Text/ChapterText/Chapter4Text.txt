@@ -128,7 +128,7 @@ So Lords Louis, Jeffery, and I struck a deal with the empire. We'd depose your f
 [ML]Ah, you must be Jane, Lord Jeffery's sister. Seeing you here is quite the pleasant surprise.
 [R]Say I agree, what's your plan? General Gordon taught me to wield a lance, and even now I can't hope to rival his strength, and by all accounts, General Clint is just as skilled.
 Not to mention Lord Jeffery is known as one of the strongest knights on the continent. I'd love nothing more than to reclaim the throne, I'm not going to lead my friends to their deaths.
-[ML]I've prepared a ship to take you all the way to Port Trosson, and you'll have Richard's band of mercenaries to fight at your side. They're the best money can buy.
+[ML]I've prepared a ship to take you all the way to Port Krast, and you'll have Richard's band of mercenaries to fight at your side. They're the best money can buy.
 I'll assign Sir Daniel to join you as well. After Sir Craig, he's my finest knight.
 The empire's already suspicious of me, thus time is of the essence. This is the only chance we've got.
 [R]I... I need to think about this. I'm sorry. I'll have an answer tomorrow.

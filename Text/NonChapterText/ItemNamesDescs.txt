@@ -31,7 +31,7 @@ Restores HP equal[N]
 to 10 + Magic.[X]
 
 ## MendName
-Revitalize[X]
+Bolster[X]
 ## MendDesc
 Restores 10 + Magic HP to[N]
 all allies within 2 spaces.[X]
@@ -46,6 +46,10 @@ to a distant ally[X]
 ## PhysicDesc2
 Restores HP equal[N]
 to 10 + Magic.[X]
+
+## SilenceDesc
+Halts enemy magic[.][NL]
+for a single turn.[X]
 
 ## RegalLanceName
 Regal Lance[X]

@@ -113,6 +113,7 @@ She's clearly a soldier... I don't know if I can trust her, but for now I'll tak
 [ConversationText]
 [Left][LoadCelia]
 I can't hide inside while Rowan's fighting by himself. I may not be able to swing a sword, but I can still help with my dance!
+I've finally gotten the hang of this rune too, I can't wait to see the look on Rowan's face when I invoke it.
 [X]
 
 ## TEXT_Ch5_Ted_Event

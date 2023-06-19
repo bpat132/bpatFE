@@ -117,7 +117,8 @@ Seize(12,4)
 //Seize(7,17)
 Chest(Darksword,2,2)
 Chest(ChaosStorm,4,2)
-Chest(Axereaver,6,2)
+//Chest(Axereaver,6,2)
+Chest(MasterSeal,6,2)
 END_MAIN
 
 SeizeEvent:

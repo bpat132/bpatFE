@@ -3,12 +3,14 @@ UnitAttackedEvent:
 ENUF HawkeyeRuneFlag
 ENUF CelerityActiveFlag
 //ENUT 0x10
+ASMC 0x080B5D5D
 NoFade
 ENDA
 
 UnitOtherActionEvent:
 ENUF CelerityActiveFlag
 //ENUT 0x11
+ASMC 0x080B5D5D
 NoFade
 ENDA
 
@@ -16,5 +18,6 @@ UnitSwarpEvent:
 ENUF SwarpActiveFlag
 ENUF CelerityActiveFlag
 //ENUT 0x12
+ASMC 0x080B5D5D
 NoFade
 ENDA

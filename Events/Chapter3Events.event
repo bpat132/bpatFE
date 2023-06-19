@@ -152,7 +152,8 @@ LoadUnit(9,13)
 UNIT
 
 AllyReinforcementUnits:
-UNIT Beatrice  Cavalier_F 0x1 Level(5,Ally,0)   [8,20] 0b 0x0 0x1 BeatriceReda [SlimLance,SteelLance,Javelin,Vuln] NoAI
+//UNIT Beatrice  Cavalier_F 0x1 Level(5,Ally,0)   [8,20] 0b 0x0 0x1 BeatriceReda [SlimLance,SteelLance,Javelin,Vuln] NoAI
+UNIT Beatrice  Cavalier_F 0x1 Level(5,Ally,0)   [8,20] 0b 0x0 0x1 BeatriceReda [SlimLance,SteelLance,Axereaver,Vuln] NoAI
 UNIT Daniel  Cavalier 0x1 Level(5,Ally,0)   [9,20] 0b 0x0 0x1 DanielReda [IronLance,SteelLance,Javelin,Vuln] NoAI
 UNIT Isabelle  Troubadour 0x1 Level(2,Ally,0)   [10,20] 0x0 0x0 0x0 0x0 [Heal,Vuln] NoAI
 UNIT
@@ -170,14 +171,15 @@ UNIT Ch3Boss Myrmidon 0x40 Level(8,Enemy,0)     [0,0] 0x0 0x0 0x0 0x0 [SteelBlad
 #endif
 UNIT Ch3Boss Myrmidon 0x40 Level(8,Enemy,0)     [0,0] 0x0 0x0 0x0 0x0 [SteelSword] NeverMoveAI
 
-UNIT Sasha Myrmidon_F 0x40 Level(5,Enemy,0)     [16,7] 0x0 0x0 0x0 0x0 [SteelBlade,FireSword,SwiftSword,Vuln] PWHAI
+UNIT Sasha Myrmidon_F 0x40 Level(6,Enemy,0)     [16,7] 0x0 0x0 0x0 0x0 [SteelBlade,FireSword,SwiftSword,Vuln] PWHAI
 
 //UNIT 0x80 Druid 0x40 Level(20,Enemy,1)     [7,10] 0x0 0x0 0x0 0x0 [Naglfar] AIRAI
 
 // Snag attackers
 UNIT 0x84 Fighter 0x40 Level(4,Enemy,1)     [1,9] 0x0 0x0 0x0 0x0 [IronAxe] AttackWallsAI
 UNIT 0x84 Myrmidon 0x40 Level(4,Enemy,1)     [0,11] 0x0 0x0 0x0 0x0 [IronSword] AttackWallsAI
-UNIT 0x84 Soldier 0x40 Level(4,Enemy,1)     [8,16] DropItem 0x0 0x0 0x0 [Axereaver] AttackWallsAI
+//UNIT 0x84 Soldier 0x40 Level(4,Enemy,1)     [8,16] DropItem 0x0 0x0 0x0 [Axereaver] AttackWallsAI
+UNIT 0x84 Soldier 0x40 Level(4,Enemy,1)     [8,16] 0x0 0x0 0x0 0x0 [IronLance] AttackWallsAI
 UNIT 0x84 Myrmidon 0x40 Level(4,Enemy,1)     [6,17] 0x0 0x0 0x0 0x0 [SteelSword] AttackWallsAI
 
 // Top left

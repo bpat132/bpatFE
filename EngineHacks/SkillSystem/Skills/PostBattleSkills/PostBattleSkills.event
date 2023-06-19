@@ -92,7 +92,8 @@ ReMove:
 //#incbin "ReMove/remove.dmp"
 #incbin "ReMove/remove_special.dmp"
 POIN SkillTester
-WORD ReMoveID
+//WORD ReMoveID
+WORD CantoID
 //POIN ReMoveEvent
 POIN UnitAttackedEvent
 POIN UnitOtherActionEvent

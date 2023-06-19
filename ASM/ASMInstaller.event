@@ -78,6 +78,9 @@ ORG 0x736C4
 SHORT 0x7A28
 POP
 
+// Expand convoy
+#include "ConvoyPartition/FE8-Convoy_Stuff_EA.event"
+
 // Huichelaar minimug palette fix
 #include "MinimugPaletteFix/MinimugPalette.event"
 

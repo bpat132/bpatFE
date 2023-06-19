@@ -58,6 +58,20 @@ MUSC EO3_ThoseWhoSlayAndFall
 ReinforcementEventNoENDA(CeliaReinforcementUnits)
 FlashCursor(Celia,0x20)
 Text(TEXT_Ch5_Celia_Event)
+
+// New, moving netherswap here
+TUTORIALTEXTBOXSTART
+CenterTutorialTextBox
+TEXTSHOW TEXT_Rune3Info
+TEXTEND
+TUTORIALTEXTBOXSTART
+CenterTutorialTextBox
+TEXTSHOW TEXT_4RuneUses
+TEXTEND
+COUNTER_INC 0
+COUNTER_INC 1
+ENUF SwarpRuneDisabledFlag
+ENUF SwarpActiveFlag
 ENDA
 
 TedReinforcements:
