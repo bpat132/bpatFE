@@ -108,6 +108,7 @@ END_MAIN
 VictoriaTalkEvent:
 MUSC EO3_ThoseWhoSlayAndFall
 Text(TEXT_Ch8_Victoria_Talk)
+SetAI(Victoria, 0x00,0x00,0x00,0x00)
 CUSA Victoria
 NoFade
 ENDA
@@ -147,6 +148,8 @@ ENDA
 
 CheckLeftGuardDead:
 MUSC EO3_ThoseWhoSlayAndFall
+SetAI(Marie, 0x00,0x00,0x00,0x00)
+SetAI(Evelyn, 0x00,0x00,0x00,0x00)
 CUSA Marie
 CUSA Evelyn
 ENUT 0x10
@@ -169,6 +172,8 @@ ENDA
 
 CheckRightGuardDead:
 MUSC EO3_ThoseWhoSlayAndFall
+SetAI(Donovan, 0x00,0x00,0x00,0x00)
+SetAI(Trent, 0x00,0x00,0x00,0x00)
 CUSA Donovan
 CUSA Trent
 ENUT 0x12
@@ -229,7 +234,7 @@ UNIT Louis Bishop 0x40 Level(15,Enemy,0)     [12,4] DropItem 0x0 0x0 0x0 [Divine
 //UNIT Victoria Soldier 0x40 Level(12,Enemy,0)     [2,12] 0x0 0x0 0x0 0x0 [ShortSpear,Greatlance,Naginata,0x6c] NeverMoveAI // Maybe get rid of naginata?
 UNIT Victoria Soldier 0x40 Level(12,Enemy,0)     [2,12] 0x0 0x0 0x0 0x0 [ShortSpear,Greatlance,0x6c,GoldGem] NeverMoveAI
 
-UNIT Marie Troubadour 0x40 Level(10,NPC,0)     [17,3] 0x0 0x0 0x0 0x0 [0x0] NeverMoveAI
+UNIT Marie Troubadour 0x40 Level(11,NPC,0)     [17,3] 0x0 0x0 0x0 0x0 [0x0] NeverMoveAI
 UNIT Evelyn Shaman_F 0x40 Level(13,NPC,0)     [18,3] 0x0 0x0 0x0 0x0 [0x0] NeverMoveAI
 UNIT Donovan SwKnight 0x40 Level(13,NPC,0)     [20,3] 0x0 0x0 0x0 0x0 [0x0] NeverMoveAI
 UNIT Trent Fighter 0x40 Level(14,NPC,0)     [21,3] 0x0 0x0 0x0 0x0 [0x0] NeverMoveAI

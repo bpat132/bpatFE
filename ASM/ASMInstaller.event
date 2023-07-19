@@ -48,6 +48,12 @@ BL(0x175DC) //gets item might
 SHORT 0x1C02 0xE002 //mov r2,r0; b 2C678
 POP
 
+// Promoted staff experience: set to 11
+PUSH
+ORG $2C690
+SHORT 0x220b
+POP
+
 // Staff hitrate
 // 0x2ccdc is formula location
 PUSH

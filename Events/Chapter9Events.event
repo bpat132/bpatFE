@@ -124,7 +124,7 @@ END_MAIN
 Units1:
 LoadUnit(5,22,Edgar)
 LoadUnit(13,23,Celia)
-UNIT Patrick Ranger 0x1 Level(1,Ally,False) [16,22] 0x0 0x0 0x0 0x1 [SilverBow,SwiftSword,Vuln] NoAI
+UNIT Patrick Ranger 0x1 Level(15,Ally,False) [16,22] 0x0 0x0 0x0 0x1 [SilverBow,SwiftSword,Vuln] NoAI
 // Left
 //LoadUnit(5,22)
 LoadUnit(5,23)

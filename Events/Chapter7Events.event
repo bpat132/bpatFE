@@ -63,6 +63,7 @@ TalkEventClint:
 MUSC EO3_ThoseWhoSlayAndFall
 Text(TEXT_Ch7_Rose_Clint_Talk)
 //Text(PlaceholderText)
+SetAI(Clint, 0x00,0x00,0x00,0x00)
 CUSA Clint
 NoFade
 ENDA

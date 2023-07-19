@@ -130,7 +130,7 @@ LoadUnit(7,11,Edgar)
 //LoadUnit(7,11)
 //UNIT Ethan  WyvernRider 0x1 Level(4,Ally,0)   [8,10] 0x0 0x0 0x0 0x0 [IronAxe,SteelAxe,HandAxe,Vuln] NoAI
 //UNIT Ethan  WyvernRider 0x1 Level(4,Ally,0)   [8,10] 0x0 0x0 0x0 0x0 [SteelAxe,HandAxe,Vuln] NoAI
-UNIT Ethan  WyvernRider 0x1 Level(4,Ally,0)   [8,10] 0x0 0x0 0x0 0x0 [SteelAxe,HandAxe,MageMasher,Vuln] NoAI
+UNIT Ethan  WyvernRider 0x1 Level(5,Ally,0)   [8,10] 0x0 0x0 0x0 0x0 [SteelAxe,HandAxe,MageMasher,Vuln] NoAI
 LoadUnit(6,9,Jenna)
 LoadUnit(7,9,Duncan)
 LoadUnit(9,9,Kurt)
@@ -155,7 +155,7 @@ AllyReinforcementUnits:
 //UNIT Beatrice  Cavalier_F 0x1 Level(5,Ally,0)   [8,20] 0b 0x0 0x1 BeatriceReda [SlimLance,SteelLance,Javelin,Vuln] NoAI
 UNIT Beatrice  Cavalier_F 0x1 Level(5,Ally,0)   [8,20] 0b 0x0 0x1 BeatriceReda [SlimLance,SteelLance,Axereaver,Vuln] NoAI
 UNIT Daniel  Cavalier 0x1 Level(5,Ally,0)   [9,20] 0b 0x0 0x1 DanielReda [IronLance,SteelLance,Javelin,Vuln] NoAI
-UNIT Isabelle  Troubadour 0x1 Level(2,Ally,0)   [10,20] 0x0 0x0 0x0 0x0 [Heal,Vuln] NoAI
+UNIT Isabelle  Troubadour 0x1 Level(3,Ally,0)   [10,20] 0x0 0x0 0x0 0x0 [Heal,Vuln] NoAI
 UNIT
 
 BeatriceReda:

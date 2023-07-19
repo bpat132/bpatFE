@@ -114,6 +114,7 @@ TalkEventMatthias:
 MUSC EO3_ThoseWhoSlayAndFall
 Text(TEXT_Ch1_Edgar_Matthias_Talk)
 NoFade
+SetAI(Matthias, 0x00,0x00,0x00,0x00)
 CUSA Matthias
 ENDA
 

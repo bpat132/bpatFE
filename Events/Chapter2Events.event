@@ -85,6 +85,7 @@ TalkEvent:
 MUSC EO3_ThoseWhoSlayAndFall
 Text(TEXT_Ch2_Jane_Talk)
 NoFade
+SetAI(Jane, 0x00,0x00,0x00,0x00)
 CUSA Jane
 ENDA
 
