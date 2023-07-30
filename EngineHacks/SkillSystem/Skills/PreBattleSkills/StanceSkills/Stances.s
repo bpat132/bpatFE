@@ -35,9 +35,11 @@ mov r6, #0x00
 bl CheckNextStance
 cmp r0, #0x00
 beq CheckDartingStance
-mov r1, #0x5C
+@mov r1, #0x5C
+mov r1, #0x66
 ldrh r0, [ r4, r1 ]
-add r0, #0x04 @ Add 4 def/res.
+@add r0, #0x04 @ Add 4 def/res.
+sub r0, #30 @ Add 4 def/res.
 strh r0, [ r4, r1 ]
 
 CheckDartingStance:

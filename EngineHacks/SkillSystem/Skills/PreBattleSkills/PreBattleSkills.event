@@ -34,7 +34,8 @@ ALIGN 4
 CritUpSkill:
 #incbin "CritUp/CritUpSkill.dmp"
 POIN SkillTester
-WORD CritUpID
+//WORD CritUpID
+WORD DeathBlowID
 
 ALIGN 4
 Deadeye:

@@ -1,5 +1,6 @@
 
 #include "Stances.lyn.event"
 StanceSkillList:
-BYTE BracingStanceID DartingStanceID FierceStanceID KestrelStanceID MirrorStanceID ReadyStanceID SteadyStanceID SturdyStanceID SwiftStanceID WardingStanceID SpectrumStanceID AlertStanceID AlertStancePlusID
+//BYTE BracingStanceID DartingStanceID FierceStanceID KestrelStanceID MirrorStanceID ReadyStanceID SteadyStanceID SturdyStanceID SwiftStanceID WardingStanceID SpectrumStanceID AlertStanceID AlertStancePlusID
+BYTE DeathBlowID DartingStanceID FierceStanceID KestrelStanceID MirrorStanceID ReadyStanceID SteadyStanceID SturdyStanceID SwiftStanceID WardingStanceID SpectrumStanceID AlertStanceID AlertStancePlusID
 ALIGN 4

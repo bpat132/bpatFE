@@ -35,6 +35,12 @@ ALIGN 4
 AvoidLabel:
 #incbin "HitAvo/avoidhack.dmp"
 
+// Prevent skill from giving crit normally ($2ac18)
+PUSH
+ORG $2AC2C
+SHORT 0x2100 // MOV r1, #0 the shift
+POP
+
 // Pik 1RN (modified to only apply <= 50% hit)
 //#include "1RNUnder50/Installer.event"
 

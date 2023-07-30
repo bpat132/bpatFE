@@ -9,3 +9,8 @@ CriticalIDList:
 BYTE CriticalForceID KillingMachineID
 ALIGN 4
 
+ALIGN 4
+FinalCritCheck:
+#incbin "FinalCritCheck.dmp"
+POIN SkillTester
+POIN CriticalIDList
