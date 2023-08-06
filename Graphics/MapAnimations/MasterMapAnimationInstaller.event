@@ -39,6 +39,9 @@ MovingMapSprite(Shaman_F, 0x81E173C, ShamanFMv)
 StandingMapSprite(0x2E, MapSprite16x16, DruidFSt)
 MovingMapSprite(Druid_F, 0x81E2088, DruidFMv)
 
+StandingMapSprite(0x4B, MapSprite16x16, ArcanistSt)
+MovingMapSprite(Arcanist, 0x81E2088, ArcanistMv)
+
 // FE6
 ALIGN 4
 ThiefFSt:
@@ -111,3 +114,11 @@ DruidFSt:
 ALIGN 4
 DruidFMv:
 #incext Png2Dmp "Animations/druid_f_mv.png" --lz77
+
+// Leo_Link, L95
+ALIGN 4
+ArcanistSt:
+#incext Png2Dmp "Animations/arcanist_st.png" --lz77
+ALIGN 4
+ArcanistMv:
+#incext Png2Dmp "Animations/arcanist_mv.png" --lz77

@@ -181,7 +181,8 @@ TILECHANGE 0x0
 CAM1 [22,2]
 Text(TEXT_Ch8_RightCell_Open)
 GiveItem(IronBlade,Donovan)
-GiveItem(IronAxe,Trent)
+//GiveItem(IronAxe,Trent)
+GiveItem(SteelAxe,Trent) // Steel axe needed to ORKO soldier
 
 CHECK_EVENTID 0xF
 BEQ 5 0 0xC

@@ -87,6 +87,7 @@
 #define Halberdier 0x3a
 #define Sentinel Halberdier
 #define Ballistician 0x55
+#define Arcanist 0x39
 
 // Characters
 #define Edgar 0x1

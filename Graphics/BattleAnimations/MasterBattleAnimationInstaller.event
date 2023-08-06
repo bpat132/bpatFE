@@ -95,3 +95,14 @@ HalbAnim:
 SpearAnim(0x96)
 UnarmedAnim(0x97)
 WORD 0x0 // Seperator
+
+// Credit: TyTheBub
+//#include "Animations/arcanist_magic Installer.event"
+
+// Credit: L95, Shtick, repalette by Rexacuse
+#include "Animations/arcanist_magic2 Installer.event"
+
+ArcanistAnim:
+AnimaAnim(0x95)
+UnarmedAnim(0x95)
+WORD 0x0 // Seperator

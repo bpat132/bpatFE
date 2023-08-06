@@ -195,6 +195,11 @@ Joey[X]
 ## JoeyDesc
 Joey placeholder descripion.[X]
 
+## AudreyName
+Audrey[X]
+## AudreyDesc
+Audrey placeholder descripion.[X]
+
 ## Ch1BossName
 Casey[X]
 ## Ch1BossDesc

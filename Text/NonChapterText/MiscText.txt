@@ -95,6 +95,13 @@ has increased to [ToggleRed]four[ToggleRed].[X]
 Heavily armored knights with[NL]
 poor speed. Equip: Swords.[X]
 
+## ArcanistName
+Arcanist[X]
+
+## ArcanistDesc
+Talented spellslingers who have[NL]
+mastered deadly magic. Equip: Anima.[X]
+
 # 0x0546
 Physical strength. Each point[NL]
 increases physical damage by one.[X]
