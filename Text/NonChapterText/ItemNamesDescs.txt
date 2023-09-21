@@ -57,7 +57,7 @@ Regal Lance[X]
 Prevents enemy counterattacks.[X]
 
 ## ShortAxeName
-Short Axe[X]
+Francisca[X]
 ## ThrownWeaponDesc
 Capable of ranged attacks.[X]
 
@@ -78,7 +78,7 @@ Sapphire Lance[X]
 ## EmeraldAxeName
 Emerald Axe[X]
 ## GemWeaponDesc
-Doubles weapon triangle.[X]
+Doubles weapon triangle effects.[X]
 
 ## MageMasherName ^
 Mage Masher[X]
@@ -90,8 +90,17 @@ Blessed Lance[X]
 ## BlessedWeaponDesc
 Wielder heals 5 HP upon dealing damage.[X]
 
+## GreatswordName
+Greatsword[X]
+
 ## GreatlanceName
 Greatlance[X]
+
+## MasterSwordName ^
+Master Sword[X]
+
+## BraveWeaponDesc
+Doubles strikes dealt.[X]
 
 ## NaginataName
 Naginata[X]

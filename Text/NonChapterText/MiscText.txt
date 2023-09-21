@@ -112,7 +112,8 @@ increases magical damage by one.[X]
 
 # 0x0548
 Fighting skill. Each point grants[NL]
-2.5% hit and 1% critical chance.[X]
+2.5% hit, and if a weapon or skill[N]
+grants crit, 1% critical chance.[X]
 
 # 0x0549
 Speed. Each point grants 1% avoid.[NL]

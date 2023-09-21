@@ -125,7 +125,7 @@ The port's already a bloodbath... What a fool I was, thinking I could be a pirat
 
 ## TEXT_Ch5_Boss_Event
 [ConversationText]
-[Left][LoadCh6Boss]
+[Left][LoadCh5Boss]
 [Left]
 They're fighting back?! They've got some guts challenging my crew! Time for me to get a piece of the action!
 [X]
@@ -251,7 +251,7 @@ I know little of warfare, but armies are usually much bigger than this.
 [ML][LoadViolet][MR][LoadNico]
 [ML]I hear you're headed to the capital. Mind if I tag along?
 [MR]I'm afraid you've got the wrong man, I'm not in charge here.
-[ML]Ah right, I you're the other blue-haired fellow. Still, you look like a pretty important guy. I should have realized from the start, but it figures the only people who'd stand up to pirates would be plotting against our government.
+[ML]Ah right, you're the other blue-haired fellow. Still, you look like a pretty important guy. I should have realized from the start, but it figures the only people who'd stand up to pirates would be plotting against our government.
 [MR]Doesn't this make us enemies?
 [ML]I guess, but I don't really wanna fight you guys.
 [MR]You mean you plan to defect?

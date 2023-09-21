@@ -108,8 +108,6 @@ SHORT $46C0
 POP
 PROTECT $2AB78 $2AB88
 
-
-
 // Forced deployment
 
 PUSH
@@ -260,8 +258,9 @@ ORG 0x2FEC6
 BYTE 0x0F
 POP
 
-// Prep screen shop (copied from runa)
 
+// Prep screen shop (copied from runa)
+/*
 PUSH
   ORG 0x99E64
     POIN PrepScreenShop
@@ -271,6 +270,11 @@ ALIGN 4
 PrepScreenShop:
 SHLI IronSword SteelSword IronBlade SteelBlade FireSword IronLance SteelLance Javelin IronAxe SteelAxe HandAxe IronBow SteelBow Fire Thunder Flux Rend Lightning Shine Heal
 ALIGN 4
+*/
+
+// Aura Wolf shopping edits
+#include "ShoppingEdits/ShoppingEdits.event"
+
 
 //Fix MNC2 Freezing glitch (breaks skirmishes!)
 // Kirb, probably?

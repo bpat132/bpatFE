@@ -71,6 +71,9 @@
 #define Greatlance 0xc0
 #define GreatLance Greatlance
 #define Naginata 0xc1
+#define Greatsword 0xc2
+#define GreatSword Greatsword
+#define MasterSword 0xc3
 
 // Classes
 #define AxeArmor Knight
