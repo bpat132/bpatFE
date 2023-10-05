@@ -148,7 +148,8 @@ VillageEvent2:
 VillageEvent3:
 	VillageEventItem(TEXT_Ch5_Village_KillerAxe, Village, KillerAxe)
 VillageEvent4:
-	VillageEventItem(TEXT_Ch5_Village_KillerLance, Village, KillerLance)
+	//VillageEventItem(TEXT_Ch5_Village_KillerLance, Village, KillerLance)
+	VillageEventItem(TEXT_Ch5_Village_KillerLance, Village, Naginata)
 VillageEvent5:
 	VillageEventItem(PlaceholderText, Village, WindSword)
 
@@ -193,7 +194,7 @@ Tutorial:
 END_MAIN
 
 Units1:
-LoadUnit(12,2)
+LoadUnit(12,2,Edgar)
 LoadUnit(3,2)
 LoadUnit(4,3)
 LoadUnit(5,2)

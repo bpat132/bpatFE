@@ -1,90 +1,149 @@
 
 ## Ch1BossBattleQuote
-[OpenMidLeft][LoadCh1Boss][OpenMidLeft]You'll regret crossing me.[NL]Prepare to die![.][A][X]
+[OpenMidLeft][LoadCh1Boss][OpenMidLeft]
+You don't look so tough.[AN]
+Shouldn't take much to[N]
+put you in the ground![A][X]
+
+## Ch1BossBattleQuote_Matthias
+[OpenMidLeft][LoadCh1Boss][OpenMidLeft]
+What are you doing, Matthias?[AN]
+Put down that spear before[N]
+you do something you regret.[AN]
+[ClearFace][MR][LoadMatthias]
+I have many regrets, but[N]
+this won't be one of them.[AN]
+[ClearFace][ML][LoadCh1Boss]
+Finally grew a spine, huh.[AN]
+Too bad you're still no[N]
+match for me![AN]
+[X]
 
 ## Ch1BossDeathQuote
-[OpenMidLeft][LoadCh1Boss][OpenMidLeft]Argh... You'll pay for this...[.][A][X]
+[OpenMidLeft][LoadCh1Boss][OpenMidLeft]
+This just isn't my day...[CloseEyes][A][X]
 
 ## Ch2BossBattleQuote
 [OpenMidLeft][LoadCh2Boss][OpenMidLeft]
 How'd they break through[N]
 so fast?[A][N]
 Someone, call for[N]
-reinforcements![.][A][X]
+reinforcements![A][X]
+
+## Ch2BossBattleQuote_Jane
+[MR][LoadJane]
+Captain.
+[ClearFace][ML][LoadCh2Boss]
+What are you standing around[N]
+for? Stop them![AN]
+[ClearFace][ML][LoadJane]
+Sorry captain, I'm defecting.[N]
+It isn't personal.[AN]
+[ClearFace][MR][LoadCh2Boss]
+Hah, is this some kind of joke?[N]
+You're doing me a favor![AN]
+Now that you're no longer my[N]
+problem, have a taste of my axe![AN]
+[X]
+
 
 ## Ch2BossDeathQuote
-[OpenMidLeft][LoadCh2Boss][OpenMidLeft]Just my luck...[.][A][X]
+[OpenMidLeft][LoadCh2Boss][OpenMidLeft]
+Just my luck...[CloseEyes][A][X]
 
 ## Ch3BossBattleQuote
-[BattleText]
 [OpenMidLeft][LoadCh3Boss][OpenMidLeft]
-You can't run from me. Prepare to meet your doom![.][A][X]
+This farce has gone[N]
+on long enough.[AN]
+I'll grant you the mercy[N]
+of a swift end.[A][X]
 
 ## Ch3BossDeathQuote
-[OpenMidLeft][LoadCh3Boss]Impossible...[.][A][X]
+[OpenMidLeft][LoadCh3Boss]
+Impossible...[CloseEyes][A][X]
 
 ## Ch4BossBattleQuote
-[BattleText]
 [OpenMidLeft][LoadCh4Boss][OpenMidLeft]
-I should have known Sir Craig would fail. No matter, you stand no chance against my magic![A][X]
+I should have known better[N]
+than to rely on a turncoat.[AN]
+I hate getting my hands dirty,[N]
+but you leave me no choice.[AN]
+Perpare to die![A][X]
 
 ## Ch4BossDeathQuote
-[BattleText]
-[OpenMidLeft][LoadCh4Boss][OpenMidLeft]But my plan...[N]Was flawless...[.][A][X]
+[OpenMidLeft][LoadCh4Boss][OpenMidLeft]
+But my plan...[N]
+was flawless...[CloseEyes][A][X]
 
 ## Ch4CraigBattleQuote
-[BattleText]
 [OpenMidLeft][LoadCraig][OpenMidLeft]
-You lot stand no chance against me. This is as far as you go![A][X]
+You lot stand no chance[N]
+against me.[AN]
+This is as far as you go![A][X]
 
 ## Ch4CraigDeathQuote
-[BattleText]
-[OpenMidLeft][LoadCraig][OpenMidLeft]No... My big promotion...[.][A][X]
+[OpenMidLeft][LoadCraig][OpenMidLeft]
+No... My big promotion...[CloseEyes][A][X]
 
 ## Ch5BossBattleQuote
-[BattleText]
 [OpenMidLeft][LoadCh5Boss][OpenMidLeft]
-Ye dare challenge me? No one stands in the way of my plundering![A][X]
+Should've run when[N]
+you had the chance.[AN]
+No one gets between[N]
+me and my bounty![A][X]
 
 ## Ch5BossDeathQuote
-[BattleText]
-[OpenMidLeft][LoadCh5Boss][OpenMidLeft]Ye got the devil's luck...[.][A][X]
+[OpenMidLeft][LoadCh5Boss][OpenMidLeft]
+You've got the[N]
+devil's luck...[CloseEyes][A][X]
 
 ## Ch6BossBattleQuote
-[BattleText]
 [OpenMidLeft][LoadCh6Boss][OpenMidLeft]
-Sorry pal, but your luck's run out. Tremble before my blade![A][X]
+Sorry pal, but your[N]
+luck's run out.[AN]
+Tremble before my blade![A][X]
 
 ## Ch6BossDeathQuote
-[BattleText]
-[OpenMidLeft][LoadCh6Boss][OpenMidLeft]How..?[.][A][X]
+[OpenMidLeft][LoadCh6Boss][OpenMidLeft]
+How..?[CloseEyes][A][X]
 
 ## Ch7JefferyBattleQuote
-[BattleText]
 [OpenMidLeft][LoadJeffery][OpenMidLeft]
-You think yourselves heroes? You're mere idealists with your heads in the clouds. I'll send you crashing down to the earth![A][X]
+You think yourselves heroes?[AN]
+You're mere idealists with[N]
+your heads in the clouds.[AN]
+I'll send you crashing[N]
+down to the earth![A][X]
 
 ## Ch7JefferyDeathQuote
-[BattleText]
 [OpenMidLeft][LoadJeffery][OpenMidLeft]
-Well fought... Melerra's future lies in your hands now...[CloseEyes][A][X]
+Well fought...[AN]
+Melerra's future lies[N]
+in your hands now...[CloseEyes][A][X]
 
 ## Ch7GordonBattleQuote
-[BattleText]
 [OpenMidLeft][LoadGordon][OpenMidLeft]
-It's not too late to surrender. Too much Melerran blood has been spilled today. But should you persist, I'll show you no mercy![A][X]
+It's not too late to[N]
+surrender.[AN]
+Too much Melerran blood[N]
+has been spilled today.[AN]
+But should you persist,[N]
+I'll show you no mercy![A][X]
 
 ## Ch7GordonDeathQuote
-[BattleText]
 [OpenMidLeft][LoadGordon][OpenMidLeft]
-Marie... Forgive your fool of a father...[CloseEyes][A][X]
+Marie...[AN]
+Forgive your fool[N]
+of a father...[CloseEyes][A][X]
 
 ## Ch8LouisBattleQuote
-[BattleText]
 [OpenMidLeft][LoadLouis][OpenMidLeft]
-You fools! Everyting I do, I do for Melerra! Not that I expect you upstarts to understand.[A][X]
+Ignorant fools![AN]
+Everyting I do,[N]
+I do for Melerra![AN]
+Not that I expect you[N]
+upstarts to understand.[A][X]
 
 ## Ch8LouisDeathQuote
-[BattleText]
 [OpenMidLeft][LoadLouis][OpenMidLeft]
 Enough, enough! I yield![A][X]

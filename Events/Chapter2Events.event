@@ -114,7 +114,8 @@ Tutorial:
 END_MAIN
 
 Units1:
-LoadUnit(2,1)
+LoadUnit(2,1,Edgar)
+//LoadUnit(20,7,Edgar)
 LoadUnit(1,0)
 LoadUnit(3,0)
 LoadUnit(0,1)

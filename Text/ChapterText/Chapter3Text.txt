@@ -1,78 +1,140 @@
 
 ## TEXT_Ch3_Start_Edgar
-[ConversationText]
 [MidLeft][LoadEdgar][Right][LoadNico]
 [Right]
-We're getting close. We ought to arrive at Lord Howard's castle by sundown.
+We're getting close. We ought to arrive[N]
+at Lord Howard's castle within the hour.[AN]
+[MidLeft][3LB]
+Lord Howard... It's been years since[N]
+I've last seen him. I hope he's as[N]
+trustworthy as Ethan claims.[AN]
+This doesn't feel like a trap, but I[N]
+can't afford to make a mistake here.[AN]
+Despite all we've accomplished, just[N]
+one error could throw it all away.[AN]
+[Right][2LB]
+I'll keep an eye on Ethan, but he[N]
+doesn't strike me as dishonest.[AN]
+Knightly types don't make great liars.[AN]
 [MidLeft]
-Lord Howard... It's been years since I've last seen him. I hope he's as trustworthy as Ethan claims.
-[Right]
-This doesn't feel like a trap, but we can never be too careful. We don't have the luxury of making mistakes.
-[MidLeft]
-If he was planning on turning us over to Galt I doubt we'd have even made it out of the city. Still, it can't hurt to keep our guard up.
+I expect you're right; if we was planning[N]
+to betray us, he'd have done so already.[AN]
+Still, I have no idea what to expect.[N]
+Lord Howard's motivations elude me.[AN]
 [LoadOverworldFaces]
-[FarFarRight][LoadEthan]
-[FarFarRight]
-[MoveFarRight]
+[FarRight][LoadEthan]
+Prince Edgar, soldiers are approaching[N]
+from all sides! We're surrounded![AN]
+[MidLeft]
+How'd they sneak up on us so easily?[N]
+We should have been more vigilant.[AN]
 [FarRight]
-Prince Edgar, soldiers are approaching us from all sides! They've got us surrounded!
+I don't know, my mission was top secret.[N]
+Could we have been followed from Farval?[AN]
 [Right]
-What? How could they possibly ambush us here? They must have somehow known we were coming!
-[FarRight]
-Only a handful of people knew of this mission. If one of them has betrayed us...
+Look at their positions; this was an[N]
+ambush. They knew we were coming.[AN]
 [MidLeft]
-Never mind that for now! Ethan, does it look like we can slip past them and make a break for the castle?
+Does it look like we can slip past them[N]
+and make a break for the castle?[AN]
+[Right][3LB]
+No way, they've completely cut off our[N]
+path. A few of us might make it, but[N]
+our odds are dire.[AN]
+[MidLeft][3LB]
+Then we've no choice but to make our[N]
+stand right here! Ethan, you're with[N]
+with us on the front lines.[AN]
+I'm not in a trusting mood; it's time[N]
+to prove your loyalties.[AN]
 [FarRight]
-Unlikely, they've completely cut off our path. We could try retreating the way we came, but that carries its own risks
-[MidLeft]
-We don't have anywhere to go if we turn back now. If they pursue us we'll be finished! We have no choice but to make our stand right here!
+Worry not, I'll protect you.[AN]
+I don't know how they tracked us, but[N]
+I'll make them regret crossing us![AN]
 [X]
 
 ## TEXT_Ch3_Start_Boss
-[ConversationText]
 [ML][LoadCh3Boss][MR][LoadRedSoldier]
 [MR]
-Sir Harris, we've been spotted! What are your orders?
+Sir Harris, we've been spotted![N]
+What are your orders?[AN]
 [ML]
-The rest of our forces are nearly in position. Keep them busy for now, then[ToggleRed]in five minutes we'll hit them with everything we've got![ToggleRed]
+The rest of our forces are nearly[N]
+in position. Keep them busy for now,[AN]
+then [ToggleRed]in five minutes we'll[N]
+hit them with everything we've got![ToggleRed][AN]
 [MR][MoveRight]
 [FFR][LoadRedSoldier]
 [FFR][MoveFarRight]
-[FR]Sir, we've sighted[ToggleRed]three horsemen[ToggleRed][ToggleRed]approaching from the south.[ToggleRed]
-They're about[ToggleRed]one minute away.[ToggleRed]
-We can't tell their affiliation but they appear to be armed.
-[ML]They're not our primary target, but if they get in our way, wipe them out.
+[FFR][3LB]
+Sir, three horsemen approach from the[N]
+south. We can't tell their affiliation,[N]
+but they're not with us.[AN]
+[ML][2LB]
+Our target remains the same, but if[N]
+they get in our way, wipe them out.[AN]
 [X]
 
 ## TEXT_Ch3_Sasha_Event
-[ConversationText]
 [Right][LoadSasha]
 [Right]
-Resorting to sneak attacks, even with overwhelming numbers. What a disappointment...
+All this preparation to ambush so[N]
+few foes? What a joke.[AN]
+Have they no courage, no passion?[AN]
+Those who seek nothing beyond a payday[N]
+should never taken up arms.[AN]
 [X]
 
 ## TEXT_Ch3_Sasha_Talk
-[ConversationText]
 [MidLeft][LoadEdgar][MidRight][LoadSasha]
-[MidRight]
-You again...
-[MidLeft]
-Have we met? You don't look like one of Galt's soldiers.
-[MidRight]
-I'm just someone who's been hired to kill you, twice now. Your little posse's quite popular, you know.
-[MidLeft]
-Any chance I could convince you to withdraw? If you have no allegiance to Galt, I've no reason to fight you.
-[MidRight]
-Hmm... You've got many battles ahead of you, do you not?
-[MidLeft]
-I... I haven't thought that far ahead, but until Melerra is free once more I'll never stop fighting.
-[MidRight]
-Then hire me. I've been dying for a taste of real battle, and it seems my best bet is to tag along with you.
-I have no loyalty to Galt anyway, so I don't mind turning on them here.
-[MidLeft]
-Hire you? Sure, can't hurt to have you on our side. Better than having to fight you.
-[MidRight]
-Great. We can discuss payment once we're done killing my former employers.
+[MR][1LB]
+You again...[AN]
+[ML]
+Have we met? You don't look familiar.[AN]
+[MR][2LB]
+Met? No, but I've been hired to[N]
+kill you twice now.[AN]
+Your little posse's quite popular,[N]
+but I don't get it.[AN]
+What makes you so special?[N]
+I'd like to find out for myself.[AN]
+[CloseSpeechSlow]
+[MR][MoveRight]
+[X]
+
+
+## TEXT_Ch3_Sasha_Talk2
+[MidLeft][LoadEdgar][MidRight][LoadSasha]
+Not bad! I can see the[N]
+fire in your eyes.[AN]
+I now understand how you[N]
+made it this far.[AN]
+[ML][1LB]
+What are you rambling on about?[AN]
+[MR][2LB]
+You value whatever it is you're fighting[N]
+for enough to put your life on the line.[AN]
+It compels you to keep going, against[N]
+overwhelming opposition.[AN]
+I take it you could use some help[N]
+evening the odds.[AN]
+[ML][1LB]
+You're offering to help us? Why?[AN]
+[MR]
+Would you prefer I cut you down instead?[AN]
+[ML][2LB]
+No, no, definitely not![N]
+I'll gladly accept your help.[AN]
+[MR]
+Good, no need to waste more time[N]
+talking. The battlefield awaits![AN]
+[ClearFace][3LB]
+[ML]
+Whew, that was scary.[N]
+I don't think I could have dodged[N]
+any more of her attacks.[AN]
+Come to think of it, she didn't[N]
+even offer her name...[AN]
 [X]
 
 ## TEXT_Ch3_Village_Hammer
@@ -92,43 +154,52 @@ Galt's soldiers think they can do whatever they please... It's sickening! Take t
 
 
 ## TEXT_Ch3_BDI_Event
-[ConversationText]
 [MidLeft][LoadBeatrice][Right][LoadDaniel][FarRight][LoadIsabelle]
 [FarRight]
-All these soldiers... I hope we're not too late.
-[Right]
-I see Ethan in the distance, and those people he's fighting with must be Prince Edgar's group. They look badly outnumbered.
+So many soldiers...[N]
+How could this happen?[AN]
+[Right][3LB]
+Look, that's Ethan over there![N]
+Those people he's fighting with[N]
+must be the prince's group.[AN]
 [MidLeft]
-Then we've got no time to waste! We'd better hurry before they get overwhelmed.
+Then we've got no time to waste![N]
+Let's join them before they get[N]
+overwhelmed.[AN]
 [X]
 
 ## TEXT_Ch3_Boss_Event
-[ConversationText]
 [Left][LoadCh3Boss]
 [Left]
-They put up a good fight,  but we've still got them pinned down. Now's our chance to finish them off![ToggleRed]Everyone, charge![ToggleRed]
+They put up a good fight,  but we've[N]
+still got them pinned down.[AN]
+Now's our chance to finish them off![N]
+[ToggleRed]Everyone, charge![ToggleRed][AN]
 [X]
 
 ## TEXT_Ch3_End
-[ConversationText]
 [FarLeft][LoadEthan][Left][LoadEdgar][Right][LoadBeatrice][FarRight][LoadDaniel]
-[Left]
-Thanks for your help, you really saved us back there. I take it you're employed by Lord Howard as well?
-[Right]
-That's right. Looks like we made it just in time. Is everyone alright?
-[FarLeft]
-I'm fine, but what are you three doing here? Shouldn't you be back at the castle?
-[FarRight]
-Scouts reported empire soldiers in the area. We came to make sure you were safe.
-[Right]
-Richard and the others can manage the castle without us. We'll be back soon enough anyway.
-[FarLeft]
-Could they have known we coming? This feels too convenient to be a coincidence.
-[Right]
-Even we only learned the details of your mission today. I doubt Lord Howard told anyone else but Richard and Sir Craig. Perhaps you were simply in the wrong place at the wrong time...
-[FarLeft]
-Perhaps... Either way, we'd best hurry to the castle then. We should still be able to make it back before dark, and I'd rather not chance another ambush.
-[Left]
-Agreed. Let's prepare to set out soon. We shouldn't risk staying here any longer than necessary.
+[L]
+Thanks for your help, you[N]
+really saved us back there.[AN]
+I take it you're here on the[N]
+behalf of Lord Howard as well?[AN]
+[R]
+Yeah, seems we made it just in time.[N]
+Ethan, they knew you were coming.[AN]
+I don't know how they knew, but[N]
+they were ready to intercept you.[AN]
+[FL]
+I still can't believe this happened.[N]
+Is the castle safe?[AN]
+[FR]
+It was when we left, and Sir Craig[N]
+and the others are still there.[AN]
+I doubt anything has happened in our[N]
+absence, but I still feel uneasy.[AN]
+Galt knows more than they should.[AN]
+[L]
+Then we've no time to waste.[AN]
+Let's hurry back; with luck[N]
+we'll still arrive before dark.[AN]
 [X]
-

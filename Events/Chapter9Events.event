@@ -103,7 +103,7 @@ VillageEventWest:
 	Text(0x2,PlaceholderText)
 	ReinforcementEventENDA(JoeyReinforcementUnits)
 VillageEventEast:
-	VillageEventItem(PlaceholderText, Village, Naginata)
+	VillageEventItem(PlaceholderText, Village, Shamshir)
 
 MiscBasedEvents:
 CauseGameOverIfLordDies

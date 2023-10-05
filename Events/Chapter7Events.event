@@ -318,6 +318,13 @@ ENUN
 LOAD1 0x2 CutsceneUnits2
 ENUN
 
+MUSC Langrisser_Story
+SetBackground(0x21)
+TUTORIALTEXTBOXSTART
+CenterTutorialTextBox
+TEXTSHOW TEXT_Ch7_Intro
+TEXTEND
+
 SetBackground(0x15)
 CAM1 [8,3]
 Text(TEXT_Ch7_Start_Castle)

@@ -90,3 +90,6 @@ SongTable(FFT_Trisection,trisectiontest,MapMusicGroup)
 
 #include "MusicEvents/Suikoden_ArmyAdvance_Pandan.event"
 SongTable(Suikoden_ArmyAdvance,songB2,MapMusicGroup)
+
+#include "MusicEvents/R1Track9_bpat.event"
+SongTable(R1_Kanami,R1Track9_bpat_overdrive,MapMusicGroup)

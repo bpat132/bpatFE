@@ -180,9 +180,10 @@ ENUT 0x12
 TILECHANGE 0x0
 CAM1 [22,2]
 Text(TEXT_Ch8_RightCell_Open)
-GiveItem(IronBlade,Donovan)
-//GiveItem(IronAxe,Trent)
-GiveItem(SteelAxe,Trent) // Steel axe needed to ORKO soldier
+//GiveItem(IronBlade,Donovan)
+GiveItem(IronSword,Donovan)
+GiveItem(IronAxe,Trent)
+//GiveItem(SteelAxe,Trent) // Steel axe needed to ORKO soldier
 
 CHECK_EVENTID 0xF
 BEQ 5 0 0xC
@@ -238,7 +239,7 @@ UNIT Victoria Soldier 0x40 Level(12,Enemy,0)     [2,12] 0x0 0x0 0x0 0x0 [ShortSp
 UNIT Marie Troubadour 0x40 Level(11,NPC,0)     [17,3] 0x0 0x0 0x0 0x0 [0x0] NeverMoveAI
 UNIT Evelyn Shaman_F 0x40 Level(13,NPC,0)     [18,3] 0x0 0x0 0x0 0x0 [0x0] NeverMoveAI
 UNIT Donovan SwKnight 0x40 Level(13,NPC,0)     [20,3] 0x0 0x0 0x0 0x0 [0x0] NeverMoveAI
-UNIT Trent Fighter 0x40 Level(14,NPC,0)     [21,3] 0x0 0x0 0x0 0x0 [0x0] NeverMoveAI
+UNIT Trent Fighter 0x40 Level(13,NPC,0)     [21,3] 0x0 0x0 0x0 0x0 [0x0] NeverMoveAI
 
 UNIT 0x80 Soldier 0x40 Level(Ch8EnemyLvl,Enemy,1)     [18,6] 0x0 0x0 0x0 0x0 [ShortSpear] NeverMoveAI
 UNIT 0x84 Soldier 0x40 Level(Ch8EnemyLvl,Enemy,1)     [21,6] 0x0 0x0 0x0 0x0 [ShortSpear] NeverMoveAI

@@ -1,9 +1,5 @@
 ## TEXT_Ch1_Intro
-Runes can be invoked by[N]
-selecting the [0x93]Invoke"[N]
-menu option. Edgar can[N]
-currently invoke two[N]
-runes per chapter.[A][X]
+Dummy text[A][X]
 
 ## TEXT_Ch2_Intro
 Once a thriving metropolis, the city[N]
@@ -11,9 +7,10 @@ of Farval has fallen on hard times.[AN]
 While the outskirts are plagued by[N]
 bandits and thieves, few dare to commit[N]
 the slightest offense near the garrison[N]
-at its center.[A] Erected shortly after the[N]
-Great War, it now houses Galt's forces[N]
-tasked with maintaining order in the city.[A]
+at the heart of the city.[AN]
+Erected shortly after the Great War,[N]
+it now houses Galt's forces tasked with[N]
+maintaining order in the city.[A]
 [X]
 
 ## TEXT_Ch3_Intro
@@ -24,7 +21,8 @@ southern plains; peaceful lands blessed[N]
 with abundant natural resources.[AN]
 Its many villages enjoy the security[N]
 Lord Howard's knights provide, and in[N]
-turn they top off his coffers.[A]
+turn they top off his coffers and[N]
+food stores.[A]
 [X]
 
 ## TEXT_Ch4_Intro
@@ -89,5 +87,12 @@ and enterprising scholars occasionally[N]
 come seeking lost records and artifacts.[A]
 [X]
 
+## TEXT_Ch7_Intro
+Calavan, the capital of Melerra, overlooks[N]
+Dummy text[A][X]
 
+## TEXT_Ch8_Intro
+Dummy text[A][X]
 
+## TEXT_Ch9_Intro
+Dummy text[A][X]

@@ -80,7 +80,7 @@ CriticalHit(0,25)
 EndAttack
 ENUN
 
-ENUT 0x84
+ENUT 0x84 // Don't know why this is here
 FIG1 Stella 0x84 Fire
 SET_ACTIVE 0
 CLEAN
@@ -189,7 +189,8 @@ EnemyUnits1:
 //UNIT Ch1Boss Knight 0x40 Level(4,Enemy,0)     [8,7] 0x0 0x0 0x0 0x0 [SteelAxe,HandAxe] NeverMoveAI
 UNIT Ch1Boss SwKnight 0x40 Level(4,Enemy,0)     [8,7] 0x0 0x0 0x0 0x0 [LightBrand,SteelSword] NeverMoveAI
 UNIT Matthias Soldier 0x40 Level(3,Enemy,0)     [7,7] 0x0 0x0 0x0 0x0 [IronLance,Vuln] NeverMoveAI
-UNIT Sasha Myrmidon_F 0x40 Level(6,Enemy,0)     [17,2] 0x0 0x0 0x0 0x0 [SlimSword,SteelBlade,FireSword,Vuln] DoNothing
+//UNIT Sasha Myrmidon_F 0x40 Level(6,Enemy,0)     [17,2] 0x0 0x0 0x0 0x0 [SlimSword,SteelBlade,FireSword,Vuln] DoNothing
+UNIT Sasha Myrmidon_F 0x40 Level(6,Enemy,0)     [17,2] 0x0 0x0 0x0 0x0 [KillingEdge,SlimSword,Vuln] DoNothing
 
 UNIT 0x84 Soldier 0x40 Level(1,Enemy,1)     [1,2] 0x0 0x0 0x0 0x0 [IronLance] DoNothing // Cutscene enemy
 
@@ -314,12 +315,27 @@ ClearBackground
 NoFade
 */
 
-ENUT 0x129 // AllUnitsMustEscapeFlag
-MUSC BoF2_StrongerMonsters
-CAM1 [0,11]
 LoadEnemies(EnemyUnits1)
-LoadEnemies(EnemyUnits2)
+//LoadEnemies(EnemyUnits2)
+ENUT 0x129 // AllUnitsMustEscapeFlag
+
+/*
+CAM1 [0,11]
 FADU 16
+SetBackground(0x13)
+MUSC AA_Gumshoe
+Text(TEXT_Ch1_Start_Saskia)
+ClearBackground
+NoFade
+*/
+
+MUSC BoF2_StrongerMonsters
+
+CAM1 [0,11]
+//LoadEnemies(EnemyUnits1)
+//LoadEnemies(EnemyUnits2)
+FADU 16
+
 LoadPlayerUnits(Units1)
 
 

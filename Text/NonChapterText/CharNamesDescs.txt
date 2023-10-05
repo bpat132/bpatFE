@@ -1,8 +1,8 @@
 # 0x910 EdgarName
 Edgar[X]
 ## EdgarDesc
-The prince of the kingdom of[NL]
-Melerra. Resolute and just.[X]
+The prince of the kingdom of Melerra.[NL]
+A natural leader and tactician.[X]
 
 ## JennaName
 Jenna[X]
@@ -13,14 +13,14 @@ Easygoing, but confident.[X]
 ## DuncanName
 Duncan[X]
 ## DuncanDesc
-A former Melerran soldier.[NL]
-Reserved, but fearsome in battle[X]
+A deserter from Melerra's army.[N]
+Always keeps his calm, even in battle.[X]
 
 ## KurtName
 Kurt[X]
 ## KurtDesc
-A young Melerran swordfighter[NL]
-seeking to prove himself.[X]
+A hotheaded swordsman seeking[N]
+to make a name for himself.[X]
 
 ## MatthiasName
 Matthias[X]
@@ -31,37 +31,37 @@ Guided by his principles.[X]
 ## StellaName
 Stella[X]
 ## StellaDesc
-A novice Melerran mage with a[NL]
-bad attitude but good heart.[X]
+A self-taught mage from Farval's slums.[NL]
+Means well despite her bad attitude.[X]
 
 ## NicoName
 Nico[X]
 ## NicoDesc
-A former thief looking to redeem[NL]
-himself. Steadfast and loyal.[X]
+A former petty thief seeking[NL]
+redemption. Steadfast and loyal.[X]
 
 ## LisaName
 Lisa[X]
 ## LisaDesc
-A young priestess from Melerra.[NL]
-Protective and kind.[X]
+An inexperienced priestess from Melerra.[NL]
+Protective of her friends.[X]
 
 ## JaneName
 Jane[X]
 ## JaneDesc
-A noble lady driven to prove[NL]
-herself as a knight.[X]
+A highborn lady driven to prove herself[NL]
+as a knight. Lacks confidence.[X]
 
 ## EthanName
 Ethan[X]
 ## EthanDesc
-A mercenary from Galt with a.[NL]
-grudge against his homeland.[X]
+A wyvern rider in service to Lord[N]
+Howard with a strong sense of duty.[X]
 
 ## BeatriceName
 Beatrice[X]
 ## BeatriceDesc
-A down to earth mercenary.[NL]
+A down to earth Melerran knight.[NL]
 Friendly rivals with Daniel.[X]
 
 ## DanielName
@@ -73,31 +73,31 @@ Friendly rivals with Beatrice.[X]
 ## IsabelleName
 Isabelle[X]
 ## IsabelleDesc
-An amiable young mercenary.[NL]
-from Kemaroa.[X]
+An amiable healer for hire.[NL]
+Greatly values her personal freedom.[X]
 
 ## SashaName
 Sasha[X]
 ## SashaDesc
 A grim sellsword wandering the land.[NL]
-Cares more for fighting than gold.[X]
+Lives for the thrill of battle.[X]
 
 ## RichardName
 Richard[X]
 ## RichardDesc
-A mercenary commander. Respected for[NL]
-his compassion and skill alike.[X]
+An experienced mercenary commander[NL]
+skilled in close-quarters combat.[X]
 
 ## CameronName
 Cameron[X]
 ## CameronDesc
-A Melerran archer working[NL]
-as a mercenary. Cautious.[X]
+A mercenary archer and experienced[NL]
+scout with a keen sense of danger.[X]
 
 ## VioletName
 Violet[X]
 ## VioletDesc
-A young Melerran pegasus knight.[NL]
+A cherry Melerran pegasus knight.[NL]
 Eager to prove herself.[X]
 
 ## RowanName

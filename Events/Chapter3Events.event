@@ -89,10 +89,23 @@ CharacterEventBothWays(0x10,TalkEventSasha, Edgar, Sasha)
 END_MAIN
 
 TalkEventSasha:
-MUSC EO3_ThoseWhoSlayAndFall
+MUSC YuNo_Frustration
 Text(TEXT_Ch3_Sasha_Talk)
-NoFade
+SOUN 0xCE
+StartBattle
+MissedAttack(1,0)
+MissedAttack(0,0)
+MissedAttack(1,0)
+EndAttack
+ENUN
+FIG1 Edgar Sasha IronLance
+Write_Short(0x01FF, 0x203A968)
+MUSC EO3_ThoseWhoSlayAndFall
+Text(TEXT_Ch3_Sasha_Talk2)
 CUSA Sasha
+// Return to map theme
+ASMC 0x080160d0|1
+NoFade
 ENDA
 
 LocationBasedEvents:
@@ -106,7 +119,8 @@ VillageEvent1:
 
 VillageEvent2:
 	//VillageEventItem(TEXT_Ch3_Village_KillerLance, Village, KillerLance)
-	VillageEventItem(TEXT_Ch3_Village_KillingEdge, Village, KillingEdge)
+	//VillageEventItem(TEXT_Ch3_Village_KillingEdge, Village, KillingEdge)
+	VillageEventItem(TEXT_Ch3_Village_KillingEdge, Village, KillerLance)
 
 MiscBasedEvents:
 DefeatBoss(EndingScene)
@@ -166,14 +180,15 @@ REDA [9,19] 0x0 0x1 0x00 0x8
 EnemyUnits1:
 // Unique
 #ifndef _EASY_MODE_
-UNIT Ch3Boss Myrmidon 0x40 Level(8,Enemy,0)     [0,0] 0x0 0x0 0x0 0x0 [SteelBlade] NeverMoveAI
+//UNIT Ch3Boss Myrmidon 0x40 Level(8,Enemy,0)     [0,0] 0x0 0x0 0x0 0x0 [SteelBlade] NeverMoveAI
+UNIT Ch3Boss Myrmidon 0x40 Level(8,Enemy,0)     [8,11] 0x0 0x0 0x0 0x0 [SteelBlade] NeverMoveAI
 #else
-#endif
 UNIT Ch3Boss Myrmidon 0x40 Level(8,Enemy,0)     [0,0] 0x0 0x0 0x0 0x0 [SteelSword] NeverMoveAI
+#endif
 
-UNIT Sasha Myrmidon_F 0x40 Level(6,Enemy,0)     [16,7] 0x0 0x0 0x0 0x0 [SteelBlade,FireSword,SwiftSword,Vuln] PWHAI
-
-//UNIT 0x80 Druid 0x40 Level(20,Enemy,1)     [7,10] 0x0 0x0 0x0 0x0 [Naglfar] AIRAI
+//UNIT Sasha Myrmidon_F 0x40 Level(6,Enemy,0)     [16,7] 0x0 0x0 0x0 0x0 [SteelBlade,FireSword,SwiftSword,Vuln] PWHAI
+//UNIT Sasha Myrmidon_F 0x40 Level(6,Enemy,0)     [16,7] 0x0 0x0 0x0 0x0 [KillingEdge,SwiftSword,Vuln] PWHAI
+UNIT Sasha Myrmidon_F 0x40 Level(6,Enemy,0)     [7,10] 0x0 0x0 0x0 0x0 [KillingEdge,SwiftSword,Vuln] PWHAI
 
 // Snag attackers
 UNIT 0x84 Fighter 0x40 Level(4,Enemy,1)     [1,9] 0x0 0x0 0x0 0x0 [IronAxe] AttackWallsAI
@@ -337,6 +352,7 @@ ENUF CelerityRuneDisabledFlag
 ENUF CelerityActiveFlag
 
 MUSC ToS_LastBattleDecision
-Text(0x21,TEXT_Ch3_End)
+SetBackground(0x21)
+Text(TEXT_Ch3_End)
 MNC2 Chapter4
 ENDA

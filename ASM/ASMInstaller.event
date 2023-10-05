@@ -19,6 +19,9 @@ SKIPWN
 ENDA
 POP
 
+// Tequila, Zahlman
+#include "FE8-Text_Engine_Rework/_FE8-Text_Engine_Rework_EA.event"
+
 // My hit/avo stuff
 PUSH
 ORG $2ABB8

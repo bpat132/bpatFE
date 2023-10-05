@@ -22,8 +22,8 @@
 //#define ReaverCost 10
 #define ReaverCost 18
 #define GemCost 12
-#define EffectiveCost 20
-#define ThrowingCost 6
+#define EffectiveCost 22
+#define ThrowingCost 8
 #define Throwing2Cost 16
 #define Throwing3Cost 24
 
@@ -197,17 +197,21 @@
 #define Ch5BossMug 0x35
 #define Ch6BossMug 0x36
 
+#define Ch9BossMug 0x37
+#define Ch9Boss2Mug 0x3b
+
 #define JefferyMug 0x38
 #define GordonMug 0x39
 #define LouisMug 0x3a
 
 #define CraigMug 0x30
+
+#define SaskiaMug 0x45
+#define LowellMug 0x46
+
 #define HowardMug 0x4e
 
 #define MysteryMug 0x55
-
-#define Ch9BossMug 0x37
-#define Ch9Boss2Mug 0x3b
 
 // Other
 #define FreezeStatusID 0x9
