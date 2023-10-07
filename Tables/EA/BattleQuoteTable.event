@@ -5,6 +5,10 @@
 
 SpecifiedBattleConvo(Stella,0x84,Chapter1,0x0,TEXT_Ch1_Stella_Battle)
 
+SpecifiedBattleConvo(Ch1Boss,Matthias,Chapter1,0x28,Ch1BossBattleQuote_Matthias)
+SpecifiedBattleConvo(Ch2Boss,Jane,Chapter2,0x28,Ch2BossBattleQuote_Jane)
+SpecifiedBattleConvo(Ch3Boss,Sasha,Chapter3,0x28,Ch3BossBattleQuote_Sasha)
+
 UnspecifiedBattleConvo(Ch1Boss,Chapter1,0x1,Ch1BossBattleQuote)
 UnspecifiedBattleConvo(Ch2Boss,Chapter2,0x1,Ch2BossBattleQuote)
 UnspecifiedBattleConvo(Ch3Boss,Chapter3,0x1,Ch3BossBattleQuote)

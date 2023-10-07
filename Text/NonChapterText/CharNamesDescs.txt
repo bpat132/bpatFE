@@ -80,7 +80,7 @@ Greatly values her personal freedom.[X]
 Sasha[X]
 ## SashaDesc
 A grim sellsword wandering the land.[NL]
-Lives for the thrill of battle.[X]
+Craves the thrill of battle.[X]
 
 ## RichardName
 Richard[X]

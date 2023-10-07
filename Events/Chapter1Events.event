@@ -125,6 +125,7 @@ NoFade
 ENDA
 
 LocationBasedEvents:
+//Seize(2,10)
 Escape(18,2)
 Village(0x8,VillageEvent2,2,1)
 Village(0x9,VillageEvent1,16,8)
@@ -316,7 +317,7 @@ NoFade
 */
 
 LoadEnemies(EnemyUnits1)
-//LoadEnemies(EnemyUnits2)
+LoadEnemies(EnemyUnits2)
 ENUT 0x129 // AllUnitsMustEscapeFlag
 
 /*
@@ -358,5 +359,11 @@ GiveItem(SteelLance,Edgar)
 GiveItem(SteelBow,Jenna)
 GiveItem(SteelAxe,Duncan)
 GiveItem(SteelSword,Kurt)
+
+MUSC AA_Gumshoe
+SetBackground(0xe)
+BROWNBOX BROWNBOX_Elsewhere [8,8]
+
+Text(TEXT_Ch1_End_Howard)
 MNC2 Chapter2
 ENDA

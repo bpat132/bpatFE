@@ -70,6 +70,7 @@
 [FFR] = [FarFarRight]
 
 [OpenQuote] = [0x93]
+[q] = [OpenQuote]
 
 [HorseIcon] = [0x7B]
 [ArmorIcon] = [0x7C]

@@ -21,7 +21,7 @@ match for me![AN]
 
 ## Ch1BossDeathQuote
 [OpenMidLeft][LoadCh1Boss][OpenMidLeft]
-This just isn't my day...[CloseEyes][A][X]
+Just my luck...[CloseEyes][A][X]
 
 ## Ch2BossBattleQuote
 [OpenMidLeft][LoadCh2Boss][OpenMidLeft]
@@ -32,24 +32,26 @@ reinforcements![A][X]
 
 ## Ch2BossBattleQuote_Jane
 [MR][LoadJane]
-Captain.
+Captain.[AN]
 [ClearFace][ML][LoadCh2Boss]
 What are you standing around[N]
 for? Stop them![AN]
-[ClearFace][ML][LoadJane]
+[ClearFace][MR][LoadJane]
 Sorry captain, I'm defecting.[N]
 It isn't personal.[AN]
-[ClearFace][MR][LoadCh2Boss]
+[ClearFace][ML][LoadCh2Boss]
 Hah, is this some kind of joke?[N]
 You're doing me a favor![AN]
-Now that you're no longer my[N]
-problem, have a taste of my axe![AN]
+I can be rid of you for good.[N]
+Have a taste of my axe![AN]
+[ClearFace][MR][LoadJane]
+You really hated me this much?[N]
+Well, it's personal now.[AN]
 [X]
-
 
 ## Ch2BossDeathQuote
 [OpenMidLeft][LoadCh2Boss][OpenMidLeft]
-Just my luck...[CloseEyes][A][X]
+You'll pay... for this...[CloseEyes][A][X]
 
 ## Ch3BossBattleQuote
 [OpenMidLeft][LoadCh3Boss][OpenMidLeft]
@@ -57,6 +59,17 @@ This farce has gone[N]
 on long enough.[AN]
 I'll grant you the mercy[N]
 of a swift end.[A][X]
+
+## Ch3BossBattleQuote_Sasha
+[OpenMidLeft][LoadCh3Boss][OpenMidLeft]
+How much did they pay you[N]
+to turn on us?[AN]
+I never should have trusted[N]
+a sellsword.[AN]
+[ClearFace][MR][LoadSasha]
+I have nothing to say to you.[N]
+My blade will speak for me.[AN]
+[X]
 
 ## Ch3BossDeathQuote
 [OpenMidLeft][LoadCh3Boss]
