@@ -50,7 +50,7 @@ Protective of her friends.[X]
 Jane[X]
 ## JaneDesc
 A highborn lady driven to prove herself[NL]
-as a knight. Lacks confidence.[X]
+as a knight. Struggles with confidence.[X]
 
 ## EthanName
 Ethan[X]
@@ -127,14 +127,15 @@ Kinder than he lets on.[X]
 ## QuentinName
 Quentin[X]
 ## QuentinDesc
-A mage from Sresa interested in both[NL]
-study and application of magic.[X]
+A citadel mage seeking knowledge and[NL]
+adventure. Thomas's close friend.[X]
+
 
 ## ThomasName
 Thomas[X]
 ## ThomasDesc
-A scholar from Sresa with an[NL]
-interest in ancient history.[X]
+A citadel scholar interested in[NL]
+archaeology. Quentin's close friend.[X]
 
 ## LucyName
 Lucy[X]
@@ -163,14 +164,14 @@ but undeniable skill.[X]
 ## MarieName
 Marie[X]
 ## MarieDesc
-Daughter of General Gordon known[N]
-for her strong will.[X]
+The only daughter of General Gordon.[N]
+Possess an incredibly strong will .[X]
 
 ## EvelynName
 Evelyn[X]
 ## EvelynDesc
-A self-taught mage with a[N]
-talent for hexes.[X]
+A self-taught mage whose illicit[N]
+experiments often land her in trouble.[X]
 
 ## DonovanName
 Donovan[X]
@@ -181,8 +182,8 @@ Gordon. Known for his bravery.[X]
 ## TrentName
 Trent[X]
 ## TrentDesc
-A pragmatic Melerran soldier with[N]
-a knack for self-preservation.[X]
+A levelheaded Melerran soldier.[N]
+Unassuming, but skilled.[X]
 
 ## PatrickName
 Patrick[X]
@@ -193,7 +194,8 @@ has survived countless battles.[X]
 ## JoeyName
 Joey[X]
 ## JoeyDesc
-Joey placeholder descripion.[X]
+A seafaring drifter far from home[N]
+Fights dirty, but effectively.[X]
 
 ## AudreyName
 Audrey[X]
@@ -203,39 +205,44 @@ Audrey placeholder descripion.[X]
 ## Ch1BossName
 Casey[X]
 ## Ch1BossDesc
-A commander in Galt's army.[X]
+A corrupt lieutenant in Galt's army.[N]
+Resents his stagnant career.[X]
 
 ## Ch2BossName
 Osborne[X]
 ## Ch2BossDesc
-A commander in Galt's army.[X]
+Commander of Galt's troops in[N]
+Farval. Tough, but past his prime.[X]
 
 ## Ch3BossName
 Harris[X]
 ## Ch3BossDesc
-A commander in Galt's army.[X]
+A calculating Galt commander,[N]
+skilled in swordplay and tactics.[X]
 
 ## Ch4BossName
 Sheldon[X]
 ## Ch4BossDesc
-A commander in Galt's army.[X]
+An agent of Galt skilled in[N]
+surverting the empire's enemies.[X]
 
 ## CraigName
 Craig[X]
 ## CraigDesc
-A traitorous Melerran[NL]
-knight now serving Galt.[X]
+A resentful knight who defected[N]
+to advance his career.[X]
 
 ## Ch5BossName
 Carter[X]
 ## Ch5BossDesc
-A feared pirate captain[N]
-known for his brutality.[X]
+A merciless pirate captain whose[N]
+crew terrorizes the southern seas.[X]
 
 ## Ch6BossName
 Martin[X]
 ## Ch6BossDesc
-Leader of a gang of bandits.[X]
+The leader of a gang of bandits.[N]
+A better scavenger than fighter.[X]
 
 ## Ch9BossName
 David[X]
@@ -262,14 +269,18 @@ Respected by his subordinates.[X]
 ## LouisName
 Louis[X]
 ## LouisDesc
-A cunning lord overseeing Melerra.[N]
-Morality is of little concern to him.[X]
+The regent overseeing Melerra.[N]
+Cunning and pragmatic.[X]
 
 ## GaltSoldierName
 Soldier[X]
 ## GaltSoldierDesc
 The army of Galt, the strongest[NL]
 army on the continent.[X]
+
+## MelerraSoldierDesc
+Remnants of Melerra's army, loyal[N]
+to Lord Louis, the regent.[X]
 
 ## EliteName
 Elite[X]
@@ -280,17 +291,17 @@ powerful than the average soldier.[X]
 ## RuffianName
 Ruffian[X]
 ## RuffianDesc
-Vicious thugs who[NL]
-plunder all they can.[X]
+Vicious thugs who fight dirty and[NL]
+have a keen eye for loot.[X]
 
 ## SellswordName
 Sellsword[X]
 ## SellswordDesc
-Mercenaries who serve[NL]
-the highest bidder.[X]
+Mercenaries who sell their[NL]
+services to the highest bidder.[X]
 
 ## GenericThiefName
 Thief[X]
 ## GenericThiefDesc
 Thieves who will attempt[NL]
-to flee with thier loot.[.][X]
+to flee with their loot.[X]

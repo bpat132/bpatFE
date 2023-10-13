@@ -120,7 +120,7 @@ VillageEvent1:
 VillageEvent2:
 	//VillageEventItem(TEXT_Ch3_Village_KillerLance, Village, KillerLance)
 	//VillageEventItem(TEXT_Ch3_Village_KillingEdge, Village, KillingEdge)
-	VillageEventItem(TEXT_Ch3_Village_KillingEdge, Village, KillerLance)
+	VillageEventItem(TEXT_Ch3_Village_KillerLance, Village, KillerLance)
 
 MiscBasedEvents:
 DefeatBoss(EndingScene)
@@ -180,15 +180,15 @@ REDA [9,19] 0x0 0x1 0x00 0x8
 EnemyUnits1:
 // Unique
 #ifndef _EASY_MODE_
-//UNIT Ch3Boss Myrmidon 0x40 Level(8,Enemy,0)     [0,0] 0x0 0x0 0x0 0x0 [SteelBlade] NeverMoveAI
-UNIT Ch3Boss Myrmidon 0x40 Level(8,Enemy,0)     [8,11] 0x0 0x0 0x0 0x0 [SteelBlade] NeverMoveAI
+UNIT Ch3Boss Myrmidon 0x40 Level(8,Enemy,0)     [0,0] 0x0 0x0 0x0 0x0 [SteelBlade] NeverMoveAI
+//UNIT Ch3Boss Myrmidon 0x40 Level(8,Enemy,0)     [8,11] 0x0 0x0 0x0 0x0 [SteelBlade] NeverMoveAI
 #else
 UNIT Ch3Boss Myrmidon 0x40 Level(8,Enemy,0)     [0,0] 0x0 0x0 0x0 0x0 [SteelSword] NeverMoveAI
 #endif
 
 //UNIT Sasha Myrmidon_F 0x40 Level(6,Enemy,0)     [16,7] 0x0 0x0 0x0 0x0 [SteelBlade,FireSword,SwiftSword,Vuln] PWHAI
-//UNIT Sasha Myrmidon_F 0x40 Level(6,Enemy,0)     [16,7] 0x0 0x0 0x0 0x0 [KillingEdge,SwiftSword,Vuln] PWHAI
-UNIT Sasha Myrmidon_F 0x40 Level(6,Enemy,0)     [7,10] 0x0 0x0 0x0 0x0 [KillingEdge,SwiftSword,Vuln] PWHAI
+UNIT Sasha Myrmidon_F 0x40 Level(6,Enemy,0)     [16,7] 0x0 0x0 0x0 0x0 [KillingEdge,SwiftSword,Vuln] PWHAI
+//UNIT Sasha Myrmidon_F 0x40 Level(6,Enemy,0)     [7,10] 0x0 0x0 0x0 0x0 [KillingEdge,SwiftSword,Vuln] PWHAI
 
 // Snag attackers
 UNIT 0x84 Fighter 0x40 Level(4,Enemy,1)     [1,9] 0x0 0x0 0x0 0x0 [IronAxe] AttackWallsAI

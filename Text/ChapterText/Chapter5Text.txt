@@ -1,161 +1,239 @@
 
 ## TEXT_Ch5_Start_Celia
-[ConversationText]
-[MidLeft][LoadCelia][MidRight][LoadRowan]
+[MidRight][LoadRowan][MidLeft][LoadCelia]
+[MidLeft][1LB]
+Morning, Rowan.[AN]
+[MidRight][2LB]
+Morning? It's afternoon already.[N]
+How can you possibly sleep so much?[AN]
 [MidLeft]
-Morning, Rowan.
-[MidRight]
-Morning? It's afternoon already. How can you possibly sleep so much?
-[MidLeft]
-But it's so boring! There's nothing for me to do! I thought this trip would be fun, but you just play with your swords all day.
-[MidRight]
-It's not playing, it's training! How am I supposed to keep you safe if I slack on training?
-[MidLeft]
-This wouldn't be a problem if you'd teach me to fight. I'm an adult, I should be able to protect myself.
-[MidRight]
-Like I said last the last time, no way. You'll only end up hurting yourself unless you build some muscle.
-[MidLeft]
-Isn't being fast and flexible enough? It works for you.
-[MidRight]
-It's true that my style of swordfightning emphasizes speed over power, but I doubt you're even strong enough to swing a sword.
-[MidLeft]
-Fine, I'll just have to get stronger then! Wait, it sounds like there's some sort of commotion going on outside.
-[MidRight]
-Stay here, I'll check it out.
+But I'm so bored, there's nothing for[N]
+me to do![AN]
+I thought this trip would be fun,[N]
+but we spend so much time walking,[AN]
+and whenever we're not, you just[N]
+play with your swords all day![AN]
+[MR]
+It's not playing, it's training![AN]
+How am I supposed to keep you safe[N]
+if I slack on training?[AN]
+[ML]
+This wouldn't be a problem if you'd[N]
+teach me to fight.[AN]
+I'm no child, I should be able to[N]
+protect myself.[AN]
+[MR]
+Like I said the last ten times, no way.[AN]
+You'll only end up injuring yourself[N]
+unless you build some muscle first.[AN]
+[ML]
+Isn't being fast and flexible enough?[N]
+It works for you.[AN]
+[MR][3LB]
+It's true that my style of swordplay[N]
+emphasizes speed over power, but I'm[N]
+still strong enough to swing a sword.[AN]
+[ML][2LB]
+Fine, I'll just get stronger, and[N]
+Then you'll have to teach me![AN]
+Hm, what's all that noise outside?[N]
+That's a whole lot of commotion.[AN]
+[MR][1LB]
+Stay here, I'll check it out.[AN]
 [X]
 
 ## TEXT_Ch5_Start_Boss
 [ConversationText]
 [Left][LoadCh5Boss]
 [Left]
-Listen up boys, there's not a soldier in sight, so this port's ours for the taking! This'll be our greatest haul yet!
+Take a good look, lads.[AN]
+Not a solider in sight, which means[N]
+this port's ours for the taking![AN]
 [X]
 
 ## TEXT_Ch5_Start_Celia2
-[ConversationText]
 [MidLeft][LoadCelia][FarFarRight][LoadRowan]
 [FarFarRight][MoveMidRight]
 [MidRight]
-Pirates are attacking! I'll protect you, so stay inside!
-[MidLeft]
-But-
-[MidRight]
-Don't even think about leaving until I come back. It's for your own good.
+Pirates are attacking![N]
+I'll protect you, so stay inside![AN]
+[MidLeft][1LB]
+But-[AN]
+[MidRight][2LB]
+Don't even think about leaving until[N]
+I come back. It's for your own safety.[AN]
 [MidRight][ClearFace]
 [MidLeft]
-What a jerk...[ToggleRed]I'll just sneak out in three minutes or so and prove that I can help![ToggleRed]
+How rude...[AN]
+[ToggleRed]I'll just sneak out in three minutes[N]
+or so and prove that I can help![ToggleRed][AN]
 [X]
 
 ## TEXT_Ch5_Start_Rowan
-[ConversationText]
 [Right][LoadRowan]
 [Right]
-There's so many of them... No matter, I've been training for this for years. I'll prove just how far I've come!
+There's so many of them... No matter,[N]
+I've been training for this for years.[AN]
+I'll prove just how far I've come![AN]
 [X]
 
-
 ## TEXT_Ch5_Start_Edgar
-[ConversationText]
 [MidLeft][LoadEdgar][FarFarRight][LoadNico]
 [FarFarRight][MoveMidRight]
 [MidRight]
-Bad news, pirates are storming the port! They've already docked three ships.
+Bad news, pirates are storming the port![N]
+They've already docked three ships.[AN]
+[MidLeft][1LB]
+How's the situation look?[AN]
+[MidRight][2LB]
+Not good, they's a whole lot of them[N]
+and I didn't see any guards around.[AN]
+Don't think we can expect much help.[AN]
 [MidLeft]
-How's the situation look?
-[MidRight]
-Not good, we're badly outnumbered and I didn't see any guards around. Don't think we can expect much help.
-[MidLeft]
-Damn... Even so, fleeing isn't an option. If we can't take on a handful of pirates, how could we hope to face Galt's army?
-Get everyone ready for battle, we'll protect Port Krast with all our might!
+Damn... Even so, fleeing isn't an option.[AN]
+If we can't take on a handful of pirates,[N]
+how could we hope to face the army?[AN]
+Get everyone ready for battle, we'll[N]
+protect Port Krast with all our might![AN]
 [MidRight][ClearFace]
 [MidRight][LoadJane]
-[MidRight]
-Looks like you're back on your feet.
-[MidLeft]
-Can't say I don't have my doubts, but I've made my choice, and I intend to see it through. Everyone's counting on me, I can't let my worries hurt morale.
-[MidRight]
-Good, keep it up and we may actually have a chance. We could use a victory here, and I could use the practice.
+[MidRight][1LB]
+Looks like you're back on your feet.[AN]
+[MidLeft][3LB]
+Can't say I don't have my doubts, but[N]
+I've made my choice, and I intend to[N]
+see it through.[AN]
+Everyone's counting on me, I can't let[N]
+my worries hurt morale.[AN]
+[MidRight][2LB]
+Good, keep it up and we may actually[N]
+have a chance.[AN]
+We could use a victory here, and[N]
+I could use the practice.[AN]
 [X]
 
 ## TEXT_Ch5_Start_Justin
-[ConversationText]
 [R][LoadJustin]
-[R]Pirates again? If only I could fight them myself... Alas, all I can do is pray for help to arrive.
+Pirates again? If only I could fight[N]
+them myself...[AN]
+Alas, all I can do is pray for help[N]
+to arrive.[AN]
 [X]
 
 ## TEXT_Ch5_GreenInfo
-Most green units will automatically[NL]
-join at the start of the[NL]
-chapter. Some, such as this[NL]
-pegasus knight, will move[NL]
-prior to joining.[A][X]
+Green units will often automatically[NL]
+join at the start of the chapter[NL]
+Some, such as this pegasus knight[NL]
+will move prior to joining.[A][X]
 
 ## TEXT_Ch5_Violet_Event
-[ConversationText]
 [MidLeft][LoadEdgar][FarFarRight][LoadViolet]
 [FarFarRight][MoveMidRight]
+[MidRight][3LB]
+How interesting...[N]
+I don't know who you are, but it takes[N]
+guts to pick a fight with these pirates.[AN]
+[MidLeft][2LB]
+Of course. We can handle them, no[N]
+matter how many there are.[AN]
 [MidRight]
-How interesting... You really intend to fight these pirates?
+I should warn you, they're a real tough[N]
+bunch. Even the military fears them.[AN]
+If you value your lives, I suggest[N]
+fleeing while you can.[AN]
 [MidLeft]
-Of course. They may outnumber us, but every one of my companions is worth at least ten of them!
+Thanks for your concern, but I have[N]
+no intention of losing here.[AN]
 [MidRight]
-I should warn you, they look to be lead by Carter the Cruel. Even the army fears him and his crew. I suggest fleeing while you can.
-[MidLeft]
-It doesn't matter, I have no intention of losing here.
-[MidRight]
-Hahaha, I like your confidence! Well then, I suppose I'll help you out for now. If by some miracle we manage to win, I'll land a promotion for sure!
+Haha, I like your confidence![N]
+I suppose I'll help you out for now.[AN]
+If by some miracle we manage to win,[N]
+I'll land a promotion for sure![AN]
 [MidRight][ClearFace]
 [MidLeft]
-She's clearly a soldier... I don't know if I can trust her, but for now I'll take all the help I can get.
+She's clearly a solider, but it seems[N]
+seem she doesn't know who we are.[AN]
+I won't turn down help, but I hope she[N]
+doesn't cause trouble for us later.[AN]
 [X]
 
 ## TEXT_Ch5_Celia_Event
-[ConversationText]
-[Left][LoadCelia]
-I can't hide inside while Rowan's fighting by himself. I may not be able to swing a sword, but I can still help with my dance!
-I've finally gotten the hang of this rune too, I can't wait to see the look on Rowan's face when I invoke it.
+[Left][LoadCelia][3LB]
+I can't hide inside while Rowan's[N]
+fighting by all by himself.[AN]
+I may not be able to swing a sword,[N]
+but I can still help with my dance![AN]
+I've finally gotten the hang of this[N]
+rune too, I can't wait to see the look[N]
+on Rowan's face when I invoke it.[AN]
 [X]
 
 ## TEXT_Ch5_Ted_Event
-[ConversationText]
 [Right][LoadTed]
 [Right]
-The port's already a bloodbath... What a fool I was, thinking I could be a pirate. For now I'll pretend to join in,[ToggleRed]but I don't plan on hurting anyone.[ToggleRed]
+The port's already a bloodbath...[AN]
+What a fool I was, thinking I could[N]
+be a pirate.[AN]
+For now I'll pretend to join in, [ToggleRed]but[N]
+I don't plan on hurting anyone.[ToggleRed][AN]
 [X]
 
 ## TEXT_Ch5_Boss_Event
-[ConversationText]
 [Left][LoadCh5Boss]
 [Left]
-They're fighting back?! They've got some guts challenging my crew! Time for me to get a piece of the action!
+They're fighting back?! They've[N]
+got some guts challenging my crew![AN]
+Time for me to get in on the action![AN]
 [X]
 
 ## TEXT_Ch5_Celia_Ted_Talk
-[ConversationText]
 [MidLeft][LoadCelia][MidRight][LoadTed]
 [MidRight]
-What's an unarmed woman doing out here? It's too dangerous, get back inside before you get hurt!
+What's an unarmed woman doing out here?[AN]
+It's dangerous, get back inside before[N]
+you get hurt![AN]
 [MidLeft]
-I'm not going anywhere! What gives a ruffian like you the right to boss me around? You and your band of thieves are the ones who need to leave!
+I'm not going anywhere! What gives a thug[N]
+like you the right to boss me around?[AN]
+You and your band of brutes are the[N]
+ones who need to leave![AN]
 [MidRight]
-I don't want to hurt you, but I can't say the same about the rest of us. You're lucky you ran into me first.
+I don't want to hurt you, but I can't[N]
+say the same about the rest of us.[AN]
+You're lucky you ran into me first.[AN]
 [MidLeft]
-Even without a weapon I can help keep this port safe from fiends like you. Trying to ease your guilt like this is simply pathetic! You think yourself any better than the rest of your crew? Don't make me laugh.
+Even without a weapon I can help keep[N]
+people safe from villains like you.[AN]
+Trying to ease your guilt like this[N]
+is simply pathetic![AN]
+You think yourself any better than the[N]
+rest of your crew? Don't make me laugh.[AN]
 [MidRight]
-You've got me there. Guess I've been a bit of a hypocrite, huh. Alright then, looks like I'll have to protect you myself.
-[MidLeft]
-Huh? Are you still confused?
-[MidRight]
-I didn't want to admit it, but I made a grave mistake joining this crew. You've convinced me to do what's right, no matter how difficult. From now on, I'll fight for justice! I'll help you protect this port and drive off my old crew!
+You've got me there. Guess I've been[N]
+a bit of a hypocrite, huh.[AN]
+Alright then, looks like I'll have[N]
+to protect you myself.[AN]
+[MidLeft][1LB]
+Huh? Are you still confused?[AN]
+[MidRight][2LB]
+I didn't want to admit it, but I made a[N]
+grave mistake joining this crew.[AN]
+You've convinced me to do what's right,[N]
+no matter how difficult.[AN]
+From now on, I'll fight for justice![AN]
 [MidRight][ClearFace]
 [MidLeft]
-That was weird. Oh well, one less pirate to worry about.
+That was weird. Oh well, one less[N]
+bad guy to worry about.[AN]
 [X]
 
 ## TEXT_Ch5_Village_Justin
-[ConversationText]
 [MidLeft][LoadJustin][MidRight][LoadFace][CurrentPortrait]
-[MidLeft]You're here to protect the townspeople? Then you'll have my aid. I cannot wield a weapon, but I can keep you safe with my staves.
+[MidLeft]
+You're here to protect the townspeople?[N]
+Then my prayers have been answered.[AN]
+I cannot wield a weapon, but I'll keep[N]
+you safe with my staves.[AN]
 [X]
 
 ## TEXT_Ch5_Village_Rune
@@ -165,6 +243,13 @@ That was weird. Oh well, one less pirate to worry about.
 Do you know how runes work? Well I don't! I got this ages ago and it's sitting here collecting dust. You can keep it if you want, I've no use for it.
 [X]
 
+## TEXT_Ch5_Village_Silence
+[ConversationText]
+[MidLeft][LoadFace][0x5A][0x01][MidRight][LoadFace][CurrentPortrait]
+[MidLeft]
+Ever get tired of people talking your ear off? Well, I've got just the thing for you! No need to thank me, just get rid of these pirates so I can get back to my nap.
+[X]
+
 ## TEXT_Ch5_Village_Longbow
 [ConversationText]
 [MidLeft][LoadFace][0x5A][0x01][MidRight][LoadFace][CurrentPortrait]
@@ -172,25 +257,32 @@ Do you know how runes work? Well I don't! I got this ages ago and it's sitting h
 I tried using this bow against the pirates, but my aim just isn't good enough. I'll bet one of you folk can handle it better than me.
 [X]
 
-## TEXT_Ch5_Village_RubySword
+## TEXT_Ch5_Village_WindSword
 [ConversationText]
 [MidLeft][LoadFace][0x5B][0x01][MidRight][LoadFace][CurrentPortrait]
 [MidLeft]
 My fighting days are behind me, I can't even swing this sword without my back aching anymore. You can have it, so long as you put it to good use.
 [X]
 
+## TEXT_Ch5_Village_Naginata
+[ConversationText]
+[MidLeft][LoadFace][0x5C][0x01][MidRight][LoadFace][CurrentPortrait]
+[MidLeft]
+You're here to protect us? You have my thanks. Take this spear as a token of my gratitude.
+[X]
+
 ## TEXT_Ch5_Village_KillerLance
 [ConversationText]
-[MidLeft][LoadFace][0x58][0x01][MidRight][LoadFace][CurrentPortrait]
+[MidLeft][LoadFace][0x5C][0x01][MidRight][LoadFace][CurrentPortrait]
 [MidLeft]
-In my youth, I killed countless evildoers with this lance. Now, I pass my legacy onto you! Take it, and slay these pirates!
+You'll keep us safe? Please take this lance as a token of my appreciation. You look good at killing, so I bet this killer lance will be the perfect weapon for you!
 [X]
 
 ## TEXT_Ch5_Village_KillerAxe
 [ConversationText]
-[MidLeft][LoadFace][0x5C][0x01][MidRight][LoadFace][CurrentPortrait]
+[MidLeft][LoadFace][0x58][0x01][MidRight][LoadFace][CurrentPortrait]
 [MidLeft]
-You'll keep us safe? Please take this axe as a token of my appreciation. You look good at killing, so I bet this killer axe will be the perfect weapon for you!
+In my youth, I killed countless evildoers with this axe. Now, I pass my legacy onto you! Take it, and slay these pirates!
 [X]
 
 ## TEXT_Ch5_ThiefInfo
@@ -200,63 +292,178 @@ and go straight for[NL]
 the villages![A][X]
 
 ## TEXT_Ch5_End0
-[ConversationText]
 [ML][LoadCelia][MR][LoadRowan]
-[MR]Princess, what are you doing out here? You could have gotten yourself killed!
-[ML]Never mind that, I... I need to check something. Sorry, I'll explain later.
+[MR]
+Princess, what are you doing out here?[N]
+You could have gotten yourself killed![AN]
+[ML]
+Never mind that, I...[N]
+I need to check something.[AN]
+Sorry, I'll explain later.[AN]
 [ML][MoveFarFarRight]
 [X]
 
 ## TEXT_Ch5_End
-[ConversationText]
 [ML][LoadCelia][MR][LoadEdgar]
-[ML]Edgar? Is that really you?
-[MR]Celia... It's been a while. What are you doing here?
-[ML]What am *I* doing here? I'm not the one who's supposed to be dead! I can't believe it... It's like I'm looking at a ghost.
-[MR]I'm not that easy to kill... Is what I'd like to say. Truthfully, I'm lucky to be alive.
-But Celia, I never imagined I'd see you on a battlefield. I know how much you abhor violence. Are you trying to get yourself killed?
-[ML]You're right, I do hate it, but I couldn't leave the poor townspeople at the mercy of these pirates. You understand, right? You're the same, playing vigilante like this.
-[MR]Vigilante? No, I was just in the right place at the right time. Still, why are you here at all, so far from Kemaroa? Melerra is a dangerous place these days.
-[ML]A friend of mine is on a journey of self-improvement, some sort of rite of passage for Kemaroan swordsmen. I've been dying for a chance to get away from the palace, so I tagged along.
-[MR]Is everything alright up there? I admit I know little of how the war with Galt is going.
-[ML]That's not the reason, I just couldn't bear to stay there any longer. It's... suffocating. But enough about me, seriously, what are you doing here? I can't imagine you fight pirates for fun.
-[MR]It's a very long story, I'll fill you in back at the inn.
+[ML][1LB]
+Edgar? Is that really you?
+[MR][2LB]
+Celia... It's been a while.[N]
+What are you doing here?[AN]
+[ML]
+What am *I* doing here? I'm not the[N]
+one everyone thinks is dead![AN]
+I can't believe it...[N]
+It's like I'm looking at a ghost.[AN]
+[MR]
+I'm not that easy to kill...[N]
+Is what I'd like to say.[AN]
+Truthfully, I'm lucky to be alive.[AN]
+But Celia, I never imagined I'd see[N]
+you on a battlefield.[AN]
+I know how much you hate violence.[N]
+Are you trying to get yourself killed?[AN]
+[ML]
+Yeah, I hate it. I still get a bit[N]
+squeamish at the sight of blood.[AN]
+But even so, I couldn't just cower[N]
+and hide! You understand, right?[AN]
+You're the same, playing vigilante[N]
+like this.[AN]
+[MR]
+Vigilante? No, I was just in the right[N]
+place at the right time.[AN]
+Still, why are you here at all, so far[N]
+from Kemaroa?[AN]
+Melerra is a dangerous place these days.[AN]
+[ML][3LB]
+A friend of mine is on a journey of[N]
+self-improvement, some sort of rite[N]
+of passage for Kemaroan swordsmen.[AN]
+I was dying for a chance to get out[N]
+of the palace, so I tagged along.[AN]
+[MR]
+Is everything alright up there?[N]
+I admit, I know little of how the[N]
+war with Galt is going.[AN]
+[ML][2LB]
+It's not great, but we're holding them[N]
+off. For now, at least.[AN]
+That's not why I'm here though, I just[N]
+couldn't bear to stay there any longer.[AN]
+It's... suffocating.[AN]
+But enough about me, seriously, what[N]
+are you doing here?[AN]
+I can't imagine you fight pirates[N]
+for fun.[AN]
+[MR]
+It's a very, very long story.[N]
+I'll fill you in back at the inn.[AN]
 [X]
 
 ## TEXT_Ch5_End2
-[ConversationText]
 [ML][LoadCelia][MR][LoadEdgar]
-[ML]That's quite a lot to take in. You really mean to seize the capital with your numbers?
-I know little of warfare, but armies are usually much bigger than this.
-[MR]I know it won't be easy, but I believe we can do it. Failure isn't an option, so we'll make it happen no matter the odds.
-[ML]If you're that confident... Alright, then. Rowan!
+[ML]That's quite a lot to take in.[AN]
+You really mean to seize the capital[N]
+with your numbers?[AN]
+I'm no strategist, but that sounds[N]
+completely suicidal.[AN]
+[MR]
+I know it won't be easy, but I really[N]
+believe we can do it.[AN]
+Failure isn't an option, so we'll[N]
+make it happen no matter the odds.[AN]
+[ML]
+If you're that confident...[N]
+Alright, then. Rowan![AN]
+[CloseSpeechSlow]
 [ML][MoveLeft]
-[FL][LoadRowan]
-[FL]Yes, princess?
-[L]We're going to help Edgar retake the throne of Melerra.
-[FL]What?!
-[MR]What?!
-[FL]Princess, must I remind you that you can hardly lift a weapon? The battlefield is no place for you.
-[MR]Sorry, Celia, I have to agree. I couldn't bear it if you were hurt under my watch.
-[L]Even if I can't swing a sword, I can still help in battle. Surely you've realized my dances are not just for show.
-[FL]I've been meaning to ask about that, as much as I hate to admit it, they have an uncanny ability to make me feel rejuvenated.
-[L]That's right! Few dancers can do this, but I weave a little magic into mine.
-[FL]I'd rather keep you out of harm's way, but I know better than to talk you out of something you've set your mind to.
-[MR]Alright, you can come with us, but if you're ever in danger, please prioritize your safety.
-[L]Don't worry, I don't plan on dying so soon.
+[FL][LoadRowan][1LB]
+Yes, princess?[AN]
+[L][2LB]
+We're going to help Edgar retake[N]
+the throne of Melerra.[AN]
+[FL][1LB]
+What?![AN]
+[MR]
+What?![AN]
+[FL][2LB]
+Must I remind you that you can hardly[N]
+lift a weapon?[AN]
+The battlefield is no place for you.[AN]
+[MR]
+Sorry, Celia, I have to agree.[AN]
+I couldn't bear for you to get[N]
+hurt on my watch.[AN]
+[FL]
+Not to mention, the queen would have[N]
+my head on a pike.[AN]
+[L]
+Ugh, she's way too overprotective.[AN]
+Anyway, even if I can't swing a sword,[N]
+I can still help in battle.[AN]
+Surely you've realized my dances[N]
+are not just for show.[AN]
+[FL]
+I've been meaning to ask about that.[N]
+You weave some magic into them, right?[AN]
+They have an uncanny ability to make[N]
+me feel focused and rejuvenated.[AN]
+[L]
+That's right. Not just any dancer can[N]
+do this, it's my special technique![AN]
+[FL]
+I'm not going to be able to talk you[N]
+out of this, am I?[AN]
+[MR][3LB]
+Alright, you can come with us, but if[N]
+you're ever in danger, prioritize[N]
+your own safety.[AN]
+[L][2LB]
+Don't worry, I plan on[N]
+living a long life.[AN]
 [X]
 
 ## TEXT_Ch5_End_Violet
-[ConversationText]
 [ML][LoadViolet][MR][LoadNico]
-[ML]I hear you're headed to the capital. Mind if I tag along?
-[MR]I'm afraid you've got the wrong man, I'm not in charge here.
-[ML]Ah right, you're the other blue-haired fellow. Still, you look like a pretty important guy. I should have realized from the start, but it figures the only people who'd stand up to pirates would be plotting against our government.
-[MR]Doesn't this make us enemies?
-[ML]I guess, but I don't really wanna fight you guys.
-[MR]You mean you plan to defect?
-[ML]I'm no fan of Lord Louis, but there are people I care about stationed in the capital. So long as I don't have to fight them, I can help you out. Either way, if word gets out that I helped you guys I'll be thrown in prison for sure.
-[MR]We'll be happy to have you along then.
-[ML][ClearFace]
-[MR]This should be fine, right? She seems earnest enough. I hope I made the right call.
+[ML]
+I hear you're headed to the capital.[N]
+Mind if I tag along?[AN]
+[MR]
+I'm afraid you've got the wrong man,[N]
+I'm not in charge here.[AN]
+[ML][3LB]
+Ah right, you're the other blue-haired[N]
+fellow. Still, you look like a pretty[N]
+important guy.[AN]
+I should have realized from the start,[N]
+but it figures the only people who'd[N]
+stand up to pirates would be rebels.[AN]
+[MR][1LB]
+Doesn't this make us enemies?[AN]
+[ML][2LB]
+I guess, but I don't really wanna[N]
+fight you.[AN]
+[MR][1LB]
+You mean you plan to defect?[AN]
+[ML][3LB]
+I'm no fan of the regent or the empire,[N]
+but there are people I care about[N]
+stationed in the capital.[AN]
+So long as I don't have to fight them,[N]
+I can help you out.[AN]
+Besides, if word gets out that I helped[N]
+you guys I'll be thrown in prison.[AN]
+[MR][2LB]
+Then you can tag along, but I'll be[N]
+keeping my eye on you.[AN]
+Don't get any silly ideas of leaking[N]
+our plans or whereabouts.[AN]
+[ML][1LB]
+Thanks, you won't regret it![AN]
+[ClearFace]
+[MR][2LB]
+This should be fine, right?[N]
+She seems earnest enough.[AN]
+I hope I made the right call.[AN]
 [X]

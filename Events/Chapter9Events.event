@@ -172,7 +172,6 @@ UNIT 0x49 Sentinel 0x40 Level(17,Enemy,0)     [1,1] 0x0 0x0 0x0 0x0 [SilverLance
 UNIT 0x50 Warrior 0x40 Level(16,Enemy,0)     [17,2] 0x0 0x0 0x0 0x0 [SilverAxe,SteelBow] AIRAI
 
 //UNIT 0x80 Hero 0x40 Level(1,Enemy,1)     [0,0] 0x0 0x0 0x0 0x0 [SilverSword] NeverMoveAI
-
 //UNIT 0x80 Ballistician 0x40 Level(Ch9EnemyLvl,Enemy,1)     [6,14] 0x0 0x0 0x0 0x0 [Ballista] NeverMoveAI
 //UNIT 0x80 Ballistician 0x40 Level(Ch9EnemyLvl,Enemy,1)     [8,14] 0x0 0x0 0x0 0x0 [Ballista] NeverMoveAI
 UNIT 0x80 Ballistician 0x40 Level(Ch9EnemyLvl,Enemy,1)     [7,14] 0x0 0x0 0x0 0x0 [Ballista] NeverMoveAI
@@ -182,8 +181,6 @@ UNIT 0x80 Ballistician 0x40 Level(Ch9EnemyLvl,Enemy,1)     [17,4] 0x0 0x0 0x0 0x
 //UNIT 0x80 Ballistician 0x40 Level(Ch9EnemyLvl,Enemy,1)     [14,6] 0x0 0x0 0x0 0x0 [Ballista] NeverMoveAI
 UNIT 0x80 Fleet 0x40 Level(Ch9EnemyLvl,Enemy,1)     [10,10] 0x0 0x0 0x0 0x0 [Ballista] NeverMoveAI
 //UNIT 0x80 Fleet 0x40 Level(Ch9EnemyLvl,Enemy,1)     [11,15] 0x0 0x0 0x0 0x0 [Ballista] NeverMoveAI
-
-//UNIT 0x80 Revenant 0x40 Level(Ch9EnemyLvl,Enemy,0)     [1,2] 0x0 0x0 0x0 0x0 [Ballista] EscapeAI
 UNIT
 
 EnemyUnits2:
@@ -360,6 +357,7 @@ LoadEnemies(EnemyUnits5)
 LoadEnemies(EnemyUnits6)
 LoadEnemies(EnemyUnits7)
 
+
 //LoadEnemies(EnemyUnitsTest)
 //LoadEnemies(EnemyUnitsTest2)
 
@@ -370,6 +368,13 @@ LoadPlayerUnits(Units1)
 
 //GiveItem(Mend,Marie)
 //GiveItem(Wyrmslayer,Patrick)
+
+MUSC Langrisser_Story
+SetBackground(0x21)
+TUTORIALTEXTBOXSTART
+CenterTutorialTextBox
+TEXTSHOW TEXT_Ch9_Intro
+TEXTEND
 
 GotoPrepScreen
 

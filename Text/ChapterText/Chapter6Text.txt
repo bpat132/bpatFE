@@ -1,38 +1,89 @@
 
 ## TEXT_Ch6_Start
-[ConversationText]
 [ML][LoadCelia][MR][LoadEdgar]
-[ML]Ugh, this place is disgusting! Out of all the routes to the capital, why must we travel this way?
-[MR]With our numbers, it's important we remain unnoticed as long as possible. The army doesn't patrol these parts, so we're unlikely to encounter anyone but bandits and treasure hunters.
-[ML]I suppose it's better to run into bandits than the army. Still, these ruins creep me out, I can't believe this used to be a city. Feels like we might accidentally unleash an ancient evil.
-[MR]You read too many stories.[.4]
-Watch your step!
-[ML][MoveMidLeft]
-[ML]Ah! This is terrible... Wait, Edgar, look over there. Hopefully those men are treasure hunters rather than bandits.
-[MR]They don't look armed, let's go and see. There's only two of them.
+[ML]
+Ugh, this place is disgusting![AN]
+Out of all the routes to teh capital,[N]
+why must we travel this way?[AN]
+[MR]
+It's important we remain unnoticed for[N]
+as long as possible.[AN]
+The army doesn't patrol these parts,[N]
+so it should be our safest route.[AN]
+We're unlikely to encounter anyone but[N]
+scavengers and treasure hunters.[AN]
+[ML][3LB]
+I suppose that beats running into the[N]
+army. Still, these ruins creep me out,[N]
+I can't believe this used to be a city.[AN]
+Feels like we might accidentally[N]
+unleash an ancient evil.[AN]
+[MR][2LB]
+You read too many stories.[.4][N]
+Watch your step![AN]
+[ML]
+Ah! This is terrible...[AN]
+Wait, look over there.[N]
+Seems we have company.[AN]
+Hopefully they're just[N]
+treasure hunters.[AN]
+[MR]
+Let's go and see, there's only[N]
+two of them so it should be safe.[AN]
 [X]
 
 ## TEXT_Ch6_Start2
-[ConversationText]
 [FL][LoadCelia][L][LoadEdgar][R][LoadQuentin][FR][LoadThomas]
-[FR]Damn, how many of these goons are there? Looks like we'll have to fight our way out after all.
-[R]Not a step closer! Back off or I'll blast you to pieces!
-[FL]Wait, wait! We're not looking to fight you, we're just passing through.
-[L]Are you two in some kind of trouble?
-[R]We were trying to salvage artifacts and tomes from these ruins. Turns out some bandits made these ruins their camp, and took offense to our intrusion.
-[FR]They must have had the same idea as us. No doubt the treasure here is valuable, but it'd be a shame for it to all be looted and sold off.
-[R]We can worry about that later, Thomas. They're not gonna let us through without a fight.
-[L]Is there no way around them?
-[FR]Afraid not, the other passages we found are completely submerged.
-[L]We've got little choice but to fight our way through then. You'll help too, right?
-[R]Of course, the two of us have studied magic for years. I assure you, we can hold our own in battle.
+[FR]
+How many of these goons are there?[AN]
+Looks like we'll have to fight our[N]
+way out after all.[AN]
+[R]
+Not a step closer![N]
+Back off or I'll blast you to pieces![AN]
+[FL]
+Wait, wait! We're not looking to pick[N]
+a fight, we're just passing through.[AN]
+Do we look like highwaymen to you?[AN]
+[L][1LB]
+Are you two in some kind of trouble?[AN]
+[R][3LB]
+We're on an archeological expedition,[N]
+looking to uncover lost artifacts from[N]
+these ruins.[AN]
+Turns out some bandits made this place[N]
+their camp, and took offense.[AN]
+[FR]
+They must have the same idea as us.[N]
+No doubt the treasure here is valuable,[AN]
+but it'd be a shame for it to be[N]
+looted and sold off.[AN]
+[R]
+Never mind that, Thomas. They're not[N]
+gonna let us through without a fight.[AN]
+[L][1LB]
+Is there no way around them?[AN]
+[FR]
+Afraid not, the other passages we[N]
+found are completely submerged[AN]
+[L]
+Then we've got little choice but to[N]
+fight our way through.[AN]
+Can I count on your help?[AN]
+[R]
+Of course, we graduated at the top[N]
+of our class at the academy.[AN]
+We can hold our own.[AN]
 [X]
 
 ## TEXT_Ch6_Start_Lucy
-[ConversationText]
 [L][LoadLucy]
-I ought to thank them for leading me to all this treasure.
-Should be easy to slip away with the loot while everyone's busy killing each other, then all I'll have to do is find somewhere to pawn it off.
+I ought to thank them for leading me[N]
+to all this treasure.[AN]
+It'll be easy to slip away with the loot[N]
+while everyone's busy killing each other,[AN]
+then all I'll have to do is find somewhere[N]
+to pawn it off.[AN]
 [X]
 
 ## TEXT_Ch6_AntiturtleInfo
@@ -49,44 +100,107 @@ Okay thanks.
 [X]
 
 ## TEXT_Ch6_Celia_Lucy_Talk
-[ConversationText]
 [ML][LoadCelia][FFR][LoadLucy]
 [FFR][MoveLeft]
 [L][MoveMidRight]
-[ML]Ah, wait!
-[MR]Shouldn't show off jewelry you aren't willing to part with around here. Consider this a learning experience.
-[ML]No, that's not it. I- I want to hire you!
-[MR]Huh?
-[ML]You don't look like such a bad person; you're not trying to kill us like the rest of your friends. And we could use someone with your unique skills.
-[MR]Right... And why should I trust you? Most people don't offer jobs to someone who just robbed them.
-[ML]I'm not like most people. Anyway, I'm sure you'll be better off with us than hanging around bandits. And you can keep that bracelet, think of it as part of your fee.
-[MR]Hahaha, you know what? Sure, I'll do it. You're the weirdest rich lady I've ever met, but I can't help but trust you when you say all that with a straight face.
-Can't say I'm the greatest fighter around, but if you need something stolen or a lock picked then I'm your girl.
+[ML][1LB]
+Ah, wait![AN]
+[MR][2LB]
+Shouldn't show off jewelry you aren't[N]
+willing to part with around here.[AN]
+Consider this a learning experience.[AN]
+[ML]
+No, that's not it.[N]
+I- I want to hire you![AN]
+[MR][1LB]
+Huh?[AN]
+[ML][2LB]
+You don't look like such a bad person;[N]
+you're at least not trying to kill us.[AN]
+Plus, we could use someone with your...[N]
+[q]unique" skills.[AN]
+[MR]
+Right... and why should I trust you?[AN]
+Most people don't offer jobs to[N]
+someone who just robbed them.[AN]
+[ML][3LB]
+I'm not like most people, and you'll[N]
+be better off with us than hanging[N]
+around sewer-dwelling bandits.[AN]
+And you can keep that bracelet,[N]
+think of it as part of your fee.[AN]
+[MR]
+Hahaha, you're serious? Sure, I'll do it.[AN]
+You're the weirdest rich lady I've ever[N]
+met, but I can't help but trust you when[N]
+you say all that with a straight face.[AN]
+Can't say I'm the greatest fighter around,[N]
+but if you need some locks or pockets[N]
+picked then I'm your girl.[AN]
 [X]
 
 ## TEXT_Ch6_End
-[ConversationText]
 [FL][LoadCelia][L][LoadEdgar][R][LoadQuentin][FR][LoadThomas]
-[FL]Whew, I think that's the last of them.
-[FR]Thanks for the help back there, you really saved us.
-[L]If anything, you helped us. Those thugs weren't going to let us through without a fight.
-[R]I don't mean to sound ungreatful, but Who are you anyway? It's hard to believe the army would deploy troops here of all places.
-[L]Well..
-[FL]Edgar here's the lost prince of Melerra. We're going to retake this country from Galt's clutches.
-[R]You're serious? Then what are you doing all the way out here?
-[L]We're hoping to avoid the army until we near the capital. Like you said, there won't be any soldiers here.
-[FR]I don't know much about military matters but aren't armies usually much larger than this? With a force of this size, a surprise attack indeed be your best bet.
-[L]Yes, we're a bit outnumbered, but we'll manage all the same.
-[R]Hey, I have an idea. Thomas and I will help you out, and in exchange, grant us access to the castle's archives.
-[FR]I don't appreciate being volunteered, but this would be an agreeable arrangement.
-I hear it even rivals Sresa's grand library.
-[L]Sure, we could certainly use your help. Should we prove victorious, you can browse the archives to your hearts' content.
+[FL]
+Whew, I think that's[N]
+the last of them.[AN]
+[FR]
+Thanks for the help,[N]
+you really saved us.[AN]
+[L]
+If anything, you helped us.[AN]
+Those thugs weren't going to[N]
+let us pass through either.[AN]
+[R]
+I don't mean to sound ungrateful,[N]
+but who are you anyway?[AN]
+The army wouldn't send troops[N]
+somewhere like this.[AN]
+[L][1LB]
+Well...[AN]
+[FL][2LB]
+Edgar here's the prince of Melerra.[AN]
+We're going to retake this country[N]
+from Galt's clutches![AN]
+Pretty exciting, right?[AN]
+[R]
+For real? Then what are you[N]
+doing all the way out here?[AN]
+[L]
+We're hoping to avoid the army[N]
+on our way to the capital.[AN]
+Like you said, there won't be[N]
+any soldiers here[AN]
+[FR]
+I know little about military matters,[N]
+but your group looks a bit small.[AN]
+With a force of this size, a surprise[N]
+attack does seem ideal.[AN]
+[L]
+Yeah, we're outnumbered so we have[N]
+to take any advantage we can get.[AN]
+[R]
+Hey, I have an idea.[N]
+How about Thomas and I help you out,[AN]
+and in exchange, should you prevail,[N]
+grant us access to the castle's archives[AN]
+[FR]
+I don't appreciate being volunteered,[N]
+but I'm on board.[AN]
+They say its collection rivals the[N]
+citadel's grand library.[AN]
+What say you, prince?[AN]
+[L]
+Sounds good to me.[AN]
+If we prove victorious, you can browse[N]
+the archives to your hearts' content.[AN]
 [X]
 
 ## TEXT_Ch6_End_DevilAxe
-[ConversationText]
 [L][LoadLucy]
-Huh, what's this? Looks a little scary, but maybe someone will find it useful?
+Huh, what's this?[AN]
+Looks a little scary, but maybe[N]
+someone will find it useful?[AN]
 [X]
 
 

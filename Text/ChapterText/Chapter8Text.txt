@@ -1,80 +1,200 @@
 
 ## TEXT_Ch8_Start_Victoria
-[ConversationText]
 [L][LoadVictoria]
-[L]This is bad... If they beat Lord Jeffery, that means I'm next! No sense fighting for the losing side, right?
-If I'm gonna die, it sure ain't gonna be protecting the likes of Lord Louis, especially when the stupid talisman they gave me doesn't even work.
-I just gotta find the right moment to defect.
+[L]
+This is bad... If they beat Lord Jeffery,[N]
+that means I'm next![AN]
+No sense fighting for the losing side.[AN]
+If I'm gonna die, it sure ain't gonna[N]
+be protecting the likes of Lord Louis.[AN]
+I just gotta find the right moment to[N]
+defect...[AN]
 [X]
 
 ## TEXT_Ch8_Victoria_Talk
-[ConversationText]
 [ML][LoadVictoria][MR][LoadFace][CurrentPortrait]
-[ML]Today's your lucky day. I'm Victoria, former soldier, current mercenary, and I'm giving you opportunity the to hire me!
-We can talk payment later, after you've seen my lancework in action.
+[ML]
+Hey you, yeah you![AN]
+I'm Victoria, and I'm done with this[N]
+whole soldiering business.[AN]
+Starting today I'm a mercenary, and I'm[N]
+giving you the opportunity to hire me.[AN]
+Aren't you lucky! I'm a real menace with[N]
+a spear.[AN]
+We can talk payment later, after[N]
+you've seen me in action.[AN]
 [X]
 
 ## TEXT_Ch8_Start_Louis
-[ConversationText]
 [ML][LoadLouis][MR][LoadRedSoldier]
-[ML]So Lord Jeffery has fallen, and General Clint has betrayed us...
-[MR]I'm afraid so, milord. I could hardly believe it myself.
-[ML]As much as this pains me to say, what's done is done. We are Melerra's last line of defense, and we will not yield to these interlopers.
-I've prepared a contingency: light barriers to impede the enemy.
-Distribute these talismans to the rest of the castle guard, they will allow you to [ToggleRed]pass through the barriers unhindered.[ToggleRed]
-[MR]Thank you, milord. We will protect the castle with our lives!
-[ML]One more thing,[ToggleRed] eliminate the prisoners.[ToggleRed] They wouldn't hesitate to join the enemy's ranks. We mustn't give them the opportunity.
-[MR]...[N]Understood, milord.
+[ML]
+So Lord Jeffery has fallen, and[N]
+General Clint has betrayed us...[AN]
+[MR]
+I'm afraid so, milord. I could[N]
+hardly believe it myself.[AN]
+[ML][3LB]
+It pains me to say this, but what's[N]
+done is done.[AN]
+We are Melerra's last line of defense,[N]
+and we will not yield to these invaders![AN]
+Distrubte these amulets to the rest of[N]
+the castle guard, they will allow you[N]
+to [ToggleRed]pass through the light barriers.[ToggleRed][AN]
+[MR][2LB]
+Thank you, milord. We will protect[N]
+the castle with our lives![AN]
+[ML]
+One more thing, [ToggleRed]eliminate the prisoners.[ToggleRed][AN]
+They wouldn't hesitate to join the[N]
+enemy's ranks.[AN]
+We mustn't give them the opportunity.[AN]
+[MR]
+...[N]
+Understood, milord.[AN]
 [ClearFace]
-[ML]To think I'd make such a grave miscalculation... I never expected they'd be able to sway Clint, and even then, to best Jeffery?
-I'm not used to having my back against the wall... I'll have to think of an exit strategy if the situation continues to deteriorate.
+[ML]
+This sort of miscalculation is unlike me.[N]
+I never expected they'd sway Clint,[AN]
+and even then, to best Jeffery?[AN]
+I'll have to ready my exit strategy[N]
+in case the situation gets dire.[AN]
+[LoadOverworldFaces]
 [MR][LoadMystery]
-[MR]You aren't thinking of running away, are you? I hope you haven't forgotten our arrangement.
-[ML]Gah! I'll never get used to your habit of sneaking up on me.
-[MR]With luck, you'll be free of me after today. This is a great opportunity for us to ascertain whether Prince Edgar possesses the *****.
-[ML]If he does, then this battle's as good as lost. Could that be how he defeated Lord Jeffery?
-[MR]Not a chance. There are fewer than a dozen mages who could manage such a feat, and none are currently in this country. Aside from me, of course.
-[ML]Then this is our chance. With your help, we can easily rout the prince's forces and interrogate him.
-[MR]My help? You misunderstand. I'm not here to assist you, I'm here to remind you of your obligations.
-[ML]This is absurd! You said it yourself, if we capture the prince, we may learn the whereabouts of the *****.
-I hate to admit it, but the odds aren't looking good for me right now. Are you going to risk letting this chance slip away when with your help, we're certain to win?
-[MR]Don't presume to know my goals. Should you fail, I'll have plenty more opportunities. Prince Edgar's victory may even prove advantageous for me.
-So long you don't do something stupid like killing him without finding out what he knows about the *****. If you do that, or try to flee, I'll kill you myself.
+You aren't thinking of running away,[N]
+are you?[AN]
+You're a coward through and through.[AN]
+[ML]
+Damn witch! I'll never get used to[N]
+your habit of sneaking up on me.[AN]
+[MR][3LB]
+You should know, your friend Jeffery had[N]
+the secret tunnels sealed, so don't bother[N]
+trying to escape.[AN]
+He said it was to keep the prince from[N]
+sneaking through them, but I think he[N]
+didn't want you abandoning your post.[AN]
+What's that old saying, [q]the captain goes[N]
+down with his ship?" You're not much of a[N]
+captain, but it feels appropriate.[AN]
+[ML][2LB]
+So you've come here to gloat?[N]
+Is that it?[AN]
+[MR]
+I won't deny I enjoy making you squirm,[N]
+but I'm really here for another reason.[AN]
+I know you've been holding out on me.[AN]
+You never fulfilled your end of our[N]
+deal. I'm giving you once last chance.[AN]
+[ML]
+What are you talking about?[N]
+I did everything you asked.[AN]
+[MR]
+Don't play dumb, I tolerated you keeping[N]
+it as a contingency, but I always knew.[AN]
+Bring me the spear and I'll save your[N]
+pitiful life. I won't even hold a grudge.[AN]
+[ML]
+Hah, hahaha! Of course you knew![N]
+I played into your hands from the start.[AN]
+But no more! Call me what you will, but[N]
+I am a patriot to the end.[AN]
+For the sake of Melerra... No, for the[N]
+sake of humanity, you'll never have it![AN]
+[MR]
+For the sake of humanity? You[N]
+think too highly of yourself.[AN]
+Good luck, Lord Louis, and goodbye.[AN]
 [ClearFace]
-[ML]What the hell is her deal? Have I been a pawn this whole time? How ridiculous...
-Well, I may be out of options, but I won't go down without a fight. I'll make these rebels pay for their impudence!
+[ML]
+That was my last out...[N]
+Back to plan A, then.[AN]
+I know this castle like the[N]
+back of my hand.[AN]
+I won't let these interlopers[N]
+best me in my own domain![AN]
+[X]
+
+## TEXT_Ch8_Start_Clint
+[ML][LoadEdgar][MR][LoadClint]
+[ML]
+There are more enemy soldiers inside[N]
+the castle than I expected.[AN]
+Why weren't they deployed outside?[AN]
+[MR]
+Lord Louis is incredibly cautious,[AN]
+he must have kept them in reserve[N]
+in case you made it this far.[AN]
+I wouldn't be surprised if he had further[N]
+contingencies prepared as well.[AN]
+[ML]
+Then we'll have to be ready for anything.[N]
+After coming so far, we can't slip up.[AN]
+Finally, victory is within reach, and[N]
+once we strike down Lord Louis,[AN]
+Melerra will once more be free.[AN]
+[MR]
+Things are never that simple.[AN]
+Whatever happens today, it will take[N]
+years for Melerra to recover.[AN]
+[ML]
+You're right, winning here won't solve[N]
+everything.[AN]
+Still, we'll take it once step at a time,[N]
+and our next step is retaking the throne![AN]
 [X]
 
 ## TEXT_Ch8_Start_Edgar
-[ConversationText]
-[ML][LoadEdgar][MR][LoadClint]
-[ML]There are more enemy soldiers inside the castle than I expected. Why weren't they deployed outside?
-[MR]Lord Louis is incredibly cautious, he must have kept them here in case we made it this far. I wouldn't be surprised if he had further contingencies prepared as well.
-[ML]Then we'll have to be ready for anything. We can't afford to lose after making it all this way.
-Finally, victory is within reach, and once we strike down Louis, Melerra will be free of Galt's oppression once more.
-[MR]Things are never that simple. Whatever happens today, it will take years for Melerra to recover.
-[ML]You're right, defeating Louis won't solve everything. Still, we'll take it one step at a time, and our next step is retaking the castle!
+[L][LoadEdgar][3LB]
+Listen up, everybody![AN]
+Everything we've fought for, everything[N]
+you've put your lives on the line to[N]
+achieve, is finally within our grasp![AN]
+The traitor, Louis, sits atop the throne.[N]
+We face his few remaining loyalists, and[N]
+whatever devious traps he set for us.[AN]
+But together, they are nothing before us![AN]
+You all put your faith in me, and I, in turn[N]
+put my faith in you. To victory![AN]
 [X]
 
 ## TEXT_Ch8_Start_LeftCell
-[ConversationText]
 [ML][LoadMarie][MR][LoadEvelyn]
-[ML]All that noise... Are they preparing for battle?
-[MR]Sounds like it.
-[ML]Then father must be...
-[MR]...
-[ML]...[CloseEyes]
-[MR]Marie...
+[ML]
+All that noise...[N]
+What's going on out there?[AN]
+[MR]
+Sounds like they're[N]
+preparing for battle.[AN]
+[ML][1LB]
+Then father must be...[AN]
+[MR]
+...[AN]
+[ML]
+...[CloseEyes][AN]
+[MR]
+Marie...[AN]
 [X]
 
 ## TEXT_Ch8_Start_RightCell
-[ConversationText]
 [ML][LoadDonovan][MR][LoadTrent]
-[ML]Hey! What's going on out there!
-[MR]Forget it, Donovan. They're not gonna tell us a thing.
-[ML]Gah, this is the worst! A fight for the future of our country, and we're stuck in this cell.
-[MR]Maybe they'll bust us out, but until then, save your energy. Shouting isn't gonna help us.
-[ML]Yeah, you're right. What a pain...
+[ML][1LB]
+Hey! What's going on out there![AN]
+[MR][2LB]
+Save your breath, Donovan.[N]
+They're not gonna tell us a thing.[AN]
+[ML]
+Gah, this is the worst![AN]
+A fight for the future of our country,[N]
+and we're stuck in this cell.[AN]
+[MR]
+Maybe they'll bust us out, but[N]
+until then, save your energy.[AN]
+Shouting won't do us any good.[AN]
+[ML]
+Yeah, you're right.[AN]
+When we get out of here, let's give[N]
+these traitors what they deserve![AN]
 [X]
 
 ## TEXT_Ch8_GreenInfo
@@ -85,82 +205,179 @@ units to join your party[NL]
 and acquire basic weapons.[A][X]
 
 ## TEXT_Ch8_FireTrapWarning
-[ConversationText]
 [MR][LoadEvelyn]
-[MR]Something's wrong... Why is it getting hotter?
+[MR]
+Something's wrong...[N]
+Why is it getting hotter?[AN]
 [X]
 
 ## TEXT_Ch8_LeftCell_FireTrap
-[ConversationText]
 [ML][LoadMarie][MR][LoadEvelyn]
-[ML]Ahhhh!
-[MR]Urg...
-[ML]Louis, you bastard! You'll pay for this!
+[ML][1LB]
+Ahhhh![AN]
+[MR]
+Urg...[AN]
+[ML][2LB]
+Louis, you bastard![N]
+You'll pay for this![AN]
 [X]
 
 ## TEXT_Ch8_RightCell_FireTrap
-[ConversationText]
 [ML][LoadDonovan][MR][LoadTrent]
-[ML]Argh, what the hell is this?!
-[MR]I knew Louis was twisted, but this is insane! What kind of lunatic thinks up something like this?
+[MR][1LB]
+Argh, what the hell is this?![AN]
+[ML][2LB]
+I knew Louis was twisted,[N]
+but this is insane![AN]
+What kind of villain thinks[N]
+up something like this?[AN]
+[MR]
+Perhaps we've outlived our[N]
+usefulness as hostages...[AN]
+Let's hope help comes quick.[AN]
 [X]
 
 ## TEXT_Ch8_LeftCell_Open
-[ConversationText]
 [ML][LoadMarie][MR][LoadEvelyn]
-[ML]Thanks for saving us. You're here to kill Louis, right? Count me in.
-[MR]Me too. I'll pay them back for all they've done to us.
+[ML]
+Thanks for saving us.[AN]
+You're here to kill Louis, right?[N]
+Count me in.[AN]
+[MR]
+Me too, I'll be sure to pay[N]
+him back tenfold...[AN]
+Death is too good for the[N]
+likes of him.[AN]
 [X]
 
 ## TEXT_Ch8_RightCell_Open
-[ConversationText]
 [ML][LoadDonovan][MR][LoadTrent]
-[MR]Whew, that cell way way too cramped. You're with the liberators, right? Pass me an axe, and I'll get chopping.
-[ML]Finally, it's time to deliver some justice!
+[MR]
+Whew, that cell way way too cramped.[N]
+You're with the liberators, right?[AN]
+Pass me an axe, and I'll get chopping.[AN]
+[ML]
+Free at least. Now it's time[N]
+to deliver some justice![AN]
 [X]
 
 ## TEXT_Ch8_End1
-[ConversationText]
 [FL][LoadLouis][R][LoadEdgar]
-[R]Louis, it's time to pay for what you've done!
-[FL]Wait, wait! I surrender!
-[R]You... surrender?
-[FL]I won't apologize or make excuses. I did what I did for the sake of Melerra, but now that I've lost, I've no reason not to cooperate.
-[R]And that includes handing Melerra over to Galt?
-[FL]You're young, and idealistic. I wouldn't expect you to understand.
+[R]
+Louis, it's time to pay[N]
+for what you've done![AN]
+[FL][1LB]
+Wait, wait! I surrender![AN]
+[R]
+You... surrender?[AN]
+[FL][2LB]
+I won't apologize or make excuses.[AN]
+I did what I did for Melerra, but[N]
+now that you've defeated me,[AN]
+I've no reason not to cooperate.[AN]
+[R]
+A reason for everything?[AN]
+Let's hear your reason for letting[N]
+the empire abuse our citizens.[AN]
+[FL]
+You're young, and idealistic.[N]
+I wouldn't expect you to understand.[AN]
+[R]
+No, I understand plenty.[AN]
+You pay no mind to the people's suffering,[N]
+as long as you stay in power.[AN]
+[FL]
+I've made many difficult decisions. Things[N]
+aren't as black and white as you think.[AN]
 [FR][LoadMarie]
-[FR]What the hell?! Don't listen to a word he says! In all my life, I've never met such a twisted fiend as Louis.
-[R]Twisted?
-[FR]You didn't know? He imprisoned me to hold me as leverage over my father, leading to his death.
-Then he tried to kill me anyway, along with all the other prisoners! By burning us alive!
+What the hell?![N]
+Don't listen to a word he says![AN]
+In all my life, I've never met[N]
+such a twisted fiend.[AN]
+[R][1LB]
+Twisted?[AN]
+[FR][2LB]
+You didn't know? He imprisoned me to hold[N]
+me as leverage against my father.[AN]
+Then after he had no more use for me,[AN]
+he tried to kill me anyway, along[N]
+with all the other prisoners![AN]
+By burning us alive![AN]
 [ClearFace][LoadDonovan]
-[FR]She's right! Louis is a vile, irredeemable man.
-[ClearFace][LoadTrent]
-[FR]If you give him the slightest opportunity, he'll stab you in the back. You can't trust a word he says.
+She's right.[N]
+Louis is a vile, irredeemable man.[AN]
+Melerra is better off without him.[AN]
+[FL]
+You fools, you don't know the sacrifices[N]
+I've made for this country.[AN]
+[FR][ClearFace][LoadTrent]
+Don't listen to him, you can't trust[N]
+a word he says.[AN]
+Give him the slightest opportunity[N]
+and he'll stab you in the back.[AN]
 [ClearFace][LoadEvelyn]
-[FR]If you're feeling squeamish I'd be happy to dispose of him for you. I'm itching for some payback.
-[FL]...
+If you're feeling squeamish I'd be[N]
+happy to dispose of him for you.[AN]
+He'd make a great test subject...[AN]
+[FL][1LB]
+...[AN]
 [FR][ClearFace]
-[R]You won't even deny it? Then you truly are beyond salvation. Melerra has no need for the likes of you.
+[R][2LB]
+You won't even deny it?[N]
+Then you truly are beyond salvation.[AN]
 [LoadOverworldFaces]
+Melerra has no need for the likes of you.[AN]
 [L][LoadCelia]
-[L]Edgar, stop! You can't do this!
-[R]Celia..?
-[L]This isn't like you! Killing someone who can't fight back... You just can't!
-[R]But think about everything he's done! Doesn't it fill you with rage? It's unforgivable!
-[L]Let him rot in the dungeon then! Isn't that good enough?
-[R]So many people have died because of him. Died so that we could finally be rid of him. And none of them deserve it as much as him...
-Fine, I accept your surrender. You can stay in that deathtrap of a prison until I figure out what to do with you. Get him out of my sight.
-[FL][ClearFace]
+[1LB]
+Edgar, stop! You can't do this![AN]
+[R]
+Celia..?[AN]
+[L][2LB]
+This isn't like you![N]
+Killing someone who can't fight back...[AN]
+You just can't![AN]
+[R]
+But think about everything he's done![N]
+Doesn't it fill you with rage?[AN]
+It's unforgivable![AN]
+[L]
+Of course it does! But don't do[N]
+something you can't take back.[AN]
+Let him rot in the dungeon![N]
+Isn't that good enough?[AN]
+[R]
+So many people have died because of him.[N]
+Died so that we could finally be rid of him.[AN]
+And yet he still lives...[AN]
+Fine, I accept your surrender.[AN]
+You can stay in that deathtrap of a prison[N]
+until I figure out what to do with you.[AN]
+Get him out of my sight.[AN]
 [R][MoveMidRight]
-[MR]Dammit! We worked so hard for this, but it all feels so hollow now. Am I in over my head after all?
+[FL][ClearFace]
+[MR]
+Dammit! We worked so hard for this,[N]
+but it all feels so hollow now.[AN]
+Am I in over my head after all?[AN]
 [FL][LoadClint]
-[FL]This is but the first of many trials you'll face as king. But if you could make it this far, you'll manage this too.
-[MR]King? No, no... I'm not ready for this. How could I be?
-[L]You'll be alright. You have me, Clint, Lord Howard, and all the rest of us to support you.
-[MR]I'm just so tired... Tired of fighting, tired of making decisions... I'm sorry, I need to rest, and to process everything.
-[ClearFace]
-[L]Edgar...
+[FL]This is but the first of many[N]
+trials you'll face as king.[AN]
+But if you could make it this far,[N]
+you'll find a way to manage this too.[AN]
+[MR]
+King? No, no... I'm not ready for this.[N]
+How could I be?[AN]
+[L]
+You'll be alright.[AN]
+You have me, Clint, Lord Howard, and[N]
+all the rest of us to support you.[AN]
+[MR]
+I'm just so tired... Tired of fighting,[N]
+tired of making decisions...[AN]
+Tired of everything...[N]
+I'm sorry, I need to rest.[AN]
+[ClearFace][1LB]
+[L]Edgar...[AN]
 [X]
 
 ## TEXT_Ch8_End2

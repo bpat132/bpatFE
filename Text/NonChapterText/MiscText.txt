@@ -89,7 +89,11 @@ with another ally within[N]
 ## TEXT_4RuneUses
 The number of times you can[N]
 invoke a rune per chapter[N]
-has increased to [ToggleRed]four[ToggleRed].[X]
+has increased to [ToggleRed]four[ToggleRed].[A][X]
+
+## TEXT_ShopUpdate
+New items are available for purchase[NL]
+in the preparations armory.[A][X]
 
 ## SwordArmorDesc
 Heavily armored knights with[NL]

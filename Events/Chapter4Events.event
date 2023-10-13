@@ -68,6 +68,7 @@ END_MAIN
 
 LocationBasedEvents:
 Seize(8,4)
+Seize(13,15)
 /*
 Chest(SapphireLance,17,3)
 Chest(KillerBow,17,1)
@@ -123,9 +124,11 @@ EnemyUnits1:
 UNIT Ch4Boss Mage 0x40 Level(10,Enemy,0)     [4,15] 0x0 0x0 0x0 0x0 [Bolganone] NeverMoveAI
 #ifndef _EASY_MODE_
 //UNIT Craig Cavalier 0x40 Level(12,Enemy,0)     [20,2] 0x0 0x0 0x0 0x0 [ShortSpear] PWHAI
-UNIT Craig Cavalier 0x40 Level(10,Enemy,0)     [5,16] DropItem 0x0 0x0 0x0 [ShortSpear,HoplonShield] PWHAI
+//UNIT Craig Cavalier 0x40 Level(10,Enemy,0)     [5,16] DropItem 0x0 0x0 0x0 [ShortSpear,RedGem] PWHAI
+UNIT Craig Cavalier 0x40 Level(10,Enemy,0)     [5,16] 0x0 0x0 0x0 0x0 [ShortSpear] PWHAI
 #else
-UNIT Craig Cavalier 0x40 Level(10,Enemy,0)     [5,16] DropItem 0x0 0x0 0x0 [Javelin,HoplonShield] PWHAI
+//UNIT Craig Cavalier 0x40 Level(10,Enemy,0)     [5,16] DropItem 0x0 0x0 0x0 [Javelin,RedGem] PWHAI
+UNIT Craig Cavalier 0x40 Level(10,Enemy,0)     [5,16] 0x0 0x0 0x0 0x0 [Javelin] PWHAI
 #endif
 UNIT 0x80 Thief 0x40 Level(6,Enemy,1)     [8,5] 0x0 0x0 0x0 0x0 [FireSword,ChestKey,ChestKey] LootingThiefAI
 //UNIT 0x80 Thief 0x40 Level(6,Enemy,1)     [8,5] 0x0 0x0 0x0 0x0 [FireSword,ChestKey,ChestKey] EscapeAI
@@ -289,5 +292,9 @@ MUSC GS_BabiLighthouse
 TEXTCONT
 TEXTEND
 REMA
+MUSC AA_Gumshoe
+SetBackground(0xB)
+Text(TEXT_Ch4_End_Jane)
+GiveMoney(2000)
 MNC2 Chapter5
 ENDA

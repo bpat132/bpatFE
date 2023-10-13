@@ -1,110 +1,311 @@
 
 ## TEXT_Ch7_Start_Castle
-[ConversationText]
 [L][LoadGordon][FL][LoadClint][MR][LoadJeffery]
-[FL]It appears Prince Edgar has mustered quite the army. Sneaking through the ruins of the old capital was a clever trick.
-[MR]It matters not. Even the mightiest of invaders would struggle to break through our fortifications.
-[L]That naive fool! Is he trying to get his men killed?
-[FL]He may have some trick up his sleeve. We'd do well not to underestimate him.
-[MR]Indeed. He must be a skilled leader and tactician to make it this far. He must intend to finish this in one decisive battle.
-[L]... Perhaps we could negotiate with him. I doubt he wants to send his men to their deaths any more than we do.
-Circumstances may have changed him, but he always struck me as a reasonable man,
-and with your sister among the prince's forces, I hope we could resolve this peacefully.
-[MR]I wish it were possible, but I do not foresee us coming to an agreement.
-The prince has come too far to back down.
-[L]You're right... Still, fighting him just doesn't sit right with me.
-Many of his soldiers are rightfully displeased with Melerra's present government, and we've done little to address their concerns.
-[FL]Gordon!
-[MR]It's fine, Clint. You can always speak freely with me. It's no secret our government has its faults. Regardless, we cannot allowed Melerra to descent into anarchy.
-Think back, to when we wrested control our kingdom from King Edwin. Were we wrong then, to save Melerra from certain doom?
-Are we wrong now, to preserve order the best we can?
-[L]We weren't wrong, but it's only natural so many have flocked to Prince Edgar. He promises a better future, while we do little to ease their worries.
-Something must change or even after our victory, we'll soon have another rebellion to contend with.
-[FL]I agree, our current situation is not sustainable. Morale among my troops has never been worse, and many of them have deserted or defected.
-[MR]Your concerns are noted. After this battle, I'll discuss them with Lord Louis. There must be something we can do to ease the people's woes.
-Still, our mission remains the same. We will protect the castle and repel the prince's invading force.
-[L]...
+[MR]
+Generals, I assume you've been briefed[N]
+on the current situation?[AN]
+[FL]
+Yes, Prince Edgar has mustered quite the[N]
+army, and now he's upon our doorstep.[AN]
+I admit, this was beyond my expectations.[AN]
+[L]
+That naive fool![N]
+Is he trying to get his men killed?[AN]
+[FL]
+He may have some trick up his sleeve.[N]
+We'd do well not to underestimate him.[AN]
+[MR]
+Indeed, he made it this far on more[N]
+than fortune alone.[AN]
+Stille if all is as it seems, we'll[N]
+crush his forces with ease.[AN]
+We are better trained, better armed,[N]
+and greater in number.[AN]
+Guerilla warfare suited them better[N]
+than a frontal assault.[AN]
+[L]
+Perhaps we could negotiate with him.[AN]
+I doubt he wants to send his men to[N]
+their deaths any more than we do.[AN]
+Circumstances may have changed him, but[N]
+he always struck me as a reasonable man.[AN]
+Is there no hope for a peaceful[N]
+resolution?[AN]
+[MR]
+I wish it were possible, but I do not[N]
+foresee us coming to an agreement.[AN]
+He has come too far to back down,[AN]
+and there's little we're willing[N]
+to concede.[AN]
+[L]
+You're right... Still, fighting him[N]
+just doesn't sit right with me.[AN]
+He doesn't carry his father's sins.[AN]
+Many of his followers are rightfully[N]
+displeased with Melerra's government,[AN]
+and we've failed to address their[N]
+concerns.[AN]
+[FL][1LB]
+Gordon, what are you saying?[AN]
+[MR][2LB]
+It's fine, Clint.[N]
+You can always speak freely with me.[AN]
+It's no secret the people are[N]
+dissatisfied.[AN]
+Regardless, we cannot allowed[N]
+Melerra to descent into anarchy.[AN]
+Think back to when we wrested control[N]
+from King Edwin.[AN]
+Were we wrong then, to save Melerra[N]
+from certain doom?[AN]
+Are we wrong now, to preserve order[N]
+the best we can?[AN]
+[L]
+We weren't wrong, but it's only natural[N]
+so many have flocked to Prince Edgar.[AN]
+He promises a better future, while we[N]
+maintain the status quo.[AN]
+Something must change or we'll soon[N]
+have another rebellion to contend with,[AN]
+regardless of our victory here.[AN]
+[FL]
+I agree, our current situation is not[N]
+sustainable.[AN]
+Morale among my troops has never been[N]
+worse, and not a day goes by that I don't[AN]
+hear talk of dessertion or defection.[AN]
+[MR]
+Your concerns are noted, but now is not[N]
+the time to discuss them further.[AN]
+After this battle, I'll confer with[N]
+Lord Louis.[AN]
+There must be something we can do to[N]
+ease the people's woes.[AN]
+Still, our mission remains the same.[AN]
+We will protect the castle and repel[N]
+the prince's invading force.[AN]
+No, not just repel them.[N]
+We must defeat them so decisively,[AN]
+that others will think twice before[N]
+taking arms against us.[AN]
+[L]...[AN]
 [MR][MoveRight]
 [FR][LoadLouis]
-[FR]I hope I'm not interrupting anything. I trust your battle preparations are complete?
-[R]Yes, our ground forces are in position and our wyvern and pegasus units will arrive shortly.
-[FR]Excellent! I have one last request, be certain to take the prince alive. I have some questions I must ask him...
-[FL]Understood.
-[FR]Oh, and General Gordon, I need a quick word with you.
+[FR]
+I hope I'm not interrupting anything.[AN]
+I trust your battle preparations are[N]
+complete?[AN]
+[R][3LB]
+Yes, the prince's army approaches from[N]
+the south, and our ground forces and[N]
+ballistae are in position to greet them.[AN]
+[FL]
+Many of our forces are more than a day[N]
+out, but the nearest should reinforce[N]
+us before the enemy scales these cliffs.[AN]
+[FR]
+Excellent.[N]
+Were I twenty years younger, I'd be[N]
+itching to join you on the battlefield.[AN]
+Alas, the years have not been kind to[N]
+my sword arm. Best to leave the glory[N]
+to the youngsters, no?[AN]
+[R][2LB]
+Hah, an old man like you would[N]
+just get in the way.[AN]
+[FR]
+I can't argue with that.[AN]
+Oh, and General Gordon, I need a quick[N]
+word with you before the battle begins.[AN]
+[L][1LB]
+Of course, Lord Louis.[AN]
 [X]
 
 ## TEXT_Ch7_Start_Clint
-[ConversationText]
 [ML][LoadClint][MR][LoadRose]
-[ML]The enemy forces draw near. Why aren't you at your post?
-[MR]General... It looks like Violet's defected.
-[ML]Are you certain?
-[MR]Even at this distance, I'd recognize her pegasus anywhere. I can't believe she'd join the enemy! No, this actually is exactly the type of thing she'd do...
-[ML]Rose, are you alright? As much as we could use your skills today, I won't make you fight against your sister. I'll turn a blind eye if you sit this one out.
-[MR]I don't know, general. I don't even know if we're fighting for the right side anymore! Violet's impulsive, but she's not stupid.
-She wouldn't join the prince's army unless she thought their cause was just. Part of me wants to fly over there and knock some sense into her, and part of me wants to hear her out.
-[ML]Then go. Talk to her, and decide for yourself what to do.
-[MR]But... Is this okay?
-[ML]Normally, I'd never suggest such a thing, but our circumstances are hardly normal anymore. Now go, before the fighting begins.
+[ML]
+The enemy draws near.[N]
+Why aren't you at your post?[AN]
+[MR]
+General...[N]
+It looks like Violet's defected.[AN]
+[ML][1LB]
+Are you certain?[AN]
+[MR][2LB]
+Even at this distance, I'd recognize[N]
+her pegasus anywhere.[AN]
+I can't believe she'd join the enemy![AN]
+No, this is exactly the type of thing[N]
+she'd do...[AN]
+[ML]
+Rose, are you alright?[AN]
+As much as we could use your lance today,[N]
+I won't make you fight against family.[AN]
+I'll turn a blind eye if you sit this[N]
+battle out.[AN]
+[MR]
+I don't know, general. I don't even know[N]
+what we're fighting for anymore![AN]
+Violet's impulsive, but she's not stupid.[AN]
+She wouldn't defect unless she thought[N]
+their cause was just.[AN]
+Part of me wants to fly over there and[N]
+knock some sense into her, and part[AN]
+of me wants to hear her out.[AN]
+[ML]
+Then go. Talk to her, and decide[N]
+for yourself what to do.[AN]
+[MR][1LB]
+But... Is this okay?[AN]
+[ML][2LB]
+Normally, no, but things are hardly[N]
+normal anymore.[AN]
+Now go, while you still have time.[AN]
+[MR][1LB]
+General...[AN]
 [X]
 
 ## TEXT_Ch7_Start_Violet
-[ConversationText]
 [ML][LoadRose][MR][LoadViolet]
-[ML]Violet.
-[MR]Uh, hey sis. What're you doing here?
-[ML]What am I doing here?! You're the one who's gone and sided with the enemy. What were you thinking?
-[MR]Well, they were fighting some pirates, Carter's crew, and I ended up helping them out before realizing who they were.
-[ML]And you decided to tag along?!
-[MR]They seemed alright and we were heading the same way. But all this time we've only fought actual bad guys! Pirates, bandits, and thieves!
-When was the last time we did that as part of the army? I can't even remember.
-[ML]You're serious about this? This isn't another of your whims?
-[MR]Yeah, I guess I am. Wait, does this make us enemies now? I really don't want to fight you...
-[ML]No, I could never do that. No matter what, I'm always on your side. Even if you're a bit of an idiot sometimes.
-[MR]Hey!
-[ML]Anyway, fill me in on what's going on here before I change my mind.
+[ML][1LB]
+Violet.[AN]
+[MR][2LB]
+Uh, hey sis.[N]
+What're you doing here?[AN]
+[ML]
+What am I doing here?![AN]
+You're the one who's gone[N]
+and sided with the enemy.[AN]
+What were you thinking?[AN]
+[MR][3LB]
+Well, they were fighting some pirates,[N]
+Carter's crew, and I ended up helping[N]
+them out before realizing who they were.[AN]
+[ML][1LB]
+And you decided to tag along?![AN]
+[MR][2LB]
+They seemed alright and we were heading[N]
+the same way.[AN]
+But all this time we've only fought real[N]
+bad guys! Pirates, bandits, and thieves![AN]
+When was the last time we did that with[N]
+the army? I can't even remember.[AN]
+[ML]
+You're serious about this?[N]
+This isn't another of your whims?[AN]
+[MR]
+Yeah, I guess I am.[AN]
+Well, unless that makes us enemies now.[N]
+I really don't want to fight you...[AN]
+[ML]
+No, I could never do that. No matter[N]
+what, I'm always on your side.[AN]
+Even if you're a real idiot sometimes.[AN]
+[MR][1LB]
+Hey![AN]
+[ML][2LB]
+Anyway, fill me in on what's going on[N]
+here before I change my mind.[AN]
 [MR][MoveRight][FR][LoadEdgar]
-[FR]Violet, who is this?
-[R]Speak of the devil. Edgar, this is my sister, Rose. She'll be joining us, I think?
-[ML]R-right...
-[FR]You're a pegasus knight too? We'll be glad to have you.
-[ML]Prince Edgar, about General Clint, please don't fight him. I don't think he wants to fight you either. I'll try and talk to him.
-[FR]It's been many years since I've seen him, but I remember him being a good man. I've no desire to fight him unless he stands in our way. If Violet trusts you, then I'll trust you too.
+[FR][1LB]
+Violet, who is this?[AN]
+[R][2LB]
+Speak of the devil.[AN]
+Prince Edgar, this is my sister, Rose.[N]
+She'll be joining us, I think?[AN]
+[ML][1LB]
+R-right...[AN]
+[FR][2LB]
+You're a pegasus knight too?[N]
+We'll be glad to have you.[AN]
+[ML]
+Prince Edgar, about General Clint,[N]
+please don't fight him.[AN]
+I don't think he wants to fight you[N]
+either. I'll try and talk to him.[AN]
+[FR]
+It's been many years since I've seen him,[N]
+but I remember him being a good man.[AN]
+I've no desire to fight him unless he[N]
+gives us no choice.[AN]
+If Violet trusts you, then I'll trust[N]
+you too.[AN]
 [X]
 
 
 ## TEXT_Ch7_Rose_Clint_Talk
-[ConversationText]
 [ML][LoadClint][MR][LoadRose]
-[MR]General, I... I don't want to fight you, or anyone else here, but...
-[ML]So you, too, have been swayed to their side? You find their cause more righteous than ours?
-[MR]I do. I don't even know what we're fighting for anymore. How could I turn my lance on those who want a brighter future for our country?
-[ML]A brighter future... But does he have what it takes? Even if he wins this battle, Melerra's problems run deep and solving them will be no easy task.
-[MR]In truth, I'm not sure. Even so, I can't bring myself to stand in his way. If this makes me naive, so be it. At least I'll fight for something I believe in!
-[ML]I expected as much. In truth, this does not surprise me. Then I, too, will fight on the prince's side.
-[MR]General?
-[ML]I don't know whether the prince can save our kingdom, but at least, I want to believe there's something we can do.
-Perhaps this makes me naive as well, but at least I'll be in good company.
-[MR]General... Thank you.
+[MR]
+General, I... I don't want to fight you,[N]
+or anyone else here, but...[AN]
+[ML]
+So you, too, have been swayed[N]
+to their side?[AN]
+You find their cause more[N]
+righteous than ours?[AN]
+[MR]
+I do. I don't see a point anymore.[AN]
+How could I turn my lance on those[N]
+seeking a brighter future?[AN]
+[ML]
+A brighter future... But does[N]
+Prince Edgar have what it takes?[AN]
+Even if he wins this battle,[N]
+Melerra's problems run deep.[AN]
+Solving them will be no easy task.[AN]
+[MR]
+Truthfully, I'm not sure. Even so,[N]
+I can't bring myself to oppose him.[AN]
+If this makes me naive, so be it.[AN]
+[ML]
+I expected as much, this doesn't[N]
+surprise me.[AN]
+Then I will join you, fighting[N]
+on the prince's side.[AN]
+[MR][1LB]
+General?[AN]
+[ML][3LB]
+I don't know if he can save our kingdom,[N]
+but at least I want to believe there's[N]
+something we can do.[AN]
+Perhaps this makes me naive as well,[N]
+but at least I'll be in good company.[AN]
+[MR][1LB]
+General... Thank you.[AN]
 [X]
 
 ## TEXT_Ch7_Start_Gordon
-[ConversationText]
 [ML][LoadGordon][MR][LoadRedSoldier]
-[ML][CloseEyes]...
-[MR]Your orders, sir?
-[ML]...
-[MR]Sir?
+[ML][1LB]
+[CloseEyes]...[AN]
+[MR]
+Your orders, sir?[AN]
+[ML]
+...[AN]
+[MR]
+Sir?[AN]
 [ML][MoveMidLeft]
-[ML][OpenEyes]Apologies, I was lost in thought. Should the enemy near the castle, we will finish them off. Until then, we hold this position.
+[ML][OpenEyes][2LB]
+Apologies, I was lost in thought.[AN]
+Should the enemy near the castle,[N]
+we will finish them off.[AN]
+Until then, we hold this position.[AN]
 [CloseSpeechSlow][MR][ClearFace]
-[ML]What a fool I've been.
+[ML]
+What a fool I've been.[AN]
+I knew Louis was not above blackmail,[N]
+I never thought he'd go this far...[AN]
+Perhaps this is what I deserve for[N]
+not taking action sooner.[AN]
 [X]
 
 ## TEXT_Ch7_Gordon_Charge
 [ConversationText]
 [L][LoadGordon]
-[L]The enemy draws near. It's time, show them the might of Melerra's finest!
+[L]
+The enemy draws near.[AN]
+It's time, show them the might[N]
+of Melerra's finest knights![AN]
 [X]
 
 ## TEXT_Ch5_Village_Thoron
@@ -124,13 +325,40 @@ A priest once gave me this lance, he said it would help keep me safe. Turns out 
 ## TEXT_Ch7_End
 [ConversationText]
 [ML][LoadClint]
-[ML]Gordon, Lord Jeffery... Was there no other way?
+[ML]
+Gordon, Lord Jeffery...[N]
+Was there no other way?[AN]
 [MR][LoadEdgar]
-[MR]General Clint, thank you for your assistance. This victory was in no small part thanks to you.
-[ML]Victory? This is no victory. Lord Louis still lives while Lord Jeffery and General Gordon are dead.
-They were good men. We may not have always seen eye to eye, but they, too, wanted nothing but the best for Melerra.
-[MR]I... I wish we didn't have to fight them. I didn't know them well, but I still knew them. General Gordon even taught me spearfighting! And I used those skills to...
-No, I can process this later, after we've dealt with Lord Louis. Is he inside the castle?
-[ML]He is indeed. He's no fighter himself, but he's a real snake. Take care not to be caught off guard by his tricks.
-[MR]I will. We've come to far to fail now.
+[MR]
+General Clint, thank you for[N]
+your assistance.[AN]
+This victory was in no small[N]
+part thanks to you.[AN]
+[ML]
+Victory? This is no victory.[AN]
+Lord Louis still lives while Lord[N]
+Jeffery and General Gordon are dead.[AN]
+They were good men, and my friends.[N]
+We may not have always seen eye to eye,[AN]
+but they, too, wanted nothing but the[N]
+best for Melerra.[AN]
+[MR]
+I... I wish we didn't have to fight them.[AN]
+I didn't know them as well as you, but[N]
+I still knew them.[AN]
+General Gordon even taught me[N]
+spearfighting![AN]
+And I used those skills to...[N]
+No, this is no time for self-pity.[AN]
+I can process this later, after[N]
+we've dealt with Lord Louis.[N]
+He's hiding inside the castle?[AN]
+[ML]
+He is indeed. He's no fighter himself,[N]
+but he's a real snake.[AN]
+Take care not to be caught[N]
+off-guard by his tricks.[AN]
+[MR]
+Thanks for the warning, I'll keep my[N]
+guard up. We've come to far to fail now.[AN]
 [X]

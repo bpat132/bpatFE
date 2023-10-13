@@ -26,6 +26,32 @@ ALIGN 4
 MapData:
   #incbin "ch9map_data.dmp"
 
-SetChapterData(Chapter9, 0x1, 0, 0x2, 0x3, Chapter9Map, MapData, 0x5, 0, 0)
+SetChapterData(Chapter9, 0x1, 0, 0x2, 0x3, Chapter9Map, MapData, 0x5, 0, Chapter9MapChanges)
+
+ALIGN 4
+Tile_Layer_2:
+  SHORT $E1C $E20 $E24 $E9C $EA0 $EA4 $F1C $F20 $F24
+
+ALIGN 4
+Tile_Layer_3:
+  SHORT $E28
+
+ALIGN 4
+Tile_Layer_4:
+  SHORT $E1C $E20 $E24 $E9C $EA0 $EA4 $F1C $F20 $F24
+
+ALIGN 4
+Tile_Layer_5:
+  SHORT $E28
+
+ALIGN 4
+MapChangesData:
+  TileMap(0, 6, 10, 3, 3, Tile_Layer_2)
+  TileMap(1, 7, 12, 1, 1, Tile_Layer_3)
+  TileMap(2, 16, 7, 3, 3, Tile_Layer_4)
+  TileMap(3, 17, 9, 1, 1, Tile_Layer_5)
+  TileMapEnd
+
+EventPointerTable(Chapter9MapChanges, MapChangesData)
 
 }

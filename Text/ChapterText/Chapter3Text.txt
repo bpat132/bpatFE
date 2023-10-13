@@ -155,6 +155,13 @@ I'm no good at fighting, but you look capable. Take this hammer, and carry on my
 Galt's soldiers think they can do whatever they please... It's sickening! Take this killing edge, and kill as many of them as you can!
 [X]
 
+## TEXT_Ch3_Village_KillerLance
+[ConversationText]
+[MidLeft][LoadFace][0x61][0x01][MidRight][LoadFace][CurrentPortrait]
+[MidLeft]
+Galt's soldiers think they can do whatever they please... It's sickening! Take this killer lance edge, and kill as many of them as you can!
+[X]
+
 
 ## TEXT_Ch3_BDI_Event
 [MidLeft][LoadBeatrice][Right][LoadDaniel][FarRight][LoadIsabelle]

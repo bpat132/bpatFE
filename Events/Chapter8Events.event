@@ -58,6 +58,7 @@ TurnEventPlayer(0x12,RightCellEvent,7)
 END_MAIN
 
 LeftCellEvent1:
+CAM1 [22,3]
 FlashCursor(18,3,0x40)
 Text(TEXT_Ch8_FireTrapWarning)
 NoFade
@@ -119,7 +120,8 @@ Seize(12,4)
 Chest(Darksword,2,2)
 Chest(ChaosStorm,4,2)
 //Chest(Axereaver,6,2)
-Chest(MasterSeal,6,2)
+//Chest(MasterSeal,6,2)
+Chest(Fiendcleaver,6,2)
 END_MAIN
 
 SeizeEvent:
@@ -231,6 +233,7 @@ UNIT
 EnemyUnits1:
 //UNIT Louis Bishop 0x40 Level(1,Enemy,0)     [12,4] 0x0 0x0 0x0 0x0 [Divine] NeverMoveAI
 UNIT Louis Bishop 0x40 Level(15,Enemy,0)     [12,4] DropItem 0x0 0x0 0x0 [Divine,MasterSeal] NeverMoveAI
+//UNIT Louis Bishop 0x40 Level(15,Enemy,0)     [7,16] DropItem 0x0 0x0 0x0 [Divine,MasterSeal] NeverMoveAI
 
 //UNIT Victoria Soldier 0x40 Level(12,Enemy,0)     [2,12] 0x0 0x0 0x0 0x0 [SilverLance,KillerLance,ShortSpear,0x6c] NeverMoveAI
 //UNIT Victoria Soldier 0x40 Level(12,Enemy,0)     [2,12] 0x0 0x0 0x0 0x0 [ShortSpear,Greatlance,Naginata,0x6c] NeverMoveAI // Maybe get rid of naginata?
@@ -436,15 +439,13 @@ BeginningScene:
 COUNTER_SET 0 4
 COUNTER_SET 1 4
 
-// Set reinforcement flags
-ENUT 0xD
-ENUT 0xE
-
 LoadEnemies(EnemyUnits1)
+
 LoadEnemies(EnemyUnits2)
 LoadEnemies(EnemyUnits3)
 LoadEnemies(EnemyUnits4)
 LoadEnemies(EnemyUnits5)
+
 
 LoadPlayerUnits(Units1)
 
@@ -489,14 +490,31 @@ AddLightRune(10,4)
 AddLightRune(12,5)
 AddLightRune(14,4)
 
+MUSC Langrisser_Story
+SetBackground(0x15)
+TUTORIALTEXTBOXSTART
+CenterTutorialTextBox
+TEXTSHOW TEXT_Ch8_Intro
+TEXTEND
+
+//SetBackground(0x15)
+// Set reinforcement flags
+ENUT 0xD
+ENUT 0xE
+
+CAM1 [22,0]
+MUSC KitN_SortieFormation
+Text(TEXT_Ch8_Start_Clint)
+
+/*
 SetBackground(0xE)
 CAM1 [22,0]
 MUSC DW3_Oppression
 //Text(TEXT_Ch8_Start_Louis)
-Text(PlaceholderText)
+Text(TEXT_Ch8_Start_Louis)
 SetBackground(0xA)
 MUSC KitN_SortieFormation
-Text(TEXT_Ch8_Start_Edgar)
+Text(TEXT_Ch8_Start_Clint)
 ClearBackground
 //SetBackground(0x17)
 FlashCursor(17,3,0x40)
@@ -505,7 +523,29 @@ Text(TEXT_Ch8_Start_LeftCell)
 FlashCursor(20,3,0x40)
 FlashCursor(21,3,0x40)
 Text(TEXT_Ch8_Start_RightCell)
+*/
+//CAM1 [22,0]
+SetBackground(0xE)
+MUSC DW3_Oppression
+TEXTSTART
+TEXTSHOW TEXT_Ch8_Start_Louis
+TEXTEND
+MUSC YuNo_BurialChamber
+TEXTCONT
+TEXTEND
+REMA
 
+SetBackground(0xD)
+MUSC BoF2_StrongerMonsters
+Text(TEXT_Ch8_Start_Edgar)
+
+ClearBackground
+FlashCursor(17,3,0x40)
+FlashCursor(18,3,0x40)
+Text(TEXT_Ch8_Start_LeftCell)
+FlashCursor(20,3,0x40)
+FlashCursor(21,3,0x40)
+Text(TEXT_Ch8_Start_RightCell)
 
 TUTORIALTEXTBOXSTART
 CenterTutorialTextBox
@@ -548,10 +588,12 @@ SOUN 0xCE
 TEXTCONT
 TEXTEND
 REMA
+/*
 SetBackground(0x17)
 MUSC YuNo_BurialChamber
 //Text(TEXT_Ch8_End2)
 Text(PlaceholderText)
 SOUN 0xD5
+*/
 MNC2 Chapter9
 ENDA

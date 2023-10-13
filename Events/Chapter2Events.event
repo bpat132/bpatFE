@@ -87,6 +87,7 @@ Text(TEXT_Ch2_Jane_Talk)
 NoFade
 SetAI(Jane, 0x00,0x00,0x00,0x00)
 CUSA Jane
+ASMC 0x080160d0|1
 ENDA
 
 LocationBasedEvents:
@@ -281,6 +282,6 @@ MUSC ToS_LastBattleDecision
 SetBackground(0x0c)
 Text(TEXT_Ch2_End_Edgar)
 Text(TEXT_Ch2_End_MS)
-GiveMoney(3000)
+GiveMoney(1000)
 MNC2 Chapter3
 ENDA

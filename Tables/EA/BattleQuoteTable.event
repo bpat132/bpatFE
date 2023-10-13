@@ -9,6 +9,22 @@ SpecifiedBattleConvo(Ch1Boss,Matthias,Chapter1,0x28,Ch1BossBattleQuote_Matthias)
 SpecifiedBattleConvo(Ch2Boss,Jane,Chapter2,0x28,Ch2BossBattleQuote_Jane)
 SpecifiedBattleConvo(Ch3Boss,Sasha,Chapter3,0x28,Ch3BossBattleQuote_Sasha)
 
+SpecifiedBattleConvo(Craig,Beatrice,Chapter4,0x25,Ch4CraigBattleQuote_Beatrice)
+SpecifiedBattleConvo(Craig,Daniel,Chapter4,0x26,Ch4CraigBattleQuote_Daniel)
+SpecifiedBattleConvo(Craig,Richard,Chapter4,0x27,Ch4CraigBattleQuote_Richard)
+
+SpecifiedBattleConvo(Ch5Boss,Ted,Chapter5,0x27,Ch5BossBattleQuote_Ted)
+
+SpecifiedBattleConvo(Jeffery,Edgar,Chapter7,0x23,Ch7JefferyBattleQuote_Edgar)
+SpecifiedBattleConvo(Jeffery,Jane,Chapter7,0x24,Ch7JefferyBattleQuote_Jane)
+SpecifiedBattleConvo(Jeffery,Clint,Chapter7,0x25,Ch7JefferyBattleQuote_Clint)
+
+SpecifiedBattleConvo(Gordon,Edgar,Chapter7,0x26,Ch7GordonBattleQuote_Edgar)
+SpecifiedBattleConvo(Gordon,Clint,Chapter7,0x27,Ch7GordonBattleQuote_Clint)
+
+SpecifiedBattleConvo(Louis,Edgar,Chapter8,0x26,Ch8LouisBattleQuote_Edgar)
+SpecifiedBattleConvo(Louis,Clint,Chapter8,0x27,Ch8LouisBattleQuote_Clint)
+
 UnspecifiedBattleConvo(Ch1Boss,Chapter1,0x1,Ch1BossBattleQuote)
 UnspecifiedBattleConvo(Ch2Boss,Chapter2,0x1,Ch2BossBattleQuote)
 UnspecifiedBattleConvo(Ch3Boss,Chapter3,0x1,Ch3BossBattleQuote)

@@ -45,9 +45,10 @@ TurnEventPlayer(0,BrigandReinforcements2,8)
 
 // Turn 10 may be too tight for ch1
 //TurnEventPlayer(0,EvilReinforcements,10)
-TurnEventPlayer(0,EvilReinforcements,11)
+//TurnEventPlayer(0,EvilReinforcements,11)
 TurnEventPlayer(0,EvilReinforcements,12)
 TurnEventPlayer(0,EvilReinforcements,13)
+TurnEventPlayer(0,EvilReinforcements,14)
 
 TurnEventPlayer(0,StellaEvent,3)
 TurnEventPlayer(0,SashaEvent,4)
@@ -116,6 +117,7 @@ Text(TEXT_Ch1_Edgar_Matthias_Talk)
 NoFade
 SetAI(Matthias, 0x00,0x00,0x00,0x00)
 CUSA Matthias
+ASMC 0x080160d0|1
 ENDA
 
 TalkEventStella:
@@ -330,12 +332,20 @@ ClearBackground
 NoFade
 */
 
+SetBackground(0x2)
+MUSC Langrisser_Story
+TUTORIALTEXTBOXSTART
+CenterTutorialTextBox
+TEXTSHOW TEXT_Ch1_Intro
+TEXTEND
+ClearBackground
+
 MUSC BoF2_StrongerMonsters
 
 CAM1 [0,11]
 //LoadEnemies(EnemyUnits1)
 //LoadEnemies(EnemyUnits2)
-FADU 16
+//FADU 16
 
 LoadPlayerUnits(Units1)
 

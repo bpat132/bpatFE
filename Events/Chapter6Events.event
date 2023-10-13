@@ -77,14 +77,16 @@ Text(TEXT_Ch6_Celia_Lucy_Talk)
 //Text(PlaceholderText)
 NoFade
 CUSA Lucy
+ASMC 0x080160d0|1
 ENDA
 
 LocationBasedEvents:
-Chest(Longbow,6,11)
+//Chest(BattleAxe,6,11)
+Chest(SilverAxe,6,11)
 //Chest(EmeraldAxe,16,5) // Maybe change this
-Chest(Horseslayer,16,5)
+Chest(Physic,16,5)
 //Chest(Rapier,7,5)
-Chest(Physic,7,5)
+Chest(Horseslayer,7,5)
 END_MAIN
 
 MiscBasedEvents:

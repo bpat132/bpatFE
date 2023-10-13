@@ -192,11 +192,11 @@ SHLI IronSword SteelSword IronBlade SteelBlade FireSword IronLance SteelLance Ja
 ALIGN 4
 
 Ch5BattlePrepShop:
-SHLI IronSword SteelSword IronBlade SteelBlade FireSword SwiftSword RubySword IronLance SteelLance Javelin SlimLance SapphireLance IronAxe SteelAxe HandAxe Labrys EmeraldAxe IronBow SteelBow ShortBow Fire Thunder Heal
+SHLI IronSword SteelSword IronBlade SteelBlade FireSword SwiftSword RubySword IronLance SteelLance Javelin SlimLance SapphireLance IronAxe SteelAxe HandAxe Labrys EmeraldAxe IronBow SteelBow ShortBow Longbow Fire Thunder Heal
 ALIGN 4
 
 Ch7BattlePrepShop:
-SHLI IronSword SteelSword IronBlade SteelBlade SwiftSword RubySword FireSword IronLance SteelLance SlimLance SapphireLance Javelin IronAxe SteelAxe Labrys EmeraldAxe HandAxe IronBow SteelBow ShortBow Fire Thunder Bolganone Lightning Shine Divine Flux Rend Ruin Heal
+SHLI IronSword SteelSword IronBlade SteelBlade SwiftSword RubySword FireSword IronLance SteelLance SlimLance SapphireLance Javelin IronAxe SteelAxe Labrys EmeraldAxe HandAxe IronBow SteelBow ShortBow Longbow Fire Thunder Bolganone Lightning Shine Divine Flux Rend Ruin Heal
 ALIGN 4
 
 Ch11BattlePrepShop:

@@ -17,8 +17,12 @@ Increases magic by[N]
 Increases magic by[N]
 2 points. Vanishes after use.[X]
 
+## RedGemDesc
+A common gemstone[NL]
+worth 500 gold.[.][X]
+
 ## TalismanName
-Talisman[X]
+Amulet[X]
 ## TalismanDesc
 Allows the holder to pass[N]
 through light barriers.[X]
@@ -90,6 +94,11 @@ Blessed Lance[X]
 ## BlessedWeaponDesc
 Wielder heals 5 HP upon dealing damage.[X]
 
+## TitanAxeName
+Titan Axe[X]
+## TitanAxeDesc
+A heavy, but incredibly accurate axe.[X]
+
 ## GreatswordName
 Greatsword[X]
 
@@ -138,6 +147,9 @@ Empowered by fire magic.[X]
 
 ## WindSwordDesc
 Magic, effective against fliers.[X]
+
+## GreatlanceDesc
+A powerful but heavy lance.[X]
 
 ## BattleAxeDesc
 A powerful but heavy axe.[X]

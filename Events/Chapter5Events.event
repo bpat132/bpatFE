@@ -113,7 +113,8 @@ CUSA Ted
 ENDA
 
 LocationBasedEvents:
-Armory(ArmoryItems,6,1)
+//Seize(12,2)
+//Armory(ArmoryItems,6,1)
 
 Village(0x8,VillageEvent1,18,3)
 Village(0x9,VillageEvent2,12,6)
@@ -144,14 +145,15 @@ VillageEvent5:  // Swapping these village locations
 */
 
 VillageEvent2:
-	VillageEventItem(PlaceholderText, Village, Silence)
+	VillageEventItem(TEXT_Ch5_Village_Silence, Village, Silence)
 VillageEvent3:
 	VillageEventItem(TEXT_Ch5_Village_KillerAxe, Village, KillerAxe)
 VillageEvent4:
 	//VillageEventItem(TEXT_Ch5_Village_KillerLance, Village, KillerLance)
-	VillageEventItem(TEXT_Ch5_Village_KillerLance, Village, Naginata)
+	//VillageEventItem(TEXT_Ch5_Village_KillerLance, Village, Naginata)
+	VillageEventItem(TEXT_Ch5_Village_Naginata, Village, Naginata)
 VillageEvent5:
-	VillageEventItem(PlaceholderText, Village, WindSword)
+	VillageEventItem(TEXT_Ch5_Village_WindSword, Village, WindSword)
 
 
 /*
@@ -225,10 +227,11 @@ EnemyUnits1:
 // Unique
 UNIT Rowan Myrmidon 0x1 Level(10,NPC,0)   [1,6] 0x0 0x0 0x0 0x0 [SteelBlade,SwiftSword,Lancereaver,LightBrand] NoAI
 //UNIT Violet PegasusKnight 0x1 Level(8,NPC,0)   [19,0] 0x0 0x0 0x0 0x0 [SlimLance,IronLance,SteelLance,Javelin] NoAI
-UNIT Violet PegasusKnight 0x1 Level(8,NPC,0)   [19,0] 0x0 0x0 0x0 0x0 [SlimLance,SteelLance,Javelin] NoAI // Probably shouldn't give so many free items
+UNIT Violet PegasusKnight 0x1 Level(8,NPC,0)   [19,0] 0x0 0x0 0x0 0x0 [SlimLance,SteelLance,Javelin,Vuln] NoAI // Probably shouldn't give so many free items
 
 UNIT Ch5Boss Pirate 0x40 Level(12,Enemy,0)     [9,21] 0x0 0x0 0x0 0x0 [Labrys,HandAxe] AIRAI
 
+/*
 // Left
 UNIT 0x86 Fighter 0x40 Level(7,Enemy,1)     [2,11] 0x0 0x0 0x0 0x0 [IronAxe] PWHAI
 UNIT 0x86 Fighter 0x40 Level(7,Enemy,1)     [3,8] 0x0 0x0 0x0 0x0 [IronAxe] PWHAI
@@ -248,6 +251,7 @@ UNIT 0x86 Mercenary 0x40 Level(7,Enemy,1)     [10,10] 0x0 0x0 0x0 0x0 [IronSword
 UNIT 0x86 Mercenary 0x40 Level(7,Enemy,1)     [12,11] 0x0 0x0 0x0 0x0 [IronSword] PWHAI
 #endif
 UNIT 0x86 Myrmidon_F 0x40 Level(7,Enemy,1)     [13,15] 0x0 0x0 0x0 0x0 [IronBlade] PWHAI
+*/
 UNIT
 
 EnemyUnits2:
@@ -356,9 +360,9 @@ ENUF RuneMenuDisableFlag
 */
 
 LoadEnemies(EnemyUnits1)
-LoadEnemies(EnemyUnits2)
-LoadEnemies(EnemyUnits3)
-SilentGiveItemUnit(Violet,Vuln)
+//LoadEnemies(EnemyUnits2)
+//LoadEnemies(EnemyUnits3)
+//SilentGiveItemUnit(Violet,Vuln)
 SilentGiveItemUnit(Rowan,Vuln)
 
 MUSC Langrisser_Story
@@ -400,6 +404,12 @@ TUTORIALTEXTBOXSTART
 CenterTutorialTextBox
 TEXTSHOW TEXT_Ch5_GreenInfo
 TEXTEND
+
+TUTORIALTEXTBOXSTART
+CenterTutorialTextBox
+TEXTSHOW TEXT_ShopUpdate
+TEXTEND
+
 REMA
 
 FADI 16 // Is this needed?
