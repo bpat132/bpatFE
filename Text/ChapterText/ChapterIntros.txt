@@ -52,7 +52,7 @@ nobility to usurp King Edwin, Lord[N]
 Howard, steward of the southern[N]
 territories, was among their most[N]
 fervent supporters.[AN]
-Compared to the northern cities, Galt
+Compared to the northern cities, Galt[N]
 Galt has little presence in southern[N]
 Melerra, as settlements are sparse[N]
 sparse and Lord Howard dutifully[N]

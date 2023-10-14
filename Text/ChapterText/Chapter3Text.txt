@@ -159,7 +159,7 @@ Galt's soldiers think they can do whatever they please... It's sickening! Take t
 [ConversationText]
 [MidLeft][LoadFace][0x61][0x01][MidRight][LoadFace][CurrentPortrait]
 [MidLeft]
-Galt's soldiers think they can do whatever they please... It's sickening! Take this killer lance edge, and kill as many of them as you can!
+Galt's soldiers think they can do whatever they please... It's sickening! Take this killer lance, and kill as many of them as you can!
 [X]
 
 
