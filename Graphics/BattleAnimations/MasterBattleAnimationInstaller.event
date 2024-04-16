@@ -17,6 +17,14 @@
 #define UnarmedAnim(Animation) "BYTE Disarmed 0x01 ; SHORT Animation"
 #define SpecialAnim(Animation,Weapon) "BYTE Weapon 0x00 ; SHORT Animation"
 
+// Credit: Vyland
+#include "Animations/thomas_magic Installer.event"
+ALIGN 4
+ThomasAnim:
+DarkAnim(0xb5)
+UnarmedAnim(0xb5)
+WORD 0x0 // Seperator
+ALIGN 4
 // Credit: Nuramon
 #include "Animations/lord_lance.event"
 #include "Animations/lord_unarmed.event"

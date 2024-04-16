@@ -19,6 +19,9 @@ SKIPWN
 ENDA
 POP
 
+// 7743
+#include "PRFAnims/Installer.event"
+
 // Tequila, Zahlman
 #include "FE8-Text_Engine_Rework/_FE8-Text_Engine_Rework_EA.event"
 
